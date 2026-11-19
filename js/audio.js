@@ -1,4 +1,4 @@
-import { clips } from './store.js?v=5';
+import { clips } from './store.js?v=6';
 
 // Audio for a clip id is looked up in this order:
 //   1. a published file: audio/<id>.mp3 | .m4a | .webm | .ogg
