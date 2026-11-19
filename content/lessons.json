@@ -13,7 +13,8 @@
     "Mona": "f",
     "Clerk": "f",
     "Tony": "m",
-    "Officer": "m"
+    "Officer": "m",
+    "Dr Hani": "m"
   },
   "levels": [
     {
@@ -22808,122 +22809,3388 @@
         {
           "id": "lv9-01",
           "title": "At the doctor",
+          "subtitle": "Explain your symptoms to a doctor",
           "icon": "🩺",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-01-01",
+              "arabizi": "shu fik?",
+              "arabic": "شو فيك؟",
+              "english": "What's wrong with you?",
+              "pic": "🩺",
+              "f": {
+                "arabizi": "shu fike?",
+                "arabic": "شو فيكي؟"
+              }
+            },
+            {
+              "id": "lv9-01-02",
+              "arabizi": "men emta 3andak hal waja3?",
+              "arabic": "من إيمتى عندك هالوجع؟",
+              "english": "Since when have you had this pain?",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv9-01-03",
+              "arabizi": "l waja3 hon, b jneb l yamin",
+              "arabic": "الوجع هون، بجنب اليمين",
+              "english": "The pain is here, on the right side",
+              "pic": "👉"
+            },
+            {
+              "id": "lv9-01-04",
+              "arabizi": "3ande 7asasiye 3al penicillin",
+              "arabic": "عندي حساسية عالبنسلين",
+              "english": "I'm allergic to penicillin",
+              "pic": "⚠️"
+            },
+            {
+              "id": "lv9-01-05",
+              "arabizi": "byewja3ne aktar bel leil",
+              "arabic": "بيوجعني أكتر بالليل",
+              "english": "It hurts more at night",
+              "pic": "🌙"
+            },
+            {
+              "id": "lv9-01-06",
+              "arabizi": "lezmak sowra w ta7lil dam",
+              "arabic": "لازمك صورة وتحليل دم",
+              "english": "You need an X-ray and a blood test",
+              "pic": "🧪"
+            },
+            {
+              "id": "lv9-01-07",
+              "arabizi": "mish shi khatir",
+              "arabic": "مش شي خطير",
+              "english": "It's nothing serious",
+              "pic": "😌"
+            },
+            {
+              "id": "lv9-01-08",
+              "arabizi": "erja3 ba3d jem3a",
+              "arabic": "إرجع بعد جمعة",
+              "english": "Come back in a week",
+              "pic": "📅"
+            },
+            {
+              "id": "lv9-01-09",
+              "arabizi": "l ta2min byghatte?",
+              "arabic": "التأمين بيغطّي؟",
+              "english": "Does insurance cover it?",
+              "pic": "🛡️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-01-d1",
+              "speaker": "Dr Hani",
+              "arabizi": "tfaddal, shu fik?",
+              "arabic": "تفضّل، شو فيك؟",
+              "english": "Come in, what's wrong?"
+            },
+            {
+              "id": "lv9-01-d2",
+              "speaker": "Sam",
+              "arabizi": "3ande waja3 bi batne, hon, 3al yamin.",
+              "arabic": "عندي وجع ببطني، هون، عاليمين.",
+              "english": "I have pain in my stomach, here, on the right."
+            },
+            {
+              "id": "lv9-01-d3",
+              "speaker": "Dr Hani",
+              "arabizi": "men emta?",
+              "arabic": "من إيمتى؟",
+              "english": "Since when?"
+            },
+            {
+              "id": "lv9-01-d4",
+              "speaker": "Sam",
+              "arabizi": "men tlet iyyam. w byewja3ne aktar bel leil.",
+              "arabic": "من تلت إيّام. وبيوجعني أكتر بالليل.",
+              "english": "Three days. And it hurts more at night."
+            },
+            {
+              "id": "lv9-01-d5",
+              "speaker": "Dr Hani",
+              "arabizi": "3andak sokhne?",
+              "arabic": "عندك سخونة؟",
+              "english": "Do you have a fever?"
+            },
+            {
+              "id": "lv9-01-d6",
+              "speaker": "Sam",
+              "arabizi": "la2. bas ma 3am ekol mni7.",
+              "arabic": "لأ. بس ما عم إكل منيح.",
+              "english": "No. But I'm not eating well."
+            },
+            {
+              "id": "lv9-01-d7",
+              "speaker": "Dr Hani",
+              "arabizi": "3andak 7asasiye 3a shi dawa?",
+              "arabic": "عندك حساسية عشي دوا؟",
+              "english": "Are you allergic to any medicine?"
+            },
+            {
+              "id": "lv9-01-d8",
+              "speaker": "Sam",
+              "arabizi": "eh, 3al penicillin.",
+              "arabic": "إيه، عالبنسلين.",
+              "english": "Yes, to penicillin."
+            },
+            {
+              "id": "lv9-01-d9",
+              "speaker": "Dr Hani",
+              "arabizi": "tayyeb. lezmak sowra w ta7lil dam, la nkoun akidin.",
+              "arabic": "طيّب. لازمك صورة وتحليل دم، لنكون أكيدين.",
+              "english": "OK. You need an X-ray and a blood test, to be sure."
+            },
+            {
+              "id": "lv9-01-d10",
+              "speaker": "Sam",
+              "arabizi": "shi khatir?",
+              "arabic": "شي خطير؟",
+              "english": "Is it serious?"
+            },
+            {
+              "id": "lv9-01-d11",
+              "speaker": "Dr Hani",
+              "arabizi": "bzonn la2. erja3 ba3d l ta7lil w menshouf.",
+              "arabic": "بظنّ لأ. إرجع بعد التحليل ومنشوف.",
+              "english": "I don't think so. Come back after the test and we'll see."
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where is the pain?",
+              "options": [
+                "Stomach, right side",
+                "Head",
+                "Back"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is Sam allergic to?",
+              "options": [
+                "Penicillin",
+                "Nothing",
+                "Aspirin"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does the doctor ask for?",
+              "options": [
+                "An X-ray and a blood test",
+                "Rest only",
+                "An operation"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-02",
           "title": "Renting a flat",
+          "subtitle": "Rent a flat",
           "icon": "🏢",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-02-01",
+              "arabizi": "3am dawwer 3a sha22a lal ijar",
+              "arabic": "عم دوّر عشقّة للإيجار",
+              "english": "I'm looking for a flat to rent",
+              "pic": "🔎"
+            },
+            {
+              "id": "lv9-02-02",
+              "arabizi": "addeish l ijar bel shahr?",
+              "arabic": "قدّيش الإيجار بالشهر؟",
+              "english": "How much is the monthly rent?",
+              "pic": "💵"
+            },
+            {
+              "id": "lv9-02-03",
+              "arabizi": "l ijar ma3 l moteur w l mayy?",
+              "arabic": "الإيجار مع الموتور والمي؟",
+              "english": "Does the rent include generator and water?",
+              "pic": "🔋"
+            },
+            {
+              "id": "lv9-02-04",
+              "arabizi": "addeish l ta2min?",
+              "arabic": "قدّيش التأمين؟",
+              "english": "How much is the deposit?",
+              "pic": "🔐"
+            },
+            {
+              "id": "lv9-02-05",
+              "arabizi": "l 3a2d la sene",
+              "arabic": "العقد لسنة",
+              "english": "The contract is for a year",
+              "pic": "📝"
+            },
+            {
+              "id": "lv9-02-06",
+              "arabizi": "fi mafroushet?",
+              "arabic": "فيها فرش؟",
+              "english": "Is it furnished?",
+              "pic": "🛋️"
+            },
+            {
+              "id": "lv9-02-07",
+              "arabizi": "l dafe3 kel tlet shhour",
+              "arabic": "الدفع كل تلت شهور",
+              "english": "Payment every three months",
+              "pic": "📆"
+            },
+            {
+              "id": "lv9-02-08",
+              "arabizi": "fina nefshel shway bel se3r?",
+              "arabic": "فينا نفاصل شوي بالسعر؟",
+              "english": "Can we negotiate the price a bit?",
+              "pic": "🤝"
+            },
+            {
+              "id": "lv9-02-09",
+              "arabizi": "emta fiye fout?",
+              "arabic": "إيمتى فيي فوت؟",
+              "english": "When can I move in?",
+              "pic": "🔑"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-02-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba, ana 3am dawwer 3a sha22a lal ijar bel Achrafieh.",
+              "arabic": "مرحبا، أنا عم دوّر عشقّة للإيجار بالأشرفية.",
+              "english": "Hi, I'm looking for a flat to rent in Achrafieh."
+            },
+            {
+              "id": "lv9-02-d2",
+              "speaker": "Tony",
+              "arabizi": "3ande sha22a, tnein oudet nom, tabe2 tlete.",
+              "arabic": "عندي شقّة، تنين أوض نوم، طابق تالت.",
+              "english": "I have a flat, two bedrooms, third floor."
+            },
+            {
+              "id": "lv9-02-d3",
+              "speaker": "Sam",
+              "arabizi": "addeish l ijar?",
+              "arabic": "قدّيش الإيجار؟",
+              "english": "How much is the rent?"
+            },
+            {
+              "id": "lv9-02-d4",
+              "speaker": "Tony",
+              "arabizi": "tmenmeyye dollar bel shahr.",
+              "arabic": "تمنمية دولار بالشهر.",
+              "english": "Eight hundred dollars a month."
+            },
+            {
+              "id": "lv9-02-d5",
+              "speaker": "Sam",
+              "arabizi": "ma3 l moteur w l mayy?",
+              "arabic": "مع الموتور والمي؟",
+              "english": "Including the generator and water?"
+            },
+            {
+              "id": "lv9-02-d6",
+              "speaker": "Tony",
+              "arabizi": "l mayy ma3, l moteur la2.",
+              "arabic": "المي معها، الموتور لأ.",
+              "english": "Water yes, generator no."
+            },
+            {
+              "id": "lv9-02-d7",
+              "speaker": "Sam",
+              "arabizi": "ghaliye shway. fina nefshel?",
+              "arabic": "غالية شوي. فينا نفاصل؟",
+              "english": "A bit expensive. Can we negotiate?"
+            },
+            {
+              "id": "lv9-02-d8",
+              "speaker": "Tony",
+              "arabizi": "iza dafa3et sene sale2, sab3meyye w khamsin.",
+              "arabic": "إذا دفعت سنة سلف، سبعمية وخمسين.",
+              "english": "If you pay a year upfront, seven hundred and fifty."
+            },
+            {
+              "id": "lv9-02-d9",
+              "speaker": "Sam",
+              "arabizi": "w l ta2min?",
+              "arabic": "والتأمين؟",
+              "english": "And the deposit?"
+            },
+            {
+              "id": "lv9-02-d10",
+              "speaker": "Tony",
+              "arabizi": "shahr wa7ad. w fik tfout awwal l shahr.",
+              "arabic": "شهر واحد. وفيك تفوت أوّل الشهر.",
+              "english": "One month. And you can move in at the start of the month."
+            }
+          ],
+          "questions": [
+            {
+              "q": "How much is the rent at first?",
+              "options": [
+                "800 dollars",
+                "750 dollars",
+                "1000 dollars"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What isn't included?",
+              "options": [
+                "The generator",
+                "Water",
+                "Furniture"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How can Sam get a lower price?",
+              "options": [
+                "Pay a year upfront",
+                "Sign for two years",
+                "Pay in cash monthly"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-03",
           "title": "Bargaining at the souk",
+          "subtitle": "Bargain at the souk",
           "icon": "🧺",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-03-01",
+              "arabizi": "addeish 7a2 hayda l sejjede?",
+              "arabic": "قدّيش حقّ هيدي السجّادة؟",
+              "english": "How much is this rug?",
+              "pic": "🧶"
+            },
+            {
+              "id": "lv9-03-02",
+              "arabizi": "ya 7aram, hayda ghali ktir 3layye",
+              "arabic": "يا حرام، هيدا غالي كتير عليّ",
+              "english": "Oh, that's too expensive for me",
+              "pic": "😩"
+            },
+            {
+              "id": "lv9-03-03",
+              "arabizi": "3melle se3r, ana zboun",
+              "arabic": "عملّي سعر، أنا زبون",
+              "english": "Give me a price, I'm a customer",
+              "pic": "🤝"
+            },
+            {
+              "id": "lv9-03-04",
+              "arabizi": "akher kelme?",
+              "arabic": "آخر كلمة؟",
+              "english": "Your last word?",
+              "pic": "🗣️"
+            },
+            {
+              "id": "lv9-03-05",
+              "arabizi": "2bel 2arib men hon arkhas",
+              "arabic": "قبال قريب من هون أرخص",
+              "english": "It's cheaper nearby",
+              "pic": "👀"
+            },
+            {
+              "id": "lv9-03-06",
+              "arabizi": "bekhod tnein iza nazzalet",
+              "arabic": "باخد تنين إذا نزّلت",
+              "english": "I'll take two if you lower it",
+              "pic": "✌️"
+            },
+            {
+              "id": "lv9-03-07",
+              "arabizi": "mashe l 7al, la khater 3younak",
+              "arabic": "ماشي الحال، لخاطر عيونك",
+              "english": "OK, for the sake of your eyes",
+              "pic": "😉",
+              "note": "A playful phrase sellers use."
+            },
+            {
+              "id": "lv9-03-08",
+              "arabizi": "khalas, ma fiye 2a2tol 7ale",
+              "arabic": "خلص، ما فيي إقتل حالي",
+              "english": "That's it, I can't go lower",
+              "pic": "🛑"
+            },
+            {
+              "id": "lv9-03-09",
+              "arabizi": "7a mshe w erja3",
+              "arabic": "رح إمشي وإرجع",
+              "english": "I'll go and come back",
+              "pic": "🚶"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-03-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba. addeish hal sejjede?",
+              "arabic": "مرحبا. قدّيش هالسجّادة؟",
+              "english": "Hello. How much is this rug?"
+            },
+            {
+              "id": "lv9-03-d2",
+              "speaker": "Abu Ali",
+              "arabizi": "hayde shoghl ide, men l Bekaa. tlet meyye dollar.",
+              "arabic": "هيدي شغل إيد، من البقاع. تلتمية دولار.",
+              "english": "This is handmade, from the Bekaa. Three hundred dollars."
+            },
+            {
+              "id": "lv9-03-d3",
+              "speaker": "Sam",
+              "arabizi": "tlet meyye?! ghali ktir 3layye.",
+              "arabic": "تلتمية؟! غالي كتير عليّ.",
+              "english": "Three hundred?! Too expensive for me."
+            },
+            {
+              "id": "lv9-03-d4",
+              "speaker": "Abu Ali",
+              "arabizi": "shu ra2yak b mitein w khamsin?",
+              "arabic": "شو رأيك بميتين وخمسين؟",
+              "english": "What about two hundred and fifty?"
+            },
+            {
+              "id": "lv9-03-d5",
+              "speaker": "Sam",
+              "arabizi": "mit dollar.",
+              "arabic": "مية دولار.",
+              "english": "A hundred dollars."
+            },
+            {
+              "id": "lv9-03-d6",
+              "speaker": "Abu Ali",
+              "arabizi": "mit dollar?! 3am tmazze7! hayde 3amalet shahr!",
+              "arabic": "مية دولار؟! عم تمزح! هيدي عملت شهر!",
+              "english": "A hundred?! You're joking! This took a month to make!"
+            },
+            {
+              "id": "lv9-03-d7",
+              "speaker": "Sam",
+              "arabizi": "tayyeb, mit w khamsin. akher kelme.",
+              "arabic": "طيّب، مية وخمسين. آخر كلمة.",
+              "english": "OK, a hundred and fifty. Last word."
+            },
+            {
+              "id": "lv9-03-d8",
+              "speaker": "Abu Ali",
+              "arabizi": "mitein. ma fiye 2a2tol 7ale.",
+              "arabic": "ميتين. ما فيي إقتل حالي.",
+              "english": "Two hundred. I can't go lower."
+            },
+            {
+              "id": "lv9-03-d9",
+              "speaker": "Sam",
+              "arabizi": "7a mshe w erja3...",
+              "arabic": "رح إمشي وإرجع...",
+              "english": "I'll go and come back..."
+            },
+            {
+              "id": "lv9-03-d10",
+              "speaker": "Abu Ali",
+              "arabizi": "stanna stanna! mit w tmenin, la khater 3younak!",
+              "arabic": "استنّى استنّى! مية وتمانين، لخاطر عيونك!",
+              "english": "Wait, wait! A hundred and eighty, for your sake!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where is the rug from?",
+              "options": [
+                "The Bekaa",
+                "Iran",
+                "Tripoli"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is the final price?",
+              "options": [
+                "180 dollars",
+                "150 dollars",
+                "200 dollars"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What trick does Sam use?",
+              "options": [
+                "He starts to walk away",
+                "He shows cash",
+                "He brings a friend"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-04",
           "title": "At the mechanic",
+          "subtitle": "At the mechanic",
           "icon": "🔧",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-04-01",
+              "arabizi": "l sayyara 3am ta3mel sot ghareeb",
+              "arabic": "السيّارة عم تعمل صوت غريب",
+              "english": "The car is making a strange noise",
+              "pic": "🔊"
+            },
+            {
+              "id": "lv9-04-02",
+              "arabizi": "l dew l a7mar dawwa",
+              "arabic": "الضو الأحمر ضوّى",
+              "english": "The red light came on",
+              "pic": "🚨"
+            },
+            {
+              "id": "lv9-04-03",
+              "arabizi": "ma 3am tdour",
+              "arabic": "ما عم تدور",
+              "english": "It won't start",
+              "pic": "🔑"
+            },
+            {
+              "id": "lv9-04-04",
+              "arabizi": "l frem ma 3am tmasek",
+              "arabic": "الفرام ما عم تمسك",
+              "english": "The brakes aren't gripping",
+              "pic": "🛑",
+              "note": "Written فرام, from French 'frein'."
+            },
+            {
+              "id": "lv9-04-05",
+              "arabizi": "lezma ghayyar zeit",
+              "arabic": "لازما تغيير زيت",
+              "english": "It needs an oil change",
+              "pic": "🛢️"
+            },
+            {
+              "id": "lv9-04-06",
+              "arabizi": "l battery khelset",
+              "arabic": "البطارية خلصت",
+              "english": "The battery is dead",
+              "pic": "🪫"
+            },
+            {
+              "id": "lv9-04-07",
+              "arabizi": "emta bt-khlas?",
+              "arabic": "إيمتى بتخلص؟",
+              "english": "When will it be ready?",
+              "pic": "⏰"
+            },
+            {
+              "id": "lv9-04-08",
+              "arabizi": "addeish bt-kallef?",
+              "arabic": "قدّيش بتكلّف؟",
+              "english": "How much will it cost?",
+              "pic": "💵"
+            },
+            {
+              "id": "lv9-04-09",
+              "arabizi": "2ta3 asliye aw tijariye?",
+              "arabic": "قطع أصلية أو تجارية؟",
+              "english": "Original or generic parts?",
+              "pic": "⚙️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-04-d1",
+              "speaker": "Sam",
+              "arabizi": "Abu Ali, l sayyara 3am ta3mel sot ghareeb lamma frem.",
+              "arabic": "أبو علي، السيّارة عم تعمل صوت غريب لمّا فرّم.",
+              "english": "Abu Ali, the car is making a strange noise when I brake."
+            },
+            {
+              "id": "lv9-04-d2",
+              "speaker": "Abu Ali",
+              "arabizi": "khalline shouf... eh, l frem lezma tghyir.",
+              "arabic": "خلّيني شوف... إيه، الفرام لازما تغيير.",
+              "english": "Let me see... yes, the brakes need changing."
+            },
+            {
+              "id": "lv9-04-d3",
+              "speaker": "Sam",
+              "arabizi": "w l dew l a7mar dawwa mbere7.",
+              "arabic": "والضو الأحمر ضوّى مبارح.",
+              "english": "And the red light came on yesterday."
+            },
+            {
+              "id": "lv9-04-d4",
+              "speaker": "Abu Ali",
+              "arabizi": "hayda l zeit. lezma ghayyar zeit kamen.",
+              "arabic": "هيدا الزيت. لازما تغيير زيت كمان.",
+              "english": "That's the oil. It needs an oil change too."
+            },
+            {
+              "id": "lv9-04-d5",
+              "speaker": "Sam",
+              "arabizi": "addeish bt-kallef kella?",
+              "arabic": "قدّيش بتكلّف كلّا؟",
+              "english": "How much will it all cost?"
+            },
+            {
+              "id": "lv9-04-d6",
+              "speaker": "Abu Ali",
+              "arabizi": "ma3 2ta3 asliye, mitein dollar. tijariye, mit w 3eshrin.",
+              "arabic": "مع قطع أصلية، ميتين دولار. تجارية، مية وعشرين.",
+              "english": "With original parts, two hundred. Generic, a hundred and twenty."
+            },
+            {
+              "id": "lv9-04-d7",
+              "speaker": "Sam",
+              "arabizi": "l asliye a7san?",
+              "arabic": "الأصلية أحسن؟",
+              "english": "Are the original ones better?"
+            },
+            {
+              "id": "lv9-04-d8",
+              "speaker": "Abu Ali",
+              "arabizi": "lal frem, akid. ma btel3ab bel frem.",
+              "arabic": "للفرام، أكيد. ما بتلعب بالفرام.",
+              "english": "For brakes, definitely. You don't play with brakes."
+            },
+            {
+              "id": "lv9-04-d9",
+              "speaker": "Sam",
+              "arabizi": "tayyeb, asliye. emta bt-khlas?",
+              "arabic": "طيّب، أصلية. إيمتى بتخلص؟",
+              "english": "OK, original. When will it be ready?"
+            },
+            {
+              "id": "lv9-04-d10",
+              "speaker": "Abu Ali",
+              "arabizi": "bukra l dohor.",
+              "arabic": "بكرا الضهر.",
+              "english": "Tomorrow at noon."
+            }
+          ],
+          "questions": [
+            {
+              "q": "When does the car make a noise?",
+              "options": [
+                "When braking",
+                "When starting",
+                "All the time"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why did the red light come on?",
+              "options": [
+                "The oil",
+                "The battery",
+                "The brakes"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "When will the car be ready?",
+              "options": [
+                "Tomorrow at noon",
+                "Today",
+                "In a week"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-05",
           "title": "At a checkpoint",
+          "subtitle": "Pass a checkpoint",
           "icon": "🚧",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-05-01",
+              "arabizi": "awra2ak iza bitrid",
+              "arabic": "أوراقك إذا بتريد",
+              "english": "Your papers, please",
+              "pic": "🪪"
+            },
+            {
+              "id": "lv9-05-02",
+              "arabizi": "hayde l hawiye",
+              "arabic": "هيدي الهويّة",
+              "english": "Here's my ID",
+              "pic": "🆔"
+            },
+            {
+              "id": "lv9-05-03",
+              "arabizi": "3ande e2ame",
+              "arabic": "عندي إقامة",
+              "english": "I have residency",
+              "pic": "📄"
+            },
+            {
+              "id": "lv9-05-04",
+              "arabizi": "men wein jeye?",
+              "arabic": "من وين جايي؟",
+              "english": "Where are you coming from?",
+              "pic": "↩️"
+            },
+            {
+              "id": "lv9-05-05",
+              "arabizi": "la wein rayeh?",
+              "arabic": "لوين رايح؟",
+              "english": "Where are you going?",
+              "pic": "➡️"
+            },
+            {
+              "id": "lv9-05-06",
+              "arabizi": "rayeh 3al shoghl",
+              "arabic": "رايح عالشغل",
+              "english": "I'm going to work",
+              "pic": "💼"
+            },
+            {
+              "id": "lv9-05-07",
+              "arabizi": "fta7 l sandou2",
+              "arabic": "فتاح الصندوق",
+              "english": "Open the boot",
+              "pic": "🚗"
+            },
+            {
+              "id": "lv9-05-08",
+              "arabizi": "tfaddal, ma3 l salame",
+              "arabic": "تفضّل، مع السلامة",
+              "english": "Go ahead, goodbye",
+              "pic": "✅"
+            },
+            {
+              "id": "lv9-05-09",
+              "arabizi": "ya3tik l 3afye ya watan",
+              "arabic": "يعطيك العافية يا وطن",
+              "english": "Thanks, sir",
+              "pic": "🫡",
+              "note": "Polite way to thank a soldier."
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-05-d1",
+              "speaker": "Officer",
+              "arabizi": "masa l kheir. awra2ak iza bitrid.",
+              "arabic": "مسا الخير. أوراقك إذا بتريد.",
+              "english": "Good evening. Your papers, please."
+            },
+            {
+              "id": "lv9-05-d2",
+              "speaker": "Sam",
+              "arabizi": "masa l nour. tfaddal, hayda l passport w hayde l e2ame.",
+              "arabic": "مسا النور. تفضّل، هيدا الباسبور وهيدي الإقامة.",
+              "english": "Good evening. Here's my passport and residency."
+            },
+            {
+              "id": "lv9-05-d3",
+              "speaker": "Officer",
+              "arabizi": "men wein jeye?",
+              "arabic": "من وين جايي؟",
+              "english": "Where are you coming from?"
+            },
+            {
+              "id": "lv9-05-d4",
+              "speaker": "Sam",
+              "arabizi": "men Jbeil.",
+              "arabic": "من جبيل.",
+              "english": "From Byblos."
+            },
+            {
+              "id": "lv9-05-d5",
+              "speaker": "Officer",
+              "arabizi": "w la wein rayeh?",
+              "arabic": "ولوين رايح؟",
+              "english": "And where are you going?"
+            },
+            {
+              "id": "lv9-05-d6",
+              "speaker": "Sam",
+              "arabizi": "3al beit, bel Hamra.",
+              "arabic": "عالبيت، بالحمرا.",
+              "english": "Home, in Hamra."
+            },
+            {
+              "id": "lv9-05-d7",
+              "speaker": "Officer",
+              "arabizi": "shu 3am ta3mel bi Lebnen?",
+              "arabic": "شو عم تعمل بلبنان؟",
+              "english": "What are you doing in Lebanon?"
+            },
+            {
+              "id": "lv9-05-d8",
+              "speaker": "Sam",
+              "arabizi": "bshteghel mhandes.",
+              "arabic": "بشتغل مهندس.",
+              "english": "I work as an engineer."
+            },
+            {
+              "id": "lv9-05-d9",
+              "speaker": "Officer",
+              "arabizi": "tamem. tfaddal, ma3 l salame.",
+              "arabic": "تمام. تفضّل، مع السلامة.",
+              "english": "Fine. Go ahead, goodbye."
+            },
+            {
+              "id": "lv9-05-d10",
+              "speaker": "Sam",
+              "arabizi": "ya3tik l 3afye.",
+              "arabic": "يعطيك العافية.",
+              "english": "Thank you."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Sam show?",
+              "options": [
+                "Passport and residency",
+                "Driving licence",
+                "Nothing"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Where is Sam going?",
+              "options": [
+                "Home in Hamra",
+                "Byblos",
+                "Work"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is Sam's job?",
+              "options": [
+                "Engineer",
+                "Teacher",
+                "Doctor"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-06",
           "title": "Residency paperwork",
+          "subtitle": "Sort out residency papers",
           "icon": "📑",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-06-01",
+              "arabizi": "badde jadded l e2ame",
+              "arabic": "بدّي جدّد الإقامة",
+              "english": "I want to renew my residency",
+              "pic": "🔄"
+            },
+            {
+              "id": "lv9-06-02",
+              "arabizi": "wein l amn l 3am?",
+              "arabic": "وين الأمن العام؟",
+              "english": "Where's General Security?",
+              "pic": "🏛️",
+              "note": "The office that handles visas and residency."
+            },
+            {
+              "id": "lv9-06-03",
+              "arabizi": "shu l awra2 l matloube?",
+              "arabic": "شو الأوراق المطلوبة؟",
+              "english": "What documents are required?",
+              "pic": "📋"
+            },
+            {
+              "id": "lv9-06-04",
+              "arabizi": "soura passport w tasdi2",
+              "arabic": "صورة باسبور وتصديق",
+              "english": "A passport copy and certification",
+              "pic": "📄"
+            },
+            {
+              "id": "lv9-06-05",
+              "arabizi": "lazem jib kafil",
+              "arabic": "لازم جيب كفيل",
+              "english": "I need a sponsor",
+              "pic": "🤝"
+            },
+            {
+              "id": "lv9-06-06",
+              "arabizi": "l mo3amale btekhod shahr",
+              "arabic": "المعاملة بتاخد شهر",
+              "english": "The process takes a month",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv9-06-07",
+              "arabizi": "erja3 ba3d jem3atein",
+              "arabic": "إرجع بعد جمعتين",
+              "english": "Come back in two weeks",
+              "pic": "📆"
+            },
+            {
+              "id": "lv9-06-08",
+              "arabizi": "na2es wara2a",
+              "arabic": "ناقص ورقة",
+              "english": "One paper is missing",
+              "pic": "❗"
+            },
+            {
+              "id": "lv9-06-09",
+              "arabizi": "fi 3ajale?",
+              "arabic": "في عجلة؟",
+              "english": "Is there a fast-track?",
+              "pic": "⚡"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-06-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba, badde jadded l e2ame.",
+              "arabic": "مرحبا، بدّي جدّد الإقامة.",
+              "english": "Hi, I want to renew my residency."
+            },
+            {
+              "id": "lv9-06-d2",
+              "speaker": "Clerk",
+              "arabizi": "3andak l awra2? soura passport, soura e2ame, w 3a2d shoghl.",
+              "arabic": "عندك الأوراق؟ صورة باسبور، صورة إقامة، وعقد شغل.",
+              "english": "Do you have the papers? Passport copy, residency copy, and work contract."
+            },
+            {
+              "id": "lv9-06-d3",
+              "speaker": "Sam",
+              "arabizi": "tfaddale.",
+              "arabic": "تفضّلي.",
+              "english": "Here you go."
+            },
+            {
+              "id": "lv9-06-d4",
+              "speaker": "Clerk",
+              "arabizi": "...na2es wara2a. l 3a2d lezmo tasdi2 men l sharke.",
+              "arabic": "...ناقص ورقة. العقد لازمو تصديق من الشركة.",
+              "english": "...One paper's missing. The contract needs company certification."
+            },
+            {
+              "id": "lv9-06-d5",
+              "speaker": "Sam",
+              "arabizi": "ya allah. fiye jiba bukra?",
+              "arabic": "يا الله. فيي جيبا بكرا؟",
+              "english": "Oh no. Can I bring it tomorrow?"
+            },
+            {
+              "id": "lv9-06-d6",
+              "speaker": "Clerk",
+              "arabizi": "akid. bas khod ra2m jdid.",
+              "arabic": "أكيد. بس خود رقم جديد.",
+              "english": "Sure. But take a new number."
+            },
+            {
+              "id": "lv9-06-d7",
+              "speaker": "Sam",
+              "arabizi": "w addeish btekhod l mo3amale?",
+              "arabic": "وقدّيش بتاخد المعاملة؟",
+              "english": "And how long does the process take?"
+            },
+            {
+              "id": "lv9-06-d8",
+              "speaker": "Clerk",
+              "arabizi": "jem3atein la shahr.",
+              "arabic": "جمعتين لشهر.",
+              "english": "Two weeks to a month."
+            },
+            {
+              "id": "lv9-06-d9",
+              "speaker": "Sam",
+              "arabizi": "w fi 3ajale?",
+              "arabic": "وفي عجلة؟",
+              "english": "And is there a fast-track?"
+            },
+            {
+              "id": "lv9-06-d10",
+              "speaker": "Clerk",
+              "arabizi": "la2, ma fi.",
+              "arabic": "لأ، ما في.",
+              "english": "No, there isn't."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What's missing?",
+              "options": [
+                "The contract certification",
+                "A photo",
+                "The passport"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How long does the process take?",
+              "options": [
+                "Two weeks to a month",
+                "A day",
+                "Three months"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Is there a fast-track?",
+              "options": [
+                "No",
+                "Yes, for a fee",
+                "Only for Lebanese"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-07",
           "title": "At the dentist",
+          "subtitle": "At the dentist",
           "icon": "🦷",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-07-01",
+              "arabizi": "sene 3am yewja3ne",
+              "arabic": "سنّي عم يوجعني",
+              "english": "My tooth hurts",
+              "pic": "🦷"
+            },
+            {
+              "id": "lv9-07-02",
+              "arabizi": "byewja3ne lamma eshrab shi bared",
+              "arabic": "بيوجعني لمّا إشرب شي بارد",
+              "english": "It hurts when I drink something cold",
+              "pic": "🧊"
+            },
+            {
+              "id": "lv9-07-03",
+              "arabizi": "fi soos",
+              "arabic": "في سوس",
+              "english": "There's a cavity",
+              "pic": "🕳️"
+            },
+            {
+              "id": "lv9-07-04",
+              "arabizi": "lezmo 7asho",
+              "arabic": "لازمو حشوة",
+              "english": "It needs a filling",
+              "pic": "🩹"
+            },
+            {
+              "id": "lv9-07-05",
+              "arabizi": "lazem nshil l 3asab",
+              "arabic": "لازم نشيل العصب",
+              "english": "We need a root canal",
+              "pic": "🔧"
+            },
+            {
+              "id": "lv9-07-06",
+              "arabizi": "baddak bendj?",
+              "arabic": "بدّك بنج؟",
+              "english": "Do you want anaesthetic?",
+              "pic": "💉"
+            },
+            {
+              "id": "lv9-07-07",
+              "arabizi": "fta7 temmak",
+              "arabic": "فتاح تمّك",
+              "english": "Open your mouth",
+              "pic": "😮"
+            },
+            {
+              "id": "lv9-07-08",
+              "arabizi": "ma tekol shi la se3tein",
+              "arabic": "ما تاكل شي لساعتين",
+              "english": "Don't eat anything for two hours",
+              "pic": "⏱️"
+            },
+            {
+              "id": "lv9-07-09",
+              "arabizi": "ana khayef men l dentist",
+              "arabic": "أنا خايف من الدنتيست",
+              "english": "I'm scared of the dentist",
+              "pic": "😨"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-07-d1",
+              "speaker": "Dr Hani",
+              "arabizi": "ahla Sam. shu fik?",
+              "arabic": "أهلا سام. شو فيك؟",
+              "english": "Hello Sam. What's the matter?"
+            },
+            {
+              "id": "lv9-07-d2",
+              "speaker": "Sam",
+              "arabizi": "sene 3am yewja3ne, khassatan lamma eshrab shi bared.",
+              "arabic": "سنّي عم يوجعني، خصوصًا لمّا إشرب شي بارد.",
+              "english": "My tooth hurts, especially when I drink something cold."
+            },
+            {
+              "id": "lv9-07-d3",
+              "speaker": "Dr Hani",
+              "arabizi": "fta7 temmak... eh, fi soos.",
+              "arabic": "فتاح تمّك... إيه، في سوس.",
+              "english": "Open your mouth... yes, there's a cavity."
+            },
+            {
+              "id": "lv9-07-d4",
+              "speaker": "Sam",
+              "arabizi": "shi kbir?",
+              "arabic": "شي كبير؟",
+              "english": "Something big?"
+            },
+            {
+              "id": "lv9-07-d5",
+              "speaker": "Dr Hani",
+              "arabizi": "la2, bas lezmo 7asho. mish 3asab, l7amdella.",
+              "arabic": "لأ، بس لازمو حشوة. مش عصب، الحمدلله.",
+              "english": "No, it just needs a filling. Not a root canal, thank God."
+            },
+            {
+              "id": "lv9-07-d6",
+              "speaker": "Sam",
+              "arabizi": "ana khayef shway...",
+              "arabic": "أنا خايف شوي...",
+              "english": "I'm a bit scared..."
+            },
+            {
+              "id": "lv9-07-d7",
+              "speaker": "Dr Hani",
+              "arabizi": "ma tkhaf. 7a a3tik bendj, ma 7a t7es b shi.",
+              "arabic": "ما تخاف. رح إعطيك بنج، ما رح تحسّ بشي.",
+              "english": "Don't be scared. I'll give you anaesthetic, you won't feel a thing."
+            },
+            {
+              "id": "lv9-07-d8",
+              "speaker": "Sam",
+              "arabizi": "addeish btekhod?",
+              "arabic": "قدّيش بتاخد؟",
+              "english": "How long will it take?"
+            },
+            {
+              "id": "lv9-07-d9",
+              "speaker": "Dr Hani",
+              "arabizi": "noss se3a. w ba3dein ma tekol shi la se3tein.",
+              "arabic": "نص ساعة. وبعدين ما تاكل شي لساعتين.",
+              "english": "Half an hour. And then don't eat for two hours."
+            }
+          ],
+          "questions": [
+            {
+              "q": "When does the tooth hurt?",
+              "options": [
+                "When drinking something cold",
+                "When chewing",
+                "All the time"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Sam need?",
+              "options": [
+                "A filling",
+                "A root canal",
+                "An extraction"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How long can't Sam eat afterwards?",
+              "options": [
+                "Two hours",
+                "Half an hour",
+                "A day"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-08",
           "title": "A school meeting",
+          "subtitle": "A meeting at school",
           "icon": "🏫",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-08-01",
+              "arabizi": "ana bayy Rami",
+              "arabic": "أنا بيّ رامي",
+              "english": "I'm Rami's father",
+              "pic": "👨‍👦",
+              "f": {
+                "arabizi": "ana emm Rami",
+                "arabic": "أنا إمّ رامي"
+              }
+            },
+            {
+              "id": "lv9-08-02",
+              "arabizi": "kif Rami bel saff?",
+              "arabic": "كيف رامي بالصف؟",
+              "english": "How is Rami in class?",
+              "pic": "🏫"
+            },
+            {
+              "id": "lv9-08-03",
+              "arabizi": "3alamato mni7a bel riyadiyat",
+              "arabic": "علاماتو منيحة بالرياضيات",
+              "english": "His maths grades are good",
+              "pic": "➗"
+            },
+            {
+              "id": "lv9-08-04",
+              "arabizi": "bas bel 3arabe da3if shway",
+              "arabic": "بس بالعربي ضعيف شوي",
+              "english": "But he's a bit weak in Arabic",
+              "pic": "📉"
+            },
+            {
+              "id": "lv9-08-05",
+              "arabizi": "byehke ktir bel saff",
+              "arabic": "بيحكي كتير بالصف",
+              "english": "He talks a lot in class",
+              "pic": "🗣️"
+            },
+            {
+              "id": "lv9-08-06",
+              "arabizi": "lezmo ders khsousi",
+              "arabic": "لازمو درس خصوصي",
+              "english": "He needs private lessons",
+              "pic": "👩‍🏫"
+            },
+            {
+              "id": "lv9-08-07",
+              "arabizi": "3ando rfi2at ktir",
+              "arabic": "عندو رفقات كتير",
+              "english": "He has lots of friends",
+              "pic": "👫"
+            },
+            {
+              "id": "lv9-08-08",
+              "arabizi": "shu fina na3mel bel beit?",
+              "arabic": "شو فينا نعمل بالبيت؟",
+              "english": "What can we do at home?",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv9-08-09",
+              "arabizi": "2ra ma3o kel yom",
+              "arabic": "إقرا معو كل يوم",
+              "english": "Read with him every day",
+              "pic": "📖"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-08-d1",
+              "speaker": "Mona",
+              "arabizi": "ahla w sahla. enta bayy Rami?",
+              "arabic": "أهلا وسهلا. إنت بيّ رامي؟",
+              "english": "Welcome. You're Rami's father?"
+            },
+            {
+              "id": "lv9-08-d2",
+              "speaker": "Sam",
+              "arabizi": "eh. kif Rami bel saff?",
+              "arabic": "إيه. كيف رامي بالصف؟",
+              "english": "Yes. How is Rami in class?"
+            },
+            {
+              "id": "lv9-08-d3",
+              "speaker": "Mona",
+              "arabizi": "shater ktir bel riyadiyat. bas bel 3arabe da3if shway.",
+              "arabic": "شاطر كتير بالرياضيات. بس بالعربي ضعيف شوي.",
+              "english": "Very good at maths. But a bit weak in Arabic."
+            },
+            {
+              "id": "lv9-08-d4",
+              "speaker": "Sam",
+              "arabizi": "ma3leish, bel beit mne7ke inglize aktar.",
+              "arabic": "معليش، بالبيت منحكي إنكليزي أكتر.",
+              "english": "Sorry, at home we speak more English."
+            },
+            {
+              "id": "lv9-08-d5",
+              "speaker": "Mona",
+              "arabizi": "mafhoum. 2ra ma3o 3arabe kel yom, shway shway.",
+              "arabic": "مفهوم. إقرا معو عربي كل يوم، شوي شوي.",
+              "english": "Understood. Read Arabic with him every day, a little at a time."
+            },
+            {
+              "id": "lv9-08-d6",
+              "speaker": "Sam",
+              "arabizi": "tayyeb. w bel saff, kif tasarrfo?",
+              "arabic": "طيّب. وبالصف، كيف تصرّفو؟",
+              "english": "OK. And in class, how does he behave?"
+            },
+            {
+              "id": "lv9-08-d7",
+              "speaker": "Mona",
+              "arabizi": "mahdoum... bas byehke ktir!",
+              "arabic": "مهضوم... بس بيحكي كتير!",
+              "english": "Charming... but he talks a lot!"
+            },
+            {
+              "id": "lv9-08-d8",
+              "speaker": "Sam",
+              "arabizi": "metl bayyo!",
+              "arabic": "متل بيّو!",
+              "english": "Like his father!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "What is Rami good at?",
+              "options": [
+                "Maths",
+                "Arabic",
+                "Sport"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does the teacher suggest?",
+              "options": [
+                "Read Arabic with him daily",
+                "Private lessons",
+                "Less TV"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What's Rami's behaviour problem?",
+              "options": [
+                "He talks a lot",
+                "He's late",
+                "He fights"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-09",
           "title": "At the emergency room",
+          "subtitle": "At the emergency room",
           "icon": "🚑",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-09-01",
+              "arabizi": "emergency! dakhlkon!",
+              "arabic": "إمرجنسي! دخلكن!",
+              "english": "Emergency! Please!",
+              "pic": "🚨"
+            },
+            {
+              "id": "lv9-09-02",
+              "arabizi": "w2e3 w ma 3am yfi2",
+              "arabic": "وقع وما عم يفيق",
+              "english": "He fell and isn't waking up",
+              "pic": "😟"
+            },
+            {
+              "id": "lv9-09-03",
+              "arabizi": "ma 3am fiye etnaffas",
+              "arabic": "ما عم فيي إتنفّس",
+              "english": "I can't breathe",
+              "pic": "🫁"
+            },
+            {
+              "id": "lv9-09-04",
+              "arabizi": "3ande waja3 bi sadre",
+              "arabic": "عندي وجع بصدري",
+              "english": "I have chest pain",
+              "pic": "💔"
+            },
+            {
+              "id": "lv9-09-05",
+              "arabizi": "3ayyetou lal ambulance",
+              "arabic": "عيّطوا للإسعاف",
+              "english": "Call the ambulance",
+              "pic": "🚑"
+            },
+            {
+              "id": "lv9-09-06",
+              "arabizi": "3andak ta2min?",
+              "arabic": "عندك تأمين؟",
+              "english": "Do you have insurance?",
+              "pic": "🛡️"
+            },
+            {
+              "id": "lv9-09-07",
+              "arabizi": "3abbe hal wara2a",
+              "arabic": "عبّي هالورقة",
+              "english": "Fill in this form",
+              "pic": "📝"
+            },
+            {
+              "id": "lv9-09-08",
+              "arabizi": "l doktor jeye hala2",
+              "arabic": "الدكتور جايي هلّق",
+              "english": "The doctor is coming now",
+              "pic": "👨‍⚕️"
+            },
+            {
+              "id": "lv9-09-09",
+              "arabizi": "7a yenem leile hon",
+              "arabic": "رح ينام ليلة هون",
+              "english": "He'll stay the night here",
+              "pic": "🛏️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-09-d1",
+              "speaker": "Sam",
+              "arabizi": "dakhlkon! emergency!",
+              "arabic": "دخلكن! إمرجنسي!",
+              "english": "Please! Emergency!"
+            },
+            {
+              "id": "lv9-09-d2",
+              "speaker": "Clerk",
+              "arabizi": "shu sar?",
+              "arabic": "شو صار؟",
+              "english": "What happened?"
+            },
+            {
+              "id": "lv9-09-d3",
+              "speaker": "Sam",
+              "arabizi": "rfi2e Karim w2e3 3an l mawtar w ma 3am ye2dar yo2af.",
+              "arabic": "رفيقي كريم وقع عن الموتو وما عم يقدر يوقف.",
+              "english": "My friend Karim fell off his motorbike and can't stand up."
+            },
+            {
+              "id": "lv9-09-d4",
+              "speaker": "Clerk",
+              "arabizi": "byehke? fe2?",
+              "arabic": "بيحكي؟ فايق؟",
+              "english": "Is he talking? Is he conscious?"
+            },
+            {
+              "id": "lv9-09-d5",
+              "speaker": "Sam",
+              "arabizi": "eh, byehke, bas ejro 3am tewja3o ktir.",
+              "arabic": "إيه، بيحكي، بس إجرو عم توجعو كتير.",
+              "english": "Yes, he's talking, but his leg hurts a lot."
+            },
+            {
+              "id": "lv9-09-d6",
+              "speaker": "Clerk",
+              "arabizi": "tamem. 3ando ta2min?",
+              "arabic": "تمام. عندو تأمين؟",
+              "english": "OK. Does he have insurance?"
+            },
+            {
+              "id": "lv9-09-d7",
+              "speaker": "Sam",
+              "arabizi": "ma ba3ref... eh, hayde l card.",
+              "arabic": "ما بعرف... إيه، هيدي الكارت.",
+              "english": "I don't know... yes, here's the card."
+            },
+            {
+              "id": "lv9-09-d8",
+              "speaker": "Clerk",
+              "arabizi": "3abbe hal wara2a. l doktor jeye hala2.",
+              "arabic": "عبّي هالورقة. الدكتور جايي هلّق.",
+              "english": "Fill in this form. The doctor's coming now."
+            },
+            {
+              "id": "lv9-09-d9",
+              "speaker": "Dr Hani",
+              "arabizi": "lezmo sowra la ejro. bzonn mkasra. 7a yenem leile hon.",
+              "arabic": "لازمو صورة لإجرو. بظنّ مكسورة. رح ينام ليلة هون.",
+              "english": "He needs an X-ray of his leg. I think it's broken. He'll stay the night."
+            },
+            {
+              "id": "lv9-09-d10",
+              "speaker": "Sam",
+              "arabizi": "l7amdella 3al salame.",
+              "arabic": "الحمدلله عالسلامة.",
+              "english": "Thank God he's OK."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What happened to Karim?",
+              "options": [
+                "He fell off his motorbike",
+                "Car accident",
+                "He fainted"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What hurts?",
+              "options": [
+                "His leg",
+                "His head",
+                "His chest"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does the doctor think?",
+              "options": [
+                "The leg is broken",
+                "It's nothing",
+                "He needs surgery"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-10",
           "title": "Problems with the landlord",
+          "subtitle": "Deal with your landlord",
           "icon": "🏚️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-10-01",
+              "arabizi": "fi naz bel 7eit",
+              "arabic": "في نزّ بالحيط",
+              "english": "There's damp in the wall",
+              "pic": "💧"
+            },
+            {
+              "id": "lv9-10-02",
+              "arabizi": "l sakhkhan kharbaan",
+              "arabic": "السخّان خربان",
+              "english": "The water heater is broken",
+              "pic": "🚿"
+            },
+            {
+              "id": "lv9-10-03",
+              "arabizi": "3am tshatte men l sat7",
+              "arabic": "عم تشتّي من السطح",
+              "english": "It's leaking from the roof",
+              "pic": "🌧️"
+            },
+            {
+              "id": "lv9-10-04",
+              "arabizi": "ellak shahr wa3edne",
+              "arabic": "إلك شهر واعدني",
+              "english": "You've been promising me for a month",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv9-10-05",
+              "arabizi": "iza ma tsallaht, ma 7a edfa3",
+              "arabic": "إذا ما تصلّحت، ما رح إدفع",
+              "english": "If it's not fixed, I won't pay",
+              "pic": "✋"
+            },
+            {
+              "id": "lv9-10-06",
+              "arabizi": "l ijar 7a yzid?",
+              "arabic": "الإيجار رح يزيد؟",
+              "english": "Is the rent going up?",
+              "pic": "📈"
+            },
+            {
+              "id": "lv9-10-07",
+              "arabizi": "l 3a2d byeshmel l tasli7at",
+              "arabic": "العقد بيشمل التصليحات",
+              "english": "The contract covers repairs",
+              "pic": "📝"
+            },
+            {
+              "id": "lv9-10-08",
+              "arabizi": "ba3atlak sowar",
+              "arabic": "بعتلك صوَر",
+              "english": "I sent you photos",
+              "pic": "📸"
+            },
+            {
+              "id": "lv9-10-09",
+              "arabizi": "bjible ma3allem bukra",
+              "arabic": "بجيبلك معلّم بكرا",
+              "english": "I'll bring you a workman tomorrow",
+              "pic": "👷"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-10-d1",
+              "speaker": "Sam",
+              "arabizi": "alo, Abu Tony? ana Sam, l mesta2jer.",
+              "arabic": "ألو، أبو طوني؟ أنا سام، المستأجر.",
+              "english": "Hello, Abu Tony? It's Sam, the tenant."
+            },
+            {
+              "id": "lv9-10-d2",
+              "speaker": "Tony",
+              "arabizi": "ahla Sam. kifak?",
+              "arabic": "أهلا سام. كيفك؟",
+              "english": "Hi Sam. How are you?"
+            },
+            {
+              "id": "lv9-10-d3",
+              "speaker": "Sam",
+              "arabizi": "mish ktir mni7. l sakhkhan kharbaan men jem3a, w fi naz bel 7eit.",
+              "arabic": "مش كتير منيح. السخّان خربان من جمعة، وفي نزّ بالحيط.",
+              "english": "Not great. The water heater has been broken for a week, and there's damp in the wall."
+            },
+            {
+              "id": "lv9-10-d4",
+              "speaker": "Tony",
+              "arabizi": "ya 3ammi, l sakhkhan 2adim...",
+              "arabic": "يا عمّي، السخّان قديم...",
+              "english": "Look, the heater is old..."
+            },
+            {
+              "id": "lv9-10-d5",
+              "speaker": "Sam",
+              "arabizi": "ba3atlak sowar. w l 3a2d byeshmel l tasli7at.",
+              "arabic": "بعتلك صوَر. والعقد بيشمل التصليحات.",
+              "english": "I sent you photos. And the contract covers repairs."
+            },
+            {
+              "id": "lv9-10-d6",
+              "speaker": "Tony",
+              "arabizi": "mazbout, mazbout.",
+              "arabic": "مظبوط، مظبوط.",
+              "english": "True, true."
+            },
+            {
+              "id": "lv9-10-d7",
+              "speaker": "Sam",
+              "arabizi": "ellak jem3a wa3edne.",
+              "arabic": "إلك جمعة واعدني.",
+              "english": "You've been promising me for a week."
+            },
+            {
+              "id": "lv9-10-d8",
+              "speaker": "Tony",
+              "arabizi": "tayyeb, bjiblak ma3allem bukra l sobe7.",
+              "arabic": "طيّب، بجيبلك معلّم بكرا الصبح.",
+              "english": "OK, I'll bring you a workman tomorrow morning."
+            },
+            {
+              "id": "lv9-10-d9",
+              "speaker": "Sam",
+              "arabizi": "w l 7eit?",
+              "arabic": "والحيط؟",
+              "english": "And the wall?"
+            },
+            {
+              "id": "lv9-10-d10",
+              "speaker": "Tony",
+              "arabizi": "wa7de wa7de. l sakhkhan awwal.",
+              "arabic": "وحدة وحدة. السخّان أوّل.",
+              "english": "One thing at a time. The heater first."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What's broken?",
+              "options": [
+                "The water heater",
+                "The fridge",
+                "The lift"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Sam remind the landlord of?",
+              "options": [
+                "The contract covers repairs",
+                "The rent is late",
+                "He'll move out"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "When will the workman come?",
+              "options": [
+                "Tomorrow morning",
+                "Today",
+                "Next week"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-11",
           "title": "Buying a phone",
+          "subtitle": "Buy a phone",
           "icon": "📱",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-11-01",
+              "arabizi": "badde telefon jdid",
+              "arabic": "بدّي تلفون جديد",
+              "english": "I want a new phone",
+              "pic": "📱"
+            },
+            {
+              "id": "lv9-11-02",
+              "arabizi": "shu l far2 bein hayda w hayda?",
+              "arabic": "شو الفرق بين هيدا وهيدا؟",
+              "english": "What's the difference between this one and that one?",
+              "pic": "🤔"
+            },
+            {
+              "id": "lv9-11-03",
+              "arabizi": "l camera a7san",
+              "arabic": "الكاميرا أحسن",
+              "english": "The camera is better",
+              "pic": "📸"
+            },
+            {
+              "id": "lv9-11-04",
+              "arabizi": "l battery btekhod kel l nhar",
+              "arabic": "البطارية بتاخد كل النهار",
+              "english": "The battery lasts all day",
+              "pic": "🔋"
+            },
+            {
+              "id": "lv9-11-05",
+              "arabizi": "fi kafele?",
+              "arabic": "في كفالة؟",
+              "english": "Is there a warranty?",
+              "pic": "🛡️"
+            },
+            {
+              "id": "lv9-11-06",
+              "arabizi": "kafele sene",
+              "arabic": "كفالة سنة",
+              "english": "A one-year warranty",
+              "pic": "📅"
+            },
+            {
+              "id": "lv9-11-07",
+              "arabizi": "hayda aslé aw copie?",
+              "arabic": "هيدا أصلي أو كوبي؟",
+              "english": "Is this genuine or a copy?",
+              "pic": "🔍"
+            },
+            {
+              "id": "lv9-11-08",
+              "arabizi": "bta3mel 2esat?",
+              "arabic": "بتعمل تقسيط؟",
+              "english": "Do you do instalments?",
+              "pic": "💳"
+            },
+            {
+              "id": "lv9-11-09",
+              "arabizi": "7ottle screen protector",
+              "arabic": "حطّلي سكرين بروتكتور",
+              "english": "Put a screen protector on it",
+              "pic": "🛡️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-11-d1",
+              "speaker": "Sam",
+              "arabizi": "badde telefon jdid. shu l far2 bein hayda w hayda?",
+              "arabic": "بدّي تلفون جديد. شو الفرق بين هيدا وهيدا؟",
+              "english": "I want a new phone. What's the difference between this one and that one?"
+            },
+            {
+              "id": "lv9-11-d2",
+              "speaker": "Ziad",
+              "arabizi": "hayda l camera a7san bi ktir, bas l battery a2al.",
+              "arabic": "هيدا الكاميرا أحسن بكتير، بس البطارية أقل.",
+              "english": "This one has a much better camera, but less battery."
+            },
+            {
+              "id": "lv9-11-d3",
+              "speaker": "Sam",
+              "arabizi": "w haydak?",
+              "arabic": "وهيداك؟",
+              "english": "And that one?"
+            },
+            {
+              "id": "lv9-11-d4",
+              "speaker": "Ziad",
+              "arabizi": "l battery btekhod yomein, w arkhas b mit dollar.",
+              "arabic": "البطارية بتاخد يومين، وأرخص بمية دولار.",
+              "english": "The battery lasts two days, and it's a hundred dollars cheaper."
+            },
+            {
+              "id": "lv9-11-d5",
+              "speaker": "Sam",
+              "arabizi": "ana ma b-sawwer ktir. bekhod haydak. fi kafele?",
+              "arabic": "أنا ما بصوّر كتير. باخد هيداك. في كفالة؟",
+              "english": "I don't take many photos. I'll take that one. Is there a warranty?"
+            },
+            {
+              "id": "lv9-11-d6",
+              "speaker": "Ziad",
+              "arabizi": "kafele sene, men l sharke.",
+              "arabic": "كفالة سنة، من الشركة.",
+              "english": "A one-year company warranty."
+            },
+            {
+              "id": "lv9-11-d7",
+              "speaker": "Sam",
+              "arabizi": "w hayda asle?",
+              "arabic": "وهيدا أصلي؟",
+              "english": "And it's genuine?"
+            },
+            {
+              "id": "lv9-11-d8",
+              "speaker": "Ziad",
+              "arabizi": "mish copie, ma tkhaf! w 7ottlak screen protector hdiye.",
+              "arabic": "مش كوبي، ما تخاف! وبحطّلك سكرين بروتكتور هدية.",
+              "english": "Not a copy, don't worry! And I'll put a screen protector on for free."
+            }
+          ],
+          "questions": [
+            {
+              "q": "Which phone has the better camera?",
+              "options": [
+                "The first one",
+                "The second one",
+                "Both the same"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why does Sam choose the second phone?",
+              "options": [
+                "Better battery and cheaper",
+                "Better camera",
+                "It's newer"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Ziad give for free?",
+              "options": [
+                "A screen protector",
+                "A case",
+                "A charger"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-12",
           "title": "Calling a plumber or electrician",
+          "subtitle": "Call a plumber or an electrician",
           "icon": "🔌",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-12-01",
+              "arabizi": "fi tasrib mayy ta7t l maghsale",
+              "arabic": "في تسريب مي تحت المغسلة",
+              "english": "There's a water leak under the sink",
+              "pic": "🚰"
+            },
+            {
+              "id": "lv9-12-02",
+              "arabizi": "l mayy ma 3am tenzal bel bal3a",
+              "arabic": "المي ما عم تنزل بالبالوعة",
+              "english": "The water isn't going down the drain",
+              "pic": "🌀"
+            },
+            {
+              "id": "lv9-12-03",
+              "arabizi": "kel ma dawwi l daw, bta2ta3 l kahraba",
+              "arabic": "كل ما ضوّي الضو، بتقطع الكهربا",
+              "english": "Every time I turn on the light, the power cuts",
+              "pic": "💡"
+            },
+            {
+              "id": "lv9-12-04",
+              "arabizi": "fi rihet 7ari2",
+              "arabic": "في ريحة حريق",
+              "english": "There's a burning smell",
+              "pic": "🔥"
+            },
+            {
+              "id": "lv9-12-05",
+              "arabizi": "emta fik teje?",
+              "arabic": "إيمتى فيك تجي؟",
+              "english": "When can you come?",
+              "pic": "📅"
+            },
+            {
+              "id": "lv9-12-06",
+              "arabizi": "addeish btekhod 3al ze3ra?",
+              "arabic": "قدّيش بتاخد عالزيارة؟",
+              "english": "How much do you charge for a visit?",
+              "pic": "💵"
+            },
+            {
+              "id": "lv9-12-07",
+              "arabizi": "l 2et3a 3alayye?",
+              "arabic": "القطعة عليّ؟",
+              "english": "Do I pay for the part?",
+              "pic": "⚙️"
+            },
+            {
+              "id": "lv9-12-08",
+              "arabizi": "kharab l disjoncteur",
+              "arabic": "خرب الديجونكتور",
+              "english": "The circuit breaker is broken",
+              "pic": "🔌",
+              "note": "From French 'disjoncteur'."
+            },
+            {
+              "id": "lv9-12-09",
+              "arabizi": "ma bta3mel shi la ousal",
+              "arabic": "ما تعمل شي لَوصل",
+              "english": "Don't touch anything until I arrive",
+              "pic": "✋"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-12-d1",
+              "speaker": "Sam",
+              "arabizi": "alo, m3allem Abu Ali?",
+              "arabic": "ألو، معلّم أبو علي؟",
+              "english": "Hello, is this Abu Ali the electrician?"
+            },
+            {
+              "id": "lv9-12-d2",
+              "speaker": "Abu Ali",
+              "arabizi": "eh, tfaddal.",
+              "arabic": "إيه، تفضّل.",
+              "english": "Yes, go ahead."
+            },
+            {
+              "id": "lv9-12-d3",
+              "speaker": "Sam",
+              "arabizi": "kel ma dawwi l daw bel matbakh, bta2ta3 l kahraba bel beit kello.",
+              "arabic": "كل ما ضوّي الضو بالمطبخ، بتقطع الكهربا بالبيت كلّو.",
+              "english": "Every time I turn on the kitchen light, the power cuts in the whole house."
+            },
+            {
+              "id": "lv9-12-d4",
+              "speaker": "Abu Ali",
+              "arabizi": "fi rihet 7ari2?",
+              "arabic": "في ريحة حريق؟",
+              "english": "Is there a burning smell?"
+            },
+            {
+              "id": "lv9-12-d5",
+              "speaker": "Sam",
+              "arabizi": "shway, eh.",
+              "arabic": "شوي، إيه.",
+              "english": "A little, yes."
+            },
+            {
+              "id": "lv9-12-d6",
+              "speaker": "Abu Ali",
+              "arabizi": "ma ta3mel shi la ousal. tfe l disjoncteur l kbir.",
+              "arabic": "ما تعمل شي لَوصل. طفّي الديجونكتور الكبير.",
+              "english": "Don't do anything until I arrive. Switch off the main breaker."
+            },
+            {
+              "id": "lv9-12-d7",
+              "speaker": "Sam",
+              "arabizi": "emta fik teje?",
+              "arabic": "إيمتى فيك تجي؟",
+              "english": "When can you come?"
+            },
+            {
+              "id": "lv9-12-d8",
+              "speaker": "Abu Ali",
+              "arabizi": "ba3d se3a.",
+              "arabic": "بعد ساعة.",
+              "english": "In an hour."
+            },
+            {
+              "id": "lv9-12-d9",
+              "speaker": "Sam",
+              "arabizi": "w addeish btekhod?",
+              "arabic": "وقدّيش بتاخد؟",
+              "english": "And how much do you charge?"
+            },
+            {
+              "id": "lv9-12-d10",
+              "speaker": "Abu Ali",
+              "arabizi": "l ze3ra 3eshrin dollar, w l 2ta3 3alayk.",
+              "arabic": "الزيارة عشرين دولار، والقطع عليك.",
+              "english": "Twenty dollars for the visit, and parts are on you."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What happens when Sam turns on the kitchen light?",
+              "options": [
+                "The power cuts",
+                "Nothing",
+                "The light flickers"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What should Sam do before the electrician arrives?",
+              "options": [
+                "Switch off the main breaker",
+                "Call the fire brigade",
+                "Leave the house"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How much is the visit?",
+              "options": [
+                "Twenty dollars",
+                "Fifty dollars",
+                "Free"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-13",
           "title": "Viewing a flat",
+          "subtitle": "View a flat",
           "icon": "🔑",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-13-01",
+              "arabizi": "fiye shouf l sha22a?",
+              "arabic": "فيي شوف الشقّة؟",
+              "english": "Can I see the flat?",
+              "pic": "👀"
+            },
+            {
+              "id": "lv9-13-02",
+              "arabizi": "l sha22a btetla3 3al ba7er?",
+              "arabic": "الشقّة بتطلّ عالبحر؟",
+              "english": "Does the flat have a sea view?",
+              "pic": "🌊"
+            },
+            {
+              "id": "lv9-13-03",
+              "arabizi": "l shams btfout?",
+              "arabic": "الشمس بتفوت؟",
+              "english": "Does the sun come in?",
+              "pic": "☀️"
+            },
+            {
+              "id": "lv9-13-04",
+              "arabizi": "l jiran hedyin?",
+              "arabic": "الجيران هاديين؟",
+              "english": "Are the neighbours quiet?",
+              "pic": "🤫"
+            },
+            {
+              "id": "lv9-13-05",
+              "arabizi": "fi moteur lal binaye?",
+              "arabic": "في موتور للبناية؟",
+              "english": "Does the building have a generator?",
+              "pic": "🔋"
+            },
+            {
+              "id": "lv9-13-06",
+              "arabizi": "addeish sar 3omr l binaye?",
+              "arabic": "قدّيش صار عمر البناية؟",
+              "english": "How old is the building?",
+              "pic": "🏚️"
+            },
+            {
+              "id": "lv9-13-07",
+              "arabizi": "l matbakh ktir zghir",
+              "arabic": "المطبخ كتير زغير",
+              "english": "The kitchen is very small",
+              "pic": "🍳"
+            },
+            {
+              "id": "lv9-13-08",
+              "arabizi": "l 7ammem jdid",
+              "arabic": "الحمّام جديد",
+              "english": "The bathroom is new",
+              "pic": "🛁"
+            },
+            {
+              "id": "lv9-13-09",
+              "arabizi": "bfakker w b-rodd 3leik",
+              "arabic": "بفكّر وبردّ عليك",
+              "english": "I'll think and get back to you",
+              "pic": "💭"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-13-d1",
+              "speaker": "Tony",
+              "arabizi": "tfaddal, hayda l salon.",
+              "arabic": "تفضّل، هيدا الصالون.",
+              "english": "Come in, this is the living room."
+            },
+            {
+              "id": "lv9-13-d2",
+              "speaker": "Sam",
+              "arabizi": "ktir 7elo! l shams btfout?",
+              "arabic": "كتير حلو! الشمس بتفوت؟",
+              "english": "Very nice! Does the sun come in?"
+            },
+            {
+              "id": "lv9-13-d3",
+              "speaker": "Tony",
+              "arabizi": "kel l nhar. w men l balkon btetla3 3al ba7er.",
+              "arabic": "كل النهار. ومن البلكون بتطلّ عالبحر.",
+              "english": "All day. And from the balcony you can see the sea."
+            },
+            {
+              "id": "lv9-13-d4",
+              "speaker": "Sam",
+              "arabizi": "w l matbakh?",
+              "arabic": "والمطبخ؟",
+              "english": "And the kitchen?"
+            },
+            {
+              "id": "lv9-13-d5",
+              "speaker": "Tony",
+              "arabizi": "zghir shway, bas jdid. w l 7ammem jdid kamen.",
+              "arabic": "زغير شوي، بس جديد. والحمّام جديد كمان.",
+              "english": "A bit small, but new. And the bathroom is new too."
+            },
+            {
+              "id": "lv9-13-d6",
+              "speaker": "Sam",
+              "arabizi": "fi moteur lal binaye?",
+              "arabic": "في موتور للبناية؟",
+              "english": "Does the building have a generator?"
+            },
+            {
+              "id": "lv9-13-d7",
+              "speaker": "Tony",
+              "arabizi": "eh, arb3a w 3eshrin se3a.",
+              "arabic": "إيه، أربعة وعشرين ساعة.",
+              "english": "Yes, twenty-four hours."
+            },
+            {
+              "id": "lv9-13-d8",
+              "speaker": "Sam",
+              "arabizi": "w l jiran?",
+              "arabic": "والجيران؟",
+              "english": "And the neighbours?"
+            },
+            {
+              "id": "lv9-13-d9",
+              "speaker": "Tony",
+              "arabizi": "madame khetyara bel tabe2 l fo2. ma bteshma3 sot.",
+              "arabic": "مدام ختيارة بالطابق الفوق. ما بتسمع صوت.",
+              "english": "An old lady on the floor above. You won't hear a sound."
+            },
+            {
+              "id": "lv9-13-d10",
+              "speaker": "Sam",
+              "arabizi": "tamem. bfakker w b-rodd 3aleik bukra.",
+              "arabic": "تمام. بفكّر وبردّ عليك بكرا.",
+              "english": "Great. I'll think and get back to you tomorrow."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What can you see from the balcony?",
+              "options": [
+                "The sea",
+                "The mountains",
+                "The city"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is small?",
+              "options": [
+                "The kitchen",
+                "The bathroom",
+                "The bedroom"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Who lives upstairs?",
+              "options": [
+                "An old lady",
+                "A family with kids",
+                "Nobody"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-14",
           "title": "Lost luggage",
+          "subtitle": "Report lost luggage",
           "icon": "🧳",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-14-01",
+              "arabizi": "shantte ma wselet",
+              "arabic": "شنطتي ما وصلت",
+              "english": "My bag didn't arrive",
+              "pic": "🧳"
+            },
+            {
+              "id": "lv9-14-02",
+              "arabizi": "wein maktab l amte3a l mafqoude?",
+              "arabic": "وين مكتب الأمتعة المفقودة؟",
+              "english": "Where's the lost luggage office?",
+              "pic": "🏢"
+            },
+            {
+              "id": "lv9-14-03",
+              "arabizi": "hayda l boarding pass w l tag",
+              "arabic": "هيدا البوردينغ باس والتاغ",
+              "english": "Here's the boarding pass and the tag",
+              "pic": "🎫"
+            },
+            {
+              "id": "lv9-14-04",
+              "arabizi": "shanta zar2a kbire, ma3 shareet a7mar",
+              "arabic": "شنطة زرقا كبيرة، مع شريط أحمر",
+              "english": "A big blue bag, with a red ribbon",
+              "pic": "🎀"
+            },
+            {
+              "id": "lv9-14-05",
+              "arabizi": "shu fiya?",
+              "arabic": "شو فيها؟",
+              "english": "What's in it?",
+              "pic": "❓"
+            },
+            {
+              "id": "lv9-14-06",
+              "arabizi": "fiya tyeb w dawa",
+              "arabic": "فيها تياب ودوا",
+              "english": "It has clothes and medicine",
+              "pic": "💊"
+            },
+            {
+              "id": "lv9-14-07",
+              "arabizi": "7a nb3atla 3al 3enwen",
+              "arabic": "رح نبعتلا عالعنوان",
+              "english": "We'll send it to the address",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv9-14-08",
+              "arabizi": "emta btousal?",
+              "arabic": "إيمتى بتوصل؟",
+              "english": "When will it arrive?",
+              "pic": "⏰"
+            },
+            {
+              "id": "lv9-14-09",
+              "arabizi": "fi ta3wid?",
+              "arabic": "في تعويض؟",
+              "english": "Is there compensation?",
+              "pic": "💵"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-14-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba, shantte ma wselet. kenet 3al rehle men Paris.",
+              "arabic": "مرحبا، شنطتي ما وصلت. كانت عالرحلة من باريس.",
+              "english": "Hi, my bag didn't arrive. It was on the flight from Paris."
+            },
+            {
+              "id": "lv9-14-d2",
+              "speaker": "Clerk",
+              "arabizi": "3andak l tag?",
+              "arabic": "عندك التاغ؟",
+              "english": "Do you have the tag?"
+            },
+            {
+              "id": "lv9-14-d3",
+              "speaker": "Sam",
+              "arabizi": "eh, tfaddale, ma3 l boarding pass.",
+              "arabic": "إيه، تفضّلي، مع البوردينغ باس.",
+              "english": "Yes, here, with the boarding pass."
+            },
+            {
+              "id": "lv9-14-d4",
+              "speaker": "Clerk",
+              "arabizi": "kif shakla?",
+              "arabic": "كيف شكلها؟",
+              "english": "What does it look like?"
+            },
+            {
+              "id": "lv9-14-d5",
+              "speaker": "Sam",
+              "arabizi": "zar2a kbire, ma3 shareet a7mar 3al ide.",
+              "arabic": "زرقا كبيرة، مع شريط أحمر عالإيد.",
+              "english": "Big and blue, with a red ribbon on the handle."
+            },
+            {
+              "id": "lv9-14-d6",
+              "speaker": "Clerk",
+              "arabizi": "shu fiya?",
+              "arabic": "شو فيها؟",
+              "english": "What's in it?"
+            },
+            {
+              "id": "lv9-14-d7",
+              "speaker": "Sam",
+              "arabizi": "tyeb, w dawa mhemm.",
+              "arabic": "تياب، ودوا مهمّ.",
+              "english": "Clothes, and important medicine."
+            },
+            {
+              "id": "lv9-14-d8",
+              "speaker": "Clerk",
+              "arabizi": "l system byi2oul enno ba3da b Paris. 7a teje bukra.",
+              "arabic": "السيستم بيقول إنّو بعدا بباريس. رح تجي بكرا.",
+              "english": "The system says it's still in Paris. It'll come tomorrow."
+            },
+            {
+              "id": "lv9-14-d9",
+              "speaker": "Sam",
+              "arabizi": "w l dawa?",
+              "arabic": "والدوا؟",
+              "english": "And the medicine?"
+            },
+            {
+              "id": "lv9-14-d10",
+              "speaker": "Clerk",
+              "arabizi": "men l saydaleye hon, w mna3tik ta3wid. 7a nb3atlak l shanta 3al beit.",
+              "arabic": "من الصيدلية هون، ومنعطيك تعويض. رح نبعتلك الشنطة عالبيت.",
+              "english": "From the pharmacy here, and we'll compensate you. We'll send the bag to your home."
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where is the bag?",
+              "options": [
+                "Still in Paris",
+                "Lost forever",
+                "In Beirut"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What colour is the bag?",
+              "options": [
+                "Blue with a red ribbon",
+                "Red",
+                "Black"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How will Sam get his bag?",
+              "options": [
+                "Delivered home",
+                "Collect it tomorrow",
+                "By post"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-15",
           "title": "Hosting dinner",
+          "subtitle": "Host a dinner",
           "icon": "🍷",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-15-01",
+              "arabizi": "ahla w sahla, nawwarto!",
+              "arabic": "أهلا وسهلا، نوّرتوا!",
+              "english": "Welcome, you've lit up our home!",
+              "pic": "💡"
+            },
+            {
+              "id": "lv9-15-02",
+              "arabizi": "tfaddalo 3al sefra",
+              "arabic": "تفضّلوا عالسفرة",
+              "english": "Please come to the table",
+              "pic": "🍽️"
+            },
+            {
+              "id": "lv9-15-03",
+              "arabizi": "kelo, ma tetkhajjalo",
+              "arabic": "كلوا، ما تتخجّلوا",
+              "english": "Eat, don't be shy",
+              "pic": "😋"
+            },
+            {
+              "id": "lv9-15-04",
+              "arabizi": "ma akalt shi!",
+              "arabic": "ما أكلت شي!",
+              "english": "You haven't eaten anything!",
+              "pic": "😱",
+              "note": "Lebanese hosts always say this."
+            },
+            {
+              "id": "lv9-15-05",
+              "arabizi": "jarreb hayda, men 2ide",
+              "arabic": "جرّب هيدا، من إيدي",
+              "english": "Try this, I made it myself",
+              "pic": "👩‍🍳"
+            },
+            {
+              "id": "lv9-15-06",
+              "arabizi": "sha2fe zghire bas",
+              "arabic": "شقفة زغيرة بس",
+              "english": "Just a small piece",
+              "pic": "🤏"
+            },
+            {
+              "id": "lv9-15-07",
+              "arabizi": "l7elo b3d shway",
+              "arabic": "الحلو بعد شوي",
+              "english": "Dessert's coming soon",
+              "pic": "🍰"
+            },
+            {
+              "id": "lv9-15-08",
+              "arabizi": "nawwar l beit bwjoudkon",
+              "arabic": "نوّر البيت بوجودكن",
+              "english": "Your presence lit up our home",
+              "pic": "✨"
+            },
+            {
+              "id": "lv9-15-09",
+              "arabizi": "ma tetrouko bakkir!",
+              "arabic": "ما تتركوا بكّير!",
+              "english": "Don't leave early!",
+              "pic": "🙏"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-15-d1",
+              "speaker": "Maya",
+              "arabizi": "ahla w sahla! nawwarto! tfaddalo 3al sefra.",
+              "arabic": "أهلا وسهلا! نوّرتوا! تفضّلوا عالسفرة.",
+              "english": "Welcome! Please come to the table."
+            },
+            {
+              "id": "lv9-15-d2",
+              "speaker": "Rita",
+              "arabizi": "shu hal sefra! mashallah!",
+              "arabic": "شو هالسفرة! ما شاء الله!",
+              "english": "What a table! Wonderful!"
+            },
+            {
+              "id": "lv9-15-d3",
+              "speaker": "Sam",
+              "arabizi": "kelo, ma tetkhajjalo.",
+              "arabic": "كلوا، ما تتخجّلوا.",
+              "english": "Eat, don't be shy."
+            },
+            {
+              "id": "lv9-15-d4",
+              "speaker": "Karim",
+              "arabizi": "l kebbe men 2idik, Maya?",
+              "arabic": "الكبّة من إيدك، مايا؟",
+              "english": "Did you make the kibbeh, Maya?"
+            },
+            {
+              "id": "lv9-15-d5",
+              "speaker": "Maya",
+              "arabizi": "eh! jarreb.",
+              "arabic": "إيه! جرّب.",
+              "english": "Yes! Try it."
+            },
+            {
+              "id": "lv9-15-d6",
+              "speaker": "Karim",
+              "arabizi": "...yislamo idayke!",
+              "arabic": "...يسلمو إيديكي!",
+              "english": "...Bless your hands!"
+            },
+            {
+              "id": "lv9-15-d7",
+              "speaker": "Maya",
+              "arabizi": "Rita, enti ma akalte shi!",
+              "arabic": "ريتا، إنتِ ما أكلتي شي!",
+              "english": "Rita, you haven't eaten anything!"
+            },
+            {
+              "id": "lv9-15-d8",
+              "speaker": "Rita",
+              "arabizi": "akalt tlet sa7oun!",
+              "arabic": "أكلت تلت صحون!",
+              "english": "I've eaten three plates!"
+            },
+            {
+              "id": "lv9-15-d9",
+              "speaker": "Maya",
+              "arabizi": "sha2fe zghire bas, men l tabbouleh.",
+              "arabic": "شقفة زغيرة بس، من التبولة.",
+              "english": "Just a little more, of the tabbouleh."
+            },
+            {
+              "id": "lv9-15-d10",
+              "speaker": "Rita",
+              "arabizi": "walla ma fiye!",
+              "arabic": "والله ما فيي!",
+              "english": "Honestly, I can't!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Who made the kibbeh?",
+              "options": [
+                "Maya",
+                "Sam",
+                "Teta"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How many plates has Rita eaten?",
+              "options": [
+                "Three",
+                "One",
+                "None"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Maya keep doing?",
+              "options": [
+                "Offering more food",
+                "Clearing plates",
+                "Serving drinks"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-16",
           "title": "Being a guest",
+          "subtitle": "Be a good guest",
           "icon": "🎁",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-16-01",
+              "arabizi": "jebetlkon shi zghir",
+              "arabic": "جبتلكن شي زغير",
+              "english": "I brought you a little something",
+              "pic": "🎁"
+            },
+            {
+              "id": "lv9-16-02",
+              "arabizi": "ma kan lezem t3azzbo 7alkon",
+              "arabic": "ما كان لازم تعذّبوا حالكن",
+              "english": "You shouldn't have gone to trouble",
+              "pic": "🙏"
+            },
+            {
+              "id": "lv9-16-03",
+              "arabizi": "l akl ma byetwassaf",
+              "arabic": "الأكل ما بيتوصف",
+              "english": "The food is indescribable",
+              "pic": "😋"
+            },
+            {
+              "id": "lv9-16-04",
+              "arabizi": "shbe3t, wallah",
+              "arabic": "شبعت، والله",
+              "english": "I'm full, honestly",
+              "pic": "🤚"
+            },
+            {
+              "id": "lv9-16-05",
+              "arabizi": "fenjen ahwe w mnemshe",
+              "arabic": "فنجان قهوة ومنمشي",
+              "english": "A cup of coffee and we'll go",
+              "pic": "☕"
+            },
+            {
+              "id": "lv9-16-06",
+              "arabizi": "t2akhkharna, lazem nemshe",
+              "arabic": "تأخّرنا، لازم نمشي",
+              "english": "It's late, we have to go",
+              "pic": "🌙"
+            },
+            {
+              "id": "lv9-16-07",
+              "arabizi": "daymé, inshallah",
+              "arabic": "دايمة، إن شاء الله",
+              "english": "May your table always be full",
+              "pic": "🍽️"
+            },
+            {
+              "id": "lv9-16-08",
+              "arabizi": "ta3o la 3anna marra",
+              "arabic": "تعوا لعنّا مرّة",
+              "english": "Come to ours some time",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv9-16-09",
+              "arabizi": "3a2bal ma nraddla",
+              "arabic": "عقبال ما نردّلا",
+              "english": "Until we can return it",
+              "pic": "🔁"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-16-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba! jebetlkon shi zghir.",
+              "arabic": "مرحبا! جبتلكن شي زغير.",
+              "english": "Hello! I brought you a little something."
+            },
+            {
+              "id": "lv9-16-d2",
+              "speaker": "Mona",
+              "arabizi": "ya 3ayb l shoum! ma kan lezem!",
+              "arabic": "يا عيب الشوم! ما كان لازم!",
+              "english": "Oh, you shouldn't have!"
+            },
+            {
+              "id": "lv9-16-d3",
+              "speaker": "Sam",
+              "arabizi": "walaw. ma ken lezem t3azzbo 7alkon bel akl!",
+              "arabic": "ولو. وما كان لازم تعذّبوا حالكن بالأكل!",
+              "english": "Of course. And you shouldn't have gone to all this trouble with the food!"
+            },
+            {
+              "id": "lv9-16-d4",
+              "speaker": "Mona",
+              "arabizi": "ma 3melna shi! kol!",
+              "arabic": "ما عملنا شي! كول!",
+              "english": "We didn't do anything! Eat!"
+            },
+            {
+              "id": "lv9-16-d5",
+              "speaker": "Sam",
+              "arabizi": "...l akl ma byetwassaf. bas shbe3t, wallah.",
+              "arabic": "...الأكل ما بيتوصف. بس شبعت، والله.",
+              "english": "...The food is indescribable. But I'm full, honestly."
+            },
+            {
+              "id": "lv9-16-d6",
+              "speaker": "Mona",
+              "arabizi": "w l ahwe?",
+              "arabic": "والقهوة؟",
+              "english": "And coffee?"
+            },
+            {
+              "id": "lv9-16-d7",
+              "speaker": "Sam",
+              "arabizi": "fenjen ahwe w mnemshe. t2akhkharna.",
+              "arabic": "فنجان قهوة ومنمشي. تأخّرنا.",
+              "english": "A cup of coffee and we'll go. It's late."
+            },
+            {
+              "id": "lv9-16-d8",
+              "speaker": "Mona",
+              "arabizi": "leish 3al 3ajale?",
+              "arabic": "ليش عالعجلة؟",
+              "english": "Why the rush?"
+            },
+            {
+              "id": "lv9-16-d9",
+              "speaker": "Sam",
+              "arabizi": "daymé, inshallah. w ta3o la 3anna marra!",
+              "arabic": "دايمة، إن شاء الله. وتعوا لعنّا مرّة!",
+              "english": "May your table always be full. And come to ours some time!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "What did Sam bring?",
+              "options": [
+                "A small gift",
+                "Dessert",
+                "Wine"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Sam say before leaving?",
+              "options": [
+                "'Dayme' and invites them",
+                "'Bye' only",
+                "Nothing"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What do they have before leaving?",
+              "options": [
+                "Coffee",
+                "Dessert",
+                "Tea"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-17",
           "title": "Office life",
+          "subtitle": "Office life",
           "icon": "🖥️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-17-01",
+              "arabizi": "3ande ejtima3 ma3 l client",
+              "arabic": "عندي إجتماع مع الكلاينت",
+              "english": "I have a meeting with the client",
+              "pic": "🤝"
+            },
+            {
+              "id": "lv9-17-02",
+              "arabizi": "fik tb3atle l file?",
+              "arabic": "فيك تبعتلي الفايل؟",
+              "english": "Can you send me the file?",
+              "pic": "📁"
+            },
+            {
+              "id": "lv9-17-03",
+              "arabizi": "l presentation jehze?",
+              "arabic": "البريزنتيشن جاهزة؟",
+              "english": "Is the presentation ready?",
+              "pic": "📊"
+            },
+            {
+              "id": "lv9-17-04",
+              "arabizi": "l mdir badda yshoufak",
+              "arabic": "المدير بدّو يشوفك",
+              "english": "The boss wants to see you",
+              "pic": "👔"
+            },
+            {
+              "id": "lv9-17-05",
+              "arabizi": "ana b-ijaze bukra",
+              "arabic": "أنا بإجازة بكرا",
+              "english": "I'm on leave tomorrow",
+              "pic": "🏖️"
+            },
+            {
+              "id": "lv9-17-06",
+              "arabizi": "l printer kharbaan, metl dayman",
+              "arabic": "البرينتر خربان، متل دايمًا",
+              "english": "The printer is broken, as always",
+              "pic": "🖨️"
+            },
+            {
+              "id": "lv9-17-07",
+              "arabizi": "mnetghadda sawa?",
+              "arabic": "منتغدّى سوا؟",
+              "english": "Shall we have lunch together?",
+              "pic": "🥗"
+            },
+            {
+              "id": "lv9-17-08",
+              "arabizi": "ma tensa l deadline",
+              "arabic": "ما تنسى الديدلاين",
+              "english": "Don't forget the deadline",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv9-17-09",
+              "arabizi": "yalla, ya3tikon l 3afye",
+              "arabic": "يلّا، يعطيكن العافية",
+              "english": "OK, thanks for your work, everyone",
+              "pic": "🙌"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-17-d1",
+              "speaker": "Rita",
+              "arabizi": "Sam, l mdir badda yshoufak.",
+              "arabic": "سام، المدير بدّو يشوفك.",
+              "english": "Sam, the boss wants to see you."
+            },
+            {
+              "id": "lv9-17-d2",
+              "speaker": "Sam",
+              "arabizi": "hala2? leish?",
+              "arabic": "هلّق؟ ليش؟",
+              "english": "Now? Why?"
+            },
+            {
+              "id": "lv9-17-d3",
+              "speaker": "Rita",
+              "arabizi": "3ando ejtima3 ma3 l client ba3d noss se3a. l presentation jehze?",
+              "arabic": "عندو إجتماع مع الكلاينت بعد نص ساعة. البريزنتيشن جاهزة؟",
+              "english": "He has a meeting with the client in half an hour. Is the presentation ready?"
+            },
+            {
+              "id": "lv9-17-d4",
+              "speaker": "Sam",
+              "arabizi": "ta2riban. bas lezemne l file men 3andik.",
+              "arabic": "تقريبًا. بس لازمني الفايل من عندك.",
+              "english": "Almost. But I need the file from you."
+            },
+            {
+              "id": "lv9-17-d5",
+              "speaker": "Rita",
+              "arabizi": "ba3atlak yeh 3al email.",
+              "arabic": "بعتلك ياه عالإيميل.",
+              "english": "I've sent it to you by email."
+            },
+            {
+              "id": "lv9-17-d6",
+              "speaker": "Sam",
+              "arabizi": "w badde etba3 nesekh.",
+              "arabic": "وبدّي إطبع نسخ.",
+              "english": "And I need to print copies."
+            },
+            {
+              "id": "lv9-17-d7",
+              "speaker": "Rita",
+              "arabizi": "l printer kharbaan, metl dayman!",
+              "arabic": "البرينتر خربان، متل دايمًا!",
+              "english": "The printer's broken, as always!"
+            },
+            {
+              "id": "lv9-17-d8",
+              "speaker": "Sam",
+              "arabizi": "ya allah!",
+              "arabic": "يا الله!",
+              "english": "Oh God!"
+            },
+            {
+              "id": "lv9-17-d9",
+              "speaker": "Rita",
+              "arabizi": "rou7 3al tabe2 l telet, hniik fi wa7ad bimshe.",
+              "arabic": "روح عالطابق التالت، هونيك في واحد بيمشي.",
+              "english": "Go to the third floor, there's one that works."
+            }
+          ],
+          "questions": [
+            {
+              "q": "When is the client meeting?",
+              "options": [
+                "In half an hour",
+                "Tomorrow",
+                "Now"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Sam need from Rita?",
+              "options": [
+                "A file",
+                "A pen",
+                "Coffee"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Where is a working printer?",
+              "options": [
+                "Third floor",
+                "Second floor",
+                "Nowhere"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-18",
           "title": "Organising an event",
+          "subtitle": "Organise an event",
           "icon": "📣",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-18-01",
+              "arabizi": "7a nnazzem 7afle la l sharke",
+              "arabic": "رح ننظّم حفلة للشركة",
+              "english": "We're organising a company party",
+              "pic": "🎉"
+            },
+            {
+              "id": "lv9-18-02",
+              "arabizi": "kam shakhs 7a yeje?",
+              "arabic": "كم شخص رح يجي؟",
+              "english": "How many people are coming?",
+              "pic": "👥"
+            },
+            {
+              "id": "lv9-18-03",
+              "arabizi": "7jazna l salle",
+              "arabic": "حجزنا الصالة",
+              "english": "We booked the hall",
+              "pic": "🏛️"
+            },
+            {
+              "id": "lv9-18-04",
+              "arabizi": "meen 3am yetwalla l akl?",
+              "arabic": "مين عم يتولّى الأكل؟",
+              "english": "Who's handling the food?",
+              "pic": "🍽️"
+            },
+            {
+              "id": "lv9-18-05",
+              "arabizi": "lezemna budget",
+              "arabic": "لازمنا ميزانية",
+              "english": "We need a budget",
+              "pic": "💰"
+            },
+            {
+              "id": "lv9-18-06",
+              "arabizi": "b3atna l da3wet",
+              "arabic": "بعتنا الدعوات",
+              "english": "We sent the invitations",
+              "pic": "💌"
+            },
+            {
+              "id": "lv9-18-07",
+              "arabizi": "l DJ ma 3am yrodd",
+              "arabic": "الدي جي ما عم يردّ",
+              "english": "The DJ isn't answering",
+              "pic": "📵"
+            },
+            {
+              "id": "lv9-18-08",
+              "arabizi": "lezemna khotta B",
+              "arabic": "لازمنا خطّة بي",
+              "english": "We need a plan B",
+              "pic": "🅱️"
+            },
+            {
+              "id": "lv9-18-09",
+              "arabizi": "kel shi tamem, l7amdella",
+              "arabic": "كل شي تمام، الحمدلله",
+              "english": "Everything is fine, thank God",
+              "pic": "✅"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-18-d1",
+              "speaker": "Rita",
+              "arabizi": "kam shakhs 7a yeje 3al 7afle?",
+              "arabic": "كم شخص رح يجي عالحفلة؟",
+              "english": "How many people are coming to the party?"
+            },
+            {
+              "id": "lv9-18-d2",
+              "speaker": "Sam",
+              "arabizi": "miye w 3eshrin. 7jazna l salle bel Kaslik.",
+              "arabic": "مية وعشرين. حجزنا الصالة بالكسليك.",
+              "english": "A hundred and twenty. We booked the hall in Kaslik."
+            },
+            {
+              "id": "lv9-18-d3",
+              "speaker": "Rita",
+              "arabizi": "w l akl?",
+              "arabic": "والأكل؟",
+              "english": "And the food?"
+            },
+            {
+              "id": "lv9-18-d4",
+              "speaker": "Sam",
+              "arabizi": "mat3am 'Leila' 3am yetwalla l akl. mezze w mashewe.",
+              "arabic": "مطعم 'ليلى' عم يتولّى الأكل. مازة ومشاوي.",
+              "english": "'Leila' restaurant is handling the food. Mezze and grills."
+            },
+            {
+              "id": "lv9-18-d5",
+              "speaker": "Rita",
+              "arabizi": "w l musi2a?",
+              "arabic": "والموسيقى؟",
+              "english": "And the music?"
+            },
+            {
+              "id": "lv9-18-d6",
+              "speaker": "Sam",
+              "arabizi": "hon l mashkle. l DJ ma 3am yrodd men yomein!",
+              "arabic": "هون المشكلة. الدي جي ما عم يردّ من يومين!",
+              "english": "That's the problem. The DJ hasn't answered for two days!"
+            },
+            {
+              "id": "lv9-18-d7",
+              "speaker": "Rita",
+              "arabizi": "lezemna khotta B. Karim 3ando speakers.",
+              "arabic": "لازمنا خطّة بي. كريم عندو سبيكرز.",
+              "english": "We need a plan B. Karim has speakers."
+            },
+            {
+              "id": "lv9-18-d8",
+              "speaker": "Sam",
+              "arabizi": "fikra 7elwe! w Karim bya3ref yo2os dabke.",
+              "arabic": "فكرة حلوة! وكريم بيعرف يرقص دبكة.",
+              "english": "Good idea! And Karim knows how to dance dabke."
+            },
+            {
+              "id": "lv9-18-d9",
+              "speaker": "Rita",
+              "arabizi": "khalas, kel shi tamem!",
+              "arabic": "خلص، كل شي تمام!",
+              "english": "That's it, everything is fine!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "How many people are coming?",
+              "options": [
+                "120",
+                "200",
+                "50"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is the problem?",
+              "options": [
+                "The DJ isn't answering",
+                "No food",
+                "No hall"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is plan B?",
+              "options": [
+                "Karim's speakers",
+                "Cancel the party",
+                "Live band"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-19",
           "title": "A mistake on the bill",
+          "subtitle": "Spot a mistake on the bill",
           "icon": "🧾",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-19-01",
+              "arabizi": "fi ghalta bel 7sab",
+              "arabic": "في غلطة بالحساب",
+              "english": "There's a mistake on the bill",
+              "pic": "🧾"
+            },
+            {
+              "id": "lv9-19-02",
+              "arabizi": "ma talabna hayda",
+              "arabic": "ما طلبنا هيدا",
+              "english": "We didn't order this",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv9-19-03",
+              "arabizi": "7asabtolna tnein marra",
+              "arabic": "حسبتولنا تنين مرّة",
+              "english": "You charged us twice",
+              "pic": "2️⃣"
+            },
+            {
+              "id": "lv9-19-04",
+              "arabizi": "l se3r ghayr l menu",
+              "arabic": "السعر غير المنيو",
+              "english": "The price is different from the menu",
+              "pic": "📋"
+            },
+            {
+              "id": "lv9-19-05",
+              "arabizi": "l service mashmoul?",
+              "arabic": "السرفيس مشمول؟",
+              "english": "Is service included?",
+              "pic": "💁"
+            },
+            {
+              "id": "lv9-19-06",
+              "arabizi": "fik t3id l 7sab?",
+              "arabic": "فيك تعيد الحساب؟",
+              "english": "Can you redo the bill?",
+              "pic": "🔁"
+            },
+            {
+              "id": "lv9-19-07",
+              "arabizi": "sorry, ghaltet l system",
+              "arabic": "سوري، غلطة السيستم",
+              "english": "Sorry, a system error",
+              "pic": "💻"
+            },
+            {
+              "id": "lv9-19-08",
+              "arabizi": "ma fi mashkle, bt-sir",
+              "arabic": "ما في مشكلة، بتصير",
+              "english": "No problem, it happens",
+              "pic": "👌"
+            },
+            {
+              "id": "lv9-19-09",
+              "arabizi": "l tip bel cash",
+              "arabic": "التيب بالكاش",
+              "english": "The tip in cash",
+              "pic": "💵"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-19-d1",
+              "speaker": "Sam",
+              "arabizi": "3an eznak, fi ghalta bel 7sab.",
+              "arabic": "عن إذنك، في غلطة بالحساب.",
+              "english": "Excuse me, there's a mistake on the bill."
+            },
+            {
+              "id": "lv9-19-d2",
+              "speaker": "Rami",
+              "arabizi": "wein?",
+              "arabic": "وين؟",
+              "english": "Where?"
+            },
+            {
+              "id": "lv9-19-d3",
+              "speaker": "Sam",
+              "arabizi": "ma talabna 3ara2. w l fattoush m7soub tnein marra.",
+              "arabic": "ما طلبنا عرق. والفتوش محسوب تنين مرّة.",
+              "english": "We didn't order arak. And the fattoush is charged twice."
+            },
+            {
+              "id": "lv9-19-d4",
+              "speaker": "Rami",
+              "arabizi": "ah, sorry! l 3ara2 lal tawle l tenye.",
+              "arabic": "آه، سوري! العرق للطاولة التانية.",
+              "english": "Ah, sorry! The arak was for the other table."
+            },
+            {
+              "id": "lv9-19-d5",
+              "speaker": "Sam",
+              "arabizi": "w l hommos, l se3r ghayr l menu.",
+              "arabic": "والحمّص، السعر غير المنيو.",
+              "english": "And the hummus price is different from the menu."
+            },
+            {
+              "id": "lv9-19-d6",
+              "speaker": "Rami",
+              "arabizi": "l menu 2adim, bas ma3ak 7a2. 7a sallo.",
+              "arabic": "المنيو قديم، بس معك حقّ. رح صلّحو.",
+              "english": "The menu is old, but you're right. I'll fix it."
+            },
+            {
+              "id": "lv9-19-d7",
+              "speaker": "Sam",
+              "arabizi": "merci. ma fi mashkle, bt-sir.",
+              "arabic": "مرسي. ما في مشكلة، بتصير.",
+              "english": "Thanks. No problem, it happens."
+            },
+            {
+              "id": "lv9-19-d8",
+              "speaker": "Rami",
+              "arabizi": "tfaddal l 7sab l jdid.",
+              "arabic": "تفضّل الحساب الجديد.",
+              "english": "Here's the new bill."
+            },
+            {
+              "id": "lv9-19-d9",
+              "speaker": "Sam",
+              "arabizi": "w hayda l tip, bel cash.",
+              "arabic": "وهيدا التيب، بالكاش.",
+              "english": "And here's the tip, in cash."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What did they not order?",
+              "options": [
+                "Arak",
+                "Hummus",
+                "Fattoush"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What was charged twice?",
+              "options": [
+                "Fattoush",
+                "Hummus",
+                "Arak"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why was the hummus price wrong?",
+              "options": [
+                "The menu is old",
+                "A typo",
+                "A new chef"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv9-20",
           "title": "Helping a neighbour",
+          "subtitle": "Help your neighbour",
           "icon": "🤲",
-          "soon": true
+          "items": [
+            {
+              "id": "lv9-20-01",
+              "arabizi": "fiye se3dak bel ghrad?",
+              "arabic": "فيي ساعدك بالغراض؟",
+              "english": "Can I help you with the shopping?",
+              "pic": "🛍️"
+            },
+            {
+              "id": "lv9-20-02",
+              "arabizi": "l asanseur m3attal, khalline 7ammel",
+              "arabic": "الأسانسور معطّل، خلّيني حمّل",
+              "english": "The lift is broken, let me carry",
+              "pic": "💪"
+            },
+            {
+              "id": "lv9-20-03",
+              "arabizi": "baddak shi men l saydaleye?",
+              "arabic": "بدّك شي من الصيدلية؟",
+              "english": "Do you need anything from the pharmacy?",
+              "pic": "💊"
+            },
+            {
+              "id": "lv9-20-04",
+              "arabizi": "2arib 3leik ana",
+              "arabic": "قريب عليكي أنا",
+              "english": "I'm close by",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv9-20-05",
+              "arabizi": "iza baddik shi, de22ile",
+              "arabic": "إذا بدّك شي، دقّيلي",
+              "english": "If you need anything, ring me",
+              "pic": "📞"
+            },
+            {
+              "id": "lv9-20-06",
+              "arabizi": "ya ibne, allah yer7am waldeik",
+              "arabic": "يا إبني، الله يرحم والديك",
+              "english": "My son, God bless your parents",
+              "pic": "🙏",
+              "note": "A traditional blessing from an older person."
+            },
+            {
+              "id": "lv9-20-07",
+              "arabizi": "ma 3melt shi",
+              "arabic": "ما عملت شي",
+              "english": "I didn't do anything",
+              "pic": "😊"
+            },
+            {
+              "id": "lv9-20-08",
+              "arabizi": "ya3tik l 3afye",
+              "arabic": "يعطيك العافية",
+              "english": "Thank you for your effort",
+              "pic": "🙌"
+            },
+            {
+              "id": "lv9-20-09",
+              "arabizi": "l jar 2abl l dar",
+              "arabic": "الجار قبل الدار",
+              "english": "The neighbour before the house",
+              "pic": "🏡",
+              "note": "A proverb: choose your neighbour before your home."
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv9-20-d1",
+              "speaker": "Sam",
+              "arabizi": "madame Mona, stanne! fiye se3dik?",
+              "arabic": "مدام منى، استنّي! فيي ساعدك؟",
+              "english": "Madame Mona, wait! Can I help you?"
+            },
+            {
+              "id": "lv9-20-d2",
+              "speaker": "Mona",
+              "arabizi": "ya ibne, l asanseur m3attal w 3ande ghrad ktir.",
+              "arabic": "يا إبني، الأسانسور معطّل وعندي غراض كتير.",
+              "english": "My son, the lift is broken and I have a lot of shopping."
+            },
+            {
+              "id": "lv9-20-d3",
+              "speaker": "Sam",
+              "arabizi": "khalline 7ammel. ayya tabe2?",
+              "arabic": "خلّيني حمّل. أيّا طابق؟",
+              "english": "Let me carry. Which floor?"
+            },
+            {
+              "id": "lv9-20-d4",
+              "speaker": "Mona",
+              "arabizi": "l khames!",
+              "arabic": "الخامس!",
+              "english": "The fifth!"
+            },
+            {
+              "id": "lv9-20-d5",
+              "speaker": "Sam",
+              "arabizi": "ma fi mashkle!",
+              "arabic": "ما في مشكلة!",
+              "english": "No problem!"
+            },
+            {
+              "id": "lv9-20-d6",
+              "speaker": "Mona",
+              "arabizi": "allah yer7am waldeik, ya ibne.",
+              "arabic": "الله يرحم والديك، يا إبني.",
+              "english": "God bless your parents, my son."
+            },
+            {
+              "id": "lv9-20-d7",
+              "speaker": "Sam",
+              "arabizi": "ma 3melt shi. w iza baddik shi men l saydaleye, de22ile.",
+              "arabic": "ما عملت شي. وإذا بدّك شي من الصيدلية، دقّيلي.",
+              "english": "It was nothing. And if you need anything from the pharmacy, ring me."
+            },
+            {
+              "id": "lv9-20-d8",
+              "speaker": "Mona",
+              "arabizi": "ya3tik l 3afye. l jar 2abl l dar!",
+              "arabic": "يعطيك العافية. الجار قبل الدار!",
+              "english": "Thank you. The neighbour before the house!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Which floor does Mona live on?",
+              "options": [
+                "Fifth",
+                "Second",
+                "Tenth"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why does Mona need help?",
+              "options": [
+                "The lift is broken",
+                "She's ill",
+                "She fell"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Sam offer at the end?",
+              "options": [
+                "To get things from the pharmacy",
+                "To cook for her",
+                "To call her son"
+              ],
+              "answer": 0
+            }
+          ]
         }
       ]
     },
