@@ -22,6 +22,6 @@ Then open http://localhost:8080. (Opening index.html directly as a file won't wo
 Learn (cards) → Listen (dialogue) → Repeat (record yourself) → Quiz.
 From Level 3 the quiz adds sentence building; lessons with `questions` add listening questions.
 
-## Publishing a code change
+## Publishing a change
 
-When you change anything in `js/` or `css/`, raise the `?v=` number everywhere it appears (index.html, js/app.js, js/audio.js). Otherwise phones may mix old and new files.
+After changing anything in `js/`, `css/` or `content/`, run `tools/bump.sh`. It raises the version number everywhere, and visitors' phones then reload the new version automatically.
