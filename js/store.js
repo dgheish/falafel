@@ -22,6 +22,9 @@ export const settings = {
     if (!state.show.arabizi && !state.show.arabic) state.show[key === 'arabizi' ? 'arabic' : 'arabizi'] = true;
     save(state);
   },
+  // Teacher mode opens every level, for checking content.
+  get unlockAll() { return !!state.unlockAll; },
+  set unlockAll(v) { state.unlockAll = !!v; save(state); },
 };
 
 export const progress = {

@@ -178,3 +178,28 @@ body.hide-english .t-english:not(.always) { display: none !important; }
   background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-weight: 600;
   max-width: calc(100% - 32px); box-shadow: 0 4px 16px rgba(0,0,0,.2);
 }
+
+/* levels */
+.lesson-icon.lvl { font-size: 1.5rem; font-weight: 800; color: #fff; background: var(--green); }
+.lesson-card.locked { opacity: .55; }
+.lesson-card.locked .lesson-icon.lvl { background: var(--muted); }
+.lesson-card.soon { border-style: dashed; box-shadow: none; }
+.meter { display: block; height: 6px; background: var(--line); border-radius: 99px; margin-top: 6px; overflow: hidden; }
+.meter i { display: block; height: 100%; background: var(--gold); }
+.teacher { display: flex; gap: 8px; align-items: center; margin-top: 14px; font-size: .9rem; color: var(--muted); }
+
+/* sentence building */
+.build {
+  min-height: 64px; margin-top: 14px; padding: 10px; border: 2px dashed var(--line); border-radius: 14px;
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center;
+}
+.build.right { border: 2px solid var(--green); background: var(--green-soft); }
+.build.wrong { border: 2px solid var(--red); background: var(--red-soft); }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; }
+.tile {
+  border: 2px solid var(--line); border-bottom-width: 4px; background: var(--card); color: var(--ink);
+  border-radius: 12px; padding: 8px 14px; font: 800 1.1rem Nunito, sans-serif; cursor: pointer;
+}
+.tile.gone { visibility: hidden; }
+.tile:disabled { cursor: default; }
+.fix { text-align: center; font-weight: 800; color: var(--green); margin: 10px 0 0; }

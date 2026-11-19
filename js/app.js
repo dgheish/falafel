@@ -68,23 +68,62 @@ function applyToggles() {
 document.querySelectorAll('[data-toggle]').forEach(c =>
   c.addEventListener('click', () => { settings.toggle(c.dataset.toggle); applyToggles(); }));
 
+// ---------- levels ----------
+const allLessons = () => DATA.levels.flatMap(lv => lv.lessons);
+const levelOf = lessonId => DATA.levels.find(lv => lv.lessons.some(l => l.id === lessonId));
+const levelDone = lv => lv.lessons.length > 0 && lv.lessons.every(l => progress.get(l.id));
+// A level opens once every lesson in the level before it is finished.
+function unlocked(lv) {
+  if (settings.unlockAll || lv.n === 1) return true;
+  const prev = DATA.levels.find(x => x.n === lv.n - 1);
+  return prev ? levelDone(prev) : true;
+}
+
 // ---------- views ----------
 function viewHome() {
-  const cards = DATA.lessons.map((l, i) => {
-    const p = progress.get(l.id);
-    const badge = p ? `<span class="badge done">✓ ${p.best}/${p.total}</span>` : `<span class="badge">${l.items.length} phrases</span>`;
-    return `<a class="lesson-card" href="#/lesson/${l.id}">
-      <span class="lesson-icon">${l.icon}</span>
-      <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong><span>${esc(l.subtitle)}</span></span>
+  const cards = DATA.levels.map(lv => {
+    const open = unlocked(lv);
+    const done = lv.lessons.filter(l => progress.get(l.id)).length;
+    const ready = lv.lessons.length;
+    let badge;
+    if (!ready) badge = `<span class="badge">Coming soon</span>`;
+    else if (!open) badge = `<span class="badge">🔒</span>`;
+    else badge = `<span class="badge ${done === ready ? 'done' : ''}">${done === ready ? '✓' : `${done}/${ready}`}</span>`;
+    const pct = ready ? Math.round((done / ready) * 100) : 0;
+    return `<a class="lesson-card level ${open ? '' : 'locked'}" href="#/level/${lv.n}">
+      <span class="lesson-icon lvl">${lv.n}</span>
+      <span class="lesson-text"><small>Level ${lv.n}</small><strong>${esc(lv.title)}</strong><span>${esc(lv.goal)}</span>
+        ${ready && open ? `<span class="meter"><i style="width:${pct}%"></i></span>` : ''}</span>
       ${badge}
     </a>`;
   }).join('');
   app.innerHTML = `
     <section class="hero">
       <h1>Speak Lebanese,<br>the way people really talk.</h1>
-      <p>Short lessons with a native speaker's voice. Listen, repeat, and try it out.</p>
+      <p>Ten levels, from your first "marhaba" to a real conversation with a native speaker.</p>
     </section>
     <section class="lessons">${cards}</section>`;
+}
+
+function viewLevel(n) {
+  const lv = DATA.levels.find(x => x.n === +n);
+  if (!lv) return viewHome();
+  const open = unlocked(lv);
+  const lessons = lv.lessons.map((l, i) => {
+    const p = progress.get(l.id);
+    const badge = p ? `<span class="badge done">✓ ${p.best}/${p.total}</span>` : `<span class="badge">${l.items.length} phrases</span>`;
+    const inner = `<span class="lesson-icon">${l.icon}</span>
+      <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong><span>${esc(l.subtitle)}</span></span>${badge}`;
+    return open ? `<a class="lesson-card" href="#/lesson/${l.id}">${inner}</a>` : `<div class="lesson-card locked">${inner}</div>`;
+  }).join('');
+  const planned = (lv.plan || []).map(t => `<div class="lesson-card locked soon"><span class="lesson-icon">⏳</span>
+      <span class="lesson-text"><small>Coming soon</small><strong>${esc(t)}</strong></span></div>`).join('');
+  app.innerHTML = `
+    <a class="back" href="#/">← All levels</a>
+    <h1>Level ${lv.n}: ${esc(lv.title)}</h1>
+    <p class="lead">${esc(lv.goal)}</p>
+    ${open ? '' : `<p class="card left">🔒 Finish every lesson in Level ${lv.n - 1} to open this level.</p>`}
+    <section class="lessons">${lessons}${planned}</section>`;
 }
 
 function viewAbout() {
@@ -109,15 +148,17 @@ const STEPS = ['learn', 'dialogue', 'practice', 'quiz'];
 const STEP_NAMES = { learn: 'Learn', dialogue: 'Listen', practice: 'Repeat', quiz: 'Quiz' };
 
 function viewLesson(id) {
-  const lesson = DATA.lessons.find(l => l.id === id);
+  const lesson = allLessons().find(l => l.id === id);
   if (!lesson) return viewHome();
+  const level = levelOf(id);
+  if (!unlocked(level)) return viewLevel(level.n);
   const s = { step: 'learn', i: 0, female: false, quiz: null, mine: null };
 
   const shell = body => {
     const stepIx = STEPS.indexOf(s.step);
     const tabs = STEPS.map((st, k) => `<span class="${k < stepIx ? 'past' : k === stepIx ? 'now' : ''}">${STEP_NAMES[st]}</span>`).join('');
     app.innerHTML = `
-      <a class="back" href="#/">← Lessons</a>
+      <a class="back" href="#/level/${level.n}">← Level ${level.n}</a>
       <h1 class="lesson-title">${lesson.icon} ${esc(lesson.title)}</h1>
       ${s.step === 'done' ? '' : `<nav class="steps">${tabs}</nav>`}
       <section class="stage">${body}</section>`;
@@ -233,22 +274,106 @@ function viewLesson(id) {
     };
   }
 
+  const words = t => t.split(/\s+/).filter(Boolean);
+
   async function buildQuiz() {
     const items = lesson.items;
     const qs = [];
     for (const it of shuffle(items)) {
       const others = shuffle(items.filter(x => x !== it)).slice(0, 3);
       const hasAudio = !!(await audio.audioUrl(it.id));
-      const types = ['meaning', 'say', 'picture'].concat(hasAudio ? ['listen', 'listen'] : []);
+      let types = ['meaning', 'say', 'picture'].concat(hasAudio ? ['listen', 'listen'] : []);
+      // From Level 3, phrases of 3+ words become "put the words in order".
+      if (level.n >= 3 && words(it.arabizi).length >= 3) types = ['build', 'build', ...types];
       const type = types[Math.floor(Math.random() * types.length)];
       qs.push({ type, answer: it, options: shuffle([it, ...others]) });
     }
-    return { qs, i: 0, score: 0, picked: null };
+    // Listening questions about the conversation go last.
+    for (const c of lesson.questions || []) {
+      const opts = c.options.map((text, k) => ({ text, right: k === c.answer }));
+      qs.push({ type: 'comp', q: c.q, options: shuffle(opts) });
+    }
+    return { qs, i: 0, score: 0, picked: null, built: [] };
+  }
+
+  function renderBuild(z, q) {
+    const target = words(q.answer.arabizi);
+    if (!z.pool) z.pool = shuffle(target.map((w, k) => ({ w, k })));
+    const used = new Set(z.built.map(t => t.k));
+    const checked = z.picked !== null;
+    const right = checked && z.built.map(t => t.w).join(' ') === target.join(' ');
+    const line = z.built.map(t => `<button class="tile" data-k="${t.k}" ${checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('')
+      || '<span class="muted">Tap the words below in order</span>';
+    const pool = z.pool.map(t => `<button class="tile ${used.has(t.k) ? 'gone' : ''}" data-p="${t.k}" ${used.has(t.k) || checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('');
+    shell(`
+      <div class="quizbar"><div style="width:${(z.i / z.qs.length) * 100}%"></div></div>
+      <div class="card">
+        <p class="ask">Build the sentence</p>
+        <div class="phrase big"><div class="t-english always">${esc(q.answer.english)}</div></div>
+      </div>
+      <div class="build ${checked ? (right ? 'right' : 'wrong') : ''}">${line}</div>
+      ${checked && !right ? `<p class="fix">✓ ${esc(q.answer.arabizi)} <span dir="rtl" lang="ar" class="ar">${esc(q.answer.arabic)}</span></p>` : ''}
+      <div class="tiles">${pool}</div>
+      <div class="nav">
+        <span class="count">${z.i + 1} / ${z.qs.length}</span>
+        ${checked
+          ? `<button class="btn primary" data-act="next">${z.i === z.qs.length - 1 ? 'See results' : 'Next'}</button>`
+          : `<button class="btn primary" data-act="check" ${z.built.length === target.length ? '' : 'disabled'}>Check</button>`}
+      </div>`);
+    app.querySelectorAll('[data-p]').forEach(b => b.onclick = () => { z.built.push(z.pool.find(t => t.k === +b.dataset.p)); render(); });
+    app.querySelectorAll('.build [data-k]').forEach(b => b.onclick = () => { z.built = z.built.filter(t => t.k !== +b.dataset.k); render(); });
+    const check = app.querySelector('[data-act=check]');
+    if (check) check.onclick = () => {
+      z.picked = 0;
+      if (z.built.map(t => t.w).join(' ') === target.join(' ')) z.score++;
+      render();
+      audio.play(q.answer.id);
+    };
+  }
+
+  function nextQuestion(z) {
+    if (z.i < z.qs.length - 1) { z.i++; z.picked = null; z.built = []; z.pool = null; render(); }
+    else { progress.complete(lesson.id, z.score, z.qs.length); s.step = 'done'; render(); }
   }
 
   function renderQuiz() {
     const z = s.quiz;
     const q = z.qs[z.i];
+    if (q.type === 'build') {
+      renderBuild(z, q);
+      const next = app.querySelector('[data-act=next]');
+      if (next) next.onclick = () => nextQuestion(z);
+      return;
+    }
+    if (q.type === 'comp') {
+      const opts = q.options.map((o, k) => {
+        let cls = '';
+        if (z.picked !== null) cls = o.right ? 'right' : (k === z.picked ? 'wrong' : 'dim');
+        return `<button class="opt ${cls}" data-k="${k}" ${z.picked !== null ? 'disabled' : ''}><span class="t-english always">${esc(o.text)}</span></button>`;
+      }).join('');
+      shell(`
+        <div class="quizbar"><div style="width:${(z.i / z.qs.length) * 100}%"></div></div>
+        <div class="card">
+          <p class="ask">👂 About the conversation</p>
+          <div class="phrase big"><div class="t-english always">${esc(q.q)}</div></div>
+          <div class="row"><button class="btn" data-act="replay">🔊 Hear it again</button></div>
+        </div>
+        <div class="opts">${opts}</div>
+        ${z.picked !== null ? `<div class="nav"><span class="count">${z.i + 1} / ${z.qs.length}</span><button class="btn primary" data-act="next">${z.i === z.qs.length - 1 ? 'See results' : 'Next'}</button></div>` : ''}`);
+      app.querySelector('[data-act=replay]').onclick = async e => {
+        e.currentTarget.disabled = true;
+        for (const d of lesson.dialogue) { if (!(await audio.play(d.id))) { toast('Some lines have no recording yet.'); break; } }
+        const b = app.querySelector('[data-act=replay]'); if (b) b.disabled = false;
+      };
+      app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+        z.picked = +b.dataset.k;
+        if (q.options[z.picked].right) z.score++;
+        render();
+      });
+      const next = app.querySelector('[data-act=next]');
+      if (next) next.onclick = () => nextQuestion(z);
+      return;
+    }
     const optEnglish = ['meaning', 'listen'].includes(q.type);
     const prompt = {
       listen: `<p class="ask">What did you hear?</p><div class="row">${playBtn(q.answer.id, 'Play again')}</div>`,
@@ -278,16 +403,15 @@ function viewLesson(id) {
       audio.play(q.answer.id); // always hear the correct answer
     });
     const next = app.querySelector('[data-act=next]');
-    if (next) next.onclick = () => {
-      if (z.i < z.qs.length - 1) { z.i++; z.picked = null; render(); }
-      else { progress.complete(lesson.id, z.score, z.qs.length); s.step = 'done'; render(); }
-    };
+    if (next) next.onclick = () => nextQuestion(z);
   }
 
   function renderDone() {
     const z = s.quiz;
-    const ix = DATA.lessons.indexOf(lesson);
-    const next = DATA.lessons[ix + 1];
+    const list = allLessons();
+    const next = list[list.indexOf(lesson) + 1];
+    const nextLevel = next && levelOf(next.id);
+    const newLevel = nextLevel && nextLevel !== level && unlocked(nextLevel);
     const pct = z.score / z.qs.length;
     const msg = pct === 1 ? 'Ya3teek l 3afye! Perfect.' : pct >= 0.7 ? 'Brava! Nicely done.' : 'Shway shway. Give it another go.';
     shell(`
@@ -295,9 +419,12 @@ function viewLesson(id) {
         <div class="pic">${pct >= 0.7 ? '🎉' : '💪'}</div>
         <h2>${z.score} / ${z.qs.length}</h2>
         <p>${msg}</p>
+        ${newLevel ? `<p class="note">🎉 You've opened <b>Level ${nextLevel.n}: ${esc(nextLevel.title)}</b></p>` : ''}
         <div class="row">
           <button class="btn ghost" data-act="again">Try the quiz again</button>
-          ${next ? `<a class="btn primary" href="#/lesson/${next.id}">Next: ${esc(next.title)} →</a>` : '<a class="btn primary" href="#/">All lessons</a>'}
+          ${next && (nextLevel === level || newLevel)
+            ? `<a class="btn primary" href="#/lesson/${next.id}">Next: ${esc(next.title)} →</a>`
+            : `<a class="btn primary" href="#/level/${level.n}">Back to Level ${level.n}</a>`}
         </div>
       </div>`);
     app.querySelector('[data-act=again]').onclick = async () => { s.quiz = await buildQuiz(); s.step = 'quiz'; render(); };
@@ -313,8 +440,8 @@ function viewLesson(id) {
 
 // ----- recording studio (for the teacher) -----
 async function viewStudio() {
-  const sections = DATA.lessons.map(l => `
-    <h2>${l.icon} ${esc(l.title)}</h2>
+  const sections = allLessons().map(l => `
+    <h2>Level ${levelOf(l.id).n} · ${l.icon} ${esc(l.title)}</h2>
     <ul class="clips">${clipsFor(l).map(c => `
       <li data-id="${esc(c.id)}">
         <div class="clip-text">
@@ -337,6 +464,7 @@ async function viewStudio() {
       <p>When you're happy, press <b>Download all</b> and unzip the files into the site's <code>audio/</code> folder. That's what makes them work for everyone.</p>
       <p class="muted">Tips: a quiet room, phone about 20 cm from your mouth, normal speed. Leave half a second of silence before and after.</p>
       <div class="row"><span id="tally" class="badge"></span><button class="btn primary" id="zip">⬇ Download all</button></div>
+      <label class="teacher"><input type="checkbox" id="unlock" ${settings.unlockAll ? 'checked' : ''}> Teacher mode: open all levels on this device</label>
     </div>
     ${sections}`;
 
@@ -356,6 +484,7 @@ async function viewStudio() {
     app.querySelector('#tally').textContent = `${have} / ${all} recorded`;
   };
 
+  app.querySelector('#unlock').onchange = e => { settings.unlockAll = e.target.checked; };
   const lis = [...app.querySelectorAll('.clips li')];
   await Promise.all(lis.map(refresh));
   tally();
@@ -423,6 +552,7 @@ function route() {
   window.scrollTo(0, 0);
   audio.stop();
   if (page === 'lesson') viewLesson(arg);
+  else if (page === 'level') viewLevel(arg);
   else if (page === 'studio') viewStudio();
   else if (page === 'about') viewAbout();
   else viewHome();
