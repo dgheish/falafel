@@ -4,6 +4,10 @@ A small website for adult beginners learning spoken Lebanese Arabic.
 
 Live at https://dgheish.github.io/falafel/
 
+## What's inside
+
+10 levels x 20 lessons = 200 lessons: 1,982 phrases (176 with a separate form for talking to a woman), 1,282 conversation lines and 398 listening questions. That's 3,440 recordings in total. All text is a draft for native-speaker review.
+
 ## Run it locally
 
     python3 -m http.server 8080
