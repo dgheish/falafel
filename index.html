@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahla! Learn Lebanese</title>
+  <meta name="description" content="Learn spoken Lebanese Arabic with a native speaker's voice.">
+  <meta name="theme-color" content="#1f5e3b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="logo">🌲</span> Ahla!</a>
+    <div class="toggles" aria-label="Writing shown">
+      <button class="chip" data-toggle="arabizi" aria-pressed="true">Abc</button>
+      <button class="chip" data-toggle="arabic" aria-pressed="true">عربي</button>
+      <button class="chip" data-toggle="english" aria-pressed="true">EN</button>
+    </div>
+  </header>
+  <main id="app"><p class="loading">Loading…</p></main>
+  <footer class="foot">
+    <a href="#/">Lessons</a> · <a href="#/studio">Recording studio</a> · <a href="#/about">How to read Arabizi</a>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

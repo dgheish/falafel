@@ -1,0 +1,108 @@
+{
+  "_note": "DRAFT content. Every phrase needs review by a native speaker before publishing. 'f' = the form used when talking to a woman. Audio files go in /audio named <id>.mp3 (or .m4a / .webm); the female form uses <id>-f.",
+  "speakers": {
+    "Karim": "m",
+    "Maya": "f",
+    "Sam": "m",
+    "Rami": "m"
+  },
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Hello, how are you?",
+      "subtitle": "Greetings you'll hear every day",
+      "icon": "👋",
+      "items": [
+        { "id": "greet-marhaba", "arabizi": "marhaba", "arabic": "مرحبا", "english": "Hello", "pic": "👋" },
+        { "id": "greet-ahla", "arabizi": "ahla w sahla", "arabic": "أهلا وسهلا", "english": "Welcome / Hi", "pic": "🤗",
+          "note": "The reply is 'ahla fik' to a man, 'ahla fike' to a woman." },
+        { "id": "greet-sabe7", "arabizi": "sabe7 l kheir", "arabic": "صباح الخير", "english": "Good morning", "pic": "🌅",
+          "note": "Reply with 'sabe7 l nour' (morning of light)." },
+        { "id": "greet-kifak", "arabizi": "kifak?", "arabic": "كيفك؟", "english": "How are you?", "pic": "🙂",
+          "f": { "arabizi": "kifik?", "arabic": "كيفِك؟" },
+          "note": "Lebanese changes the ending depending on who you're talking to." },
+        { "id": "greet-mni7", "arabizi": "mni7", "arabic": "منيح", "english": "Good / fine", "pic": "👍",
+          "f": { "arabizi": "mni7a", "arabic": "منيحة" },
+          "note": "This one follows the speaker: a woman says 'mni7a' about herself." },
+        { "id": "greet-hamdella", "arabizi": "l7amdella", "arabic": "الحمدلله", "english": "Thank God (I'm good)", "pic": "🙏",
+          "note": "The most common answer to 'kifak?', whatever your religion." },
+        { "id": "greet-shukran", "arabizi": "shukran", "arabic": "شكرا", "english": "Thank you", "pic": "💐",
+          "note": "You'll hear 'merci' just as often." },
+        { "id": "greet-3afwan", "arabizi": "3afwan", "arabic": "عفوا", "english": "You're welcome / Excuse me", "pic": "😊" },
+        { "id": "greet-yalla", "arabizi": "yalla bye", "arabic": "يلا باي", "english": "OK, bye!", "pic": "🏃" },
+        { "id": "greet-salame", "arabizi": "ma3 l salame", "arabic": "مع السلامة", "english": "Goodbye", "pic": "🚪" }
+      ],
+      "dialogue": [
+        { "id": "l1-d1", "speaker": "Karim", "arabizi": "marhaba!", "arabic": "مرحبا!", "english": "Hi!" },
+        { "id": "l1-d2", "speaker": "Maya", "arabizi": "ahla w sahla! kifak?", "arabic": "أهلا وسهلا! كيفك؟", "english": "Welcome! How are you?" },
+        { "id": "l1-d3", "speaker": "Karim", "arabizi": "mni7, l7amdella. w enti?", "arabic": "منيح، الحمدلله. وإنتِ؟", "english": "Good, thank God. And you?" },
+        { "id": "l1-d4", "speaker": "Maya", "arabizi": "mni7a, merci.", "arabic": "منيحة، مرسي.", "english": "Good, thanks." },
+        { "id": "l1-d5", "speaker": "Karim", "arabizi": "yalla bye!", "arabic": "يلا باي!", "english": "OK, bye!" },
+        { "id": "l1-d6", "speaker": "Maya", "arabizi": "ma3 l salame!", "arabic": "مع السلامة!", "english": "Goodbye!" }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Who are you?",
+      "subtitle": "Names, where you're from, and getting by",
+      "icon": "🙋",
+      "items": [
+        { "id": "intro-esmak", "arabizi": "shu esmak?", "arabic": "شو اسمك؟", "english": "What's your name?", "pic": "❓",
+          "f": { "arabizi": "shu esmik?", "arabic": "شو اسمِك؟" } },
+        { "id": "intro-esmi", "arabizi": "esmi Sam", "arabic": "اسمي سام", "english": "My name is Sam", "pic": "🪪" },
+        { "id": "intro-menwein", "arabizi": "men wein enta?", "arabic": "من وين إنت؟", "english": "Where are you from?", "pic": "🌍",
+          "f": { "arabizi": "men wein enti?", "arabic": "من وين إنتِ؟" } },
+        { "id": "intro-anamen", "arabizi": "ana men Canada", "arabic": "أنا من كندا", "english": "I'm from Canada", "pic": "🍁" },
+        { "id": "intro-tsharrafna", "arabizi": "tsharrafna", "arabic": "تشرّفنا", "english": "Nice to meet you", "pic": "🤝" },
+        { "id": "intro-aktar", "arabizi": "w ana aktar", "arabic": "وأنا أكتر", "english": "The pleasure's mine", "pic": "😄",
+          "note": "Literally 'and me more'. The standard reply to 'tsharrafna'." },
+        { "id": "intro-3amet3allam", "arabizi": "3am bet3allam 3arabe", "arabic": "عم بتعلّم عربي", "english": "I'm learning Arabic", "pic": "📚" },
+        { "id": "intro-shway", "arabizi": "shway shway", "arabic": "شوي شوي", "english": "Little by little / slowly", "pic": "🐢" },
+        { "id": "intro-mafhemet", "arabizi": "ma fhemet", "arabic": "ما فهمت", "english": "I didn't understand", "pic": "🤷" },
+        { "id": "intro-t3id", "arabizi": "fik t3id?", "arabic": "فيك تعيد؟", "english": "Can you say that again?", "pic": "🔁",
+          "f": { "arabizi": "fike t3ide?", "arabic": "فيكي تعيدي؟" } }
+      ],
+      "dialogue": [
+        { "id": "l2-d1", "speaker": "Maya", "arabizi": "marhaba! shu esmak?", "arabic": "مرحبا! شو اسمك؟", "english": "Hi! What's your name?" },
+        { "id": "l2-d2", "speaker": "Sam", "arabizi": "esmi Sam. w enti?", "arabic": "اسمي سام. وإنتِ؟", "english": "My name's Sam. And you?" },
+        { "id": "l2-d3", "speaker": "Maya", "arabizi": "esmi Maya. men wein enta?", "arabic": "اسمي مايا. من وين إنت؟", "english": "I'm Maya. Where are you from?" },
+        { "id": "l2-d4", "speaker": "Sam", "arabizi": "ana men Canada. 3am bet3allam 3arabe.", "arabic": "أنا من كندا. عم بتعلّم عربي.", "english": "I'm from Canada. I'm learning Arabic." },
+        { "id": "l2-d5", "speaker": "Maya", "arabizi": "ktir 7elo!", "arabic": "كتير حلو!", "english": "That's great!" },
+        { "id": "l2-d6", "speaker": "Sam", "arabizi": "shway shway... tsharrafna!", "arabic": "شوي شوي... تشرّفنا!", "english": "Little by little... nice to meet you!" },
+        { "id": "l2-d7", "speaker": "Maya", "arabizi": "w ana aktar!", "arabic": "وأنا أكتر!", "english": "The pleasure's mine!" }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "At the café",
+      "subtitle": "Order a coffee and pay the bill",
+      "icon": "☕",
+      "items": [
+        { "id": "cafe-badde", "arabizi": "badde ahwe", "arabic": "بدّي قهوة", "english": "I want a coffee", "pic": "☕",
+          "note": "In Beirut the 'q' sound drops out: 'ahwe', not 'qahwe'." },
+        { "id": "cafe-bala", "arabizi": "bala sukkar", "arabic": "بلا سكّر", "english": "Without sugar", "pic": "🚫" },
+        { "id": "cafe-wasat", "arabizi": "sukkar wasat", "arabic": "سكّر وسط", "english": "Medium sugar", "pic": "🍬" },
+        { "id": "cafe-mayy", "arabizi": "kebbeyet mayy", "arabic": "كبّاية مي", "english": "A glass of water", "pic": "🥛" },
+        { "id": "cafe-man2ouche", "arabizi": "man2ouche za3tar", "arabic": "منقوشة زعتر", "english": "A za'atar flatbread", "pic": "🫓" },
+        { "id": "cafe-2addeish", "arabizi": "2addeish?", "arabic": "قدّيش؟", "english": "How much?", "pic": "💵" },
+        { "id": "cafe-tlet", "arabizi": "tlet dollar", "arabic": "تلت دولار", "english": "Three dollars", "pic": "3️⃣" },
+        { "id": "cafe-7sab", "arabizi": "l 7sab iza bitrid", "arabic": "الحساب إذا بتريد", "english": "The bill, please", "pic": "🧾",
+          "f": { "arabizi": "l 7sab iza bitride", "arabic": "الحساب إذا بتريدي" } },
+        { "id": "cafe-tfaddal", "arabizi": "tfaddal", "arabic": "تفضّل", "english": "Here you go / Come in", "pic": "🫴",
+          "f": { "arabizi": "tfaddale", "arabic": "تفضّلي" } },
+        { "id": "cafe-tayyeb", "arabizi": "ktir tayyeb", "arabic": "كتير طيّب", "english": "Really tasty", "pic": "😋" }
+      ],
+      "dialogue": [
+        { "id": "l3-d1", "speaker": "Rami", "arabizi": "ahla w sahla! tfaddal.", "arabic": "أهلا وسهلا! تفضّل.", "english": "Welcome! Come in." },
+        { "id": "l3-d2", "speaker": "Sam", "arabizi": "marhaba. badde ahwe, iza bitrid.", "arabic": "مرحبا. بدّي قهوة، إذا بتريد.", "english": "Hi. A coffee, please." },
+        { "id": "l3-d3", "speaker": "Rami", "arabizi": "sukkar?", "arabic": "سكّر؟", "english": "Sugar?" },
+        { "id": "l3-d4", "speaker": "Sam", "arabizi": "sukkar wasat. w kebbeyet mayy.", "arabic": "سكّر وسط. وكبّاية مي.", "english": "Medium sugar. And a glass of water." },
+        { "id": "l3-d5", "speaker": "Rami", "arabizi": "tfaddal!", "arabic": "تفضّل!", "english": "Here you go!" },
+        { "id": "l3-d6", "speaker": "Sam", "arabizi": "merci. l 7sab iza bitrid. 2addeish?", "arabic": "مرسي. الحساب إذا بتريد. قدّيش؟", "english": "Thanks. The bill, please. How much?" },
+        { "id": "l3-d7", "speaker": "Rami", "arabizi": "tlet dollar.", "arabic": "تلت دولار.", "english": "Three dollars." },
+        { "id": "l3-d8", "speaker": "Sam", "arabizi": "tfaddal. yalla bye!", "arabic": "تفضّل. يلا باي!", "english": "Here you go. OK, bye!" },
+        { "id": "l3-d9", "speaker": "Rami", "arabizi": "ma3 l salame!", "arabic": "مع السلامة!", "english": "Goodbye!" }
+      ]
+    }
+  ]
+}
