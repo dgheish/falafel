@@ -8,7 +8,10 @@
     "Lina": "f",
     "Teta": "f",
     "Abu Ali": "m",
-    "Rita": "f"
+    "Rita": "f",
+    "Ziad": "m",
+    "Mona": "f",
+    "Clerk": "f"
   },
   "levels": [
     {
@@ -5540,116 +5543,2720 @@
         {
           "id": "lv3-02",
           "title": "There is, there isn't",
+          "subtitle": "Say what exists, with 'fi'",
           "icon": "📦",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-02-01",
+              "arabizi": "fi ma7all hon?",
+              "arabic": "في محل هون؟",
+              "english": "Is there a shop here?",
+              "pic": "🏪"
+            },
+            {
+              "id": "lv3-02-02",
+              "arabizi": "fi saydaleye 2arib?",
+              "arabic": "في صيدلية قريب؟",
+              "english": "Is there a pharmacy nearby?",
+              "pic": "💊"
+            },
+            {
+              "id": "lv3-02-03",
+              "arabizi": "fi wifi bel beit?",
+              "arabic": "في وايفاي بالبيت؟",
+              "english": "Is there Wi-Fi in the house?",
+              "pic": "📶"
+            },
+            {
+              "id": "lv3-02-04",
+              "arabizi": "ma fi kahraba",
+              "arabic": "ما في كهربا",
+              "english": "There's no electricity",
+              "pic": "🔌",
+              "note": "You'll hear this a lot in Lebanon."
+            },
+            {
+              "id": "lv3-02-05",
+              "arabizi": "ma fi mayy skhne",
+              "arabic": "ما في مي سخنة",
+              "english": "There's no hot water",
+              "pic": "🚿"
+            },
+            {
+              "id": "lv3-02-06",
+              "arabizi": "fi 3aj2a ktir",
+              "arabic": "في عجقة كتير",
+              "english": "There's a lot of traffic",
+              "pic": "🚦"
+            },
+            {
+              "id": "lv3-02-07",
+              "arabizi": "fi shi tene?",
+              "arabic": "في شي تاني؟",
+              "english": "Is there anything else?",
+              "pic": "➕"
+            },
+            {
+              "id": "lv3-02-08",
+              "arabizi": "ma fi wala shi",
+              "arabic": "ما في ولا شي",
+              "english": "There's nothing at all",
+              "pic": "🕳️"
+            },
+            {
+              "id": "lv3-02-09",
+              "arabizi": "fi nes ktir",
+              "arabic": "في ناس كتير",
+              "english": "There are lots of people",
+              "pic": "👥"
+            },
+            {
+              "id": "lv3-02-10",
+              "arabizi": "ma fi ma7all",
+              "arabic": "ما في محل",
+              "english": "There's no room / no space",
+              "pic": "🈵"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-02-d1",
+              "speaker": "Sam",
+              "arabizi": "fi kahraba hala2?",
+              "arabic": "في كهربا هلّق؟",
+              "english": "Is there electricity now?"
+            },
+            {
+              "id": "lv3-02-d2",
+              "speaker": "Maya",
+              "arabizi": "la2, ma fi.",
+              "arabic": "لأ، ما في.",
+              "english": "No, there isn't."
+            },
+            {
+              "id": "lv3-02-d3",
+              "speaker": "Sam",
+              "arabizi": "w l moteur?",
+              "arabic": "والموتور؟",
+              "english": "And the generator?"
+            },
+            {
+              "id": "lv3-02-d4",
+              "speaker": "Maya",
+              "arabizi": "l moteur bye2ja l se3a sette.",
+              "arabic": "الموتور بيجي الساعة ستة.",
+              "english": "The generator comes on at six."
+            },
+            {
+              "id": "lv3-02-d5",
+              "speaker": "Sam",
+              "arabizi": "tayyeb. fi mayy skhne?",
+              "arabic": "طيّب. في مي سخنة؟",
+              "english": "OK. Is there hot water?"
+            },
+            {
+              "id": "lv3-02-d6",
+              "speaker": "Maya",
+              "arabizi": "la2, w ma fi wifi kamen!",
+              "arabic": "لأ، وما في وايفاي كمان!",
+              "english": "No, and there's no Wi-Fi either!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "When does the generator come on?",
+              "options": [
+                "At six",
+                "Now",
+                "Tomorrow"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What else is missing?",
+              "options": [
+                "Wi-Fi and hot water",
+                "Bread",
+                "Nothing"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-03",
           "title": "Saying no",
+          "subtitle": "Say no in three ways: ma, mish, la2",
           "icon": "🙅",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-03-01",
+              "arabizi": "ma ba3ref",
+              "arabic": "ما بعرف",
+              "english": "I don't know",
+              "pic": "🤷"
+            },
+            {
+              "id": "lv3-03-02",
+              "arabizi": "ma badde",
+              "arabic": "ما بدّي",
+              "english": "I don't want (it)",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv3-03-03",
+              "arabizi": "ana mish lebnene",
+              "arabic": "أنا مش لبناني",
+              "english": "I'm not Lebanese",
+              "pic": "🌍",
+              "f": {
+                "arabizi": "ana mish lebneniye",
+                "arabic": "أنا مش لبنانية"
+              }
+            },
+            {
+              "id": "lv3-03-04",
+              "arabizi": "hayda mish ghali",
+              "arabic": "هيدا مش غالي",
+              "english": "This isn't expensive",
+              "pic": "🏷️"
+            },
+            {
+              "id": "lv3-03-05",
+              "arabizi": "ma fhemet shi",
+              "arabic": "ما فهمت شي",
+              "english": "I didn't understand anything",
+              "pic": "😵"
+            },
+            {
+              "id": "lv3-03-06",
+              "arabizi": "mish hala2",
+              "arabic": "مش هلّق",
+              "english": "Not now",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv3-03-07",
+              "arabizi": "ma 3ande sayyara",
+              "arabic": "ما عندي سيّارة",
+              "english": "I don't have a car",
+              "pic": "🚶"
+            },
+            {
+              "id": "lv3-03-08",
+              "arabizi": "la2, merci",
+              "arabic": "لأ، مرسي",
+              "english": "No, thank you",
+              "pic": "🙏"
+            },
+            {
+              "id": "lv3-03-09",
+              "arabizi": "mish mashkle",
+              "arabic": "مش مشكلة",
+              "english": "It's not a problem",
+              "pic": "👌"
+            },
+            {
+              "id": "lv3-03-10",
+              "arabizi": "ma 7ada hon",
+              "arabic": "ما حدا هون",
+              "english": "Nobody's here",
+              "pic": "🫥"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-03-d1",
+              "speaker": "Rami",
+              "arabizi": "badak ahwe?",
+              "arabic": "بدّك قهوة؟",
+              "english": "Do you want coffee?"
+            },
+            {
+              "id": "lv3-03-d2",
+              "speaker": "Sam",
+              "arabizi": "la2, merci. mish hala2.",
+              "arabic": "لأ، مرسي. مش هلّق.",
+              "english": "No, thanks. Not now."
+            },
+            {
+              "id": "lv3-03-d3",
+              "speaker": "Rami",
+              "arabizi": "enta mish 3atshan?",
+              "arabic": "إنت مش عطشان؟",
+              "english": "Aren't you thirsty?"
+            },
+            {
+              "id": "lv3-03-d4",
+              "speaker": "Sam",
+              "arabizi": "la2, bas ana ta3ban.",
+              "arabic": "لأ، بس أنا تعبان.",
+              "english": "No, but I'm tired."
+            },
+            {
+              "id": "lv3-03-d5",
+              "speaker": "Rami",
+              "arabizi": "ahwe la t-ta3ab!",
+              "arabic": "قهوة للتعب!",
+              "english": "Coffee for tiredness!"
+            },
+            {
+              "id": "lv3-03-d6",
+              "speaker": "Sam",
+              "arabizi": "hahaha, tayyeb, mish mashkle!",
+              "arabic": "هههه، طيّب، مش مشكلة!",
+              "english": "Haha, OK, no problem!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Does Sam drink coffee in the end?",
+              "options": [
+                "Yes",
+                "No",
+                "We don't know"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How does Sam feel?",
+              "options": [
+                "Tired",
+                "Thirsty",
+                "Hungry"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-04",
           "title": "I like, I don't like",
+          "subtitle": "Talk about what you love and hate",
           "icon": "❤️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-04-01",
+              "arabizi": "b7ebb l falafel",
+              "arabic": "بحبّ الفلافل",
+              "english": "I love falafel",
+              "pic": "🧆"
+            },
+            {
+              "id": "lv3-04-02",
+              "arabizi": "ma b7ebb l ba2dounes",
+              "arabic": "ما بحبّ البقدونس",
+              "english": "I don't like parsley",
+              "pic": "🌿"
+            },
+            {
+              "id": "lv3-04-03",
+              "arabizi": "b7ebb Beirut ktir",
+              "arabic": "بحبّ بيروت كتير",
+              "english": "I love Beirut a lot",
+              "pic": "🏙️"
+            },
+            {
+              "id": "lv3-04-04",
+              "arabizi": "bet7ebb l ba7er?",
+              "arabic": "بتحبّ البحر؟",
+              "english": "Do you like the sea?",
+              "pic": "🌊",
+              "f": {
+                "arabizi": "bet7ebbe l ba7er?",
+                "arabic": "بتحبّي البحر؟"
+              }
+            },
+            {
+              "id": "lv3-04-05",
+              "arabizi": "bmout bel kenafe",
+              "arabic": "بموت بالكنافة",
+              "english": "I'm crazy about knafeh",
+              "pic": "🍰",
+              "note": "Literally 'I die for knafeh'."
+            },
+            {
+              "id": "lv3-04-06",
+              "arabizi": "ma bet7amal l 3aj2a",
+              "arabic": "ما بتحمّل العجقة",
+              "english": "I can't stand traffic",
+              "pic": "😤"
+            },
+            {
+              "id": "lv3-04-07",
+              "arabizi": "3ajabak?",
+              "arabic": "عجبك؟",
+              "english": "Did you like it?",
+              "pic": "🤔",
+              "f": {
+                "arabizi": "3ajabik?",
+                "arabic": "عجبك؟"
+              }
+            },
+            {
+              "id": "lv3-04-08",
+              "arabizi": "ktir 3ajabne",
+              "arabic": "كتير عجبني",
+              "english": "I really liked it",
+              "pic": "😍"
+            },
+            {
+              "id": "lv3-04-09",
+              "arabizi": "mish ktir",
+              "arabic": "مش كتير",
+              "english": "Not much",
+              "pic": "😐"
+            },
+            {
+              "id": "lv3-04-10",
+              "arabizi": "b7ebbo aktar",
+              "arabic": "بحبّو أكتر",
+              "english": "I like it more",
+              "pic": "⬆️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-04-d1",
+              "speaker": "Lina",
+              "arabizi": "bet7ebb l akl l lebnene?",
+              "arabic": "بتحبّ الأكل اللبناني؟",
+              "english": "Do you like Lebanese food?"
+            },
+            {
+              "id": "lv3-04-d2",
+              "speaker": "Sam",
+              "arabizi": "bmout fi! khsousan l kenafe.",
+              "arabic": "بموت فيه! خصوصًا الكنافة.",
+              "english": "I love it! Especially knafeh."
+            },
+            {
+              "id": "lv3-04-d3",
+              "speaker": "Lina",
+              "arabizi": "w l tabbouleh?",
+              "arabic": "والتبولة؟",
+              "english": "And tabbouleh?"
+            },
+            {
+              "id": "lv3-04-d4",
+              "speaker": "Sam",
+              "arabizi": "mish ktir. ma b7ebb l ba2dounes.",
+              "arabic": "مش كتير. ما بحبّ البقدونس.",
+              "english": "Not much. I don't like parsley."
+            },
+            {
+              "id": "lv3-04-d5",
+              "speaker": "Lina",
+              "arabizi": "shu?! ma32oul!",
+              "arabic": "شو؟! معقول!",
+              "english": "What?! Impossible!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Sam love most?",
+              "options": [
+                "Knafeh",
+                "Tabbouleh",
+                "Parsley"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why doesn't Sam like tabbouleh?",
+              "options": [
+                "He doesn't like parsley",
+                "It's too sour",
+                "It's too expensive"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-05",
           "title": "I can, I can't",
+          "subtitle": "Say what you can and can't do",
           "icon": "💪",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-05-01",
+              "arabizi": "fiye se3dak?",
+              "arabic": "فيي ساعدك؟",
+              "english": "Can I help you?",
+              "pic": "🙋",
+              "f": {
+                "arabizi": "fiye se3dik?",
+                "arabic": "فيي ساعدك؟"
+              }
+            },
+            {
+              "id": "lv3-05-02",
+              "arabizi": "fik tse3edne?",
+              "arabic": "فيك تساعدني؟",
+              "english": "Can you help me?",
+              "pic": "🆘",
+              "f": {
+                "arabizi": "fike tse3dine?",
+                "arabic": "فيكي تساعديني؟"
+              }
+            },
+            {
+              "id": "lv3-05-03",
+              "arabizi": "ma fiye ije",
+              "arabic": "ما فيي إجي",
+              "english": "I can't come",
+              "pic": "🚫"
+            },
+            {
+              "id": "lv3-05-04",
+              "arabizi": "fiye sou2",
+              "arabic": "فيي سوق",
+              "english": "I can drive",
+              "pic": "🚗"
+            },
+            {
+              "id": "lv3-05-05",
+              "arabizi": "fik tehke shway shway?",
+              "arabic": "فيك تحكي شوي شوي؟",
+              "english": "Can you speak slowly?",
+              "pic": "🐢",
+              "f": {
+                "arabizi": "fike tehke shway shway?",
+                "arabic": "فيكي تحكي شوي شوي؟"
+              }
+            },
+            {
+              "id": "lv3-05-06",
+              "arabizi": "ma fiye nem",
+              "arabic": "ما فيي نام",
+              "english": "I can't sleep",
+              "pic": "😩"
+            },
+            {
+              "id": "lv3-05-07",
+              "arabizi": "fina nrou7 bukra",
+              "arabic": "فينا نروح بكرا",
+              "english": "We can go tomorrow",
+              "pic": "📅"
+            },
+            {
+              "id": "lv3-05-08",
+              "arabizi": "ma fiye ekol 7arr",
+              "arabic": "ما فيي إكل حرّ",
+              "english": "I can't eat spicy food",
+              "pic": "🌶️"
+            },
+            {
+              "id": "lv3-05-09",
+              "arabizi": "fiye fout?",
+              "arabic": "فيي فوت؟",
+              "english": "Can I come in?",
+              "pic": "🚪"
+            },
+            {
+              "id": "lv3-05-10",
+              "arabizi": "akid fik",
+              "arabic": "أكيد فيك",
+              "english": "Of course you can",
+              "pic": "👍",
+              "f": {
+                "arabizi": "akid fike",
+                "arabic": "أكيد فيكي"
+              }
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-05-d1",
+              "speaker": "Sam",
+              "arabizi": "fike tehke shway shway?",
+              "arabic": "فيكي تحكي شوي شوي؟",
+              "english": "Can you speak slowly?"
+            },
+            {
+              "id": "lv3-05-d2",
+              "speaker": "Maya",
+              "arabizi": "akid. fik teje 3al 3asha bukra?",
+              "arabic": "أكيد. فيك تجي عالعشا بكرا؟",
+              "english": "Of course. Can you come to dinner tomorrow?"
+            },
+            {
+              "id": "lv3-05-d3",
+              "speaker": "Sam",
+              "arabizi": "bukra ma fiye. b3d bukra?",
+              "arabic": "بكرا ما فيي. بعد بكرا؟",
+              "english": "Tomorrow I can't. The day after?"
+            },
+            {
+              "id": "lv3-05-d4",
+              "speaker": "Maya",
+              "arabizi": "eh, fina. bet7ebb l akl l 7arr?",
+              "arabic": "إيه، فينا. بتحبّ الأكل الحرّ؟",
+              "english": "Yes, we can. Do you like spicy food?"
+            },
+            {
+              "id": "lv3-05-d5",
+              "speaker": "Sam",
+              "arabizi": "la2, ma fiye ekol 7arr!",
+              "arabic": "لأ، ما فيي إكل حرّ!",
+              "english": "No, I can't eat spicy food!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "When will Sam come to dinner?",
+              "options": [
+                "The day after tomorrow",
+                "Tomorrow",
+                "Tonight"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What can't Sam eat?",
+              "options": [
+                "Spicy food",
+                "Meat",
+                "Bread"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-06",
           "title": "I need",
+          "subtitle": "Say what you need",
           "icon": "🆘",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-06-01",
+              "arabizi": "lezemne mayy",
+              "arabic": "لازمني مي",
+              "english": "I need water",
+              "pic": "💧"
+            },
+            {
+              "id": "lv3-06-02",
+              "arabizi": "lezemne ra7a",
+              "arabic": "لازمني راحة",
+              "english": "I need a rest",
+              "pic": "😴"
+            },
+            {
+              "id": "lv3-06-03",
+              "arabizi": "lezemak shi?",
+              "arabic": "لازمك شي؟",
+              "english": "Do you need anything?",
+              "pic": "🙋",
+              "f": {
+                "arabizi": "lezmik shi?",
+                "arabic": "لازمك شي؟"
+              }
+            },
+            {
+              "id": "lv3-06-04",
+              "arabizi": "lazem rou7",
+              "arabic": "لازم روح",
+              "english": "I have to go",
+              "pic": "🏃"
+            },
+            {
+              "id": "lv3-06-05",
+              "arabizi": "lazem eshteghel bukra",
+              "arabic": "لازم إشتغل بكرا",
+              "english": "I have to work tomorrow",
+              "pic": "💼"
+            },
+            {
+              "id": "lv3-06-06",
+              "arabizi": "mish lazem",
+              "arabic": "مش لازم",
+              "english": "It's not necessary",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv3-06-07",
+              "arabizi": "lezemne doktor",
+              "arabic": "لازمني دكتور",
+              "english": "I need a doctor",
+              "pic": "🩺"
+            },
+            {
+              "id": "lv3-06-08",
+              "arabizi": "lezemne masari",
+              "arabic": "لازمني مصاري",
+              "english": "I need money",
+              "pic": "💰"
+            },
+            {
+              "id": "lv3-06-09",
+              "arabizi": "lazem nektob",
+              "arabic": "لازم نكتب",
+              "english": "We need to write",
+              "pic": "✍️"
+            },
+            {
+              "id": "lv3-06-10",
+              "arabizi": "3a shu lezmak?",
+              "arabic": "عشو لازمك؟",
+              "english": "What do you need it for?",
+              "pic": "❓"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-06-d1",
+              "speaker": "Lina",
+              "arabizi": "lezemak shi men l supermarket?",
+              "arabic": "لازمك شي من السوبرماركت؟",
+              "english": "Do you need anything from the supermarket?"
+            },
+            {
+              "id": "lv3-06-d2",
+              "speaker": "Sam",
+              "arabizi": "eh, lezemne 7alib w khebez.",
+              "arabic": "إيه، لازمني حليب وخبز.",
+              "english": "Yes, I need milk and bread."
+            },
+            {
+              "id": "lv3-06-d3",
+              "speaker": "Lina",
+              "arabizi": "w bayd?",
+              "arabic": "وبيض؟",
+              "english": "And eggs?"
+            },
+            {
+              "id": "lv3-06-d4",
+              "speaker": "Sam",
+              "arabizi": "mish lazem, 3ande.",
+              "arabic": "مش لازم، عندي.",
+              "english": "No need, I have some."
+            },
+            {
+              "id": "lv3-06-d5",
+              "speaker": "Lina",
+              "arabizi": "tayyeb. lazem rou7 hala2.",
+              "arabic": "طيّب. لازم روح هلّق.",
+              "english": "OK. I have to go now."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Sam need?",
+              "options": [
+                "Milk and bread",
+                "Eggs",
+                "Water"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Why doesn't Sam need eggs?",
+              "options": [
+                "He already has some",
+                "He doesn't eat eggs",
+                "They're expensive"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-07",
           "title": "I know, I don't know",
+          "subtitle": "Say what you know",
           "icon": "🧠",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-07-01",
+              "arabizi": "ba3ref",
+              "arabic": "بعرف",
+              "english": "I know",
+              "pic": "🧠"
+            },
+            {
+              "id": "lv3-07-02",
+              "arabizi": "ma ba3ref",
+              "arabic": "ما بعرف",
+              "english": "I don't know",
+              "pic": "🤷"
+            },
+            {
+              "id": "lv3-07-03",
+              "arabizi": "bta3ref Karim?",
+              "arabic": "بتعرف كريم؟",
+              "english": "Do you know Karim?",
+              "pic": "👤",
+              "f": {
+                "arabizi": "bta3rfe Karim?",
+                "arabic": "بتعرفي كريم؟"
+              }
+            },
+            {
+              "id": "lv3-07-04",
+              "arabizi": "ba3refo men zaman",
+              "arabic": "بعرفو من زمان",
+              "english": "I've known him for ages",
+              "pic": "⏳"
+            },
+            {
+              "id": "lv3-07-05",
+              "arabizi": "ma ba3ref wein l beit",
+              "arabic": "ما بعرف وين البيت",
+              "english": "I don't know where the house is",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv3-07-06",
+              "arabizi": "bta3ref tsou2?",
+              "arabic": "بتعرف تسوق؟",
+              "english": "Do you know how to drive?",
+              "pic": "🚗",
+              "f": {
+                "arabizi": "bta3rfe tsou2e?",
+                "arabic": "بتعرفي تسوقي؟"
+              }
+            },
+            {
+              "id": "lv3-07-07",
+              "arabizi": "ba3ref eshwe",
+              "arabic": "بعرف إشوي",
+              "english": "I know how to grill",
+              "pic": "🍢"
+            },
+            {
+              "id": "lv3-07-08",
+              "arabizi": "mish akid",
+              "arabic": "مش أكيد",
+              "english": "I'm not sure",
+              "pic": "😕"
+            },
+            {
+              "id": "lv3-07-09",
+              "arabizi": "ma 3ande fekra",
+              "arabic": "ما عندي فكرة",
+              "english": "I have no idea",
+              "pic": "💭"
+            },
+            {
+              "id": "lv3-07-10",
+              "arabizi": "3refet!",
+              "arabic": "عرفت!",
+              "english": "I've got it! / I know!",
+              "pic": "💡"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-07-d1",
+              "speaker": "Maya",
+              "arabizi": "bta3ref Rita?",
+              "arabic": "بتعرف ريتا؟",
+              "english": "Do you know Rita?"
+            },
+            {
+              "id": "lv3-07-d2",
+              "speaker": "Sam",
+              "arabizi": "eh, ba3refa men l shoghl.",
+              "arabic": "إيه، بعرفا من الشغل.",
+              "english": "Yes, I know her from work."
+            },
+            {
+              "id": "lv3-07-d3",
+              "speaker": "Maya",
+              "arabizi": "bta3ref wein bteskon?",
+              "arabic": "بتعرف وين بتسكن؟",
+              "english": "Do you know where she lives?"
+            },
+            {
+              "id": "lv3-07-d4",
+              "speaker": "Sam",
+              "arabizi": "ma 3ande fekra. bel Achrafieh?",
+              "arabic": "ما عندي فكرة. بالأشرفية؟",
+              "english": "No idea. In Achrafieh?"
+            },
+            {
+              "id": "lv3-07-d5",
+              "speaker": "Maya",
+              "arabizi": "mish akid...",
+              "arabic": "مش أكيد...",
+              "english": "Not sure..."
+            }
+          ],
+          "questions": [
+            {
+              "q": "How does Sam know Rita?",
+              "options": [
+                "From work",
+                "From school",
+                "From the gym"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Does Sam know where Rita lives?",
+              "options": [
+                "No",
+                "Yes, in Achrafieh",
+                "Yes, in Hamra"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-08",
           "title": "Where is…?",
+          "subtitle": "Ask where things are",
           "icon": "📍",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-08-01",
+              "arabizi": "wein l 7ammem?",
+              "arabic": "وين الحمّام؟",
+              "english": "Where's the toilet?",
+              "pic": "🚻"
+            },
+            {
+              "id": "lv3-08-02",
+              "arabizi": "wein l ma7atta?",
+              "arabic": "وين المحطة؟",
+              "english": "Where's the station?",
+              "pic": "🚉"
+            },
+            {
+              "id": "lv3-08-03",
+              "arabizi": "wein enta?",
+              "arabic": "وين إنت؟",
+              "english": "Where are you?",
+              "pic": "📍",
+              "f": {
+                "arabizi": "wein enti?",
+                "arabic": "وين إنتِ؟"
+              }
+            },
+            {
+              "id": "lv3-08-04",
+              "arabizi": "ana hon",
+              "arabic": "أنا هون",
+              "english": "I'm here",
+              "pic": "🙋"
+            },
+            {
+              "id": "lv3-08-05",
+              "arabizi": "2arib",
+              "arabic": "قريب",
+              "english": "Close",
+              "pic": "📏"
+            },
+            {
+              "id": "lv3-08-06",
+              "arabizi": "ba3id",
+              "arabic": "بعيد",
+              "english": "Far",
+              "pic": "🛣️"
+            },
+            {
+              "id": "lv3-08-07",
+              "arabizi": "3al yamin",
+              "arabic": "عاليمين",
+              "english": "On the right",
+              "pic": "➡️"
+            },
+            {
+              "id": "lv3-08-08",
+              "arabizi": "3al shmel",
+              "arabic": "عالشمال",
+              "english": "On the left",
+              "pic": "⬅️"
+            },
+            {
+              "id": "lv3-08-09",
+              "arabizi": "dughre",
+              "arabic": "دغري",
+              "english": "Straight ahead",
+              "pic": "⬆️"
+            },
+            {
+              "id": "lv3-08-10",
+              "arabizi": "wara l jeme3",
+              "arabic": "ورا الجامع",
+              "english": "Behind the mosque",
+              "pic": "🕌"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-08-d1",
+              "speaker": "Sam",
+              "arabizi": "3an eznak, wein l saydaleye?",
+              "arabic": "عن إذنك، وين الصيدلية؟",
+              "english": "Excuse me, where's the pharmacy?"
+            },
+            {
+              "id": "lv3-08-d2",
+              "speaker": "Abu Ali",
+              "arabizi": "dughre, w ba3dein 3al yamin.",
+              "arabic": "دغري، وبعدين عاليمين.",
+              "english": "Straight on, then right."
+            },
+            {
+              "id": "lv3-08-d3",
+              "speaker": "Sam",
+              "arabizi": "ba3ide?",
+              "arabic": "بعيدة؟",
+              "english": "Is it far?"
+            },
+            {
+              "id": "lv3-08-d4",
+              "speaker": "Abu Ali",
+              "arabizi": "la2, 2aribe. wara l jeme3.",
+              "arabic": "لأ، قريبة. ورا الجامع.",
+              "english": "No, it's close. Behind the mosque."
+            },
+            {
+              "id": "lv3-08-d5",
+              "speaker": "Sam",
+              "arabizi": "merci ktir!",
+              "arabic": "مرسي كتير!",
+              "english": "Thanks a lot!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where is the pharmacy?",
+              "options": [
+                "Behind the mosque",
+                "On the left",
+                "Far away"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Which way does Sam turn?",
+              "options": [
+                "Right",
+                "Left",
+                "Back"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-09",
           "title": "Ordering at a restaurant",
+          "subtitle": "Order a meal",
           "icon": "🍽️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-09-01",
+              "arabizi": "l menu iza bitrid",
+              "arabic": "المنيو إذا بتريد",
+              "english": "The menu, please",
+              "pic": "📋"
+            },
+            {
+              "id": "lv3-09-02",
+              "arabizi": "shu btensa7na?",
+              "arabic": "شو بتنصحنا؟",
+              "english": "What do you recommend?",
+              "pic": "🤔"
+            },
+            {
+              "id": "lv3-09-03",
+              "arabizi": "badna mezze",
+              "arabic": "بدنا مازة",
+              "english": "We want mezze",
+              "pic": "🥗",
+              "note": "A spread of small dishes to share."
+            },
+            {
+              "id": "lv3-09-04",
+              "arabizi": "sa7en hommos",
+              "arabic": "صحن حمّص",
+              "english": "A plate of hummus",
+              "pic": "🫘"
+            },
+            {
+              "id": "lv3-09-05",
+              "arabizi": "fattoush w tabbouleh",
+              "arabic": "فتوش وتبولة",
+              "english": "Fattoush and tabbouleh",
+              "pic": "🥗"
+            },
+            {
+              "id": "lv3-09-06",
+              "arabizi": "mashewe",
+              "arabic": "مشاوي",
+              "english": "Grilled meats",
+              "pic": "🍢"
+            },
+            {
+              "id": "lv3-09-07",
+              "arabizi": "bala basal",
+              "arabic": "بلا بصل",
+              "english": "Without onion",
+              "pic": "🧅"
+            },
+            {
+              "id": "lv3-09-08",
+              "arabizi": "mayy 3adiye",
+              "arabic": "مي عادية",
+              "english": "Still water",
+              "pic": "💧"
+            },
+            {
+              "id": "lv3-09-09",
+              "arabizi": "l akl tayyeb ktir",
+              "arabic": "الأكل طيّب كتير",
+              "english": "The food is very good",
+              "pic": "😋"
+            },
+            {
+              "id": "lv3-09-10",
+              "arabizi": "l 7sab iza bitrid",
+              "arabic": "الحساب إذا بتريد",
+              "english": "The bill, please",
+              "pic": "🧾"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-09-d1",
+              "speaker": "Rami",
+              "arabizi": "shu btetlobo?",
+              "arabic": "شو بتطلبوا؟",
+              "english": "What will you order?"
+            },
+            {
+              "id": "lv3-09-d2",
+              "speaker": "Sam",
+              "arabizi": "shu btensa7na?",
+              "arabic": "شو بتنصحنا؟",
+              "english": "What do you recommend?"
+            },
+            {
+              "id": "lv3-09-d3",
+              "speaker": "Rami",
+              "arabizi": "l mezze w l mashewe.",
+              "arabic": "المازة والمشاوي.",
+              "english": "The mezze and the grills."
+            },
+            {
+              "id": "lv3-09-d4",
+              "speaker": "Sam",
+              "arabizi": "tayyeb. hommos, fattoush w mashewe. bala basal.",
+              "arabic": "طيّب. حمّص، فتوش ومشاوي. بلا بصل.",
+              "english": "OK. Hummus, fattoush and grills. No onion."
+            },
+            {
+              "id": "lv3-09-d5",
+              "speaker": "Rami",
+              "arabizi": "w shu bteshrabo?",
+              "arabic": "وشو بتشربوا؟",
+              "english": "And to drink?"
+            },
+            {
+              "id": "lv3-09-d6",
+              "speaker": "Sam",
+              "arabizi": "mayy 3adiye.",
+              "arabic": "مي عادية.",
+              "english": "Still water."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Sam not want?",
+              "options": [
+                "Onion",
+                "Hummus",
+                "Water"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does the waiter recommend?",
+              "options": [
+                "Mezze and grills",
+                "Fish",
+                "Falafel"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-10",
           "title": "At the vegetable market",
+          "subtitle": "Shop at the vegetable market",
           "icon": "🥬",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-10-01",
+              "arabizi": "addeish kilo l banadoura?",
+              "arabic": "قدّيش كيلو البندورة؟",
+              "english": "How much is a kilo of tomatoes?",
+              "pic": "🍅"
+            },
+            {
+              "id": "lv3-10-02",
+              "arabizi": "hayde tazé?",
+              "arabic": "هيدي طازة؟",
+              "english": "Is this fresh?",
+              "pic": "🌱"
+            },
+            {
+              "id": "lv3-10-03",
+              "arabizi": "3atine kilo w noss",
+              "arabic": "عطيني كيلو ونص",
+              "english": "Give me a kilo and a half",
+              "pic": "⚖️"
+            },
+            {
+              "id": "lv3-10-04",
+              "arabizi": "fi kis?",
+              "arabic": "في كيس؟",
+              "english": "Is there a bag?",
+              "pic": "🛍️"
+            },
+            {
+              "id": "lv3-10-05",
+              "arabizi": "ktir ghali, nazzel shway",
+              "arabic": "كتير غالي، نزّل شوي",
+              "english": "Too expensive, lower it a bit",
+              "pic": "📉"
+            },
+            {
+              "id": "lv3-10-06",
+              "arabizi": "badde 7abbe wa7de",
+              "arabic": "بدّي حبّة وحدة",
+              "english": "I want just one",
+              "pic": "☝️"
+            },
+            {
+              "id": "lv3-10-07",
+              "arabizi": "mnihin l khyar?",
+              "arabic": "منيحين الخيار؟",
+              "english": "Are the cucumbers good?",
+              "pic": "🥒"
+            },
+            {
+              "id": "lv3-10-08",
+              "arabizi": "7ottle b kis",
+              "arabic": "حطلي بكيس",
+              "english": "Put it in a bag for me",
+              "pic": "🛍️"
+            },
+            {
+              "id": "lv3-10-09",
+              "arabizi": "khalli l fraata",
+              "arabic": "خلّي الفراطة",
+              "english": "Keep the change",
+              "pic": "🪙"
+            },
+            {
+              "id": "lv3-10-10",
+              "arabizi": "ya3tik l 3afye",
+              "arabic": "يعطيك العافية",
+              "english": "Thanks for your work",
+              "pic": "💪"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-10-d1",
+              "speaker": "Sam",
+              "arabizi": "addeish kilo l banadoura?",
+              "arabic": "قدّيش كيلو البندورة؟",
+              "english": "How much is a kilo of tomatoes?"
+            },
+            {
+              "id": "lv3-10-d2",
+              "speaker": "Abu Ali",
+              "arabizi": "dollar. tazé, men l day3a!",
+              "arabic": "دولار. طازة، من الضيعة!",
+              "english": "A dollar. Fresh, from the village!"
+            },
+            {
+              "id": "lv3-10-d3",
+              "speaker": "Sam",
+              "arabizi": "3atine tnein kilo. w khyar.",
+              "arabic": "عطيني تنين كيلو. وخيار.",
+              "english": "Give me two kilos. And cucumbers."
+            },
+            {
+              "id": "lv3-10-d4",
+              "speaker": "Abu Ali",
+              "arabizi": "hayda tlet dollar.",
+              "arabic": "هيدا تلت دولار.",
+              "english": "That's three dollars."
+            },
+            {
+              "id": "lv3-10-d5",
+              "speaker": "Sam",
+              "arabizi": "tfaddal. khalli l fraata.",
+              "arabic": "تفضّل. خلّي الفراطة.",
+              "english": "Here you go. Keep the change."
+            },
+            {
+              "id": "lv3-10-d6",
+              "speaker": "Abu Ali",
+              "arabizi": "ya3tik l 3afye!",
+              "arabic": "يعطيك العافية!",
+              "english": "Thank you!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where are the tomatoes from?",
+              "options": [
+                "The village",
+                "Syria",
+                "The supermarket"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How many kilos of tomatoes does Sam buy?",
+              "options": [
+                "Two",
+                "One",
+                "Three"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-11",
           "title": "Asking for help",
+          "subtitle": "Ask for help",
           "icon": "🙋",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-11-01",
+              "arabizi": "fik tse3edne?",
+              "arabic": "فيك تساعدني؟",
+              "english": "Can you help me?",
+              "pic": "🆘",
+              "f": {
+                "arabizi": "fike tse3dine?",
+                "arabic": "فيكي تساعديني؟"
+              }
+            },
+            {
+              "id": "lv3-11-02",
+              "arabizi": "deyya3et",
+              "arabic": "ضيّعت",
+              "english": "I'm lost",
+              "pic": "🗺️"
+            },
+            {
+              "id": "lv3-11-03",
+              "arabizi": "deyya3et telefone",
+              "arabic": "ضيّعت تلفوني",
+              "english": "I lost my phone",
+              "pic": "📱"
+            },
+            {
+              "id": "lv3-11-04",
+              "arabizi": "ma ba3ref shu a3mel",
+              "arabic": "ما بعرف شو أعمل",
+              "english": "I don't know what to do",
+              "pic": "😰"
+            },
+            {
+              "id": "lv3-11-05",
+              "arabizi": "fik tektebla?",
+              "arabic": "فيك تكتبلي؟",
+              "english": "Can you write it for me?",
+              "pic": "✍️",
+              "f": {
+                "arabizi": "fike tektbile?",
+                "arabic": "فيكي تكتبيلي؟"
+              }
+            },
+            {
+              "id": "lv3-11-06",
+              "arabizi": "dakhlak!",
+              "arabic": "دخلك!",
+              "english": "Please! (urgent)",
+              "pic": "🙏",
+              "note": "A strong, warm 'please', very Lebanese."
+            },
+            {
+              "id": "lv3-11-07",
+              "arabizi": "ehtamm fiye",
+              "arabic": "إهتمّ فيي",
+              "english": "Look after me",
+              "pic": "🤗"
+            },
+            {
+              "id": "lv3-11-08",
+              "arabizi": "ndahlo lal doktor",
+              "arabic": "ندهولو للدكتور",
+              "english": "Call the doctor",
+              "pic": "📞"
+            },
+            {
+              "id": "lv3-11-09",
+              "arabizi": "ya3tik l 3afye 3al mosa3ade",
+              "arabic": "يعطيك العافية عالمساعدة",
+              "english": "Thanks for the help",
+              "pic": "🙌"
+            },
+            {
+              "id": "lv3-11-10",
+              "arabizi": "wala yhemmak",
+              "arabic": "ولا يهمّك",
+              "english": "Don't worry",
+              "pic": "😌",
+              "f": {
+                "arabizi": "wala yhemmik",
+                "arabic": "ولا يهمّك"
+              }
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-11-d1",
+              "speaker": "Sam",
+              "arabizi": "dakhlak, fik tse3edne? deyya3et.",
+              "arabic": "دخلك، فيك تساعدني؟ ضيّعت.",
+              "english": "Please, can you help me? I'm lost."
+            },
+            {
+              "id": "lv3-11-d2",
+              "speaker": "Karim",
+              "arabizi": "wala yhemmak. wein badak trou7?",
+              "arabic": "ولا يهمّك. وين بدّك تروح؟",
+              "english": "Don't worry. Where do you want to go?"
+            },
+            {
+              "id": "lv3-11-d3",
+              "speaker": "Sam",
+              "arabizi": "3al Gemmayzeh.",
+              "arabic": "عالجميزة.",
+              "english": "To Gemmayzeh."
+            },
+            {
+              "id": "lv3-11-d4",
+              "speaker": "Karim",
+              "arabizi": "2arib, dughre khams da2aye2.",
+              "arabic": "قريب، دغري خمس دقايق.",
+              "english": "It's close, five minutes straight ahead."
+            },
+            {
+              "id": "lv3-11-d5",
+              "speaker": "Sam",
+              "arabizi": "ya3tik l 3afye!",
+              "arabic": "يعطيك العافية!",
+              "english": "Thanks so much!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where does Sam want to go?",
+              "options": [
+                "Gemmayzeh",
+                "Hamra",
+                "Achrafieh"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How far is it?",
+              "options": [
+                "Five minutes",
+                "An hour",
+                "Very far"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-12",
           "title": "Introducing your family",
+          "subtitle": "Introduce your family",
           "icon": "👨‍👩‍👧",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-12-01",
+              "arabizi": "hayda bayye",
+              "arabic": "هيدا بيّي",
+              "english": "This is my father",
+              "pic": "👨"
+            },
+            {
+              "id": "lv3-12-02",
+              "arabizi": "hayde emme",
+              "arabic": "هيدي إمّي",
+              "english": "This is my mother",
+              "pic": "👩"
+            },
+            {
+              "id": "lv3-12-03",
+              "arabizi": "3ande khay w ekhet",
+              "arabic": "عندي خيّ وإخت",
+              "english": "I have a brother and a sister",
+              "pic": "👫"
+            },
+            {
+              "id": "lv3-12-04",
+              "arabizi": "ana l kbir",
+              "arabic": "أنا الكبير",
+              "english": "I'm the eldest",
+              "pic": "🥇",
+              "f": {
+                "arabizi": "ana l kbire",
+                "arabic": "أنا الكبيرة"
+              }
+            },
+            {
+              "id": "lv3-12-05",
+              "arabizi": "ana mjawwaz",
+              "arabic": "أنا مجوّز",
+              "english": "I'm married",
+              "pic": "💍",
+              "f": {
+                "arabizi": "ana mjawwaze",
+                "arabic": "أنا مجوّزة"
+              }
+            },
+            {
+              "id": "lv3-12-06",
+              "arabizi": "3ande wled",
+              "arabic": "عندي ولاد",
+              "english": "I have children",
+              "pic": "👨‍👩‍👧"
+            },
+            {
+              "id": "lv3-12-07",
+              "arabizi": "3ande bent w sabe",
+              "arabic": "عندي بنت وصبي",
+              "english": "I have a girl and a boy",
+              "pic": "👧"
+            },
+            {
+              "id": "lv3-12-08",
+              "arabizi": "ana 3azabe",
+              "arabic": "أنا عزابي",
+              "english": "I'm single",
+              "pic": "🙋"
+            },
+            {
+              "id": "lv3-12-09",
+              "arabizi": "3ammo w khalto",
+              "arabic": "عمّو وخالتو",
+              "english": "Uncle and auntie",
+              "pic": "👨‍👩‍👦",
+              "note": "'Ammo' and 'khalto' are also polite words for any older person."
+            },
+            {
+              "id": "lv3-12-10",
+              "arabizi": "3ayle kbire",
+              "arabic": "عيلة كبيرة",
+              "english": "A big family",
+              "pic": "🏠"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-12-d1",
+              "speaker": "Teta",
+              "arabizi": "enta mjawwaz?",
+              "arabic": "إنت مجوّز؟",
+              "english": "Are you married?"
+            },
+            {
+              "id": "lv3-12-d2",
+              "speaker": "Sam",
+              "arabizi": "la2, ana 3azabe.",
+              "arabic": "لأ، أنا عزابي.",
+              "english": "No, I'm single."
+            },
+            {
+              "id": "lv3-12-d3",
+              "speaker": "Teta",
+              "arabizi": "w 3andak ekhwe?",
+              "arabic": "وعندك إخوة؟",
+              "english": "And do you have siblings?"
+            },
+            {
+              "id": "lv3-12-d4",
+              "speaker": "Sam",
+              "arabizi": "3ande khay w tnein khawet. ana l zghir.",
+              "arabic": "عندي خيّ وتنين خوات. أنا الزغير.",
+              "english": "I have a brother and two sisters. I'm the youngest."
+            },
+            {
+              "id": "lv3-12-d5",
+              "speaker": "Teta",
+              "arabizi": "3ayle kbire, mashallah!",
+              "arabic": "عيلة كبيرة، ما شاء الله!",
+              "english": "A big family, how lovely!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Is Sam married?",
+              "options": [
+                "No",
+                "Yes",
+                "We don't know"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "How many siblings does Sam have?",
+              "options": [
+                "Three",
+                "Two",
+                "One"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-13",
           "title": "Talking about your work",
+          "subtitle": "Talk about your job",
           "icon": "💼",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-13-01",
+              "arabizi": "bshteghel b bank",
+              "arabic": "بشتغل ببنك",
+              "english": "I work in a bank",
+              "pic": "🏦"
+            },
+            {
+              "id": "lv3-13-02",
+              "arabizi": "ana mhandes",
+              "arabic": "أنا مهندس",
+              "english": "I'm an engineer",
+              "pic": "👷",
+              "f": {
+                "arabizi": "ana mhandse",
+                "arabic": "أنا مهندسة"
+              }
+            },
+            {
+              "id": "lv3-13-03",
+              "arabizi": "bshteghel men l beit",
+              "arabic": "بشتغل من البيت",
+              "english": "I work from home",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv3-13-04",
+              "arabizi": "shoghle sa3eb",
+              "arabic": "شغلي صعب",
+              "english": "My job is hard",
+              "pic": "😓"
+            },
+            {
+              "id": "lv3-13-05",
+              "arabizi": "b7ebb shoghle",
+              "arabic": "بحبّ شغلي",
+              "english": "I like my job",
+              "pic": "😊"
+            },
+            {
+              "id": "lv3-13-06",
+              "arabizi": "mdire mnih",
+              "arabic": "مديري منيح",
+              "english": "My boss is good",
+              "pic": "👔"
+            },
+            {
+              "id": "lv3-13-07",
+              "arabizi": "bfi2 bakkir",
+              "arabic": "بفيق بكّير",
+              "english": "I wake up early",
+              "pic": "⏰"
+            },
+            {
+              "id": "lv3-13-08",
+              "arabizi": "ma 3ande shoghl",
+              "arabic": "ما عندي شغل",
+              "english": "I don't have work",
+              "pic": "🙁"
+            },
+            {
+              "id": "lv3-13-09",
+              "arabizi": "3am dawwer 3a shoghl",
+              "arabic": "عم دوّر عشغل",
+              "english": "I'm looking for work",
+              "pic": "🔎"
+            },
+            {
+              "id": "lv3-13-10",
+              "arabizi": "ba3d l shoghl",
+              "arabic": "بعد الشغل",
+              "english": "After work",
+              "pic": "🌆"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-13-d1",
+              "speaker": "Ziad",
+              "arabizi": "shu bteshteghel?",
+              "arabic": "شو بتشتغل؟",
+              "english": "What do you do?"
+            },
+            {
+              "id": "lv3-13-d2",
+              "speaker": "Sam",
+              "arabizi": "ana mhandes. bshteghel men l beit.",
+              "arabic": "أنا مهندس. بشتغل من البيت.",
+              "english": "I'm an engineer. I work from home."
+            },
+            {
+              "id": "lv3-13-d3",
+              "speaker": "Ziad",
+              "arabizi": "w bet7ebb shoghlak?",
+              "arabic": "وبتحبّ شغلك؟",
+              "english": "And do you like your job?"
+            },
+            {
+              "id": "lv3-13-d4",
+              "speaker": "Sam",
+              "arabizi": "eh, bas mdire sa3eb shway.",
+              "arabic": "إيه، بس مديري صعب شوي.",
+              "english": "Yes, but my boss is a bit difficult."
+            },
+            {
+              "id": "lv3-13-d5",
+              "speaker": "Ziad",
+              "arabizi": "kel l mdara hek!",
+              "arabic": "كل المدرا هيك!",
+              "english": "All bosses are like that!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where does Sam work?",
+              "options": [
+                "From home",
+                "In a bank",
+                "In a restaurant"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What's the problem with Sam's job?",
+              "options": [
+                "His boss",
+                "The pay",
+                "The hours"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-14",
           "title": "Where I live",
+          "subtitle": "Say where you live",
           "icon": "🏘️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-14-01",
+              "arabizi": "bskon bi Beirut",
+              "arabic": "بسكن ببيروت",
+              "english": "I live in Beirut",
+              "pic": "🏙️"
+            },
+            {
+              "id": "lv3-14-02",
+              "arabizi": "wein bteskon?",
+              "arabic": "وين بتسكن؟",
+              "english": "Where do you live?",
+              "pic": "🏠",
+              "f": {
+                "arabizi": "wein bteskne?",
+                "arabic": "وين بتسكني؟"
+              }
+            },
+            {
+              "id": "lv3-14-03",
+              "arabizi": "bskon bel Hamra",
+              "arabic": "بسكن بالحمرا",
+              "english": "I live in Hamra",
+              "pic": "📍"
+            },
+            {
+              "id": "lv3-14-04",
+              "arabizi": "bskon ma3 rfi2e",
+              "arabic": "بسكن مع رفيقي",
+              "english": "I live with a friend",
+              "pic": "👬"
+            },
+            {
+              "id": "lv3-14-05",
+              "arabizi": "ana men day3a",
+              "arabic": "أنا من ضيعة",
+              "english": "I'm from a village",
+              "pic": "🌳"
+            },
+            {
+              "id": "lv3-14-06",
+              "arabizi": "beite bel tabe2 l telet",
+              "arabic": "بيتي بالطابق التالت",
+              "english": "My flat is on the third floor",
+              "pic": "🏢"
+            },
+            {
+              "id": "lv3-14-07",
+              "arabizi": "2arib men l ba7er",
+              "arabic": "قريب من البحر",
+              "english": "Close to the sea",
+              "pic": "🌊"
+            },
+            {
+              "id": "lv3-14-08",
+              "arabizi": "l manta2a hedye",
+              "arabic": "المنطقة هادية",
+              "english": "The area is quiet",
+              "pic": "🤫"
+            },
+            {
+              "id": "lv3-14-09",
+              "arabizi": "fi 3aj2a 3ala tool",
+              "arabic": "في عجقة على طول",
+              "english": "There's always traffic",
+              "pic": "🚦"
+            },
+            {
+              "id": "lv3-14-10",
+              "arabizi": "ana jdid hon",
+              "arabic": "أنا جديد هون",
+              "english": "I'm new here",
+              "pic": "🆕",
+              "f": {
+                "arabizi": "ana jdide hon",
+                "arabic": "أنا جديدة هون"
+              }
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-14-d1",
+              "speaker": "Mona",
+              "arabizi": "wein bteskon?",
+              "arabic": "وين بتسكن؟",
+              "english": "Where do you live?"
+            },
+            {
+              "id": "lv3-14-d2",
+              "speaker": "Sam",
+              "arabizi": "bskon bel Hamra, 2arib men l ba7er.",
+              "arabic": "بسكن بالحمرا، قريب من البحر.",
+              "english": "In Hamra, close to the sea."
+            },
+            {
+              "id": "lv3-14-d3",
+              "speaker": "Mona",
+              "arabizi": "l manta2a hedye?",
+              "arabic": "المنطقة هادية؟",
+              "english": "Is the area quiet?"
+            },
+            {
+              "id": "lv3-14-d4",
+              "speaker": "Sam",
+              "arabizi": "la2! fi 3aj2a 3ala tool.",
+              "arabic": "لأ! في عجقة على طول.",
+              "english": "No! There's always traffic."
+            },
+            {
+              "id": "lv3-14-d5",
+              "speaker": "Mona",
+              "arabizi": "ana bskon bi Byblos. ktir hede.",
+              "arabic": "أنا بسكن بجبيل. كتير هادي.",
+              "english": "I live in Byblos. It's very quiet."
+            }
+          ],
+          "questions": [
+            {
+              "q": "Where does Sam live?",
+              "options": [
+                "Hamra",
+                "Byblos",
+                "Achrafieh"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What is Byblos like?",
+              "options": [
+                "Very quiet",
+                "Full of traffic",
+                "Far from the sea"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-15",
           "title": "Phone number & address",
+          "subtitle": "Swap numbers and addresses",
           "icon": "📱",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-15-01",
+              "arabizi": "shu ra2mak?",
+              "arabic": "شو رقمك؟",
+              "english": "What's your number?",
+              "pic": "📱",
+              "f": {
+                "arabizi": "shu ra2mik?",
+                "arabic": "شو رقمك؟"
+              }
+            },
+            {
+              "id": "lv3-15-02",
+              "arabizi": "ra2me sab3a w tleten...",
+              "arabic": "رقمي سبعة وتلاتين...",
+              "english": "My number is 73...",
+              "pic": "🔢"
+            },
+            {
+              "id": "lv3-15-03",
+              "arabizi": "ba3atle 3al whatsapp",
+              "arabic": "بعتلي عالواتساب",
+              "english": "Send it to me on WhatsApp",
+              "pic": "💬",
+              "f": {
+                "arabizi": "ba3tile 3al whatsapp",
+                "arabic": "بعتيلي عالواتساب"
+              }
+            },
+            {
+              "id": "lv3-15-04",
+              "arabizi": "shu l 3enwen?",
+              "arabic": "شو العنوان؟",
+              "english": "What's the address?",
+              "pic": "🏠"
+            },
+            {
+              "id": "lv3-15-05",
+              "arabizi": "l binaye l bayda",
+              "arabic": "البناية البيضا",
+              "english": "The white building",
+              "pic": "🏢",
+              "note": "Lebanese give directions by landmarks, not street numbers."
+            },
+            {
+              "id": "lv3-15-06",
+              "arabizi": "7ad l forn",
+              "arabic": "حد الفرن",
+              "english": "Next to the bakery",
+              "pic": "🥖"
+            },
+            {
+              "id": "lv3-15-07",
+              "arabizi": "ba3atle location",
+              "arabic": "بعتلي لوكيشن",
+              "english": "Send me a location",
+              "pic": "📍"
+            },
+            {
+              "id": "lv3-15-08",
+              "arabizi": "de22le ba3d ma tousal",
+              "arabic": "دقلي بعد ما توصل",
+              "english": "Ring me when you arrive",
+              "pic": "📞",
+              "f": {
+                "arabizi": "de22ile ba3d ma tousle",
+                "arabic": "دقيلي بعد ما توصلي"
+              }
+            },
+            {
+              "id": "lv3-15-09",
+              "arabizi": "tabe2 tene",
+              "arabic": "طابق تاني",
+              "english": "Second floor",
+              "pic": "2️⃣"
+            },
+            {
+              "id": "lv3-15-10",
+              "arabizi": "3ande telefon jdid",
+              "arabic": "عندي تلفون جديد",
+              "english": "I have a new phone",
+              "pic": "📲"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-15-d1",
+              "speaker": "Sam",
+              "arabizi": "shu l 3enwen?",
+              "arabic": "شو العنوان؟",
+              "english": "What's the address?"
+            },
+            {
+              "id": "lv3-15-d2",
+              "speaker": "Maya",
+              "arabizi": "l binaye l bayda, 7ad l forn. tabe2 tene.",
+              "arabic": "البناية البيضا، حد الفرن. طابق تاني.",
+              "english": "The white building, next to the bakery. Second floor."
+            },
+            {
+              "id": "lv3-15-d3",
+              "speaker": "Sam",
+              "arabizi": "ba3atle location 3al whatsapp.",
+              "arabic": "بعتيلي لوكيشن عالواتساب.",
+              "english": "Send me a location on WhatsApp."
+            },
+            {
+              "id": "lv3-15-d4",
+              "speaker": "Maya",
+              "arabizi": "akid. shu ra2mak?",
+              "arabic": "أكيد. شو رقمك؟",
+              "english": "Sure. What's your number?"
+            },
+            {
+              "id": "lv3-15-d5",
+              "speaker": "Sam",
+              "arabizi": "sab3a w tleten, tleten, tnein...",
+              "arabic": "سبعة وتلاتين، تلاتين، تنين...",
+              "english": "Seventy-three, thirty, two..."
+            }
+          ],
+          "questions": [
+            {
+              "q": "Which floor does Maya live on?",
+              "options": [
+                "Second",
+                "First",
+                "Third"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What's next to the building?",
+              "options": [
+                "The bakery",
+                "The pharmacy",
+                "The bank"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-16",
           "title": "Hobbies",
+          "subtitle": "Talk about your free time",
           "icon": "🎸",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-16-01",
+              "arabizi": "b7ebb e2ra",
+              "arabic": "بحبّ إقرا",
+              "english": "I like reading",
+              "pic": "📖"
+            },
+            {
+              "id": "lv3-16-02",
+              "arabizi": "b7ebb emshe bel jabal",
+              "arabic": "بحبّ إمشي بالجبل",
+              "english": "I like hiking in the mountains",
+              "pic": "🥾"
+            },
+            {
+              "id": "lv3-16-03",
+              "arabizi": "bel3ab football",
+              "arabic": "بلعب فوتبول",
+              "english": "I play football",
+              "pic": "⚽"
+            },
+            {
+              "id": "lv3-16-04",
+              "arabizi": "besba7 bel sayf",
+              "arabic": "بسبح بالصيف",
+              "english": "I swim in summer",
+              "pic": "🏊"
+            },
+            {
+              "id": "lv3-16-05",
+              "arabizi": "b7ebb otbokh",
+              "arabic": "بحبّ إطبخ",
+              "english": "I like cooking",
+              "pic": "👨‍🍳"
+            },
+            {
+              "id": "lv3-16-06",
+              "arabizi": "b7ebb er2os",
+              "arabic": "بحبّ إرقص",
+              "english": "I like dancing",
+              "pic": "💃"
+            },
+            {
+              "id": "lv3-16-07",
+              "arabizi": "besma3 musi2a",
+              "arabic": "بسمع موسيقى",
+              "english": "I listen to music",
+              "pic": "🎧"
+            },
+            {
+              "id": "lv3-16-08",
+              "arabizi": "shu bta3mel bel weekend?",
+              "arabic": "شو بتعمل بالويكند؟",
+              "english": "What do you do at the weekend?",
+              "pic": "🎉",
+              "f": {
+                "arabizi": "shu bta3mle bel weekend?",
+                "arabic": "شو بتعملي بالويكند؟"
+              }
+            },
+            {
+              "id": "lv3-16-09",
+              "arabizi": "ma 3ande wa2t",
+              "arabic": "ما عندي وقت",
+              "english": "I don't have time",
+              "pic": "⌛"
+            },
+            {
+              "id": "lv3-16-10",
+              "arabizi": "ba3mel sport",
+              "arabic": "بعمل سبور",
+              "english": "I do sport",
+              "pic": "🏋️"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-16-d1",
+              "speaker": "Lina",
+              "arabizi": "shu bta3mel bel weekend?",
+              "arabic": "شو بتعمل بالويكند؟",
+              "english": "What do you do at the weekend?"
+            },
+            {
+              "id": "lv3-16-d2",
+              "speaker": "Sam",
+              "arabizi": "b7ebb emshe bel jabal. w enti?",
+              "arabic": "بحبّ إمشي بالجبل. وإنتِ؟",
+              "english": "I like hiking in the mountains. And you?"
+            },
+            {
+              "id": "lv3-16-d3",
+              "speaker": "Lina",
+              "arabizi": "ana b7ebb er2os!",
+              "arabic": "أنا بحبّ إرقص!",
+              "english": "I love dancing!"
+            },
+            {
+              "id": "lv3-16-d4",
+              "speaker": "Sam",
+              "arabizi": "dabke?",
+              "arabic": "دبكة؟",
+              "english": "Dabke?"
+            },
+            {
+              "id": "lv3-16-d5",
+              "speaker": "Lina",
+              "arabizi": "eh, akid! ta3a ma3e marra.",
+              "arabic": "إيه، أكيد! تعا معي مرّة.",
+              "english": "Yes, of course! Come with me some time."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Lina love?",
+              "options": [
+                "Dancing",
+                "Hiking",
+                "Swimming"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What kind of dance does Lina do?",
+              "options": [
+                "Dabke",
+                "Salsa",
+                "Ballet"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-17",
           "title": "Favourite food",
+          "subtitle": "Talk about food you love",
           "icon": "🥙",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-17-01",
+              "arabizi": "akelte l mfaddale",
+              "arabic": "أكلتي المفضّلة",
+              "english": "My favourite dish",
+              "pic": "⭐"
+            },
+            {
+              "id": "lv3-17-02",
+              "arabizi": "b7ebb l mjaddara",
+              "arabic": "بحبّ المجدّرة",
+              "english": "I love mjaddara",
+              "pic": "🍛",
+              "note": "Lentils and rice with crispy onions."
+            },
+            {
+              "id": "lv3-17-03",
+              "arabizi": "l kebbe ktir tayybe",
+              "arabic": "الكبّة كتير طيّبة",
+              "english": "Kibbeh is very tasty",
+              "pic": "🧆"
+            },
+            {
+              "id": "lv3-17-04",
+              "arabizi": "ma b7ebb l samak",
+              "arabic": "ما بحبّ السمك",
+              "english": "I don't like fish",
+              "pic": "🐟"
+            },
+            {
+              "id": "lv3-17-05",
+              "arabizi": "ana nabete",
+              "arabic": "أنا نباتي",
+              "english": "I'm vegetarian",
+              "pic": "🥦",
+              "f": {
+                "arabizi": "ana nabetiye",
+                "arabic": "أنا نباتية"
+              }
+            },
+            {
+              "id": "lv3-17-06",
+              "arabizi": "bekol kel shi",
+              "arabic": "باكل كل شي",
+              "english": "I eat everything",
+              "pic": "🍽️"
+            },
+            {
+              "id": "lv3-17-07",
+              "arabizi": "emme btotbokh a7san shi",
+              "arabic": "إمّي بتطبخ أحسن شي",
+              "english": "My mum cooks the best",
+              "pic": "👩‍🍳"
+            },
+            {
+              "id": "lv3-17-08",
+              "arabizi": "l 7elo l lebnene",
+              "arabic": "الحلو اللبناني",
+              "english": "Lebanese sweets",
+              "pic": "🍮"
+            },
+            {
+              "id": "lv3-17-09",
+              "arabizi": "ma b7ebb l 7arr",
+              "arabic": "ما بحبّ الحرّ",
+              "english": "I don't like spicy",
+              "pic": "🌶️"
+            },
+            {
+              "id": "lv3-17-10",
+              "arabizi": "shu akltak l mfaddale?",
+              "arabic": "شو أكلتك المفضّلة؟",
+              "english": "What's your favourite dish?",
+              "pic": "❓",
+              "f": {
+                "arabizi": "shu akltik l mfaddale?",
+                "arabic": "شو أكلتك المفضّلة؟"
+              }
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-17-d1",
+              "speaker": "Teta",
+              "arabizi": "shu akltak l mfaddale?",
+              "arabic": "شو أكلتك المفضّلة؟",
+              "english": "What's your favourite dish?"
+            },
+            {
+              "id": "lv3-17-d2",
+              "speaker": "Sam",
+              "arabizi": "l mjaddara! w l kebbe.",
+              "arabic": "المجدّرة! والكبّة.",
+              "english": "Mjaddara! And kibbeh."
+            },
+            {
+              "id": "lv3-17-d3",
+              "speaker": "Teta",
+              "arabizi": "ana ba3mel kebbe nhar l a7ad.",
+              "arabic": "أنا بعمل كبّة نهار الأحد.",
+              "english": "I make kibbeh on Sundays."
+            },
+            {
+              "id": "lv3-17-d4",
+              "speaker": "Sam",
+              "arabizi": "ya3ne bekol 3andek kel a7ad?",
+              "arabic": "يعني باكل عندك كل أحد؟",
+              "english": "So I eat at yours every Sunday?"
+            },
+            {
+              "id": "lv3-17-d5",
+              "speaker": "Teta",
+              "arabizi": "akid, ya 2albe!",
+              "arabic": "أكيد، يا قلبي!",
+              "english": "Of course, my dear!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does Teta make on Sundays?",
+              "options": [
+                "Kibbeh",
+                "Mjaddara",
+                "Fish"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "What does Teta call Sam?",
+              "options": [
+                "My heart",
+                "My son",
+                "My friend"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-18",
           "title": "Asking the price",
+          "subtitle": "Ask how much things cost",
           "icon": "🏷️",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-18-01",
+              "arabizi": "addeish 7a2o?",
+              "arabic": "قدّيش حقّو؟",
+              "english": "How much does it cost?",
+              "pic": "🏷️"
+            },
+            {
+              "id": "lv3-18-02",
+              "arabizi": "addeish 7a2a?",
+              "arabic": "قدّيش حقّا؟",
+              "english": "How much is she (it, feminine)?",
+              "pic": "🏷️"
+            },
+            {
+              "id": "lv3-18-03",
+              "arabizi": "hayda ghali ktir",
+              "arabic": "هيدا غالي كتير",
+              "english": "This is too expensive",
+              "pic": "💸"
+            },
+            {
+              "id": "lv3-18-04",
+              "arabizi": "fi shi arkhas?",
+              "arabic": "في شي أرخص؟",
+              "english": "Is there anything cheaper?",
+              "pic": "📉"
+            },
+            {
+              "id": "lv3-18-05",
+              "arabizi": "fik tnazzel shway?",
+              "arabic": "فيك تنزّل شوي؟",
+              "english": "Can you lower it a bit?",
+              "pic": "⬇️",
+              "f": {
+                "arabizi": "fike tnazzle shway?",
+                "arabic": "فيكي تنزّلي شوي؟"
+              }
+            },
+            {
+              "id": "lv3-18-06",
+              "arabizi": "akher se3r?",
+              "arabic": "آخر سعر؟",
+              "english": "Final price?",
+              "pic": "🤝"
+            },
+            {
+              "id": "lv3-18-07",
+              "arabizi": "ma ma3e ghayr hek",
+              "arabic": "ما معي غير هيك",
+              "english": "I only have this much",
+              "pic": "👛"
+            },
+            {
+              "id": "lv3-18-08",
+              "arabizi": "bekhdo",
+              "arabic": "باخدو",
+              "english": "I'll take it",
+              "pic": "✅"
+            },
+            {
+              "id": "lv3-18-09",
+              "arabizi": "ba3d bfakker",
+              "arabic": "بعد بفكّر",
+              "english": "I'm still thinking",
+              "pic": "🤔"
+            },
+            {
+              "id": "lv3-18-10",
+              "arabizi": "se3r 7elo",
+              "arabic": "سعر حلو",
+              "english": "A good price",
+              "pic": "👍"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-18-d1",
+              "speaker": "Sam",
+              "arabizi": "addeish 7a2 hal shanta?",
+              "arabic": "قدّيش حقّ هالشنطة؟",
+              "english": "How much is this bag?"
+            },
+            {
+              "id": "lv3-18-d2",
+              "speaker": "Rita",
+              "arabizi": "khamsin dollar.",
+              "arabic": "خمسين دولار.",
+              "english": "Fifty dollars."
+            },
+            {
+              "id": "lv3-18-d3",
+              "speaker": "Sam",
+              "arabizi": "ghali shway. fike tnazzle?",
+              "arabic": "غالي شوي. فيكي تنزّلي؟",
+              "english": "A bit expensive. Can you lower it?"
+            },
+            {
+              "id": "lv3-18-d4",
+              "speaker": "Rita",
+              "arabizi": "arb3in, akher se3r.",
+              "arabic": "أربعين، آخر سعر.",
+              "english": "Forty, final price."
+            },
+            {
+              "id": "lv3-18-d5",
+              "speaker": "Sam",
+              "arabizi": "tayyeb, bekhda!",
+              "arabic": "طيّب، باخدا!",
+              "english": "OK, I'll take it!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "What was the first price?",
+              "options": [
+                "Fifty dollars",
+                "Forty dollars",
+                "Thirty dollars"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Does Sam buy the bag?",
+              "options": [
+                "Yes, for forty",
+                "No",
+                "Yes, for fifty"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-19",
           "title": "Getting a SIM card",
+          "subtitle": "Get a Lebanese SIM card",
           "icon": "📶",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-19-01",
+              "arabizi": "badde SIM card",
+              "arabic": "بدّي سيم كارت",
+              "english": "I want a SIM card",
+              "pic": "📶"
+            },
+            {
+              "id": "lv3-19-02",
+              "arabizi": "3ande passport",
+              "arabic": "عندي باسبور",
+              "english": "I have a passport",
+              "pic": "🛂"
+            },
+            {
+              "id": "lv3-19-03",
+              "arabizi": "badde ish7an khatte",
+              "arabic": "بدّي إشحن خطّي",
+              "english": "I want to top up my line",
+              "pic": "💳"
+            },
+            {
+              "id": "lv3-19-04",
+              "arabizi": "addeish l internet?",
+              "arabic": "قدّيش الإنترنت؟",
+              "english": "How much is the internet?",
+              "pic": "🌐"
+            },
+            {
+              "id": "lv3-19-05",
+              "arabizi": "badde ba2a internet",
+              "arabic": "بدّي باقة إنترنت",
+              "english": "I want a data package",
+              "pic": "📦"
+            },
+            {
+              "id": "lv3-19-06",
+              "arabizi": "l internet bate2",
+              "arabic": "الإنترنت بطيء",
+              "english": "The internet is slow",
+              "pic": "🐌"
+            },
+            {
+              "id": "lv3-19-07",
+              "arabizi": "ma fi ersal",
+              "arabic": "ما في إرسال",
+              "english": "There's no signal",
+              "pic": "📵"
+            },
+            {
+              "id": "lv3-19-08",
+              "arabizi": "addeish l rased?",
+              "arabic": "قدّيش الرصيد؟",
+              "english": "How much credit is left?",
+              "pic": "💰"
+            },
+            {
+              "id": "lv3-19-09",
+              "arabizi": "khatte msakkar",
+              "arabic": "خطّي مسكّر",
+              "english": "My line is blocked",
+              "pic": "🔒"
+            },
+            {
+              "id": "lv3-19-10",
+              "arabizi": "Alfa aw Touch?",
+              "arabic": "ألفا أو تاتش؟",
+              "english": "Alfa or Touch?",
+              "pic": "📱",
+              "note": "Lebanon's two mobile networks."
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-19-d1",
+              "speaker": "Sam",
+              "arabizi": "marhaba, badde SIM card.",
+              "arabic": "مرحبا، بدّي سيم كارت.",
+              "english": "Hi, I want a SIM card."
+            },
+            {
+              "id": "lv3-19-d2",
+              "speaker": "Clerk",
+              "arabizi": "Alfa aw Touch?",
+              "arabic": "ألفا أو تاتش؟",
+              "english": "Alfa or Touch?"
+            },
+            {
+              "id": "lv3-19-d3",
+              "speaker": "Sam",
+              "arabizi": "ma ba3ref. shu l a7san?",
+              "arabic": "ما بعرف. شو الأحسن؟",
+              "english": "I don't know. Which is better?"
+            },
+            {
+              "id": "lv3-19-d4",
+              "speaker": "Clerk",
+              "arabizi": "l tnein mnah. 3andak passport?",
+              "arabic": "التنين مناح. عندك باسبور؟",
+              "english": "Both are good. Do you have a passport?"
+            },
+            {
+              "id": "lv3-19-d5",
+              "speaker": "Sam",
+              "arabizi": "eh, tfaddale. w badde ba2a internet.",
+              "arabic": "إيه، تفضّلي. وبدّي باقة إنترنت.",
+              "english": "Yes, here you go. And I want a data package."
+            }
+          ],
+          "questions": [
+            {
+              "q": "What does the clerk ask for?",
+              "options": [
+                "A passport",
+                "Money",
+                "An address"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Which network is better, according to the clerk?",
+              "options": [
+                "Both are good",
+                "Alfa",
+                "Touch"
+              ],
+              "answer": 0
+            }
+          ]
         },
         {
           "id": "lv3-20",
           "title": "Small talk with a neighbour",
+          "subtitle": "Chat with your neighbour",
           "icon": "🚪",
-          "soon": true
+          "items": [
+            {
+              "id": "lv3-20-01",
+              "arabizi": "sabe7 l kheir ya jare",
+              "arabic": "صباح الخير يا جاري",
+              "english": "Good morning, neighbour",
+              "pic": "🌅"
+            },
+            {
+              "id": "lv3-20-02",
+              "arabizi": "kif l sa77a?",
+              "arabic": "كيف الصحّة؟",
+              "english": "How's your health?",
+              "pic": "💪"
+            },
+            {
+              "id": "lv3-20-03",
+              "arabizi": "kif l wled?",
+              "arabic": "كيف الولاد؟",
+              "english": "How are the kids?",
+              "pic": "👧"
+            },
+            {
+              "id": "lv3-20-04",
+              "arabizi": "l kahraba rej3et?",
+              "arabic": "الكهربا رجعت؟",
+              "english": "Is the power back?",
+              "pic": "💡"
+            },
+            {
+              "id": "lv3-20-05",
+              "arabizi": "3ala mahlak",
+              "arabic": "على مهلك",
+              "english": "Take it easy",
+              "pic": "🐢",
+              "f": {
+                "arabizi": "3ala mahlik",
+                "arabic": "على مهلك"
+              }
+            },
+            {
+              "id": "lv3-20-06",
+              "arabizi": "mnshoufak",
+              "arabic": "منشوفك",
+              "english": "See you",
+              "pic": "👋",
+              "f": {
+                "arabizi": "mnshoufik",
+                "arabic": "منشوفك"
+              }
+            },
+            {
+              "id": "lv3-20-07",
+              "arabizi": "salemle 3al madame",
+              "arabic": "سلّملي عالمدام",
+              "english": "Say hi to your wife for me",
+              "pic": "💐"
+            },
+            {
+              "id": "lv3-20-08",
+              "arabizi": "ta3a shrab ahwe",
+              "arabic": "تعا اشرب قهوة",
+              "english": "Come have a coffee",
+              "pic": "☕",
+              "f": {
+                "arabizi": "ta3e shrabe ahwe",
+                "arabic": "تعي اشربي قهوة"
+              }
+            },
+            {
+              "id": "lv3-20-09",
+              "arabizi": "akid, marra tenye",
+              "arabic": "أكيد، مرّة تانية",
+              "english": "Sure, another time",
+              "pic": "⏭️"
+            },
+            {
+              "id": "lv3-20-10",
+              "arabizi": "yislamo",
+              "arabic": "يسلمو",
+              "english": "Thanks (warm)",
+              "pic": "🙌",
+              "note": "Literally 'may your hands be safe'."
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "lv3-20-d1",
+              "speaker": "Abu Ali",
+              "arabizi": "sabe7 l kheir ya jare!",
+              "arabic": "صباح الخير يا جاري!",
+              "english": "Good morning, neighbour!"
+            },
+            {
+              "id": "lv3-20-d2",
+              "speaker": "Sam",
+              "arabizi": "sabe7 l nour! kif l sa77a?",
+              "arabic": "صباح النور! كيف الصحّة؟",
+              "english": "Good morning! How's your health?"
+            },
+            {
+              "id": "lv3-20-d3",
+              "speaker": "Abu Ali",
+              "arabizi": "l7amdella. ta3a shrab ahwe!",
+              "arabic": "الحمدلله. تعا اشرب قهوة!",
+              "english": "Thank God. Come have a coffee!"
+            },
+            {
+              "id": "lv3-20-d4",
+              "speaker": "Sam",
+              "arabizi": "yislamo, bas mest3jel. marra tenye.",
+              "arabic": "يسلمو، بس مستعجل. مرّة تانية.",
+              "english": "Thanks, but I'm in a hurry. Another time."
+            },
+            {
+              "id": "lv3-20-d5",
+              "speaker": "Abu Ali",
+              "arabizi": "tayyeb. salemle 3al madame!",
+              "arabic": "طيّب. سلّملي عالمدام!",
+              "english": "OK. Say hi to your wife!"
+            }
+          ],
+          "questions": [
+            {
+              "q": "Why doesn't Sam have coffee?",
+              "options": [
+                "He's in a hurry",
+                "He doesn't like coffee",
+                "He's sick"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Who should Sam greet?",
+              "options": [
+                "His wife",
+                "His mother",
+                "His boss"
+              ],
+              "answer": 0
+            }
+          ]
         }
       ]
     },
