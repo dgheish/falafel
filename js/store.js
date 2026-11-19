@@ -1,5 +1,6 @@
 // Settings and progress live in localStorage; recordings live in IndexedDB.
 
+// Storage names keep the old 'ahla' prefix so existing progress and recordings survive the rename.
 const KEY = 'ahla:v1';
 
 function load() {

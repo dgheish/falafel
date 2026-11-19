@@ -1,4 +1,4 @@
-# Ahla! Learn Lebanese
+# Falafel: Learn Lebanese
 
 A small website for adult beginners learning spoken Lebanese Arabic.
 
