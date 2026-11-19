@@ -211,3 +211,7 @@ body.hide-english .t-english:not(.always) { display: none !important; }
 .lesson-card.soon { opacity: .6; border-style: dashed; box-shadow: none; }
 .brand { display: inline-flex; align-items: center; gap: 8px; }
 .flag { width: 30px; height: 20px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(255,255,255,.25); flex: none; }
+.word i { font-style: normal; }
+.word .r { color: #ff2a33; }
+.word .w { color: #ffffff; }
+.word .g { color: #00b85c; }
