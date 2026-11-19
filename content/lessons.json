@@ -11,7 +11,7 @@
     {
       "n": 1,
       "title": "First words",
-      "goal": "Short phrases to get by: greetings, introductions, ordering a coffee.",
+      "goal": "Single words and short phrases for your first days in Lebanon.",
       "lessons": [
         {
           "id": "l1",
@@ -292,164 +292,17 @@
           ]
         },
         {
-          "id": "l3",
-          "title": "At the café",
-          "subtitle": "Order a coffee and pay the bill",
-          "icon": "☕",
-          "items": [
-            {
-              "id": "cafe-badde",
-              "arabizi": "badde ahwe",
-              "arabic": "بدّي قهوة",
-              "english": "I want a coffee",
-              "pic": "☕",
-              "note": "In Beirut the 'q' sound drops out: 'ahwe', not 'qahwe'."
-            },
-            {
-              "id": "cafe-bala",
-              "arabizi": "bala sukkar",
-              "arabic": "بلا سكّر",
-              "english": "Without sugar",
-              "pic": "🚫"
-            },
-            {
-              "id": "cafe-wasat",
-              "arabizi": "sukkar wasat",
-              "arabic": "سكّر وسط",
-              "english": "Medium sugar",
-              "pic": "🍬"
-            },
-            {
-              "id": "cafe-mayy",
-              "arabizi": "kebbeyet mayy",
-              "arabic": "كبّاية مي",
-              "english": "A glass of water",
-              "pic": "🥛"
-            },
-            {
-              "id": "cafe-man2ouche",
-              "arabizi": "man2ouche za3tar",
-              "arabic": "منقوشة زعتر",
-              "english": "A za'atar flatbread",
-              "pic": "🫓"
-            },
-            {
-              "id": "cafe-2addeish",
-              "arabizi": "2addeish?",
-              "arabic": "قدّيش؟",
-              "english": "How much?",
-              "pic": "💵"
-            },
-            {
-              "id": "cafe-tlet",
-              "arabizi": "tlet dollar",
-              "arabic": "تلت دولار",
-              "english": "Three dollars",
-              "pic": "3️⃣"
-            },
-            {
-              "id": "cafe-7sab",
-              "arabizi": "l 7sab iza bitrid",
-              "arabic": "الحساب إذا بتريد",
-              "english": "The bill, please",
-              "pic": "🧾",
-              "f": {
-                "arabizi": "l 7sab iza bitride",
-                "arabic": "الحساب إذا بتريدي"
-              }
-            },
-            {
-              "id": "cafe-tfaddal",
-              "arabizi": "tfaddal",
-              "arabic": "تفضّل",
-              "english": "Here you go / Come in",
-              "pic": "🫴",
-              "f": {
-                "arabizi": "tfaddale",
-                "arabic": "تفضّلي"
-              }
-            },
-            {
-              "id": "cafe-tayyeb",
-              "arabizi": "ktir tayyeb",
-              "arabic": "كتير طيّب",
-              "english": "Really tasty",
-              "pic": "😋"
-            }
-          ],
-          "dialogue": [
-            {
-              "id": "l3-d1",
-              "speaker": "Rami",
-              "arabizi": "ahla w sahla! tfaddal.",
-              "arabic": "أهلا وسهلا! تفضّل.",
-              "english": "Welcome! Come in."
-            },
-            {
-              "id": "l3-d2",
-              "speaker": "Sam",
-              "arabizi": "marhaba. badde ahwe, iza bitrid.",
-              "arabic": "مرحبا. بدّي قهوة، إذا بتريد.",
-              "english": "Hi. A coffee, please."
-            },
-            {
-              "id": "l3-d3",
-              "speaker": "Rami",
-              "arabizi": "sukkar?",
-              "arabic": "سكّر؟",
-              "english": "Sugar?"
-            },
-            {
-              "id": "l3-d4",
-              "speaker": "Sam",
-              "arabizi": "sukkar wasat. w kebbeyet mayy.",
-              "arabic": "سكّر وسط. وكبّاية مي.",
-              "english": "Medium sugar. And a glass of water."
-            },
-            {
-              "id": "l3-d5",
-              "speaker": "Rami",
-              "arabizi": "tfaddal!",
-              "arabic": "تفضّل!",
-              "english": "Here you go!"
-            },
-            {
-              "id": "l3-d6",
-              "speaker": "Sam",
-              "arabizi": "merci. l 7sab iza bitrid. 2addeish?",
-              "arabic": "مرسي. الحساب إذا بتريد. قدّيش؟",
-              "english": "Thanks. The bill, please. How much?"
-            },
-            {
-              "id": "l3-d7",
-              "speaker": "Rami",
-              "arabizi": "tlet dollar.",
-              "arabic": "تلت دولار.",
-              "english": "Three dollars."
-            },
-            {
-              "id": "l3-d8",
-              "speaker": "Sam",
-              "arabizi": "tfaddal. yalla bye!",
-              "arabic": "تفضّل. يلا باي!",
-              "english": "Here you go. OK, bye!"
-            },
-            {
-              "id": "l3-d9",
-              "speaker": "Rami",
-              "arabizi": "ma3 l salame!",
-              "arabic": "مع السلامة!",
-              "english": "Goodbye!"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "n": 2,
-      "title": "Everyday words",
-      "goal": "Numbers, family and time. Still short, but you start combining words.",
-      "lessons": [
+          "id": "lv1-03",
+          "title": "Please, thanks & sorry",
+          "icon": "🙏",
+          "soon": true
+        },
+        {
+          "id": "lv1-04",
+          "title": "Yes, no & maybe",
+          "icon": "🤔",
+          "soon": true
+        },
         {
           "id": "l4",
           "title": "Numbers",
@@ -733,6 +586,249 @@
           ]
         },
         {
+          "id": "lv1-07",
+          "title": "Colours",
+          "icon": "🎨",
+          "soon": true
+        },
+        {
+          "id": "lv1-08",
+          "title": "Food basics",
+          "icon": "🍞",
+          "soon": true
+        },
+        {
+          "id": "lv1-09",
+          "title": "Drinks",
+          "icon": "🥤",
+          "soon": true
+        },
+        {
+          "id": "lv1-10",
+          "title": "Fruit & vegetables",
+          "icon": "🍅",
+          "soon": true
+        },
+        {
+          "id": "lv1-11",
+          "title": "Around the house",
+          "icon": "🏠",
+          "soon": true
+        },
+        {
+          "id": "lv1-12",
+          "title": "The body",
+          "icon": "🦶",
+          "soon": true
+        },
+        {
+          "id": "lv1-13",
+          "title": "Clothes",
+          "icon": "👕",
+          "soon": true
+        },
+        {
+          "id": "lv1-14",
+          "title": "Days of the week",
+          "icon": "📆",
+          "soon": true
+        },
+        {
+          "id": "lv1-15",
+          "title": "Weather",
+          "icon": "☀️",
+          "soon": true
+        },
+        {
+          "id": "lv1-16",
+          "title": "Animals",
+          "icon": "🐈",
+          "soon": true
+        },
+        {
+          "id": "lv1-17",
+          "title": "Places in town",
+          "icon": "🏪",
+          "soon": true
+        },
+        {
+          "id": "lv1-18",
+          "title": "Feelings",
+          "icon": "😊",
+          "soon": true
+        },
+        {
+          "id": "lv1-19",
+          "title": "Little words: here, there, also, but",
+          "icon": "🔗",
+          "soon": true
+        },
+        {
+          "id": "lv1-20",
+          "title": "Yalla, khalas, inshallah: everyday expressions",
+          "icon": "✨",
+          "soon": true
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Everyday words",
+      "goal": "Combine words: numbers, time, describing people and things.",
+      "lessons": [
+        {
+          "id": "l3",
+          "title": "At the café",
+          "subtitle": "Order a coffee and pay the bill",
+          "icon": "☕",
+          "items": [
+            {
+              "id": "cafe-badde",
+              "arabizi": "badde ahwe",
+              "arabic": "بدّي قهوة",
+              "english": "I want a coffee",
+              "pic": "☕",
+              "note": "In Beirut the 'q' sound drops out: 'ahwe', not 'qahwe'."
+            },
+            {
+              "id": "cafe-bala",
+              "arabizi": "bala sukkar",
+              "arabic": "بلا سكّر",
+              "english": "Without sugar",
+              "pic": "🚫"
+            },
+            {
+              "id": "cafe-wasat",
+              "arabizi": "sukkar wasat",
+              "arabic": "سكّر وسط",
+              "english": "Medium sugar",
+              "pic": "🍬"
+            },
+            {
+              "id": "cafe-mayy",
+              "arabizi": "kebbeyet mayy",
+              "arabic": "كبّاية مي",
+              "english": "A glass of water",
+              "pic": "🥛"
+            },
+            {
+              "id": "cafe-man2ouche",
+              "arabizi": "man2ouche za3tar",
+              "arabic": "منقوشة زعتر",
+              "english": "A za'atar flatbread",
+              "pic": "🫓"
+            },
+            {
+              "id": "cafe-2addeish",
+              "arabizi": "2addeish?",
+              "arabic": "قدّيش؟",
+              "english": "How much?",
+              "pic": "💵"
+            },
+            {
+              "id": "cafe-tlet",
+              "arabizi": "tlet dollar",
+              "arabic": "تلت دولار",
+              "english": "Three dollars",
+              "pic": "3️⃣"
+            },
+            {
+              "id": "cafe-7sab",
+              "arabizi": "l 7sab iza bitrid",
+              "arabic": "الحساب إذا بتريد",
+              "english": "The bill, please",
+              "pic": "🧾",
+              "f": {
+                "arabizi": "l 7sab iza bitride",
+                "arabic": "الحساب إذا بتريدي"
+              }
+            },
+            {
+              "id": "cafe-tfaddal",
+              "arabizi": "tfaddal",
+              "arabic": "تفضّل",
+              "english": "Here you go / Come in",
+              "pic": "🫴",
+              "f": {
+                "arabizi": "tfaddale",
+                "arabic": "تفضّلي"
+              }
+            },
+            {
+              "id": "cafe-tayyeb",
+              "arabizi": "ktir tayyeb",
+              "arabic": "كتير طيّب",
+              "english": "Really tasty",
+              "pic": "😋"
+            }
+          ],
+          "dialogue": [
+            {
+              "id": "l3-d1",
+              "speaker": "Rami",
+              "arabizi": "ahla w sahla! tfaddal.",
+              "arabic": "أهلا وسهلا! تفضّل.",
+              "english": "Welcome! Come in."
+            },
+            {
+              "id": "l3-d2",
+              "speaker": "Sam",
+              "arabizi": "marhaba. badde ahwe, iza bitrid.",
+              "arabic": "مرحبا. بدّي قهوة، إذا بتريد.",
+              "english": "Hi. A coffee, please."
+            },
+            {
+              "id": "l3-d3",
+              "speaker": "Rami",
+              "arabizi": "sukkar?",
+              "arabic": "سكّر؟",
+              "english": "Sugar?"
+            },
+            {
+              "id": "l3-d4",
+              "speaker": "Sam",
+              "arabizi": "sukkar wasat. w kebbeyet mayy.",
+              "arabic": "سكّر وسط. وكبّاية مي.",
+              "english": "Medium sugar. And a glass of water."
+            },
+            {
+              "id": "l3-d5",
+              "speaker": "Rami",
+              "arabizi": "tfaddal!",
+              "arabic": "تفضّل!",
+              "english": "Here you go!"
+            },
+            {
+              "id": "l3-d6",
+              "speaker": "Sam",
+              "arabizi": "merci. l 7sab iza bitrid. 2addeish?",
+              "arabic": "مرسي. الحساب إذا بتريد. قدّيش؟",
+              "english": "Thanks. The bill, please. How much?"
+            },
+            {
+              "id": "l3-d7",
+              "speaker": "Rami",
+              "arabizi": "tlet dollar.",
+              "arabic": "تلت دولار.",
+              "english": "Three dollars."
+            },
+            {
+              "id": "l3-d8",
+              "speaker": "Sam",
+              "arabizi": "tfaddal. yalla bye!",
+              "arabic": "تفضّل. يلا باي!",
+              "english": "Here you go. OK, bye!"
+            },
+            {
+              "id": "l3-d9",
+              "speaker": "Rami",
+              "arabizi": "ma3 l salame!",
+              "arabic": "مع السلامة!",
+              "english": "Goodbye!"
+            }
+          ]
+        },
+        {
           "id": "l6",
           "title": "Days & time",
           "subtitle": "Today, tomorrow, and what time it is",
@@ -862,13 +958,121 @@
               "answer": 0
             }
           ]
+        },
+        {
+          "id": "lv2-03",
+          "title": "Numbers 11 to 100",
+          "icon": "💯",
+          "soon": true
+        },
+        {
+          "id": "lv2-04",
+          "title": "Prices & money",
+          "icon": "💵",
+          "soon": true
+        },
+        {
+          "id": "lv2-05",
+          "title": "Telling the time",
+          "icon": "⏰",
+          "soon": true
+        },
+        {
+          "id": "lv2-06",
+          "title": "Months & dates",
+          "icon": "🗓️",
+          "soon": true
+        },
+        {
+          "id": "lv2-07",
+          "title": "My, your, his, her",
+          "icon": "👉",
+          "soon": true
+        },
+        {
+          "id": "lv2-08",
+          "title": "This & that",
+          "icon": "☝️",
+          "soon": true
+        },
+        {
+          "id": "lv2-09",
+          "title": "Describing people",
+          "icon": "🧑",
+          "soon": true
+        },
+        {
+          "id": "lv2-10",
+          "title": "Big, small, new, old",
+          "icon": "📏",
+          "soon": true
+        },
+        {
+          "id": "lv2-11",
+          "title": "Jobs",
+          "icon": "👩‍⚕️",
+          "soon": true
+        },
+        {
+          "id": "lv2-12",
+          "title": "Countries & nationalities",
+          "icon": "🌍",
+          "soon": true
+        },
+        {
+          "id": "lv2-13",
+          "title": "Languages",
+          "icon": "🗣️",
+          "soon": true
+        },
+        {
+          "id": "lv2-14",
+          "title": "In the kitchen",
+          "icon": "🍳",
+          "soon": true
+        },
+        {
+          "id": "lv2-15",
+          "title": "Rooms of the house",
+          "icon": "🛋️",
+          "soon": true
+        },
+        {
+          "id": "lv2-16",
+          "title": "Getting around",
+          "icon": "🚌",
+          "soon": true
+        },
+        {
+          "id": "lv2-17",
+          "title": "Shops",
+          "icon": "🛍️",
+          "soon": true
+        },
+        {
+          "id": "lv2-18",
+          "title": "At the bakery",
+          "icon": "🥖",
+          "soon": true
+        },
+        {
+          "id": "lv2-19",
+          "title": "How much & how many",
+          "icon": "⚖️",
+          "soon": true
+        },
+        {
+          "id": "lv2-20",
+          "title": "Welcoming guests",
+          "icon": "🫖",
+          "soon": true
         }
       ]
     },
     {
       "n": 3,
       "title": "First sentences",
-      "goal": "Say what you want and have, ask if something exists, and say no.",
+      "goal": "Your first full sentences: want, have, like, can, need.",
       "lessons": [
         {
           "id": "l7",
@@ -1013,88 +1217,1010 @@
               "answer": 0
             }
           ]
+        },
+        {
+          "id": "lv3-02",
+          "title": "There is, there isn't",
+          "icon": "📦",
+          "soon": true
+        },
+        {
+          "id": "lv3-03",
+          "title": "Saying no",
+          "icon": "🙅",
+          "soon": true
+        },
+        {
+          "id": "lv3-04",
+          "title": "I like, I don't like",
+          "icon": "❤️",
+          "soon": true
+        },
+        {
+          "id": "lv3-05",
+          "title": "I can, I can't",
+          "icon": "💪",
+          "soon": true
+        },
+        {
+          "id": "lv3-06",
+          "title": "I need",
+          "icon": "🆘",
+          "soon": true
+        },
+        {
+          "id": "lv3-07",
+          "title": "I know, I don't know",
+          "icon": "🧠",
+          "soon": true
+        },
+        {
+          "id": "lv3-08",
+          "title": "Where is…?",
+          "icon": "📍",
+          "soon": true
+        },
+        {
+          "id": "lv3-09",
+          "title": "Ordering at a restaurant",
+          "icon": "🍽️",
+          "soon": true
+        },
+        {
+          "id": "lv3-10",
+          "title": "At the vegetable market",
+          "icon": "🥬",
+          "soon": true
+        },
+        {
+          "id": "lv3-11",
+          "title": "Asking for help",
+          "icon": "🙋",
+          "soon": true
+        },
+        {
+          "id": "lv3-12",
+          "title": "Introducing your family",
+          "icon": "👨‍👩‍👧",
+          "soon": true
+        },
+        {
+          "id": "lv3-13",
+          "title": "Talking about your work",
+          "icon": "💼",
+          "soon": true
+        },
+        {
+          "id": "lv3-14",
+          "title": "Where I live",
+          "icon": "🏘️",
+          "soon": true
+        },
+        {
+          "id": "lv3-15",
+          "title": "Phone number & address",
+          "icon": "📱",
+          "soon": true
+        },
+        {
+          "id": "lv3-16",
+          "title": "Hobbies",
+          "icon": "🎸",
+          "soon": true
+        },
+        {
+          "id": "lv3-17",
+          "title": "Favourite food",
+          "icon": "🥙",
+          "soon": true
+        },
+        {
+          "id": "lv3-18",
+          "title": "Asking the price",
+          "icon": "🏷️",
+          "soon": true
+        },
+        {
+          "id": "lv3-19",
+          "title": "Getting a SIM card",
+          "icon": "📶",
+          "soon": true
+        },
+        {
+          "id": "lv3-20",
+          "title": "Small talk with a neighbour",
+          "icon": "🚪",
+          "soon": true
         }
-      ],
-      "plan": [
-        "There is / there isn't",
-        "Saying no"
       ]
     },
     {
       "n": 4,
       "title": "Asking questions",
       "goal": "Where, what, when, why, how much. Getting around by taxi.",
-      "lessons": [],
-      "plan": [
-        "Question words",
-        "In a taxi",
-        "Asking for directions"
+      "lessons": [
+        {
+          "id": "lv4-01",
+          "title": "Question words",
+          "icon": "❓",
+          "soon": true
+        },
+        {
+          "id": "lv4-02",
+          "title": "In a taxi or service",
+          "icon": "🚕",
+          "soon": true
+        },
+        {
+          "id": "lv4-03",
+          "title": "Asking for directions",
+          "icon": "🧭",
+          "soon": true
+        },
+        {
+          "id": "lv4-04",
+          "title": "At the hotel",
+          "icon": "🏨",
+          "soon": true
+        },
+        {
+          "id": "lv4-05",
+          "title": "At the pharmacy",
+          "icon": "💊",
+          "soon": true
+        },
+        {
+          "id": "lv4-06",
+          "title": "Booking a table",
+          "icon": "📞",
+          "soon": true
+        },
+        {
+          "id": "lv4-07",
+          "title": "At the hairdresser",
+          "icon": "💇",
+          "soon": true
+        },
+        {
+          "id": "lv4-08",
+          "title": "How old are you?",
+          "icon": "🎂",
+          "soon": true
+        },
+        {
+          "id": "lv4-09",
+          "title": "Asking about family",
+          "icon": "👪",
+          "soon": true
+        },
+        {
+          "id": "lv4-10",
+          "title": "What do you do?",
+          "icon": "🧑‍💼",
+          "soon": true
+        },
+        {
+          "id": "lv4-11",
+          "title": "How long, how many?",
+          "icon": "⏳",
+          "soon": true
+        },
+        {
+          "id": "lv4-12",
+          "title": "Lost & found",
+          "icon": "🔎",
+          "soon": true
+        },
+        {
+          "id": "lv4-13",
+          "title": "Can you explain?",
+          "icon": "💬",
+          "soon": true
+        },
+        {
+          "id": "lv4-14",
+          "title": "At the bank",
+          "icon": "🏦",
+          "soon": true
+        },
+        {
+          "id": "lv4-15",
+          "title": "Sending a parcel",
+          "icon": "📮",
+          "soon": true
+        },
+        {
+          "id": "lv4-16",
+          "title": "Renting a car",
+          "icon": "🚗",
+          "soon": true
+        },
+        {
+          "id": "lv4-17",
+          "title": "Wi-Fi & charging your phone",
+          "icon": "🔌",
+          "soon": true
+        },
+        {
+          "id": "lv4-18",
+          "title": "At the airport",
+          "icon": "✈️",
+          "soon": true
+        },
+        {
+          "id": "lv4-19",
+          "title": "Discounts & deals",
+          "icon": "🏷️",
+          "soon": true
+        },
+        {
+          "id": "lv4-20",
+          "title": "Are you free tonight?",
+          "icon": "🌙",
+          "soon": true
+        }
       ]
     },
     {
       "n": 5,
       "title": "Daily life",
       "goal": "Talk about what you do every day using the present tense.",
-      "lessons": [],
-      "plan": [
-        "My day",
-        "At the supermarket",
-        "At home"
+      "lessons": [
+        {
+          "id": "lv5-01",
+          "title": "My day",
+          "icon": "🌞",
+          "soon": true
+        },
+        {
+          "id": "lv5-02",
+          "title": "Morning routine",
+          "icon": "🪥",
+          "soon": true
+        },
+        {
+          "id": "lv5-03",
+          "title": "At the supermarket",
+          "icon": "🛒",
+          "soon": true
+        },
+        {
+          "id": "lv5-04",
+          "title": "Housework",
+          "icon": "🧹",
+          "soon": true
+        },
+        {
+          "id": "lv5-05",
+          "title": "Cooking",
+          "icon": "🍲",
+          "soon": true
+        },
+        {
+          "id": "lv5-06",
+          "title": "At work",
+          "icon": "🏢",
+          "soon": true
+        },
+        {
+          "id": "lv5-07",
+          "title": "At university",
+          "icon": "🎓",
+          "soon": true
+        },
+        {
+          "id": "lv5-08",
+          "title": "At the gym",
+          "icon": "🏋️",
+          "soon": true
+        },
+        {
+          "id": "lv5-09",
+          "title": "Buses & vans",
+          "icon": "🚐",
+          "soon": true
+        },
+        {
+          "id": "lv5-10",
+          "title": "Paying bills",
+          "icon": "🧾",
+          "soon": true
+        },
+        {
+          "id": "lv5-11",
+          "title": "Ordering delivery",
+          "icon": "🛵",
+          "soon": true
+        },
+        {
+          "id": "lv5-12",
+          "title": "The building's natour",
+          "icon": "🔑",
+          "soon": true
+        },
+        {
+          "id": "lv5-13",
+          "title": "Buying clothes",
+          "icon": "👗",
+          "soon": true
+        },
+        {
+          "id": "lv5-14",
+          "title": "Weekend habits",
+          "icon": "🛌",
+          "soon": true
+        },
+        {
+          "id": "lv5-15",
+          "title": "Neighbours",
+          "icon": "🏡",
+          "soon": true
+        },
+        {
+          "id": "lv5-16",
+          "title": "With the kids",
+          "icon": "🧒",
+          "soon": true
+        },
+        {
+          "id": "lv5-17",
+          "title": "Pets",
+          "icon": "🐕",
+          "soon": true
+        },
+        {
+          "id": "lv5-18",
+          "title": "TV & football",
+          "icon": "📺",
+          "soon": true
+        },
+        {
+          "id": "lv5-19",
+          "title": "Power cuts & the generator",
+          "icon": "💡",
+          "soon": true
+        },
+        {
+          "id": "lv5-20",
+          "title": "Coffee visits",
+          "icon": "☕",
+          "soon": true
+        }
       ]
     },
     {
       "n": 6,
       "title": "The past",
       "goal": "Tell someone what you did yesterday or last weekend.",
-      "lessons": [],
-      "plan": [
-        "Yesterday",
-        "The weekend",
-        "A trip"
+      "lessons": [
+        {
+          "id": "lv6-01",
+          "title": "Yesterday",
+          "icon": "⬅️",
+          "soon": true
+        },
+        {
+          "id": "lv6-02",
+          "title": "The weekend",
+          "icon": "🎉",
+          "soon": true
+        },
+        {
+          "id": "lv6-03",
+          "title": "A trip",
+          "icon": "🧳",
+          "soon": true
+        },
+        {
+          "id": "lv6-04",
+          "title": "Childhood",
+          "icon": "🧸",
+          "soon": true
+        },
+        {
+          "id": "lv6-05",
+          "title": "What happened?",
+          "icon": "❗",
+          "soon": true
+        },
+        {
+          "id": "lv6-06",
+          "title": "A wedding I went to",
+          "icon": "💍",
+          "soon": true
+        },
+        {
+          "id": "lv6-07",
+          "title": "A meal I cooked",
+          "icon": "🥘",
+          "soon": true
+        },
+        {
+          "id": "lv6-08",
+          "title": "I was sick",
+          "icon": "🤒",
+          "soon": true
+        },
+        {
+          "id": "lv6-09",
+          "title": "Moving house",
+          "icon": "📦",
+          "soon": true
+        },
+        {
+          "id": "lv6-10",
+          "title": "My first day at work",
+          "icon": "🆕",
+          "soon": true
+        },
+        {
+          "id": "lv6-11",
+          "title": "I lost something",
+          "icon": "🔍",
+          "soon": true
+        },
+        {
+          "id": "lv6-12",
+          "title": "Eid & Christmas",
+          "icon": "🎄",
+          "soon": true
+        },
+        {
+          "id": "lv6-13",
+          "title": "A film I watched",
+          "icon": "🎬",
+          "soon": true
+        },
+        {
+          "id": "lv6-14",
+          "title": "Meeting an old friend",
+          "icon": "🤗",
+          "soon": true
+        },
+        {
+          "id": "lv6-15",
+          "title": "Stuck in traffic",
+          "icon": "🚦",
+          "soon": true
+        },
+        {
+          "id": "lv6-16",
+          "title": "A shopping trip",
+          "icon": "🛍️",
+          "soon": true
+        },
+        {
+          "id": "lv6-17",
+          "title": "How we met",
+          "icon": "💞",
+          "soon": true
+        },
+        {
+          "id": "lv6-18",
+          "title": "A birthday",
+          "icon": "🎂",
+          "soon": true
+        },
+        {
+          "id": "lv6-19",
+          "title": "Last summer",
+          "icon": "🏖️",
+          "soon": true
+        },
+        {
+          "id": "lv6-20",
+          "title": "News from the family",
+          "icon": "📰",
+          "soon": true
+        }
       ]
     },
     {
       "n": 7,
       "title": "Making plans",
       "goal": "Talk about the future, make plans, and handle a phone call.",
-      "lessons": [],
-      "plan": [
-        "Tomorrow",
-        "Inviting a friend",
-        "On the phone"
+      "lessons": [
+        {
+          "id": "lv7-01",
+          "title": "Tomorrow",
+          "icon": "➡️",
+          "soon": true
+        },
+        {
+          "id": "lv7-02",
+          "title": "Inviting a friend",
+          "icon": "💌",
+          "soon": true
+        },
+        {
+          "id": "lv7-03",
+          "title": "On the phone",
+          "icon": "☎️",
+          "soon": true
+        },
+        {
+          "id": "lv7-04",
+          "title": "A trip to the mountains",
+          "icon": "⛰️",
+          "soon": true
+        },
+        {
+          "id": "lv7-05",
+          "title": "A day at the beach",
+          "icon": "🏝️",
+          "soon": true
+        },
+        {
+          "id": "lv7-06",
+          "title": "Making an appointment",
+          "icon": "📋",
+          "soon": true
+        },
+        {
+          "id": "lv7-07",
+          "title": "Planning a party",
+          "icon": "🎈",
+          "soon": true
+        },
+        {
+          "id": "lv7-08",
+          "title": "Saying no politely",
+          "icon": "🙏",
+          "soon": true
+        },
+        {
+          "id": "lv7-09",
+          "title": "Changing plans",
+          "icon": "🔄",
+          "soon": true
+        },
+        {
+          "id": "lv7-10",
+          "title": "WhatsApp voice notes",
+          "icon": "🎙️",
+          "soon": true
+        },
+        {
+          "id": "lv7-11",
+          "title": "Goals for next year",
+          "icon": "🎯",
+          "soon": true
+        },
+        {
+          "id": "lv7-12",
+          "title": "Visiting a family",
+          "icon": "🏠",
+          "soon": true
+        },
+        {
+          "id": "lv7-13",
+          "title": "Getting ready for a wedding",
+          "icon": "👔",
+          "soon": true
+        },
+        {
+          "id": "lv7-14",
+          "title": "Planning dinner",
+          "icon": "🍽️",
+          "soon": true
+        },
+        {
+          "id": "lv7-15",
+          "title": "Asking a favour",
+          "icon": "🤝",
+          "soon": true
+        },
+        {
+          "id": "lv7-16",
+          "title": "Where shall we meet?",
+          "icon": "📍",
+          "soon": true
+        },
+        {
+          "id": "lv7-17",
+          "title": "A job interview",
+          "icon": "💼",
+          "soon": true
+        },
+        {
+          "id": "lv7-18",
+          "title": "Moving to Lebanon",
+          "icon": "🇱🇧",
+          "soon": true
+        },
+        {
+          "id": "lv7-19",
+          "title": "Weekend plans",
+          "icon": "🗺️",
+          "soon": true
+        },
+        {
+          "id": "lv7-20",
+          "title": "Inshallah: promises & maybes",
+          "icon": "🤞",
+          "soon": true
+        }
       ]
     },
     {
       "n": 8,
       "title": "Opinions & feelings",
       "goal": "Longer sentences: say what you think and why, describe and compare.",
-      "lessons": [],
-      "plan": [
-        "How I feel",
-        "I think that…",
-        "Better or worse?"
+      "lessons": [
+        {
+          "id": "lv8-01",
+          "title": "How I feel",
+          "icon": "💭",
+          "soon": true
+        },
+        {
+          "id": "lv8-02",
+          "title": "I think that…",
+          "icon": "🤔",
+          "soon": true
+        },
+        {
+          "id": "lv8-03",
+          "title": "Better or worse?",
+          "icon": "⚖️",
+          "soon": true
+        },
+        {
+          "id": "lv8-04",
+          "title": "Agreeing & disagreeing",
+          "icon": "👍",
+          "soon": true
+        },
+        {
+          "id": "lv8-05",
+          "title": "Giving advice",
+          "icon": "💡",
+          "soon": true
+        },
+        {
+          "id": "lv8-06",
+          "title": "Complaining politely",
+          "icon": "😤",
+          "soon": true
+        },
+        {
+          "id": "lv8-07",
+          "title": "Compliments",
+          "icon": "🌹",
+          "soon": true
+        },
+        {
+          "id": "lv8-08",
+          "title": "Food tastes",
+          "icon": "😋",
+          "soon": true
+        },
+        {
+          "id": "lv8-09",
+          "title": "City or village?",
+          "icon": "🏙️",
+          "soon": true
+        },
+        {
+          "id": "lv8-10",
+          "title": "Describing a place",
+          "icon": "🖼️",
+          "soon": true
+        },
+        {
+          "id": "lv8-11",
+          "title": "What people are like",
+          "icon": "🧑‍🤝‍🧑",
+          "soon": true
+        },
+        {
+          "id": "lv8-12",
+          "title": "Love & relationships",
+          "icon": "❤️",
+          "soon": true
+        },
+        {
+          "id": "lv8-13",
+          "title": "Worries",
+          "icon": "😟",
+          "soon": true
+        },
+        {
+          "id": "lv8-14",
+          "title": "Good news",
+          "icon": "🥳",
+          "soon": true
+        },
+        {
+          "id": "lv8-15",
+          "title": "Condolences",
+          "icon": "🕊️",
+          "soon": true
+        },
+        {
+          "id": "lv8-16",
+          "title": "Congratulations",
+          "icon": "🎊",
+          "soon": true
+        },
+        {
+          "id": "lv8-17",
+          "title": "Weather moods",
+          "icon": "🌧️",
+          "soon": true
+        },
+        {
+          "id": "lv8-18",
+          "title": "Music & songs",
+          "icon": "🎶",
+          "soon": true
+        },
+        {
+          "id": "lv8-19",
+          "title": "Football rivalries",
+          "icon": "⚽",
+          "soon": true
+        },
+        {
+          "id": "lv8-20",
+          "title": "Talking about Lebanon",
+          "icon": "🌲",
+          "soon": true
+        }
       ]
     },
     {
       "n": 9,
       "title": "Real situations",
       "goal": "Longer conversations at normal speed for real errands.",
-      "lessons": [],
-      "plan": [
-        "At the doctor",
-        "Renting a flat",
-        "Bargaining at the souk"
+      "lessons": [
+        {
+          "id": "lv9-01",
+          "title": "At the doctor",
+          "icon": "🩺",
+          "soon": true
+        },
+        {
+          "id": "lv9-02",
+          "title": "Renting a flat",
+          "icon": "🏢",
+          "soon": true
+        },
+        {
+          "id": "lv9-03",
+          "title": "Bargaining at the souk",
+          "icon": "🧺",
+          "soon": true
+        },
+        {
+          "id": "lv9-04",
+          "title": "At the mechanic",
+          "icon": "🔧",
+          "soon": true
+        },
+        {
+          "id": "lv9-05",
+          "title": "At a checkpoint",
+          "icon": "🚧",
+          "soon": true
+        },
+        {
+          "id": "lv9-06",
+          "title": "Residency paperwork",
+          "icon": "📑",
+          "soon": true
+        },
+        {
+          "id": "lv9-07",
+          "title": "At the dentist",
+          "icon": "🦷",
+          "soon": true
+        },
+        {
+          "id": "lv9-08",
+          "title": "A school meeting",
+          "icon": "🏫",
+          "soon": true
+        },
+        {
+          "id": "lv9-09",
+          "title": "At the emergency room",
+          "icon": "🚑",
+          "soon": true
+        },
+        {
+          "id": "lv9-10",
+          "title": "Problems with the landlord",
+          "icon": "🏚️",
+          "soon": true
+        },
+        {
+          "id": "lv9-11",
+          "title": "Buying a phone",
+          "icon": "📱",
+          "soon": true
+        },
+        {
+          "id": "lv9-12",
+          "title": "Calling a plumber or electrician",
+          "icon": "🔌",
+          "soon": true
+        },
+        {
+          "id": "lv9-13",
+          "title": "Viewing a flat",
+          "icon": "🔑",
+          "soon": true
+        },
+        {
+          "id": "lv9-14",
+          "title": "Lost luggage",
+          "icon": "🧳",
+          "soon": true
+        },
+        {
+          "id": "lv9-15",
+          "title": "Hosting dinner",
+          "icon": "🍷",
+          "soon": true
+        },
+        {
+          "id": "lv9-16",
+          "title": "Being a guest",
+          "icon": "🎁",
+          "soon": true
+        },
+        {
+          "id": "lv9-17",
+          "title": "Office life",
+          "icon": "🖥️",
+          "soon": true
+        },
+        {
+          "id": "lv9-18",
+          "title": "Organising an event",
+          "icon": "📣",
+          "soon": true
+        },
+        {
+          "id": "lv9-19",
+          "title": "A mistake on the bill",
+          "icon": "🧾",
+          "soon": true
+        },
+        {
+          "id": "lv9-20",
+          "title": "Helping a neighbour",
+          "icon": "🤲",
+          "soon": true
+        }
       ]
     },
     {
       "n": 10,
       "title": "Talk like a native",
       "goal": "Full conversations with a native speaker at natural speed, slang and code-switching.",
-      "lessons": [],
-      "plan": [
-        "A coffee with friends",
-        "Family lunch",
-        "Stories from Beirut"
+      "lessons": [
+        {
+          "id": "lv10-01",
+          "title": "Coffee with friends",
+          "icon": "☕",
+          "soon": true
+        },
+        {
+          "id": "lv10-02",
+          "title": "Sunday family lunch",
+          "icon": "🍽️",
+          "soon": true
+        },
+        {
+          "id": "lv10-03",
+          "title": "Stories from Beirut",
+          "icon": "🏙️",
+          "soon": true
+        },
+        {
+          "id": "lv10-04",
+          "title": "Gossip",
+          "icon": "🤫",
+          "soon": true
+        },
+        {
+          "id": "lv10-05",
+          "title": "Small talk about the news",
+          "icon": "📻",
+          "soon": true
+        },
+        {
+          "id": "lv10-06",
+          "title": "Jokes & teasing",
+          "icon": "😂",
+          "soon": true
+        },
+        {
+          "id": "lv10-07",
+          "title": "Street slang",
+          "icon": "🛵",
+          "soon": true
+        },
+        {
+          "id": "lv10-08",
+          "title": "Arabic, French & English in one sentence",
+          "icon": "🔀",
+          "soon": true
+        },
+        {
+          "id": "lv10-09",
+          "title": "Proverbs",
+          "icon": "📜",
+          "soon": true
+        },
+        {
+          "id": "lv10-10",
+          "title": "Words to avoid",
+          "icon": "🚫",
+          "soon": true
+        },
+        {
+          "id": "lv10-11",
+          "title": "Arguing, Lebanese style",
+          "icon": "🗯️",
+          "soon": true
+        },
+        {
+          "id": "lv10-12",
+          "title": "Emigration & the diaspora",
+          "icon": "🌐",
+          "soon": true
+        },
+        {
+          "id": "lv10-13",
+          "title": "Food debates",
+          "icon": "🧆",
+          "soon": true
+        },
+        {
+          "id": "lv10-14",
+          "title": "Back in the village",
+          "icon": "🌳",
+          "soon": true
+        },
+        {
+          "id": "lv10-15",
+          "title": "Weddings & celebrations",
+          "icon": "💃",
+          "soon": true
+        },
+        {
+          "id": "lv10-16",
+          "title": "Paying respects",
+          "icon": "🕯️",
+          "soon": true
+        },
+        {
+          "id": "lv10-17",
+          "title": "Radio & TV talk",
+          "icon": "📡",
+          "soon": true
+        },
+        {
+          "id": "lv10-18",
+          "title": "Chatting with a taxi driver",
+          "icon": "🚕",
+          "soon": true
+        },
+        {
+          "id": "lv10-19",
+          "title": "At the hairdresser",
+          "icon": "💅",
+          "soon": true
+        },
+        {
+          "id": "lv10-20",
+          "title": "Saying goodbye",
+          "icon": "👋",
+          "soon": true
+        }
       ]
     }
   ]

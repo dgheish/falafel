@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=3';
-import * as audio from './audio.js?v=3';
+import { settings, progress, clips } from './store.js?v=4';
+import * as audio from './audio.js?v=4';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -69,38 +69,31 @@ document.querySelectorAll('[data-toggle]').forEach(c =>
   c.addEventListener('click', () => { settings.toggle(c.dataset.toggle); applyToggles(); }));
 
 // ---------- levels ----------
-const allLessons = () => DATA.levels.flatMap(lv => lv.lessons);
+// Every level is open to everyone. Lessons marked "soon" are planned but not written yet.
+const ready = l => !l.soon;
+const allLessons = () => DATA.levels.flatMap(lv => lv.lessons.filter(ready));
 const levelOf = lessonId => DATA.levels.find(lv => lv.lessons.some(l => l.id === lessonId));
-const levelDone = lv => lv.lessons.length > 0 && lv.lessons.every(l => progress.get(l.id));
-// A level opens once every lesson in the level before it is finished.
-function unlocked(lv) {
-  if (settings.unlockAll || lv.n === 1) return true;
-  const prev = DATA.levels.find(x => x.n === lv.n - 1);
-  return prev ? levelDone(prev) : true;
-}
 
 // ---------- views ----------
 function viewHome() {
   const cards = DATA.levels.map(lv => {
-    const open = unlocked(lv);
-    const done = lv.lessons.filter(l => progress.get(l.id)).length;
-    const ready = lv.lessons.length;
-    let badge;
-    if (!ready) badge = `<span class="badge">Coming soon</span>`;
-    else if (!open) badge = `<span class="badge">🔒</span>`;
-    else badge = `<span class="badge ${done === ready ? 'done' : ''}">${done === ready ? '✓' : `${done}/${ready}`}</span>`;
-    const pct = ready ? Math.round((done / ready) * 100) : 0;
-    return `<a class="lesson-card level ${open ? '' : 'locked'}" href="#/level/${lv.n}">
+    const live = lv.lessons.filter(ready);
+    const done = live.filter(l => progress.get(l.id)).length;
+    const pct = live.length ? Math.round((done / live.length) * 100) : 0;
+    const badge = live.length
+      ? `<span class="badge ${done && done === live.length ? 'done' : ''}">${done}/${live.length}</span>`
+      : `<span class="badge">Coming soon</span>`;
+    return `<a class="lesson-card level" href="#/level/${lv.n}">
       <span class="lesson-icon lvl">${lv.n}</span>
-      <span class="lesson-text"><small>Level ${lv.n}</small><strong>${esc(lv.title)}</strong><span>${esc(lv.goal)}</span>
-        ${ready && open ? `<span class="meter"><i style="width:${pct}%"></i></span>` : ''}</span>
+      <span class="lesson-text"><small>Level ${lv.n} · ${lv.lessons.length} subjects</small><strong>${esc(lv.title)}</strong><span>${esc(lv.goal)}</span>
+        ${live.length ? `<span class="meter"><i style="width:${pct}%"></i></span>` : ''}</span>
       ${badge}
     </a>`;
   }).join('');
   app.innerHTML = `
     <section class="hero">
       <h1>Speak Lebanese,<br>the way people really talk.</h1>
-      <p>Ten levels, from your first "marhaba" to a real conversation with a native speaker.</p>
+      <p>Ten levels, from your first "marhaba" to a real conversation with a native speaker. Start anywhere.</p>
     </section>
     <section class="lessons">${cards}</section>`;
 }
@@ -108,39 +101,19 @@ function viewHome() {
 function viewLevel(n) {
   const lv = DATA.levels.find(x => x.n === +n);
   if (!lv) return viewHome();
-  const open = unlocked(lv);
-  const lessons = lv.lessons.map((l, i) => {
+  const cards = lv.lessons.map((l, i) => {
+    if (l.soon) return `<div class="lesson-card soon"><span class="lesson-icon">${l.icon}</span>
+      <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong></span><span class="badge">Soon</span></div>`;
     const p = progress.get(l.id);
     const badge = p ? `<span class="badge done">✓ ${p.best}/${p.total}</span>` : `<span class="badge">${l.items.length} phrases</span>`;
-    const inner = `<span class="lesson-icon">${l.icon}</span>
-      <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong><span>${esc(l.subtitle)}</span></span>${badge}`;
-    return open ? `<a class="lesson-card" href="#/lesson/${l.id}">${inner}</a>` : `<div class="lesson-card locked">${inner}</div>`;
+    return `<a class="lesson-card" href="#/lesson/${l.id}"><span class="lesson-icon">${l.icon}</span>
+      <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong><span>${esc(l.subtitle)}</span></span>${badge}</a>`;
   }).join('');
-  const planned = (lv.plan || []).map(t => `<div class="lesson-card locked soon"><span class="lesson-icon">⏳</span>
-      <span class="lesson-text"><small>Coming soon</small><strong>${esc(t)}</strong></span></div>`).join('');
   app.innerHTML = `
     <a class="back" href="#/">← All levels</a>
     <h1>Level ${lv.n}: ${esc(lv.title)}</h1>
     <p class="lead">${esc(lv.goal)}</p>
-    ${open ? '' : `<p class="card left">🔒 Finish every lesson in Level ${lv.n - 1} to open this level.</p>`}
-    <section class="lessons">${lessons}${planned}</section>`;
-}
-
-function viewAbout() {
-  const rows = [
-    ['2', 'ء / ق', 'A catch in the throat, like the middle of "uh-oh".', '2addeish?', 'how much?'],
-    ['3', 'ع', 'A squeezed sound from deep in the throat. No English match.', '3afwan', "you're welcome"],
-    ['7', 'ح', 'A breathy, raspy "h", like fogging up a mirror.', 'mni7', 'good'],
-    ['kh', 'خ', 'Like the "ch" in Scottish "loch".', 'kheir', 'good (morning)'],
-    ['gh', 'غ', 'Like a French "r", gargled lightly.', 'ghali', 'expensive'],
-    ['sh', 'ش', 'Like English "sh".', 'shukran', 'thank you'],
-  ].map(r => `<tr><td class="num">${r[0]}</td><td dir="rtl" lang="ar" class="ar">${r[1]}</td><td>${r[2]}<br><em>${r[3]}</em> = ${r[4]}</td></tr>`).join('');
-  app.innerHTML = `
-    <a class="back" href="#/">← Lessons</a>
-    <h1>Reading Arabizi</h1>
-    <p>Lebanese people mostly text in <strong>Arabizi</strong>: Arabic written with Latin letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
-    <table class="abc">${rows}</table>
-    <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
+    <section class="lessons">${cards}</section>`;
 }
 
 // ----- lesson: learn → dialogue → practice → quiz → done -----
@@ -151,7 +124,6 @@ function viewLesson(id) {
   const lesson = allLessons().find(l => l.id === id);
   if (!lesson) return viewHome();
   const level = levelOf(id);
-  if (!unlocked(level)) return viewLevel(level.n);
   const s = { step: 'learn', i: 0, female: false, quiz: null, mine: null };
 
   const shell = body => {
@@ -411,7 +383,6 @@ function viewLesson(id) {
     const list = allLessons();
     const next = list[list.indexOf(lesson) + 1];
     const nextLevel = next && levelOf(next.id);
-    const newLevel = nextLevel && nextLevel !== level && unlocked(nextLevel);
     const pct = z.score / z.qs.length;
     const msg = pct === 1 ? 'Ya3teek l 3afye! Perfect.' : pct >= 0.7 ? 'Brava! Nicely done.' : 'Shway shway. Give it another go.';
     shell(`
@@ -419,10 +390,9 @@ function viewLesson(id) {
         <div class="pic">${pct >= 0.7 ? '🎉' : '💪'}</div>
         <h2>${z.score} / ${z.qs.length}</h2>
         <p>${msg}</p>
-        ${newLevel ? `<p class="note">🎉 You've opened <b>Level ${nextLevel.n}: ${esc(nextLevel.title)}</b></p>` : ''}
         <div class="row">
           <button class="btn ghost" data-act="again">Try the quiz again</button>
-          ${next && (nextLevel === level || newLevel)
+          ${next && nextLevel === level
             ? `<a class="btn primary" href="#/lesson/${next.id}">Next: ${esc(next.title)} →</a>`
             : `<a class="btn primary" href="#/level/${level.n}">Back to Level ${level.n}</a>`}
         </div>
@@ -464,7 +434,6 @@ async function viewStudio() {
       <p>When you're happy, press <b>Download all</b> and unzip the files into the site's <code>audio/</code> folder. That's what makes them work for everyone.</p>
       <p class="muted">Tips: a quiet room, phone about 20 cm from your mouth, normal speed. Leave half a second of silence before and after.</p>
       <div class="row"><span id="tally" class="badge"></span><button class="btn primary" id="zip">⬇ Download all</button></div>
-      <label class="teacher"><input type="checkbox" id="unlock" ${settings.unlockAll ? 'checked' : ''}> Teacher mode: open all levels on this device</label>
     </div>
     ${sections}`;
 
@@ -484,7 +453,6 @@ async function viewStudio() {
     app.querySelector('#tally').textContent = `${have} / ${all} recorded`;
   };
 
-  app.querySelector('#unlock').onchange = e => { settings.unlockAll = e.target.checked; };
   const lis = [...app.querySelectorAll('.clips li')];
   await Promise.all(lis.map(refresh));
   tally();
@@ -570,7 +538,7 @@ function route() {
 async function boot() {
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=3', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=4', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
