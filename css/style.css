@@ -241,3 +241,8 @@ body.hide-english .t-english:not(.always) { display: none !important; }
   .chip { color: #f2f2f0; border-color: #4a4f4b; }
   .chip[aria-pressed="true"] { background: #f2f2f0; color: #111312; }
 }
+.picker { display: block; margin: 18px 0 0; font-weight: 800; font-size: .9rem; color: var(--muted); }
+.picker select {
+  display: block; width: 100%; margin-top: 6px; padding: 12px; border-radius: 12px;
+  border: 1.5px solid var(--line); background: var(--card); color: var(--ink); font: 700 1rem Nunito, sans-serif;
+}

@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=22';
-import * as audio from './audio.js?v=22';
+import { settings, progress, clips } from './store.js?v=23';
+import * as audio from './audio.js?v=23';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -409,10 +409,18 @@ function viewLesson(id) {
 }
 
 // ----- recording studio (for the teacher) -----
-async function viewStudio() {
-  const sections = allLessons().map(l => `
-    <h2>Level ${levelOf(l.id).n} · ${l.icon} ${esc(l.title)}</h2>
-    <ul class="clips">${clipsFor(l).map(c => `
+async function viewStudio(lessonId) {
+  // One lesson at a time: the whole course has thousands of clips.
+  const list = allLessons();
+  const lesson = list.find(l => l.id === lessonId) || list[0];
+  const ix = list.indexOf(lesson);
+  const prev = list[ix - 1], next = list[ix + 1];
+  const options = DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
+    lv.lessons.filter(ready).map(l => `<option value="${l.id}" ${l === lesson ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')
+  }</optgroup>`).join('');
+  const sections = `
+    <h2>Level ${levelOf(lesson.id).n} · ${lesson.icon} ${esc(lesson.title)}</h2>
+    <ul class="clips">${clipsFor(lesson).map(c => `
       <li data-id="${esc(c.id)}">
         <div class="clip-text">
           <strong>${esc(c.arabizi)}</strong> <span dir="rtl" lang="ar" class="ar">${esc(c.arabic)}</span>
@@ -424,18 +432,28 @@ async function viewStudio() {
           <button class="btn ghost" data-act="play" disabled>▶</button>
           <button class="btn ghost" data-act="del" disabled title="Delete browser recording">🗑</button>
         </div>
-      </li>`).join('')}</ul>`).join('');
+      </li>`).join('')}</ul>
+    <div class="nav">
+      ${prev ? `<a class="btn ghost" href="#/studio/${prev.id}">← Previous lesson</a>` : '<span></span>'}
+      ${next ? `<a class="btn primary" href="#/studio/${next.id}">Next lesson →</a>` : '<span></span>'}
+    </div>`;
 
   app.innerHTML = `
-    <a class="back" href="#/">← Lessons</a>
+    <a class="back" href="#/">← Levels</a>
     <h1>Recording studio</h1>
     <div class="card left">
       <p>Record each phrase in your own voice. Recordings are saved in <b>this browser</b> and the lessons use them right away, so you can test as you go.</p>
       <p>When you're happy, press <b>Download all</b> and unzip the files into the site's <code>audio/</code> folder. That's what makes them work for everyone.</p>
       <p class="muted">Tips: a quiet room, phone about 20 cm from your mouth, normal speed. Leave half a second of silence before and after.</p>
-      <div class="row"><span id="tally" class="badge"></span><button class="btn primary" id="zip">⬇ Download all</button></div>
+      <div class="row"><span id="tally" class="badge"></span><span id="total" class="badge"></span><button class="btn primary" id="zip">⬇ Download all</button></div>
     </div>
+    <label class="picker">Lesson to record
+      <select id="pick">${options}</select>
+    </label>
     ${sections}`;
+  app.querySelector('#pick').onchange = e => { location.hash = '#/studio/' + e.target.value; };
+  const total = list.reduce((n, l) => n + clipsFor(l).length, 0);
+  clips.keys().then(k => { const t = app.querySelector('#total'); if (t) t.textContent = `${k.length} / ${total} saved in this browser`; });
 
   const refresh = async li => {
     const id = li.dataset.id;
@@ -450,7 +468,7 @@ async function viewStudio() {
   const tally = async () => {
     const all = app.querySelectorAll('.clips li').length;
     const have = app.querySelectorAll('.status.file, .status.browser').length;
-    app.querySelector('#tally').textContent = `${have} / ${all} recorded`;
+    app.querySelector('#tally').textContent = `This lesson: ${have} / ${all}`;
   };
 
   const lis = [...app.querySelectorAll('.clips li')];
@@ -529,14 +547,14 @@ function route() {
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
-    else if (page === 'studio') viewStudio().catch(showError);
+    else if (page === 'studio') viewStudio(arg).catch(showError);
     else if (page === 'about') viewAbout();
     else viewHome();
   } catch (err) { showError(err); }
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 22;
+const VERSION = 23;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -558,7 +576,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=22', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=23', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
