@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=6';
-import * as audio from './audio.js?v=6';
+import { settings, progress, clips } from './store.js?v=7';
+import * as audio from './audio.js?v=7';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -538,7 +538,7 @@ function route() {
 async function boot() {
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=6', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=7', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

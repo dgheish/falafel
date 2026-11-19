@@ -209,3 +209,5 @@ body.hide-english .t-english:not(.always) { display: none !important; }
 .tile:disabled { cursor: default; }
 .fix { text-align: center; font-weight: 800; color: var(--ok); margin: 10px 0 0; }
 .lesson-card.soon { opacity: .6; border-style: dashed; box-shadow: none; }
+.brand { display: inline-flex; align-items: center; gap: 8px; }
+.flag { width: 30px; height: 20px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(255,255,255,.25); flex: none; }
