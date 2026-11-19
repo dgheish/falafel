@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=17';
-import * as audio from './audio.js?v=17';
+import { settings, progress, clips } from './store.js?v=18';
+import * as audio from './audio.js?v=18';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -536,7 +536,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 17;
+const VERSION = 18;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -558,7 +558,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=17', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=18', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
