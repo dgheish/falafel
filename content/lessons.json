@@ -23032,7 +23032,7 @@
             },
             {
               "id": "lv9-02-06",
-              "arabizi": "fi mafroushet?",
+              "arabizi": "fiya farsh?",
               "arabic": "فيها فرش؟",
               "english": "Is it furnished?",
               "pic": "🛋️"
@@ -23046,7 +23046,7 @@
             },
             {
               "id": "lv9-02-08",
-              "arabizi": "fina nefshel shway bel se3r?",
+              "arabizi": "fina nfasel shway bel se3r?",
               "arabic": "فينا نفاصل شوي بالسعر؟",
               "english": "Can we negotiate the price a bit?",
               "pic": "🤝"
@@ -23105,7 +23105,7 @@
             {
               "id": "lv9-02-d7",
               "speaker": "Sam",
-              "arabizi": "ghaliye shway. fina nefshel?",
+              "arabizi": "ghaliye shway. fina nfasel?",
               "arabic": "غالية شوي. فينا نفاصل؟",
               "english": "A bit expensive. Can we negotiate?"
             },
@@ -23197,9 +23197,9 @@
             },
             {
               "id": "lv9-03-05",
-              "arabizi": "2bel 2arib men hon arkhas",
-              "arabic": "قبال قريب من هون أرخص",
-              "english": "It's cheaper nearby",
+              "arabizi": "fi 7ada 2arib men hon arkhas",
+              "arabic": "في حدا قريب من هون أرخص",
+              "english": "Someone nearby is cheaper",
               "pic": "👀"
             },
             {
@@ -23371,7 +23371,7 @@
             },
             {
               "id": "lv9-04-05",
-              "arabizi": "lezma ghayyar zeit",
+              "arabizi": "lezma tghyir zeit",
               "arabic": "لازما تغيير زيت",
               "english": "It needs an oil change",
               "pic": "🛢️"
@@ -23409,7 +23409,7 @@
             {
               "id": "lv9-04-d1",
               "speaker": "Sam",
-              "arabizi": "Abu Ali, l sayyara 3am ta3mel sot ghareeb lamma frem.",
+              "arabizi": "Abu Ali, l sayyara 3am ta3mel sot ghareeb lamma farrem.",
               "arabic": "أبو علي، السيّارة عم تعمل صوت غريب لمّا فرّم.",
               "english": "Abu Ali, the car is making a strange noise when I brake."
             },
@@ -23430,7 +23430,7 @@
             {
               "id": "lv9-04-d4",
               "speaker": "Abu Ali",
-              "arabizi": "hayda l zeit. lezma ghayyar zeit kamen.",
+              "arabizi": "hayda l zeit. lezma tghyir zeit kamen.",
               "arabic": "هيدا الزيت. لازما تغيير زيت كمان.",
               "english": "That's the oil. It needs an oil change too."
             },
@@ -23896,7 +23896,7 @@
             },
             {
               "id": "lv9-07-06",
-              "arabizi": "baddak bendj?",
+              "arabizi": "baddak banj?",
               "arabic": "بدّك بنج؟",
               "english": "Do you want anaesthetic?",
               "pic": "💉"
@@ -23934,7 +23934,7 @@
             {
               "id": "lv9-07-d2",
               "speaker": "Sam",
-              "arabizi": "sene 3am yewja3ne, khassatan lamma eshrab shi bared.",
+              "arabizi": "sene 3am yewja3ne, khsousan lamma eshrab shi bared.",
               "arabic": "سنّي عم يوجعني، خصوصًا لمّا إشرب شي بارد.",
               "english": "My tooth hurts, especially when I drink something cold."
             },
@@ -23969,7 +23969,7 @@
             {
               "id": "lv9-07-d7",
               "speaker": "Dr Hani",
-              "arabizi": "ma tkhaf. 7a a3tik bendj, ma 7a t7es b shi.",
+              "arabizi": "ma tkhaf. 7a a3tik banj, ma 7a t7es b shi.",
               "arabic": "ما تخاف. رح إعطيك بنج، ما رح تحسّ بشي.",
               "english": "Don't be scared. I'll give you anaesthetic, you won't feel a thing."
             },
@@ -24131,7 +24131,7 @@
             {
               "id": "lv9-08-d6",
               "speaker": "Sam",
-              "arabizi": "tayyeb. w bel saff, kif tasarrfo?",
+              "arabizi": "tayyeb. w bel saff, kif tsarrfo?",
               "arabic": "طيّب. وبالصف، كيف تصرّفو؟",
               "english": "OK. And in class, how does he behave?"
             },
@@ -24268,7 +24268,7 @@
             {
               "id": "lv9-09-d3",
               "speaker": "Sam",
-              "arabizi": "rfi2e Karim w2e3 3an l mawtar w ma 3am ye2dar yo2af.",
+              "arabizi": "rfi2e Karim w2e3 3an l motor w ma 3am ye2dar yo2af.",
               "arabic": "رفيقي كريم وقع عن الموتو وما عم يقدر يوقف.",
               "english": "My friend Karim fell off his motorbike and can't stand up."
             },
@@ -24626,7 +24626,7 @@
             {
               "id": "lv9-11-d5",
               "speaker": "Sam",
-              "arabizi": "ana ma b-sawwer ktir. bekhod haydak. fi kafele?",
+              "arabizi": "ana ma bsawwer ktir. bekhod haydak. fi kafele?",
               "arabic": "أنا ما بصوّر كتير. باخد هيداك. في كفالة؟",
               "english": "I don't take many photos. I'll take that one. Is there a warranty?"
             },
@@ -24725,7 +24725,7 @@
             },
             {
               "id": "lv9-12-06",
-              "arabizi": "addeish btekhod 3al ze3ra?",
+              "arabizi": "addeish btekhod 3al zyara?",
               "arabic": "قدّيش بتاخد عالزيارة؟",
               "english": "How much do you charge for a visit?",
               "pic": "💵"
@@ -24747,7 +24747,7 @@
             },
             {
               "id": "lv9-12-09",
-              "arabizi": "ma bta3mel shi la ousal",
+              "arabizi": "ma ta3mel shi la ousal",
               "arabic": "ما تعمل شي لَوصل",
               "english": "Don't touch anything until I arrive",
               "pic": "✋"
@@ -24820,7 +24820,7 @@
             {
               "id": "lv9-12-d10",
               "speaker": "Abu Ali",
-              "arabizi": "l ze3ra 3eshrin dollar, w l 2ta3 3alayk.",
+              "arabizi": "l zyara 3eshrin dollar, w l 2ta3 3alayk.",
               "arabic": "الزيارة عشرين دولار، والقطع عليك.",
               "english": "Twenty dollars for the visit, and parts are on you."
             }
@@ -24919,7 +24919,7 @@
             },
             {
               "id": "lv9-13-09",
-              "arabizi": "bfakker w b-rodd 3leik",
+              "arabizi": "bfakker w brodd 3leik",
               "arabic": "بفكّر وبردّ عليك",
               "english": "I'll think and get back to you",
               "pic": "💭"
@@ -24985,14 +24985,14 @@
             {
               "id": "lv9-13-d9",
               "speaker": "Tony",
-              "arabizi": "madame khetyara bel tabe2 l fo2. ma bteshma3 sot.",
+              "arabizi": "madame khetyara bel tabe2 l fo2. ma btesma3 sot.",
               "arabic": "مدام ختيارة بالطابق الفوق. ما بتسمع صوت.",
               "english": "An old lady on the floor above. You won't hear a sound."
             },
             {
               "id": "lv9-13-d10",
               "speaker": "Sam",
-              "arabizi": "tamem. bfakker w b-rodd 3aleik bukra.",
+              "arabizi": "tamem. bfakker w brodd 3aleik bukra.",
               "arabic": "تمام. بفكّر وبردّ عليك بكرا.",
               "english": "Great. I'll think and get back to you tomorrow."
             }
@@ -25566,14 +25566,14 @@
             },
             {
               "id": "lv9-17-04",
-              "arabizi": "l mdir badda yshoufak",
+              "arabizi": "l mdir baddo yshoufak",
               "arabic": "المدير بدّو يشوفك",
               "english": "The boss wants to see you",
               "pic": "👔"
             },
             {
               "id": "lv9-17-05",
-              "arabizi": "ana b-ijaze bukra",
+              "arabizi": "ana b ijaze bukra",
               "arabic": "أنا بإجازة بكرا",
               "english": "I'm on leave tomorrow",
               "pic": "🏖️"
@@ -25611,7 +25611,7 @@
             {
               "id": "lv9-17-d1",
               "speaker": "Rita",
-              "arabizi": "Sam, l mdir badda yshoufak.",
+              "arabizi": "Sam, l mdir baddo yshoufak.",
               "arabic": "سام، المدير بدّو يشوفك.",
               "english": "Sam, the boss wants to see you."
             },
@@ -25667,7 +25667,7 @@
             {
               "id": "lv9-17-d9",
               "speaker": "Rita",
-              "arabizi": "rou7 3al tabe2 l telet, hniik fi wa7ad bimshe.",
+              "arabizi": "rou7 3al tabe2 l telet, honik fi wa7ad byemshe.",
               "arabic": "روح عالطابق التالت، هونيك في واحد بيمشي.",
               "english": "Go to the third floor, there's one that works."
             }
@@ -25825,7 +25825,7 @@
             {
               "id": "lv9-18-d8",
               "speaker": "Sam",
-              "arabizi": "fikra 7elwe! w Karim bya3ref yo2os dabke.",
+              "arabizi": "fikra 7elwe! w Karim bya3ref yor2os dabke.",
               "arabic": "فكرة حلوة! وكريم بيعرف يرقص دبكة.",
               "english": "Good idea! And Karim knows how to dance dabke."
             },
@@ -25924,7 +25924,7 @@
             },
             {
               "id": "lv9-19-08",
-              "arabizi": "ma fi mashkle, bt-sir",
+              "arabizi": "ma fi mashkle, btsir",
               "arabic": "ما في مشكلة، بتصير",
               "english": "No problem, it happens",
               "pic": "👌"
@@ -25976,14 +25976,14 @@
             {
               "id": "lv9-19-d6",
               "speaker": "Rami",
-              "arabizi": "l menu 2adim, bas ma3ak 7a2. 7a sallo.",
+              "arabizi": "l menu 2adim, bas ma3ak 7a2. 7a sallho.",
               "arabic": "المنيو قديم، بس معك حقّ. رح صلّحو.",
               "english": "The menu is old, but you're right. I'll fix it."
             },
             {
               "id": "lv9-19-d7",
               "speaker": "Sam",
-              "arabizi": "merci. ma fi mashkle, bt-sir.",
+              "arabizi": "merci. ma fi mashkle, btsir.",
               "arabic": "مرسي. ما في مشكلة، بتصير.",
               "english": "Thanks. No problem, it happens."
             },
