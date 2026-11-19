@@ -2,6 +2,8 @@
 
 A small website for adult beginners learning spoken Lebanese Arabic.
 
+Live at https://dgheish.github.io/falafel/
+
 ## Run it locally
 
     python3 -m http.server 8080
