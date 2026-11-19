@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js';
-import * as audio from './audio.js';
+import { settings, progress, clips } from './store.js?v=3';
+import * as audio from './audio.js?v=3';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -547,21 +547,30 @@ async function viewStudio() {
 }
 
 // ---------- router ----------
+function showError(err) {
+  console.error(err);
+  app.innerHTML = `<div class="card"><div class="pic">😕</div>
+    <p>Something went wrong loading this page.</p>
+    <div class="row"><button class="btn primary" onclick="location.reload()">Reload</button></div></div>`;
+}
+
 function route() {
   const [, page, arg] = location.hash.split('/');
   window.scrollTo(0, 0);
   audio.stop();
-  if (page === 'lesson') viewLesson(arg);
-  else if (page === 'level') viewLevel(arg);
-  else if (page === 'studio') viewStudio();
-  else if (page === 'about') viewAbout();
-  else viewHome();
+  try {
+    if (page === 'lesson') viewLesson(arg);
+    else if (page === 'level') viewLevel(arg);
+    else if (page === 'studio') viewStudio().catch(showError);
+    else if (page === 'about') viewAbout();
+    else viewHome();
+  } catch (err) { showError(err); }
 }
 
 async function boot() {
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=3', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
