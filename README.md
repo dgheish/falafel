@@ -1,4 +1,4 @@
-# Falafel: Learn Lebanese
+# Kifak: Learn Lebanese
 
 A small website for adult beginners learning spoken Lebanese Arabic.
 

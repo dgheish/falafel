@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=23';
-import * as audio from './audio.js?v=23';
+import { settings, progress, clips } from './store.js?v=25';
+import * as audio from './audio.js?v=25';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -92,8 +92,9 @@ function viewHome() {
   }).join('');
   app.innerHTML = `
     <section class="hero">
-      <h1>Speak Lebanese,<br>the way people really talk.</h1>
-      <p>Ten levels, from your first "marhaba" to a real conversation with a native speaker. Start anywhere.</p>
+      <h1>Speak Lebanese Like a Local:<br><span>The Arabic People Really Talk</span></h1>
+      <p>Ten free levels with a native speaker's voice, <br>from your first "marhaba" to a real conversation.</p>
+      <a class="btn primary big" href="#/level/1">Start Level 1</a>
     </section>
     <section class="lessons">${cards}</section>`;
 }
@@ -527,7 +528,7 @@ async function viewStudio(lessonId) {
     const out = await zip.generateAsync({ type: 'blob' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(out);
-    a.download = 'falafel-audio.zip';
+    a.download = 'kifak-audio.zip';
     a.click();
   };
 }
@@ -544,6 +545,10 @@ function route() {
   const [, page, arg] = location.hash.split('/');
   window.scrollTo(0, 0);
   audio.stop();
+  const section = page === 'studio' || page === 'about' ? page : '';
+  document.querySelectorAll('.mainnav a').forEach(a => {
+    a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
+  });
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
@@ -554,7 +559,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 23;
+const VERSION = 25;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -576,7 +581,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=23', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=25', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
