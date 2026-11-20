@@ -10,16 +10,19 @@ The owner is a native Lebanese speaker. They review the wording and record every
 
 - **Dialect:** Beirut Lebanese. Show **Arabizi first** (`kifak`, `7abibi`, `3am`), Arabic script under it, English under that. The learner can hide any of the three with the buttons in the top bar.
 - **Man/woman forms:** phrases that change by who you talk to have an `f` form, shown with a "Talking to: a man / a woman" switch.
-- **Structure:** 10 levels × 20 lessons = 200 lessons. Level 1 is single words, and the levels get harder up to Level 10 (full native-speed conversations, slang, code-switching, proverbs). **All levels are open to everyone**, with no locking.
-- **Lesson flow:** Learn (picture cards, Play / Slow) → Listen (dialogue) → Repeat (learner records and compares) → Quiz. From Level 3 the quiz adds sentence building (tap word tiles in order). Lessons with `questions` add listening questions at the end.
-- **Look:** name "Kifak" in cedar green with a red question mark ("Kifak?"), and a drawn Lebanese flag as logo and tab icon. Top bar like a landing page: white with a thin shadow, logo left, links in the middle (Levels, How to read Arabic, Recording studio; red underline on the current one), Abc/عربي/EN buttons right. On phones the links drop to a second row. Home page opens with a big centred green headline (Poppins font) and a "Start Level 1" button. Colours: cedar green (`#0b6b3a`) for headlines, buttons and links, red (`#d8121c`) only for small touches. Green = correct, red = wrong. Dark mode is supported.
+- **Structure:** 10 levels × 20 lessons = 200 lessons, **30 examples per lesson** (6,000 in total). **All levels are open to everyone**, with no locking.
+- **Ladder (decided Nov 2026):** Levels 1–2 single words, 3–4 short phrases (2–4 words), 5–6 full sentences, 7–8 two or three linked sentences, 9–10 paragraphs of 4–6 sentences about one scene.
+- **Two sections:** the home page offers **Lessons** (`#/lessons`, the levels) and **Conversations** (`#/talks`, every lesson's dialogue on its own page `#/talk/<lessonId>` with its listening questions underneath). Dialogues stay in each lesson's `dialogue[]` in the JSON, so clip ids don't change.
+- **Lesson flow:** Learn (picture cards, Play / Slow) → Repeat (learner records and compares, with "Skip to the quiz") → Quiz. The quiz picks 15 random examples each time. From Level 3 it adds sentence building (tap word tiles in order) for examples of 3–8 words. Texts over 60 characters get a smaller font.
+- **Look:** name "Kifak" in cedar green with a red question mark ("Kifak?"), and a drawn Lebanese flag as logo and tab icon. Top bar like a landing page: white with a thin shadow, logo left, links in the middle (Lessons, Conversations, How to read Arabic, Recording studio; red underline on the current section), Abc/عربي/EN buttons right. On phones the links sit on a second row that scrolls sideways. Home page opens with a big centred green headline (Poppins font), a "Start Level 1" button, and two big choice cards: Lessons and Conversations. Colours: cedar green (`#0b6b3a`) for headlines, buttons and links, red (`#d8121c`) only for small touches. Green = correct, red = wrong. Dark mode is supported.
 - **Pictures:** emoji for now. Real illustrations may come later.
 - **Audio:** real recordings by the owner, never text-to-speech.
 
 ## Status
 
-- All 200 lessons are written: 1,982 phrases, 176 female forms, 1,282 dialogue lines, 398 listening questions. **Everything is a DRAFT** written by Claude and needs native review. Expect spelling and phrasing fixes, especially in Levels 9–10 and in sensitive lessons (condolences, news, "Words to avoid").
-- **No audio recorded yet.** 3,440 clips are needed. Suggested order: Levels 1–3 first.
+- All 200 lessons are written. **Everything is a DRAFT** written by Claude and needs native review. Expect spelling and phrasing fixes, especially in Levels 9–10 and in sensitive lessons (condolences, news, "Words to avoid").
+- **Expanding to 30 examples per lesson, level by level.** Done: Level 1 (all 20 lessons at 30). To do: Levels 2–10. Levels 3–10 also need their examples reshaped to fit the ladder (phrases, then sentences, then paragraphs); their level titles and goals still describe the old plan.
+- **No audio recorded yet.** Run `python3 tools/check_content.py` for the current clip count. Suggested order: Levels 1–3 first.
 
 ## Files
 
@@ -28,6 +31,7 @@ The owner is a native Lebanese speaker. They review the wording and record every
 - `js/app.js` (router and all views), `js/audio.js` (playback, mic, audio lookup), `js/store.js` (settings, progress, IndexedDB). The storage keys keep the old `ahla` prefix on purpose, so existing progress and recordings survive.
 - `css/style.css`: colour tokens at the top. The top bar and home headline styles are at the end.
 - `tools/bump.sh`: **run after any change to js/, css/ or content/.** It raises the version in `version.json`, every `?v=` tag and `VERSION` in app.js. Phones reload automatically when the version goes up. Without it, phones show stale cached files (this happened once: stuck on "Loading…").
+- `tools/add_items.py <file.txt>`: appends examples to lessons from a plain text file (`@ lessonId`, then `arabizi | arabic | english | pic | note | f arabizi | f arabic`). New ids continue after the last one, so existing clip ids never change. Duplicates are skipped.
 - `tools/check_content.py`: run before publishing content edits. It catches non-Latin characters in Arabizi (Cyrillic look-alikes, ç, ü, %), duplicate ids and unknown speakers.
 
 ## Recording workflow

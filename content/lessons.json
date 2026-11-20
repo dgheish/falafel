@@ -22,7 +22,7 @@
     {
       "n": 1,
       "title": "First words",
-      "goal": "Single words and short phrases for your first days in Lebanon.",
+      "goal": "Single words for your first days in Lebanon.",
       "lessons": [
         {
           "id": "l1",
@@ -113,6 +113,173 @@
               "arabic": "مع السلامة",
               "english": "Goodbye",
               "pic": "🚪"
+            },
+            {
+              "id": "l1-11",
+              "arabizi": "hala",
+              "arabic": "هلا",
+              "english": "Hi",
+              "pic": "👋",
+              "note": "Short and casual, between friends."
+            },
+            {
+              "id": "l1-12",
+              "arabizi": "hi",
+              "arabic": "هاي",
+              "english": "Hi",
+              "pic": "👋",
+              "note": "Borrowed from English. Lebanese mix in English and French all the time."
+            },
+            {
+              "id": "l1-13",
+              "arabizi": "bonjour",
+              "arabic": "بونجور",
+              "english": "Hello",
+              "pic": "🇫🇷",
+              "note": "From French, and very common in Beirut."
+            },
+            {
+              "id": "l1-14",
+              "arabizi": "sabe7 l nour",
+              "arabic": "صباح النور",
+              "english": "Good morning (the reply)",
+              "pic": "🌅",
+              "note": "The answer to 'sabe7 l kheir'."
+            },
+            {
+              "id": "l1-15",
+              "arabizi": "masa l kheir",
+              "arabic": "مسا الخير",
+              "english": "Good evening",
+              "pic": "🌆"
+            },
+            {
+              "id": "l1-16",
+              "arabizi": "masa l nour",
+              "arabic": "مسا النور",
+              "english": "Good evening (the reply)",
+              "pic": "🌇",
+              "note": "The answer to 'masa l kheir'."
+            },
+            {
+              "id": "l1-17",
+              "arabizi": "bonsoir",
+              "arabic": "بونسوار",
+              "english": "Good evening",
+              "pic": "🌆",
+              "note": "From French."
+            },
+            {
+              "id": "l1-18",
+              "arabizi": "tesba7 3ala kheir",
+              "arabic": "تصبح على خير",
+              "english": "Good night",
+              "pic": "🌙",
+              "f": {
+                "arabizi": "tesba7e 3ala kheir",
+                "arabic": "تصبحي على خير"
+              }
+            },
+            {
+              "id": "l1-19",
+              "arabizi": "w enta men ahlo",
+              "arabic": "وإنت من أهلو",
+              "english": "You too (reply to good night)",
+              "pic": "🌙",
+              "f": {
+                "arabizi": "w ente men ahlo",
+                "arabic": "وإنتِ من أهلو"
+              }
+            },
+            {
+              "id": "l1-20",
+              "arabizi": "ahlein",
+              "arabic": "أهلين",
+              "english": "Hello there",
+              "pic": "🤗"
+            },
+            {
+              "id": "l1-21",
+              "arabizi": "ahla fik",
+              "arabic": "أهلا فيك",
+              "english": "Welcome to you too",
+              "pic": "🤗",
+              "note": "The reply to 'ahla w sahla'.",
+              "f": {
+                "arabizi": "ahla fike",
+                "arabic": "أهلا فيكي"
+              }
+            },
+            {
+              "id": "l1-22",
+              "arabizi": "kif l 7al?",
+              "arabic": "كيف الحال؟",
+              "english": "How's it going?",
+              "pic": "🙂"
+            },
+            {
+              "id": "l1-23",
+              "arabizi": "shu l akhbar?",
+              "arabic": "شو الأخبار؟",
+              "english": "What's new?",
+              "pic": "📰"
+            },
+            {
+              "id": "l1-24",
+              "arabizi": "kello tamem",
+              "arabic": "كلّو تمام",
+              "english": "All good",
+              "pic": "👌"
+            },
+            {
+              "id": "l1-25",
+              "arabizi": "tamem",
+              "arabic": "تمام",
+              "english": "Fine / OK",
+              "pic": "👍"
+            },
+            {
+              "id": "l1-26",
+              "arabizi": "nos nos",
+              "arabic": "نص نص",
+              "english": "So-so",
+              "pic": "🤷"
+            },
+            {
+              "id": "l1-27",
+              "arabizi": "mish mni7",
+              "arabic": "مش منيح",
+              "english": "Not good",
+              "pic": "👎"
+            },
+            {
+              "id": "l1-28",
+              "arabizi": "w enta?",
+              "arabic": "وإنت؟",
+              "english": "And you?",
+              "pic": "👉",
+              "f": {
+                "arabizi": "w ente?",
+                "arabic": "وإنتِ؟"
+              }
+            },
+            {
+              "id": "l1-29",
+              "arabizi": "bye",
+              "arabic": "باي",
+              "english": "Bye",
+              "pic": "👋"
+            },
+            {
+              "id": "l1-30",
+              "arabizi": "mnshoufak",
+              "arabic": "منشوفك",
+              "english": "See you",
+              "pic": "👀",
+              "f": {
+                "arabizi": "mnshoufik",
+                "arabic": "منشوفِك"
+              }
             }
           ],
           "dialogue": [
@@ -248,6 +415,160 @@
                 "arabizi": "fike t3ide?",
                 "arabic": "فيكي تعيدي؟"
               }
+            },
+            {
+              "id": "l2-11",
+              "arabizi": "esem",
+              "arabic": "اسم",
+              "english": "Name",
+              "pic": "🏷️"
+            },
+            {
+              "id": "l2-12",
+              "arabizi": "3omr",
+              "arabic": "عمر",
+              "english": "Age",
+              "pic": "🎂"
+            },
+            {
+              "id": "l2-13",
+              "arabizi": "2addeish 3omrak?",
+              "arabic": "قدّيش عمرك؟",
+              "english": "How old are you?",
+              "pic": "🎂",
+              "f": {
+                "arabizi": "2addeish 3omrik?",
+                "arabic": "قدّيش عمرِك؟"
+              }
+            },
+            {
+              "id": "l2-14",
+              "arabizi": "ana",
+              "arabic": "أنا",
+              "english": "I / me",
+              "pic": "🙋"
+            },
+            {
+              "id": "l2-15",
+              "arabizi": "enta",
+              "arabic": "إنت",
+              "english": "You",
+              "pic": "👉",
+              "f": {
+                "arabizi": "ente",
+                "arabic": "إنتِ"
+              }
+            },
+            {
+              "id": "l2-16",
+              "arabizi": "huwwe",
+              "arabic": "هوّي",
+              "english": "He",
+              "pic": "👨"
+            },
+            {
+              "id": "l2-17",
+              "arabizi": "hiyye",
+              "arabic": "هيّي",
+              "english": "She",
+              "pic": "👩"
+            },
+            {
+              "id": "l2-18",
+              "arabizi": "ne7na",
+              "arabic": "نحنا",
+              "english": "We",
+              "pic": "👥"
+            },
+            {
+              "id": "l2-19",
+              "arabizi": "ento",
+              "arabic": "إنتو",
+              "english": "You (more than one)",
+              "pic": "👥"
+            },
+            {
+              "id": "l2-20",
+              "arabizi": "hinne",
+              "arabic": "هنّي",
+              "english": "They",
+              "pic": "👥"
+            },
+            {
+              "id": "l2-21",
+              "arabizi": "sadi2",
+              "arabic": "صديق",
+              "english": "Friend (a man)",
+              "pic": "🧑‍🤝‍🧑"
+            },
+            {
+              "id": "l2-22",
+              "arabizi": "sadi2a",
+              "arabic": "صديقة",
+              "english": "Friend (a woman)",
+              "pic": "👭"
+            },
+            {
+              "id": "l2-23",
+              "arabizi": "jar",
+              "arabic": "جار",
+              "english": "Neighbour",
+              "pic": "🏘️"
+            },
+            {
+              "id": "l2-24",
+              "arabizi": "mjawwaz",
+              "arabic": "مجوّز",
+              "english": "Married",
+              "pic": "💍",
+              "note": "A woman says 'mjawwaze'."
+            },
+            {
+              "id": "l2-25",
+              "arabizi": "3azabe",
+              "arabic": "عزابي",
+              "english": "Single",
+              "pic": "🙋"
+            },
+            {
+              "id": "l2-26",
+              "arabizi": "wein sakin?",
+              "arabic": "وين ساكن؟",
+              "english": "Where do you live?",
+              "pic": "🏠",
+              "f": {
+                "arabizi": "wein sekne?",
+                "arabic": "وين ساكنة؟"
+              }
+            },
+            {
+              "id": "l2-27",
+              "arabizi": "b Beirut",
+              "arabic": "ببيروت",
+              "english": "In Beirut",
+              "pic": "🏙️"
+            },
+            {
+              "id": "l2-28",
+              "arabizi": "men hon",
+              "arabic": "من هون",
+              "english": "From here",
+              "pic": "📍"
+            },
+            {
+              "id": "l2-29",
+              "arabizi": "tsharrafet",
+              "arabic": "تشرّفت",
+              "english": "Pleased to meet you",
+              "pic": "🤝",
+              "note": "Literally 'I'm honoured'."
+            },
+            {
+              "id": "l2-30",
+              "arabizi": "l sharaf ele",
+              "arabic": "الشرف إلي",
+              "english": "The pleasure is mine",
+              "pic": "🤝"
             }
           ],
           "dialogue": [
@@ -397,6 +718,186 @@
               "arabic": "ما في شي",
               "english": "It's nothing / no problem",
               "pic": "👌"
+            },
+            {
+              "id": "lv1-03-11",
+              "arabizi": "merci ktir",
+              "arabic": "مرسي كتير",
+              "english": "Thanks a lot",
+              "pic": "🙏"
+            },
+            {
+              "id": "lv1-03-12",
+              "arabizi": "mamnoun",
+              "arabic": "ممنون",
+              "english": "Much obliged",
+              "pic": "🙏"
+            },
+            {
+              "id": "lv1-03-13",
+              "arabizi": "allah ykhallik",
+              "arabic": "الله يخلّيك",
+              "english": "Please (lit. God keep you)",
+              "pic": "🙏",
+              "note": "A warm way to ask for something.",
+              "f": {
+                "arabizi": "allah ykhallike",
+                "arabic": "الله يخلّيكي"
+              }
+            },
+            {
+              "id": "lv1-03-14",
+              "arabizi": "pardon",
+              "arabic": "باردون",
+              "english": "Excuse me / sorry",
+              "pic": "🙇",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-03-15",
+              "arabizi": "ana asfe",
+              "arabic": "أنا آسف",
+              "english": "I'm sorry",
+              "pic": "😔",
+              "note": "A woman says 'ana asfe' too, but writes آسفة."
+            },
+            {
+              "id": "lv1-03-16",
+              "arabizi": "ma3lesh",
+              "arabic": "معليش",
+              "english": "Never mind / it's OK",
+              "pic": "🤷"
+            },
+            {
+              "id": "lv1-03-17",
+              "arabizi": "mish moshkle",
+              "arabic": "مش مشكلة",
+              "english": "No problem",
+              "pic": "👌"
+            },
+            {
+              "id": "lv1-03-18",
+              "arabizi": "tekram",
+              "arabic": "تكرم",
+              "english": "Gladly / consider it done",
+              "pic": "🤝",
+              "f": {
+                "arabizi": "tekrame",
+                "arabic": "تكرمي"
+              }
+            },
+            {
+              "id": "lv1-03-19",
+              "arabizi": "bel 2izen",
+              "arabic": "بالإذن",
+              "english": "Excuse me (I'm leaving)",
+              "pic": "🚶"
+            },
+            {
+              "id": "lv1-03-20",
+              "arabizi": "law sama7t",
+              "arabic": "لو سمحت",
+              "english": "Excuse me / please",
+              "pic": "🙋",
+              "f": {
+                "arabizi": "law sama7te",
+                "arabic": "لو سمحتِ"
+              }
+            },
+            {
+              "id": "lv1-03-21",
+              "arabizi": "sem7ne",
+              "arabic": "سامحني",
+              "english": "Forgive me",
+              "pic": "🙏",
+              "f": {
+                "arabizi": "sem7ine",
+                "arabic": "سامحيني"
+              }
+            },
+            {
+              "id": "lv1-03-22",
+              "arabizi": "ma ra7 3ida",
+              "arabic": "ما رح عيدا",
+              "english": "It won't happen again",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv1-03-23",
+              "arabizi": "ma bt2assar",
+              "arabic": "ما بتقصّر",
+              "english": "Thank you (lit. you never fall short)",
+              "pic": "🙏",
+              "f": {
+                "arabizi": "ma bt2assre",
+                "arabic": "ما بتقصّري"
+              }
+            },
+            {
+              "id": "lv1-03-24",
+              "arabizi": "katter kheirak",
+              "arabic": "كتّر خيرك",
+              "english": "Thank you so much",
+              "pic": "🙏",
+              "note": "Literally 'may God increase your good'.",
+              "f": {
+                "arabizi": "katter kheirik",
+                "arabic": "كتّر خيرِك"
+              }
+            },
+            {
+              "id": "lv1-03-25",
+              "arabizi": "kheirak sabe2",
+              "arabic": "خيرك سابق",
+              "english": "You've done so much already",
+              "pic": "🤲",
+              "f": {
+                "arabizi": "kheirik sabe2",
+                "arabic": "خيرِك سابق"
+              }
+            },
+            {
+              "id": "lv1-03-26",
+              "arabizi": "la shukr 3ala wajeb",
+              "arabic": "لا شكر على واجب",
+              "english": "Don't mention it",
+              "pic": "🤲"
+            },
+            {
+              "id": "lv1-03-27",
+              "arabizi": "3a kifak",
+              "arabic": "ع كيفك",
+              "english": "As you like / take your time",
+              "pic": "🐢",
+              "f": {
+                "arabizi": "3a kifik",
+                "arabic": "ع كيفِك"
+              }
+            },
+            {
+              "id": "lv1-03-28",
+              "arabizi": "ma fi da3e",
+              "arabic": "ما في داعي",
+              "english": "No need",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv1-03-29",
+              "arabizi": "basita",
+              "arabic": "بسيطة",
+              "english": "It's nothing",
+              "pic": "🤏"
+            },
+            {
+              "id": "lv1-03-30",
+              "arabizi": "w la yhemmak",
+              "arabic": "ولا يهمّك",
+              "english": "Don't worry about it",
+              "pic": "🤗",
+              "f": {
+                "arabizi": "w la yhemmik",
+                "arabic": "ولا يهمِّك"
+              }
             }
           ],
           "dialogue": [
@@ -520,6 +1021,154 @@
               "arabic": "مش أكيد",
               "english": "Not sure",
               "pic": "😕"
+            },
+            {
+              "id": "lv1-04-11",
+              "arabizi": "mbala",
+              "arabic": "مبلى",
+              "english": "Yes (I did / it is)",
+              "pic": "✅",
+              "note": "Use it to say yes to a negative question: 'ma akalt?' 'mbala!' (Didn't you eat? Yes, I did!)"
+            },
+            {
+              "id": "lv1-04-12",
+              "arabizi": "oui",
+              "arabic": "وي",
+              "english": "Yes",
+              "pic": "🇫🇷",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-04-13",
+              "arabizi": "ok",
+              "arabic": "أوكي",
+              "english": "OK",
+              "pic": "👌"
+            },
+            {
+              "id": "lv1-04-14",
+              "arabizi": "la2 la2",
+              "arabic": "لأ لأ",
+              "english": "No, no",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv1-04-15",
+              "arabizi": "ma3 l 2asaf",
+              "arabic": "مع الأسف",
+              "english": "Unfortunately",
+              "pic": "😕"
+            },
+            {
+              "id": "lv1-04-16",
+              "arabizi": "akid la2",
+              "arabic": "أكيد لأ",
+              "english": "Definitely not",
+              "pic": "🚫"
+            },
+            {
+              "id": "lv1-04-17",
+              "arabizi": "eh akid",
+              "arabic": "إيه أكيد",
+              "english": "Yes, of course",
+              "pic": "✅"
+            },
+            {
+              "id": "lv1-04-18",
+              "arabizi": "mumken",
+              "arabic": "ممكن",
+              "english": "Maybe / may I?",
+              "pic": "🤔",
+              "note": "Also a polite way to ask: 'mumken?' (May I?)"
+            },
+            {
+              "id": "lv1-04-19",
+              "arabizi": "mish mumken",
+              "arabic": "مش ممكن",
+              "english": "No way! / impossible",
+              "pic": "😲"
+            },
+            {
+              "id": "lv1-04-20",
+              "arabizi": "bet2oul?",
+              "arabic": "بتقول؟",
+              "english": "You think so?",
+              "pic": "🤔",
+              "f": {
+                "arabizi": "bet2oule?",
+                "arabic": "بتقولي؟"
+              }
+            },
+            {
+              "id": "lv1-04-21",
+              "arabizi": "sa7",
+              "arabic": "صح",
+              "english": "Right / correct",
+              "pic": "✔️"
+            },
+            {
+              "id": "lv1-04-22",
+              "arabizi": "ghalat",
+              "arabic": "غلط",
+              "english": "Wrong",
+              "pic": "❌"
+            },
+            {
+              "id": "lv1-04-23",
+              "arabizi": "tab3an la2",
+              "arabic": "طبعاً لأ",
+              "english": "Of course not",
+              "pic": "🚫"
+            },
+            {
+              "id": "lv1-04-24",
+              "arabizi": "bel zabt",
+              "arabic": "بالزبط",
+              "english": "Exactly",
+              "pic": "🎯"
+            },
+            {
+              "id": "lv1-04-25",
+              "arabizi": "ma ba3ref walla",
+              "arabic": "ما بعرف والله",
+              "english": "I really don't know",
+              "pic": "🤷"
+            },
+            {
+              "id": "lv1-04-26",
+              "arabizi": "walla",
+              "arabic": "والله",
+              "english": "Really / I swear",
+              "pic": "🤞",
+              "note": "Lebanese say it all the time, not only for serious promises."
+            },
+            {
+              "id": "lv1-04-27",
+              "arabizi": "walla?",
+              "arabic": "والله؟",
+              "english": "Really?",
+              "pic": "😮"
+            },
+            {
+              "id": "lv1-04-28",
+              "arabizi": "ba3ref",
+              "arabic": "بعرف",
+              "english": "I know",
+              "pic": "💡"
+            },
+            {
+              "id": "lv1-04-29",
+              "arabizi": "fhemt",
+              "arabic": "فهمت",
+              "english": "I understand / got it",
+              "pic": "💡"
+            },
+            {
+              "id": "lv1-04-30",
+              "arabizi": "la2 shukran",
+              "arabic": "لأ شكراً",
+              "english": "No, thanks",
+              "pic": "🙅"
             }
           ],
           "dialogue": [
@@ -670,6 +1319,151 @@
               "english": "Too expensive!",
               "pic": "💸",
               "note": "Useful at any market. Say it with a smile."
+            },
+            {
+              "id": "l4-12",
+              "arabizi": "sefr",
+              "arabic": "صفر",
+              "english": "Zero",
+              "pic": "0️⃣"
+            },
+            {
+              "id": "l4-13",
+              "arabizi": "wa7de",
+              "arabic": "وحدة",
+              "english": "One (for feminine words)",
+              "pic": "1️⃣",
+              "note": "'wa7ad' for masculine words, 'wa7de' for feminine ones."
+            },
+            {
+              "id": "l4-14",
+              "arabizi": "tenten",
+              "arabic": "تنتين",
+              "english": "Two (for feminine words)",
+              "pic": "2️⃣"
+            },
+            {
+              "id": "l4-15",
+              "arabizi": "awwal",
+              "arabic": "أوّل",
+              "english": "First",
+              "pic": "🥇"
+            },
+            {
+              "id": "l4-16",
+              "arabizi": "tene",
+              "arabic": "تاني",
+              "english": "Second",
+              "pic": "🥈"
+            },
+            {
+              "id": "l4-17",
+              "arabizi": "telet",
+              "arabic": "تالت",
+              "english": "Third",
+              "pic": "🥉"
+            },
+            {
+              "id": "l4-18",
+              "arabizi": "rabe3",
+              "arabic": "رابع",
+              "english": "Fourth",
+              "pic": "4️⃣"
+            },
+            {
+              "id": "l4-19",
+              "arabizi": "akher",
+              "arabic": "آخر",
+              "english": "Last",
+              "pic": "🏁"
+            },
+            {
+              "id": "l4-20",
+              "arabizi": "ra2m",
+              "arabic": "رقم",
+              "english": "Number",
+              "pic": "🔢"
+            },
+            {
+              "id": "l4-21",
+              "arabizi": "ra2m telefon",
+              "arabic": "رقم تلفون",
+              "english": "Phone number",
+              "pic": "📱"
+            },
+            {
+              "id": "l4-22",
+              "arabizi": "noss",
+              "arabic": "نص",
+              "english": "Half",
+              "pic": "🌓"
+            },
+            {
+              "id": "l4-23",
+              "arabizi": "rebe3",
+              "arabic": "ربع",
+              "english": "Quarter",
+              "pic": "🍕"
+            },
+            {
+              "id": "l4-24",
+              "arabizi": "wala wa7ad",
+              "arabic": "ولا واحد",
+              "english": "Not a single one",
+              "pic": "🚫"
+            },
+            {
+              "id": "l4-25",
+              "arabizi": "3edd!",
+              "arabic": "عدّ!",
+              "english": "Count!",
+              "pic": "🔢",
+              "f": {
+                "arabizi": "3eddi!",
+                "arabic": "عدّي!"
+              }
+            },
+            {
+              "id": "l4-26",
+              "arabizi": "zayed",
+              "arabic": "زايد",
+              "english": "Plus",
+              "pic": "➕"
+            },
+            {
+              "id": "l4-27",
+              "arabizi": "na2es",
+              "arabic": "ناقص",
+              "english": "Minus",
+              "pic": "➖"
+            },
+            {
+              "id": "l4-28",
+              "arabizi": "bisewe",
+              "arabic": "بيساوي",
+              "english": "Equals",
+              "pic": "🟰"
+            },
+            {
+              "id": "l4-29",
+              "arabizi": "dazzine",
+              "arabic": "دزّينة",
+              "english": "A dozen",
+              "pic": "🥚"
+            },
+            {
+              "id": "l4-30",
+              "arabizi": "ziyede",
+              "arabic": "زيادة",
+              "english": "Extra",
+              "pic": "➕"
+            },
+            {
+              "id": "l4-31",
+              "arabizi": "mitein",
+              "arabic": "ميتين",
+              "english": "Two hundred",
+              "pic": "💯"
             }
           ],
           "dialogue": [
@@ -818,6 +1612,152 @@
                 "arabic": "مين هيدي؟"
               },
               "note": "'hayda' for a man, 'hayde' for a woman."
+            },
+            {
+              "id": "l5-11",
+              "arabizi": "jeddo",
+              "arabic": "جدّو",
+              "english": "Grandpa",
+              "pic": "👴"
+            },
+            {
+              "id": "l5-12",
+              "arabizi": "teta",
+              "arabic": "تيتا",
+              "english": "Grandma",
+              "pic": "👵",
+              "note": "What children call their grandmother."
+            },
+            {
+              "id": "l5-13",
+              "arabizi": "3ayle",
+              "arabic": "عيلة",
+              "english": "Family",
+              "pic": "👨‍👩‍👧"
+            },
+            {
+              "id": "l5-14",
+              "arabizi": "ahl",
+              "arabic": "أهل",
+              "english": "Parents / family",
+              "pic": "👪"
+            },
+            {
+              "id": "l5-15",
+              "arabizi": "mama",
+              "arabic": "ماما",
+              "english": "Mum",
+              "pic": "👩"
+            },
+            {
+              "id": "l5-16",
+              "arabizi": "baba",
+              "arabic": "بابا",
+              "english": "Dad",
+              "pic": "👨"
+            },
+            {
+              "id": "l5-17",
+              "arabizi": "3amme",
+              "arabic": "عمّي",
+              "english": "My uncle (dad's brother)",
+              "pic": "👨",
+              "note": "Dad's side is '3amm', mum's side is 'khal'."
+            },
+            {
+              "id": "l5-18",
+              "arabizi": "khale",
+              "arabic": "خالي",
+              "english": "My uncle (mum's brother)",
+              "pic": "👨"
+            },
+            {
+              "id": "l5-19",
+              "arabizi": "3amte",
+              "arabic": "عمّتي",
+              "english": "My aunt (dad's sister)",
+              "pic": "👩"
+            },
+            {
+              "id": "l5-20",
+              "arabizi": "khalte",
+              "arabic": "خالتي",
+              "english": "My aunt (mum's sister)",
+              "pic": "👩"
+            },
+            {
+              "id": "l5-21",
+              "arabizi": "ebn 3amme",
+              "arabic": "ابن عمّي",
+              "english": "My cousin",
+              "pic": "🧒",
+              "note": "Literally 'son of my uncle'."
+            },
+            {
+              "id": "l5-22",
+              "arabizi": "wled",
+              "arabic": "ولاد",
+              "english": "Children",
+              "pic": "👧"
+            },
+            {
+              "id": "l5-23",
+              "arabizi": "bebe",
+              "arabic": "بيبي",
+              "english": "Baby",
+              "pic": "👶"
+            },
+            {
+              "id": "l5-24",
+              "arabizi": "3ammo",
+              "arabic": "عمّو",
+              "english": "Uncle",
+              "pic": "🧔",
+              "note": "Children call any older man '3ammo', even a stranger."
+            },
+            {
+              "id": "l5-25",
+              "arabizi": "tante",
+              "arabic": "طانط",
+              "english": "Auntie",
+              "pic": "👵",
+              "note": "Children call any older woman 'tante'."
+            },
+            {
+              "id": "l5-26",
+              "arabizi": "7amete",
+              "arabic": "حماتي",
+              "english": "My mother-in-law",
+              "pic": "👵"
+            },
+            {
+              "id": "l5-27",
+              "arabizi": "2araybe",
+              "arabic": "قرايبي",
+              "english": "My relatives",
+              "pic": "👨‍👩‍👧‍👦"
+            },
+            {
+              "id": "l5-28",
+              "arabizi": "khatibte",
+              "arabic": "خطيبتي",
+              "english": "My fiancée",
+              "pic": "💍",
+              "note": "A woman says 'khatibe' (my fiancé)."
+            },
+            {
+              "id": "l5-29",
+              "arabizi": "7afid",
+              "arabic": "حفيد",
+              "english": "Grandson",
+              "pic": "👦"
+            },
+            {
+              "id": "l5-30",
+              "arabizi": "ekhwe",
+              "arabic": "إخوة",
+              "english": "Brothers and sisters",
+              "pic": "👫"
             }
           ],
           "dialogue": [
@@ -968,6 +1908,147 @@
               "arabic": "لون",
               "english": "Colour",
               "pic": "🎨"
+            },
+            {
+              "id": "lv1-07-11",
+              "arabizi": "mov",
+              "arabic": "موف",
+              "english": "Purple",
+              "pic": "🟣"
+            },
+            {
+              "id": "lv1-07-12",
+              "arabizi": "berte2ane",
+              "arabic": "برتقاني",
+              "english": "Orange",
+              "pic": "🟠"
+            },
+            {
+              "id": "lv1-07-13",
+              "arabizi": "kohle",
+              "arabic": "كحلي",
+              "english": "Navy blue",
+              "pic": "🔵"
+            },
+            {
+              "id": "lv1-07-14",
+              "arabizi": "azra2 sama",
+              "arabic": "أزرق سما",
+              "english": "Sky blue",
+              "pic": "🩵"
+            },
+            {
+              "id": "lv1-07-15",
+              "arabizi": "fedde",
+              "arabic": "فضّي",
+              "english": "Silver",
+              "pic": "🥈"
+            },
+            {
+              "id": "lv1-07-16",
+              "arabizi": "dahabe",
+              "arabic": "دهبي",
+              "english": "Gold",
+              "pic": "🥇"
+            },
+            {
+              "id": "lv1-07-17",
+              "arabizi": "khamre",
+              "arabic": "خمري",
+              "english": "Wine red",
+              "pic": "🍷"
+            },
+            {
+              "id": "lv1-07-18",
+              "arabizi": "zaytoune",
+              "arabic": "زيتوني",
+              "english": "Olive green",
+              "pic": "🫒"
+            },
+            {
+              "id": "lv1-07-19",
+              "arabizi": "fete7",
+              "arabic": "فاتح",
+              "english": "Light (colour)",
+              "pic": "🌤️"
+            },
+            {
+              "id": "lv1-07-20",
+              "arabizi": "ghame2",
+              "arabic": "غامق",
+              "english": "Dark (colour)",
+              "pic": "🌑"
+            },
+            {
+              "id": "lv1-07-21",
+              "arabizi": "beige",
+              "arabic": "بيج",
+              "english": "Beige",
+              "pic": "🟫"
+            },
+            {
+              "id": "lv1-07-22",
+              "arabizi": "turquoise",
+              "arabic": "توركواز",
+              "english": "Turquoise",
+              "pic": "🩵"
+            },
+            {
+              "id": "lv1-07-23",
+              "arabizi": "mlawwan",
+              "arabic": "ملوّن",
+              "english": "Colourful",
+              "pic": "🌈"
+            },
+            {
+              "id": "lv1-07-24",
+              "arabizi": "shu lawno?",
+              "arabic": "شو لونو؟",
+              "english": "What colour is it?",
+              "pic": "🎨"
+            },
+            {
+              "id": "lv1-07-25",
+              "arabizi": "3asale",
+              "arabic": "عسلي",
+              "english": "Hazel (honey-coloured)",
+              "pic": "🍯",
+              "note": "Used for eyes."
+            },
+            {
+              "id": "lv1-07-26",
+              "arabizi": "fosfore",
+              "arabic": "فوسفوري",
+              "english": "Neon",
+              "pic": "💚"
+            },
+            {
+              "id": "lv1-07-27",
+              "arabizi": "rmede fete7",
+              "arabic": "رمادي فاتح",
+              "english": "Light grey",
+              "pic": "🩶"
+            },
+            {
+              "id": "lv1-07-28",
+              "arabizi": "akhdar ghame2",
+              "arabic": "أخضر غامق",
+              "english": "Dark green",
+              "pic": "🌲"
+            },
+            {
+              "id": "lv1-07-29",
+              "arabizi": "a7mar ghame2",
+              "arabic": "أحمر غامق",
+              "english": "Dark red",
+              "pic": "🟥"
+            },
+            {
+              "id": "lv1-07-30",
+              "arabizi": "abyad w aswad",
+              "arabic": "أبيض وأسود",
+              "english": "Black and white",
+              "pic": "🐼"
             }
           ],
           "dialogue": [
@@ -1095,6 +2176,147 @@
               "arabic": "فلافل",
               "english": "Falafel",
               "pic": "🧆"
+            },
+            {
+              "id": "lv1-08-11",
+              "arabizi": "hommos",
+              "arabic": "حمّص",
+              "english": "Hummus",
+              "pic": "🫘"
+            },
+            {
+              "id": "lv1-08-12",
+              "arabizi": "tabbouleh",
+              "arabic": "تبّولة",
+              "english": "Tabbouleh",
+              "pic": "🥗"
+            },
+            {
+              "id": "lv1-08-13",
+              "arabizi": "fattoush",
+              "arabic": "فتّوش",
+              "english": "Fattoush",
+              "pic": "🥗"
+            },
+            {
+              "id": "lv1-08-14",
+              "arabizi": "kebbe",
+              "arabic": "كبّة",
+              "english": "Kibbeh",
+              "pic": "🧆"
+            },
+            {
+              "id": "lv1-08-15",
+              "arabizi": "shawarma",
+              "arabic": "شاورما",
+              "english": "Shawarma",
+              "pic": "🌯"
+            },
+            {
+              "id": "lv1-08-16",
+              "arabizi": "za3tar",
+              "arabic": "زعتر",
+              "english": "Za'atar",
+              "pic": "🌿",
+              "note": "Wild thyme mixed with sesame and sumac."
+            },
+            {
+              "id": "lv1-08-17",
+              "arabizi": "mjaddara",
+              "arabic": "مجدّرة",
+              "english": "Lentils and rice",
+              "pic": "🍛"
+            },
+            {
+              "id": "lv1-08-18",
+              "arabizi": "war2 3enab",
+              "arabic": "ورق عنب",
+              "english": "Stuffed vine leaves",
+              "pic": "🍃"
+            },
+            {
+              "id": "lv1-08-19",
+              "arabizi": "mloukhiye",
+              "arabic": "ملوخية",
+              "english": "Mloukhieh",
+              "pic": "🥬"
+            },
+            {
+              "id": "lv1-08-20",
+              "arabizi": "ma7she",
+              "arabic": "محشي",
+              "english": "Stuffed vegetables",
+              "pic": "🫑"
+            },
+            {
+              "id": "lv1-08-21",
+              "arabizi": "foul",
+              "arabic": "فول",
+              "english": "Fava beans",
+              "pic": "🫘"
+            },
+            {
+              "id": "lv1-08-22",
+              "arabizi": "kafta",
+              "arabic": "كفتة",
+              "english": "Kafta",
+              "pic": "🍢"
+            },
+            {
+              "id": "lv1-08-23",
+              "arabizi": "3adas",
+              "arabic": "عدس",
+              "english": "Lentils",
+              "pic": "🫘"
+            },
+            {
+              "id": "lv1-08-24",
+              "arabizi": "ma3karoune",
+              "arabic": "معكرونة",
+              "english": "Pasta",
+              "pic": "🍝"
+            },
+            {
+              "id": "lv1-08-25",
+              "arabizi": "shorba",
+              "arabic": "شوربة",
+              "english": "Soup",
+              "pic": "🍲"
+            },
+            {
+              "id": "lv1-08-26",
+              "arabizi": "salata",
+              "arabic": "سلطة",
+              "english": "Salad",
+              "pic": "🥗"
+            },
+            {
+              "id": "lv1-08-27",
+              "arabizi": "sandwich",
+              "arabic": "سندويش",
+              "english": "Sandwich",
+              "pic": "🥪"
+            },
+            {
+              "id": "lv1-08-28",
+              "arabizi": "batata me2leye",
+              "arabic": "بطاطا مقلية",
+              "english": "Chips / fries",
+              "pic": "🍟"
+            },
+            {
+              "id": "lv1-08-29",
+              "arabizi": "knefe",
+              "arabic": "كنافة",
+              "english": "Knafeh",
+              "pic": "🍮"
+            },
+            {
+              "id": "lv1-08-30",
+              "arabizi": "fatayer",
+              "arabic": "فطاير",
+              "english": "Little pies",
+              "pic": "🥟"
             }
           ],
           "dialogue": [
@@ -1223,6 +2445,151 @@
               "english": "Jallab",
               "pic": "🍇",
               "note": "A sweet drink of grape molasses and rose water, with pine nuts on top."
+            },
+            {
+              "id": "lv1-09-11",
+              "arabizi": "ahwe bayda",
+              "arabic": "قهوة بيضا",
+              "english": "White coffee",
+              "pic": "🌼",
+              "note": "No coffee in it at all: hot water with orange-blossom water."
+            },
+            {
+              "id": "lv1-09-12",
+              "arabizi": "nescafé",
+              "arabic": "نسكافيه",
+              "english": "Instant coffee",
+              "pic": "☕",
+              "note": "Lebanese call any instant coffee 'nescafé'."
+            },
+            {
+              "id": "lv1-09-13",
+              "arabizi": "espresso",
+              "arabic": "إسبريسو",
+              "english": "Espresso",
+              "pic": "☕"
+            },
+            {
+              "id": "lv1-09-14",
+              "arabizi": "cappuccino",
+              "arabic": "كابوتشينو",
+              "english": "Cappuccino",
+              "pic": "☕"
+            },
+            {
+              "id": "lv1-09-15",
+              "arabizi": "3asir berd2an",
+              "arabic": "عصير بردقان",
+              "english": "Orange juice",
+              "pic": "🍊"
+            },
+            {
+              "id": "lv1-09-16",
+              "arabizi": "cocktail",
+              "arabic": "كوكتيل",
+              "english": "Fruit cocktail",
+              "pic": "🍹",
+              "note": "In Lebanon, a thick drink of fruit, juice and cream."
+            },
+            {
+              "id": "lv1-09-17",
+              "arabizi": "3ayran",
+              "arabic": "عيران",
+              "english": "Yoghurt drink",
+              "pic": "🥛"
+            },
+            {
+              "id": "lv1-09-18",
+              "arabizi": "tamer hindi",
+              "arabic": "تمر هندي",
+              "english": "Tamarind drink",
+              "pic": "🟤"
+            },
+            {
+              "id": "lv1-09-19",
+              "arabizi": "mayy fawwara",
+              "arabic": "مي فوّارة",
+              "english": "Sparkling water",
+              "pic": "🫧"
+            },
+            {
+              "id": "lv1-09-20",
+              "arabizi": "bebsi",
+              "arabic": "ببسي",
+              "english": "Cola",
+              "pic": "🥤",
+              "note": "Lebanese say 'bebsi' for any cola."
+            },
+            {
+              "id": "lv1-09-21",
+              "arabizi": "ma3 talj",
+              "arabic": "مع تلج",
+              "english": "With ice",
+              "pic": "🧊"
+            },
+            {
+              "id": "lv1-09-22",
+              "arabizi": "bala talj",
+              "arabic": "بلا تلج",
+              "english": "Without ice",
+              "pic": "🚫"
+            },
+            {
+              "id": "lv1-09-23",
+              "arabizi": "sekhen",
+              "arabic": "سخن",
+              "english": "Hot",
+              "pic": "♨️"
+            },
+            {
+              "id": "lv1-09-24",
+              "arabizi": "msa22a3",
+              "arabic": "مسقّع",
+              "english": "Cold (a drink)",
+              "pic": "🧊"
+            },
+            {
+              "id": "lv1-09-25",
+              "arabizi": "fenjen",
+              "arabic": "فنجان",
+              "english": "Small coffee cup",
+              "pic": "☕"
+            },
+            {
+              "id": "lv1-09-26",
+              "arabizi": "2annine",
+              "arabic": "قنّينة",
+              "english": "Bottle",
+              "pic": "🍾"
+            },
+            {
+              "id": "lv1-09-27",
+              "arabizi": "kes",
+              "arabic": "كاس",
+              "english": "Glass",
+              "pic": "🥛"
+            },
+            {
+              "id": "lv1-09-28",
+              "arabizi": "zhourat",
+              "arabic": "زهورات",
+              "english": "Herbal tea",
+              "pic": "🌼"
+            },
+            {
+              "id": "lv1-09-29",
+              "arabizi": "yansoun",
+              "arabic": "يانسون",
+              "english": "Aniseed tea",
+              "pic": "🌿"
+            },
+            {
+              "id": "lv1-09-30",
+              "arabizi": "matte",
+              "arabic": "متّة",
+              "english": "Maté",
+              "pic": "🧉",
+              "note": "Popular in the mountains and passed around in a group."
             }
           ],
           "dialogue": [
@@ -1350,6 +2717,147 @@
               "arabic": "بردقان",
               "english": "Oranges",
               "pic": "🍊"
+            },
+            {
+              "id": "lv1-10-11",
+              "arabizi": "3enab",
+              "arabic": "عنب",
+              "english": "Grapes",
+              "pic": "🍇"
+            },
+            {
+              "id": "lv1-10-12",
+              "arabizi": "batikh",
+              "arabic": "بطّيخ",
+              "english": "Watermelon",
+              "pic": "🍉"
+            },
+            {
+              "id": "lv1-10-13",
+              "arabizi": "frez",
+              "arabic": "فريز",
+              "english": "Strawberries",
+              "pic": "🍓"
+            },
+            {
+              "id": "lv1-10-14",
+              "arabizi": "dorra2",
+              "arabic": "درّاق",
+              "english": "Peach",
+              "pic": "🍑"
+            },
+            {
+              "id": "lv1-10-15",
+              "arabizi": "mechmech",
+              "arabic": "مشمش",
+              "english": "Apricot",
+              "pic": "🍑"
+            },
+            {
+              "id": "lv1-10-16",
+              "arabizi": "karaz",
+              "arabic": "كرز",
+              "english": "Cherries",
+              "pic": "🍒"
+            },
+            {
+              "id": "lv1-10-17",
+              "arabizi": "tin",
+              "arabic": "تين",
+              "english": "Figs",
+              "pic": "🟣"
+            },
+            {
+              "id": "lv1-10-18",
+              "arabizi": "remmen",
+              "arabic": "رمّان",
+              "english": "Pomegranate",
+              "pic": "🔴"
+            },
+            {
+              "id": "lv1-10-19",
+              "arabizi": "ananas",
+              "arabic": "أناناس",
+              "english": "Pineapple",
+              "pic": "🍍"
+            },
+            {
+              "id": "lv1-10-20",
+              "arabizi": "jazar",
+              "arabic": "جزر",
+              "english": "Carrots",
+              "pic": "🥕"
+            },
+            {
+              "id": "lv1-10-21",
+              "arabizi": "khass",
+              "arabic": "خس",
+              "english": "Lettuce",
+              "pic": "🥬"
+            },
+            {
+              "id": "lv1-10-22",
+              "arabizi": "malfouf",
+              "arabic": "ملفوف",
+              "english": "Cabbage",
+              "pic": "🥬"
+            },
+            {
+              "id": "lv1-10-23",
+              "arabizi": "kousa",
+              "arabic": "كوسى",
+              "english": "Courgette",
+              "pic": "🥒"
+            },
+            {
+              "id": "lv1-10-24",
+              "arabizi": "betinjen",
+              "arabic": "باتنجان",
+              "english": "Aubergine",
+              "pic": "🍆"
+            },
+            {
+              "id": "lv1-10-25",
+              "arabizi": "fleifle",
+              "arabic": "فليفلة",
+              "english": "Pepper",
+              "pic": "🫑"
+            },
+            {
+              "id": "lv1-10-26",
+              "arabizi": "na3na3",
+              "arabic": "نعنع",
+              "english": "Mint",
+              "pic": "🌿"
+            },
+            {
+              "id": "lv1-10-27",
+              "arabizi": "zaytoun",
+              "arabic": "زيتون",
+              "english": "Olives",
+              "pic": "🫒"
+            },
+            {
+              "id": "lv1-10-28",
+              "arabizi": "fejel",
+              "arabic": "فجل",
+              "english": "Radish",
+              "pic": "🔴"
+            },
+            {
+              "id": "lv1-10-29",
+              "arabizi": "avocat",
+              "arabic": "أفوكا",
+              "english": "Avocado",
+              "pic": "🥑",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-10-30",
+              "arabizi": "dera",
+              "arabic": "درة",
+              "english": "Corn",
+              "pic": "🌽"
             }
           ],
           "dialogue": [
@@ -1476,6 +2984,149 @@
               "arabic": "تلفون",
               "english": "Phone",
               "pic": "📱"
+            },
+            {
+              "id": "lv1-11-11",
+              "arabizi": "7eit",
+              "arabic": "حيط",
+              "english": "Wall",
+              "pic": "🧱"
+            },
+            {
+              "id": "lv1-11-12",
+              "arabizi": "ard",
+              "arabic": "أرض",
+              "english": "Floor",
+              "pic": "⬛"
+            },
+            {
+              "id": "lv1-11-13",
+              "arabizi": "sa2ef",
+              "arabic": "سقف",
+              "english": "Ceiling",
+              "pic": "🔝"
+            },
+            {
+              "id": "lv1-11-14",
+              "arabizi": "sejjede",
+              "arabic": "سجّادة",
+              "english": "Rug",
+              "pic": "🟥"
+            },
+            {
+              "id": "lv1-11-15",
+              "arabizi": "berdaye",
+              "arabic": "برداية",
+              "english": "Curtain",
+              "pic": "🪟"
+            },
+            {
+              "id": "lv1-11-16",
+              "arabizi": "mrayye",
+              "arabic": "مراية",
+              "english": "Mirror",
+              "pic": "🪞"
+            },
+            {
+              "id": "lv1-11-17",
+              "arabizi": "khzene",
+              "arabic": "خزانة",
+              "english": "Wardrobe",
+              "pic": "🚪"
+            },
+            {
+              "id": "lv1-11-18",
+              "arabizi": "mkhadde",
+              "arabic": "مخدّة",
+              "english": "Pillow",
+              "pic": "🛏️"
+            },
+            {
+              "id": "lv1-11-19",
+              "arabizi": "7rem",
+              "arabic": "حرام",
+              "english": "Blanket",
+              "pic": "🛌"
+            },
+            {
+              "id": "lv1-11-20",
+              "arabizi": "telfezyon",
+              "arabic": "تلفزيون",
+              "english": "TV",
+              "pic": "📺"
+            },
+            {
+              "id": "lv1-11-21",
+              "arabizi": "sharjeur",
+              "arabic": "شارجور",
+              "english": "Charger",
+              "pic": "🔌",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-11-22",
+              "arabizi": "priz",
+              "arabic": "بريز",
+              "english": "Socket",
+              "pic": "🔌",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-11-23",
+              "arabizi": "jaras",
+              "arabic": "جرس",
+              "english": "Doorbell",
+              "pic": "🔔"
+            },
+            {
+              "id": "lv1-11-24",
+              "arabizi": "zbele",
+              "arabic": "زبالة",
+              "english": "Rubbish",
+              "pic": "🗑️"
+            },
+            {
+              "id": "lv1-11-25",
+              "arabizi": "kis",
+              "arabic": "كيس",
+              "english": "Bag",
+              "pic": "🛍️"
+            },
+            {
+              "id": "lv1-11-26",
+              "arabizi": "lamba",
+              "arabic": "لمبة",
+              "english": "Light bulb",
+              "pic": "💡"
+            },
+            {
+              "id": "lv1-11-27",
+              "arabizi": "moteur",
+              "arabic": "موتور",
+              "english": "Generator",
+              "pic": "⚡",
+              "note": "Many buildings in Lebanon share a generator for when the power goes off."
+            },
+            {
+              "id": "lv1-11-28",
+              "arabizi": "kahraba",
+              "arabic": "كهربا",
+              "english": "Electricity",
+              "pic": "⚡"
+            },
+            {
+              "id": "lv1-11-29",
+              "arabizi": "mkayyef",
+              "arabic": "مكيّف",
+              "english": "Air conditioner",
+              "pic": "❄️"
+            },
+            {
+              "id": "lv1-11-30",
+              "arabizi": "sofaya",
+              "arabic": "صوبيا",
+              "english": "Heater",
+              "pic": "🔥"
             }
           ],
           "dialogue": [
@@ -1602,6 +3253,146 @@
               "arabic": "سن",
               "english": "Tooth",
               "pic": "🦷"
+            },
+            {
+              "id": "lv1-12-11",
+              "arabizi": "wejj",
+              "arabic": "وجّ",
+              "english": "Face",
+              "pic": "🙂"
+            },
+            {
+              "id": "lv1-12-12",
+              "arabizi": "sha3r",
+              "arabic": "شعر",
+              "english": "Hair",
+              "pic": "💇"
+            },
+            {
+              "id": "lv1-12-13",
+              "arabizi": "da2en",
+              "arabic": "دقن",
+              "english": "Chin / beard",
+              "pic": "🧔"
+            },
+            {
+              "id": "lv1-12-14",
+              "arabizi": "ra2be",
+              "arabic": "رقبة",
+              "english": "Neck",
+              "pic": "🦒"
+            },
+            {
+              "id": "lv1-12-15",
+              "arabizi": "ketf",
+              "arabic": "كتف",
+              "english": "Shoulder",
+              "pic": "💪"
+            },
+            {
+              "id": "lv1-12-16",
+              "arabizi": "baten",
+              "arabic": "بطن",
+              "english": "Belly",
+              "pic": "🫃"
+            },
+            {
+              "id": "lv1-12-17",
+              "arabizi": "esba3",
+              "arabic": "إصبع",
+              "english": "Finger",
+              "pic": "☝️"
+            },
+            {
+              "id": "lv1-12-18",
+              "arabizi": "dafer",
+              "arabic": "ضفر",
+              "english": "Nail",
+              "pic": "💅"
+            },
+            {
+              "id": "lv1-12-19",
+              "arabizi": "rekbe",
+              "arabic": "ركبة",
+              "english": "Knee",
+              "pic": "🦵"
+            },
+            {
+              "id": "lv1-12-20",
+              "arabizi": "shiffe",
+              "arabic": "شفّة",
+              "english": "Lip",
+              "pic": "👄"
+            },
+            {
+              "id": "lv1-12-21",
+              "arabizi": "lsen",
+              "arabic": "لسان",
+              "english": "Tongue",
+              "pic": "👅"
+            },
+            {
+              "id": "lv1-12-22",
+              "arabizi": "jbin",
+              "arabic": "جبين",
+              "english": "Forehead",
+              "pic": "🙆"
+            },
+            {
+              "id": "lv1-12-23",
+              "arabizi": "damm",
+              "arabic": "دم",
+              "english": "Blood",
+              "pic": "🩸"
+            },
+            {
+              "id": "lv1-12-24",
+              "arabizi": "3adm",
+              "arabic": "عضم",
+              "english": "Bone",
+              "pic": "🦴"
+            },
+            {
+              "id": "lv1-12-25",
+              "arabizi": "me3de",
+              "arabic": "معدة",
+              "english": "Stomach",
+              "pic": "🤢"
+            },
+            {
+              "id": "lv1-12-26",
+              "arabizi": "sader",
+              "arabic": "صدر",
+              "english": "Chest",
+              "pic": "🫁"
+            },
+            {
+              "id": "lv1-12-27",
+              "arabizi": "jeld",
+              "arabic": "جلد",
+              "english": "Skin",
+              "pic": "✋"
+            },
+            {
+              "id": "lv1-12-28",
+              "arabizi": "3youn",
+              "arabic": "عيون",
+              "english": "Eyes",
+              "pic": "👀"
+            },
+            {
+              "id": "lv1-12-29",
+              "arabizi": "snen",
+              "arabic": "سنان",
+              "english": "Teeth",
+              "pic": "🦷"
+            },
+            {
+              "id": "lv1-12-30",
+              "arabizi": "ideyn",
+              "arabic": "إيدين",
+              "english": "Hands",
+              "pic": "🙌"
             }
           ],
           "dialogue": [
@@ -1728,6 +3519,147 @@
               "arabic": "نضّارات",
               "english": "Glasses",
               "pic": "👓"
+            },
+            {
+              "id": "lv1-13-11",
+              "arabizi": "t-shirt",
+              "arabic": "تيشيرت",
+              "english": "T-shirt",
+              "pic": "👕"
+            },
+            {
+              "id": "lv1-13-12",
+              "arabizi": "jeans",
+              "arabic": "جينز",
+              "english": "Jeans",
+              "pic": "👖"
+            },
+            {
+              "id": "lv1-13-13",
+              "arabizi": "short",
+              "arabic": "شورت",
+              "english": "Shorts",
+              "pic": "🩳"
+            },
+            {
+              "id": "lv1-13-14",
+              "arabizi": "jupe",
+              "arabic": "جوب",
+              "english": "Skirt",
+              "pic": "👗",
+              "note": "From French."
+            },
+            {
+              "id": "lv1-13-15",
+              "arabizi": "jakeit",
+              "arabic": "جاكيت",
+              "english": "Jacket",
+              "pic": "🧥"
+            },
+            {
+              "id": "lv1-13-16",
+              "arabizi": "manto",
+              "arabic": "مانطو",
+              "english": "Coat",
+              "pic": "🧥"
+            },
+            {
+              "id": "lv1-13-17",
+              "arabizi": "sbadri",
+              "arabic": "سبادري",
+              "english": "Trainers",
+              "pic": "👟"
+            },
+            {
+              "id": "lv1-13-18",
+              "arabizi": "sha77ata",
+              "arabic": "شحّاطة",
+              "english": "Flip-flops",
+              "pic": "🩴"
+            },
+            {
+              "id": "lv1-13-19",
+              "arabizi": "kravat",
+              "arabic": "كرافات",
+              "english": "Tie",
+              "pic": "👔"
+            },
+            {
+              "id": "lv1-13-20",
+              "arabizi": "zennar",
+              "arabic": "زنّار",
+              "english": "Belt",
+              "pic": "🪢"
+            },
+            {
+              "id": "lv1-13-21",
+              "arabizi": "kfouf",
+              "arabic": "كفوف",
+              "english": "Gloves",
+              "pic": "🧤"
+            },
+            {
+              "id": "lv1-13-22",
+              "arabizi": "lfe7a",
+              "arabic": "لفحة",
+              "english": "Scarf",
+              "pic": "🧣"
+            },
+            {
+              "id": "lv1-13-23",
+              "arabizi": "pyjama",
+              "arabic": "بيجاما",
+              "english": "Pyjamas",
+              "pic": "🛌"
+            },
+            {
+              "id": "lv1-13-24",
+              "arabizi": "mayo",
+              "arabic": "مايو",
+              "english": "Swimsuit",
+              "pic": "🩱"
+            },
+            {
+              "id": "lv1-13-25",
+              "arabizi": "se3a",
+              "arabic": "ساعة",
+              "english": "Watch",
+              "pic": "⌚"
+            },
+            {
+              "id": "lv1-13-26",
+              "arabizi": "khetem",
+              "arabic": "خاتم",
+              "english": "Ring",
+              "pic": "💍"
+            },
+            {
+              "id": "lv1-13-27",
+              "arabizi": "7ala2",
+              "arabic": "حلق",
+              "english": "Earrings",
+              "pic": "💎"
+            },
+            {
+              "id": "lv1-13-28",
+              "arabizi": "jezdan",
+              "arabic": "جزدان",
+              "english": "Wallet",
+              "pic": "👛"
+            },
+            {
+              "id": "lv1-13-29",
+              "arabizi": "costume",
+              "arabic": "كوستوم",
+              "english": "Suit",
+              "pic": "🤵"
+            },
+            {
+              "id": "lv1-13-30",
+              "arabizi": "kanze",
+              "arabic": "كنزة",
+              "english": "Sweater",
+              "pic": "🧶"
             }
           ],
           "dialogue": [
@@ -1863,6 +3795,147 @@
               "arabic": "كل يوم",
               "english": "Every day",
               "pic": "🔁"
+            },
+            {
+              "id": "lv1-14-11",
+              "arabizi": "yom",
+              "arabic": "يوم",
+              "english": "Day",
+              "pic": "📅"
+            },
+            {
+              "id": "lv1-14-12",
+              "arabizi": "nhar",
+              "arabic": "نهار",
+              "english": "Daytime / day",
+              "pic": "☀️"
+            },
+            {
+              "id": "lv1-14-13",
+              "arabizi": "leil",
+              "arabic": "ليل",
+              "english": "Night",
+              "pic": "🌙"
+            },
+            {
+              "id": "lv1-14-14",
+              "arabizi": "l jem3a l jeye",
+              "arabic": "الجمعة الجايي",
+              "english": "Next week",
+              "pic": "➡️"
+            },
+            {
+              "id": "lv1-14-15",
+              "arabizi": "l jem3a l madye",
+              "arabic": "الجمعة الماضية",
+              "english": "Last week",
+              "pic": "⬅️"
+            },
+            {
+              "id": "lv1-14-16",
+              "arabizi": "awwal mbere7",
+              "arabic": "أوّل مبارح",
+              "english": "The day before yesterday",
+              "pic": "⏪"
+            },
+            {
+              "id": "lv1-14-17",
+              "arabizi": "ba3d bukra",
+              "arabic": "بعد بكرا",
+              "english": "The day after tomorrow",
+              "pic": "⏩"
+            },
+            {
+              "id": "lv1-14-18",
+              "arabizi": "shahr",
+              "arabic": "شهر",
+              "english": "Month",
+              "pic": "🗓️"
+            },
+            {
+              "id": "lv1-14-19",
+              "arabizi": "sene",
+              "arabic": "سنة",
+              "english": "Year",
+              "pic": "📆"
+            },
+            {
+              "id": "lv1-14-20",
+              "arabizi": "3otle",
+              "arabic": "عطلة",
+              "english": "Holiday / day off",
+              "pic": "🏖️"
+            },
+            {
+              "id": "lv1-14-21",
+              "arabizi": "dawem",
+              "arabic": "دوام",
+              "english": "Working hours",
+              "pic": "🏢"
+            },
+            {
+              "id": "lv1-14-22",
+              "arabizi": "ayya nhar?",
+              "arabic": "أيّا نهار؟",
+              "english": "Which day?",
+              "pic": "🤔"
+            },
+            {
+              "id": "lv1-14-23",
+              "arabizi": "shu lyom?",
+              "arabic": "شو اليوم؟",
+              "english": "What day is it today?",
+              "pic": "📅"
+            },
+            {
+              "id": "lv1-14-24",
+              "arabizi": "3id",
+              "arabic": "عيد",
+              "english": "Feast / holiday",
+              "pic": "🎉"
+            },
+            {
+              "id": "lv1-14-25",
+              "arabizi": "rabi3",
+              "arabic": "ربيع",
+              "english": "Spring",
+              "pic": "🌸"
+            },
+            {
+              "id": "lv1-14-26",
+              "arabizi": "sayf",
+              "arabic": "صيف",
+              "english": "Summer",
+              "pic": "☀️"
+            },
+            {
+              "id": "lv1-14-27",
+              "arabizi": "kharif",
+              "arabic": "خريف",
+              "english": "Autumn",
+              "pic": "🍂"
+            },
+            {
+              "id": "lv1-14-28",
+              "arabizi": "shete",
+              "arabic": "شتي",
+              "english": "Winter",
+              "pic": "❄️",
+              "note": "The same word means 'rain'."
+            },
+            {
+              "id": "lv1-14-29",
+              "arabizi": "maw3ad",
+              "arabic": "موعد",
+              "english": "Appointment",
+              "pic": "📌"
+            },
+            {
+              "id": "lv1-14-30",
+              "arabizi": "rozname",
+              "arabic": "رزنامة",
+              "english": "Calendar",
+              "pic": "📅"
             }
           ],
           "dialogue": [
@@ -1991,6 +4064,146 @@
               "arabic": "الجو حلو",
               "english": "The weather's nice",
               "pic": "😎"
+            },
+            {
+              "id": "lv1-15-11",
+              "arabizi": "sa23a",
+              "arabic": "صقعة",
+              "english": "Freezing cold",
+              "pic": "🥶"
+            },
+            {
+              "id": "lv1-15-12",
+              "arabizi": "bard",
+              "arabic": "برد",
+              "english": "Cold (the weather)",
+              "pic": "🥶"
+            },
+            {
+              "id": "lv1-15-13",
+              "arabizi": "shob",
+              "arabic": "شوب",
+              "english": "Heat",
+              "pic": "🥵"
+            },
+            {
+              "id": "lv1-15-14",
+              "arabizi": "ghaymé",
+              "arabic": "غيمة",
+              "english": "A cloud",
+              "pic": "☁️"
+            },
+            {
+              "id": "lv1-15-15",
+              "arabizi": "3asfe",
+              "arabic": "عاصفة",
+              "english": "Storm",
+              "pic": "⛈️"
+            },
+            {
+              "id": "lv1-15-16",
+              "arabizi": "ra3ed",
+              "arabic": "رعد",
+              "english": "Thunder",
+              "pic": "🌩️"
+            },
+            {
+              "id": "lv1-15-17",
+              "arabizi": "bare2",
+              "arabic": "برق",
+              "english": "Lightning",
+              "pic": "⚡"
+            },
+            {
+              "id": "lv1-15-18",
+              "arabizi": "dabab",
+              "arabic": "ضباب",
+              "english": "Fog",
+              "pic": "🌫️"
+            },
+            {
+              "id": "lv1-15-19",
+              "arabizi": "2aws 2za7",
+              "arabic": "قوس قزح",
+              "english": "Rainbow",
+              "pic": "🌈"
+            },
+            {
+              "id": "lv1-15-20",
+              "arabizi": "daraje",
+              "arabic": "درجة",
+              "english": "Degree",
+              "pic": "🌡️"
+            },
+            {
+              "id": "lv1-15-21",
+              "arabizi": "7arara",
+              "arabic": "حرارة",
+              "english": "Temperature",
+              "pic": "🌡️"
+            },
+            {
+              "id": "lv1-15-22",
+              "arabizi": "mshamse",
+              "arabic": "مشمسة",
+              "english": "Sunny",
+              "pic": "☀️"
+            },
+            {
+              "id": "lv1-15-23",
+              "arabizi": "dafe",
+              "arabic": "دافي",
+              "english": "Warm",
+              "pic": "🌤️"
+            },
+            {
+              "id": "lv1-15-24",
+              "arabizi": "ri7",
+              "arabic": "ريح",
+              "english": "Wind",
+              "pic": "🌬️"
+            },
+            {
+              "id": "lv1-15-25",
+              "arabizi": "ba7er",
+              "arabic": "بحر",
+              "english": "Sea",
+              "pic": "🌊"
+            },
+            {
+              "id": "lv1-15-26",
+              "arabizi": "jalid",
+              "arabic": "جليد",
+              "english": "Ice",
+              "pic": "🧊"
+            },
+            {
+              "id": "lv1-15-27",
+              "arabizi": "shamsiyye",
+              "arabic": "شمسيّة",
+              "english": "Umbrella",
+              "pic": "☂️"
+            },
+            {
+              "id": "lv1-15-28",
+              "arabizi": "mawj",
+              "arabic": "موج",
+              "english": "Waves",
+              "pic": "🌊"
+            },
+            {
+              "id": "lv1-15-29",
+              "arabizi": "ghroub",
+              "arabic": "غروب",
+              "english": "Sunset",
+              "pic": "🌇"
+            },
+            {
+              "id": "lv1-15-30",
+              "arabizi": "sama",
+              "arabic": "سما",
+              "english": "Sky",
+              "pic": "🌌"
             }
           ],
           "dialogue": [
@@ -2125,6 +4338,146 @@
               "arabic": "فار",
               "english": "Mouse",
               "pic": "🐁"
+            },
+            {
+              "id": "lv1-16-11",
+              "arabizi": "asad",
+              "arabic": "أسد",
+              "english": "Lion",
+              "pic": "🦁"
+            },
+            {
+              "id": "lv1-16-12",
+              "arabizi": "debb",
+              "arabic": "دبّ",
+              "english": "Bear",
+              "pic": "🐻"
+            },
+            {
+              "id": "lv1-16-13",
+              "arabizi": "fil",
+              "arabic": "فيل",
+              "english": "Elephant",
+              "pic": "🐘"
+            },
+            {
+              "id": "lv1-16-14",
+              "arabizi": "nemr",
+              "arabic": "نمر",
+              "english": "Tiger",
+              "pic": "🐅"
+            },
+            {
+              "id": "lv1-16-15",
+              "arabizi": "2erd",
+              "arabic": "قرد",
+              "english": "Monkey",
+              "pic": "🐒"
+            },
+            {
+              "id": "lv1-16-16",
+              "arabizi": "7ayye",
+              "arabic": "حيّة",
+              "english": "Snake",
+              "pic": "🐍"
+            },
+            {
+              "id": "lv1-16-17",
+              "arabizi": "na7le",
+              "arabic": "نحلة",
+              "english": "Bee",
+              "pic": "🐝"
+            },
+            {
+              "id": "lv1-16-18",
+              "arabizi": "dabbour",
+              "arabic": "دبّور",
+              "english": "Wasp",
+              "pic": "🐝"
+            },
+            {
+              "id": "lv1-16-19",
+              "arabizi": "debbene",
+              "arabic": "دبّانة",
+              "english": "Fly",
+              "pic": "🪰"
+            },
+            {
+              "id": "lv1-16-20",
+              "arabizi": "barghash",
+              "arabic": "برغش",
+              "english": "Mosquitoes",
+              "pic": "🦟"
+            },
+            {
+              "id": "lv1-16-21",
+              "arabizi": "sarsour",
+              "arabic": "صرصور",
+              "english": "Cockroach",
+              "pic": "🪳"
+            },
+            {
+              "id": "lv1-16-22",
+              "arabizi": "arnab",
+              "arabic": "أرنب",
+              "english": "Rabbit",
+              "pic": "🐇"
+            },
+            {
+              "id": "lv1-16-23",
+              "arabizi": "me3ze",
+              "arabic": "معزة",
+              "english": "Goat",
+              "pic": "🐐"
+            },
+            {
+              "id": "lv1-16-24",
+              "arabizi": "jamal",
+              "arabic": "جمل",
+              "english": "Camel",
+              "pic": "🐪"
+            },
+            {
+              "id": "lv1-16-25",
+              "arabizi": "7amame",
+              "arabic": "حمامة",
+              "english": "Pigeon / dove",
+              "pic": "🕊️"
+            },
+            {
+              "id": "lv1-16-26",
+              "arabizi": "dik",
+              "arabic": "ديك",
+              "english": "Rooster",
+              "pic": "🐓"
+            },
+            {
+              "id": "lv1-16-27",
+              "arabizi": "batta",
+              "arabic": "بطّة",
+              "english": "Duck",
+              "pic": "🦆"
+            },
+            {
+              "id": "lv1-16-28",
+              "arabizi": "frashe",
+              "arabic": "فراشة",
+              "english": "Butterfly",
+              "pic": "🦋"
+            },
+            {
+              "id": "lv1-16-29",
+              "arabizi": "sel7fe",
+              "arabic": "سلحفة",
+              "english": "Tortoise",
+              "pic": "🐢"
+            },
+            {
+              "id": "lv1-16-30",
+              "arabizi": "3ankabout",
+              "arabic": "عنكبوت",
+              "english": "Spider",
+              "pic": "🕷️"
             }
           ],
           "dialogue": [
@@ -2253,6 +4606,147 @@
               "arabic": "كنيسة",
               "english": "Church",
               "pic": "⛪"
+            },
+            {
+              "id": "lv1-17-11",
+              "arabizi": "ahwe",
+              "arabic": "قهوة",
+              "english": "Café",
+              "pic": "☕",
+              "note": "The same word as 'coffee'."
+            },
+            {
+              "id": "lv1-17-12",
+              "arabizi": "jnayne",
+              "arabic": "جنينة",
+              "english": "Garden / park",
+              "pic": "🌳"
+            },
+            {
+              "id": "lv1-17-13",
+              "arabizi": "shatt",
+              "arabic": "شط",
+              "english": "Beach",
+              "pic": "🏖️"
+            },
+            {
+              "id": "lv1-17-14",
+              "arabizi": "mal3ab",
+              "arabic": "ملعب",
+              "english": "Stadium / playground",
+              "pic": "⚽"
+            },
+            {
+              "id": "lv1-17-15",
+              "arabizi": "cinema",
+              "arabic": "سينما",
+              "english": "Cinema",
+              "pic": "🎬"
+            },
+            {
+              "id": "lv1-17-16",
+              "arabizi": "masra7",
+              "arabic": "مسرح",
+              "english": "Theatre",
+              "pic": "🎭"
+            },
+            {
+              "id": "lv1-17-17",
+              "arabizi": "mat7af",
+              "arabic": "متحف",
+              "english": "Museum",
+              "pic": "🏛️"
+            },
+            {
+              "id": "lv1-17-18",
+              "arabizi": "m7atta",
+              "arabic": "محطة",
+              "english": "Station / petrol station",
+              "pic": "⛽"
+            },
+            {
+              "id": "lv1-17-19",
+              "arabizi": "maw2af",
+              "arabic": "موقف",
+              "english": "Car park / stop",
+              "pic": "🅿️"
+            },
+            {
+              "id": "lv1-17-20",
+              "arabizi": "baladiyye",
+              "arabic": "بلدية",
+              "english": "Town hall",
+              "pic": "🏢"
+            },
+            {
+              "id": "lv1-17-21",
+              "arabizi": "posta",
+              "arabic": "بوسطة",
+              "english": "Post office",
+              "pic": "📮"
+            },
+            {
+              "id": "lv1-17-22",
+              "arabizi": "makhfar",
+              "arabic": "مخفر",
+              "english": "Police station",
+              "pic": "👮"
+            },
+            {
+              "id": "lv1-17-23",
+              "arabizi": "otel",
+              "arabic": "أوتيل",
+              "english": "Hotel",
+              "pic": "🏨"
+            },
+            {
+              "id": "lv1-17-24",
+              "arabizi": "sefara",
+              "arabic": "سفارة",
+              "english": "Embassy",
+              "pic": "🏳️"
+            },
+            {
+              "id": "lv1-17-25",
+              "arabizi": "sa7a",
+              "arabic": "ساحة",
+              "english": "Square",
+              "pic": "🏙️"
+            },
+            {
+              "id": "lv1-17-26",
+              "arabizi": "share3",
+              "arabic": "شارع",
+              "english": "Street",
+              "pic": "🛣️"
+            },
+            {
+              "id": "lv1-17-27",
+              "arabizi": "jeser",
+              "arabic": "جسر",
+              "english": "Bridge",
+              "pic": "🌉"
+            },
+            {
+              "id": "lv1-17-28",
+              "arabizi": "deir",
+              "arabic": "دير",
+              "english": "Monastery",
+              "pic": "⛪"
+            },
+            {
+              "id": "lv1-17-29",
+              "arabizi": "2al3a",
+              "arabic": "قلعة",
+              "english": "Castle",
+              "pic": "🏰"
+            },
+            {
+              "id": "lv1-17-30",
+              "arabizi": "gym",
+              "arabic": "جيم",
+              "english": "Gym",
+              "pic": "🏋️"
             }
           ],
           "dialogue": [
@@ -2419,6 +4913,147 @@
                 "arabizi": "mertaha",
                 "arabic": "مرتاحة"
               }
+            },
+            {
+              "id": "lv1-18-11",
+              "arabizi": "far7an",
+              "arabic": "فرحان",
+              "english": "Glad",
+              "pic": "😄",
+              "note": "These words follow the speaker. A woman adds -e: 'far7ane'."
+            },
+            {
+              "id": "lv1-18-12",
+              "arabizi": "7azin",
+              "arabic": "حزين",
+              "english": "Sad",
+              "pic": "😢"
+            },
+            {
+              "id": "lv1-18-13",
+              "arabizi": "metdaye2",
+              "arabic": "متضايق",
+              "english": "Upset",
+              "pic": "😣"
+            },
+            {
+              "id": "lv1-18-14",
+              "arabizi": "zah2an",
+              "arabic": "زهقان",
+              "english": "Bored",
+              "pic": "🥱"
+            },
+            {
+              "id": "lv1-18-15",
+              "arabizi": "na3san",
+              "arabic": "نعسان",
+              "english": "Sleepy",
+              "pic": "😴"
+            },
+            {
+              "id": "lv1-18-16",
+              "arabizi": "mared",
+              "arabic": "مريض",
+              "english": "Ill",
+              "pic": "🤒"
+            },
+            {
+              "id": "lv1-18-17",
+              "arabizi": "mest7e",
+              "arabic": "مستحي",
+              "english": "Shy / embarrassed",
+              "pic": "😳"
+            },
+            {
+              "id": "lv1-18-18",
+              "arabizi": "metwatter",
+              "arabic": "متوتّر",
+              "english": "Stressed",
+              "pic": "😬"
+            },
+            {
+              "id": "lv1-18-19",
+              "arabizi": "metfeje2",
+              "arabic": "متفاجئ",
+              "english": "Surprised",
+              "pic": "😮"
+            },
+            {
+              "id": "lv1-18-20",
+              "arabizi": "fakhour",
+              "arabic": "فخور",
+              "english": "Proud",
+              "pic": "🦚"
+            },
+            {
+              "id": "lv1-18-21",
+              "arabizi": "ghayran",
+              "arabic": "غيران",
+              "english": "Jealous",
+              "pic": "😒"
+            },
+            {
+              "id": "lv1-18-22",
+              "arabizi": "2al2an",
+              "arabic": "قلقان",
+              "english": "Worried",
+              "pic": "😟"
+            },
+            {
+              "id": "lv1-18-23",
+              "arabizi": "metfe2el",
+              "arabic": "متفائل",
+              "english": "Hopeful",
+              "pic": "🌈"
+            },
+            {
+              "id": "lv1-18-24",
+              "arabizi": "mish mertah",
+              "arabic": "مش مرتاح",
+              "english": "Uncomfortable",
+              "pic": "😕"
+            },
+            {
+              "id": "lv1-18-25",
+              "arabizi": "bardan",
+              "arabic": "بردان",
+              "english": "Cold (I feel cold)",
+              "pic": "🥶"
+            },
+            {
+              "id": "lv1-18-26",
+              "arabizi": "shobban",
+              "arabic": "شوبان",
+              "english": "Hot (I feel hot)",
+              "pic": "🥵"
+            },
+            {
+              "id": "lv1-18-27",
+              "arabizi": "shab3an",
+              "arabic": "شبعان",
+              "english": "Full (after eating)",
+              "pic": "😌"
+            },
+            {
+              "id": "lv1-18-28",
+              "arabizi": "fadi",
+              "arabic": "فاضي",
+              "english": "Free (not busy)",
+              "pic": "🆓"
+            },
+            {
+              "id": "lv1-18-29",
+              "arabizi": "mashghoul",
+              "arabic": "مشغول",
+              "english": "Busy",
+              "pic": "📵"
+            },
+            {
+              "id": "lv1-18-30",
+              "arabizi": "majnoun",
+              "arabic": "مجنون",
+              "english": "Crazy",
+              "pic": "🤪"
             }
           ],
           "dialogue": [
@@ -2539,6 +5174,146 @@
               "arabic": "بلا",
               "english": "Without",
               "pic": "🚫"
+            },
+            {
+              "id": "lv1-19-11",
+              "arabizi": "fo2",
+              "arabic": "فوق",
+              "english": "Up / above",
+              "pic": "⬆️"
+            },
+            {
+              "id": "lv1-19-12",
+              "arabizi": "ta7t",
+              "arabic": "تحت",
+              "english": "Down / below",
+              "pic": "⬇️"
+            },
+            {
+              "id": "lv1-19-13",
+              "arabizi": "jowwa",
+              "arabic": "جوّا",
+              "english": "Inside",
+              "pic": "📦"
+            },
+            {
+              "id": "lv1-19-14",
+              "arabizi": "barra",
+              "arabic": "برّا",
+              "english": "Outside",
+              "pic": "🌳"
+            },
+            {
+              "id": "lv1-19-15",
+              "arabizi": "2abel",
+              "arabic": "قبل",
+              "english": "Before",
+              "pic": "⏮️"
+            },
+            {
+              "id": "lv1-19-16",
+              "arabizi": "ba3d",
+              "arabic": "بعد",
+              "english": "After / still",
+              "pic": "⏭️"
+            },
+            {
+              "id": "lv1-19-17",
+              "arabizi": "7add",
+              "arabic": "حدّ",
+              "english": "Next to",
+              "pic": "↔️"
+            },
+            {
+              "id": "lv1-19-18",
+              "arabizi": "2eddem",
+              "arabic": "قدّام",
+              "english": "In front",
+              "pic": "⬆️"
+            },
+            {
+              "id": "lv1-19-19",
+              "arabizi": "wara",
+              "arabic": "ورا",
+              "english": "Behind",
+              "pic": "⬇️"
+            },
+            {
+              "id": "lv1-19-20",
+              "arabizi": "bein",
+              "arabic": "بين",
+              "english": "Between",
+              "pic": "↕️"
+            },
+            {
+              "id": "lv1-19-21",
+              "arabizi": "men",
+              "arabic": "من",
+              "english": "From",
+              "pic": "📍"
+            },
+            {
+              "id": "lv1-19-22",
+              "arabizi": "3a",
+              "arabic": "ع",
+              "english": "On / to",
+              "pic": "🎯"
+            },
+            {
+              "id": "lv1-19-23",
+              "arabizi": "la2anno",
+              "arabic": "لأنّو",
+              "english": "Because",
+              "pic": "❓"
+            },
+            {
+              "id": "lv1-19-24",
+              "arabizi": "iza",
+              "arabic": "إذا",
+              "english": "If",
+              "pic": "🤔"
+            },
+            {
+              "id": "lv1-19-25",
+              "arabizi": "lamma",
+              "arabic": "لمّا",
+              "english": "When",
+              "pic": "⏰"
+            },
+            {
+              "id": "lv1-19-26",
+              "arabizi": "kamen marra",
+              "arabic": "كمان مرّة",
+              "english": "Again",
+              "pic": "🔁"
+            },
+            {
+              "id": "lv1-19-27",
+              "arabizi": "dayman",
+              "arabic": "دايماً",
+              "english": "Always",
+              "pic": "♾️"
+            },
+            {
+              "id": "lv1-19-28",
+              "arabizi": "a7yanan",
+              "arabic": "أحياناً",
+              "english": "Sometimes",
+              "pic": "🔄"
+            },
+            {
+              "id": "lv1-19-29",
+              "arabizi": "3ade",
+              "arabic": "عادي",
+              "english": "Normal / it's fine",
+              "pic": "🤷"
+            },
+            {
+              "id": "lv1-19-30",
+              "arabizi": "kell",
+              "arabic": "كل",
+              "english": "Every / all",
+              "pic": "🔁"
             }
           ],
           "dialogue": [
@@ -2675,6 +5450,166 @@
               "arabic": "يا حرام",
               "english": "Poor thing / what a pity",
               "pic": "🥺"
+            },
+            {
+              "id": "lv1-20-11",
+              "arabizi": "yalla ba2a",
+              "arabic": "يلّا بقى",
+              "english": "Come on already",
+              "pic": "⏩"
+            },
+            {
+              "id": "lv1-20-12",
+              "arabizi": "7abibi",
+              "arabic": "حبيبي",
+              "english": "My dear",
+              "pic": "❤️",
+              "note": "Said to friends, family, even strangers.",
+              "f": {
+                "arabizi": "7abibte",
+                "arabic": "حبيبتي"
+              }
+            },
+            {
+              "id": "lv1-20-13",
+              "arabizi": "ya 3eyne",
+              "arabic": "يا عيني",
+              "english": "Oh my dear",
+              "pic": "😍"
+            },
+            {
+              "id": "lv1-20-14",
+              "arabizi": "ya 2albe",
+              "arabic": "يا قلبي",
+              "english": "Aww, my heart",
+              "pic": "🥹"
+            },
+            {
+              "id": "lv1-20-15",
+              "arabizi": "mabrouk",
+              "arabic": "مبروك",
+              "english": "Congratulations",
+              "pic": "🎉"
+            },
+            {
+              "id": "lv1-20-16",
+              "arabizi": "allah ybarek fik",
+              "arabic": "الله يبارك فيك",
+              "english": "Thank you (reply to mabrouk)",
+              "pic": "🙏",
+              "f": {
+                "arabizi": "allah ybarek fike",
+                "arabic": "الله يبارك فيكي"
+              }
+            },
+            {
+              "id": "lv1-20-17",
+              "arabizi": "3a2bel l miyye",
+              "arabic": "عقبال المية",
+              "english": "To a hundred!",
+              "pic": "🎂",
+              "note": "The birthday wish: may you reach a hundred."
+            },
+            {
+              "id": "lv1-20-18",
+              "arabizi": "ya reit",
+              "arabic": "يا ريت",
+              "english": "I wish",
+              "pic": "🌠"
+            },
+            {
+              "id": "lv1-20-19",
+              "arabizi": "ya allah",
+              "arabic": "يا الله",
+              "english": "Oh God",
+              "pic": "😩"
+            },
+            {
+              "id": "lv1-20-20",
+              "arabizi": "allah ma3ak",
+              "arabic": "الله معك",
+              "english": "Goodbye (God be with you)",
+              "pic": "👋",
+              "f": {
+                "arabizi": "allah ma3ik",
+                "arabic": "الله معِك"
+              }
+            },
+            {
+              "id": "lv1-20-21",
+              "arabizi": "salamtak",
+              "arabic": "سلامتك",
+              "english": "Get well soon",
+              "pic": "🤒",
+              "f": {
+                "arabizi": "salamtik",
+                "arabic": "سلامتِك"
+              }
+            },
+            {
+              "id": "lv1-20-22",
+              "arabizi": "ya hala",
+              "arabic": "يا هلا",
+              "english": "Hey, welcome!",
+              "pic": "🤗"
+            },
+            {
+              "id": "lv1-20-23",
+              "arabizi": "inshallah kheir",
+              "arabic": "إن شاء الله خير",
+              "english": "Hopefully it's good news",
+              "pic": "🤞"
+            },
+            {
+              "id": "lv1-20-24",
+              "arabizi": "ma bitsir",
+              "arabic": "ما بتصير",
+              "english": "That's not on",
+              "pic": "🙅"
+            },
+            {
+              "id": "lv1-20-25",
+              "arabizi": "khalas ba2a",
+              "arabic": "خلص بقى",
+              "english": "Enough already",
+              "pic": "✋"
+            },
+            {
+              "id": "lv1-20-26",
+              "arabizi": "3an jadd?",
+              "arabic": "عن جدّ؟",
+              "english": "Seriously?",
+              "pic": "😮"
+            },
+            {
+              "id": "lv1-20-27",
+              "arabizi": "shu ya3ne?",
+              "arabic": "شو يعني؟",
+              "english": "So what? / meaning?",
+              "pic": "🤨"
+            },
+            {
+              "id": "lv1-20-28",
+              "arabizi": "ma fi metlo",
+              "arabic": "ما في متلو",
+              "english": "There's nothing like it",
+              "pic": "🌟"
+            },
+            {
+              "id": "lv1-20-29",
+              "arabizi": "sa77a",
+              "arabic": "صحّة",
+              "english": "Bless you",
+              "pic": "🤧",
+              "note": "Said after a sneeze. It means 'health'."
+            },
+            {
+              "id": "lv1-20-30",
+              "arabizi": "na3iman",
+              "arabic": "نعيماً",
+              "english": "Enjoy your fresh look",
+              "pic": "💇",
+              "note": "Said to someone after a haircut or a shower."
             }
           ],
           "dialogue": [
