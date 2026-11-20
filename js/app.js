@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=32';
-import * as audio from './audio.js?v=32';
+import { settings, progress, clips } from './store.js?v=33';
+import * as audio from './audio.js?v=33';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -211,7 +211,8 @@ const ABC = [
   { key: '3', ar: 'ع', how: 'A squeezed sound from deep in the throat. No English match.', ex: '3afwan', exAr: 'عفواً', en: "you're welcome" },
   { key: '7', ar: 'ح', how: 'A breathy, raspy "h", like fogging up a mirror.', ex: 'mni7', exAr: 'منيح', en: 'good' },
   { key: 'kh', ar: 'خ', how: 'Like the "ch" in Scottish "loch".', ex: 'kheir', exAr: 'خير', en: 'good (morning)' },
-  { key: 'gh', ar: 'غ', how: 'Like a French "r", gargled lightly.', ex: 'ghali', exAr: 'غالي', en: 'expensive' },
+  { key: 'gh', ar: 'غ', how: 'Like a French "r", gargled lightly.', ex: 'ghali', exAr: 'غالي', en: 'expensive',
+    note: 'Some people type 8 instead of gh, so you may also see "8ali".' },
   { key: 'sh', ar: 'ش', how: 'Like English "sh".', ex: 'shukran', exAr: 'شكراً', en: 'thank you' },
 ];
 // The guide as a pseudo-lesson, so the Recording studio can list its clips.
@@ -228,6 +229,7 @@ function viewAbout() {
     <td class="num">${esc(r.key)}</td>
     <td dir="rtl" lang="ar" class="ar">${r.ar}</td>
     <td>${esc(r.how)}<br><em>${esc(r.ex)}</em> = ${esc(r.en)}
+      ${r.note ? `<p class="note">💡 ${esc(r.note)}</p>` : ''}
       <div class="abc-play">
         <button class="btn play" data-clip="abc-${esc(r.key)}">🔊 Sound</button>
         <button class="btn play ghost" data-clip="abc-${esc(r.key)}-ex">🔊 ${esc(r.ex)}</button>
@@ -645,7 +647,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 32;
+const VERSION = 33;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -667,7 +669,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=32', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=33', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
