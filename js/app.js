@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=35';
-import * as audio from './audio.js?v=35';
+import { settings, progress, clips } from './store.js?v=36';
+import * as audio from './audio.js?v=36';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -82,7 +82,6 @@ function viewHome() {
     <section class="hero">
       <h1>Speak Lebanese Like a Local:<br><span>The Arabic People Really Talk</span></h1>
       <p>Ten free levels with a native speaker's voice, <br>from your first word to a whole paragraph.</p>
-      <a class="btn primary big" href="#/level/1">Start Level 1</a>
     </section>
     <section class="choices">
       <a class="choice" href="#/lessons">
@@ -647,7 +646,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 35;
+const VERSION = 36;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -669,7 +668,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=35', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=36', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
