@@ -1,0 +1,4288 @@
+{
+  "_note": "DRAFT. Built from tools/verbs_src.txt by tools/build_verbs.py; edit the source, not this file.",
+  "persons": [
+    {
+      "key": "ana",
+      "latin": "ana",
+      "arabic": "أنا",
+      "english": "I"
+    },
+    {
+      "key": "enta",
+      "latin": "enta",
+      "arabic": "إنت",
+      "english": "you (to a man)"
+    },
+    {
+      "key": "ente",
+      "latin": "ente",
+      "arabic": "إنتِ",
+      "english": "you (to a woman)"
+    },
+    {
+      "key": "huwwe",
+      "latin": "huwwe",
+      "arabic": "هوّي",
+      "english": "he"
+    },
+    {
+      "key": "hiyye",
+      "latin": "hiyye",
+      "arabic": "هيّي",
+      "english": "she"
+    },
+    {
+      "key": "ne7na",
+      "latin": "ne7na",
+      "arabic": "نحنا",
+      "english": "we"
+    },
+    {
+      "key": "ento",
+      "latin": "ento",
+      "arabic": "إنتو",
+      "english": "you (all)"
+    },
+    {
+      "key": "hinne",
+      "latin": "hinne",
+      "arabic": "هنّي",
+      "english": "they"
+    }
+  ],
+  "commandTo": [
+    {
+      "key": "enta",
+      "english": "to a man"
+    },
+    {
+      "key": "ente",
+      "english": "to a woman"
+    },
+    {
+      "key": "ento",
+      "english": "to a group"
+    }
+  ],
+  "tenses": [
+    {
+      "key": "past",
+      "label": "Past",
+      "hint": "What already happened: yesterday, last year."
+    },
+    {
+      "key": "present",
+      "label": "Every day",
+      "hint": "Habits and facts. The verb starts with b- (mn- for \"we\")."
+    },
+    {
+      "key": "now",
+      "label": "Right now",
+      "hint": "Happening at this moment: put 3am before the every-day form."
+    },
+    {
+      "key": "future",
+      "label": "Future",
+      "hint": "What will happen: ra7, then the every-day form without its b-."
+    },
+    {
+      "key": "command",
+      "label": "Commands",
+      "hint": "Telling someone to do it."
+    }
+  ],
+  "verbs": [
+    {
+      "id": "katab",
+      "icon": "✍️",
+      "english": "to write",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "katabt",
+            "arabic": "كتبت",
+            "english": "I wrote",
+            "id": "verb-katab-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "katabt",
+            "arabic": "كتبت",
+            "english": "you wrote",
+            "id": "verb-katab-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "katabte",
+            "arabic": "كتبتي",
+            "english": "you wrote",
+            "id": "verb-katab-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "katab",
+            "arabic": "كتب",
+            "english": "he wrote",
+            "id": "verb-katab-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "katabet",
+            "arabic": "كتبت",
+            "english": "she wrote",
+            "id": "verb-katab-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "katabna",
+            "arabic": "كتبنا",
+            "english": "we wrote",
+            "id": "verb-katab-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "katabto",
+            "arabic": "كتبتو",
+            "english": "you wrote",
+            "id": "verb-katab-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "katabo",
+            "arabic": "كتبو",
+            "english": "they wrote",
+            "id": "verb-katab-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bekteb",
+            "arabic": "بكتب",
+            "english": "I write",
+            "id": "verb-katab-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btekteb",
+            "arabic": "بتكتب",
+            "english": "you write",
+            "id": "verb-katab-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btektebe",
+            "arabic": "بتكتبي",
+            "english": "you write",
+            "id": "verb-katab-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byekteb",
+            "arabic": "بيكتب",
+            "english": "he writes",
+            "id": "verb-katab-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btekteb",
+            "arabic": "بتكتب",
+            "english": "she writes",
+            "id": "verb-katab-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnekteb",
+            "arabic": "منكتب",
+            "english": "we write",
+            "id": "verb-katab-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btektebo",
+            "arabic": "بتكتبو",
+            "english": "you write",
+            "id": "verb-katab-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byektebo",
+            "arabic": "بيكتبو",
+            "english": "they write",
+            "id": "verb-katab-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bekteb",
+            "arabic": "عم بكتب",
+            "english": "I'm writing",
+            "id": "verb-katab-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btekteb",
+            "arabic": "عم بتكتب",
+            "english": "you're writing",
+            "id": "verb-katab-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btektebe",
+            "arabic": "عم بتكتبي",
+            "english": "you're writing",
+            "id": "verb-katab-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byekteb",
+            "arabic": "عم بيكتب",
+            "english": "he's writing",
+            "id": "verb-katab-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btekteb",
+            "arabic": "عم بتكتب",
+            "english": "she's writing",
+            "id": "verb-katab-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnekteb",
+            "arabic": "عم منكتب",
+            "english": "we're writing",
+            "id": "verb-katab-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btektebo",
+            "arabic": "عم بتكتبو",
+            "english": "you're writing",
+            "id": "verb-katab-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byektebo",
+            "arabic": "عم بيكتبو",
+            "english": "they're writing",
+            "id": "verb-katab-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 ekteb",
+            "arabic": "رح اكتب",
+            "english": "I'll write",
+            "id": "verb-katab-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tekteb",
+            "arabic": "رح تكتب",
+            "english": "you'll write",
+            "id": "verb-katab-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tektebe",
+            "arabic": "رح تكتبي",
+            "english": "you'll write",
+            "id": "verb-katab-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yekteb",
+            "arabic": "رح يكتب",
+            "english": "he'll write",
+            "id": "verb-katab-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tekteb",
+            "arabic": "رح تكتب",
+            "english": "she'll write",
+            "id": "verb-katab-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nekteb",
+            "arabic": "رح نكتب",
+            "english": "we'll write",
+            "id": "verb-katab-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tektebo",
+            "arabic": "رح تكتبو",
+            "english": "you'll write",
+            "id": "verb-katab-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yektebo",
+            "arabic": "رح يكتبو",
+            "english": "they'll write",
+            "id": "verb-katab-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "ekteb!",
+            "arabic": "اكتب!",
+            "english": "Write! (to a man)",
+            "id": "verb-katab-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ektebe!",
+            "arabic": "اكتبي!",
+            "english": "Write! (to a woman)",
+            "id": "verb-katab-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "ektebo!",
+            "arabic": "اكتبو!",
+            "english": "Write! (to a group)",
+            "id": "verb-katab-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "akal",
+      "icon": "🍽️",
+      "english": "to eat",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "akalt",
+            "arabic": "أكلت",
+            "english": "I ate",
+            "id": "verb-akal-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "akalt",
+            "arabic": "أكلت",
+            "english": "you ate",
+            "id": "verb-akal-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "akalte",
+            "arabic": "أكلتي",
+            "english": "you ate",
+            "id": "verb-akal-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "akal",
+            "arabic": "أكل",
+            "english": "he ate",
+            "id": "verb-akal-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "akalet",
+            "arabic": "أكلت",
+            "english": "she ate",
+            "id": "verb-akal-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "akalna",
+            "arabic": "أكلنا",
+            "english": "we ate",
+            "id": "verb-akal-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "akalto",
+            "arabic": "أكلتو",
+            "english": "you ate",
+            "id": "verb-akal-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "akalo",
+            "arabic": "أكلو",
+            "english": "they ate",
+            "id": "verb-akal-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bekol",
+            "arabic": "باكل",
+            "english": "I eat",
+            "id": "verb-akal-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btekol",
+            "arabic": "بتاكل",
+            "english": "you eat",
+            "id": "verb-akal-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btakle",
+            "arabic": "بتاكلي",
+            "english": "you eat",
+            "id": "verb-akal-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byekol",
+            "arabic": "بياكل",
+            "english": "he eats",
+            "id": "verb-akal-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btekol",
+            "arabic": "بتاكل",
+            "english": "she eats",
+            "id": "verb-akal-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnekol",
+            "arabic": "مناكل",
+            "english": "we eat",
+            "id": "verb-akal-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btaklo",
+            "arabic": "بتاكلو",
+            "english": "you eat",
+            "id": "verb-akal-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byaklo",
+            "arabic": "بياكلو",
+            "english": "they eat",
+            "id": "verb-akal-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bekol",
+            "arabic": "عم باكل",
+            "english": "I'm eating",
+            "id": "verb-akal-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btekol",
+            "arabic": "عم بتاكل",
+            "english": "you're eating",
+            "id": "verb-akal-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btakle",
+            "arabic": "عم بتاكلي",
+            "english": "you're eating",
+            "id": "verb-akal-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byekol",
+            "arabic": "عم بياكل",
+            "english": "he's eating",
+            "id": "verb-akal-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btekol",
+            "arabic": "عم بتاكل",
+            "english": "she's eating",
+            "id": "verb-akal-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnekol",
+            "arabic": "عم مناكل",
+            "english": "we're eating",
+            "id": "verb-akal-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btaklo",
+            "arabic": "عم بتاكلو",
+            "english": "you're eating",
+            "id": "verb-akal-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byaklo",
+            "arabic": "عم بياكلو",
+            "english": "they're eating",
+            "id": "verb-akal-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 ekol",
+            "arabic": "رح اكل",
+            "english": "I'll eat",
+            "id": "verb-akal-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tekol",
+            "arabic": "رح تاكل",
+            "english": "you'll eat",
+            "id": "verb-akal-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 takle",
+            "arabic": "رح تاكلي",
+            "english": "you'll eat",
+            "id": "verb-akal-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yekol",
+            "arabic": "رح ياكل",
+            "english": "he'll eat",
+            "id": "verb-akal-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tekol",
+            "arabic": "رح تاكل",
+            "english": "she'll eat",
+            "id": "verb-akal-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nekol",
+            "arabic": "رح ناكل",
+            "english": "we'll eat",
+            "id": "verb-akal-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 taklo",
+            "arabic": "رح تاكلو",
+            "english": "you'll eat",
+            "id": "verb-akal-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yaklo",
+            "arabic": "رح ياكلو",
+            "english": "they'll eat",
+            "id": "verb-akal-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "kol!",
+            "arabic": "كول!",
+            "english": "Eat! (to a man)",
+            "id": "verb-akal-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "kele!",
+            "arabic": "كلي!",
+            "english": "Eat! (to a woman)",
+            "id": "verb-akal-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "kelo!",
+            "arabic": "كلو!",
+            "english": "Eat! (to a group)",
+            "id": "verb-akal-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sherib",
+      "icon": "🥤",
+      "english": "to drink",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "shrebt",
+            "arabic": "شربت",
+            "english": "I drank",
+            "id": "verb-sherib-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "shrebt",
+            "arabic": "شربت",
+            "english": "you drank",
+            "id": "verb-sherib-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "shrebte",
+            "arabic": "شربتي",
+            "english": "you drank",
+            "id": "verb-sherib-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "sherib",
+            "arabic": "شرب",
+            "english": "he drank",
+            "id": "verb-sherib-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "sherbet",
+            "arabic": "شربت",
+            "english": "she drank",
+            "id": "verb-sherib-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "shrebna",
+            "arabic": "شربنا",
+            "english": "we drank",
+            "id": "verb-sherib-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "shrebto",
+            "arabic": "شربتو",
+            "english": "you drank",
+            "id": "verb-sherib-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "sherbo",
+            "arabic": "شربو",
+            "english": "they drank",
+            "id": "verb-sherib-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "beshrab",
+            "arabic": "بشرب",
+            "english": "I drink",
+            "id": "verb-sherib-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bteshrab",
+            "arabic": "بتشرب",
+            "english": "you drink",
+            "id": "verb-sherib-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bteshrabe",
+            "arabic": "بتشربي",
+            "english": "you drink",
+            "id": "verb-sherib-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byeshrab",
+            "arabic": "بيشرب",
+            "english": "he drinks",
+            "id": "verb-sherib-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bteshrab",
+            "arabic": "بتشرب",
+            "english": "she drinks",
+            "id": "verb-sherib-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mneshrab",
+            "arabic": "منشرب",
+            "english": "we drink",
+            "id": "verb-sherib-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bteshrabo",
+            "arabic": "بتشربو",
+            "english": "you drink",
+            "id": "verb-sherib-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byeshrabo",
+            "arabic": "بيشربو",
+            "english": "they drink",
+            "id": "verb-sherib-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am beshrab",
+            "arabic": "عم بشرب",
+            "english": "I'm drinking",
+            "id": "verb-sherib-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bteshrab",
+            "arabic": "عم بتشرب",
+            "english": "you're drinking",
+            "id": "verb-sherib-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bteshrabe",
+            "arabic": "عم بتشربي",
+            "english": "you're drinking",
+            "id": "verb-sherib-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byeshrab",
+            "arabic": "عم بيشرب",
+            "english": "he's drinking",
+            "id": "verb-sherib-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bteshrab",
+            "arabic": "عم بتشرب",
+            "english": "she's drinking",
+            "id": "verb-sherib-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mneshrab",
+            "arabic": "عم منشرب",
+            "english": "we're drinking",
+            "id": "verb-sherib-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bteshrabo",
+            "arabic": "عم بتشربو",
+            "english": "you're drinking",
+            "id": "verb-sherib-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byeshrabo",
+            "arabic": "عم بيشربو",
+            "english": "they're drinking",
+            "id": "verb-sherib-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 eshrab",
+            "arabic": "رح اشرب",
+            "english": "I'll drink",
+            "id": "verb-sherib-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 teshrab",
+            "arabic": "رح تشرب",
+            "english": "you'll drink",
+            "id": "verb-sherib-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 teshrabe",
+            "arabic": "رح تشربي",
+            "english": "you'll drink",
+            "id": "verb-sherib-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yeshrab",
+            "arabic": "رح يشرب",
+            "english": "he'll drink",
+            "id": "verb-sherib-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 teshrab",
+            "arabic": "رح تشرب",
+            "english": "she'll drink",
+            "id": "verb-sherib-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 neshrab",
+            "arabic": "رح نشرب",
+            "english": "we'll drink",
+            "id": "verb-sherib-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 teshrabo",
+            "arabic": "رح تشربو",
+            "english": "you'll drink",
+            "id": "verb-sherib-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yeshrabo",
+            "arabic": "رح يشربو",
+            "english": "they'll drink",
+            "id": "verb-sherib-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "eshrab!",
+            "arabic": "اشرب!",
+            "english": "Drink! (to a man)",
+            "id": "verb-sherib-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "eshrabe!",
+            "arabic": "اشربي!",
+            "english": "Drink! (to a woman)",
+            "id": "verb-sherib-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "eshrabo!",
+            "arabic": "اشربو!",
+            "english": "Drink! (to a group)",
+            "id": "verb-sherib-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra7",
+      "icon": "🚶",
+      "english": "to go",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "re7t",
+            "arabic": "رحت",
+            "english": "I went",
+            "id": "verb-ra7-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "re7t",
+            "arabic": "رحت",
+            "english": "you went",
+            "id": "verb-ra7-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "re7te",
+            "arabic": "رحتي",
+            "english": "you went",
+            "id": "verb-ra7-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7",
+            "arabic": "راح",
+            "english": "he went",
+            "id": "verb-ra7-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7et",
+            "arabic": "راحت",
+            "english": "she went",
+            "id": "verb-ra7-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "re7na",
+            "arabic": "رحنا",
+            "english": "we went",
+            "id": "verb-ra7-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "re7to",
+            "arabic": "رحتو",
+            "english": "you went",
+            "id": "verb-ra7-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7o",
+            "arabic": "راحو",
+            "english": "they went",
+            "id": "verb-ra7-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "brou7",
+            "arabic": "بروح",
+            "english": "I go",
+            "id": "verb-ra7-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btrou7",
+            "arabic": "بتروح",
+            "english": "you go",
+            "id": "verb-ra7-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btrou7e",
+            "arabic": "بتروحي",
+            "english": "you go",
+            "id": "verb-ra7-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byrou7",
+            "arabic": "بيروح",
+            "english": "he goes",
+            "id": "verb-ra7-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btrou7",
+            "arabic": "بتروح",
+            "english": "she goes",
+            "id": "verb-ra7-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnrou7",
+            "arabic": "منروح",
+            "english": "we go",
+            "id": "verb-ra7-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btrou7o",
+            "arabic": "بتروحو",
+            "english": "you go",
+            "id": "verb-ra7-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byrou7o",
+            "arabic": "بيروحو",
+            "english": "they go",
+            "id": "verb-ra7-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am brou7",
+            "arabic": "عم بروح",
+            "english": "I'm going",
+            "id": "verb-ra7-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btrou7",
+            "arabic": "عم بتروح",
+            "english": "you're going",
+            "id": "verb-ra7-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btrou7e",
+            "arabic": "عم بتروحي",
+            "english": "you're going",
+            "id": "verb-ra7-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byrou7",
+            "arabic": "عم بيروح",
+            "english": "he's going",
+            "id": "verb-ra7-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btrou7",
+            "arabic": "عم بتروح",
+            "english": "she's going",
+            "id": "verb-ra7-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnrou7",
+            "arabic": "عم منروح",
+            "english": "we're going",
+            "id": "verb-ra7-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btrou7o",
+            "arabic": "عم بتروحو",
+            "english": "you're going",
+            "id": "verb-ra7-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byrou7o",
+            "arabic": "عم بيروحو",
+            "english": "they're going",
+            "id": "verb-ra7-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 rou7",
+            "arabic": "رح روح",
+            "english": "I'll go",
+            "id": "verb-ra7-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 trou7",
+            "arabic": "رح تروح",
+            "english": "you'll go",
+            "id": "verb-ra7-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 trou7e",
+            "arabic": "رح تروحي",
+            "english": "you'll go",
+            "id": "verb-ra7-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yrou7",
+            "arabic": "رح يروح",
+            "english": "he'll go",
+            "id": "verb-ra7-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 trou7",
+            "arabic": "رح تروح",
+            "english": "she'll go",
+            "id": "verb-ra7-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nrou7",
+            "arabic": "رح نروح",
+            "english": "we'll go",
+            "id": "verb-ra7-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 trou7o",
+            "arabic": "رح تروحو",
+            "english": "you'll go",
+            "id": "verb-ra7-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yrou7o",
+            "arabic": "رح يروحو",
+            "english": "they'll go",
+            "id": "verb-ra7-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "rou7!",
+            "arabic": "روح!",
+            "english": "Go! (to a man)",
+            "id": "verb-ra7-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "rou7e!",
+            "arabic": "روحي!",
+            "english": "Go! (to a woman)",
+            "id": "verb-ra7-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "rou7o!",
+            "arabic": "روحو!",
+            "english": "Go! (to a group)",
+            "id": "verb-ra7-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eja",
+      "icon": "🏃",
+      "english": "to come",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "jit",
+            "arabic": "جيت",
+            "english": "I came",
+            "id": "verb-eja-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "jit",
+            "arabic": "جيت",
+            "english": "you came",
+            "id": "verb-eja-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "jite",
+            "arabic": "جيتي",
+            "english": "you came",
+            "id": "verb-eja-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "eja",
+            "arabic": "إجا",
+            "english": "he came",
+            "id": "verb-eja-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ejet",
+            "arabic": "إجت",
+            "english": "she came",
+            "id": "verb-eja-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "jina",
+            "arabic": "جينا",
+            "english": "we came",
+            "id": "verb-eja-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "jito",
+            "arabic": "جيتو",
+            "english": "you came",
+            "id": "verb-eja-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ejo",
+            "arabic": "إجو",
+            "english": "they came",
+            "id": "verb-eja-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "beje",
+            "arabic": "بجي",
+            "english": "I come",
+            "id": "verb-eja-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bteje",
+            "arabic": "بتجي",
+            "english": "you come",
+            "id": "verb-eja-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bteje",
+            "arabic": "بتجي",
+            "english": "you come",
+            "id": "verb-eja-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byeje",
+            "arabic": "بيجي",
+            "english": "he comes",
+            "id": "verb-eja-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bteje",
+            "arabic": "بتجي",
+            "english": "she comes",
+            "id": "verb-eja-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mneje",
+            "arabic": "منجي",
+            "english": "we come",
+            "id": "verb-eja-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btejo",
+            "arabic": "بتجو",
+            "english": "you come",
+            "id": "verb-eja-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byejo",
+            "arabic": "بيجو",
+            "english": "they come",
+            "id": "verb-eja-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am beje",
+            "arabic": "عم بجي",
+            "english": "I'm coming",
+            "id": "verb-eja-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bteje",
+            "arabic": "عم بتجي",
+            "english": "you're coming",
+            "id": "verb-eja-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bteje",
+            "arabic": "عم بتجي",
+            "english": "you're coming",
+            "id": "verb-eja-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byeje",
+            "arabic": "عم بيجي",
+            "english": "he's coming",
+            "id": "verb-eja-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bteje",
+            "arabic": "عم بتجي",
+            "english": "she's coming",
+            "id": "verb-eja-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mneje",
+            "arabic": "عم منجي",
+            "english": "we're coming",
+            "id": "verb-eja-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btejo",
+            "arabic": "عم بتجو",
+            "english": "you're coming",
+            "id": "verb-eja-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byejo",
+            "arabic": "عم بيجو",
+            "english": "they're coming",
+            "id": "verb-eja-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 eje",
+            "arabic": "رح اجي",
+            "english": "I'll come",
+            "id": "verb-eja-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 teje",
+            "arabic": "رح تجي",
+            "english": "you'll come",
+            "id": "verb-eja-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 teje",
+            "arabic": "رح تجي",
+            "english": "you'll come",
+            "id": "verb-eja-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yeje",
+            "arabic": "رح يجي",
+            "english": "he'll come",
+            "id": "verb-eja-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 teje",
+            "arabic": "رح تجي",
+            "english": "she'll come",
+            "id": "verb-eja-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 neje",
+            "arabic": "رح نجي",
+            "english": "we'll come",
+            "id": "verb-eja-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tejo",
+            "arabic": "رح تجو",
+            "english": "you'll come",
+            "id": "verb-eja-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yejo",
+            "arabic": "رح يجو",
+            "english": "they'll come",
+            "id": "verb-eja-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "ta3a!",
+            "arabic": "تعا!",
+            "english": "Come! (to a man)",
+            "id": "verb-eja-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ta3e!",
+            "arabic": "تعي!",
+            "english": "Come! (to a woman)",
+            "id": "verb-eja-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "ta3o!",
+            "arabic": "تعو!",
+            "english": "Come! (to a group)",
+            "id": "verb-eja-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3emel",
+      "icon": "🛠️",
+      "english": "to do",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "3melt",
+            "arabic": "عملت",
+            "english": "I did",
+            "id": "verb-3emel-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3melt",
+            "arabic": "عملت",
+            "english": "you did",
+            "id": "verb-3emel-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3melte",
+            "arabic": "عملتي",
+            "english": "you did",
+            "id": "verb-3emel-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3emel",
+            "arabic": "عمل",
+            "english": "he did",
+            "id": "verb-3emel-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3emlet",
+            "arabic": "عملت",
+            "english": "she did",
+            "id": "verb-3emel-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3melna",
+            "arabic": "عملنا",
+            "english": "we did",
+            "id": "verb-3emel-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3melto",
+            "arabic": "عملتو",
+            "english": "you did",
+            "id": "verb-3emel-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3emlo",
+            "arabic": "عملو",
+            "english": "they did",
+            "id": "verb-3emel-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "ba3mel",
+            "arabic": "بعمل",
+            "english": "I do",
+            "id": "verb-3emel-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bta3mel",
+            "arabic": "بتعمل",
+            "english": "you do",
+            "id": "verb-3emel-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bta3mle",
+            "arabic": "بتعملي",
+            "english": "you do",
+            "id": "verb-3emel-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "bya3mel",
+            "arabic": "بيعمل",
+            "english": "he does",
+            "id": "verb-3emel-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bta3mel",
+            "arabic": "بتعمل",
+            "english": "she does",
+            "id": "verb-3emel-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mna3mel",
+            "arabic": "منعمل",
+            "english": "we do",
+            "id": "verb-3emel-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bta3mlo",
+            "arabic": "بتعملو",
+            "english": "you do",
+            "id": "verb-3emel-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "bya3mlo",
+            "arabic": "بيعملو",
+            "english": "they do",
+            "id": "verb-3emel-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am ba3mel",
+            "arabic": "عم بعمل",
+            "english": "I'm doing",
+            "id": "verb-3emel-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bta3mel",
+            "arabic": "عم بتعمل",
+            "english": "you're doing",
+            "id": "verb-3emel-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bta3mle",
+            "arabic": "عم بتعملي",
+            "english": "you're doing",
+            "id": "verb-3emel-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am bya3mel",
+            "arabic": "عم بيعمل",
+            "english": "he's doing",
+            "id": "verb-3emel-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bta3mel",
+            "arabic": "عم بتعمل",
+            "english": "she's doing",
+            "id": "verb-3emel-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mna3mel",
+            "arabic": "عم منعمل",
+            "english": "we're doing",
+            "id": "verb-3emel-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bta3mlo",
+            "arabic": "عم بتعملو",
+            "english": "you're doing",
+            "id": "verb-3emel-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am bya3mlo",
+            "arabic": "عم بيعملو",
+            "english": "they're doing",
+            "id": "verb-3emel-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 a3mel",
+            "arabic": "رح اعمل",
+            "english": "I'll do",
+            "id": "verb-3emel-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 ta3mel",
+            "arabic": "رح تعمل",
+            "english": "you'll do",
+            "id": "verb-3emel-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 ta3mle",
+            "arabic": "رح تعملي",
+            "english": "you'll do",
+            "id": "verb-3emel-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 ya3mel",
+            "arabic": "رح يعمل",
+            "english": "he'll do",
+            "id": "verb-3emel-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 ta3mel",
+            "arabic": "رح تعمل",
+            "english": "she'll do",
+            "id": "verb-3emel-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 na3mel",
+            "arabic": "رح نعمل",
+            "english": "we'll do",
+            "id": "verb-3emel-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 ta3mlo",
+            "arabic": "رح تعملو",
+            "english": "you'll do",
+            "id": "verb-3emel-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 ya3mlo",
+            "arabic": "رح يعملو",
+            "english": "they'll do",
+            "id": "verb-3emel-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "3mel!",
+            "arabic": "اعمل!",
+            "english": "Do! (to a man)",
+            "id": "verb-3emel-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3mle!",
+            "arabic": "اعملي!",
+            "english": "Do! (to a woman)",
+            "id": "verb-3emel-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "3mlo!",
+            "arabic": "اعملو!",
+            "english": "Do! (to a group)",
+            "id": "verb-3emel-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shaf",
+      "icon": "👀",
+      "english": "to see",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "shefet",
+            "arabic": "شفت",
+            "english": "I saw",
+            "id": "verb-shaf-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "shefet",
+            "arabic": "شفت",
+            "english": "you saw",
+            "id": "verb-shaf-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "shefte",
+            "arabic": "شفتي",
+            "english": "you saw",
+            "id": "verb-shaf-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "shaf",
+            "arabic": "شاف",
+            "english": "he saw",
+            "id": "verb-shaf-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "shafet",
+            "arabic": "شافت",
+            "english": "she saw",
+            "id": "verb-shaf-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "shefna",
+            "arabic": "شفنا",
+            "english": "we saw",
+            "id": "verb-shaf-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "shefto",
+            "arabic": "شفتو",
+            "english": "you saw",
+            "id": "verb-shaf-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "shafo",
+            "arabic": "شافو",
+            "english": "they saw",
+            "id": "verb-shaf-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bshouf",
+            "arabic": "بشوف",
+            "english": "I see",
+            "id": "verb-shaf-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btshouf",
+            "arabic": "بتشوف",
+            "english": "you see",
+            "id": "verb-shaf-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btshoufe",
+            "arabic": "بتشوفي",
+            "english": "you see",
+            "id": "verb-shaf-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byshouf",
+            "arabic": "بيشوف",
+            "english": "he sees",
+            "id": "verb-shaf-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btshouf",
+            "arabic": "بتشوف",
+            "english": "she sees",
+            "id": "verb-shaf-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnshouf",
+            "arabic": "منشوف",
+            "english": "we see",
+            "id": "verb-shaf-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btshoufo",
+            "arabic": "بتشوفو",
+            "english": "you see",
+            "id": "verb-shaf-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byshoufo",
+            "arabic": "بيشوفو",
+            "english": "they see",
+            "id": "verb-shaf-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bshouf",
+            "arabic": "عم بشوف",
+            "english": "I'm seeing",
+            "id": "verb-shaf-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btshouf",
+            "arabic": "عم بتشوف",
+            "english": "you're seeing",
+            "id": "verb-shaf-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btshoufe",
+            "arabic": "عم بتشوفي",
+            "english": "you're seeing",
+            "id": "verb-shaf-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byshouf",
+            "arabic": "عم بيشوف",
+            "english": "he's seeing",
+            "id": "verb-shaf-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btshouf",
+            "arabic": "عم بتشوف",
+            "english": "she's seeing",
+            "id": "verb-shaf-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnshouf",
+            "arabic": "عم منشوف",
+            "english": "we're seeing",
+            "id": "verb-shaf-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btshoufo",
+            "arabic": "عم بتشوفو",
+            "english": "you're seeing",
+            "id": "verb-shaf-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byshoufo",
+            "arabic": "عم بيشوفو",
+            "english": "they're seeing",
+            "id": "verb-shaf-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 shouf",
+            "arabic": "رح شوف",
+            "english": "I'll see",
+            "id": "verb-shaf-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tshouf",
+            "arabic": "رح تشوف",
+            "english": "you'll see",
+            "id": "verb-shaf-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tshoufe",
+            "arabic": "رح تشوفي",
+            "english": "you'll see",
+            "id": "verb-shaf-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yshouf",
+            "arabic": "رح يشوف",
+            "english": "he'll see",
+            "id": "verb-shaf-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tshouf",
+            "arabic": "رح تشوف",
+            "english": "she'll see",
+            "id": "verb-shaf-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nshouf",
+            "arabic": "رح نشوف",
+            "english": "we'll see",
+            "id": "verb-shaf-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tshoufo",
+            "arabic": "رح تشوفو",
+            "english": "you'll see",
+            "id": "verb-shaf-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yshoufo",
+            "arabic": "رح يشوفو",
+            "english": "they'll see",
+            "id": "verb-shaf-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "shouf!",
+            "arabic": "شوف!",
+            "english": "See! (to a man)",
+            "id": "verb-shaf-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "shoufe!",
+            "arabic": "شوفي!",
+            "english": "See! (to a woman)",
+            "id": "verb-shaf-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "shoufo!",
+            "arabic": "شوفو!",
+            "english": "See! (to a group)",
+            "id": "verb-shaf-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3eref",
+      "icon": "💡",
+      "english": "to know",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "3reft",
+            "arabic": "عرفت",
+            "english": "I knew",
+            "id": "verb-3eref-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3reft",
+            "arabic": "عرفت",
+            "english": "you knew",
+            "id": "verb-3eref-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3refte",
+            "arabic": "عرفتي",
+            "english": "you knew",
+            "id": "verb-3eref-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3eref",
+            "arabic": "عرف",
+            "english": "he knew",
+            "id": "verb-3eref-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3erfet",
+            "arabic": "عرفت",
+            "english": "she knew",
+            "id": "verb-3eref-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3refna",
+            "arabic": "عرفنا",
+            "english": "we knew",
+            "id": "verb-3eref-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3refto",
+            "arabic": "عرفتو",
+            "english": "you knew",
+            "id": "verb-3eref-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3erfo",
+            "arabic": "عرفو",
+            "english": "they knew",
+            "id": "verb-3eref-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "ba3ref",
+            "arabic": "بعرف",
+            "english": "I know",
+            "id": "verb-3eref-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bta3ref",
+            "arabic": "بتعرف",
+            "english": "you know",
+            "id": "verb-3eref-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bta3rfe",
+            "arabic": "بتعرفي",
+            "english": "you know",
+            "id": "verb-3eref-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "bya3ref",
+            "arabic": "بيعرف",
+            "english": "he knows",
+            "id": "verb-3eref-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bta3ref",
+            "arabic": "بتعرف",
+            "english": "she knows",
+            "id": "verb-3eref-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mna3ref",
+            "arabic": "منعرف",
+            "english": "we know",
+            "id": "verb-3eref-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bta3rfo",
+            "arabic": "بتعرفو",
+            "english": "you know",
+            "id": "verb-3eref-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "bya3rfo",
+            "arabic": "بيعرفو",
+            "english": "they know",
+            "id": "verb-3eref-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am ba3ref",
+            "arabic": "عم بعرف",
+            "english": "I'm knowing",
+            "id": "verb-3eref-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bta3ref",
+            "arabic": "عم بتعرف",
+            "english": "you're knowing",
+            "id": "verb-3eref-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bta3rfe",
+            "arabic": "عم بتعرفي",
+            "english": "you're knowing",
+            "id": "verb-3eref-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am bya3ref",
+            "arabic": "عم بيعرف",
+            "english": "he's knowing",
+            "id": "verb-3eref-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bta3ref",
+            "arabic": "عم بتعرف",
+            "english": "she's knowing",
+            "id": "verb-3eref-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mna3ref",
+            "arabic": "عم منعرف",
+            "english": "we're knowing",
+            "id": "verb-3eref-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bta3rfo",
+            "arabic": "عم بتعرفو",
+            "english": "you're knowing",
+            "id": "verb-3eref-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am bya3rfo",
+            "arabic": "عم بيعرفو",
+            "english": "they're knowing",
+            "id": "verb-3eref-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 a3ref",
+            "arabic": "رح اعرف",
+            "english": "I'll know",
+            "id": "verb-3eref-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 ta3ref",
+            "arabic": "رح تعرف",
+            "english": "you'll know",
+            "id": "verb-3eref-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 ta3rfe",
+            "arabic": "رح تعرفي",
+            "english": "you'll know",
+            "id": "verb-3eref-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 ya3ref",
+            "arabic": "رح يعرف",
+            "english": "he'll know",
+            "id": "verb-3eref-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 ta3ref",
+            "arabic": "رح تعرف",
+            "english": "she'll know",
+            "id": "verb-3eref-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 na3ref",
+            "arabic": "رح نعرف",
+            "english": "we'll know",
+            "id": "verb-3eref-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 ta3rfo",
+            "arabic": "رح تعرفو",
+            "english": "you'll know",
+            "id": "verb-3eref-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 ya3rfo",
+            "arabic": "رح يعرفو",
+            "english": "they'll know",
+            "id": "verb-3eref-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "3ref!",
+            "arabic": "اعرف!",
+            "english": "Know! (to a man)",
+            "id": "verb-3eref-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3rfe!",
+            "arabic": "اعرفي!",
+            "english": "Know! (to a woman)",
+            "id": "verb-3eref-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "3rfo!",
+            "arabic": "اعرفو!",
+            "english": "Know! (to a group)",
+            "id": "verb-3eref-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nem",
+      "icon": "😴",
+      "english": "to sleep",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "nemt",
+            "arabic": "نمت",
+            "english": "I slept",
+            "id": "verb-nem-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "nemt",
+            "arabic": "نمت",
+            "english": "you slept",
+            "id": "verb-nem-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "nemte",
+            "arabic": "نمتي",
+            "english": "you slept",
+            "id": "verb-nem-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "nem",
+            "arabic": "نام",
+            "english": "he slept",
+            "id": "verb-nem-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "nemet",
+            "arabic": "نامت",
+            "english": "she slept",
+            "id": "verb-nem-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "nemna",
+            "arabic": "نمنا",
+            "english": "we slept",
+            "id": "verb-nem-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "nemto",
+            "arabic": "نمتو",
+            "english": "you slept",
+            "id": "verb-nem-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "nemo",
+            "arabic": "نامو",
+            "english": "they slept",
+            "id": "verb-nem-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bnem",
+            "arabic": "بنام",
+            "english": "I sleep",
+            "id": "verb-nem-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btnem",
+            "arabic": "بتنام",
+            "english": "you sleep",
+            "id": "verb-nem-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btneme",
+            "arabic": "بتنامي",
+            "english": "you sleep",
+            "id": "verb-nem-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "bynem",
+            "arabic": "بينام",
+            "english": "he sleeps",
+            "id": "verb-nem-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btnem",
+            "arabic": "بتنام",
+            "english": "she sleeps",
+            "id": "verb-nem-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnnem",
+            "arabic": "مننام",
+            "english": "we sleep",
+            "id": "verb-nem-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btnemo",
+            "arabic": "بتنامو",
+            "english": "you sleep",
+            "id": "verb-nem-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "bynemo",
+            "arabic": "بينامو",
+            "english": "they sleep",
+            "id": "verb-nem-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bnem",
+            "arabic": "عم بنام",
+            "english": "I'm sleeping",
+            "id": "verb-nem-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btnem",
+            "arabic": "عم بتنام",
+            "english": "you're sleeping",
+            "id": "verb-nem-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btneme",
+            "arabic": "عم بتنامي",
+            "english": "you're sleeping",
+            "id": "verb-nem-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am bynem",
+            "arabic": "عم بينام",
+            "english": "he's sleeping",
+            "id": "verb-nem-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btnem",
+            "arabic": "عم بتنام",
+            "english": "she's sleeping",
+            "id": "verb-nem-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnnem",
+            "arabic": "عم مننام",
+            "english": "we're sleeping",
+            "id": "verb-nem-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btnemo",
+            "arabic": "عم بتنامو",
+            "english": "you're sleeping",
+            "id": "verb-nem-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am bynemo",
+            "arabic": "عم بينامو",
+            "english": "they're sleeping",
+            "id": "verb-nem-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 nem",
+            "arabic": "رح نام",
+            "english": "I'll sleep",
+            "id": "verb-nem-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tnem",
+            "arabic": "رح تنام",
+            "english": "you'll sleep",
+            "id": "verb-nem-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tneme",
+            "arabic": "رح تنامي",
+            "english": "you'll sleep",
+            "id": "verb-nem-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 ynem",
+            "arabic": "رح ينام",
+            "english": "he'll sleep",
+            "id": "verb-nem-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tnem",
+            "arabic": "رح تنام",
+            "english": "she'll sleep",
+            "id": "verb-nem-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nnem",
+            "arabic": "رح ننام",
+            "english": "we'll sleep",
+            "id": "verb-nem-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tnemo",
+            "arabic": "رح تنامو",
+            "english": "you'll sleep",
+            "id": "verb-nem-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 ynemo",
+            "arabic": "رح ينامو",
+            "english": "they'll sleep",
+            "id": "verb-nem-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "nem!",
+            "arabic": "نام!",
+            "english": "Sleep! (to a man)",
+            "id": "verb-nem-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "neme!",
+            "arabic": "نامي!",
+            "english": "Sleep! (to a woman)",
+            "id": "verb-nem-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "nemo!",
+            "arabic": "نامو!",
+            "english": "Sleep! (to a group)",
+            "id": "verb-nem-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "akhad",
+      "icon": "✋",
+      "english": "to take",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "akhadt",
+            "arabic": "أخدت",
+            "english": "I took",
+            "id": "verb-akhad-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "akhadt",
+            "arabic": "أخدت",
+            "english": "you took",
+            "id": "verb-akhad-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "akhadte",
+            "arabic": "أخدتي",
+            "english": "you took",
+            "id": "verb-akhad-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "akhad",
+            "arabic": "أخد",
+            "english": "he took",
+            "id": "verb-akhad-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "akhadet",
+            "arabic": "أخدت",
+            "english": "she took",
+            "id": "verb-akhad-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "akhadna",
+            "arabic": "أخدنا",
+            "english": "we took",
+            "id": "verb-akhad-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "akhadto",
+            "arabic": "أخدتو",
+            "english": "you took",
+            "id": "verb-akhad-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "akhado",
+            "arabic": "أخدو",
+            "english": "they took",
+            "id": "verb-akhad-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bekhod",
+            "arabic": "باخد",
+            "english": "I take",
+            "id": "verb-akhad-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btekhod",
+            "arabic": "بتاخد",
+            "english": "you take",
+            "id": "verb-akhad-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btakhde",
+            "arabic": "بتاخدي",
+            "english": "you take",
+            "id": "verb-akhad-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byekhod",
+            "arabic": "بياخد",
+            "english": "he takes",
+            "id": "verb-akhad-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btekhod",
+            "arabic": "بتاخد",
+            "english": "she takes",
+            "id": "verb-akhad-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnekhod",
+            "arabic": "مناخد",
+            "english": "we take",
+            "id": "verb-akhad-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btakhdo",
+            "arabic": "بتاخدو",
+            "english": "you take",
+            "id": "verb-akhad-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byakhdo",
+            "arabic": "بياخدو",
+            "english": "they take",
+            "id": "verb-akhad-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bekhod",
+            "arabic": "عم باخد",
+            "english": "I'm taking",
+            "id": "verb-akhad-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btekhod",
+            "arabic": "عم بتاخد",
+            "english": "you're taking",
+            "id": "verb-akhad-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btakhde",
+            "arabic": "عم بتاخدي",
+            "english": "you're taking",
+            "id": "verb-akhad-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byekhod",
+            "arabic": "عم بياخد",
+            "english": "he's taking",
+            "id": "verb-akhad-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btekhod",
+            "arabic": "عم بتاخد",
+            "english": "she's taking",
+            "id": "verb-akhad-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnekhod",
+            "arabic": "عم مناخد",
+            "english": "we're taking",
+            "id": "verb-akhad-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btakhdo",
+            "arabic": "عم بتاخدو",
+            "english": "you're taking",
+            "id": "verb-akhad-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byakhdo",
+            "arabic": "عم بياخدو",
+            "english": "they're taking",
+            "id": "verb-akhad-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 ekhod",
+            "arabic": "رح اخد",
+            "english": "I'll take",
+            "id": "verb-akhad-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tekhod",
+            "arabic": "رح تاخد",
+            "english": "you'll take",
+            "id": "verb-akhad-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 takhde",
+            "arabic": "رح تاخدي",
+            "english": "you'll take",
+            "id": "verb-akhad-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yekhod",
+            "arabic": "رح ياخد",
+            "english": "he'll take",
+            "id": "verb-akhad-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tekhod",
+            "arabic": "رح تاخد",
+            "english": "she'll take",
+            "id": "verb-akhad-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nekhod",
+            "arabic": "رح ناخد",
+            "english": "we'll take",
+            "id": "verb-akhad-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 takhdo",
+            "arabic": "رح تاخدو",
+            "english": "you'll take",
+            "id": "verb-akhad-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yakhdo",
+            "arabic": "رح ياخدو",
+            "english": "they'll take",
+            "id": "verb-akhad-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "khod!",
+            "arabic": "خود!",
+            "english": "Take! (to a man)",
+            "id": "verb-akhad-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "khede!",
+            "arabic": "خدي!",
+            "english": "Take! (to a woman)",
+            "id": "verb-akhad-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "khedo!",
+            "arabic": "خدو!",
+            "english": "Take! (to a group)",
+            "id": "verb-akhad-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7eke",
+      "icon": "🗣️",
+      "english": "to speak",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "7kit",
+            "arabic": "حكيت",
+            "english": "I spoke",
+            "id": "verb-7eke-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "7kit",
+            "arabic": "حكيت",
+            "english": "you spoke",
+            "id": "verb-7eke-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "7kite",
+            "arabic": "حكيتي",
+            "english": "you spoke",
+            "id": "verb-7eke-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "7eke",
+            "arabic": "حكي",
+            "english": "he spoke",
+            "id": "verb-7eke-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "7ekyet",
+            "arabic": "حكيت",
+            "english": "she spoke",
+            "id": "verb-7eke-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "7kina",
+            "arabic": "حكينا",
+            "english": "we spoke",
+            "id": "verb-7eke-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "7kito",
+            "arabic": "حكيتو",
+            "english": "you spoke",
+            "id": "verb-7eke-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "7ekyo",
+            "arabic": "حكيو",
+            "english": "they spoke",
+            "id": "verb-7eke-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "be7ke",
+            "arabic": "بحكي",
+            "english": "I speak",
+            "id": "verb-7eke-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bte7ke",
+            "arabic": "بتحكي",
+            "english": "you speak",
+            "id": "verb-7eke-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bte7ke",
+            "arabic": "بتحكي",
+            "english": "you speak",
+            "id": "verb-7eke-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "bye7ke",
+            "arabic": "بيحكي",
+            "english": "he speaks",
+            "id": "verb-7eke-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bte7ke",
+            "arabic": "بتحكي",
+            "english": "she speaks",
+            "id": "verb-7eke-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mne7ke",
+            "arabic": "منحكي",
+            "english": "we speak",
+            "id": "verb-7eke-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bte7ko",
+            "arabic": "بتحكو",
+            "english": "you speak",
+            "id": "verb-7eke-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "bye7ko",
+            "arabic": "بيحكو",
+            "english": "they speak",
+            "id": "verb-7eke-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am be7ke",
+            "arabic": "عم بحكي",
+            "english": "I'm speaking",
+            "id": "verb-7eke-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bte7ke",
+            "arabic": "عم بتحكي",
+            "english": "you're speaking",
+            "id": "verb-7eke-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bte7ke",
+            "arabic": "عم بتحكي",
+            "english": "you're speaking",
+            "id": "verb-7eke-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am bye7ke",
+            "arabic": "عم بيحكي",
+            "english": "he's speaking",
+            "id": "verb-7eke-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bte7ke",
+            "arabic": "عم بتحكي",
+            "english": "she's speaking",
+            "id": "verb-7eke-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mne7ke",
+            "arabic": "عم منحكي",
+            "english": "we're speaking",
+            "id": "verb-7eke-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bte7ko",
+            "arabic": "عم بتحكو",
+            "english": "you're speaking",
+            "id": "verb-7eke-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am bye7ko",
+            "arabic": "عم بيحكو",
+            "english": "they're speaking",
+            "id": "verb-7eke-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 e7ke",
+            "arabic": "رح احكي",
+            "english": "I'll speak",
+            "id": "verb-7eke-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 te7ke",
+            "arabic": "رح تحكي",
+            "english": "you'll speak",
+            "id": "verb-7eke-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 te7ke",
+            "arabic": "رح تحكي",
+            "english": "you'll speak",
+            "id": "verb-7eke-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 ye7ke",
+            "arabic": "رح يحكي",
+            "english": "he'll speak",
+            "id": "verb-7eke-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 te7ke",
+            "arabic": "رح تحكي",
+            "english": "she'll speak",
+            "id": "verb-7eke-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 ne7ke",
+            "arabic": "رح نحكي",
+            "english": "we'll speak",
+            "id": "verb-7eke-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 te7ko",
+            "arabic": "رح تحكو",
+            "english": "you'll speak",
+            "id": "verb-7eke-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 ye7ko",
+            "arabic": "رح يحكو",
+            "english": "they'll speak",
+            "id": "verb-7eke-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "e7ke!",
+            "arabic": "احكي!",
+            "english": "Speak! (to a man)",
+            "id": "verb-7eke-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "e7ke!",
+            "arabic": "احكي!",
+            "english": "Speak! (to a woman)",
+            "id": "verb-7eke-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "e7ko!",
+            "arabic": "احكو!",
+            "english": "Speak! (to a group)",
+            "id": "verb-7eke-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fehem",
+      "icon": "🧠",
+      "english": "to understand",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "fhemt",
+            "arabic": "فهمت",
+            "english": "I understood",
+            "id": "verb-fehem-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "fhemt",
+            "arabic": "فهمت",
+            "english": "you understood",
+            "id": "verb-fehem-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "fhemte",
+            "arabic": "فهمتي",
+            "english": "you understood",
+            "id": "verb-fehem-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "fehem",
+            "arabic": "فهم",
+            "english": "he understood",
+            "id": "verb-fehem-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "fehmet",
+            "arabic": "فهمت",
+            "english": "she understood",
+            "id": "verb-fehem-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "fhemna",
+            "arabic": "فهمنا",
+            "english": "we understood",
+            "id": "verb-fehem-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "fhemto",
+            "arabic": "فهمتو",
+            "english": "you understood",
+            "id": "verb-fehem-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "fehmo",
+            "arabic": "فهمو",
+            "english": "they understood",
+            "id": "verb-fehem-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "befham",
+            "arabic": "بفهم",
+            "english": "I understand",
+            "id": "verb-fehem-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btefham",
+            "arabic": "بتفهم",
+            "english": "you understand",
+            "id": "verb-fehem-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btefhame",
+            "arabic": "بتفهمي",
+            "english": "you understand",
+            "id": "verb-fehem-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byefham",
+            "arabic": "بيفهم",
+            "english": "he understands",
+            "id": "verb-fehem-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btefham",
+            "arabic": "بتفهم",
+            "english": "she understands",
+            "id": "verb-fehem-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnefham",
+            "arabic": "منفهم",
+            "english": "we understand",
+            "id": "verb-fehem-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btefhamo",
+            "arabic": "بتفهمو",
+            "english": "you understand",
+            "id": "verb-fehem-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byefhamo",
+            "arabic": "بيفهمو",
+            "english": "they understand",
+            "id": "verb-fehem-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am befham",
+            "arabic": "عم بفهم",
+            "english": "I'm understanding",
+            "id": "verb-fehem-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btefham",
+            "arabic": "عم بتفهم",
+            "english": "you're understanding",
+            "id": "verb-fehem-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btefhame",
+            "arabic": "عم بتفهمي",
+            "english": "you're understanding",
+            "id": "verb-fehem-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byefham",
+            "arabic": "عم بيفهم",
+            "english": "he's understanding",
+            "id": "verb-fehem-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btefham",
+            "arabic": "عم بتفهم",
+            "english": "she's understanding",
+            "id": "verb-fehem-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnefham",
+            "arabic": "عم منفهم",
+            "english": "we're understanding",
+            "id": "verb-fehem-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btefhamo",
+            "arabic": "عم بتفهمو",
+            "english": "you're understanding",
+            "id": "verb-fehem-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byefhamo",
+            "arabic": "عم بيفهمو",
+            "english": "they're understanding",
+            "id": "verb-fehem-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 efham",
+            "arabic": "رح افهم",
+            "english": "I'll understand",
+            "id": "verb-fehem-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tefham",
+            "arabic": "رح تفهم",
+            "english": "you'll understand",
+            "id": "verb-fehem-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tefhame",
+            "arabic": "رح تفهمي",
+            "english": "you'll understand",
+            "id": "verb-fehem-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yefham",
+            "arabic": "رح يفهم",
+            "english": "he'll understand",
+            "id": "verb-fehem-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tefham",
+            "arabic": "رح تفهم",
+            "english": "she'll understand",
+            "id": "verb-fehem-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nefham",
+            "arabic": "رح نفهم",
+            "english": "we'll understand",
+            "id": "verb-fehem-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tefhamo",
+            "arabic": "رح تفهمو",
+            "english": "you'll understand",
+            "id": "verb-fehem-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yefhamo",
+            "arabic": "رح يفهمو",
+            "english": "they'll understand",
+            "id": "verb-fehem-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "efham!",
+            "arabic": "افهم!",
+            "english": "Understand! (to a man)",
+            "id": "verb-fehem-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "efhame!",
+            "arabic": "افهمي!",
+            "english": "Understand! (to a woman)",
+            "id": "verb-fehem-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "efhamo!",
+            "arabic": "افهمو!",
+            "english": "Understand! (to a group)",
+            "id": "verb-fehem-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fata7",
+      "icon": "🚪",
+      "english": "to open",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "fata7t",
+            "arabic": "فتحت",
+            "english": "I opened",
+            "id": "verb-fata7-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "fata7t",
+            "arabic": "فتحت",
+            "english": "you opened",
+            "id": "verb-fata7-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "fata7te",
+            "arabic": "فتحتي",
+            "english": "you opened",
+            "id": "verb-fata7-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "fata7",
+            "arabic": "فتح",
+            "english": "he opened",
+            "id": "verb-fata7-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "fat7et",
+            "arabic": "فتحت",
+            "english": "she opened",
+            "id": "verb-fata7-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "fata7na",
+            "arabic": "فتحنا",
+            "english": "we opened",
+            "id": "verb-fata7-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "fata7to",
+            "arabic": "فتحتو",
+            "english": "you opened",
+            "id": "verb-fata7-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "fat7o",
+            "arabic": "فتحو",
+            "english": "they opened",
+            "id": "verb-fata7-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "befta7",
+            "arabic": "بفتح",
+            "english": "I open",
+            "id": "verb-fata7-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btefta7",
+            "arabic": "بتفتح",
+            "english": "you open",
+            "id": "verb-fata7-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btefta7e",
+            "arabic": "بتفتحي",
+            "english": "you open",
+            "id": "verb-fata7-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byefta7",
+            "arabic": "بيفتح",
+            "english": "he opens",
+            "id": "verb-fata7-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btefta7",
+            "arabic": "بتفتح",
+            "english": "she opens",
+            "id": "verb-fata7-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnefta7",
+            "arabic": "منفتح",
+            "english": "we open",
+            "id": "verb-fata7-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btefta7o",
+            "arabic": "بتفتحو",
+            "english": "you open",
+            "id": "verb-fata7-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byefta7o",
+            "arabic": "بيفتحو",
+            "english": "they open",
+            "id": "verb-fata7-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am befta7",
+            "arabic": "عم بفتح",
+            "english": "I'm opening",
+            "id": "verb-fata7-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btefta7",
+            "arabic": "عم بتفتح",
+            "english": "you're opening",
+            "id": "verb-fata7-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btefta7e",
+            "arabic": "عم بتفتحي",
+            "english": "you're opening",
+            "id": "verb-fata7-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byefta7",
+            "arabic": "عم بيفتح",
+            "english": "he's opening",
+            "id": "verb-fata7-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btefta7",
+            "arabic": "عم بتفتح",
+            "english": "she's opening",
+            "id": "verb-fata7-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnefta7",
+            "arabic": "عم منفتح",
+            "english": "we're opening",
+            "id": "verb-fata7-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btefta7o",
+            "arabic": "عم بتفتحو",
+            "english": "you're opening",
+            "id": "verb-fata7-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byefta7o",
+            "arabic": "عم بيفتحو",
+            "english": "they're opening",
+            "id": "verb-fata7-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 efta7",
+            "arabic": "رح افتح",
+            "english": "I'll open",
+            "id": "verb-fata7-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tefta7",
+            "arabic": "رح تفتح",
+            "english": "you'll open",
+            "id": "verb-fata7-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tefta7e",
+            "arabic": "رح تفتحي",
+            "english": "you'll open",
+            "id": "verb-fata7-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yefta7",
+            "arabic": "رح يفتح",
+            "english": "he'll open",
+            "id": "verb-fata7-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tefta7",
+            "arabic": "رح تفتح",
+            "english": "she'll open",
+            "id": "verb-fata7-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nefta7",
+            "arabic": "رح نفتح",
+            "english": "we'll open",
+            "id": "verb-fata7-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tefta7o",
+            "arabic": "رح تفتحو",
+            "english": "you'll open",
+            "id": "verb-fata7-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yefta7o",
+            "arabic": "رح يفتحو",
+            "english": "they'll open",
+            "id": "verb-fata7-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "efta7!",
+            "arabic": "افتح!",
+            "english": "Open! (to a man)",
+            "id": "verb-fata7-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "efta7e!",
+            "arabic": "افتحي!",
+            "english": "Open! (to a woman)",
+            "id": "verb-fata7-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "efta7o!",
+            "arabic": "افتحو!",
+            "english": "Open! (to a group)",
+            "id": "verb-fata7-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "le3eb",
+      "icon": "⚽",
+      "english": "to play",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "l3ebt",
+            "arabic": "لعبت",
+            "english": "I played",
+            "id": "verb-le3eb-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "l3ebt",
+            "arabic": "لعبت",
+            "english": "you played",
+            "id": "verb-le3eb-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "l3ebte",
+            "arabic": "لعبتي",
+            "english": "you played",
+            "id": "verb-le3eb-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "le3eb",
+            "arabic": "لعب",
+            "english": "he played",
+            "id": "verb-le3eb-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "le3bet",
+            "arabic": "لعبت",
+            "english": "she played",
+            "id": "verb-le3eb-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "l3ebna",
+            "arabic": "لعبنا",
+            "english": "we played",
+            "id": "verb-le3eb-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "l3ebto",
+            "arabic": "لعبتو",
+            "english": "you played",
+            "id": "verb-le3eb-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "le3bo",
+            "arabic": "لعبو",
+            "english": "they played",
+            "id": "verb-le3eb-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "bel3ab",
+            "arabic": "بلعب",
+            "english": "I play",
+            "id": "verb-le3eb-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "btel3ab",
+            "arabic": "بتلعب",
+            "english": "you play",
+            "id": "verb-le3eb-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "btel3abe",
+            "arabic": "بتلعبي",
+            "english": "you play",
+            "id": "verb-le3eb-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byel3ab",
+            "arabic": "بيلعب",
+            "english": "he plays",
+            "id": "verb-le3eb-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "btel3ab",
+            "arabic": "بتلعب",
+            "english": "she plays",
+            "id": "verb-le3eb-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mnel3ab",
+            "arabic": "منلعب",
+            "english": "we play",
+            "id": "verb-le3eb-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "btel3abo",
+            "arabic": "بتلعبو",
+            "english": "you play",
+            "id": "verb-le3eb-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byel3abo",
+            "arabic": "بيلعبو",
+            "english": "they play",
+            "id": "verb-le3eb-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am bel3ab",
+            "arabic": "عم بلعب",
+            "english": "I'm playing",
+            "id": "verb-le3eb-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am btel3ab",
+            "arabic": "عم بتلعب",
+            "english": "you're playing",
+            "id": "verb-le3eb-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am btel3abe",
+            "arabic": "عم بتلعبي",
+            "english": "you're playing",
+            "id": "verb-le3eb-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byel3ab",
+            "arabic": "عم بيلعب",
+            "english": "he's playing",
+            "id": "verb-le3eb-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am btel3ab",
+            "arabic": "عم بتلعب",
+            "english": "she's playing",
+            "id": "verb-le3eb-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mnel3ab",
+            "arabic": "عم منلعب",
+            "english": "we're playing",
+            "id": "verb-le3eb-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am btel3abo",
+            "arabic": "عم بتلعبو",
+            "english": "you're playing",
+            "id": "verb-le3eb-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byel3abo",
+            "arabic": "عم بيلعبو",
+            "english": "they're playing",
+            "id": "verb-le3eb-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 el3ab",
+            "arabic": "رح العب",
+            "english": "I'll play",
+            "id": "verb-le3eb-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 tel3ab",
+            "arabic": "رح تلعب",
+            "english": "you'll play",
+            "id": "verb-le3eb-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 tel3abe",
+            "arabic": "رح تلعبي",
+            "english": "you'll play",
+            "id": "verb-le3eb-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yel3ab",
+            "arabic": "رح يلعب",
+            "english": "he'll play",
+            "id": "verb-le3eb-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 tel3ab",
+            "arabic": "رح تلعب",
+            "english": "she'll play",
+            "id": "verb-le3eb-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 nel3ab",
+            "arabic": "رح نلعب",
+            "english": "we'll play",
+            "id": "verb-le3eb-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 tel3abo",
+            "arabic": "رح تلعبو",
+            "english": "you'll play",
+            "id": "verb-le3eb-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yel3abo",
+            "arabic": "رح يلعبو",
+            "english": "they'll play",
+            "id": "verb-le3eb-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "el3ab!",
+            "arabic": "العب!",
+            "english": "Play! (to a man)",
+            "id": "verb-le3eb-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "el3abe!",
+            "arabic": "العبي!",
+            "english": "Play! (to a woman)",
+            "id": "verb-le3eb-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "el3abo!",
+            "arabic": "العبو!",
+            "english": "Play! (to a group)",
+            "id": "verb-le3eb-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7abb",
+      "icon": "❤️",
+      "english": "to love",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "7abbeit",
+            "arabic": "حبّيت",
+            "english": "I loved",
+            "id": "verb-7abb-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "7abbeit",
+            "arabic": "حبّيت",
+            "english": "you loved",
+            "id": "verb-7abb-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "7abbeite",
+            "arabic": "حبّيتي",
+            "english": "you loved",
+            "id": "verb-7abb-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "7abb",
+            "arabic": "حبّ",
+            "english": "he loved",
+            "id": "verb-7abb-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "7abbet",
+            "arabic": "حبّت",
+            "english": "she loved",
+            "id": "verb-7abb-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "7abbeina",
+            "arabic": "حبّينا",
+            "english": "we loved",
+            "id": "verb-7abb-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "7abbeito",
+            "arabic": "حبّيتو",
+            "english": "you loved",
+            "id": "verb-7abb-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "7abbo",
+            "arabic": "حبّو",
+            "english": "they loved",
+            "id": "verb-7abb-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "b7ebb",
+            "arabic": "بحبّ",
+            "english": "I love",
+            "id": "verb-7abb-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bt7ebb",
+            "arabic": "بتحبّ",
+            "english": "you love",
+            "id": "verb-7abb-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bt7ebbe",
+            "arabic": "بتحبّي",
+            "english": "you love",
+            "id": "verb-7abb-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "by7ebb",
+            "arabic": "بيحبّ",
+            "english": "he loves",
+            "id": "verb-7abb-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bt7ebb",
+            "arabic": "بتحبّ",
+            "english": "she loves",
+            "id": "verb-7abb-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mn7ebb",
+            "arabic": "منحبّ",
+            "english": "we love",
+            "id": "verb-7abb-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bt7ebbo",
+            "arabic": "بتحبّو",
+            "english": "you love",
+            "id": "verb-7abb-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "by7ebbo",
+            "arabic": "بيحبّو",
+            "english": "they love",
+            "id": "verb-7abb-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am b7ebb",
+            "arabic": "عم بحبّ",
+            "english": "I'm loving",
+            "id": "verb-7abb-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bt7ebb",
+            "arabic": "عم بتحبّ",
+            "english": "you're loving",
+            "id": "verb-7abb-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bt7ebbe",
+            "arabic": "عم بتحبّي",
+            "english": "you're loving",
+            "id": "verb-7abb-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am by7ebb",
+            "arabic": "عم بيحبّ",
+            "english": "he's loving",
+            "id": "verb-7abb-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bt7ebb",
+            "arabic": "عم بتحبّ",
+            "english": "she's loving",
+            "id": "verb-7abb-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mn7ebb",
+            "arabic": "عم منحبّ",
+            "english": "we're loving",
+            "id": "verb-7abb-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bt7ebbo",
+            "arabic": "عم بتحبّو",
+            "english": "you're loving",
+            "id": "verb-7abb-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am by7ebbo",
+            "arabic": "عم بيحبّو",
+            "english": "they're loving",
+            "id": "verb-7abb-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 7ebb",
+            "arabic": "رح حبّ",
+            "english": "I'll love",
+            "id": "verb-7abb-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 t7ebb",
+            "arabic": "رح تحبّ",
+            "english": "you'll love",
+            "id": "verb-7abb-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 t7ebbe",
+            "arabic": "رح تحبّي",
+            "english": "you'll love",
+            "id": "verb-7abb-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 y7ebb",
+            "arabic": "رح يحبّ",
+            "english": "he'll love",
+            "id": "verb-7abb-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 t7ebb",
+            "arabic": "رح تحبّ",
+            "english": "she'll love",
+            "id": "verb-7abb-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 n7ebb",
+            "arabic": "رح نحبّ",
+            "english": "we'll love",
+            "id": "verb-7abb-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 t7ebbo",
+            "arabic": "رح تحبّو",
+            "english": "you'll love",
+            "id": "verb-7abb-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 y7ebbo",
+            "arabic": "رح يحبّو",
+            "english": "they'll love",
+            "id": "verb-7abb-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "7ebb!",
+            "arabic": "حبّ!",
+            "english": "Love! (to a man)",
+            "id": "verb-7abb-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "7ebbe!",
+            "arabic": "حبّي!",
+            "english": "Love! (to a woman)",
+            "id": "verb-7abb-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "7ebbo!",
+            "arabic": "حبّو!",
+            "english": "Love! (to a group)",
+            "id": "verb-7abb-command-ento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eshtaghal",
+      "icon": "💼",
+      "english": "to work",
+      "forms": {
+        "past": [
+          {
+            "person": "ana",
+            "latin": "shtaghalt",
+            "arabic": "اشتغلت",
+            "english": "I worked",
+            "id": "verb-eshtaghal-past-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "shtaghalt",
+            "arabic": "اشتغلت",
+            "english": "you worked",
+            "id": "verb-eshtaghal-past-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "shtaghalte",
+            "arabic": "اشتغلتي",
+            "english": "you worked",
+            "id": "verb-eshtaghal-past-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "eshtaghal",
+            "arabic": "اشتغل",
+            "english": "he worked",
+            "id": "verb-eshtaghal-past-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "eshtaghalet",
+            "arabic": "اشتغلت",
+            "english": "she worked",
+            "id": "verb-eshtaghal-past-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "shtaghalna",
+            "arabic": "اشتغلنا",
+            "english": "we worked",
+            "id": "verb-eshtaghal-past-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "shtaghalto",
+            "arabic": "اشتغلتو",
+            "english": "you worked",
+            "id": "verb-eshtaghal-past-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "eshtaghalo",
+            "arabic": "اشتغلو",
+            "english": "they worked",
+            "id": "verb-eshtaghal-past-hinne"
+          }
+        ],
+        "present": [
+          {
+            "person": "ana",
+            "latin": "beshteghel",
+            "arabic": "بشتغل",
+            "english": "I work",
+            "id": "verb-eshtaghal-present-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "bteshteghel",
+            "arabic": "بتشتغل",
+            "english": "you work",
+            "id": "verb-eshtaghal-present-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "bteshteghle",
+            "arabic": "بتشتغلي",
+            "english": "you work",
+            "id": "verb-eshtaghal-present-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "byeshteghel",
+            "arabic": "بيشتغل",
+            "english": "he works",
+            "id": "verb-eshtaghal-present-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "bteshteghel",
+            "arabic": "بتشتغل",
+            "english": "she works",
+            "id": "verb-eshtaghal-present-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "mneshteghel",
+            "arabic": "منشتغل",
+            "english": "we work",
+            "id": "verb-eshtaghal-present-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "bteshteghlo",
+            "arabic": "بتشتغلو",
+            "english": "you work",
+            "id": "verb-eshtaghal-present-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "byeshteghlo",
+            "arabic": "بيشتغلو",
+            "english": "they work",
+            "id": "verb-eshtaghal-present-hinne"
+          }
+        ],
+        "now": [
+          {
+            "person": "ana",
+            "latin": "3am beshteghel",
+            "arabic": "عم بشتغل",
+            "english": "I'm working",
+            "id": "verb-eshtaghal-now-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "3am bteshteghel",
+            "arabic": "عم بتشتغل",
+            "english": "you're working",
+            "id": "verb-eshtaghal-now-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "3am bteshteghle",
+            "arabic": "عم بتشتغلي",
+            "english": "you're working",
+            "id": "verb-eshtaghal-now-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "3am byeshteghel",
+            "arabic": "عم بيشتغل",
+            "english": "he's working",
+            "id": "verb-eshtaghal-now-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "3am bteshteghel",
+            "arabic": "عم بتشتغل",
+            "english": "she's working",
+            "id": "verb-eshtaghal-now-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "3am mneshteghel",
+            "arabic": "عم منشتغل",
+            "english": "we're working",
+            "id": "verb-eshtaghal-now-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "3am bteshteghlo",
+            "arabic": "عم بتشتغلو",
+            "english": "you're working",
+            "id": "verb-eshtaghal-now-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "3am byeshteghlo",
+            "arabic": "عم بيشتغلو",
+            "english": "they're working",
+            "id": "verb-eshtaghal-now-hinne"
+          }
+        ],
+        "future": [
+          {
+            "person": "ana",
+            "latin": "ra7 eshteghel",
+            "arabic": "رح اشتغل",
+            "english": "I'll work",
+            "id": "verb-eshtaghal-future-ana"
+          },
+          {
+            "person": "enta",
+            "latin": "ra7 teshteghel",
+            "arabic": "رح تشتغل",
+            "english": "you'll work",
+            "id": "verb-eshtaghal-future-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "ra7 teshteghle",
+            "arabic": "رح تشتغلي",
+            "english": "you'll work",
+            "id": "verb-eshtaghal-future-ente"
+          },
+          {
+            "person": "huwwe",
+            "latin": "ra7 yeshteghel",
+            "arabic": "رح يشتغل",
+            "english": "he'll work",
+            "id": "verb-eshtaghal-future-huwwe"
+          },
+          {
+            "person": "hiyye",
+            "latin": "ra7 teshteghel",
+            "arabic": "رح تشتغل",
+            "english": "she'll work",
+            "id": "verb-eshtaghal-future-hiyye"
+          },
+          {
+            "person": "ne7na",
+            "latin": "ra7 neshteghel",
+            "arabic": "رح نشتغل",
+            "english": "we'll work",
+            "id": "verb-eshtaghal-future-ne7na"
+          },
+          {
+            "person": "ento",
+            "latin": "ra7 teshteghlo",
+            "arabic": "رح تشتغلو",
+            "english": "you'll work",
+            "id": "verb-eshtaghal-future-ento"
+          },
+          {
+            "person": "hinne",
+            "latin": "ra7 yeshteghlo",
+            "arabic": "رح يشتغلو",
+            "english": "they'll work",
+            "id": "verb-eshtaghal-future-hinne"
+          }
+        ],
+        "command": [
+          {
+            "person": "enta",
+            "latin": "eshteghel!",
+            "arabic": "اشتغل!",
+            "english": "Work! (to a man)",
+            "id": "verb-eshtaghal-command-enta"
+          },
+          {
+            "person": "ente",
+            "latin": "eshteghle!",
+            "arabic": "اشتغلي!",
+            "english": "Work! (to a woman)",
+            "id": "verb-eshtaghal-command-ente"
+          },
+          {
+            "person": "ento",
+            "latin": "eshteghlo!",
+            "arabic": "اشتغلو!",
+            "english": "Work! (to a group)",
+            "id": "verb-eshtaghal-command-ento"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+# Source for content/verbs.json. Rebuild with: python3 tools/build_verbs.py
+# Everything here is a DRAFT for the owner to check.
+#
+# Each verb:
+#   @ id | icon | English base | past | -ing | he-form
+#   past:    8 forms, person order ana, enta, ente, huwwe, hiyye, ne7na, ento, hinne
+#   present: the same 8 people, with the b- / mn- prefix ("every day")
+#   command: to a man, to a woman, to a group
+# Each form is "latin = arabic". "Right now" (3am + present) and "future"
+# (ra7 + present without b-) are made from the present by the build script.
+# A line "future-ana: latin = arabic" overrides the built future for one person.
+
+@ katab | ✍️ | write | wrote | writing | writes
+past: katabt = كتبت ; katabt = كتبت ; katabte = كتبتي ; katab = كتب ; katabet = كتبت ; katabna = كتبنا ; katabto = كتبتو ; katabo = كتبو
+present: bekteb = بكتب ; btekteb = بتكتب ; btektebe = بتكتبي ; byekteb = بيكتب ; btekteb = بتكتب ; mnekteb = منكتب ; btektebo = بتكتبو ; byektebo = بيكتبو
+command: ekteb = اكتب ; ektebe = اكتبي ; ektebo = اكتبو
+
+@ akal | 🍽️ | eat | ate | eating | eats
+past: akalt = أكلت ; akalt = أكلت ; akalte = أكلتي ; akal = أكل ; akalet = أكلت ; akalna = أكلنا ; akalto = أكلتو ; akalo = أكلو
+present: bekol = باكل ; btekol = بتاكل ; btakle = بتاكلي ; byekol = بياكل ; btekol = بتاكل ; mnekol = مناكل ; btaklo = بتاكلو ; byaklo = بياكلو
+command: kol = كول ; kele = كلي ; kelo = كلو
+
+@ sherib | 🥤 | drink | drank | drinking | drinks
+past: shrebt = شربت ; shrebt = شربت ; shrebte = شربتي ; sherib = شرب ; sherbet = شربت ; shrebna = شربنا ; shrebto = شربتو ; sherbo = شربو
+present: beshrab = بشرب ; bteshrab = بتشرب ; bteshrabe = بتشربي ; byeshrab = بيشرب ; bteshrab = بتشرب ; mneshrab = منشرب ; bteshrabo = بتشربو ; byeshrabo = بيشربو
+command: eshrab = اشرب ; eshrabe = اشربي ; eshrabo = اشربو
+
+@ ra7 | 🚶 | go | went | going | goes
+past: re7t = رحت ; re7t = رحت ; re7te = رحتي ; ra7 = راح ; ra7et = راحت ; re7na = رحنا ; re7to = رحتو ; ra7o = راحو
+present: brou7 = بروح ; btrou7 = بتروح ; btrou7e = بتروحي ; byrou7 = بيروح ; btrou7 = بتروح ; mnrou7 = منروح ; btrou7o = بتروحو ; byrou7o = بيروحو
+command: rou7 = روح ; rou7e = روحي ; rou7o = روحو
+
+@ eja | 🏃 | come | came | coming | comes
+past: jit = جيت ; jit = جيت ; jite = جيتي ; eja = إجا ; ejet = إجت ; jina = جينا ; jito = جيتو ; ejo = إجو
+present: beje = بجي ; bteje = بتجي ; bteje = بتجي ; byeje = بيجي ; bteje = بتجي ; mneje = منجي ; btejo = بتجو ; byejo = بيجو
+command: ta3a = تعا ; ta3e = تعي ; ta3o = تعو
+
+@ 3emel | 🛠️ | do | did | doing | does
+past: 3melt = عملت ; 3melt = عملت ; 3melte = عملتي ; 3emel = عمل ; 3emlet = عملت ; 3melna = عملنا ; 3melto = عملتو ; 3emlo = عملو
+present: ba3mel = بعمل ; bta3mel = بتعمل ; bta3mle = بتعملي ; bya3mel = بيعمل ; bta3mel = بتعمل ; mna3mel = منعمل ; bta3mlo = بتعملو ; bya3mlo = بيعملو
+command: 3mel = اعمل ; 3mle = اعملي ; 3mlo = اعملو
+
+@ shaf | 👀 | see | saw | seeing | sees
+past: shefet = شفت ; shefet = شفت ; shefte = شفتي ; shaf = شاف ; shafet = شافت ; shefna = شفنا ; shefto = شفتو ; shafo = شافو
+present: bshouf = بشوف ; btshouf = بتشوف ; btshoufe = بتشوفي ; byshouf = بيشوف ; btshouf = بتشوف ; mnshouf = منشوف ; btshoufo = بتشوفو ; byshoufo = بيشوفو
+command: shouf = شوف ; shoufe = شوفي ; shoufo = شوفو
+
+@ 3eref | 💡 | know | knew | knowing | knows
+past: 3reft = عرفت ; 3reft = عرفت ; 3refte = عرفتي ; 3eref = عرف ; 3erfet = عرفت ; 3refna = عرفنا ; 3refto = عرفتو ; 3erfo = عرفو
+present: ba3ref = بعرف ; bta3ref = بتعرف ; bta3rfe = بتعرفي ; bya3ref = بيعرف ; bta3ref = بتعرف ; mna3ref = منعرف ; bta3rfo = بتعرفو ; bya3rfo = بيعرفو
+command: 3ref = اعرف ; 3rfe = اعرفي ; 3rfo = اعرفو
+
+@ nem | 😴 | sleep | slept | sleeping | sleeps
+past: nemt = نمت ; nemt = نمت ; nemte = نمتي ; nem = نام ; nemet = نامت ; nemna = نمنا ; nemto = نمتو ; nemo = نامو
+present: bnem = بنام ; btnem = بتنام ; btneme = بتنامي ; bynem = بينام ; btnem = بتنام ; mnnem = مننام ; btnemo = بتنامو ; bynemo = بينامو
+command: nem = نام ; neme = نامي ; nemo = نامو
+
+@ akhad | ✋ | take | took | taking | takes
+past: akhadt = أخدت ; akhadt = أخدت ; akhadte = أخدتي ; akhad = أخد ; akhadet = أخدت ; akhadna = أخدنا ; akhadto = أخدتو ; akhado = أخدو
+present: bekhod = باخد ; btekhod = بتاخد ; btakhde = بتاخدي ; byekhod = بياخد ; btekhod = بتاخد ; mnekhod = مناخد ; btakhdo = بتاخدو ; byakhdo = بياخدو
+command: khod = خود ; khede = خدي ; khedo = خدو
+
+@ 7eke | 🗣️ | speak | spoke | speaking | speaks
+past: 7kit = حكيت ; 7kit = حكيت ; 7kite = حكيتي ; 7eke = حكي ; 7ekyet = حكيت ; 7kina = حكينا ; 7kito = حكيتو ; 7ekyo = حكيو
+present: be7ke = بحكي ; bte7ke = بتحكي ; bte7ke = بتحكي ; bye7ke = بيحكي ; bte7ke = بتحكي ; mne7ke = منحكي ; bte7ko = بتحكو ; bye7ko = بيحكو
+command: e7ke = احكي ; e7ke = احكي ; e7ko = احكو
+
+@ fehem | 🧠 | understand | understood | understanding | understands
+past: fhemt = فهمت ; fhemt = فهمت ; fhemte = فهمتي ; fehem = فهم ; fehmet = فهمت ; fhemna = فهمنا ; fhemto = فهمتو ; fehmo = فهمو
+present: befham = بفهم ; btefham = بتفهم ; btefhame = بتفهمي ; byefham = بيفهم ; btefham = بتفهم ; mnefham = منفهم ; btefhamo = بتفهمو ; byefhamo = بيفهمو
+command: efham = افهم ; efhame = افهمي ; efhamo = افهمو
+
+@ fata7 | 🚪 | open | opened | opening | opens
+past: fata7t = فتحت ; fata7t = فتحت ; fata7te = فتحتي ; fata7 = فتح ; fat7et = فتحت ; fata7na = فتحنا ; fata7to = فتحتو ; fat7o = فتحو
+present: befta7 = بفتح ; btefta7 = بتفتح ; btefta7e = بتفتحي ; byefta7 = بيفتح ; btefta7 = بتفتح ; mnefta7 = منفتح ; btefta7o = بتفتحو ; byefta7o = بيفتحو
+command: efta7 = افتح ; efta7e = افتحي ; efta7o = افتحو
+
+@ le3eb | ⚽ | play | played | playing | plays
+past: l3ebt = لعبت ; l3ebt = لعبت ; l3ebte = لعبتي ; le3eb = لعب ; le3bet = لعبت ; l3ebna = لعبنا ; l3ebto = لعبتو ; le3bo = لعبو
+present: bel3ab = بلعب ; btel3ab = بتلعب ; btel3abe = بتلعبي ; byel3ab = بيلعب ; btel3ab = بتلعب ; mnel3ab = منلعب ; btel3abo = بتلعبو ; byel3abo = بيلعبو
+command: el3ab = العب ; el3abe = العبي ; el3abo = العبو
+
+@ 7abb | ❤️ | love | loved | loving | loves
+past: 7abbeit = حبّيت ; 7abbeit = حبّيت ; 7abbeite = حبّيتي ; 7abb = حبّ ; 7abbet = حبّت ; 7abbeina = حبّينا ; 7abbeito = حبّيتو ; 7abbo = حبّو
+present: b7ebb = بحبّ ; bt7ebb = بتحبّ ; bt7ebbe = بتحبّي ; by7ebb = بيحبّ ; bt7ebb = بتحبّ ; mn7ebb = منحبّ ; bt7ebbo = بتحبّو ; by7ebbo = بيحبّو
+command: 7ebb = حبّ ; 7ebbe = حبّي ; 7ebbo = حبّو
+
+@ eshtaghal | 💼 | work | worked | working | works
+past: shtaghalt = اشتغلت ; shtaghalt = اشتغلت ; shtaghalte = اشتغلتي ; eshtaghal = اشتغل ; eshtaghalet = اشتغلت ; shtaghalna = اشتغلنا ; shtaghalto = اشتغلتو ; eshtaghalo = اشتغلو
+present: beshteghel = بشتغل ; bteshteghel = بتشتغل ; bteshteghle = بتشتغلي ; byeshteghel = بيشتغل ; bteshteghel = بتشتغل ; mneshteghel = منشتغل ; bteshteghlo = بتشتغلو ; byeshteghlo = بيشتغلو
+command: eshteghel = اشتغل ; eshteghle = اشتغلي ; eshteghlo = اشتغلو

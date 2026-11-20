@@ -35,9 +35,25 @@ for i in ids:
         errors.append(f'duplicate clip id: {i}')
     seen.add(i)
 
+# Verb tables (built from tools/verbs_src.txt)
+verb_clips = 0
+try:
+    vd = json.load(open('content/verbs.json'))
+    for v in vd['verbs']:
+        for rows in v['forms'].values():
+            for r in rows:
+                verb_clips += 1
+                if r['id'] in seen:
+                    errors.append(f"duplicate clip id: {r['id']}")
+                seen.add(r['id'])
+                if not ALLOWED.match(r['latin']):
+                    errors.append(f"{r['id']}: odd character in latin: {r['latin']!r}")
+except FileNotFoundError:
+    pass
+
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
 lessons = [l for lv in d['levels'] for l in lv['lessons'] if not l.get('soon')]
 fem = sum(1 for l in lessons for i in l['items'] if 'f' in i)
-print(f'OK: {len(lessons)} lessons, {len(ids) + fem} clips to record')
+print(f'OK: {len(lessons)} lessons, {len(ids) + fem} lesson clips + {verb_clips} verb clips to record')

@@ -1,8 +1,9 @@
-import { settings, progress, clips } from './store.js?v=36';
-import * as audio from './audio.js?v=36';
+import { settings, progress, clips } from './store.js?v=39';
+import * as audio from './audio.js?v=39';
 
 const app = document.getElementById('app');
 let DATA = null;
+let VERBS = null; // content/verbs.json: conjugation tables
 
 // ---------- helpers ----------
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -94,6 +95,11 @@ function viewHome() {
         <strong>Conversations</strong>
         <span>${talks} real Lebanese conversations to listen to, with questions to check you understood.</span>
       </a>
+      ${VERBS ? `<a class="choice" href="#/verbs">
+        <span class="choice-icon">🔁</span>
+        <strong>Verbs</strong>
+        <span>See how ${VERBS.verbs.length} everyday verbs change: past, every day, right now, future and commands.</span>
+      </a>` : ''}
     </section>`;
 }
 
@@ -260,6 +266,112 @@ function viewLevel(n) {
     <p class="lead">${esc(lv.goal)}</p>
     <section class="lessons">${cards}</section>`;
 }
+
+// ----- verbs: conjugation tables and a short practice quiz -----
+const verbById = id => VERBS?.verbs.find(v => v.id === id);
+const personOf = key => VERBS.persons.find(p => p.key === key);
+const verbTitle = v => `${v.forms.past[3].latin} · ${v.english}`; // the he-form is the dictionary form
+
+function viewVerbs() {
+  const cards = VERBS.verbs.map(v => {
+    const p = progress.get('verb-' + v.id);
+    return `<a class="lesson-card" href="#/verb/${v.id}"><span class="lesson-icon">${v.icon}</span>
+      <span class="lesson-text"><strong>${esc(v.forms.past[3].latin)} <span class="ar" dir="rtl" lang="ar">${esc(v.forms.past[3].arabic)}</span></strong><span>${esc(v.english)}</span></span>
+      ${p ? `<span class="badge done">✓ ${p.best}/${p.total}</span>` : ''}</a>`;
+  }).join('');
+  app.innerHTML = `
+    <a class="back" href="#/">← Home</a>
+    <h1>Verbs</h1>
+    <p class="lead">Each verb in five forms: what happened, what you do every day, what's happening right now, what will happen, and how to tell someone to do it.</p>
+    <section class="lessons">${cards}</section>`;
+}
+
+function viewVerb(id, tense) {
+  const v = verbById(id);
+  if (!v) return viewVerbs();
+  const t = VERBS.tenses.find(x => x.key === tense) || VERBS.tenses[0];
+  const tabs = VERBS.tenses.map(x => `<a class="${x === t ? 'on' : ''}" href="#/verb/${v.id}/${x.key}">${esc(x.label)}</a>`).join('');
+  const rows = v.forms[t.key].map(f => {
+    const who = t.key === 'command'
+      ? `<span class="t-english always">${esc(VERBS.commandTo.find(c => c.key === f.person).english)}</span>`
+      : `<span class="t-arabizi">${esc(personOf(f.person).latin)}</span><span class="t-arabic ar" dir="rtl" lang="ar">${esc(personOf(f.person).arabic)}</span><span class="t-english">${esc(personOf(f.person).english)}</span>`;
+    return `<li><div class="who-col">${who}</div>
+      <div class="form-col">${phrase({ arabizi: f.latin, arabic: f.arabic, english: f.english })}</div>
+      <button class="mini" data-clip="${esc(f.id)}" aria-label="Play">🔊</button></li>`;
+  }).join('');
+  const list = VERBS.verbs;
+  const next = list[list.indexOf(v) + 1];
+  app.innerHTML = `
+    <a class="back" href="#/verbs">← Verbs</a>
+    <h1 class="lesson-title">${v.icon} ${esc(verbTitle(v))}</h1>
+    <nav class="tense-tabs">${tabs}</nav>
+    <p class="lead">${esc(t.hint)}</p>
+    <ul class="conj">${rows}</ul>
+    <div class="nav">
+      <a class="btn ghost" href="#/verbquiz/${v.id}">✏️ Practise this verb</a>
+      ${next ? `<a class="btn primary" href="#/verb/${next.id}/${t.key}">Next verb →</a>` : '<span></span>'}
+    </div>`;
+  markMissing();
+}
+
+function viewVerbQuiz(id) {
+  const v = verbById(id);
+  if (!v) return viewVerbs();
+  // "you" has three Lebanese forms, so the question says which one is meant.
+  const youTo = { enta: 'to a man', ente: 'to a woman', ento: 'to a group' };
+  const all = Object.entries(v.forms).flatMap(([tense, rows]) => rows.map(r => ({
+    ...r, tense, ask: tense !== 'command' && youTo[r.person] ? `${r.english} (${youTo[r.person]})` : r.english,
+  })));
+  // Different forms can look the same (katabt = I wrote = you wrote), so never offer two identical answers.
+  const qs = shuffle(all).slice(0, 10).map(ans => {
+    const others = shuffle(all.filter(x => x.latin !== ans.latin && x.ask !== ans.ask));
+    const opts = [];
+    for (const o of others) { if (!opts.some(x => x.latin === o.latin)) opts.push(o); if (opts.length === 3) break; }
+    return { ans, opts: shuffle([ans, ...opts]) };
+  });
+  const z = { i: 0, score: 0, picked: null };
+  const render = () => {
+    if (z.i >= qs.length) {
+      progress.complete('verb-' + v.id, z.score, qs.length);
+      app.innerHTML = `
+        <a class="back" href="#/verb/${v.id}">← ${esc(verbTitle(v))}</a>
+        <div class="card done"><div class="pic">${z.score >= 7 ? '🎉' : '💪'}</div><h2>${z.score} / ${qs.length}</h2>
+          <p>${z.score === qs.length ? 'Ya3teek l 3afye! Perfect.' : z.score >= 7 ? 'Brava! Nicely done.' : 'Shway shway. Look at the table and try again.'}</p>
+          <div class="row"><a class="btn ghost" href="#/verb/${v.id}">See the table</a><button class="btn primary" data-act="again">Try again</button></div></div>`;
+      app.querySelector('[data-act=again]').onclick = () => viewVerbQuiz(id);
+      return;
+    }
+    const q = qs[z.i];
+    const tenseName = VERBS.tenses.find(x => x.key === q.ans.tense).label;
+    const opts = q.opts.map((o, k) => {
+      let cls = '';
+      if (z.picked !== null) cls = o === q.ans ? 'right' : (k === z.picked ? 'wrong' : 'dim');
+      return `<button class="opt ${cls}" data-k="${k}" ${z.picked !== null ? 'disabled' : ''}><span class="t-arabizi">${esc(o.latin)}</span><span class="t-arabic" dir="rtl" lang="ar">${esc(o.arabic)}</span></button>`;
+    }).join('');
+    app.innerHTML = `
+      <a class="back" href="#/verb/${v.id}">← ${esc(verbTitle(v))}</a>
+      <div class="quizbar"><div style="width:${(z.i / qs.length) * 100}%"></div></div>
+      <div class="card"><p class="ask">How do you say… <span class="muted">(${esc(tenseName)})</span></p>
+        <div class="phrase big"><div class="t-english always">${esc(q.ans.ask)}</div></div></div>
+      <div class="opts">${opts}</div>
+      ${z.picked !== null ? `<div class="nav"><span class="count">${z.i + 1} / ${qs.length}</span><button class="btn primary" data-act="next">${z.i === qs.length - 1 ? 'See results' : 'Next'}</button></div>` : ''}`;
+    app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      z.picked = +b.dataset.k;
+      if (q.opts[z.picked] === q.ans) z.score++;
+      render();
+      audio.play(q.ans.id);
+    });
+    const nx = app.querySelector('[data-act=next]');
+    if (nx) nx.onclick = () => { z.i++; z.picked = null; render(); };
+  };
+  render();
+}
+
+// Each verb as a pseudo-lesson, so the Recording studio can list its clips.
+const verbLessons = () => (VERBS?.verbs || []).map(v => ({
+  id: 'verb-' + v.id, icon: v.icon, title: verbTitle(v), dialogue: [], verb: true,
+  items: Object.values(v.forms).flat().map(f => ({ id: f.id, arabizi: f.latin, arabic: f.arabic, english: f.english })),
+}));
 
 // ----- lesson: learn → practice → quiz → done (conversations live in their own section) -----
 const STEPS = ['learn', 'practice', 'quiz'];
@@ -496,15 +608,16 @@ function viewLesson(id) {
 // ----- recording studio (for the teacher) -----
 async function viewStudio(lessonId) {
   // One lesson at a time: the whole course has thousands of clips.
-  const list = [ABC_LESSON, ...allLessons()];
+  const list = [ABC_LESSON, ...allLessons(), ...verbLessons()];
   const lesson = list.find(l => l.id === lessonId) || list[1];
   const ix = list.indexOf(lesson);
   const prev = list[ix - 1], next = list[ix + 1];
+  const verbOptions = verbLessons().length ? `<optgroup label="Verbs">${verbLessons().map(l => `<option value="${l.id}" ${l.id === lesson.id ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')}</optgroup>` : '';
   const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 Reading Latin-script Arabic</option>` + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
     lv.lessons.filter(ready).map(l => `<option value="${l.id}" ${l === lesson ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')
-  }</optgroup>`).join('');
+  }</optgroup>`).join('') + verbOptions;
   const sections = `
-    <h2>${lesson === ABC_LESSON ? '' : `Level ${levelOf(lesson.id).n} · `}${lesson.icon} ${esc(lesson.title)}</h2>
+    <h2>${lesson === ABC_LESSON ? '' : lesson.verb ? 'Verb · ' : `Level ${levelOf(lesson.id).n} · `}${lesson.icon} ${esc(lesson.title)}</h2>
     <ul class="clips">${clipsFor(lesson).map(c => `
       <li data-id="${esc(c.id)}">
         <div class="clip-text">
@@ -626,10 +739,10 @@ function showError(err) {
 }
 
 function route() {
-  const [, page, arg] = location.hash.split('/');
+  const [, page, arg, arg2] = location.hash.split('/');
   window.scrollTo(0, 0);
   audio.stop();
-  const section = { lessons: 'lessons', level: 'lessons', lesson: 'lessons', talks: 'talks', talk: 'talks', studio: 'studio', about: 'about' }[page] || '';
+  const section = { lessons: 'lessons', level: 'lessons', lesson: 'lessons', talks: 'talks', talk: 'talks', verbs: 'verbs', verb: 'verbs', verbquiz: 'verbs', studio: 'studio', about: 'about' }[page] || '';
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
@@ -641,12 +754,15 @@ function route() {
     else if (page === 'talk') viewTalk(arg);
     else if (page === 'studio') viewStudio(arg).catch(showError);
     else if (page === 'about') viewAbout();
+    else if (page === 'verbs' && VERBS) viewVerbs();
+    else if (page === 'verb' && VERBS) viewVerb(arg, arg2);
+    else if (page === 'verbquiz' && VERBS) viewVerbQuiz(arg);
     else viewHome();
   } catch (err) { showError(err); }
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 36;
+const VERSION = 39;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -668,7 +784,9 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=36', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=39', { cache: 'no-cache' })).json();
+    // Verbs are optional: if the file fails to load, the rest of the site still works.
+    VERBS = await fetch('content/verbs.json?v=39', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
