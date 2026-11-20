@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=26';
-import * as audio from './audio.js?v=26';
+import { settings, progress, clips } from './store.js?v=28';
+import * as audio from './audio.js?v=28';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -97,6 +97,23 @@ function viewHome() {
       <a class="btn primary big" href="#/level/1">Start Level 1</a>
     </section>
     <section class="lessons">${cards}</section>`;
+}
+
+function viewAbout() {
+  const rows = [
+    ['2', 'ء / ق', 'A catch in the throat, like the middle of "uh-oh".', '2addeish?', 'how much?'],
+    ['3', 'ع', 'A squeezed sound from deep in the throat. No English match.', '3afwan', "you're welcome"],
+    ['7', 'ح', 'A breathy, raspy "h", like fogging up a mirror.', 'mni7', 'good'],
+    ['kh', 'خ', 'Like the "ch" in Scottish "loch".', 'kheir', 'good (morning)'],
+    ['gh', 'غ', 'Like a French "r", gargled lightly.', 'ghali', 'expensive'],
+    ['sh', 'ش', 'Like English "sh".', 'shukran', 'thank you'],
+  ].map(r => `<tr><td class="num">${r[0]}</td><td dir="rtl" lang="ar" class="ar">${r[1]}</td><td>${r[2]}<br><em>${r[3]}</em> = ${r[4]}</td></tr>`).join('');
+  app.innerHTML = `
+    <a class="back" href="#/">← Levels</a>
+    <h1>How to read Arabic</h1>
+    <p>Lebanese people mostly text in <strong>Arabizi</strong>: Arabic written with Latin letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
+    <table class="abc">${rows}</table>
+    <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
 }
 
 function viewLevel(n) {
@@ -559,7 +576,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 26;
+const VERSION = 28;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -581,7 +598,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=26', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=28', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

@@ -148,7 +148,7 @@ body.hide-english .t-english:not(.always) { display: none !important; }
 .abc { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; }
 .abc td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .abc .num { font-size: 1.6rem; font-weight: 800; color: var(--red); width: 3rem; text-align: center; }
-.abc .ar { font-size: 1.5rem; width: 3.5rem; text-align: center; }
+.abc .ar { font-size: 1.5rem; width: 4.5rem; text-align: center; white-space: nowrap; }
 
 /* studio */
 .clips { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
