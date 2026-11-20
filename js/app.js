@@ -126,21 +126,44 @@ function viewLessons() {
 }
 
 // ----- conversations: every lesson's dialogue, in a section of its own -----
-function viewTalks() {
-  const groups = DATA.levels.map(lv => {
-    const cards = lv.lessons.filter(l => ready(l) && l.dialogue?.length).map(l => {
-      const heard = progress.get('talk-' + l.id);
-      return `<a class="lesson-card" href="#/talk/${l.id}"><span class="lesson-icon">${l.icon}</span>
-        <span class="lesson-text"><strong>${esc(l.title)}</strong><span>${l.dialogue.length} lines${l.questions?.length ? ` · ${l.questions.length} questions` : ''}</span></span>
-        ${heard ? `<span class="badge done">✓ ${heard.best}/${heard.total}</span>` : ''}</a>`;
-    }).join('');
-    return cards ? `<h2>Level ${lv.n}: ${esc(lv.title)}</h2><section class="lessons">${cards}</section>` : '';
+// First a list of the ten levels, then one level's conversations on its own page.
+const talksOf = lv => lv.lessons.filter(l => ready(l) && l.dialogue?.length);
+
+function viewTalks(n) {
+  if (n) return viewTalkLevel(n);
+  const cards = DATA.levels.map(lv => {
+    const live = talksOf(lv);
+    if (!live.length) return '';
+    const heard = live.filter(l => progress.get('talk-' + l.id)).length;
+    const pct = Math.round((heard / live.length) * 100);
+    return `<a class="lesson-card level" href="#/talks/${lv.n}">
+      <span class="lesson-icon lvl">${lv.n}</span>
+      <span class="lesson-text"><small>Level ${lv.n} · ${live.length} conversations</small><strong>${esc(lv.title)}</strong>
+        <span class="meter"><i style="width:${pct}%"></i></span></span>
+      <span class="badge ${heard === live.length ? 'done' : ''}">${heard}/${live.length}</span>
+    </a>`;
   }).join('');
   app.innerHTML = `
     <a class="back" href="#/">← Home</a>
     <h1>Conversations</h1>
-    <p class="lead">Listen to Lebanese people talking, then answer a few questions. The higher the level, the faster and longer they get.</p>
-    ${groups}`;
+    <p class="lead">Listen to Lebanese people talking, then answer a few questions. The higher the level, the faster and longer they get. Pick a level.</p>
+    <section class="lessons">${cards}</section>`;
+}
+
+function viewTalkLevel(n) {
+  const lv = DATA.levels.find(x => x.n === +n);
+  if (!lv) { location.hash = '#/talks'; return; }
+  const cards = talksOf(lv).map(l => {
+    const heard = progress.get('talk-' + l.id);
+    return `<a class="lesson-card" href="#/talk/${l.id}"><span class="lesson-icon">${l.icon}</span>
+      <span class="lesson-text"><strong>${esc(l.title)}</strong><span>${l.dialogue.length} lines${l.questions?.length ? ` · ${l.questions.length} questions` : ''}</span></span>
+      ${heard ? `<span class="badge done">✓ ${heard.best}/${heard.total}</span>` : ''}</a>`;
+  }).join('');
+  app.innerHTML = `
+    <a class="back" href="#/talks">← All levels</a>
+    <h1>Level ${lv.n}: ${esc(lv.title)}</h1>
+    <p class="lead">Conversations for this level.</p>
+    <section class="lessons">${cards}</section>`;
 }
 
 function viewTalk(id) {
@@ -186,7 +209,7 @@ function viewTalk(id) {
     const all = allLessons().filter(l => l.dialogue?.length);
     const next = all[all.indexOf(lesson) + 1];
     app.innerHTML = `
-      <a class="back" href="#/talks">← Conversations</a>
+      <a class="back" href="#/talks/${level.n}">← Level ${level.n} conversations</a>
       <h1 class="lesson-title">${lesson.icon} ${esc(lesson.title)}</h1>
       <p class="lead">Level ${level.n}. Listen to the whole conversation, then tap any line to hear it again.</p>
       <div class="row"><button class="btn primary" data-act="all">▶ Play conversation</button></div>
@@ -245,7 +268,7 @@ function viewAbout() {
     <p>Lebanese people mostly text in <strong>Latin-script Arabic</strong>: Arabic words written with English letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
     <p class="muted">Tap 🔊 to hear each sound, then a word that uses it.</p>
     <table class="abc">${rows}</table>
-    <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
+    <p>In lessons and conversations, use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
   markMissing();
 }
 
@@ -746,11 +769,12 @@ function route() {
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
+  document.body.classList.toggle('no-toggles', page !== 'lesson' && page !== 'talk');
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
     else if (page === 'lessons') viewLessons();
-    else if (page === 'talks') viewTalks();
+    else if (page === 'talks') viewTalks(arg);
     else if (page === 'talk') viewTalk(arg);
     else if (page === 'studio') viewStudio(arg).catch(showError);
     else if (page === 'about') viewAbout();

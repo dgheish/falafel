@@ -223,6 +223,9 @@ body.hide-english .t-english:not(.always) { display: none !important; }
 }
 .mainnav a:hover, .mainnav a.on { border-bottom-color: var(--touch); }
 .toggles { display: flex; gap: 6px; }
+/* Only lesson and conversation pages show the three writings, so the buttons hide elsewhere.
+   visibility keeps their space, so the links don't jump between pages. */
+body.no-toggles .toggles { visibility: hidden; }
 .chip {
   border: 1.5px solid var(--line); background: transparent; color: var(--ink); border-radius: 99px;
   padding: 4px 10px; font: 600 .85rem Nunito, sans-serif; cursor: pointer;
