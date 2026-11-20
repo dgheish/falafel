@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=31';
-import * as audio from './audio.js?v=31';
+import { settings, progress, clips } from './store.js?v=32';
+import * as audio from './audio.js?v=32';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -204,21 +204,42 @@ function viewTalk(id) {
   render();
 }
 
+// The reading guide. Each row has two clips the teacher records in the studio:
+// the sound on its own (abc-<key>) and the example word (abc-<key>-ex).
+const ABC = [
+  { key: '2', ar: 'ء', how: 'A catch in the throat, like the middle of "uh-oh".', ex: 'su2al', exAr: 'سؤال', en: 'question' },
+  { key: '3', ar: 'ع', how: 'A squeezed sound from deep in the throat. No English match.', ex: '3afwan', exAr: 'عفواً', en: "you're welcome" },
+  { key: '7', ar: 'ح', how: 'A breathy, raspy "h", like fogging up a mirror.', ex: 'mni7', exAr: 'منيح', en: 'good' },
+  { key: 'kh', ar: 'خ', how: 'Like the "ch" in Scottish "loch".', ex: 'kheir', exAr: 'خير', en: 'good (morning)' },
+  { key: 'gh', ar: 'غ', how: 'Like a French "r", gargled lightly.', ex: 'ghali', exAr: 'غالي', en: 'expensive' },
+  { key: 'sh', ar: 'ش', how: 'Like English "sh".', ex: 'shukran', exAr: 'شكراً', en: 'thank you' },
+];
+// The guide as a pseudo-lesson, so the Recording studio can list its clips.
+const ABC_LESSON = {
+  id: 'abc', icon: '🔤', title: 'How to read Arabic', dialogue: [],
+  items: ABC.flatMap(r => [
+    { id: `abc-${r.key}`, arabizi: r.key, arabic: r.ar, english: `The sound of ${r.key}` },
+    { id: `abc-${r.key}-ex`, arabizi: r.ex, arabic: r.exAr, english: r.en },
+  ]),
+};
+
 function viewAbout() {
-  const rows = [
-    ['2', 'ء / ق', 'A catch in the throat, like the middle of "uh-oh".', '2addeish?', 'how much?'],
-    ['3', 'ع', 'A squeezed sound from deep in the throat. No English match.', '3afwan', "you're welcome"],
-    ['7', 'ح', 'A breathy, raspy "h", like fogging up a mirror.', 'mni7', 'good'],
-    ['kh', 'خ', 'Like the "ch" in Scottish "loch".', 'kheir', 'good (morning)'],
-    ['gh', 'غ', 'Like a French "r", gargled lightly.', 'ghali', 'expensive'],
-    ['sh', 'ش', 'Like English "sh".', 'shukran', 'thank you'],
-  ].map(r => `<tr><td class="num">${r[0]}</td><td dir="rtl" lang="ar" class="ar">${r[1]}</td><td>${r[2]}<br><em>${r[3]}</em> = ${r[4]}</td></tr>`).join('');
+  const rows = ABC.map(r => `<tr>
+    <td class="num">${esc(r.key)}</td>
+    <td dir="rtl" lang="ar" class="ar">${r.ar}</td>
+    <td>${esc(r.how)}<br><em>${esc(r.ex)}</em> = ${esc(r.en)}
+      <div class="abc-play">
+        <button class="btn play" data-clip="abc-${esc(r.key)}">🔊 Sound</button>
+        <button class="btn play ghost" data-clip="abc-${esc(r.key)}-ex">🔊 ${esc(r.ex)}</button>
+      </div></td></tr>`).join('');
   app.innerHTML = `
     <a class="back" href="#/">← Home</a>
     <h1>How to read Arabic</h1>
     <p>Lebanese people mostly text in <strong>Arabizi</strong>: Arabic written with Latin letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
+    <p class="muted">Tap 🔊 to hear each sound, then a word that uses it.</p>
     <table class="abc">${rows}</table>
     <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
+  markMissing();
 }
 
 function viewLevel(n) {
@@ -474,15 +495,15 @@ function viewLesson(id) {
 // ----- recording studio (for the teacher) -----
 async function viewStudio(lessonId) {
   // One lesson at a time: the whole course has thousands of clips.
-  const list = allLessons();
-  const lesson = list.find(l => l.id === lessonId) || list[0];
+  const list = [ABC_LESSON, ...allLessons()];
+  const lesson = list.find(l => l.id === lessonId) || list[1];
   const ix = list.indexOf(lesson);
   const prev = list[ix - 1], next = list[ix + 1];
-  const options = DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
+  const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 How to read Arabic</option>` + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
     lv.lessons.filter(ready).map(l => `<option value="${l.id}" ${l === lesson ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')
   }</optgroup>`).join('');
   const sections = `
-    <h2>Level ${levelOf(lesson.id).n} · ${lesson.icon} ${esc(lesson.title)}</h2>
+    <h2>${lesson === ABC_LESSON ? '' : `Level ${levelOf(lesson.id).n} · `}${lesson.icon} ${esc(lesson.title)}</h2>
     <ul class="clips">${clipsFor(lesson).map(c => `
       <li data-id="${esc(c.id)}">
         <div class="clip-text">
@@ -624,7 +645,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 31;
+const VERSION = 32;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -646,7 +667,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=31', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=32', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

@@ -36,7 +36,7 @@ The owner is a native Lebanese speaker. They review the wording and record every
 
 ## Recording workflow
 
-The owner records in **Recording studio** (`#/studio`, link in the footer): one lesson at a time, with a lesson picker and next/previous buttons. Recordings are saved in that browser and the lessons use them right away. **Download all** gives `kifak-audio.zip`. When the owner sends the zip, unzip it into `audio/`, commit and push, and the voice goes live for everyone. Remind them to download after each session, because browser storage can be lost.
+The owner records in **Recording studio** (`#/studio`, link in the footer): one lesson at a time, with a lesson picker and next/previous buttons. The first entry in the picker is **How to read Arabic**: 12 clips, the sound on its own (`abc-<key>`, e.g. `abc-3`) and an example word (`abc-<key>-ex`). Those rows live in `ABC` in app.js, not in lessons.json. Recordings are saved in that browser and the lessons use them right away. **Download all** gives `kifak-audio.zip`. When the owner sends the zip, unzip it into `audio/`, commit and push, and the voice goes live for everyone. Remind them to download after each session, because browser storage can be lost.
 
 ## Working on it
 
