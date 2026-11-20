@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=37';
-import * as audio from './audio.js?v=37';
+import { settings, progress, clips } from './store.js?v=38';
+import * as audio from './audio.js?v=38';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -120,21 +120,44 @@ function viewLessons() {
 }
 
 // ----- conversations: every lesson's dialogue, in a section of its own -----
-function viewTalks() {
-  const groups = DATA.levels.map(lv => {
-    const cards = lv.lessons.filter(l => ready(l) && l.dialogue?.length).map(l => {
-      const heard = progress.get('talk-' + l.id);
-      return `<a class="lesson-card" href="#/talk/${l.id}"><span class="lesson-icon">${l.icon}</span>
-        <span class="lesson-text"><strong>${esc(l.title)}</strong><span>${l.dialogue.length} lines${l.questions?.length ? ` · ${l.questions.length} questions` : ''}</span></span>
-        ${heard ? `<span class="badge done">✓ ${heard.best}/${heard.total}</span>` : ''}</a>`;
-    }).join('');
-    return cards ? `<h2>Level ${lv.n}: ${esc(lv.title)}</h2><section class="lessons">${cards}</section>` : '';
+// First a list of the ten levels, then one level's conversations on its own page.
+const talksOf = lv => lv.lessons.filter(l => ready(l) && l.dialogue?.length);
+
+function viewTalks(n) {
+  if (n) return viewTalkLevel(n);
+  const cards = DATA.levels.map(lv => {
+    const live = talksOf(lv);
+    if (!live.length) return '';
+    const heard = live.filter(l => progress.get('talk-' + l.id)).length;
+    const pct = Math.round((heard / live.length) * 100);
+    return `<a class="lesson-card level" href="#/talks/${lv.n}">
+      <span class="lesson-icon lvl">${lv.n}</span>
+      <span class="lesson-text"><small>Level ${lv.n} · ${live.length} conversations</small><strong>${esc(lv.title)}</strong>
+        <span class="meter"><i style="width:${pct}%"></i></span></span>
+      <span class="badge ${heard === live.length ? 'done' : ''}">${heard}/${live.length}</span>
+    </a>`;
   }).join('');
   app.innerHTML = `
     <a class="back" href="#/">← Home</a>
     <h1>Conversations</h1>
-    <p class="lead">Listen to Lebanese people talking, then answer a few questions. The higher the level, the faster and longer they get.</p>
-    ${groups}`;
+    <p class="lead">Listen to Lebanese people talking, then answer a few questions. The higher the level, the faster and longer they get. Pick a level.</p>
+    <section class="lessons">${cards}</section>`;
+}
+
+function viewTalkLevel(n) {
+  const lv = DATA.levels.find(x => x.n === +n);
+  if (!lv) { location.hash = '#/talks'; return; }
+  const cards = talksOf(lv).map(l => {
+    const heard = progress.get('talk-' + l.id);
+    return `<a class="lesson-card" href="#/talk/${l.id}"><span class="lesson-icon">${l.icon}</span>
+      <span class="lesson-text"><strong>${esc(l.title)}</strong><span>${l.dialogue.length} lines${l.questions?.length ? ` · ${l.questions.length} questions` : ''}</span></span>
+      ${heard ? `<span class="badge done">✓ ${heard.best}/${heard.total}</span>` : ''}</a>`;
+  }).join('');
+  app.innerHTML = `
+    <a class="back" href="#/talks">← All levels</a>
+    <h1>Level ${lv.n}: ${esc(lv.title)}</h1>
+    <p class="lead">Conversations for this level.</p>
+    <section class="lessons">${cards}</section>`;
 }
 
 function viewTalk(id) {
@@ -180,7 +203,7 @@ function viewTalk(id) {
     const all = allLessons().filter(l => l.dialogue?.length);
     const next = all[all.indexOf(lesson) + 1];
     app.innerHTML = `
-      <a class="back" href="#/talks">← Conversations</a>
+      <a class="back" href="#/talks/${level.n}">← Level ${level.n} conversations</a>
       <h1 class="lesson-title">${lesson.icon} ${esc(lesson.title)}</h1>
       <p class="lead">Level ${level.n}. Listen to the whole conversation, then tap any line to hear it again.</p>
       <div class="row"><button class="btn primary" data-act="all">▶ Play conversation</button></div>
@@ -638,7 +661,7 @@ function route() {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
     else if (page === 'lessons') viewLessons();
-    else if (page === 'talks') viewTalks();
+    else if (page === 'talks') viewTalks(arg);
     else if (page === 'talk') viewTalk(arg);
     else if (page === 'studio') viewStudio(arg).catch(showError);
     else if (page === 'about') viewAbout();
@@ -647,7 +670,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 37;
+const VERSION = 38;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -669,7 +692,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=37', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=38', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
