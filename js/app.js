@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=36';
-import * as audio from './audio.js?v=36';
+import { settings, progress, clips } from './store.js?v=37';
+import * as audio from './audio.js?v=37';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -239,7 +239,7 @@ function viewAbout() {
     <p>Lebanese people mostly text in <strong>Latin-script Arabic</strong>: Arabic words written with English letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
     <p class="muted">Tap 🔊 to hear each sound, then a word that uses it.</p>
     <table class="abc">${rows}</table>
-    <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
+    <p>In lessons and conversations, use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
   markMissing();
 }
 
@@ -633,6 +633,7 @@ function route() {
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
+  document.body.classList.toggle('no-toggles', page !== 'lesson' && page !== 'talk');
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
@@ -646,7 +647,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 36;
+const VERSION = 37;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -668,7 +669,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=36', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=37', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
