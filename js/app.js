@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=33';
-import * as audio from './audio.js?v=33';
+import { settings, progress, clips } from './store.js?v=35';
+import * as audio from './audio.js?v=35';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -217,7 +217,7 @@ const ABC = [
 ];
 // The guide as a pseudo-lesson, so the Recording studio can list its clips.
 const ABC_LESSON = {
-  id: 'abc', icon: '🔤', title: 'How to read Arabic', dialogue: [],
+  id: 'abc', icon: '🔤', title: 'Reading Latin-script Arabic', dialogue: [],
   items: ABC.flatMap(r => [
     { id: `abc-${r.key}`, arabizi: r.key, arabic: r.ar, english: `The sound of ${r.key}` },
     { id: `abc-${r.key}-ex`, arabizi: r.ex, arabic: r.exAr, english: r.en },
@@ -236,8 +236,8 @@ function viewAbout() {
       </div></td></tr>`).join('');
   app.innerHTML = `
     <a class="back" href="#/">← Home</a>
-    <h1>How to read Arabic</h1>
-    <p>Lebanese people mostly text in <strong>Arabizi</strong>: Arabic written with Latin letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
+    <h1>Reading Latin-script Arabic</h1>
+    <p>Lebanese people mostly text in <strong>Latin-script Arabic</strong>: Arabic words written with English letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
     <p class="muted">Tap 🔊 to hear each sound, then a word that uses it.</p>
     <table class="abc">${rows}</table>
     <p>Use the <b>Abc</b>, <b>عربي</b> and <b>EN</b> buttons at the top to show or hide each writing.</p>`;
@@ -501,7 +501,7 @@ async function viewStudio(lessonId) {
   const lesson = list.find(l => l.id === lessonId) || list[1];
   const ix = list.indexOf(lesson);
   const prev = list[ix - 1], next = list[ix + 1];
-  const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 How to read Arabic</option>` + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
+  const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 Reading Latin-script Arabic</option>` + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
     lv.lessons.filter(ready).map(l => `<option value="${l.id}" ${l === lesson ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')
   }</optgroup>`).join('');
   const sections = `
@@ -647,7 +647,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 33;
+const VERSION = 35;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -669,7 +669,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=33', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=35', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

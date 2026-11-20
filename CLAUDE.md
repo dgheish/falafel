@@ -8,13 +8,14 @@ The owner is a native Lebanese speaker. They review the wording and record every
 
 ## Decisions already made (don't re-ask)
 
-- **Dialect:** Beirut Lebanese. Show **Arabizi first** (`kifak`, `7abibi`, `3am`), Arabic script under it, English under that. The learner can hide any of the three with the buttons in the top bar.
+- **Name for Arabic in English letters:** on the site it's called **Latin-script Arabic** (the owner's choice, Nov 2026), never "Arabizi". The data field is still `arabizi` and the toggle button still says Abc.
+- **Dialect:** Beirut Lebanese. Show **Latin-script Arabic first** (`kifak`, `7abibi`, `3am`), Arabic script under it, English under that. The learner can hide any of the three with the buttons in the top bar.
 - **Man/woman forms:** phrases that change by who you talk to have an `f` form, shown with a "Talking to: a man / a woman" switch.
 - **Structure:** 10 levels × 20 lessons = 200 lessons, **30 examples per lesson** (6,000 in total). **All levels are open to everyone**, with no locking.
 - **Ladder (decided Nov 2026):** Levels 1–2 single words, 3–4 short phrases (2–4 words), 5–6 full sentences, 7–8 two or three linked sentences, 9–10 paragraphs of 4–6 sentences about one scene.
 - **Two sections:** the home page offers **Lessons** (`#/lessons`, the levels) and **Conversations** (`#/talks`, every lesson's dialogue on its own page `#/talk/<lessonId>` with its listening questions underneath). Dialogues stay in each lesson's `dialogue[]` in the JSON, so clip ids don't change.
 - **Lesson flow:** Learn (picture cards, Play / Slow) → Repeat (learner records and compares, with "Skip to the quiz") → Quiz. The quiz picks 15 random examples each time. From Level 3 it adds sentence building (tap word tiles in order) for examples of 3–8 words. Texts over 60 characters get a smaller font.
-- **Look:** name "Kifak" in cedar green with a red question mark ("Kifak?"), and a drawn Lebanese flag as logo and tab icon. Top bar like a landing page: white with a thin shadow, logo left, links in the middle (Lessons, Conversations, How to read Arabic, Recording studio; red underline on the current section), Abc/عربي/EN buttons right. On phones the links sit on a second row that scrolls sideways. Home page opens with a big centred green headline (Poppins font), a "Start Level 1" button, and two big choice cards: Lessons and Conversations. Colours: cedar green (`#0b6b3a`) for headlines, buttons and links, red (`#d8121c`) only for small touches. Green = correct, red = wrong. Dark mode is supported.
+- **Look:** name "Kifak" in cedar green with a red question mark ("Kifak?"), and a drawn Lebanese flag as logo and tab icon. Top bar like a landing page: white with a thin shadow, logo left, links in the middle (Lessons, Conversations, Reading Latin-script Arabic, Recording studio; red underline on the current section), Abc/عربي/EN buttons right. On phones the links sit on a second row that scrolls sideways. Home page opens with a big centred green headline (Poppins font), a "Start Level 1" button, and two big choice cards: Lessons and Conversations. Colours: cedar green (`#0b6b3a`) for headlines, buttons and links, red (`#d8121c`) only for small touches. Green = correct, red = wrong. Dark mode is supported.
 - **Pictures:** emoji for now. Real illustrations may come later.
 - **Audio:** real recordings by the owner, never text-to-speech.
 
@@ -36,7 +37,7 @@ The owner is a native Lebanese speaker. They review the wording and record every
 
 ## Recording workflow
 
-The owner records in **Recording studio** (`#/studio`, link in the footer): one lesson at a time, with a lesson picker and next/previous buttons. The first entry in the picker is **How to read Arabic**: 12 clips, the sound on its own (`abc-<key>`, e.g. `abc-3`) and an example word (`abc-<key>-ex`). Those rows live in `ABC` in app.js, not in lessons.json. Recordings are saved in that browser and the lessons use them right away. **Download all** gives `kifak-audio.zip`. When the owner sends the zip, unzip it into `audio/`, commit and push, and the voice goes live for everyone. Remind them to download after each session, because browser storage can be lost.
+The owner records in **Recording studio** (`#/studio`, link in the footer): one lesson at a time, with a lesson picker and next/previous buttons. The first entry in the picker is **Reading Latin-script Arabic**: 12 clips, the sound on its own (`abc-<key>`, e.g. `abc-3`) and an example word (`abc-<key>-ex`). Those rows live in `ABC` in app.js, not in lessons.json. Recordings are saved in that browser and the lessons use them right away. **Download all** gives `kifak-audio.zip`. When the owner sends the zip, unzip it into `audio/`, commit and push, and the voice goes live for everyone. Remind them to download after each session, because browser storage can be lost.
 
 ## Working on it
 

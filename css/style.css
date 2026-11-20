@@ -241,10 +241,12 @@ h1, h2 { font-family: Poppins, Nunito, sans-serif; }
 main { padding-top: 20px; }
 
 /* Phone: links drop to a second row under the logo */
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .topbar { padding: 10px 16px; }
   .mainnav { order: 3; width: 100%; gap: 18px; justify-content: center; }
   .mainnav a { font-size: .9rem; }
+}
+@media (max-width: 720px) {
   .hero { padding: 24px 0 18px; }
   .hero h1 { font-size: 1.75rem; }
   .hero p { font-size: 1rem; }
