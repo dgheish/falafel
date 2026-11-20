@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=39';
-import * as audio from './audio.js?v=39';
+import { settings, progress, clips } from './store.js?v=41';
+import * as audio from './audio.js?v=41';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -769,7 +769,7 @@ function route() {
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
-  document.body.classList.toggle('no-toggles', page !== 'lesson' && page !== 'talk');
+  document.body.classList.toggle('no-toggles', !['lesson', 'talk', 'verb', 'verbquiz'].includes(page));
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
@@ -786,7 +786,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 39;
+const VERSION = 41;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -808,9 +808,9 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=39', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=41', { cache: 'no-cache' })).json();
     // Verbs are optional: if the file fails to load, the rest of the site still works.
-    VERBS = await fetch('content/verbs.json?v=39', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    VERBS = await fetch('content/verbs.json?v=41', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
