@@ -1,5 +1,5 @@
-import { settings, progress, clips } from './store.js?v=28';
-import * as audio from './audio.js?v=28';
+import { settings, progress, clips } from './store.js?v=30';
+import * as audio from './audio.js?v=30';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -10,7 +10,8 @@ const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { c
 
 // A phrase in whichever scripts the learner has switched on (CSS hides the rest).
 function phrase(p, { big = false } = {}) {
-  return `<div class="phrase ${big ? 'big' : ''}">
+  const long = (p.arabizi || '').length > 60 ? 'long' : '';
+  return `<div class="phrase ${big ? 'big' : ''} ${long}">
     <div class="t-arabizi">${esc(p.arabizi)}</div>
     <div class="t-arabic" dir="rtl" lang="ar">${esc(p.arabic)}</div>
     ${p.english ? `<div class="t-english">${esc(p.english)}</div>` : ''}
@@ -27,7 +28,7 @@ function clipsFor(lesson) {
     out.push({ id: it.id, arabizi: it.arabizi, arabic: it.arabic, label: it.english + (it.f ? ' (to a man)' : '') });
     if (it.f) out.push({ id: it.id + '-f', arabizi: it.f.arabizi, arabic: it.f.arabic, label: it.english + ' (to a woman)' });
   }
-  for (const d of lesson.dialogue) out.push({ id: d.id, arabizi: d.arabizi, arabic: d.arabic, label: `Dialogue: ${d.speaker}` });
+  for (const d of lesson.dialogue || []) out.push({ id: d.id, arabizi: d.arabizi, arabic: d.arabic, label: `Dialogue: ${d.speaker}` });
   return out;
 }
 
@@ -76,6 +77,28 @@ const levelOf = lessonId => DATA.levels.find(lv => lv.lessons.some(l => l.id ===
 
 // ---------- views ----------
 function viewHome() {
+  const talks = DATA.levels.reduce((n, lv) => n + lv.lessons.filter(l => ready(l) && l.dialogue?.length).length, 0);
+  app.innerHTML = `
+    <section class="hero">
+      <h1>Speak Lebanese Like a Local:<br><span>The Arabic People Really Talk</span></h1>
+      <p>Ten free levels with a native speaker's voice, <br>from your first word to a whole paragraph.</p>
+      <a class="btn primary big" href="#/level/1">Start Level 1</a>
+    </section>
+    <section class="choices">
+      <a class="choice" href="#/lessons">
+        <span class="choice-icon">📚</span>
+        <strong>Lessons</strong>
+        <span>Learn step by step: single words first, then phrases, sentences and paragraphs.</span>
+      </a>
+      <a class="choice" href="#/talks">
+        <span class="choice-icon">💬</span>
+        <strong>Conversations</strong>
+        <span>${talks} real Lebanese conversations to listen to, with questions to check you understood.</span>
+      </a>
+    </section>`;
+}
+
+function viewLessons() {
   const cards = DATA.levels.map(lv => {
     const live = lv.lessons.filter(ready);
     const done = live.filter(l => progress.get(l.id)).length;
@@ -91,12 +114,94 @@ function viewHome() {
     </a>`;
   }).join('');
   app.innerHTML = `
-    <section class="hero">
-      <h1>Speak Lebanese Like a Local:<br><span>The Arabic People Really Talk</span></h1>
-      <p>Ten free levels with a native speaker's voice, <br>from your first "marhaba" to a real conversation.</p>
-      <a class="btn primary big" href="#/level/1">Start Level 1</a>
-    </section>
+    <a class="back" href="#/">← Home</a>
+    <h1>Lessons</h1>
+    <p class="lead">Ten levels, from single words to whole paragraphs. All of them are open, so start wherever suits you.</p>
     <section class="lessons">${cards}</section>`;
+}
+
+// ----- conversations: every lesson's dialogue, in a section of its own -----
+function viewTalks() {
+  const groups = DATA.levels.map(lv => {
+    const cards = lv.lessons.filter(l => ready(l) && l.dialogue?.length).map(l => {
+      const heard = progress.get('talk-' + l.id);
+      return `<a class="lesson-card" href="#/talk/${l.id}"><span class="lesson-icon">${l.icon}</span>
+        <span class="lesson-text"><strong>${esc(l.title)}</strong><span>${l.dialogue.length} lines${l.questions?.length ? ` · ${l.questions.length} questions` : ''}</span></span>
+        ${heard ? `<span class="badge done">✓ ${heard.best}/${heard.total}</span>` : ''}</a>`;
+    }).join('');
+    return cards ? `<h2>Level ${lv.n}: ${esc(lv.title)}</h2><section class="lessons">${cards}</section>` : '';
+  }).join('');
+  app.innerHTML = `
+    <a class="back" href="#/">← Home</a>
+    <h1>Conversations</h1>
+    <p class="lead">Listen to Lebanese people talking, then answer a few questions. The higher the level, the faster and longer they get.</p>
+    ${groups}`;
+}
+
+function viewTalk(id) {
+  const lesson = allLessons().find(l => l.id === id && l.dialogue?.length);
+  if (!lesson) return viewTalks();
+  const level = levelOf(id);
+  const qs = (lesson.questions || []).map(c => ({ ...c, order: shuffle(c.options.map((t, k) => k)) }));
+  const picked = {};
+  let score = 0;
+
+  const playAll = async btn => {
+    btn.disabled = true;
+    for (const d of lesson.dialogue) {
+      const el = app.querySelector(`.chat [data-clip="${d.id}"]`)?.closest('.bubble');
+      el?.classList.add('lit');
+      el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      const ok = await audio.play(d.id);
+      el?.classList.remove('lit');
+      if (!ok) { toast('Some lines have no recording yet.'); break; }
+      await new Promise(r => setTimeout(r, 350));
+    }
+    btn.disabled = false;
+  };
+
+  const render = () => {
+    const lines = lesson.dialogue.map(d => {
+      const side = DATA.speakers[d.speaker] === 'f' ? 'right' : 'left';
+      return `<div class="bubble ${side}">
+        <div class="who">${esc(d.speaker)}</div>
+        ${phrase(d)}
+        <button class="mini" data-clip="${esc(d.id)}" aria-label="Play line">🔊</button>
+      </div>`;
+    }).join('');
+    const questions = qs.map((q, n) => {
+      const opts = q.order.map(k => {
+        let cls = '';
+        if (picked[n] !== undefined) cls = k === q.answer ? 'right' : (k === picked[n] ? 'wrong' : 'dim');
+        return `<button class="opt ${cls}" data-q="${n}" data-k="${k}" ${picked[n] !== undefined ? 'disabled' : ''}><span class="t-english always">${esc(q.options[k])}</span></button>`;
+      }).join('');
+      return `<div class="card left qcard"><p class="ask">${n + 1}. ${esc(q.q)}</p><div class="opts">${opts}</div></div>`;
+    }).join('');
+    const finished = qs.length && Object.keys(picked).length === qs.length;
+    const all = allLessons().filter(l => l.dialogue?.length);
+    const next = all[all.indexOf(lesson) + 1];
+    app.innerHTML = `
+      <a class="back" href="#/talks">← Conversations</a>
+      <h1 class="lesson-title">${lesson.icon} ${esc(lesson.title)}</h1>
+      <p class="lead">Level ${level.n}. Listen to the whole conversation, then tap any line to hear it again.</p>
+      <div class="row"><button class="btn primary" data-act="all">▶ Play conversation</button></div>
+      <div class="chat">${lines}</div>
+      ${qs.length ? `<h2>👂 Did you understand?</h2>${questions}` : ''}
+      ${finished ? `<div class="card done"><h2>${score} / ${qs.length}</h2><p>${score === qs.length ? 'Ya3teek l 3afye! Perfect.' : 'Listen again and try once more.'}</p></div>` : ''}
+      <div class="nav"><span></span>${next ? `<a class="btn primary" href="#/talk/${next.id}">Next conversation →</a>` : ''}</div>`;
+    markMissing();
+    app.querySelector('[data-act=all]').onclick = e => playAll(e.currentTarget);
+    app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      const n = +b.dataset.q;
+      picked[n] = +b.dataset.k;
+      if (picked[n] === qs[n].answer) score++;
+      if (Object.keys(picked).length === qs.length) progress.complete('talk-' + lesson.id, score, qs.length);
+      const y = window.scrollY;
+      render();
+      window.scrollTo(0, y);
+    });
+  };
+  render();
 }
 
 function viewAbout() {
@@ -109,7 +214,7 @@ function viewAbout() {
     ['sh', 'ش', 'Like English "sh".', 'shukran', 'thank you'],
   ].map(r => `<tr><td class="num">${r[0]}</td><td dir="rtl" lang="ar" class="ar">${r[1]}</td><td>${r[2]}<br><em>${r[3]}</em> = ${r[4]}</td></tr>`).join('');
   app.innerHTML = `
-    <a class="back" href="#/">← Levels</a>
+    <a class="back" href="#/">← Home</a>
     <h1>How to read Arabic</h1>
     <p>Lebanese people mostly text in <strong>Arabizi</strong>: Arabic written with Latin letters, plus numbers for the sounds English doesn't have. The numbers look like the Arabic letter they replace.</p>
     <table class="abc">${rows}</table>
@@ -128,15 +233,16 @@ function viewLevel(n) {
       <span class="lesson-text"><small>Lesson ${i + 1}</small><strong>${esc(l.title)}</strong><span>${esc(l.subtitle)}</span></span>${badge}</a>`;
   }).join('');
   app.innerHTML = `
-    <a class="back" href="#/">← All levels</a>
+    <a class="back" href="#/lessons">← All levels</a>
     <h1>Level ${lv.n}: ${esc(lv.title)}</h1>
     <p class="lead">${esc(lv.goal)}</p>
     <section class="lessons">${cards}</section>`;
 }
 
-// ----- lesson: learn → dialogue → practice → quiz → done -----
-const STEPS = ['learn', 'dialogue', 'practice', 'quiz'];
-const STEP_NAMES = { learn: 'Learn', dialogue: 'Listen', practice: 'Repeat', quiz: 'Quiz' };
+// ----- lesson: learn → practice → quiz → done (conversations live in their own section) -----
+const STEPS = ['learn', 'practice', 'quiz'];
+const STEP_NAMES = { learn: 'Learn', practice: 'Repeat', quiz: 'Quiz' };
+const QUIZ_SIZE = 15; // lessons have about 30 examples; the quiz picks 15 of them each time
 
 function viewLesson(id) {
   const lesson = allLessons().find(l => l.id === id);
@@ -178,45 +284,14 @@ function viewLesson(id) {
       <div class="nav">
         <button class="btn ghost" data-act="prev" ${s.i === 0 ? 'disabled' : ''}>Back</button>
         <span class="count">${s.i + 1} / ${lesson.items.length}</span>
-        <button class="btn primary" data-act="next">${s.i === lesson.items.length - 1 ? 'Hear it in a conversation →' : 'Next'}</button>
+        <button class="btn primary" data-act="next">${s.i === lesson.items.length - 1 ? 'Your turn to speak →' : 'Next'}</button>
       </div>`);
     app.querySelectorAll('[data-g]').forEach(b => b.onclick = () => { s.female = b.dataset.g === 'f'; render(); });
     app.querySelector('[data-act=prev]').onclick = () => { s.i--; s.female = false; render(); };
     app.querySelector('[data-act=next]').onclick = () => {
-      if (s.i < lesson.items.length - 1) { s.i++; s.female = false; render(); } else go('dialogue');
+      if (s.i < lesson.items.length - 1) { s.i++; s.female = false; render(); } else go('practice');
     };
     audio.play(clip); // auto-play once when the card appears (silently skipped if missing)
-  }
-
-  function renderDialogue() {
-    const lines = lesson.dialogue.map(d => {
-      const side = DATA.speakers[d.speaker] === 'f' ? 'right' : 'left';
-      return `<div class="bubble ${side}">
-        <div class="who">${esc(d.speaker)}</div>
-        ${phrase(d)}
-        <button class="mini" data-clip="${esc(d.id)}" aria-label="Play line">🔊</button>
-      </div>`;
-    }).join('');
-    shell(`
-      <p class="lead">Listen to the whole conversation, then tap any line to hear it again.</p>
-      <div class="row"><button class="btn primary" data-act="all">▶ Play conversation</button></div>
-      <div class="chat">${lines}</div>
-      <div class="nav"><span></span><button class="btn primary" data-act="next">Your turn to speak →</button></div>`);
-    app.querySelector('[data-act=all]').onclick = async e => {
-      const btn = e.currentTarget;
-      btn.disabled = true;
-      for (const d of lesson.dialogue) {
-        const el = app.querySelector(`[data-clip="${d.id}"]`)?.closest('.bubble');
-        el?.classList.add('lit');
-        el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-        const ok = await audio.play(d.id);
-        el?.classList.remove('lit');
-        if (!ok) { toast('Some lines have no recording yet.'); break; }
-        await new Promise(r => setTimeout(r, 350));
-      }
-      btn.disabled = false;
-    };
-    app.querySelector('[data-act=next]').onclick = () => go('practice');
   }
 
   function renderPractice() {
@@ -237,7 +312,9 @@ function viewLesson(id) {
         <button class="btn ghost" data-act="prev" ${s.i === 0 ? 'disabled' : ''}>Back</button>
         <span class="count">${s.i + 1} / ${lesson.items.length}</span>
         <button class="btn primary" data-act="next">${s.i === lesson.items.length - 1 ? 'Take the quiz →' : 'Next'}</button>
-      </div>`);
+      </div>
+      ${s.i < lesson.items.length - 1 ? `<p class="skip"><button class="linkbtn" data-act="skip">Skip to the quiz →</button></p>` : ''}`);
+    app.querySelector('[data-act=skip]')?.addEventListener('click', () => go('quiz'));
     const rec = app.querySelector('[data-act=rec]');
     if (rec) rec.onclick = async () => {
       if (rec.dataset.on) return;
@@ -269,19 +346,15 @@ function viewLesson(id) {
   async function buildQuiz() {
     const items = lesson.items;
     const qs = [];
-    for (const it of shuffle(items)) {
+    for (const it of shuffle(items).slice(0, QUIZ_SIZE)) {
       const others = shuffle(items.filter(x => x !== it)).slice(0, 3);
       const hasAudio = !!(await audio.audioUrl(it.id));
       let types = ['meaning', 'say', 'picture'].concat(hasAudio ? ['listen', 'listen'] : []);
       // From Level 3, phrases of 3+ words become "put the words in order".
-      if (level.n >= 3 && words(it.arabizi).length >= 3) types = ['build', 'build', ...types];
+      const n = words(it.arabizi).length;
+      if (level.n >= 3 && n >= 3 && n <= 8) types = ['build', 'build', ...types];
       const type = types[Math.floor(Math.random() * types.length)];
       qs.push({ type, answer: it, options: shuffle([it, ...others]) });
-    }
-    // Listening questions about the conversation go last.
-    for (const c of lesson.questions || []) {
-      const opts = c.options.map((text, k) => ({ text, right: k === c.answer }));
-      qs.push({ type: 'comp', q: c.q, options: shuffle(opts) });
     }
     return { qs, i: 0, score: 0, picked: null, built: [] };
   }
@@ -335,35 +408,6 @@ function viewLesson(id) {
       if (next) next.onclick = () => nextQuestion(z);
       return;
     }
-    if (q.type === 'comp') {
-      const opts = q.options.map((o, k) => {
-        let cls = '';
-        if (z.picked !== null) cls = o.right ? 'right' : (k === z.picked ? 'wrong' : 'dim');
-        return `<button class="opt ${cls}" data-k="${k}" ${z.picked !== null ? 'disabled' : ''}><span class="t-english always">${esc(o.text)}</span></button>`;
-      }).join('');
-      shell(`
-        <div class="quizbar"><div style="width:${(z.i / z.qs.length) * 100}%"></div></div>
-        <div class="card">
-          <p class="ask">👂 About the conversation</p>
-          <div class="phrase big"><div class="t-english always">${esc(q.q)}</div></div>
-          <div class="row"><button class="btn" data-act="replay">🔊 Hear it again</button></div>
-        </div>
-        <div class="opts">${opts}</div>
-        ${z.picked !== null ? `<div class="nav"><span class="count">${z.i + 1} / ${z.qs.length}</span><button class="btn primary" data-act="next">${z.i === z.qs.length - 1 ? 'See results' : 'Next'}</button></div>` : ''}`);
-      app.querySelector('[data-act=replay]').onclick = async e => {
-        e.currentTarget.disabled = true;
-        for (const d of lesson.dialogue) { if (!(await audio.play(d.id))) { toast('Some lines have no recording yet.'); break; } }
-        const b = app.querySelector('[data-act=replay]'); if (b) b.disabled = false;
-      };
-      app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
-        z.picked = +b.dataset.k;
-        if (q.options[z.picked].right) z.score++;
-        render();
-      });
-      const next = app.querySelector('[data-act=next]');
-      if (next) next.onclick = () => nextQuestion(z);
-      return;
-    }
     const optEnglish = ['meaning', 'listen'].includes(q.type);
     const prompt = {
       listen: `<p class="ask">What did you hear?</p><div class="row">${playBtn(q.answer.id, 'Play again')}</div>`,
@@ -410,6 +454,7 @@ function viewLesson(id) {
         <p>${msg}</p>
         <div class="row">
           <button class="btn ghost" data-act="again">Try the quiz again</button>
+          ${lesson.dialogue?.length ? `<a class="btn ghost" href="#/talk/${lesson.id}">💬 Hear it in a conversation</a>` : ''}
           ${next && nextLevel === level
             ? `<a class="btn primary" href="#/lesson/${next.id}">Next: ${esc(next.title)} →</a>`
             : `<a class="btn primary" href="#/level/${level.n}">Back to Level ${level.n}</a>`}
@@ -421,7 +466,7 @@ function viewLesson(id) {
   async function render() {
     audio.stop();
     if (s.step === 'quiz' && !s.quiz) s.quiz = await buildQuiz();
-    ({ learn: renderLearn, dialogue: renderDialogue, practice: renderPractice, quiz: renderQuiz, done: renderDone })[s.step]();
+    ({ learn: renderLearn, practice: renderPractice, quiz: renderQuiz, done: renderDone })[s.step]();
   }
   render();
 }
@@ -457,7 +502,7 @@ async function viewStudio(lessonId) {
     </div>`;
 
   app.innerHTML = `
-    <a class="back" href="#/">← Levels</a>
+    <a class="back" href="#/">← Home</a>
     <h1>Recording studio</h1>
     <div class="card left">
       <p>Record each phrase in your own voice. Recordings are saved in <b>this browser</b> and the lessons use them right away, so you can test as you go.</p>
@@ -562,13 +607,16 @@ function route() {
   const [, page, arg] = location.hash.split('/');
   window.scrollTo(0, 0);
   audio.stop();
-  const section = page === 'studio' || page === 'about' ? page : '';
+  const section = { lessons: 'lessons', level: 'lessons', lesson: 'lessons', talks: 'talks', talk: 'talks', studio: 'studio', about: 'about' }[page] || '';
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
+    else if (page === 'lessons') viewLessons();
+    else if (page === 'talks') viewTalks();
+    else if (page === 'talk') viewTalk(arg);
     else if (page === 'studio') viewStudio(arg).catch(showError);
     else if (page === 'about') viewAbout();
     else viewHome();
@@ -576,7 +624,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 28;
+const VERSION = 30;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -598,7 +646,7 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=28', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=30', { cache: 'no-cache' })).json();
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

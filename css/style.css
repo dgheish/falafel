@@ -250,3 +250,37 @@ main { padding-top: 20px; }
   .hero p { font-size: 1rem; }
   .hero p br { display: none; }
 }
+
+/* Home: two big choices */
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+.choice {
+  display: flex; flex-direction: column; gap: 6px; padding: 22px 20px; text-decoration: none; color: var(--ink);
+  background: var(--card); border: 1.5px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  transition: border-color .15s, transform .12s;
+}
+.choice:hover { border-color: var(--brand); }
+.choice:active { transform: scale(.98); }
+.choice-icon { font-size: 2.2rem; }
+.choice strong { font: 700 1.3rem Poppins, Nunito, sans-serif; color: var(--brand); }
+.choice span:last-child { color: var(--muted); font-size: .95rem; }
+@media (max-width: 520px) { .choices { grid-template-columns: 1fr; } }
+
+/* Paragraph-length examples */
+.phrase.long .t-arabizi { font-size: 1.05rem; line-height: 1.55; }
+.phrase.long .t-arabic { font-size: 1.2rem; line-height: 1.8; }
+.phrase.big.long .t-arabizi { font-size: 1.25rem; line-height: 1.5; }
+.phrase.big.long .t-arabic { font-size: 1.4rem; line-height: 1.8; }
+.phrase.big.long .t-english { font-size: 1rem; }
+.phrase.long { text-align: start; }
+.phrase.long .t-arabic { text-align: right; }
+
+.skip { text-align: center; margin: 10px 0 0; }
+.linkbtn { background: none; border: 0; color: var(--link); font: 600 .95rem Nunito, sans-serif; cursor: pointer; padding: 6px; }
+.qcard { margin-bottom: 12px; }
+.qcard .opts { margin-top: 8px; }
+
+@media (max-width: 720px) {
+  .mainnav { gap: 18px; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; white-space: nowrap; margin: 0 -16px; padding: 0 16px; width: calc(100% + 32px); }
+  .mainnav::-webkit-scrollbar { display: none; }
+  .mainnav a { font-size: .9rem; flex: none; }
+}
