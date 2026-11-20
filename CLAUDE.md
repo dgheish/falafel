@@ -44,6 +44,7 @@ The owner records in **Recording studio** (`#/studio`, link in the footer): one 
 - Run locally: `python3 -m http.server 8080`, then open http://localhost:8080. It must be served, not opened as a file.
 - Test in a browser with Playwright (Chromium is preinstalled). Play through lessons to the end of the quiz and check for page errors. Screenshot at phone size.
 - After changes: `tools/bump.sh`, `python3 tools/check_content.py`, commit, `git push`. GitHub Pages redeploys in about a minute.
+- **Go live directly (owner's standing instruction, Nov 2026):** when the owner asks for a change, make it, test it, then push it to `main` straight away so it's live. Don't ask "should I put it live?" first. Push to the session's working branch too. Big work the owner didn't ask for in that message (for example writing a whole new level) still gets shown to them before it goes live.
 - Cloud sessions here can push to the repo but **can't change GitHub settings** (Pages, renaming). The owner does those by hand.
 - Corrections from the owner arrive in plain words ("Level 4, At the pharmacy: we say X"). Find the phrase in `lessons.json`, fix the arabizi, arabic and english consistently (and the matching dialogue lines), then bump and push.
 
