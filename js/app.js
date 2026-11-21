@@ -1,5 +1,5 @@
-import { settings, progress, clips, srs } from './store.js?v=43';
-import * as audio from './audio.js?v=43';
+import { settings, progress, clips, srs } from './store.js?v=46';
+import * as audio from './audio.js?v=46';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -522,6 +522,9 @@ function viewLesson(id) {
   }
 
   const words = t => t.split(/\s+/).filter(Boolean);
+  // Split a paragraph into sentences after . ! ? (keeping the mark on the sentence).
+  const sentences = t => t.split(/(?<=[.!?])\s+/).filter(Boolean);
+  const tokens = q => (q.type === 'order' ? sentences : words)(q.answer.arabizi);
 
   async function buildQuiz() {
     const items = lesson.items;
@@ -529,10 +532,18 @@ function viewLesson(id) {
     for (const it of shuffle(items).slice(0, QUIZ_SIZE)) {
       const others = shuffle(items.filter(x => x !== it)).slice(0, 3);
       const hasAudio = !!(await audio.audioUrl(it.id));
-      let types = ['meaning', 'say', 'picture'].concat(hasAudio ? ['listen', 'listen'] : []);
-      // From Level 3, phrases of 3+ words become "put the words in order".
       const n = words(it.arabizi).length;
-      if (level.n >= 3 && n >= 3 && n <= 8) types = ['build', 'build', ...types];
+      let types;
+      const multi = sentences(it.arabizi).length >= 2;
+      if (n > 12 || multi) {
+        // Linked sentences and paragraphs: understand it, say it, and put its sentences in order.
+        types = ['meaning', 'meaning', 'say'].concat(hasAudio ? ['listen', 'listen'] : []);
+        if (multi) types = ['order', 'order', ...types];
+      } else {
+        types = ['meaning', 'say', 'picture'].concat(hasAudio ? ['listen', 'listen'] : []);
+        // From Level 3, phrases of 3 to 8 words become "put the words in order".
+        if (level.n >= 3 && n >= 3 && n <= 8) types = ['build', 'build', ...types];
+      }
       const type = types[Math.floor(Math.random() * types.length)];
       qs.push({ type, answer: it, options: shuffle([it, ...others]) });
     }
@@ -540,18 +551,19 @@ function viewLesson(id) {
   }
 
   function renderBuild(z, q) {
-    const target = words(q.answer.arabizi);
+    const target = tokens(q);
+    const sent = q.type === 'order' ? 'sent' : '';
     if (!z.pool) z.pool = shuffle(target.map((w, k) => ({ w, k })));
     const used = new Set(z.built.map(t => t.k));
     const checked = z.picked !== null;
     const right = checked && z.built.map(t => t.w).join(' ') === target.join(' ');
-    const line = z.built.map(t => `<button class="tile" data-k="${t.k}" ${checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('')
-      || '<span class="muted">Tap the words below in order</span>';
-    const pool = z.pool.map(t => `<button class="tile ${used.has(t.k) ? 'gone' : ''}" data-p="${t.k}" ${used.has(t.k) || checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('');
+    const line = z.built.map(t => `<button class="tile ${sent}" data-k="${t.k}" ${checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('')
+      || `<span class="muted">Tap the ${sent ? 'sentences' : 'words'} below in order</span>`;
+    const pool = z.pool.map(t => `<button class="tile ${sent} ${used.has(t.k) ? 'gone' : ''}" data-p="${t.k}" ${used.has(t.k) || checked ? 'disabled' : ''}>${esc(t.w)}</button>`).join('');
     shell(`
       <div class="quizbar"><div style="width:${(z.i / z.qs.length) * 100}%"></div></div>
       <div class="card">
-        <p class="ask">Build the sentence</p>
+        <p class="ask">${sent ? 'Put the sentences in order' : 'Build the sentence'}</p>
         <div class="phrase big"><div class="t-english always">${esc(q.answer.english)}</div></div>
       </div>
       <div class="build ${checked ? (right ? 'right' : 'wrong') : ''}">${line}</div>
@@ -582,7 +594,7 @@ function viewLesson(id) {
   function renderQuiz() {
     const z = s.quiz;
     const q = z.qs[z.i];
-    if (q.type === 'build') {
+    if (q.type === 'build' || q.type === 'order') {
       renderBuild(z, q);
       const next = app.querySelector('[data-act=next]');
       if (next) next.onclick = () => nextQuestion(z);
@@ -606,7 +618,7 @@ function viewLesson(id) {
     shell(`
       <div class="quizbar"><div style="width:${(z.i / z.qs.length) * 100}%"></div></div>
       <div class="card">${prompt}</div>
-      <div class="opts">${opts}</div>
+      <div class="opts ${words(q.answer.arabizi).length > 8 ? 'long' : ''}">${opts}</div>
       ${z.picked !== null ? `<div class="nav"><span class="count">${z.i + 1} / ${z.qs.length}</span><button class="btn primary" data-act="next">${z.i === z.qs.length - 1 ? 'See results' : 'Next'}</button></div>` : ''}`);
     if (q.type === 'listen' && z.picked === null) audio.play(q.answer.id);
     app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
@@ -1076,7 +1088,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 43;
+const VERSION = 46;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -1098,10 +1110,10 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=43', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=46', { cache: 'no-cache' })).json();
     // Verbs are optional: if the file fails to load, the rest of the site still works.
-    VERBS = await fetch('content/verbs.json?v=43', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
-    GUIDE = await fetch('content/grammar.json?v=43', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    VERBS = await fetch('content/verbs.json?v=46', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    GUIDE = await fetch('content/grammar.json?v=46', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

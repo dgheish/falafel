@@ -8,7 +8,7 @@ and lessons too short for the quiz. Prints totals when everything passes.
 """
 import json, re, sys
 
-ALLOWED = re.compile(r"^[A-Za-z0-9 .,!?'\-éè…():/]*$")
+ALLOWED = re.compile(r"^[A-Za-z0-9 .,!?'\-éè…():/\"]*$")
 
 d = json.load(open('content/lessons.json'))
 errors, ids = [], []

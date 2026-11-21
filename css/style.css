@@ -363,3 +363,9 @@ main { padding-top: 20px; }
   .mainnav { order: 3; width: 100%; justify-content: center; gap: 18px; }
 }
 .tries[hidden] { display: none; }
+
+/* Long examples (Levels 7 to 10) in the quiz */
+.tile.sent { display: block; width: 100%; text-align: left; white-space: normal; line-height: 1.4; }
+.build .tile.sent { margin-bottom: 6px; }
+.opts.long .opt { font-size: .92rem; line-height: 1.45; text-align: left; }
+.opts.long .opt .t-arabic { font-size: 1rem; line-height: 1.8; }
