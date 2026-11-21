@@ -24,7 +24,7 @@ The owner is a native Lebanese speaker. They review the wording and record every
 ## Status
 
 - All 200 lessons are written. **Everything is a DRAFT** written by Claude and needs native review. Expect spelling and phrasing fixes, especially in Levels 9–10 and in sensitive lessons (condolences, news, "Words to avoid").
-- **Expanding to 30 examples per lesson, level by level.** Done: Level 1 (all 20 lessons at 30). To do: Levels 2–10. **Levels 7–8 were rewritten (Nov 2026) as two or three linked sentences per example (10 per lesson, still to grow to 30).** Levels 3–10 also need their examples reshaped to fit the ladder (phrases, then sentences, then paragraphs); their level titles and goals still describe the old plan.
+- **Expanding to 30 examples per lesson, level by level.** Done: Level 1 (all 20 lessons at 30). To do: Levels 2–10. **Levels 7–8 were rewritten (Nov 2026) as two or three linked sentences per example (10 per lesson, still to grow to 30). Level 9 is now 6 paragraphs of 4–6 sentences per lesson (a paragraph holds about five sentences, so 6 is roughly 30 sentences).** Levels 3–10 also need their examples reshaped to fit the ladder (phrases, then sentences, then paragraphs); their level titles and goals still describe the old plan.
 - **No audio recorded yet.** Run `python3 tools/check_content.py` for the current clip count. Suggested order: Levels 1–3 first.
 
 ## Files

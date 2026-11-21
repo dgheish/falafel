@@ -25506,7 +25506,7 @@
     {
       "n": 9,
       "title": "Real situations",
-      "goal": "Longer conversations at normal speed for real errands.",
+      "goal": "Short paragraphs of 4 to 6 sentences: one real errand or scene per example.",
       "lessons": [
         {
           "id": "lv9-01",
@@ -25516,70 +25516,45 @@
           "items": [
             {
               "id": "lv9-01-01",
-              "arabizi": "shu fik?",
-              "arabic": "شو فيك؟",
-              "english": "What's wrong with you?",
-              "pic": "🩺",
-              "f": {
-                "arabizi": "shu fike?",
-                "arabic": "شو فيكي؟"
-              }
+              "arabizi": "sarle tlet iyyem 3ande waja3 b rase. ma 3am fiye nem mni7. akhadt panadol bas ma 3emel shi. el waja3 aktar bel sob7.",
+              "arabic": "صرلي تلت إيّام عندي وجع براسي. ما عم فيي نام منيح. أخدت panadol بس ما عمل شي. الوجع أكتر بالصبح.",
+              "english": "I've had a headache for three days. I can't sleep well. I took Panadol but it did nothing. The pain is worse in the morning.",
+              "pic": "🤕"
             },
             {
               "id": "lv9-01-02",
-              "arabizi": "men emta 3andak hal waja3?",
-              "arabic": "من إيمتى عندك هالوجع؟",
-              "english": "Since when have you had this pain?",
-              "pic": "⏳"
+              "arabizi": "el doctor fa7asne w 2alle enno 3ande griype. 2alle lezim erta7 tlet iyyem bel beit. katabele dawa la el 7arara. w 2alle eshrab maye ktir.",
+              "arabic": "الدكتور فحصني وقلّي إنّو عندي grippe. قلّي لازم ارتاح تلت إيّام بالبيت. كتبلي دوا للحرارة. وقلّي اشرب مي كتير.",
+              "english": "The doctor examined me and told me I have the flu. He said I must rest at home for three days. He prescribed me medicine for the fever. And he told me to drink lots of water.",
+              "pic": "🩺"
             },
             {
               "id": "lv9-01-03",
-              "arabizi": "l waja3 hon, b jneb l yamin",
-              "arabic": "الوجع هون، بجنب اليمين",
-              "english": "The pain is here, on the right side",
-              "pic": "👉"
+              "arabizi": "ebne 3ando 7arara men mbere7 el masa. 3am yesh2a w ma 3am yekol. 3ateito dawa bas el 7arara ma nezlet. fina njibo hala2 la 3endak?",
+              "arabic": "ابني عندو حرارة من مبارح المسا. عم يشقى وما عم ياكل. عطيتو دوا بس الحرارة ما نزلت. فينا نجيبو هلّق لعندك؟",
+              "english": "My son has had a fever since yesterday evening. He's suffering and not eating. I gave him medicine but the fever didn't go down. Can we bring him to you now?",
+              "pic": "🤒"
             },
             {
               "id": "lv9-01-04",
-              "arabizi": "3ande 7asasiye 3al penicillin",
-              "arabic": "عندي حساسية عالبنسلين",
-              "english": "I'm allergic to penicillin",
-              "pic": "⚠️"
+              "arabizi": "khod el 7abbe marra 3al sob7 w marra bel masa, ba3d el akel. ma tekhoda 3ala ma3de fadye. iza ma t7assant ba3d jem3a, erja3 la 3ande. w ma tensa tkhalles el 3elbe kella.",
+              "arabic": "خود الحبّة مرّة عالصبح ومرّة بالمسا، بعد الأكل. ما تاخدا على معدة فاضية. إذا ما تحسّنت بعد جمعة، ارجع لعندي. وما تنسى تخلّص العلبة كلّا.",
+              "english": "Take the pill once in the morning and once in the evening, after eating. Don't take it on an empty stomach. If you don't get better after a week, come back to me. And don't forget to finish the whole box.",
+              "pic": "💊"
             },
             {
               "id": "lv9-01-05",
-              "arabizi": "byewja3ne aktar bel leil",
-              "arabic": "بيوجعني أكتر بالليل",
-              "english": "It hurts more at night",
-              "pic": "🌙"
+              "arabizi": "el doctor talab menne fa7s dam. lezim rou7 3al mokhtabar bukra bel sob7, w ma lezim ekol shi 2abel. el natije btetla3 ba3d yomein. ba3dein ra7 erja3 la 3endo.",
+              "arabic": "الدكتور طلب منّي فحص دم. لازم روح عالمختبر بكرا بالصبح، وما لازم اكل شي قبل. النتيجة بتطلع بعد يومين. بعدين رح ارجع لعندو.",
+              "english": "The doctor asked me for a blood test. I have to go to the lab tomorrow morning, and I mustn't eat anything before. The result comes out after two days. Then I'll go back to him.",
+              "pic": "🩸"
             },
             {
               "id": "lv9-01-06",
-              "arabizi": "lezmak sowra w ta7lil dam",
-              "arabic": "لازمك صورة وتحليل دم",
-              "english": "You need an X-ray and a blood test",
-              "pic": "🧪"
-            },
-            {
-              "id": "lv9-01-07",
-              "arabizi": "mish shi khatir",
-              "arabic": "مش شي خطير",
-              "english": "It's nothing serious",
-              "pic": "😌"
-            },
-            {
-              "id": "lv9-01-08",
-              "arabizi": "erja3 ba3d jem3a",
-              "arabic": "إرجع بعد جمعة",
-              "english": "Come back in a week",
-              "pic": "📅"
-            },
-            {
-              "id": "lv9-01-09",
-              "arabizi": "l ta2min byghatte?",
-              "arabic": "التأمين بيغطّي؟",
-              "english": "Does insurance cover it?",
-              "pic": "🛡️"
+              "arabizi": "3ande ta2min, bas ma ba3ref iza bighatte el kashfiyye. el sekreteira 2alet enno lezim edfa3 hala2 w ba3dein el ta2min byerja3le el masari. addeish el kashfiyye? w fiye edfa3 bel carte?",
+              "arabic": "عندي تأمين، بس ما بعرف إذا بيغطّي الكشفيّة. السكرتيرة قالت إنّو لازم ادفع هلّق وبعدين التأمين بيرجعلي المصاري. قدّيش الكشفيّة؟ وفيي ادفع بالكارت؟",
+              "english": "I have insurance, but I don't know if it covers the consultation. The secretary said I have to pay now and the insurance will pay me back later. How much is the consultation? And can I pay by card?",
+              "pic": "🧾"
             }
           ],
           "dialogue": [
@@ -25699,66 +25674,45 @@
           "items": [
             {
               "id": "lv9-02-01",
-              "arabizi": "3am dawwer 3a sha22a lal ijar",
-              "arabic": "عم دوّر عشقّة للإيجار",
-              "english": "I'm looking for a flat to rent",
-              "pic": "🔎"
+              "arabizi": "3am dawwer 3a sh2a b Beirut. badde ghorfetein w sala, 2rib men el shoghol. ma badde edfa3 aktar men tmen miyye dollar bel shahr. w bas fi kahraba arba3ta3sh se3a 3al a2all.",
+              "arabic": "عم دوّر عشقّة ببيروت. بدّي غرفتين وصالة، قريبة من الشغل. ما بدّي ادفع أكتر من تمن مية دولار بالشهر. وبس في كهربا أربعتعش ساعة عالأقلّ.",
+              "english": "I'm looking for a flat in Beirut. I want two bedrooms and a living room, close to work. I don't want to pay more than eight hundred dollars a month. And only if there's at least fourteen hours of electricity.",
+              "pic": "🏢"
             },
             {
               "id": "lv9-02-02",
-              "arabizi": "addeish l ijar bel shahr?",
-              "arabic": "قدّيش الإيجار بالشهر؟",
-              "english": "How much is the monthly rent?",
-              "pic": "💵"
+              "arabizi": "el sh2a bel tabe2 el tene, w fi ascenseur. el ijar sab3 miyye dollar, bas el ishtirak w el maye 3a 7sebak. el malek baddo tlet tesh-hor salaf. w el 3a2d la sene.",
+              "arabic": "الشقّة بالطابق التاني، وفي ascenseur. الإيجار سبع مية دولار، بس الاشتراك والمي عحسابك. المالك بدّو تلت تشهر سلف. والعقد لسنة.",
+              "english": "The flat is on the second floor, and there's a lift. The rent is seven hundred dollars, but the generator subscription and water are on you. The owner wants three months in advance. And the contract is for a year.",
+              "pic": "🔑"
             },
             {
               "id": "lv9-02-03",
-              "arabizi": "l ijar ma3 l moteur w l mayy?",
-              "arabic": "الإيجار مع الموتور والمي؟",
-              "english": "Does the rent include generator and water?",
-              "pic": "🔋"
+              "arabizi": "fi parking lal sayyara? w el 7ay hadi bel leil? ana mesh m3awwad 3al daje. w iza fi mashkal bel sh2a, min bisalle7o?",
+              "arabic": "في parking للسيّارة؟ والحيّ هادي بالليل؟ أنا مش معوّد عالضجّة. وإذا في مشكل بالشقّة، مين بيصلّحو؟",
+              "english": "Is there parking for the car? And is the neighbourhood quiet at night? I'm not used to noise. And if there's a problem in the flat, who fixes it?",
+              "pic": "🅿️"
             },
             {
               "id": "lv9-02-04",
-              "arabizi": "addeish l ta2min?",
-              "arabic": "قدّيش التأمين؟",
-              "english": "How much is the deposit?",
-              "pic": "🔐"
-            },
-            {
-              "id": "lv9-02-05",
-              "arabizi": "l 3a2d la sene",
-              "arabic": "العقد لسنة",
-              "english": "The contract is for a year",
-              "pic": "📝"
-            },
-            {
-              "id": "lv9-02-06",
-              "arabizi": "fiya farsh?",
-              "arabic": "فيها فرش؟",
-              "english": "Is it furnished?",
+              "arabizi": "el sh2a mafroushe: fi kanabe, takht, brad w ghassale. bas ma fi air conditioner bel ghorfe. el malek 2al enno bi7otto iza mdeina el 3a2d. fina nfeet nshouf el ghorfe kamen?",
+              "arabic": "الشقّة مفروشة: في كنباية، تخت، برّاد وغسّالة. بس ما في مكيّف بالغرفة. المالك قال إنّو بيحطّو إذا مضينا العقد. فينا نفوت نشوف الغرفة كمان؟",
+              "english": "The flat is furnished: there's a sofa, a bed, a fridge and a washing machine. But there's no air con in the bedroom. The owner said he'll put one in if we sign the contract. Can we go in and see the bedroom too?",
               "pic": "🛋️"
             },
             {
-              "id": "lv9-02-07",
-              "arabizi": "l dafe3 kel tlet shhour",
-              "arabic": "الدفع كل تلت شهور",
-              "english": "Payment every three months",
-              "pic": "📆"
-            },
-            {
-              "id": "lv9-02-08",
-              "arabizi": "fina nfasel shway bel se3r?",
-              "arabic": "فينا نفاصل شوي بالسعر؟",
-              "english": "Can we negotiate the price a bit?",
+              "id": "lv9-02-05",
+              "arabizi": "badde fakker fiya w erja3lak bukra. el sh2a 7elwe bas el ijar shway ghali. fik tnazzel shway iza dafa3t sene kella? ma ra7 tla2e 7ada ndif metle!",
+              "arabic": "بدّي فكّر فيها وارجعلك بكرا. الشقّة حلوة بس الإيجار شوي غالي. فيك تنزّل شوي إذا دفعت سنة كلّا؟ ما رح تلاقي حدا نضيف متلي!",
+              "english": "I want to think about it and get back to you tomorrow. The flat is nice but the rent is a bit high. Can you lower it a bit if I pay the whole year? You won't find anyone as tidy as me!",
               "pic": "🤝"
             },
             {
-              "id": "lv9-02-09",
-              "arabizi": "emta fiye fout?",
-              "arabic": "إيمتى فيي فوت؟",
-              "english": "When can I move in?",
-              "pic": "🔑"
+              "id": "lv9-02-06",
+              "arabizi": "mdeina el 3a2d el yom. dafa3t ijar shahrein w ta2min shahr. el malek 3atane el mafatih w ra2am el natour. bukra el sob7 ra7 net7awwal.",
+              "arabic": "مضينا العقد اليوم. دفعت إيجار شهرين وتأمين شهر. المالك عطاني المفاتيح ورقم الناطور. بكرا الصبح رح نتحوّل.",
+              "english": "We signed the contract today. I paid two months' rent and one month's deposit. The owner gave me the keys and the caretaker's number. Tomorrow morning we'll move in.",
+              "pic": "✍️"
             }
           ],
           "dialogue": [
@@ -25871,67 +25825,45 @@
           "items": [
             {
               "id": "lv9-03-01",
-              "arabizi": "addeish 7a2 hayda l sejjede?",
-              "arabic": "قدّيش حقّ هيدي السجّادة؟",
-              "english": "How much is this rug?",
+              "arabizi": "addeish 7a2 hal sejjede? ana 3ajabne lona. bas akid hayda mesh el se3r el akhir. ana mesh tourist, ana sakne hon!",
+              "arabic": "قدّيش حقّ هالسجّادة؟ أنا عجبني لونا. بس أكيد هيدا مش السعر الأخير. أنا مش tourist، أنا ساكنة هون!",
+              "english": "How much is this rug? I like its colour. But surely that's not the final price. I'm not a tourist, I live here!",
               "pic": "🧶"
             },
             {
               "id": "lv9-03-02",
-              "arabizi": "ya 7aram, hayda ghali ktir 3layye",
-              "arabic": "يا حرام، هيدا غالي كتير عليّ",
-              "english": "Oh, that's too expensive for me",
-              "pic": "😩"
+              "arabizi": "mitein dollar ktir! bel souk el tene shefet wa7de metla b miyye w khamsin. 3tine yeha b miyye w ana bekhda hala2.",
+              "arabic": "ميتين دولار كتير! بالسوق التاني شفت وحدة متلا بمية وخمسين. عطيني ياها بمية وأنا باخدا هلّق.",
+              "english": "Two hundred dollars is a lot! In the other market I saw one like it for a hundred and fifty. Give it to me for a hundred and I'll take it now.",
+              "pic": "💸"
             },
             {
               "id": "lv9-03-03",
-              "arabizi": "3melle se3r, ana zboun",
-              "arabic": "عملّي سعر، أنا زبون",
-              "english": "Give me a price, I'm a customer",
-              "pic": "🤝"
+              "arabizi": "walla ma btwaffe ma3e. hayde sejjede yadawiyye men 3ajam, w el soof 2adim. a2all shi miyye w tmenin, w ma fi 7ada bya3tik yeha hayk. bas la khatrak!",
+              "arabic": "والله ما بتوفّي معي. هيدي سجّادة يدويّة من العجم، والصوف قديم. أقلّ شي مية وتمانين، وما في حدا بيعطيك ياها هيك. بس لخاطرك!",
+              "english": "Honestly, it doesn't pay for me. This is a handmade rug from Iran, and the wool is old. The lowest is one hundred and eighty, and nobody will give it to you like that. Just for your sake!",
+              "pic": "🧔"
             },
             {
               "id": "lv9-03-04",
-              "arabizi": "akher kelme?",
-              "arabic": "آخر كلمة؟",
-              "english": "Your last word?",
-              "pic": "🗣️"
+              "arabizi": "tayyeb, khallina netfa2 3al nos: miyye w khamsin w btzidle el mkhadde el zghire hdiyye. iza ma ba2a fi, bemshe w bfakker fiya.",
+              "arabic": "طيّب، خلّينا نتّفق عالنصّ: مية وخمسين وبتزيدلي المخدّة الزغيرة هديّة. إذا ما بقا في، بمشي وبفكّر فيها.",
+              "english": "Ok, let's meet halfway: a hundred and fifty and you add the little cushion as a gift. If not, I'll walk away and think about it.",
+              "pic": "🛍️"
             },
             {
               "id": "lv9-03-05",
-              "arabizi": "fi 7ada 2arib men hon arkhas",
-              "arabic": "في حدا قريب من هون أرخص",
-              "english": "Someone nearby is cheaper",
-              "pic": "👀"
+              "arabizi": "ana ma ba3ref faasel bel se3r. b7ebb edfa3 el se3r el maktoub w khalas. bas Lina 2alet enno el baye3 bel souk byez3al iza ma faasalt! fa jarrabt w nazzalt 3eshrin bel miyye.",
+              "arabic": "أنا ما بعرف فاصل بالسعر. بحبّ ادفع السعر المكتوب وخلص. بس لينا قالت إنّو البيّاع بالسوق بيزعل إذا ما فاصلت! فا جرّبت ونزّلت عشرين بالمية.",
+              "english": "I don't know how to haggle. I like to pay the written price and that's it. But Lina said the seller in the souk gets upset if you don't haggle! So I tried and got twenty percent off.",
+              "pic": "🙃"
             },
             {
               "id": "lv9-03-06",
-              "arabizi": "bekhod tnein iza nazzalet",
-              "arabic": "باخد تنين إذا نزّلت",
-              "english": "I'll take two if you lower it",
-              "pic": "✌️"
-            },
-            {
-              "id": "lv9-03-07",
-              "arabizi": "mashe l 7al, la khater 3younak",
-              "arabic": "ماشي الحال، لخاطر عيونك",
-              "english": "OK, for the sake of your eyes",
-              "pic": "😉",
-              "note": "A playful phrase sellers use."
-            },
-            {
-              "id": "lv9-03-08",
-              "arabizi": "khalas, ma fiye 2a2tol 7ale",
-              "arabic": "خلص، ما فيي إقتل حالي",
-              "english": "That's it, I can't go lower",
-              "pic": "🛑"
-            },
-            {
-              "id": "lv9-03-09",
-              "arabizi": "7a mshe w erja3",
-              "arabic": "رح إمشي وإرجع",
-              "english": "I'll go and come back",
-              "pic": "🚶"
+              "arabizi": "khalas, mabrouk 3leik! 3am leffellak yeha bel jarida la ma tetwassakh. w iza ma 3ajabet marta, jibla w bghayyerlak yeha. ahla w sahla fik dayman.",
+              "arabic": "خلص، مبروك عليك! عم لفلك ياها بالجريدة لما تتوسّخ. وإذا ما عجبت مرتك، جيبا وبغيّرلك ياها. أهلا وسهلا فيك دايماً.",
+              "english": "Done, congratulations! I'm wrapping it in newspaper so it doesn't get dirty. And if your wife doesn't like it, bring it and I'll swap it. You're always welcome.",
+              "pic": "🗞️"
             }
           ],
           "dialogue": [
@@ -26044,67 +25976,45 @@
           "items": [
             {
               "id": "lv9-04-01",
-              "arabizi": "l sayyara 3am ta3mel sot ghareeb",
-              "arabic": "السيّارة عم تعمل صوت غريب",
-              "english": "The car is making a strange noise",
-              "pic": "🔊"
+              "arabizi": "el sayyara 3am ta3mel sawt gharib lamma 7ott fren. el sawt ballash men jem3a. ma ba3ref iza men el frenet aw men el dawaleb. fik tshouf shu fiya?",
+              "arabic": "السيّارة عم تعمل صوت غريب لمّا حطّ فرام. الصوت بلّش من جمعة. ما بعرف إذا من الفرامات أو من الدواليب. فيك تشوف شو فيها؟",
+              "english": "The car makes a strange noise when I brake. The noise started a week ago. I don't know if it's from the brakes or the tyres. Can you see what's wrong with it?",
+              "pic": "🔧"
             },
             {
               "id": "lv9-04-02",
-              "arabizi": "l dew l a7mar dawwa",
-              "arabic": "الضو الأحمر ضوّى",
-              "english": "The red light came on",
-              "pic": "🚨"
+              "arabizi": "el frenet khelso, lezim nghayyerhon. w el zeit sarlo ktir ma tghayyar. bkallfak tlet miyye dollar ma3 el sh2el. ra7 tkoun jehze bukra el dohr.",
+              "arabic": "الفرامات خلصو، لازم نغيّرن. والزيت صرلو كتير ما تغيّر. بتكلّفك تلت مية دولار مع الشغل. رح تكون جاهزة بكرا الضهر.",
+              "english": "The brakes are worn out, we need to change them. And the oil hasn't been changed for a long time. It'll cost you three hundred dollars with labour. It'll be ready tomorrow at noon.",
+              "pic": "🛞"
             },
             {
               "id": "lv9-04-03",
-              "arabizi": "ma 3am tdour",
-              "arabic": "ما عم تدور",
-              "english": "It won't start",
-              "pic": "🔑"
+              "arabizi": "tlet miyye ktir! 3and el mechanic el tene 2alole mitein. fik t3amelle se3r a7san? w baddi el 2ta3 asliyye, mesh tayweniyye.",
+              "arabic": "تلت مية كتير! عند الميكانيكي التاني قالولي ميتين. فيك تعملّي سعر أحسن؟ وبدّي القطع أصليّة، مش تايوانيّة.",
+              "english": "Three hundred is a lot! At the other mechanic they told me two hundred. Can you give me a better price? And I want original parts, not cheap copies.",
+              "pic": "💰"
             },
             {
               "id": "lv9-04-04",
-              "arabizi": "l frem ma 3am tmasek",
-              "arabic": "الفرام ما عم تمسك",
-              "english": "The brakes aren't gripping",
-              "pic": "🛑",
-              "note": "Written فرام, from French 'frein'."
+              "arabizi": "el sayyara ma 3am tedwor bel sob7. el battariyye jdide, fa akid fi shi tene. jarrabta ma3 el jar bas ma mshyet. fik teb3atle 7ada yshoufa 3al beit?",
+              "arabic": "السيّارة ما عم تدور بالصبح. البطّارية جديدة، فا أكيد في شي تاني. جرّبتا مع الجار بس ما مشيت. فيك تبعتلي حدا يشوفا عالبيت؟",
+              "english": "The car won't start in the morning. The battery is new, so it must be something else. I tried with the neighbour but it didn't start. Can you send someone to look at it at home?",
+              "pic": "🚗"
             },
             {
               "id": "lv9-04-05",
-              "arabizi": "lezma tghyir zeit",
-              "arabic": "لازما تغيير زيت",
-              "english": "It needs an oil change",
-              "pic": "🛢️"
+              "arabizi": "el mechanic 2al enno el moteur kello mni7. el mashkal bas bel radiateur, fi naz2a zghire. sakkaro bi nos se3a w ma akhad menne masari ktir.",
+              "arabic": "الميكانيكي قال إنّو الموتور كلّو منيح. المشكل بس بالرادياتور، في نزّة زغيرة. سكّرو بنصّ ساعة وما أخد منّي مصاري كتير.",
+              "english": "The mechanic said the whole engine is fine. The problem is only in the radiator, there's a small leak. He fixed it in half an hour and didn't charge me much.",
+              "pic": "🌡️"
             },
             {
               "id": "lv9-04-06",
-              "arabizi": "l battery khelset",
-              "arabic": "البطارية خلصت",
-              "english": "The battery is dead",
-              "pic": "🪫"
-            },
-            {
-              "id": "lv9-04-07",
-              "arabizi": "emta bt-khlas?",
-              "arabic": "إيمتى بتخلص؟",
-              "english": "When will it be ready?",
-              "pic": "⏰"
-            },
-            {
-              "id": "lv9-04-08",
-              "arabizi": "addeish bt-kallef?",
-              "arabic": "قدّيش بتكلّف؟",
-              "english": "How much will it cost?",
-              "pic": "💵"
-            },
-            {
-              "id": "lv9-04-09",
-              "arabizi": "2ta3 asliye aw tijariye?",
-              "arabic": "قطع أصلية أو تجارية؟",
-              "english": "Original or generic parts?",
-              "pic": "⚙️"
+              "arabizi": "3al tari2 la Jounieh, wa22afet el sayyara bel nos. 3ayyatet la sharket el ta2min w ba3atoule winch. ba3d se3a ejo w 2atarouha. hala2 hiyye 3and el mechanic.",
+              "arabic": "عالطريق لجونيه، وقّفت السيّارة بالنصّ. عيّطت لشركة التأمين وبعتولي ونش. بعد ساعة إجو وقطروها. هلّق هيّي عند الميكانيكي.",
+              "english": "On the way to Jounieh, the car stopped in the middle. I called the insurance company and they sent me a tow truck. After an hour they came and towed it. Now it's at the mechanic's.",
+              "pic": "🚛"
             }
           ],
           "dialogue": [
@@ -26217,67 +26127,45 @@
           "items": [
             {
               "id": "lv9-05-01",
-              "arabizi": "awra2ak iza bitrid",
-              "arabic": "أوراقك إذا بتريد",
-              "english": "Your papers, please",
+              "arabizi": "masa el kheir. wara2ak iza bitred. akid, shu baddak bel zabt? 3tine el hawiyye w daftar el sayyara.",
+              "arabic": "مسا الخير. أوراقك إذا بتريد. أكيد، شو بدّك بالزبط؟ عطيني الهويّة ودفتر السيّارة.",
+              "english": "Good evening. Your papers, please. Sure, what exactly do you need? Give me your ID and the car's registration.",
               "pic": "🪪"
             },
             {
               "id": "lv9-05-02",
-              "arabizi": "hayde l hawiye",
-              "arabic": "هيدي الهويّة",
-              "english": "Here's my ID",
-              "pic": "🆔"
+              "arabizi": "wein rayi7 hala2? ana rayi7 3al beit b Jbeil, men el shoghol. kel yom bmor2 men hon. tfaddal, hayda el passport w el iqame.",
+              "arabic": "وين رايح هلّق؟ أنا رايح عالبيت بجبيل، من الشغل. كل يوم بمرق من هون. تفضّل، هيدا الـ passport والإقامة.",
+              "english": "Where are you going now? I'm going home to Byblos, from work. I pass through here every day. Here you go, this is the passport and the residency.",
+              "pic": "🛂"
             },
             {
               "id": "lv9-05-03",
-              "arabizi": "3ande e2ame",
-              "arabic": "عندي إقامة",
-              "english": "I have residency",
-              "pic": "📄"
+              "arabizi": "fta7 el sanadou2 iza bitred. ma fi shi, bas shantet riyada w kam kteb. tfaddal shouf.",
+              "arabic": "افتح الصندوق إذا بتريد. ما في شي، بس شنتة رياضة وكم كتاب. تفضّل شوف.",
+              "english": "Open the boot, please. There's nothing, just a sports bag and a few books. Go ahead and look.",
+              "pic": "🚘"
             },
             {
               "id": "lv9-05-04",
-              "arabizi": "men wein jeye?",
-              "arabic": "من وين جايي؟",
-              "english": "Where are you coming from?",
-              "pic": "↩️"
+              "arabizi": "el 3askari kan latif ktir. sa2alne men wein ana w shu 3am a3mel b Lebnen. 2olto enno 3am et3allam 3arabe, w 3ajabo ktir. 2alle \"ahla w sahla\" w khallane mor2.",
+              "arabic": "العسكري كان لطيف كتير. سألني من وين أنا وشو عم اعمل بلبنان. قلتلو إنّو عم اتعلّم عربي، وعجبو كتير. قلّي \"أهلا وسهلا\" وخلّاني مرق.",
+              "english": "The soldier was very nice. He asked me where I'm from and what I'm doing in Lebanon. I told him I'm learning Arabic, and he really liked that. He said \"welcome\" and let me through.",
+              "pic": "💂"
             },
             {
               "id": "lv9-05-05",
-              "arabizi": "la wein rayeh?",
-              "arabic": "لوين رايح؟",
-              "english": "Where are you going?",
-              "pic": "➡️"
+              "arabizi": "dayman khalli wara2ak ma3ak bel sayyara. iza ma 3endak hawiyye, mumken yekhdouk 3al makhfar. ma tkhaf, bas khallik hadi w e7ke b ta2dib.",
+              "arabic": "دايماً خلّي أوراقك معك بالسيّارة. إذا ما عندك هويّة، ممكن ياخدوك عالمخفر. ما تخاف، بس خلّيك هادي واحكي بتأدّب.",
+              "english": "Always keep your papers with you in the car. If you don't have ID, they might take you to the police station. Don't be afraid, just stay calm and speak politely.",
+              "pic": "⚠️"
             },
             {
               "id": "lv9-05-06",
-              "arabizi": "rayeh 3al shoghl",
-              "arabic": "رايح عالشغل",
-              "english": "I'm going to work",
-              "pic": "💼"
-            },
-            {
-              "id": "lv9-05-07",
-              "arabizi": "fta7 l sandou2",
-              "arabic": "فتاح الصندوق",
-              "english": "Open the boot",
-              "pic": "🚗"
-            },
-            {
-              "id": "lv9-05-08",
-              "arabizi": "tfaddal, ma3 l salame",
-              "arabic": "تفضّل، مع السلامة",
-              "english": "Go ahead, goodbye",
-              "pic": "✅"
-            },
-            {
-              "id": "lv9-05-09",
-              "arabizi": "ya3tik l 3afye ya watan",
-              "arabic": "يعطيك العافية يا وطن",
-              "english": "Thanks, sir",
-              "pic": "🫡",
-              "note": "Polite way to thank a soldier."
+              "arabizi": "bel leil fi checkpoint 3al autostrade. el sayyarat btwa22ef w el 3askar byshoufo el wara2. byekhod 3ashr d2aye2 bel ktir. ba3dein bteb2a el tari2 fadye.",
+              "arabic": "بالليل في حاجز عالأوتوستراد. السيّارات بتوقّف والعسكر بيشوفو الأوراق. بياخد عشر دقايق بالكتير. بعدين بتبقى الطريق فاضية.",
+              "english": "At night there's a checkpoint on the highway. Cars stop and the soldiers check the papers. It takes ten minutes at most. Then the road is empty.",
+              "pic": "🌃"
             }
           ],
           "dialogue": [
@@ -26390,67 +26278,45 @@
           "items": [
             {
               "id": "lv9-06-01",
-              "arabizi": "badde jadded l e2ame",
-              "arabic": "بدّي جدّد الإقامة",
-              "english": "I want to renew my residency",
-              "pic": "🔄"
+              "arabizi": "lezim jadded el iqame 2abel akher el shahr. rou7t 3al amn el 3am bel sob7 bakkir, bas ken fi saff tawil. stannet tlet se3at. w bel akhir 2alole enno na2es wara2a.",
+              "arabic": "لازم جدّد الإقامة قبل آخر الشهر. رحت عالأمن العام بالصبح بكّير، بس كان في صفّ طويل. استنّيت تلت ساعات. وبالآخر قالولي إنّو ناقص ورقة.",
+              "english": "I have to renew my residency before the end of the month. I went to General Security early in the morning, but there was a long queue. I waited three hours. And in the end they told me a paper was missing.",
+              "pic": "🗂️"
             },
             {
               "id": "lv9-06-02",
-              "arabizi": "wein l amn l 3am?",
-              "arabic": "وين الأمن العام؟",
-              "english": "Where's General Security?",
-              "pic": "🏛️",
-              "note": "The office that handles visas and residency."
+              "arabizi": "shu el wara2 el lezim? lezim passport, sourtein, 3a2d el shoghol w ifade men el sharke. w kel shi lezim ykoun mtarjam w mkhattam.",
+              "arabic": "شو الأوراق اللازمة؟ لازم passport، صورتين، عقد الشغل وإفادة من الشركة. وكل شي لازم يكون مترجم ومختوم.",
+              "english": "What papers are needed? You need a passport, two photos, the work contract and a letter from the company. And everything has to be translated and stamped.",
+              "pic": "📑"
             },
             {
               "id": "lv9-06-03",
-              "arabizi": "shu l awra2 l matloube?",
-              "arabic": "شو الأوراق المطلوبة؟",
-              "english": "What documents are required?",
-              "pic": "📋"
-            },
-            {
-              "id": "lv9-06-04",
-              "arabizi": "soura passport w tasdi2",
-              "arabic": "صورة باسبور وتصديق",
-              "english": "A passport copy and certification",
-              "pic": "📄"
-            },
-            {
-              "id": "lv9-06-05",
-              "arabizi": "lazem jib kafil",
-              "arabic": "لازم جيب كفيل",
-              "english": "I need a sponsor",
-              "pic": "🤝"
-            },
-            {
-              "id": "lv9-06-06",
-              "arabizi": "l mo3amale btekhod shahr",
-              "arabic": "المعاملة بتاخد شهر",
-              "english": "The process takes a month",
+              "arabizi": "el mo7ame taba3 el sharke 2al enno byekhlas bi jem3a. bas hon \"jem3a\" mumken tkoun shahr. ana ba3ref el 2esse!",
+              "arabic": "المحامي تبع الشركة قال إنّو بيخلص بجمعة. بس هون \"جمعة\" ممكن تكون شهر. أنا بعرف القصّة!",
+              "english": "The company's lawyer said it'll be done in a week. But here \"a week\" can be a month. I know the story!",
               "pic": "⏳"
             },
             {
-              "id": "lv9-06-07",
-              "arabizi": "erja3 ba3d jem3atein",
-              "arabic": "إرجع بعد جمعتين",
-              "english": "Come back in two weeks",
-              "pic": "📆"
+              "id": "lv9-06-04",
+              "arabizi": "bel amn el 3am, el mwazzaf 2al \"ta3a bukra\". rje3t bukra w 2al \"ba3d bukra\". el yom akhiran akhadt el iqame. el mhemm enno khelset!",
+              "arabic": "بالأمن العام، الموظّف قال \"تعا بكرا\". رجعت بكرا وقال \"بعد بكرا\". اليوم أخيراً أخدت الإقامة. المهمّ إنّو خلصت!",
+              "english": "At General Security, the clerk said \"come tomorrow\". I came back tomorrow and he said \"the day after\". Today I finally got the residency. The main thing is that it's done!",
+              "pic": "✅"
             },
             {
-              "id": "lv9-06-08",
-              "arabizi": "na2es wara2a",
-              "arabic": "ناقص ورقة",
-              "english": "One paper is missing",
-              "pic": "❗"
+              "id": "lv9-06-05",
+              "arabizi": "iza ma jaddadet el iqame 3a wa2ta, fi ghrame 3a kel shahr. w mumken ma ykhallouk tetla3 men el balad. fa ma tet2akhar abadan!",
+              "arabic": "إذا ما جدّدت الإقامة عوقتا، في غرامة عكلّ شهر. وممكن ما يخلّوك تطلع من البلد. فا ما تتأخّر أبداً!",
+              "english": "If you don't renew the residency on time, there's a fine for every month. And they may not let you leave the country. So never be late!",
+              "pic": "💸"
             },
             {
-              "id": "lv9-06-09",
-              "arabizi": "fi 3ajale?",
-              "arabic": "في عجلة؟",
-              "english": "Is there a fast-track?",
-              "pic": "⚡"
+              "id": "lv9-06-06",
+              "arabizi": "bel kateb el 3adl, mdeit 3al wara2a w dafa3t el rasm. el mwazzaf 3ata wa2t w sharra7le kel shi. ma ken mtl ma tsawwart, kenu ktir mhazzabin.",
+              "arabic": "بالكاتب العدل، مضيت عالورقة ودفعت الرسم. الموظّف عطا وقت وشرحلي كل شي. ما كان متل ما تصوّرت، كانو كتير مهذّبين.",
+              "english": "At the notary, I signed the paper and paid the fee. The clerk took his time and explained everything to me. It wasn't how I imagined, they were very polite.",
+              "pic": "🖋️"
             }
           ],
           "dialogue": [
@@ -26563,66 +26429,45 @@
           "items": [
             {
               "id": "lv9-07-01",
-              "arabizi": "sene 3am yewja3ne",
-              "arabic": "سنّي عم يوجعني",
-              "english": "My tooth hurts",
+              "arabizi": "3ande waja3 sneen men tlet iyyem. el waja3 bel shmel, fo2. lamma eshrab shi bered, bisir aktar. ma 3am fiye ekol 3al janb hayda.",
+              "arabic": "عندي وجع سنان من تلت إيّام. الوجع بالشمال، فوق. لمّا اشرب شي بارد، بيصير أكتر. ما عم فيي اكل عالجنب هيدا.",
+              "english": "I've had toothache for three days. The pain is on the left, at the top. When I drink something cold, it gets worse. I can't eat on that side.",
               "pic": "🦷"
             },
             {
               "id": "lv9-07-02",
-              "arabizi": "byewja3ne lamma eshrab shi bared",
-              "arabic": "بيوجعني لمّا إشرب شي بارد",
-              "english": "It hurts when I drink something cold",
-              "pic": "🧊"
-            },
-            {
-              "id": "lv9-07-03",
-              "arabizi": "fi soos",
-              "arabic": "في سوس",
-              "english": "There's a cavity",
-              "pic": "🕳️"
-            },
-            {
-              "id": "lv9-07-04",
-              "arabizi": "lezmo 7asho",
-              "arabic": "لازمو حشوة",
-              "english": "It needs a filling",
-              "pic": "🩹"
-            },
-            {
-              "id": "lv9-07-05",
-              "arabizi": "lazem nshil l 3asab",
-              "arabic": "لازم نشيل العصب",
-              "english": "We need a root canal",
-              "pic": "🔧"
-            },
-            {
-              "id": "lv9-07-06",
-              "arabizi": "baddak banj?",
-              "arabic": "بدّك بنج؟",
-              "english": "Do you want anaesthetic?",
+              "arabizi": "el dentist shaf el sneen w 2al enno fi soos. lezim y3abbiha el yom. ra7 ya3tine benj, fa ma ra7 7es bi shi. w ba3d se3tein fiye ekol.",
+              "arabic": "الدنتيست شاف السنان وقال إنّو في سوس. لازم يعبّيها اليوم. رح يعطيني بنج، فا ما رح حسّ بشي. وبعد ساعتين فيي اكل.",
+              "english": "The dentist looked at my teeth and said there's a cavity. He has to fill it today. He'll give me an anaesthetic, so I won't feel anything. And after two hours I can eat.",
               "pic": "💉"
             },
             {
-              "id": "lv9-07-07",
-              "arabizi": "fta7 temmak",
-              "arabic": "فتاح تمّك",
-              "english": "Open your mouth",
-              "pic": "😮"
-            },
-            {
-              "id": "lv9-07-08",
-              "arabizi": "ma tekol shi la se3tein",
-              "arabic": "ما تاكل شي لساعتين",
-              "english": "Don't eat anything for two hours",
-              "pic": "⏱️"
-            },
-            {
-              "id": "lv9-07-09",
-              "arabizi": "ana khayef men l dentist",
-              "arabic": "أنا خايف من الدنتيست",
-              "english": "I'm scared of the dentist",
+              "id": "lv9-07-03",
+              "arabizi": "ana khayfe men el dentist men w ana zghire. 2alle \"ma tkhafe, ma ra7 tewja3ik\". bas sawt el mekana bkhawwefne.",
+              "arabic": "أنا خايفة من الدنتيست من وأنا زغيرة. قلّي \"ما تخافي، ما رح توجعك\". بس صوت المكنة بيخوّفني.",
+              "english": "I've been afraid of the dentist since I was little. He told me \"don't be scared, it won't hurt you\". But the sound of the machine scares me.",
               "pic": "😨"
+            },
+            {
+              "id": "lv9-07-04",
+              "arabizi": "lezim na3mel tanzif kel sette tshhor. el dentist 2al enno lezim farshe sneene tnein marrat bel yom, w esta3mel el khayt. w a2allel el sukkar w el ahwe.",
+              "arabic": "لازم نعمل تنضيف كل ستّة تشهر. الدنتيست قال إنّو لازم فرشي سناني تنين مرّات باليوم، واستعمل الخيط. وقلّل السكّر والقهوة.",
+              "english": "We should have a cleaning every six months. The dentist said I must brush my teeth twice a day, and use floss. And cut down on sugar and coffee.",
+              "pic": "🪥"
+            },
+            {
+              "id": "lv9-07-05",
+              "arabizi": "el sen hayda lezim yenshele3. ma fi 7al tene. el 3amaliyye zghire w btekhod nos se3a. bas ba3dein lezim erta7 yom w ma ekol shi sukhn.",
+              "arabic": "السنّ هيدا لازم ينشلع. ما في حلّ تاني. العمليّة زغيرة وبتاخد نصّ ساعة. بس بعدين لازم ارتاح يوم وما اكل شي سخن.",
+              "english": "This tooth has to come out. There's no other solution. The operation is small and takes half an hour. But afterwards I have to rest a day and not eat anything hot.",
+              "pic": "🩹"
+            },
+            {
+              "id": "lv9-07-06",
+              "arabizi": "el dentist b Lebnen arkhas men Europa. ktir nes byeju men barra bas la y3amlo sneenon. w el dentist taba3e ktir shater, 3amel diploma bi Fransa.",
+              "arabic": "الدنتيست بلبنان أرخص من أوروبا. كتير ناس بيجو من برّا بس ليعملو سنانن. والدنتيست تبعي كتير شاطر، عامل diploma بفرنسا.",
+              "english": "Dentists in Lebanon are cheaper than in Europe. Lots of people come from abroad just to get their teeth done. And my dentist is very good, he studied in France.",
+              "pic": "🇫🇷"
             }
           ],
           "dialogue": [
@@ -26728,70 +26573,45 @@
           "items": [
             {
               "id": "lv9-08-01",
-              "arabizi": "ana bayy Rami",
-              "arabic": "أنا بيّ رامي",
-              "english": "I'm Rami's father",
-              "pic": "👨‍👦",
-              "f": {
-                "arabizi": "ana emm Rami",
-                "arabic": "أنا إمّ رامي"
-              }
-            },
-            {
-              "id": "lv9-08-02",
-              "arabizi": "kif Rami bel saff?",
-              "arabic": "كيف رامي بالصف؟",
-              "english": "How is Rami in class?",
+              "arabizi": "el sabt fi ejtime3 ahl bel madrase. el m3allme badda te7ke ma3na 3an Karim. 2alet enno shater bas ma byentebeh bel saff. ma ba3ref shu 3am ysir ma3o.",
+              "arabic": "السبت في اجتماع أهل بالمدرسة. المعلّمة بدّا تحكي معنا عن كريم. قالت إنّو شاطر بس ما بينتبه بالصفّ. ما بعرف شو عم يصير معو.",
+              "english": "On Saturday there's a parents' meeting at the school. The teacher wants to talk to us about Karim. She said he's clever but doesn't pay attention in class. I don't know what's going on with him.",
               "pic": "🏫"
             },
             {
+              "id": "lv9-08-02",
+              "arabizi": "Maya mni7a ktir bel 3arabe w el 7isab. bas bel franse 3enda shway ta2akhkhur. el m3allme nas7etna na3mella dars khsousi marra bel jem3a.",
+              "arabic": "مايا منيحة كتير بالعربي والحساب. بس بالفرنسي عندا شوي تأخّر. المعلّمة نصحتنا نعملّا درس خصوصي مرّة بالجمعة.",
+              "english": "Maya is very good at Arabic and maths. But in French she's a bit behind. The teacher advised us to get her a private lesson once a week.",
+              "pic": "📖"
+            },
+            {
               "id": "lv9-08-03",
-              "arabizi": "3alamato mni7a bel riyadiyat",
-              "arabic": "علاماتو منيحة بالرياضيات",
-              "english": "His maths grades are good",
-              "pic": "➗"
+              "arabizi": "el sene el jeye el a2sat ra7 tzid tleteen bel miyye. kif ra7 nedfa3? 3enna tlet wled bel madrase! lezim ne7ke ma3 el mudir.",
+              "arabic": "السنة الجايي الأقساط رح تزيد تلاتين بالمية. كيف رح ندفع؟ عنّا تلت ولاد بالمدرسة! لازم نحكي مع المدير.",
+              "english": "Next year the school fees will go up thirty percent. How will we pay? We have three kids at school! We have to talk to the principal.",
+              "pic": "💰"
             },
             {
               "id": "lv9-08-04",
-              "arabizi": "bas bel 3arabe da3if shway",
-              "arabic": "بس بالعربي ضعيف شوي",
-              "english": "But he's a bit weak in Arabic",
-              "pic": "📉"
+              "arabizi": "ebne 3am y2oul enno fi walad bel saff 3am yeza3jo kel yom. el m3allme ma kenet ta3ref. hala2 ra7 te7ke ma3 ahl el walad el tene.",
+              "arabic": "ابني عم يقول إنّو في ولد بالصفّ عم يزعجو كل يوم. المعلّمة ما كانت تعرف. هلّق رح تحكي مع أهل الولد التاني.",
+              "english": "My son says a boy in his class bothers him every day. The teacher didn't know. Now she'll talk to the other boy's parents.",
+              "pic": "😟"
             },
             {
               "id": "lv9-08-05",
-              "arabizi": "byehke ktir bel saff",
-              "arabic": "بيحكي كتير بالصف",
-              "english": "He talks a lot in class",
+              "arabizi": "bel madrase hon el wled byet3allamo tlet lghat: 3arabe, franse w ingleeze. hayda sa3b bel awwal, bas ba3dein bi7ko kel shi. bas ahyanan byenso 3arabiyton!",
+              "arabic": "بالمدرسة هون الولاد بيتعلّمو تلت لغات: عربي، فرنسي وإنكليزي. هيدا صعب بالأوّل، بس بعدين بيحكو كل شي. بس أحياناً بينسو عربيّتن!",
+              "english": "At school here children learn three languages: Arabic, French and English. It's hard at first, but then they speak everything. But sometimes they forget their Arabic!",
               "pic": "🗣️"
             },
             {
               "id": "lv9-08-06",
-              "arabizi": "lezmo ders khsousi",
-              "arabic": "لازمو درس خصوصي",
-              "english": "He needs private lessons",
-              "pic": "👩‍🏫"
-            },
-            {
-              "id": "lv9-08-07",
-              "arabizi": "3ando rfi2at ktir",
-              "arabic": "عندو رفقات كتير",
-              "english": "He has lots of friends",
-              "pic": "👫"
-            },
-            {
-              "id": "lv9-08-08",
-              "arabizi": "shu fina na3mel bel beit?",
-              "arabic": "شو فينا نعمل بالبيت؟",
-              "english": "What can we do at home?",
-              "pic": "🏠"
-            },
-            {
-              "id": "lv9-08-09",
-              "arabizi": "2ra ma3o kel yom",
-              "arabic": "إقرا معو كل يوم",
-              "english": "Read with him every day",
-              "pic": "📖"
+              "arabizi": "el natije tal3et lyom. Rami nje7 bi kel el mawad, w akhad 17 3ala 20 bel 3oloum. 3melnelo ahwe w knefe la nfra7 fi.",
+              "arabic": "النتيجة طلعت اليوم. رامي نجح بكلّ المواد، وأخد ١٧ على ٢٠ بالعلوم. عملنالو قهوة وكنافة لنفرح فيه.",
+              "english": "The results came out today. Rami passed every subject, and got 17 out of 20 in science. We had coffee and knafeh to celebrate him.",
+              "pic": "🏅"
             }
           ],
           "dialogue": [
@@ -26890,66 +26710,45 @@
           "items": [
             {
               "id": "lv9-09-01",
-              "arabizi": "emergency! dakhlkon!",
-              "arabic": "إمرجنسي! دخلكن!",
-              "english": "Emergency! Please!",
-              "pic": "🚨"
-            },
-            {
-              "id": "lv9-09-02",
-              "arabizi": "w2e3 w ma 3am yfi2",
-              "arabic": "وقع وما عم يفيق",
-              "english": "He fell and isn't waking up",
-              "pic": "😟"
-            },
-            {
-              "id": "lv9-09-03",
-              "arabizi": "ma 3am fiye etnaffas",
-              "arabic": "ما عم فيي إتنفّس",
-              "english": "I can't breathe",
-              "pic": "🫁"
-            },
-            {
-              "id": "lv9-09-04",
-              "arabizi": "3ande waja3 bi sadre",
-              "arabic": "عندي وجع بصدري",
-              "english": "I have chest pain",
-              "pic": "💔"
-            },
-            {
-              "id": "lv9-09-05",
-              "arabizi": "3ayyetou lal ambulance",
-              "arabic": "عيّطوا للإسعاف",
-              "english": "Call the ambulance",
+              "arabizi": "khaye we2e3 3al darj w ma fi y7arrek ejro. 3ayyatna lal salib el a7mar. ejo b 3ashr d2aye2 w akhadouh 3al mostashfa. el doctor 2al enno fi kasr.",
+              "arabic": "خيّي وقع عالدرج وما فيه يحرّك إجرو. عيّطنا للصليب الأحمر. إجو بعشر دقايق وأخدوه عالمستشفى. الدكتور قال إنّو في كسر.",
+              "english": "My brother fell on the stairs and can't move his leg. We called the Red Cross. They came in ten minutes and took him to the hospital. The doctor said there's a fracture.",
               "pic": "🚑"
             },
             {
+              "id": "lv9-09-02",
+              "arabizi": "bel tawari2, el mostashfa talbet menne ta2min aw masari 2abel ma yfawwtouh. 3ayyatet la sharket el ta2min w ba3atolon wara2a. ba3dein fawwatouh deghre.",
+              "arabic": "بالطوارئ، المستشفى طلبت منّي تأمين أو مصاري قبل ما يفوّتوه. عيّطت لشركة التأمين وبعتولن ورقة. بعدين فوّتوه دغري.",
+              "english": "In the emergency room, the hospital asked me for insurance or money before admitting him. I called the insurance company and they sent them a paper. Then they took him in right away.",
+              "pic": "🏥"
+            },
+            {
+              "id": "lv9-09-03",
+              "arabizi": "bent 3amme akalet shi w sar 3enda 7asasiyye. wejja nefekh w ma 3am bt2der tetnaffas mni7. el doctor 3ataha ebre w ba3d nos se3a sarit a7san.",
+              "arabic": "بنت عمّي أكلت شي وصار عندا حساسيّة. وجّا نفخ وما عم تقدر تتنفّس منيح. الدكتور عطاها إبرة وبعد نصّ ساعة صارت أحسن.",
+              "english": "My cousin ate something and had an allergic reaction. Her face swelled and she couldn't breathe properly. The doctor gave her an injection and after half an hour she was better.",
+              "pic": "💉"
+            },
+            {
+              "id": "lv9-09-04",
+              "arabizi": "ra2m el salib el a7mar 140. ra2m el darak 112. ra2m el itfa2iyye 175. ektebon bel telephone, mumken ta7tejon bi ay wa2t.",
+              "arabic": "رقم الصليب الأحمر ١٤٠. رقم الدرك ١١٢. رقم الإطفائيّة ١٧٥. اكتبن بالتلفون، ممكن تحتاجن بأي وقت.",
+              "english": "The Red Cross number is 140. The police number is 112. The fire brigade is 175. Write them in your phone, you might need them any time.",
+              "pic": "☎️"
+            },
+            {
+              "id": "lv9-09-05",
+              "arabizi": "stannayna sette se3at bel tawari2. ken fi nes ktir w doctor wa7ad. bel akhir, fa7asouh w 2alou ma fi shi khatir. rje3na 3al beit el se3a tlete bel leil.",
+              "arabic": "استنّينا ستّ ساعات بالطوارئ. كان في ناس كتير ودكتور واحد. بالآخر، فحصوه وقالو ما في شي خطير. رجعنا عالبيت الساعة تلاتة بالليل.",
+              "english": "We waited six hours in the emergency room. There were lots of people and one doctor. In the end, they examined him and said it was nothing serious. We got home at three at night.",
+              "pic": "🌙"
+            },
+            {
               "id": "lv9-09-06",
-              "arabizi": "3andak ta2min?",
-              "arabic": "عندك تأمين؟",
-              "english": "Do you have insurance?",
-              "pic": "🛡️"
-            },
-            {
-              "id": "lv9-09-07",
-              "arabizi": "3abbe hal wara2a",
-              "arabic": "عبّي هالورقة",
-              "english": "Fill in this form",
-              "pic": "📝"
-            },
-            {
-              "id": "lv9-09-08",
-              "arabizi": "l doktor jeye hala2",
-              "arabic": "الدكتور جايي هلّق",
-              "english": "The doctor is coming now",
-              "pic": "👨‍⚕️"
-            },
-            {
-              "id": "lv9-09-09",
-              "arabizi": "7a yenem leile hon",
-              "arabic": "رح ينام ليلة هون",
-              "english": "He'll stay the night here",
-              "pic": "🛏️"
+              "arabizi": "el mmarde kenet ktir latife. kenet teje kel se3a tshouf el 7arara w tes2al iza baddo shi. 2abel ma nfell, 3ateyna 3elbet chocolat la nshkora.",
+              "arabic": "الممرّضة كانت كتير لطيفة. كانت تجي كل ساعة تشوف الحرارة وتسأل إذا بدّو شي. قبل ما نفلّ، عطيناها علبة chocolat لنشكرا.",
+              "english": "The nurse was very kind. She came every hour to check the temperature and ask if he needed anything. Before we left, we gave her a box of chocolates to thank her.",
+              "pic": "👩‍⚕️"
             }
           ],
           "dialogue": [
@@ -27062,66 +26861,45 @@
           "items": [
             {
               "id": "lv9-10-01",
-              "arabizi": "fi naz bel 7eit",
-              "arabic": "في نزّ بالحيط",
-              "english": "There's damp in the wall",
-              "pic": "💧"
+              "arabizi": "el 7anafiyye bel matbakh 3am tnazzel maye men jem3a. 3ayyatet lal malek tlet marrat w 2al \"ra7 eb3atlak 7ada\". la hala2 ma 7ada eja. el maye 3am tetla3 3al ard.",
+              "arabic": "الحنفيّة بالمطبخ عم تنزّل مي من جمعة. عيّطت للمالك تلت مرّات وقال \"رح ابعتلك حدا\". لهلّق ما حدا إجا. المي عم تطلع عالأرض.",
+              "english": "The kitchen tap has been leaking for a week. I called the landlord three times and he said \"I'll send someone\". So far nobody has come. The water is getting on the floor.",
+              "pic": "🚰"
             },
             {
               "id": "lv9-10-02",
-              "arabizi": "l sakhkhan kharbaan",
-              "arabic": "السخّان خربان",
-              "english": "The water heater is broken",
-              "pic": "🚿"
+              "arabizi": "el malek baddo yzid el ijar miyye dollar. bas el 3a2d bi2oul enno el ijar sabet la sene. 2olto \"el 3a2d hon\", w ma 2al shi.",
+              "arabic": "المالك بدّو يزيد الإيجار مية دولار. بس العقد بيقول إنّو الإيجار ثابت لسنة. قلتلو \"العقد هون\"، وما قال شي.",
+              "english": "The landlord wants to raise the rent by a hundred dollars. But the contract says the rent is fixed for a year. I told him \"here's the contract\", and he said nothing.",
+              "pic": "📜"
             },
             {
               "id": "lv9-10-03",
-              "arabizi": "3am tshatte men l sat7",
-              "arabic": "عم تشتّي من السطح",
-              "english": "It's leaking from the roof",
-              "pic": "🌧️"
+              "arabizi": "el sh2a fiha rtoube bel 7ite w el 7ite 3am yetla3 menno 3afan. 2olt lal malek, bas 2al enno hayda men el shiti w ma fi shi ya3mlo.",
+              "arabic": "الشقّة فيها رطوبة بالحيط والحيط عم يطلع منّو عفن. قلت للمالك، بس قال إنّو هيدا من الشتي وما في شي يعملو.",
+              "english": "The flat has damp in the wall and mould is coming out of it. I told the landlord, but he said it's from the rain and there's nothing he can do.",
+              "pic": "🧱"
             },
             {
               "id": "lv9-10-04",
-              "arabizi": "ellak shahr wa3edne",
-              "arabic": "إلك شهر واعدني",
-              "english": "You've been promising me for a month",
-              "pic": "⏳"
+              "arabizi": "ana fallel men el sh2a el shahr el jeye. el malek ma badde yerja3le el ta2min. 2al enno fi kasr bel balat. bas el kasr ken men 2abel ma esken!",
+              "arabic": "أنا فالل من الشقّة الشهر الجايي. المالك ما بدّو يرجعلي التأمين. قال إنّو في كسر بالبلاط. بس الكسر كان من قبل ما اسكن!",
+              "english": "I'm leaving the flat next month. The landlord doesn't want to give me back the deposit. He said there's a crack in the tiles. But the crack was there before I moved in!",
+              "pic": "🏚️"
             },
             {
               "id": "lv9-10-05",
-              "arabizi": "iza ma tsallaht, ma 7a edfa3",
-              "arabic": "إذا ما تصلّحت، ما رح إدفع",
-              "english": "If it's not fixed, I won't pay",
-              "pic": "✋"
-            },
-            {
-              "id": "lv9-10-06",
-              "arabizi": "l ijar 7a yzid?",
-              "arabic": "الإيجار رح يزيد؟",
-              "english": "Is the rent going up?",
-              "pic": "📈"
-            },
-            {
-              "id": "lv9-10-07",
-              "arabizi": "l 3a2d byeshmel l tasli7at",
-              "arabic": "العقد بيشمل التصليحات",
-              "english": "The contract covers repairs",
-              "pic": "📝"
-            },
-            {
-              "id": "lv9-10-08",
-              "arabizi": "ba3atlak sowar",
-              "arabic": "بعتلك صوَر",
-              "english": "I sent you photos",
+              "arabizi": "el 7al enno tettefe2 3a kel shi ma3 el malek bel ketebe. w 2abel ma tesken, sawwer kel el sh2a bel telephone. hayda bi7mik iza sar mashkal.",
+              "arabic": "الحلّ إنّو تتّفق على كل شي مع المالك بالكتابة. وقبل ما تسكن، صوّر كل الشقّة بالتلفون. هيدا بيحميك إذا صار مشكل.",
+              "english": "The solution is to agree on everything with the landlord in writing. And before you move in, photograph the whole flat with your phone. That protects you if there's a problem.",
               "pic": "📸"
             },
             {
-              "id": "lv9-10-09",
-              "arabizi": "bjible ma3allem bukra",
-              "arabic": "بجيبلك معلّم بكرا",
-              "english": "I'll bring you a workman tomorrow",
-              "pic": "👷"
+              "id": "lv9-10-06",
+              "arabizi": "el malek taba3e 3ajouz w ktir mni7. kel shahr byeje yshrab ahwe w yes2al iza ne7na mertee7in. w lamma kharbet el ghassale, jab wa7de jdide bi nhar.",
+              "arabic": "المالك تبعي عجوز وكتير منيح. كل شهر بيجي يشرب قهوة ويسأل إذا نحنا مرتاحين. ولمّا خربت الغسّالة، جاب وحدة جديدة بنهار.",
+              "english": "My landlord is an old man and very nice. Every month he comes for coffee and asks if we're comfortable. And when the washing machine broke, he brought a new one within a day.",
+              "pic": "👴"
             }
           ],
           "dialogue": [
@@ -27234,66 +27012,45 @@
           "items": [
             {
               "id": "lv9-11-01",
-              "arabizi": "badde telefon jdid",
-              "arabic": "بدّي تلفون جديد",
-              "english": "I want a new phone",
+              "arabizi": "badde shtere telephone jdid. el 2adim sarlo arba3 snin w el battariyye ma 3am tedom. ma badde edfa3 aktar men khams miyye dollar. shu bt2oulle?",
+              "arabic": "بدّي اشتري تلفون جديد. القديم صرلو أربع سنين والبطّارية ما عم تدوم. ما بدّي ادفع أكتر من خمس مية دولار. شو بتقلّي؟",
+              "english": "I want to buy a new phone. The old one is four years old and the battery doesn't last. I don't want to pay more than five hundred dollars. What do you suggest?",
               "pic": "📱"
             },
             {
               "id": "lv9-11-02",
-              "arabizi": "shu l far2 bein hayda w hayda?",
-              "arabic": "شو الفرق بين هيدا وهيدا؟",
-              "english": "What's the difference between this one and that one?",
-              "pic": "🤔"
-            },
-            {
-              "id": "lv9-11-03",
-              "arabizi": "l camera a7san",
-              "arabic": "الكاميرا أحسن",
-              "english": "The camera is better",
+              "arabizi": "hayda el model jdid w el camera ktir mni7a. fi 128 giga w el battariyye btedom yom kemel. w ma3o kfele sene. iza khirib, mnghayyerlak yeh.",
+              "arabic": "هيدا الموديل جديد والكاميرا كتير منيحة. في ١٢٨ جيغا والبطّارية بتدوم يوم كامل. ومعو كفالة سنة. إذا خرب، منغيّرلك ياه.",
+              "english": "This model is new and the camera is very good. It has 128 gigs and the battery lasts a full day. And it comes with a one-year warranty. If it breaks, we'll replace it for you.",
               "pic": "📸"
             },
             {
+              "id": "lv9-11-03",
+              "arabizi": "hayda el telephone asle aw copie? el se3r rkhis ktir. iza ken msarra2, ma badde yeh. fik ta3tine fatoura?",
+              "arabic": "هيدا التلفون أصلي أو copie؟ السعر رخيص كتير. إذا كان مسروق، ما بدّي ياه. فيك تعطيني فاتورة؟",
+              "english": "Is this phone original or a copy? The price is very cheap. If it's stolen, I don't want it. Can you give me an invoice?",
+              "pic": "🧾"
+            },
+            {
               "id": "lv9-11-04",
-              "arabizi": "l battery btekhod kel l nhar",
-              "arabic": "البطارية بتاخد كل النهار",
-              "english": "The battery lasts all day",
-              "pic": "🔋"
+              "arabizi": "badde khatt jdid kamen. shu el 3orod 3endkon? badde internet ktir la2anno ba7ke ma3 ahle bel video kel yom.",
+              "arabic": "بدّي خطّ جديد كمان. شو العروض عندكن؟ بدّي internet كتير لأنّو بحكي مع أهلي بالـ video كل يوم.",
+              "english": "I want a new line too. What offers do you have? I need lots of internet because I video-call my family every day.",
+              "pic": "📶"
             },
             {
               "id": "lv9-11-05",
-              "arabizi": "fi kafele?",
-              "arabic": "في كفالة؟",
-              "english": "Is there a warranty?",
-              "pic": "🛡️"
+              "arabizi": "el shashe ma 3am teshteghel mni7. lamma bekbos 3leya, ma btredd. el telephone ba3do bel kfele, fa lezim tsalle7ouh balesh.",
+              "arabic": "الشاشة ما عم تشتغل منيح. لمّا بكبس عليها، ما بتردّ. التلفون بعدو بالكفالة، فا لازم تصلّحوه ببلاش.",
+              "english": "The screen isn't working properly. When I press it, it doesn't respond. The phone is still under warranty, so you have to fix it for free.",
+              "pic": "🛠️"
             },
             {
               "id": "lv9-11-06",
-              "arabizi": "kafele sene",
-              "arabic": "كفالة سنة",
-              "english": "A one-year warranty",
-              "pic": "📅"
-            },
-            {
-              "id": "lv9-11-07",
-              "arabizi": "hayda aslé aw copie?",
-              "arabic": "هيدا أصلي أو كوبي؟",
-              "english": "Is this genuine or a copy?",
-              "pic": "🔍"
-            },
-            {
-              "id": "lv9-11-08",
-              "arabizi": "bta3mel 2esat?",
-              "arabic": "بتعمل تقسيط؟",
-              "english": "Do you do instalments?",
-              "pic": "💳"
-            },
-            {
-              "id": "lv9-11-09",
-              "arabizi": "7ottle screen protector",
-              "arabic": "حطّلي سكرين بروتكتور",
-              "english": "Put a screen protector on it",
-              "pic": "🛡️"
+              "arabizi": "akhadt el telephone el jdid w na2alt kel shi men el 2adim: el sowar, el ar2am w el WhatsApp. el bayye3 sa3adne w ma akhad shi zyede.",
+              "arabic": "أخدت التلفون الجديد ونقلت كل شي من القديم: الصور، الأرقام والواتساب. البيّاع ساعدني وما أخد شي زيادة.",
+              "english": "I got the new phone and moved everything from the old one: the photos, the contacts and WhatsApp. The seller helped me and didn't charge anything extra.",
+              "pic": "🔄"
             }
           ],
           "dialogue": [
@@ -27392,67 +27149,45 @@
           "items": [
             {
               "id": "lv9-12-01",
-              "arabizi": "fi tasrib mayy ta7t l maghsale",
-              "arabic": "في تسريب مي تحت المغسلة",
-              "english": "There's a water leak under the sink",
-              "pic": "🚰"
+              "arabizi": "fi naz2a bel 7ammam men ta7t el meghsale. el maye 3am tenzal 3and el jiran ta7t. 3ayyatet la sammkari, 2al ra7 yeje ba3d el dohr. iza ma eja, ra7 jen.",
+              "arabic": "في نزّة بالحمّام من تحت المغسلة. المي عم تنزل عند الجيران تحت. عيّطت لسمكري، قال رح يجي بعد الضهر. إذا ما إجا، رح جنّ.",
+              "english": "There's a leak in the bathroom under the sink. The water is going down to the neighbours below. I called a plumber, he said he'll come in the afternoon. If he doesn't come, I'll go crazy.",
+              "pic": "🔧"
             },
             {
               "id": "lv9-12-02",
-              "arabizi": "l mayy ma 3am tenzal bel bal3a",
-              "arabic": "المي ما عم تنزل بالبالوعة",
-              "english": "The water isn't going down the drain",
-              "pic": "🌀"
+              "arabizi": "el kahraba 3am tetla3 w tenzal bel beit kello. el prise bel matbakh 3emlet sharara. ma ba3ref iza el mashkal bel generator aw bel khoyout.",
+              "arabic": "الكهربا عم تطلع وتنزل بالبيت كلّو. البريز بالمطبخ عملت شرارة. ما بعرف إذا المشكل بالموتير أو بالخيوط.",
+              "english": "The electricity keeps going on and off in the whole house. The kitchen socket made a spark. I don't know if the problem is the generator or the wiring.",
+              "pic": "⚡"
             },
             {
               "id": "lv9-12-03",
-              "arabizi": "kel ma dawwi l daw, bta2ta3 l kahraba",
-              "arabic": "كل ما ضوّي الضو، بتقطع الكهربا",
-              "english": "Every time I turn on the light, the power cuts",
-              "pic": "💡"
+              "arabizi": "el kahrabje shaf kel shi w 2al enno el disjoncteur 2adim. lezim yghayyro. bkallef sab3in dollar ma3 el sh2el. w 2al ma t7ott el ghassale w el sokhkhan sawa.",
+              "arabic": "الكهربجي شاف كل شي وقال إنّو الديجونكتور قديم. لازم يغيّرو. بيكلّف سبعين دولار مع الشغل. وقال ما تحطّ الغسّالة والسخّان سوا.",
+              "english": "The electrician checked everything and said the circuit breaker is old. He has to change it. It costs seventy dollars with labour. And he said not to run the washing machine and the water heater together.",
+              "pic": "🔌"
             },
             {
               "id": "lv9-12-04",
-              "arabizi": "fi rihet 7ari2",
-              "arabic": "في ريحة حريق",
-              "english": "There's a burning smell",
-              "pic": "🔥"
+              "arabizi": "el sammkari eja se3tein met2akhkher. 2al enno ken fi 3aj2a. sallah el naz2a bi 3ashr d2aye2 w talab khamsin dollar. ma 3melt mashkal, bas fakkart enno ghali shway.",
+              "arabic": "السمكري إجا ساعتين متأخّر. قال إنّو كان في عجقة. صلّح النزّة بعشر دقايق وطلب خمسين دولار. ما عملت مشكل، بس فكّرت إنّو غالي شوي.",
+              "english": "The plumber came two hours late. He said there was traffic. He fixed the leak in ten minutes and asked for fifty dollars. I didn't make a fuss, but I thought it was a bit expensive.",
+              "pic": "⏰"
             },
             {
               "id": "lv9-12-05",
-              "arabizi": "emta fik teje?",
-              "arabic": "إيمتى فيك تجي؟",
-              "english": "When can you come?",
-              "pic": "📅"
+              "arabizi": "el sokhkhan ma 3am ysakhkhen. el maye bterja3 berde ba3d da2i2tein. fik teje tshouf el sokhkhan bukra el sob7? ana bel beit la el se3a 3ashra.",
+              "arabic": "السخّان ما عم يسخّن. المي بترجع باردة بعد دقيقتين. فيك تجي تشوف السخّان بكرا الصبح؟ أنا بالبيت للساعة عشرة.",
+              "english": "The water heater isn't heating. The water goes cold after two minutes. Can you come and look at the heater tomorrow morning? I'm at home until ten.",
+              "pic": "🚿"
             },
             {
               "id": "lv9-12-06",
-              "arabizi": "addeish btekhod 3al zyara?",
-              "arabic": "قدّيش بتاخد عالزيارة؟",
-              "english": "How much do you charge for a visit?",
-              "pic": "💵"
-            },
-            {
-              "id": "lv9-12-07",
-              "arabizi": "l 2et3a 3alayye?",
-              "arabic": "القطعة عليّ؟",
-              "english": "Do I pay for the part?",
-              "pic": "⚙️"
-            },
-            {
-              "id": "lv9-12-08",
-              "arabizi": "kharab l disjoncteur",
-              "arabic": "خرب الديجونكتور",
-              "english": "The circuit breaker is broken",
-              "pic": "🔌",
-              "note": "From French 'disjoncteur'."
-            },
-            {
-              "id": "lv9-12-09",
-              "arabizi": "ma ta3mel shi la ousal",
-              "arabic": "ما تعمل شي لَوصل",
-              "english": "Don't touch anything until I arrive",
-              "pic": "✋"
+              "arabizi": "a7san shi enno ykoun 3endak ra2m sammkari w kahrabje mni7. el jiran bya3rfo dayman min. es2al el natour, huwwe bya3ref kel el 3amele bel 7ay.",
+              "arabic": "أحسن شي إنّو يكون عندك رقم سمكري وكهربجي منيح. الجيران بيعرفو دايماً مين. اسأل الناطور، هوّي بيعرف كل العمّال بالحيّ.",
+              "english": "The best thing is to have the number of a good plumber and electrician. The neighbours always know who. Ask the caretaker, he knows all the workmen in the neighbourhood.",
+              "pic": "📒"
             }
           ],
           "dialogue": [
@@ -27565,66 +27300,45 @@
           "items": [
             {
               "id": "lv9-13-01",
-              "arabizi": "fiye shouf l sha22a?",
-              "arabic": "فيي شوف الشقّة؟",
-              "english": "Can I see the flat?",
-              "pic": "👀"
+              "arabizi": "el sh2a 7elwe bas el matbakh zghir ktir. ma fi ma7all la tawle. w el ghorfe el tenye ma fiha shebbek, bas fiha 2amarra.",
+              "arabic": "الشقّة حلوة بس المطبخ زغير كتير. ما في محلّ لطاولة. والغرفة التانية ما فيها شبّاك، بس فيها قمريّة.",
+              "english": "The flat is nice but the kitchen is very small. There's no room for a table. And the second room has no window, only a skylight.",
+              "pic": "🏠"
             },
             {
               "id": "lv9-13-02",
-              "arabizi": "l sha22a btetla3 3al ba7er?",
-              "arabic": "الشقّة بتطلّ عالبحر؟",
-              "english": "Does the flat have a sea view?",
-              "pic": "🌊"
+              "arabizi": "2abel ma 2arrer, badde a3ref kam se3a fi kahraba men el dawle w kam men el ishtirak. w el maye, btiji kel yom aw lezim neshtere sitreine?",
+              "arabic": "قبل ما قرّر، بدّي اعرف كم ساعة في كهربا من الدولة وكم من الاشتراك. والمي، بتجي كل يوم أو لازم نشتري سيتيرن؟",
+              "english": "Before I decide, I want to know how many hours of state electricity there are and how many from the subscription. And the water, does it come every day or do we have to buy a tanker?",
+              "pic": "🚰"
             },
             {
               "id": "lv9-13-03",
-              "arabizi": "l shams btfout?",
-              "arabic": "الشمس بتفوت؟",
-              "english": "Does the sun come in?",
-              "pic": "☀️"
+              "arabizi": "el bineye 2adime bas mni7a. el darj ndif w el jiran 3ayle hadye. bas ma fi ascenseur, w ana bel tabe2 el rabe3. ma3 el ghrad, hayda ra7 ykoun sa3b.",
+              "arabic": "البناية قديمة بس منيحة. الدرج نضيف والجيران عيلة هادية. بس ما في ascenseur، وأنا بالطابق الرابع. مع الأغراض، هيدا رح يكون صعب.",
+              "english": "The building is old but good. The stairs are clean and the neighbours are a quiet family. But there's no lift, and I'm on the fourth floor. With shopping, that'll be hard.",
+              "pic": "🪜"
             },
             {
               "id": "lv9-13-04",
-              "arabizi": "l jiran hedyin?",
-              "arabic": "الجيران هاديين؟",
-              "english": "Are the neighbours quiet?",
-              "pic": "🤫"
+              "arabizi": "el semsar warrane tlet sho2a2 el yom. el awwale ghalye, el tenye ba3ide w el telte mni7a bas fiha shoghol. 2al enno el semsar byekhod ijar shahr 3amoule.",
+              "arabic": "السمسار ورّاني تلت شقق اليوم. الأولى غالية، التانية بعيدة والتالتة منيحة بس فيها شغل. قال إنّو السمسار بياخد إيجار شهر عمولة.",
+              "english": "The agent showed me three flats today. The first is expensive, the second far away and the third good but needs work. He said the agent takes one month's rent as commission.",
+              "pic": "🗝️"
             },
             {
               "id": "lv9-13-05",
-              "arabizi": "fi moteur lal binaye?",
-              "arabic": "في موتور للبناية؟",
-              "english": "Does the building have a generator?",
-              "pic": "🔋"
+              "arabizi": "fta7t el 7anafiyye w ballasht el doush, w el maye sukhne mni7. el shbabik 3emlin alumin jdid, fa ma byfout el bard. hayda ahamm shi bel shiti.",
+              "arabic": "فتحت الحنفيّة وبلّشت الدوش، والمي السخنة منيحة. الشبابيك عاملين ألمينيوم جديد، فا ما بيفوت البرد. هيدا أهمّ شي بالشتي.",
+              "english": "I opened the tap and tried the shower, and the hot water is good. The windows have new aluminium frames, so the cold doesn't get in. That's the most important thing in winter.",
+              "pic": "🪟"
             },
             {
               "id": "lv9-13-06",
-              "arabizi": "addeish sar 3omr l binaye?",
-              "arabic": "قدّيش صار عمر البناية؟",
-              "english": "How old is the building?",
-              "pic": "🏚️"
-            },
-            {
-              "id": "lv9-13-07",
-              "arabizi": "l matbakh ktir zghir",
-              "arabic": "المطبخ كتير زغير",
-              "english": "The kitchen is very small",
-              "pic": "🍳"
-            },
-            {
-              "id": "lv9-13-08",
-              "arabizi": "l 7ammem jdid",
-              "arabic": "الحمّام جديد",
-              "english": "The bathroom is new",
-              "pic": "🛁"
-            },
-            {
-              "id": "lv9-13-09",
-              "arabizi": "bfakker w brodd 3leik",
-              "arabic": "بفكّر وبردّ عليك",
-              "english": "I'll think and get back to you",
-              "pic": "💭"
+              "arabizi": "el balcon kbir w bitell 3al ba7r. bel masa fik to23od tshrab ahwe w tshouf el ghroub. 3ashen hayda bas, badde ekhoda!",
+              "arabic": "البلكون كبير وبيطلّ عالبحر. بالمسا فيك تقعد تشرب قهوة وتشوف الغروب. عشان هيدا بس، بدّي اخدا!",
+              "english": "The balcony is big and looks out over the sea. In the evening you can sit and drink coffee and watch the sunset. Just for that, I want to take it!",
+              "pic": "🌅"
             }
           ],
           "dialogue": [
@@ -27737,66 +27451,45 @@
           "items": [
             {
               "id": "lv9-14-01",
-              "arabizi": "shantte ma wselet",
-              "arabic": "شنطتي ما وصلت",
-              "english": "My bag didn't arrive",
+              "arabizi": "wselt 3al matar bas el shanta ma wselet. stannet nos se3a 3and el 7zem, w ma tel3et. 2alole rou7 3al maktab taba3 el shantat el dey3a.",
+              "arabic": "وصلت عالمطار بس الشنتة ما وصلت. استنّيت نصّ ساعة عند الحزام، وما طلعت. قالولي روح عالمكتب تبع الشنط الضايعة.",
+              "english": "I arrived at the airport but the suitcase didn't. I waited half an hour at the belt, and it didn't come out. They told me to go to the lost luggage office.",
               "pic": "🧳"
             },
             {
               "id": "lv9-14-02",
-              "arabizi": "wein maktab l amte3a l mafqoude?",
-              "arabic": "وين مكتب الأمتعة المفقودة؟",
-              "english": "Where's the lost luggage office?",
-              "pic": "🏢"
-            },
-            {
-              "id": "lv9-14-03",
-              "arabizi": "hayda l boarding pass w l tag",
-              "arabic": "هيدا البوردينغ باس والتاغ",
-              "english": "Here's the boarding pass and the tag",
-              "pic": "🎫"
-            },
-            {
-              "id": "lv9-14-04",
-              "arabizi": "shanta zar2a kbire, ma3 shareet a7mar",
-              "arabic": "شنطة زرقا كبيرة، مع شريط أحمر",
-              "english": "A big blue bag, with a red ribbon",
+              "arabizi": "el shanta zar2a, kbire, w 3leya shrite 7amra. fiya tyebe w hdeyya la ahle. kenet bel tayyara men Paris, w el ra7le kenet fiha tranzit b Istanbul.",
+              "arabic": "الشنتة زرقا، كبيرة، وعليها شريطة حمرا. فيها تيابي وهدايا لأهلي. كانت بالطيّارة من باريس، والرحلة كانت فيها ترانزيت باسطنبول.",
+              "english": "The suitcase is blue, big, with a red ribbon on it. It has my clothes and presents for my family. It was on the plane from Paris, and the flight had a transit in Istanbul.",
               "pic": "🎀"
             },
             {
+              "id": "lv9-14-03",
+              "arabizi": "el mwazzafe katabet kel shi w 3atatne ra2m. 2alet enno el shanta akid bel Istanbul, w btousal bukra bel tayyara el jeye. ra7 yjibouha la 3al beit.",
+              "arabic": "الموظّفة كتبت كل شي وعطتني رقم. قالت إنّو الشنتة أكيد باسطنبول، وبتوصل بكرا بالطيّارة الجايي. رح يجيبوها لعالبيت.",
+              "english": "The employee wrote everything down and gave me a number. She said the suitcase is surely in Istanbul, and will arrive tomorrow on the next plane. They'll bring it to the house.",
+              "pic": "📋"
+            },
+            {
+              "id": "lv9-14-04",
+              "arabizi": "ma 3ande tyeb ghair hal tyeb li 3leye. lezim shtere shi elbso el yom. sharket el tayaran btedfa3 shi iza shtareit?",
+              "arabic": "ما عندي تياب غير هالتياب يلّي عليّ. لازم اشتري شي البسو اليوم. شركة الطيران بتدفع شي إذا اشتريت؟",
+              "english": "I have no clothes except the ones I'm wearing. I have to buy something to wear today. Will the airline pay anything if I buy?",
+              "pic": "👕"
+            },
+            {
               "id": "lv9-14-05",
-              "arabizi": "shu fiya?",
-              "arabic": "شو فيها؟",
-              "english": "What's in it?",
-              "pic": "❓"
+              "arabizi": "sarla tlet iyyem w el shanta ma wselet. 3am 3ayyet kel yom w kel marra bi2oulo \"bukra\". bel akhir rje3et, bas el sa77ab maksour w fi shi na2es.",
+              "arabic": "صرلا تلت إيّام والشنتة ما وصلت. عم عيّط كل يوم وكل مرّة بيقولو \"بكرا\". بالآخر رجعت، بس السحّاب مكسور وفي شي ناقص.",
+              "english": "It's been three days and the suitcase hasn't arrived. I call every day and every time they say \"tomorrow\". In the end it came back, but the zip is broken and something's missing.",
+              "pic": "😤"
             },
             {
               "id": "lv9-14-06",
-              "arabizi": "fiya tyeb w dawa",
-              "arabic": "فيها تياب ودوا",
-              "english": "It has clothes and medicine",
-              "pic": "💊"
-            },
-            {
-              "id": "lv9-14-07",
-              "arabizi": "7a nb3atla 3al 3enwen",
-              "arabic": "رح نبعتلا عالعنوان",
-              "english": "We'll send it to the address",
-              "pic": "🏠"
-            },
-            {
-              "id": "lv9-14-08",
-              "arabizi": "emta btousal?",
-              "arabic": "إيمتى بتوصل؟",
-              "english": "When will it arrive?",
-              "pic": "⏰"
-            },
-            {
-              "id": "lv9-14-09",
-              "arabizi": "fi ta3wid?",
-              "arabic": "في تعويض؟",
-              "english": "Is there compensation?",
-              "pic": "💵"
+              "arabizi": "nas7a: 7ott dayman shwayet tyeb w el dawa bel shanta el zghire ma3ak bel tayyara. w sawwer el shanta 2abel ma tsallima. iza da3et, ktir bisa3dak.",
+              "arabic": "نصيحة: حطّ دايماً شوية تياب والدوا بالشنتة الزغيرة معك بالطيّارة. وصوّر الشنتة قبل ما تسلّما. إذا ضاعت، كتير بيساعدك.",
+              "english": "Advice: always put some clothes and your medicine in the small bag with you on the plane. And photograph the suitcase before you check it in. If it gets lost, that helps a lot.",
+              "pic": "💡"
             }
           ],
           "dialogue": [
@@ -27909,67 +27602,45 @@
           "items": [
             {
               "id": "lv9-15-01",
-              "arabizi": "ahla w sahla, nawwarto!",
-              "arabic": "أهلا وسهلا، نوّرتوا!",
-              "english": "Welcome, you've lit up our home!",
-              "pic": "💡"
-            },
-            {
-              "id": "lv9-15-02",
-              "arabizi": "tfaddalo 3al sefra",
-              "arabic": "تفضّلوا عالسفرة",
-              "english": "Please come to the table",
+              "arabizi": "el jem3a 3azamna s7abna 3al 3asha. ballashna el tabkh men el sob7: tabbouleh, kebbe, wara2 3enab w djej meshwe. kel shi lezim ykoun jehiz 2abel el tmene.",
+              "arabic": "الجمعة عزمنا صحابنا عالعشا. بلّشنا الطبخ من الصبح: تبّولة، كبّة، ورق عنب ودجاج مشوي. كل شي لازم يكون جاهز قبل التمانة.",
+              "english": "On Friday we invited our friends to dinner. We started cooking in the morning: tabbouleh, kibbeh, vine leaves and grilled chicken. Everything had to be ready before eight.",
               "pic": "🍽️"
             },
             {
+              "id": "lv9-15-02",
+              "arabizi": "ahlein ahlein, tfaddalo! shla7o el jaket w 2e3do. shu btshrabo? fi 3asir, bira w 3ara2. el akel ba3d shway.",
+              "arabic": "أهلين أهلين، تفضّلو! اشلحو الجاكيت واقعدو. شو بتشربو؟ في عصير، بيرة وعرق. الأكل بعد شوي.",
+              "english": "Welcome, welcome, come in! Take off your jackets and sit down. What will you drink? There's juice, beer and arak. The food is coming soon.",
+              "pic": "🥂"
+            },
+            {
               "id": "lv9-15-03",
-              "arabizi": "kelo, ma tetkhajjalo",
-              "arabic": "كلوا، ما تتخجّلوا",
-              "english": "Eat, don't be shy",
-              "pic": "😋"
+              "arabizi": "kelo, kelo! ma tsta7o. el akel ktir, w iza ma khalsto el s7oun, ra7 ez3al! hayde el kebbe men wasfe la emme.",
+              "arabic": "كلو، كلو! ما تستحو. الأكل كتير، وإذا ما خلّصتو الصحون، رح ازعل! هيدي الكبّة من وصفة لإمّي.",
+              "english": "Eat, eat! Don't be shy. There's lots of food, and if you don't finish the plates, I'll be upset! This kibbeh is from my mum's recipe.",
+              "pic": "🥙"
             },
             {
               "id": "lv9-15-04",
-              "arabizi": "ma akalt shi!",
-              "arabic": "ما أكلت شي!",
-              "english": "You haven't eaten anything!",
-              "pic": "😱",
-              "note": "Lebanese hosts always say this."
+              "arabizi": "Rami nabate, fa 3melnalo sa7n la7alo: mjaddara w fattoush w batata 7arra. ma badna 7ada yfell jou3an men 3enna.",
+              "arabic": "رامي نباتي، فا عملنالو صحن لحالو: مجدّرة وفتّوش وبطاطا حرّة. ما بدنا حدا يفلّ جوعان من عنّا.",
+              "english": "Rami is vegetarian, so we made him a plate of his own: mjaddara, fattoush and spicy potatoes. We don't want anyone leaving our place hungry.",
+              "pic": "🥗"
             },
             {
               "id": "lv9-15-05",
-              "arabizi": "jarreb hayda, men 2ide",
-              "arabic": "جرّب هيدا، من إيدي",
-              "english": "Try this, I made it myself",
-              "pic": "👩‍🍳"
+              "arabizi": "ba3d el akel 2a3adna 3al balcon. sharabna ahwe w akalna fawake w knefe. el sahra tawlet la el se3a wa7de, w kel el nes kenet mabsoute.",
+              "arabic": "بعد الأكل قعدنا عالبلكون. شربنا قهوة وأكلنا فواكه وكنافة. السهرة طوّلت للساعة وحدة، وكل الناس كانت مبسوطة.",
+              "english": "After the meal we sat on the balcony. We drank coffee and ate fruit and knafeh. The evening lasted until one o'clock, and everyone was happy.",
+              "pic": "🌙"
             },
             {
               "id": "lv9-15-06",
-              "arabizi": "sha2fe zghire bas",
-              "arabic": "شقفة زغيرة بس",
-              "english": "Just a small piece",
-              "pic": "🤏"
-            },
-            {
-              "id": "lv9-15-07",
-              "arabizi": "l7elo b3d shway",
-              "arabic": "الحلو بعد شوي",
-              "english": "Dessert's coming soon",
-              "pic": "🍰"
-            },
-            {
-              "id": "lv9-15-08",
-              "arabizi": "nawwar l beit bwjoudkon",
-              "arabic": "نوّر البيت بوجودكن",
-              "english": "Your presence lit up our home",
-              "pic": "✨"
-            },
-            {
-              "id": "lv9-15-09",
-              "arabizi": "ma tetrouko bakkir!",
-              "arabic": "ما تتركوا بكّير!",
-              "english": "Don't leave early!",
-              "pic": "🙏"
+              "arabizi": "lamma fallo, kel wa7ad 2al \"yeslamo ideiki\" w \"3a2bel 3andna\". tene yom ba3atetle Lina message: \"merci 3al sahra el 7elwe\". hayda bya3mel 2albe mabsout.",
+              "arabic": "لمّا فلّو، كل واحد قال \"يسلمو إيديكي\" و\"عقبال عندنا\". تاني يوم بعتتلي لينا message: \"merci عالسهرة الحلوة\". هيدا بيعمل قلبي مبسوط.",
+              "english": "When they left, everyone said \"bless your hands\" and \"next time at ours\". The next day Lina sent me a message: \"thanks for the lovely evening\". That makes my heart happy.",
+              "pic": "💌"
             }
           ],
           "dialogue": [
@@ -28082,66 +27753,45 @@
           "items": [
             {
               "id": "lv9-16-01",
-              "arabizi": "jebetlkon shi zghir",
-              "arabic": "جبتلكن شي زغير",
-              "english": "I brought you a little something",
-              "pic": "🎁"
+              "arabizi": "3azamouna jiranna 3al ghada el a7ad. jebna ma3na 3elbet 7elou w wared. lamma fetna, shla7na sobbatna 7add el beb. el beit ken mle2 ri7et akel tayyeb.",
+              "arabic": "عزمونا جيراننا عالغدا الأحد. جبنا معنا علبة حلو وورد. لمّا فتنا، شلحنا صبّاطنا حدّ الباب. البيت كان مليان ريحة أكل طيّب.",
+              "english": "Our neighbours invited us to lunch on Sunday. We brought a box of sweets and flowers. When we went in, we took our shoes off by the door. The house was full of the smell of good food.",
+              "pic": "🏡"
             },
             {
               "id": "lv9-16-02",
-              "arabizi": "ma kan lezem t3azzbo 7alkon",
-              "arabic": "ما كان لازم تعذّبوا حالكن",
-              "english": "You shouldn't have gone to trouble",
-              "pic": "🙏"
+              "arabizi": "Emm Karim 7attet akel la 3ashr nes, w ne7na kenna arb3a. kel ma khallasna sa7n, 7attetelna gheiro. 2olt \"shbe3t, merci\", bas hiyye 2alet \"la2, ma akalt shi!\"",
+              "arabic": "أم كريم حطّت أكل لعشر ناس، ونحنا كنّا أربعة. كل ما خلّصنا صحن، حطّتلنا غيرو. قلت \"شبعت، merci\"، بس هيّي قالت \"لأ، ما أكلت شي!\"",
+              "english": "Umm Karim served food for ten people, and we were four. Every time we finished a plate, she gave us another. I said \"I'm full, thanks\", but she said \"no, you haven't eaten anything!\"",
+              "pic": "🍲"
             },
             {
               "id": "lv9-16-03",
-              "arabizi": "l akl ma byetwassaf",
-              "arabic": "الأكل ما بيتوصف",
-              "english": "The food is indescribable",
-              "pic": "😋"
+              "arabizi": "ta3allamet enno lezim khalle shway bel sa7n. iza khallast kel shi, ya3ne baddak kamen. w iza rafadt marra, hinne bisirro. ba3d tlet marrat, bya3rfo enno 3an jad shbe3t.",
+              "arabic": "تعلّمت إنّو لازم خلّي شوي بالصحن. إذا خلّصت كل شي، يعني بدّك كمان. وإذا رفضت مرّة، هنّي بيصرّو. بعد تلت مرّات، بيعرفو إنّو عن جدّ شبعت.",
+              "english": "I learned that you should leave a little on the plate. If you finish everything, it means you want more. And if you refuse once, they insist. After three times, they know you're really full.",
+              "pic": "🙅"
             },
             {
               "id": "lv9-16-04",
-              "arabizi": "shbe3t, wallah",
-              "arabic": "شبعت، والله",
-              "english": "I'm full, honestly",
-              "pic": "🤚"
-            },
-            {
-              "id": "lv9-16-05",
-              "arabizi": "fenjen ahwe w mnemshe",
-              "arabic": "فنجان قهوة ومنمشي",
-              "english": "A cup of coffee and we'll go",
+              "arabizi": "ba3d el akel jebo el ahwe w el fawake. Abu Karim 2a3ad y7ke 3an el 7arb w 3an el dei3a. sme3na 2esas ktir, w ana fhemt nos el kalem bas!",
+              "arabic": "بعد الأكل جابو القهوة والفواكه. أبو كريم قعد يحكي عن الحرب وعن الضيعة. سمعنا قصص كتير، وأنا فهمت نصّ الكلام بس!",
+              "english": "After the meal they brought coffee and fruit. Abu Karim sat telling stories about the war and the village. We heard lots of stories, and I only understood half of it!",
               "pic": "☕"
             },
             {
+              "id": "lv9-16-05",
+              "arabizi": "lamma badna nfell, 2alou \"lessa bakkir!\" ba2ina nos se3a kamen. 3al beb, 3atouna akel bel 3elab la bukra. hayda el karam el lebnene.",
+              "arabic": "لمّا بدنا نفلّ، قالو \"لسّا بكّير!\" بقينا نصّ ساعة كمان. عالباب، عطونا أكل بالعلب لبكرا. هيدا الكرم اللبناني.",
+              "english": "When we wanted to leave, they said \"it's still early!\" We stayed another half hour. At the door, they gave us food in containers for tomorrow. That's Lebanese generosity.",
+              "pic": "🎁"
+            },
+            {
               "id": "lv9-16-06",
-              "arabizi": "t2akhkharna, lazem nemshe",
-              "arabic": "تأخّرنا، لازم نمشي",
-              "english": "It's late, we have to go",
-              "pic": "🌙"
-            },
-            {
-              "id": "lv9-16-07",
-              "arabizi": "daymé, inshallah",
-              "arabic": "دايمة، إن شاء الله",
-              "english": "May your table always be full",
-              "pic": "🍽️"
-            },
-            {
-              "id": "lv9-16-08",
-              "arabizi": "ta3o la 3anna marra",
-              "arabic": "تعوا لعنّا مرّة",
-              "english": "Come to ours some time",
-              "pic": "🏠"
-            },
-            {
-              "id": "lv9-16-09",
-              "arabizi": "3a2bal ma nraddla",
-              "arabic": "عقبال ما نردّلا",
-              "english": "Until we can return it",
-              "pic": "🔁"
+              "arabizi": "tene yom ba3atet message la Emm Karim: \"yeslamo ideiki, kel shi ken ktir tayyeb\". raddet: \"sa7tein, el beit beitkon\". w ba3d jem3a 3azamnehon la 3enna.",
+              "arabic": "تاني يوم بعتت message لأم كريم: \"يسلمو إيديكي، كل شي كان كتير طيّب\". ردّت: \"صحتين، البيت بيتكن\". وبعد جمعة عزمناهن لعنّا.",
+              "english": "The next day I sent Umm Karim a message: \"bless your hands, everything was delicious\". She replied: \"enjoy, our home is your home\". And a week later we invited them to ours.",
+              "pic": "💬"
             }
           ],
           "dialogue": [
@@ -28247,66 +27897,45 @@
           "items": [
             {
               "id": "lv9-17-01",
-              "arabizi": "3ande ejtima3 ma3 l client",
-              "arabic": "عندي إجتماع مع الكلاينت",
-              "english": "I have a meeting with the client",
-              "pic": "🤝"
+              "arabizi": "bel shoghol, kel yom el sob7 mnballesh bel ahwe. ma 7ada byeshteghel 2abel ma yeshrab finjen. ba3dein fi meeting zghir ma3 el mudir, w kel wa7ad bi2oul shu 3am ya3mel.",
+              "arabic": "بالشغل، كل يوم الصبح منبلّش بالقهوة. ما حدا بيشتغل قبل ما يشرب فنجان. بعدين في meeting زغير مع المدير، وكل واحد بيقول شو عم يعمل.",
+              "english": "At work, every morning starts with coffee. Nobody works before drinking a cup. Then there's a short meeting with the manager, and everyone says what they're doing.",
+              "pic": "☕"
             },
             {
               "id": "lv9-17-02",
-              "arabizi": "fik tb3atle l file?",
-              "arabic": "فيك تبعتلي الفايل؟",
-              "english": "Can you send me the file?",
-              "pic": "📁"
-            },
-            {
-              "id": "lv9-17-03",
-              "arabizi": "l presentation jehze?",
-              "arabic": "البريزنتيشن جاهزة؟",
-              "english": "Is the presentation ready?",
+              "arabizi": "el mudir talab menne eb3at el rapport la bukra. bas ana ma 3ande wa2t, 3ande tlet shaghlet tenye. 2olto enno ra7 ba3to ba3d bukra. ma 3ajabo ktir, bas 2ebel.",
+              "arabic": "المدير طلب منّي ابعت الـ rapport لبكرا. بس أنا ما عندي وقت، عندي تلت شغلات تانية. قلتلو إنّو رح ابعتو بعد بكرا. ما عجبو كتير، بس قبل.",
+              "english": "The manager asked me to send the report by tomorrow. But I don't have time, I have three other things. I told him I'll send it the day after tomorrow. He didn't like it much, but he accepted.",
               "pic": "📊"
             },
             {
+              "id": "lv9-17-03",
+              "arabizi": "Sami zamile bel maktab, w huwwe dayman bi7ke 3al telephone b sawt 3ale. ma 3am fiye rakkez. bukra ra7 2ello b ta2dib. aw ra7 jib sammee3at!",
+              "arabic": "سامي زميلي بالمكتب، وهوّي دايماً بيحكي عالتلفون بصوت عالي. ما عم فيي ركّز. بكرا رح قلّو بتأدّب. أو رح جيب سمّاعات!",
+              "english": "Sami is my colleague in the office, and he's always on the phone talking loudly. I can't concentrate. Tomorrow I'll tell him politely. Or I'll get headphones!",
+              "pic": "🎧"
+            },
+            {
               "id": "lv9-17-04",
-              "arabizi": "l mdir baddo yshoufak",
-              "arabic": "المدير بدّو يشوفك",
-              "english": "The boss wants to see you",
-              "pic": "👔"
+              "arabizi": "el yom 3melna farewell la Lara. sefret 3a Dubai, la2et shoghol a7san. jebna gateau w 2olnela \"mneshta2lik\". kel el nes 7ezno, bas fre7nela.",
+              "arabic": "اليوم عملنا farewell للارا. سافرت عدبي، لقت شغل أحسن. جبنا gateau وقلنالا \"منشتقلك\". كل الناس حزنو، بس فرحنا إلا.",
+              "english": "Today we had a farewell for Lara. She's moving to Dubai, she found a better job. We got a cake and told her \"we'll miss you\". Everyone was sad, but we were happy for her.",
+              "pic": "🎂"
             },
             {
               "id": "lv9-17-05",
-              "arabizi": "ana b ijaze bukra",
-              "arabic": "أنا بإجازة بكرا",
-              "english": "I'm on leave tomorrow",
-              "pic": "🏖️"
+              "arabizi": "bel maktab fi tlet lghat: el meetings bel ingleeze, el emailet bel franse w el 7ake bel 3arabe. w ahyanan kel shi bi jumle wa7de!",
+              "arabic": "بالمكتب في تلت لغات: الـ meetings بالإنكليزي، الـ emails بالفرنسي والحكي بالعربي. وأحياناً كل شي بجملة وحدة!",
+              "english": "In the office there are three languages: meetings in English, emails in French and chat in Arabic. And sometimes all of it in one sentence!",
+              "pic": "🗣️"
             },
             {
               "id": "lv9-17-06",
-              "arabizi": "l printer kharbaan, metl dayman",
-              "arabic": "البرينتر خربان، متل دايمًا",
-              "english": "The printer is broken, as always",
-              "pic": "🖨️"
-            },
-            {
-              "id": "lv9-17-07",
-              "arabizi": "mnetghadda sawa?",
-              "arabic": "منتغدّى سوا؟",
-              "english": "Shall we have lunch together?",
-              "pic": "🥗"
-            },
-            {
-              "id": "lv9-17-08",
-              "arabizi": "ma tensa l deadline",
-              "arabic": "ما تنسى الديدلاين",
-              "english": "Don't forget the deadline",
-              "pic": "⏳"
-            },
-            {
-              "id": "lv9-17-09",
-              "arabizi": "yalla, ya3tikon l 3afye",
-              "arabic": "يلّا، يعطيكن العافية",
-              "english": "OK, thanks for your work, everyone",
-              "pic": "🙌"
+              "arabizi": "akher el shahr, el ma3ash ta2akhkhar tlet iyyem. kel el nes kenet 2al2ane. el mudir 2al enno el bank 3endo mashkal. el yom akhiran nezel, w kelna rta7na.",
+              "arabic": "آخر الشهر، المعاش تأخّر تلت إيّام. كل الناس كانت قلقانة. المدير قال إنّو البنك عندو مشكل. اليوم أخيراً نزل، وكلنا ارتحنا.",
+              "english": "At the end of the month, the salary was three days late. Everyone was worried. The manager said the bank had a problem. Today it finally came in, and we all relaxed.",
+              "pic": "💵"
             }
           ],
           "dialogue": [
@@ -28412,66 +28041,45 @@
           "items": [
             {
               "id": "lv9-18-01",
-              "arabizi": "7a nnazzem 7afle la l sharke",
-              "arabic": "رح ننظّم حفلة للشركة",
-              "english": "We're organising a company party",
-              "pic": "🎉"
+              "arabizi": "badna nnazzem 7afle la jam3iyye bta3mel 3amal khayre. lezim nla2e ma7all yesa3 miyye w khamsin wa7ad. el 7afle ra7 tkoun bel seif, 3al ba7r iza fi.",
+              "arabic": "بدنا ننظّم حفلة لجمعيّة بتعمل عمل خيري. لازم نلاقي محلّ يساع مية وخمسين واحد. الحفلة رح تكون بالصيف، عالبحر إذا في.",
+              "english": "We want to organise a party for a charity. We need to find a place that holds a hundred and fifty people. The party will be in summer, by the sea if possible.",
+              "pic": "🎪"
             },
             {
               "id": "lv9-18-02",
-              "arabizi": "kam shakhs 7a yeje?",
-              "arabic": "كم شخص رح يجي؟",
-              "english": "How many people are coming?",
-              "pic": "👥"
+              "arabizi": "kel wa7ad 3ando shoghol: Rami 3al musi2a, Maya 3al akel, w ana 3al invitations. lezim neb3at el 3azimet abel bi shahr, w nes2al min jeye.",
+              "arabic": "كل واحد عندو شغل: رامي عالموسيقى، مايا عالأكل، وأنا عالـ invitations. لازم نبعت العزايم قبل بشهر، ونسأل مين جايي.",
+              "english": "Everyone has a job: Rami on music, Maya on food, and me on invitations. We have to send the invitations a month ahead, and ask who's coming.",
+              "pic": "📋"
             },
             {
               "id": "lv9-18-03",
-              "arabizi": "7jazna l salle",
-              "arabic": "حجزنا الصالة",
-              "english": "We booked the hall",
-              "pic": "🏛️"
+              "arabizi": "7kina ma3 tlet mata3em. el awwal ghale, el tene ma fi park, w el telet mni7 bas baddo 3arboun. dafa3na el 3arboun w 7ajazna el tarikh.",
+              "arabic": "حكينا مع تلت مطاعم. الأوّل غالي، التاني ما في park، والتالت منيح بس بدّو عربون. دفعنا العربون وحجزنا التاريخ.",
+              "english": "We spoke with three restaurants. The first is expensive, the second has no parking, and the third is good but wants a deposit. We paid the deposit and booked the date.",
+              "pic": "📅"
             },
             {
               "id": "lv9-18-04",
-              "arabizi": "meen 3am yetwalla l akl?",
-              "arabic": "مين عم يتولّى الأكل؟",
-              "english": "Who's handling the food?",
-              "pic": "🍽️"
+              "arabizi": "el DJ 2al enno ra7 yeje se3tein 2abel la yjahhez el sound. bas el kahraba bel ma7all ma bteswa, fa lezim nejib generator la7alna. hayda ra7 ykallef.",
+              "arabic": "الـ DJ قال إنّو رح يجي ساعتين قبل ليجهّز الـ sound. بس الكهربا بالمحلّ ما بتسوى، فا لازم نجيب موتير لحالنا. هيدا رح يكلّف.",
+              "english": "The DJ said he'll come two hours early to set up the sound. But the electricity at the venue isn't reliable, so we have to bring our own generator. That'll cost.",
+              "pic": "🎛️"
             },
             {
               "id": "lv9-18-05",
-              "arabizi": "lezemna budget",
-              "arabic": "لازمنا ميزانية",
-              "english": "We need a budget",
-              "pic": "💰"
+              "arabizi": "lyom el 7afle. men el sob7 3am nzayyen w nratteb. el wared wsel, el akel b7add el matbakh, w el DJ 3am yjarreb el sound. ba2a bas el nes yeju!",
+              "arabic": "اليوم الحفلة. من الصبح عم نزيّن ونرتّب. الورد وصل، الأكل بحدّ المطبخ، والـ DJ عم يجرّب الـ sound. بقي بس الناس يجو!",
+              "english": "Today's the party. Since the morning we've been decorating and tidying. The flowers have arrived, the food is by the kitchen, and the DJ is testing the sound. Now we just need people to come!",
+              "pic": "🎉"
             },
             {
               "id": "lv9-18-06",
-              "arabizi": "b3atna l da3wet",
-              "arabic": "بعتنا الدعوات",
-              "english": "We sent the invitations",
-              "pic": "💌"
-            },
-            {
-              "id": "lv9-18-07",
-              "arabizi": "l DJ ma 3am yrodd",
-              "arabic": "الدي جي ما عم يردّ",
-              "english": "The DJ isn't answering",
-              "pic": "📵"
-            },
-            {
-              "id": "lv9-18-08",
-              "arabizi": "lezemna khotta B",
-              "arabic": "لازمنا خطّة بي",
-              "english": "We need a plan B",
-              "pic": "🅱️"
-            },
-            {
-              "id": "lv9-18-09",
-              "arabizi": "kel shi tamem, l7amdella",
-              "arabic": "كل شي تمام، الحمدلله",
-              "english": "Everything is fine, thank God",
-              "pic": "✅"
+              "arabizi": "el 7afle zabtet aktar men ma tsawwarna. jama3na khams talef dollar lal jam3iyye. kel el nes ra2aso la el se3a tnein. ra7 na3mela kel sene!",
+              "arabic": "الحفلة زبطت أكتر من ما تصوّرنا. جمعنا خمس تلاف دولار للجمعيّة. كل الناس رقصو للساعة تنين. رح نعملا كل سنة!",
+              "english": "The party went better than we imagined. We raised five thousand dollars for the charity. Everyone danced until two o'clock. We'll do it every year!",
+              "pic": "🙌"
             }
           ],
           "dialogue": [
@@ -28577,66 +28185,45 @@
           "items": [
             {
               "id": "lv9-19-01",
-              "arabizi": "fi ghalta bel 7sab",
-              "arabic": "في غلطة بالحساب",
-              "english": "There's a mistake on the bill",
+              "arabizi": "bisame7ne, fi ghalat bel fatoura. ne7na talabna arba3 ahwe, bas ktebtolna sette. w hayde el salata ma wselet abadan. fik tshouf iza bitred?",
+              "arabic": "بسامحني، في غلط بالفاتورة. نحنا طلبنا أربع قهوة، بس كتبتولنا ستّة. وهيدي السلطة ما وصلت أبداً. فيك تشوف إذا بتريد؟",
+              "english": "Excuse me, there's a mistake on the bill. We ordered four coffees, but you wrote six. And this salad never arrived. Can you check, please?",
               "pic": "🧾"
             },
             {
               "id": "lv9-19-02",
-              "arabizi": "ma talabna hayda",
-              "arabic": "ما طلبنا هيدا",
-              "english": "We didn't order this",
-              "pic": "🙅"
+              "arabizi": "el garson raje3 w 2al \"sorry, 3melna ghalat\". sa77a7 el fatoura w jab wa7de jdide. w 3a 7sebo jab el 7elou. hayk el mat3am el mni7.",
+              "arabic": "الغرسون رجع وقال \"sorry، عملنا غلط\". صحّح الفاتورة وجاب وحدة جديدة. وعحسابو جاب الحلو. هيك المطعم المنيح.",
+              "english": "The waiter came back and said \"sorry, we made a mistake\". He corrected the bill and brought a new one. And he brought dessert on the house. That's how a good restaurant behaves.",
+              "pic": "😊"
             },
             {
               "id": "lv9-19-03",
-              "arabizi": "7asabtolna tnein marra",
-              "arabic": "حسبتولنا تنين مرّة",
-              "english": "You charged us twice",
-              "pic": "2️⃣"
+              "arabizi": "fatourit el kahraba hal shahr tmenin dollar. el shahr el madi ken tlatin! ma ghayyarna shi bel beit. lezim rou7 3al shirke w es2al shu sar.",
+              "arabic": "فاتورة الكهربا هالشهر تمانين دولار. الشهر الماضي كان تلاتين! ما غيّرنا شي بالبيت. لازم روح عالشركة واسأل شو صار.",
+              "english": "The electricity bill this month is eighty dollars. Last month it was thirty! We didn't change anything at home. I have to go to the company and ask what happened.",
+              "pic": "⚡"
             },
             {
               "id": "lv9-19-04",
-              "arabizi": "l se3r ghayr l menu",
-              "arabic": "السعر غير المنيو",
-              "english": "The price is different from the menu",
-              "pic": "📋"
+              "arabizi": "bel shirke, el mwazzaf shaf el 3addad w 2al enno 2aro el ra2m ghalat. 2al ra7 ysa77e7o el shahr el jeye. bas ana badde ysa77e7o el ra2m hala2, mesh el shahr el jeye!",
+              "arabic": "بالشركة، الموظّف شاف العدّاد وقال إنّو قرو الرقم غلط. قال رح يصحّحو الشهر الجايي. بس أنا بدّي يصحّحو الرقم هلّق، مش الشهر الجايي!",
+              "english": "At the company, the clerk looked at the meter and said they read the number wrong. He said they'll correct it next month. But I want the number fixed now, not next month!",
+              "pic": "📏"
             },
             {
               "id": "lv9-19-05",
-              "arabizi": "l service mashmoul?",
-              "arabic": "السرفيس مشمول؟",
-              "english": "Is service included?",
-              "pic": "💁"
+              "arabizi": "dafa3t bel carte w el bank 2assne marrtein. 3ayyatet lal bank w 2alole lezim estanna 3ashr iyyem la yerja3o el masari. ma fi shi bisir bi sur3a hon!",
+              "arabic": "دفعت بالكارت والبنك قصّني مرّتين. عيّطت للبنك وقالولي لازم استنّى عشر إيّام ليرجعو المصاري. ما في شي بيصير بسرعة هون!",
+              "english": "I paid by card and the bank charged me twice. I called the bank and they told me I have to wait ten days for the money to come back. Nothing happens fast here!",
+              "pic": "💳"
             },
             {
               "id": "lv9-19-06",
-              "arabizi": "fik t3id l 7sab?",
-              "arabic": "فيك تعيد الحساب؟",
-              "english": "Can you redo the bill?",
-              "pic": "🔁"
-            },
-            {
-              "id": "lv9-19-07",
-              "arabizi": "sorry, ghaltet l system",
-              "arabic": "سوري، غلطة السيستم",
-              "english": "Sorry, a system error",
-              "pic": "💻"
-            },
-            {
-              "id": "lv9-19-08",
-              "arabizi": "ma fi mashkle, btsir",
-              "arabic": "ما في مشكلة، بتصير",
-              "english": "No problem, it happens",
-              "pic": "👌"
-            },
-            {
-              "id": "lv9-19-09",
-              "arabizi": "l tip bel cash",
-              "arabic": "التيب بالكاش",
-              "english": "The tip in cash",
-              "pic": "💵"
+              "arabizi": "dayman e2ra el fatoura 2abel ma tedfa3. w iza bel lira, et2akkad men el se3r. ktir ghalat bisir bel sodfe, mesh bel 2asd. bas lezim tentebeh.",
+              "arabic": "دايماً اقرا الفاتورة قبل ما تدفع. وإذا بالليرة، تأكّد من السعر. كتير غلط بيصير بالصدفة، مش بالقصد. بس لازم تنتبه.",
+              "english": "Always read the bill before you pay. And if it's in lira, check the rate. Many mistakes happen by accident, not on purpose. But you have to pay attention.",
+              "pic": "👀"
             }
           ],
           "dialogue": [
@@ -28742,68 +28329,45 @@
           "items": [
             {
               "id": "lv9-20-01",
-              "arabizi": "fiye se3dak bel ghrad?",
-              "arabic": "فيي ساعدك بالغراض؟",
-              "english": "Can I help you with the shopping?",
-              "pic": "🛍️"
+              "arabizi": "jaretna Emm Georges kbire bel 3omr w 3aysha la7ala. kel sob7 bdo22la 3al beb w bes2ala iza bta7taj shi. ahyanan bjebla khebez w 7alib men el dekkane.",
+              "arabic": "جارتنا أم جورج كبيرة بالعمر وعايشة لحالا. كل صبح بدقّلا عالباب وبسألا إذا بتحتاج شي. أحياناً بجبلا خبز وحليب من الدكّانة.",
+              "english": "Our neighbour Umm Georges is old and lives alone. Every morning I knock on her door and ask if she needs anything. Sometimes I bring her bread and milk from the shop.",
+              "pic": "👵"
             },
             {
               "id": "lv9-20-02",
-              "arabizi": "l asanseur m3attal, khalline 7ammel",
-              "arabic": "الأسانسور معطّل، خلّيني حمّل",
-              "english": "The lift is broken, let me carry",
-              "pic": "💪"
+              "arabizi": "mbere7 el kahraba ent2at3et w el ascenseur we22ef bel nos. jarna Abu Ali ken jouwwa. kel el bineye nezlet la tsa3do. ba3d nos se3a, el generator eshtaghal w tele3.",
+              "arabic": "مبارح الكهربا انقطعت والـ ascenseur وقف بالنصّ. جارنا أبو علي كان جوّا. كل البناية نزلت لتساعدو. بعد نصّ ساعة، الموتير اشتغل وطلع.",
+              "english": "Yesterday the power cut out and the lift stopped halfway. Our neighbour Abu Ali was inside. The whole building came down to help him. After half an hour, the generator started and he got out.",
+              "pic": "🛗"
             },
             {
               "id": "lv9-20-03",
-              "arabizi": "baddak shi men l saydaleye?",
-              "arabic": "بدّك شي من الصيدلية؟",
-              "english": "Do you need anything from the pharmacy?",
-              "pic": "💊"
+              "arabizi": "el jiran el jdod wselo men jem3a. ma bya3rfo 7ada. 3melt ka3ke w 2ra3t 3al beb la 2ellon \"ahla w sahla\". ken 3endon wled 2ad wledna, w sar fi s7obiyye.",
+              "arabic": "الجيران الجداد وصلو من جمعة. ما بيعرفو حدا. عملت كعكة وقرعت عالباب لقلّن \"أهلا وسهلا\". كان عندن ولاد قدّ ولادنا، وصار في صحوبيّة.",
+              "english": "The new neighbours arrived a week ago. They don't know anyone. I made a cake and knocked on the door to say \"welcome\". They had kids the same age as ours, and a friendship started.",
+              "pic": "🍰"
             },
             {
               "id": "lv9-20-04",
-              "arabizi": "2arib 3leik ana",
-              "arabic": "قريب عليكي أنا",
-              "english": "I'm close by",
-              "pic": "🏠"
+              "arabizi": "Abu Rami msefer jem3a. 3atane el mafatih la es2e el zare3 w shouf el beit. kel yomein bfout, bes2e w befta7 el shbabik shway. hayda el wa2t el 7elo bein el jiran.",
+              "arabic": "أبو رامي مسافر جمعة. عطاني المفاتيح لاسقي الزرع وشوف البيت. كل يومين بفوت، بسقي وبفتح الشبابيك شوي. هيدا الوقت الحلو بين الجيران.",
+              "english": "Abu Rami is away for a week. He gave me the keys to water the plants and check the house. Every two days I go in, water and open the windows a bit. That's what good neighbours are for.",
+              "pic": "🪴"
             },
             {
               "id": "lv9-20-05",
-              "arabizi": "iza baddik shi, de22ile",
-              "arabic": "إذا بدّك شي، دقّيلي",
-              "english": "If you need anything, ring me",
-              "pic": "📞"
+              "arabizi": "ebn el jiran mared w emmo bel shoghol. ana bel beit, fa 2olta \"jibe la 3ande, ana bentebeh 3le\". 3meltlo shourba w 2a3ad yetfarraj 3al TV. el masa 2alet \"allah ykhallike\".",
+              "arabic": "ابن الجيران مريض وإمّو بالشغل. أنا بالبيت، فا قلتلا \"جيبي لعندي، أنا بنتبه عليه\". عملتلو شوربة وقعد يتفرّج عالتلفزيون. المسا قالت \"الله يخلّيكي\".",
+              "english": "The neighbours' son is sick and his mum is at work. I'm at home, so I told her \"bring him to me, I'll look after him\". I made him soup and he sat watching TV. In the evening she said \"God keep you\".",
+              "pic": "🍜"
             },
             {
               "id": "lv9-20-06",
-              "arabizi": "ya ibne, allah yer7am waldeik",
-              "arabic": "يا إبني، الله يرحم والديك",
-              "english": "My son, God bless your parents",
-              "pic": "🙏",
-              "note": "A traditional blessing from an older person."
-            },
-            {
-              "id": "lv9-20-07",
-              "arabizi": "ma 3melt shi",
-              "arabic": "ما عملت شي",
-              "english": "I didn't do anything",
-              "pic": "😊"
-            },
-            {
-              "id": "lv9-20-08",
-              "arabizi": "ya3tik l 3afye",
-              "arabic": "يعطيك العافية",
-              "english": "Thank you for your effort",
-              "pic": "🙌"
-            },
-            {
-              "id": "lv9-20-09",
-              "arabizi": "l jar 2abl l dar",
-              "arabic": "الجار قبل الدار",
-              "english": "The neighbour before the house",
-              "pic": "🏡",
-              "note": "A proverb: choose your neighbour before your home."
+              "arabizi": "bel 7ay taba3na, kel el nes bta3ref ba3da. iza sar shi, el kel byeje deghre. hayda shi ma la2eito bi Europa. hon, el jar 2abel el dar.",
+              "arabic": "بالحيّ تبعنا، كل الناس بتعرف بعضا. إذا صار شي، الكل بيجي دغري. هيدا شي ما لقيتو بأوروبا. هون، الجار قبل الدار.",
+              "english": "In our neighbourhood, everyone knows each other. If something happens, everyone comes right away. That's something I didn't find in Europe. Here, as they say, choose the neighbour before the house.",
+              "pic": "🏘️"
             }
           ],
           "dialogue": [
