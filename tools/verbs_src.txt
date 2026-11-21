@@ -89,3 +89,103 @@ command: 7ebb = حبّ ; 7ebbe = حبّي ; 7ebbo = حبّو
 past: shtaghalt = اشتغلت ; shtaghalt = اشتغلت ; shtaghalte = اشتغلتي ; eshtaghal = اشتغل ; eshtaghalet = اشتغلت ; shtaghalna = اشتغلنا ; shtaghalto = اشتغلتو ; eshtaghalo = اشتغلو
 present: beshteghel = بشتغل ; bteshteghel = بتشتغل ; bteshteghle = بتشتغلي ; byeshteghel = بيشتغل ; bteshteghel = بتشتغل ; mneshteghel = منشتغل ; bteshteghlo = بتشتغلو ; byeshteghlo = بيشتغلو
 command: eshteghel = اشتغل ; eshteghle = اشتغلي ; eshteghlo = اشتغلو
+
+@ 2ara | 📖 | read | read | reading | reads
+past: 2reit = قريت ; 2reit = قريت ; 2reite = قريتي ; 2ara = قرا ; 2aret = قرت ; 2reina = قرينا ; 2reito = قريتو ; 2aro = قرو
+present: be2ra = بقرا ; bte2ra = بتقرا ; bte2re = بتقري ; bye2ra = بيقرا ; bte2ra = بتقرا ; mne2ra = منقرا ; bte2ro = بتقرو ; bye2ro = بيقرو
+command: 2ra = اقرا ; 2re = اقري ; 2ro = اقرو
+
+@ 2a3ad | 🪑 | sit | sat | sitting | sits
+past: 2a3adt = قعدت ; 2a3adt = قعدت ; 2a3adte = قعدتي ; 2a3ad = قعد ; 2a3det = قعدت ; 2a3adna = قعدنا ; 2a3adto = قعدتو ; 2a3do = قعدو
+present: be23od = بقعد ; bte23od = بتقعد ; bte2e3de = بتقعدي ; bye23od = بيقعد ; bte23od = بتقعد ; mne23od = منقعد ; bte2e3do = بتقعدو ; bye2e3do = بيقعدو
+command: 2o3od = اقعد ; 2o3de = اقعدي ; 2o3do = اقعدو
+
+@ sa2al | 🙋 | ask | asked | asking | asks
+past: sa2alt = سألت ; sa2alt = سألت ; sa2alte = سألتي ; sa2al = سأل ; sa2let = سألت ; sa2alna = سألنا ; sa2alto = سألتو ; sa2lo = سألو
+present: bes2al = بسأل ; btes2al = بتسأل ; btes2ale = بتسألي ; byes2al = بيسأل ; btes2al = بتسأل ; mnes2al = منسأل ; btes2alo = بتسألو ; byes2alo = بيسألو
+command: es2al = اسأل ; es2ale = اسألي ; es2alo = اسألو
+
+@ shtara | 🛍️ | buy | bought | buying | buys
+past: shtareit = شتريت ; shtareit = شتريت ; shtareite = شتريتي ; shtara = شترى ; shtaret = شترت ; shtareina = شترينا ; shtareito = شتريتو ; shtaro = شترو
+present: beshtere = بشتري ; bteshtere = بتشتري ; bteshtere = بتشتري ; byeshtere = بيشتري ; bteshtere = بتشتري ; mneshtere = منشتري ; bteshtero = بتشترو ; byeshtero = بيشترو
+command: shtere = اشتري ; shtere = اشتري ; shtero = اشترو
+
+@ dafa3 | 💵 | pay | paid | paying | pays
+past: dafa3t = دفعت ; dafa3t = دفعت ; dafa3te = دفعتي ; dafa3 = دفع ; daf3et = دفعت ; dafa3na = دفعنا ; dafa3to = دفعتو ; daf3o = دفعو
+present: bedfa3 = بدفع ; btedfa3 = بتدفع ; btedfa3e = بتدفعي ; byedfa3 = بيدفع ; btedfa3 = بتدفع ; mnedfa3 = مندفع ; btedfa3o = بتدفعو ; byedfa3o = بيدفعو
+command: edfa3 = ادفع ; edfa3e = ادفعي ; edfa3o = ادفعو
+
+@ sakan | 🏠 | live | lived | living | lives
+past: sakant = سكنت ; sakant = سكنت ; sakante = سكنتي ; sakan = سكن ; sakanet = سكنت ; sakanna = سكنّا ; sakanto = سكنتو ; sakano = سكنو
+present: beskon = بسكن ; bteskon = بتسكن ; bteskne = بتسكني ; byeskon = بيسكن ; bteskon = بتسكن ; mneskon = منسكن ; bteskno = بتسكنو ; byeskno = بيسكنو
+command: oskon = اسكن ; oskne = اسكني ; oskno = اسكنو
+
+@ t3allam | 🎓 | learn | learned | learning | learns
+past: t3allamt = تعلّمت ; t3allamt = تعلّمت ; t3allamte = تعلّمتي ; t3allam = تعلّم ; t3allamet = تعلّمت ; t3allamna = تعلّمنا ; t3allamto = تعلّمتو ; t3allamo = تعلّمو
+present: bet3allam = بتعلّم ; btet3allam = بتتعلّم ; btet3allame = بتتعلّمي ; byet3allam = بيتعلّم ; btet3allam = بتتعلّم ; mnet3allam = منتعلّم ; btet3allamo = بتتعلّمو ; byet3allamo = بيتعلّمو
+command: t3allam = تعلّم ; t3allame = تعلّمي ; t3allamo = تعلّمو
+
+@ 3allam | 👩‍🏫 | teach | taught | teaching | teaches
+past: 3allamt = علّمت ; 3allamt = علّمت ; 3allamte = علّمتي ; 3allam = علّم ; 3allamet = علّمت ; 3allamna = علّمنا ; 3allamto = علّمتو ; 3allamo = علّمو
+present: b3allem = بعلّم ; bt3allem = بتعلّم ; bt3allme = بتعلّمي ; by3allem = بيعلّم ; bt3allem = بتعلّم ; mn3allem = منعلّم ; bt3allmo = بتعلّمو ; by3allmo = بيعلّمو
+command: 3allem = علّم ; 3allme = علّمي ; 3allmo = علّمو
+
+@ nese | 🤔 | forget | forgot | forgetting | forgets
+past: nsit = نسيت ; nsit = نسيت ; nsite = نسيتي ; nese = نسي ; nesyet = نسيت ; nsina = نسينا ; nsito = نسيتو ; nesyo = نسيو
+present: bense = بنسى ; btense = بتنسى ; btense = بتنسي ; byense = بينسى ; btense = بتنسى ; mnense = منسى ; btenso = بتنسو ; byenso = بينسو
+command: ensa = انسى ; ense = انسي ; enso = انسو
+
+@ sme3 | 👂 | hear | heard | hearing | hears
+past: sme3t = سمعت ; sme3t = سمعت ; sme3te = سمعتي ; seme3 = سمع ; sem3et = سمعت ; sme3na = سمعنا ; sme3to = سمعتو ; sem3o = سمعو
+present: besma3 = بسمع ; btesma3 = بتسمع ; btesma3e = بتسمعي ; byesma3 = بيسمع ; btesma3 = بتسمع ; mnesma3 = منسمع ; btesma3o = بتسمعو ; byesma3o = بيسمعو
+command: esma3 = اسمع ; esma3e = اسمعي ; esma3o = اسمعو
+
+@ tabakh | 🍳 | cook | cooked | cooking | cooks
+past: tabakht = طبخت ; tabakht = طبخت ; tabakhte = طبختي ; tabakh = طبخ ; tabkhet = طبخت ; tabakhna = طبخنا ; tabakhto = طبختو ; tabkho = طبخو
+present: betbokh = بطبخ ; btetbokh = بتطبخ ; btetbkhe = بتطبخي ; byetbokh = بيطبخ ; btetbokh = بتطبخ ; mnetbokh = منطبخ ; btetbkho = بتطبخو ; byetbkho = بيطبخو
+command: otbokh = اطبخ ; otbkhe = اطبخي ; otbkho = اطبخو
+
+@ lebes | 👕 | wear | wore | wearing | wears
+past: lbest = لبست ; lbest = لبست ; lbeste = لبستي ; lebes = لبس ; lebset = لبست ; lbesna = لبسنا ; lbesto = لبستو ; lebso = لبسو
+present: belbos = بلبس ; btelbos = بتلبس ; btelbse = بتلبسي ; byelbos = بيلبس ; btelbos = بتلبس ; mnelbos = منلبس ; btelbso = بتلبسو ; byelbso = بيلبسو
+command: elbos = البس ; elbse = البسي ; elbso = البسو
+
+@ fakkar | 💭 | think | thought | thinking | thinks
+past: fakkart = فكّرت ; fakkart = فكّرت ; fakkarte = فكّرتي ; fakkar = فكّر ; fakkaret = فكّرت ; fakkarna = فكّرنا ; fakkarto = فكّرتو ; fakkaro = فكّرو
+present: bfakker = بفكّر ; btfakker = بتفكّر ; btfakre = بتفكّري ; byfakker = بيفكّر ; btfakker = بتفكّر ; mnfakker = منفكّر ; btfakro = بتفكّرو ; byfakro = بيفكّرو
+command: fakker = فكّر ; fakre = فكّري ; fakro = فكّرو
+
+@ sa3ad | 🫱 | help | helped | helping | helps
+past: sa3adt = ساعدت ; sa3adt = ساعدت ; sa3adte = ساعدتي ; sa3ad = ساعد ; sa3adet = ساعدت ; sa3adna = ساعدنا ; sa3adto = ساعدتو ; sa3ado = ساعدو
+present: bsa3ed = بساعد ; btsa3ed = بتساعد ; btsa3de = بتساعدي ; bysa3ed = بيساعد ; btsa3ed = بتساعد ; mnsa3ed = منساعد ; btsa3do = بتساعدو ; bysa3do = بيساعدو
+command: sa3ed = ساعد ; sa3de = ساعدي ; sa3do = ساعدو
+
+@ ba3at | 📤 | send | sent | sending | sends
+past: ba3att = بعتت ; ba3att = بعتت ; ba3atte = بعتتي ; ba3at = بعت ; ba3tet = بعتت ; ba3atna = بعتنا ; ba3atto = بعتتو ; ba3to = بعتو
+present: bab3at = بابعت ; btab3at = بتبعت ; btab3ate = بتبعتي ; byab3at = بيبعت ; btab3at = بتبعت ; mnab3at = منبعت ; btab3ato = بتبعتو ; byab3ato = بيبعتو
+command: eb3at = ابعت ; eb3ate = ابعتي ; eb3ato = ابعتو
+
+@ wosel | 📍 | arrive | arrived | arriving | arrives
+past: wselt = وصلت ; wselt = وصلت ; wselte = وصلتي ; wosel = وصل ; woslet = وصلت ; wselna = وصلنا ; wselto = وصلتو ; woslo = وصلو
+present: bousal = بوصل ; btousal = بتوصل ; btousale = بتوصلي ; byousal = بيوصل ; btousal = بتوصل ; mnousal = منوصل ; btousalo = بتوصلو ; byousalo = بيوصلو
+command: ousal = اوصل ; ousale = اوصلي ; ousalo = اوصلو
+
+@ stanna | ⏳ | wait | waited | waiting | waits
+past: stanneit = استنّيت ; stanneit = استنّيت ; stanneite = استنّيتي ; stanna = استنّى ; stannet = استنّت ; stanneina = استنّينا ; stanneito = استنّيتو ; stanno = استنّو
+present: bestanna = بستنّى ; btestanna = بتستنّى ; btestanne = بتستنّي ; byestanna = بيستنّى ; btestanna = بتستنّى ; mnestanna = منستنّى ; btestanno = بتستنّو ; byestanno = بيستنّو
+command: stanna = استنّى ; stanne = استنّي ; stanno = استنّو
+
+@ safar | ✈️ | travel | travelled | travelling | travels
+past: safart = سافرت ; safart = سافرت ; safarte = سافرتي ; safar = سافر ; safaret = سافرت ; safarna = سافرنا ; safarto = سافرتو ; safaro = سافرو
+present: bsefer = بسافر ; btsefer = بتسافر ; btsefre = بتسافري ; bysefer = بيسافر ; btsefer = بتسافر ; mnsefer = منسافر ; btsefro = بتسافرو ; bysefro = بيسافرو
+command: sefer = سافر ; sefre = سافري ; sefro = سافرو
+
+@ tala3 | ⬆️ | go up | went up | going up | goes up
+past: tle3t = طلعت ; tle3t = طلعت ; tle3te = طلعتي ; tele3 = طلع ; tel3et = طلعت ; tle3na = طلعنا ; tle3to = طلعتو ; tel3o = طلعو
+present: betla3 = بطلع ; btetla3 = بتطلع ; btetla3e = بتطلعي ; byetla3 = بيطلع ; btetla3 = بتطلع ; mnetla3 = منطلع ; btetla3o = بتطلعو ; byetla3o = بيطلعو
+command: tla3 = اطلع ; tla3e = اطلعي ; tla3o = اطلعو
+
+@ nezel | ⬇️ | go down | went down | going down | goes down
+past: nzelt = نزلت ; nzelt = نزلت ; nzelte = نزلتي ; nezel = نزل ; nezlet = نزلت ; nzelna = نزلنا ; nzelto = نزلتو ; nezlo = نزلو
+present: benzal = بنزل ; btenzal = بتنزل ; btenzale = بتنزلي ; byenzal = بينزل ; btenzal = بتنزل ; mnenzal = مننزل ; btenzalo = بتنزلو ; byenzalo = بينزلو
+command: nzal = انزل ; nzale = انزلي ; nzalo = انزلو

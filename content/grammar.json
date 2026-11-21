@@ -1,0 +1,5202 @@
+{
+ "_note": "DRAFT. Built from tools/grammar_src.txt by tools/build_grammar.py; edit the source, not this file.",
+ "groups": [
+  {
+   "key": "start",
+   "title": "Start here",
+   "section": "grammar"
+  },
+  {
+   "key": "basics",
+   "title": "The basics",
+   "section": "grammar"
+  },
+  {
+   "key": "sentences",
+   "title": "Building sentences",
+   "section": "grammar"
+  },
+  {
+   "key": "verbs",
+   "title": "Verbs",
+   "section": "grammar"
+  },
+  {
+   "key": "culture",
+   "title": "Culture and real life",
+   "section": "culture"
+  }
+ ],
+ "topics": [
+  {
+   "id": "how-to-study",
+   "icon": "🧭",
+   "group": "start",
+   "title": "How to learn Lebanese with Kifak",
+   "summary": "A plan for your first three months, and how to use each part of the site.",
+   "sections": [
+    {
+     "h": "The short version",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Listen first, read second. Lebanese is a spoken language: people rarely write it except in text messages, so your ear matters more than your eyes."
+      },
+      {
+       "type": "p",
+       "text": "Do a little every day. Fifteen minutes daily beats two hours on Sunday."
+      },
+      {
+       "type": "p",
+       "text": "Say everything out loud. The **Repeat** step in each lesson records you so you can compare with the native voice."
+      }
+     ]
+    },
+    {
+     "h": "A plan for the first three months",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Weeks",
+        "What to do",
+        "Goal"
+       ],
+       "rows": [
+        [
+         "1 to 2",
+         "Reading Latin-script Arabic, then Level 1",
+         "Read 2, 3, 7, kh, gh, sh without thinking. 300 words."
+        ],
+        [
+         "3 to 4",
+         "Level 2, the Grammar basics, Review every day",
+         "Put two or three words together."
+        ],
+        [
+         "5 to 8",
+         "Levels 3 and 4, Verbs, Conversations of Level 1 to 4",
+         "Ask and answer simple questions."
+        ],
+        [
+         "9 to 12",
+         "Levels 5 and 6, the Culture pages",
+         "Talk about your day and what you did yesterday."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "How to use each part",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "**Lessons:** the main path. Learn the cards, repeat them, then take the quiz. Each quiz picks 15 new examples, so take it more than once."
+      },
+      {
+       "type": "p",
+       "text": "**Review:** flashcards of words from lessons you finished. Cards you know come back less often; cards you miss come back soon. Do it every day."
+      },
+      {
+       "type": "p",
+       "text": "**Conversations:** real dialogues. Listen once without reading, then with the text, then answer the questions."
+      },
+      {
+       "type": "p",
+       "text": "**Verbs:** the tables. Learn the \"every day\" form first, because the others are built from it."
+      },
+      {
+       "type": "p",
+       "text": "**Grammar** and **Culture:** read a page when a lesson raises a question."
+      },
+      {
+       "type": "p",
+       "text": "**Dictionary:** search any word in English, Latin letters or Arabic."
+      },
+      {
+       "type": "tip",
+       "text": "Hide the English with the EN button once a lesson feels easy. Hide the Latin letters too if you're learning the Arabic script."
+      }
+     ]
+    },
+    {
+     "h": "What to expect",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanese people switch between Arabic, French and English, often in one sentence. You'll hear \"merci\", \"bonjour\" and \"ok\" all day. That's normal Lebanese, not a mistake."
+      },
+      {
+       "type": "p",
+       "text": "Most Lebanese will answer you in English or French the moment they hear an accent. Smile and keep going in Arabic: \"baddi et3allam 3arabe\" (I want to learn Arabic). Most people love it."
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-01",
+       "arabizi": "baddi et3allam lebnene",
+       "arabic": "بدّي اتعلّم لبناني",
+       "english": "I want to learn Lebanese"
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-02",
+       "arabizi": "7ke shway shway, iza bitred",
+       "arabic": "احكي شوي شوي، إذا بتريد",
+       "english": "Speak slowly, please",
+       "note": "to a man; \"iza btride\" to a woman"
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-03",
+       "arabizi": "shu ya3ne ...?",
+       "arabic": "شو يعني ...؟",
+       "english": "What does ... mean?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-04",
+       "arabizi": "kif bt2oul ... bil lebnene?",
+       "arabic": "كيف بتقول ... باللبناني؟",
+       "english": "How do you say ... in Lebanese?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-05",
+       "arabizi": "3id marra please",
+       "arabic": "عيد مرّة please",
+       "english": "Say it again, please"
+      },
+      {
+       "type": "ex",
+       "id": "gr-how-to-study-06",
+       "arabizi": "ma fhemt",
+       "arabic": "ما فهمت",
+       "english": "I didn't understand"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": []
+  },
+  {
+   "id": "sounds",
+   "icon": "👄",
+   "group": "start",
+   "title": "The sounds of Lebanese",
+   "summary": "The letters English doesn't have, doubled letters, and which syllable to stress.",
+   "sections": [
+    {
+     "h": "Sounds English doesn't have",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "How to say it",
+        "Example"
+       ],
+       "rows": [
+        [
+         "2",
+         "ء",
+         "A tiny stop in the throat, like the break in \"uh-oh\".",
+         "su2al (question)"
+        ],
+        [
+         "3",
+         "ع",
+         "Squeeze the throat, as if starting to gag, then say \"a\".",
+         "3afwan (you're welcome)"
+        ],
+        [
+         "7",
+         "ح",
+         "A strong breathy \"h\", like fogging up glasses.",
+         "mni7 (good)"
+        ],
+        [
+         "kh",
+         "خ",
+         "Like the \"ch\" in Scottish \"loch\".",
+         "kheir (good)"
+        ],
+        [
+         "gh",
+         "غ",
+         "A gargled \"r\", like a French \"r\".",
+         "ghali (expensive)"
+        ],
+        [
+         "sh",
+         "ش",
+         "\"sh\" as in \"shop\".",
+         "shukran (thanks)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Heavy letters",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Four letters have a \"heavy\" twin, said with the tongue pulled back: ص (s), ض (d), ط (t), ظ (z). Latin-script Arabic writes them like the light ones, so \"sayf\" and \"seif\" can look alike. The heavy ones make the vowel near them sound darker, more like \"o\" or \"a\" in \"father\"."
+      },
+      {
+       "type": "tip",
+       "text": "You don't need the heavy sounds to be understood at first. Get 3, 7 and 2 right first; people will understand you."
+      }
+     ]
+    },
+    {
+     "h": "Doubled letters matter",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A doubled letter is held longer, and it changes the meaning. Listen carefully to these pairs."
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-01",
+       "arabizi": "7amam",
+       "arabic": "حمام",
+       "english": "pigeons",
+       "note": "single m"
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-02",
+       "arabizi": "7ammam",
+       "arabic": "حمّام",
+       "english": "bathroom",
+       "note": "double m: hold it"
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-03",
+       "arabizi": "3amal",
+       "arabic": "عمل",
+       "english": "work (noun)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-04",
+       "arabizi": "3ammal",
+       "arabic": "عمّال",
+       "english": "workers"
+      }
+     ]
+    },
+    {
+     "h": "The vowels",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanese has short a, e, i, o, u and long ones. In Latin letters people write \"e\" for a sound between \"e\" in \"bed\" and \"a\" in \"cat\". Long vowels are often written double or with \"ei\" and \"ou\": \"beit\" (house), \"rou7\" (go)."
+      },
+      {
+       "type": "p",
+       "text": "In Beirut many \"a\" sounds at the end of words become \"e\": \"a7la\" in a book is \"a7le\" in the street. That's the \"imala\", and it's one of the clearest marks of Lebanese."
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-05",
+       "arabizi": "shu 3amle?",
+       "arabic": "شو عاملة؟",
+       "english": "How are you doing? (to a woman)",
+       "note": "the -a ending sounds like -e"
+      },
+      {
+       "type": "ex",
+       "id": "gr-sounds-06",
+       "arabizi": "a7la beit",
+       "arabic": "أحلى بيت",
+       "english": "the nicest house"
+      }
+     ]
+    },
+    {
+     "h": "Stress",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Stress the long vowel if there is one: \"sha-BEB\" (young men), \"ma-TAR\" (airport). If there isn't, stress the second-to-last syllable: \"MAD-rase\" (school). Lebanese is spoken fast, and short vowels often disappear: \"ktir\", not \"katir\"."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "Saying \"h\" for 7 or nothing for 3. \"3am\" (in the middle of) and \"am\" don't mean the same thing.",
+    "Rushing doubled letters. \"7ammam\" (bathroom) said with one m is \"7amam\" (pigeons)."
+   ],
+   "quiz": [
+    {
+     "q": "Which number stands for the letter ع?",
+     "options": [
+      "2",
+      "3",
+      "7"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "In \"7ammam\" (bathroom), what do you do with the m?",
+     "options": [
+      "hold it longer",
+      "skip it",
+      "say it as n"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Which sound is like the \"ch\" in Scottish \"loch\"?",
+     "options": [
+      "gh",
+      "kh",
+      "sh"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "pronouns",
+   "icon": "👤",
+   "group": "basics",
+   "title": "I, you, he, she: pronouns",
+   "summary": "The eight people every verb and every ending is built on.",
+   "sections": [
+    {
+     "h": "The eight pronouns",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "ana",
+         "أنا",
+         "I"
+        ],
+        [
+         "enta",
+         "إنت",
+         "you (to a man)"
+        ],
+        [
+         "ente",
+         "إنتِ",
+         "you (to a woman)"
+        ],
+        [
+         "huwwe",
+         "هوّي",
+         "he, it"
+        ],
+        [
+         "hiyye",
+         "هيّي",
+         "she, it"
+        ],
+        [
+         "ne7na",
+         "نحنا",
+         "we"
+        ],
+        [
+         "ento",
+         "إنتو",
+         "you (to more than one)"
+        ],
+        [
+         "hinne",
+         "هنّي",
+         "they"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "Lebanese has three ways to say \"you\": one for a man, one for a woman, one for a group. Every verb changes with them, so learn which one you are using."
+      },
+      {
+       "type": "p",
+       "text": "English \"it\" is huwwe or hiyye: every noun is masculine or feminine (see the next topic)."
+      }
+     ]
+    },
+    {
+     "h": "You often drop them",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "The verb already shows who is talking, so the pronoun is extra. Use it for emphasis or contrast."
+      },
+      {
+       "type": "ex",
+       "id": "gr-pronouns-01",
+       "arabizi": "ana lebnene, w enta?",
+       "arabic": "أنا لبناني، وإنت؟",
+       "english": "I'm Lebanese, and you?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-pronouns-02",
+       "arabizi": "hiyye bta3ref, ana la2",
+       "arabic": "هيّي بتعرف، أنا لأ",
+       "english": "She knows, I don't"
+      },
+      {
+       "type": "ex",
+       "id": "gr-pronouns-03",
+       "arabizi": "ne7na men beirut",
+       "arabic": "نحنا من بيروت",
+       "english": "We're from Beirut"
+      },
+      {
+       "type": "ex",
+       "id": "gr-pronouns-04",
+       "arabizi": "hinne hon",
+       "arabic": "هنّي هون",
+       "english": "They're here"
+      },
+      {
+       "type": "ex",
+       "id": "gr-pronouns-05",
+       "arabizi": "ento kifkon?",
+       "arabic": "إنتو كيفكن؟",
+       "english": "How are you all?"
+      },
+      {
+       "type": "tip",
+       "text": "Lebanese use \"ento\" (plural) to be polite to one older person, a bit like French \"vous\". \"kifkon?\" to your friend's grandmother sounds warm."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "How do you say \"you\" to a woman?",
+     "options": [
+      "enta",
+      "ente",
+      "ento"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Which one means \"we\"?",
+     "options": [
+      "hinne",
+      "ne7na",
+      "huwwe"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"it\" for a feminine thing is…",
+     "options": [
+      "huwwe",
+      "hiyye",
+      "hinne"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "to-be",
+   "icon": "🟰",
+   "group": "basics",
+   "title": "\"To be\": I am, I was, I'll be",
+   "summary": "There's no \"am / is / are\" in the present. You just put the words side by side.",
+   "sections": [
+    {
+     "h": "Present: no verb at all",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"I'm tired\" is simply \"I tired\". \"The house is big\" is \"the house big\"."
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-01",
+       "arabizi": "ana te3ban",
+       "arabic": "أنا تعبان",
+       "english": "I'm tired",
+       "note": "a woman says \"ana te3bene\""
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-02",
+       "arabizi": "el beit kbir",
+       "arabic": "البيت كبير",
+       "english": "The house is big"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-03",
+       "arabizi": "huwwe doctor",
+       "arabic": "هوّي دكتور",
+       "english": "He's a doctor"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-04",
+       "arabizi": "wein enta?",
+       "arabic": "وين إنت؟",
+       "english": "Where are you?"
+      }
+     ]
+    },
+    {
+     "h": "Negative: mesh",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Put **mesh** before the word: \"mesh te3ban\" (not tired). Some people say \"mish\" or \"ma-ni\" forms (\"mani te3ban\"); \"mesh\" works everywhere."
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-05",
+       "arabizi": "ana mesh te3ban",
+       "arabic": "أنا مش تعبان",
+       "english": "I'm not tired"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-06",
+       "arabizi": "el akel mesh ghali",
+       "arabic": "الأكل مش غالي",
+       "english": "The food isn't expensive"
+      }
+     ]
+    },
+    {
+     "h": "Past: ken",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "For the past you need a verb: ken (was)."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "ana kent",
+         "أنا كنت",
+         "I was"
+        ],
+        [
+         "enta kent",
+         "إنت كنت",
+         "you were (to a man)"
+        ],
+        [
+         "ente kente",
+         "إنتِ كنتي",
+         "you were (to a woman)"
+        ],
+        [
+         "huwwe ken",
+         "هوّي كان",
+         "he was"
+        ],
+        [
+         "hiyye kenet",
+         "هيّي كانت",
+         "she was"
+        ],
+        [
+         "ne7na kenna",
+         "نحنا كنّا",
+         "we were"
+        ],
+        [
+         "ento kento",
+         "إنتو كنتو",
+         "you were (group)"
+        ],
+        [
+         "hinne keno",
+         "هنّي كانو",
+         "they were"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-07",
+       "arabizi": "kent bel beit",
+       "arabic": "كنت بالبيت",
+       "english": "I was at home"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-08",
+       "arabizi": "ken fi 3aj2a",
+       "arabic": "كان في عجقة",
+       "english": "There was traffic"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-09",
+       "arabizi": "ma kent hon",
+       "arabic": "ما كنت هون",
+       "english": "I wasn't here",
+       "note": "past negative uses \"ma\""
+      }
+     ]
+    },
+    {
+     "h": "Future: ra7 koun",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-to-be-10",
+       "arabizi": "ra7 koun hon bukra",
+       "arabic": "رح كون هون بكرا",
+       "english": "I'll be here tomorrow"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-11",
+       "arabizi": "ra7 ykoun mabsout",
+       "arabic": "رح يكون مبسوط",
+       "english": "He'll be happy"
+      }
+     ]
+    },
+    {
+     "h": "\"ken\" + verb: used to, was doing",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Put ken before an every-day verb (without b-) and you get \"used to\". Put it before 3am and you get \"was doing\"."
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-12",
+       "arabizi": "kent rou7 3al ba7r kel yom",
+       "arabic": "كنت روح عالبحر كل يوم",
+       "english": "I used to go to the sea every day"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-be-13",
+       "arabizi": "kent 3am ekol lamma 2ejet",
+       "arabic": "كنت عم اكل لمّا إجت",
+       "english": "I was eating when she came"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "Adding a word for \"is\": \"el beit huwwe kbir\" sounds odd. Just \"el beit kbir\".",
+    "Using \"ma\" in the present: it's \"mesh te3ban\", not \"ma te3ban\"."
+   ],
+   "quiz": [
+    {
+     "q": "\"The food is good\" is…",
+     "options": [
+      "el akel ken tayyeb",
+      "el akel tayyeb",
+      "el akel 3am tayyeb"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I'm not hungry\":",
+     "options": [
+      "ma ana jou3an",
+      "ana mesh jou3an",
+      "ana jou3an la2"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I was at work\":",
+     "options": [
+      "kent bel shoghol",
+      "ra7 koun bel shoghol",
+      "ana bel shoghol"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "gender",
+   "icon": "⚧",
+   "group": "basics",
+   "title": "Masculine and feminine",
+   "summary": "Every noun is a he or a she, and the words around it follow.",
+   "sections": [
+    {
+     "h": "How to spot a feminine word",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Most feminine words end in **-e** or **-a** (in Arabic, ة): sayyara (car), madrase (school), tawle (table), shante (bag)."
+      },
+      {
+       "type": "p",
+       "text": "Some are feminine without the ending: words for women (emm: mother), most body parts that come in pairs (iid: hand, 3ein: eye), and some others like ard (ground) and shams (sun)."
+      }
+     ]
+    },
+    {
+     "h": "Things that follow the gender",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Adjectives, \"this\", verbs and endings all change."
+      },
+      {
+       "type": "table",
+       "head": [
+        "",
+        "Masculine",
+        "Feminine"
+       ],
+       "rows": [
+        [
+         "big",
+         "kbir",
+         "kbire"
+        ],
+        [
+         "new",
+         "jdid",
+         "jdide"
+        ],
+        [
+         "this",
+         "hayda",
+         "hayde"
+        ],
+        [
+         "he/she went",
+         "ra7",
+         "ra7et"
+        ],
+        [
+         "my…",
+         "ktebe (my book)",
+         "sayyarte (my car)"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-01",
+       "arabizi": "beit kbir",
+       "arabic": "بيت كبير",
+       "english": "a big house"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-02",
+       "arabizi": "sayyara kbire",
+       "arabic": "سيّارة كبيرة",
+       "english": "a big car"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-03",
+       "arabizi": "hayda l kteb jdid",
+       "arabic": "هيدا الكتاب جديد",
+       "english": "This book is new"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-04",
+       "arabizi": "hayde l shante jdide",
+       "arabic": "هيدي الشنتة جديدة",
+       "english": "This bag is new"
+      }
+     ]
+    },
+    {
+     "h": "Talking to a man or a woman",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanese also changes words depending on who you talk to. \"How are you?\" is \"kifak?\" to a man and \"kifik?\" to a woman. Use the \"Talking to\" switch in lessons to see both."
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-05",
+       "arabizi": "kifak?",
+       "arabic": "كيفك؟",
+       "english": "How are you? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-06",
+       "arabizi": "kifik?",
+       "arabic": "كيفِك؟",
+       "english": "How are you? (to a woman)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-07",
+       "arabizi": "tfaddal",
+       "arabic": "تفضّل",
+       "english": "Go ahead / please (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-gender-08",
+       "arabizi": "tfaddale",
+       "arabic": "تفضّلي",
+       "english": "Go ahead / please (to a woman)"
+      }
+     ]
+    },
+    {
+     "h": "Talking about yourself",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A woman says \"ana te3bene\", \"ana mabsouta\", \"ana lebnenye\". A man says \"ana te3ban\", \"ana mabsout\", \"ana lebnene\". Get this right about yourself first."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "Using the man's form for yourself if you're a woman (or the other way). People will understand, but it's the mistake they notice most."
+   ],
+   "quiz": [
+    {
+     "q": "Which word is feminine?",
+     "options": [
+      "beit",
+      "madrase",
+      "kteb"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"a new car\":",
+     "options": [
+      "sayyara jdid",
+      "sayyara jdide",
+      "jdide sayyara"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "A woman says \"I'm happy\":",
+     "options": [
+      "ana mabsout",
+      "ana mabsouta",
+      "ana mabsoutin"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "plurals",
+   "icon": "👥",
+   "group": "basics",
+   "title": "Plurals and \"two of\"",
+   "summary": "-in, -et, the \"broken\" plurals, and the -ein ending for pairs.",
+   "sections": [
+    {
+     "h": "Regular plurals",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Most words for people and jobs add **-in**: m3allem → m3allmin (teachers), lebnene → lebnenyin (Lebanese people)."
+      },
+      {
+       "type": "p",
+       "text": "Most feminine words swap -e/-a for **-et**: sayyara → sayyarat (cars), tawle → tawlet (tables), shante → shanatet (bags)."
+      }
+     ]
+    },
+    {
+     "h": "Broken plurals",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Many common words change their inside instead. There's a pattern, but learn them one by one."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin one",
+        "Latin many",
+        "English"
+       ],
+       "rows": [
+        [
+         "beit",
+         "byout",
+         "house, houses"
+        ],
+        [
+         "walad",
+         "wled",
+         "child, children"
+        ],
+        [
+         "kteb",
+         "kotob",
+         "book, books"
+        ],
+        [
+         "shaghle",
+         "shoghol",
+         "thing, things",
+         "also \"ghrad\""
+        ],
+        [
+         "shabb",
+         "shabeb",
+         "young man, young men"
+        ],
+        [
+         "balad",
+         "blad",
+         "country, countries"
+        ],
+        [
+         "sa7eb",
+         "s7ab",
+         "friend, friends"
+        ],
+        [
+         "sh2a",
+         "sho2a2",
+         "flat, flats"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-plurals-01",
+       "arabizi": "3ande tlet wled",
+       "arabic": "عندي تلت ولاد",
+       "english": "I have three children"
+      },
+      {
+       "type": "ex",
+       "id": "gr-plurals-02",
+       "arabizi": "el byout ghalye",
+       "arabic": "البيوت غالية",
+       "english": "Houses are expensive"
+      }
+     ]
+    },
+    {
+     "h": "Two of something: -ein",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Add **-ein** for exactly two: yom → yomein (two days), sene → sentein (two years), kilo → kiloyein. You don't need the number 2."
+      },
+      {
+       "type": "ex",
+       "id": "gr-plurals-03",
+       "arabizi": "yomein",
+       "arabic": "يومين",
+       "english": "two days"
+      },
+      {
+       "type": "ex",
+       "id": "gr-plurals-04",
+       "arabizi": "sentein",
+       "arabic": "سنتين",
+       "english": "two years"
+      },
+      {
+       "type": "ex",
+       "id": "gr-plurals-05",
+       "arabizi": "kiloyein banadoura",
+       "arabic": "كيلوين بندورة",
+       "english": "two kilos of tomatoes"
+      }
+     ]
+    },
+    {
+     "h": "Things in the plural are \"she\"",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "For plural things (not people), adjectives often take the feminine: \"el byout ghalye\", \"sayyarat jdide\". People stay plural: \"el shabeb mabsoutin\"."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "Saying \"tnein yom\" for two days. Lebanese say \"yomein\"."
+   ],
+   "quiz": [
+    {
+     "q": "\"two years\":",
+     "options": [
+      "tnein sene",
+      "sentein",
+      "seneyin"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Plural of \"walad\" (child):",
+     "options": [
+      "waladin",
+      "wled",
+      "waladet"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Plural of \"sayyara\" (car):",
+     "options": [
+      "sayyarin",
+      "sayyarat",
+      "sayayir"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "the",
+   "icon": "🔠",
+   "group": "basics",
+   "title": "\"The\": el- and the sun letters",
+   "summary": "One word for \"the\", and why it sometimes sounds like ech-, et- or es-.",
+   "sections": [
+    {
+     "h": "el- means \"the\"",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Put **el** (or just **l** after a vowel) in front: beit (a house), el beit (the house). There's no word for \"a\": beit is \"a house\"."
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-01",
+       "arabizi": "beit",
+       "arabic": "بيت",
+       "english": "a house"
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-02",
+       "arabizi": "el beit",
+       "arabic": "البيت",
+       "english": "the house"
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-03",
+       "arabizi": "fi kteb 3al tawle",
+       "arabic": "في كتاب عالطاولة",
+       "english": "There's a book on the table",
+       "note": "\"3al\" = 3a + el"
+      }
+     ]
+    },
+    {
+     "h": "Sun letters",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Before t, d, s, sh, z, r, n, l and the heavy letters, the l of \"el\" melts into the next letter. You write \"el shams\" but say \"esh-shams\". The Latin spelling on this site follows what you hear in some places and what you write in others, so listen to the recording."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Written",
+        "Said",
+        "English"
+       ],
+       "rows": [
+        [
+         "el shams",
+         "esh shams",
+         "the sun"
+        ],
+        [
+         "el se3a",
+         "es se3a",
+         "the time, the hour"
+        ],
+        [
+         "el ta2s",
+         "et ta2s",
+         "the weather"
+        ],
+        [
+         "el nes",
+         "en nes",
+         "the people"
+        ],
+        [
+         "el 2amar",
+         "el 2amar",
+         "the moon",
+         "not a sun letter: l is said"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-04",
+       "arabizi": "esh shams 2awiyye lyom",
+       "arabic": "الشمس قويّة اليوم",
+       "english": "The sun is strong today"
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-05",
+       "arabizi": "en nes ktir latifin",
+       "arabic": "الناس كتير لطيفين",
+       "english": "People are very nice"
+      }
+     ]
+    },
+    {
+     "h": "When to use el-",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanese uses \"the\" more than English: for things in general (\"I love coffee\" = \"b7ebb el ahwe\"), for languages, and for names of meals."
+      },
+      {
+       "type": "ex",
+       "id": "gr-the-06",
+       "arabizi": "b7ebb el ahwe",
+       "arabic": "بحبّ القهوة",
+       "english": "I love coffee"
+      },
+      {
+       "type": "tip",
+       "text": "\"the\" plus a preposition usually shrinks: \"3a + el beit\" → \"3al beit\" (to the house), \"b + el beit\" → \"bel beit\" (at home), \"la + el beit\" → \"lal beit\"."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"the house\":",
+     "options": [
+      "beit el",
+      "el beit",
+      "hal beit"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I love coffee\":",
+     "options": [
+      "b7ebb ahwe",
+      "b7ebb el ahwe",
+      "ana ahwe"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"at home\":",
+     "options": [
+      "bel beit",
+      "b beit",
+      "3and beit"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "possessives",
+   "icon": "🔑",
+   "group": "basics",
+   "title": "My, your, his: the endings",
+   "summary": "Lebanese doesn't say \"my book\", it says \"book-my\". Learn the eight endings once and they work everywhere.",
+   "sections": [
+    {
+     "h": "The endings",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Ending",
+        "Example",
+        "English"
+       ],
+       "rows": [
+        [
+         "-e",
+         "ktebe",
+         "my book"
+        ],
+        [
+         "-ak",
+         "ktebak",
+         "your book (man)"
+        ],
+        [
+         "-ik",
+         "ktebik",
+         "your book (woman)"
+        ],
+        [
+         "-o",
+         "ktebo",
+         "his book"
+        ],
+        [
+         "-a",
+         "kteba",
+         "her book"
+        ],
+        [
+         "-na",
+         "ktebna",
+         "our book"
+        ],
+        [
+         "-kon",
+         "ktebkon",
+         "your book (group)"
+        ],
+        [
+         "-on",
+         "ktebon",
+         "their book"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Feminine words get a t",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "A word ending in -e/-a gets a **t** before the ending: sayyara → sayyarte (my car), sayyartak (your car), sayyarta (her car)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-01",
+       "arabizi": "sayyarte bara",
+       "arabic": "سيّارتي برّا",
+       "english": "My car is outside"
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-02",
+       "arabizi": "shu ismak?",
+       "arabic": "شو اسمك؟",
+       "english": "What's your name? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-03",
+       "arabizi": "shu ismik?",
+       "arabic": "شو اسمِك؟",
+       "english": "What's your name? (to a woman)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-04",
+       "arabizi": "emmo men 3akkar",
+       "arabic": "إمّو من عكّار",
+       "english": "His mother is from Akkar"
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-05",
+       "arabizi": "beitna 2rib",
+       "arabic": "بيتنا قريب",
+       "english": "Our house is near"
+      }
+     ]
+    },
+    {
+     "h": "The same endings everywhere",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "These endings also go on prepositions (\"ma3e\": with me, \"3ande\": at me = I have) and on verbs as \"me, you, him\" (\"shefto\": I saw him, \"b7ebbik\": I love you, to a woman). Learn them here and you've learned them for the whole language."
+      }
+     ]
+    },
+    {
+     "h": "The other way: taba3",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "You can also say \"el kteb taba3e\" (the book of mine). It's useful for emphasis and for long or foreign words: \"el laptop taba3e\" sounds more natural than \"laptope\"."
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-06",
+       "arabizi": "el laptop taba3e",
+       "arabic": "اللابتوب تبعي",
+       "english": "my laptop"
+      },
+      {
+       "type": "ex",
+       "id": "gr-possessives-07",
+       "arabizi": "hayda taba3ak?",
+       "arabic": "هيدا تبعك؟",
+       "english": "Is this yours?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"my car\":",
+     "options": [
+      "sayyarae",
+      "sayyarte",
+      "sayyara-e"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"her name\":",
+     "options": [
+      "ismo",
+      "isma",
+      "ismik"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Is this yours?\" (to a man):",
+     "options": [
+      "hayda taba3o?",
+      "hayda taba3ak?",
+      "hayda taba3e?"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "this-that",
+   "icon": "👉",
+   "group": "basics",
+   "title": "This and that",
+   "summary": "hayda, hayde, hawde, and the short \"hal\".",
+   "sections": [
+    {
+     "h": "The words",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "hayda",
+         "هيدا",
+         "this (masculine)"
+        ],
+        [
+         "hayde",
+         "هيدي",
+         "this (feminine)"
+        ],
+        [
+         "hawde",
+         "هودي",
+         "these"
+        ],
+        [
+         "haydak",
+         "هيداك",
+         "that (masculine)"
+        ],
+        [
+         "haydik",
+         "هيديك",
+         "that (feminine)"
+        ],
+        [
+         "hawdik",
+         "هوديك",
+         "those"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-01",
+       "arabizi": "hayda khayye",
+       "arabic": "هيدا خيّي",
+       "english": "This is my brother"
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-02",
+       "arabizi": "hayde ekhte",
+       "arabic": "هيدي أختي",
+       "english": "This is my sister"
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-03",
+       "arabizi": "hawde s7abe",
+       "arabic": "هودي صحابي",
+       "english": "These are my friends"
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-04",
+       "arabizi": "badde haydak",
+       "arabic": "بدّي هيداك",
+       "english": "I want that one"
+      }
+     ]
+    },
+    {
+     "h": "\"this thing\": hal",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Before a noun, Lebanese often use the short **hal**: \"hal beit\" (this house), \"hal marra\" (this time). It's the same for men and women."
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-05",
+       "arabizi": "hal beit 7elo",
+       "arabic": "هالبيت حلو",
+       "english": "This house is pretty"
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-06",
+       "arabizi": "hal marra bas",
+       "arabic": "هالمرّة بس",
+       "english": "Just this time"
+      },
+      {
+       "type": "ex",
+       "id": "gr-this-that-07",
+       "arabizi": "hayda l kteb",
+       "arabic": "هيدا الكتاب",
+       "english": "this book",
+       "note": "the long form: hayda + el"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"This is my sister\":",
+     "options": [
+      "hayda ekhte",
+      "hayde ekhte",
+      "hawde ekhte"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"this time\":",
+     "options": [
+      "hal marra",
+      "hayda marra",
+      "hayde el marra hon"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"these\" is…",
+     "options": [
+      "haydak",
+      "hawde",
+      "hayde"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "adjectives",
+   "icon": "🎨",
+   "group": "basics",
+   "title": "Describing things, comparing",
+   "summary": "The adjective goes after the noun. \"Bigger\" and \"the biggest\" are one short word.",
+   "sections": [
+    {
+     "h": "After the noun, matching it",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-adjectives-01",
+       "arabizi": "beit kbir",
+       "arabic": "بيت كبير",
+       "english": "a big house"
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-02",
+       "arabizi": "el beit el kbir",
+       "arabic": "البيت الكبير",
+       "english": "the big house",
+       "note": "\"the\" on both words"
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-03",
+       "arabizi": "el beit kbir",
+       "arabic": "البيت كبير",
+       "english": "the house is big",
+       "note": "\"the\" on the noun only makes a sentence"
+      }
+     ]
+    },
+    {
+     "h": "Bigger, the biggest",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Most adjectives have a short form for comparing: kbir → akbar (bigger), zghir → azghar, 7elo → a7la, ghali → aghla, rkhis → arkhas, ktir → aktar, mni7 → a7san. Add **men** for \"than\"."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Comparative",
+        "English"
+       ],
+       "rows": [
+        [
+         "kbir",
+         "akbar",
+         "bigger"
+        ],
+        [
+         "zghir",
+         "azghar",
+         "smaller"
+        ],
+        [
+         "7elo",
+         "a7la",
+         "nicer, prettier"
+        ],
+        [
+         "ghali",
+         "aghla",
+         "more expensive"
+        ],
+        [
+         "sa3b",
+         "as3ab",
+         "harder"
+        ],
+        [
+         "2rib",
+         "a2rab",
+         "nearer"
+        ],
+        [
+         "mni7",
+         "a7san",
+         "better"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-04",
+       "arabizi": "beirut akbar men jbeil",
+       "arabic": "بيروت أكبر من جبيل",
+       "english": "Beirut is bigger than Byblos"
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-05",
+       "arabizi": "hayda a7san",
+       "arabic": "هيدا أحسن",
+       "english": "This one is better"
+      }
+     ]
+    },
+    {
+     "h": "The best, the biggest",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Put the comparative first: \"akbar beit\" (the biggest house), \"a7la wa7ad\" (the nicest one)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-06",
+       "arabizi": "a7la akle bel 3alam",
+       "arabic": "أحلى أكلة بالعالم",
+       "english": "the best food in the world"
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-07",
+       "arabizi": "aghla wa7de",
+       "arabic": "أغلى وحدة",
+       "english": "the most expensive one (feminine)"
+      }
+     ]
+    },
+    {
+     "h": "Long adjectives: aktar",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Adjectives that don't have a short form use **aktar** (more): \"mertee7 aktar\" (more comfortable)."
+      }
+     ]
+    },
+    {
+     "h": "ktir and shway",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "ktir = very, a lot (after or before the adjective). shway = a bit. \"ktir ktir\" = really very."
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-08",
+       "arabizi": "ktir 7elo",
+       "arabic": "كتير حلو",
+       "english": "very nice"
+      },
+      {
+       "type": "ex",
+       "id": "gr-adjectives-09",
+       "arabizi": "shway ghali",
+       "arabic": "شوي غالي",
+       "english": "a bit expensive"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "Putting the adjective first: \"kbir beit\". It's \"beit kbir\"."
+   ],
+   "quiz": [
+    {
+     "q": "\"the big house\":",
+     "options": [
+      "el kbir beit",
+      "el beit el kbir",
+      "beit el kbir"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"better\":",
+     "options": [
+      "mni7 aktar",
+      "a7san",
+      "amna7"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Beirut is bigger than Byblos\":",
+     "options": [
+      "beirut kbir jbeil",
+      "beirut akbar men jbeil",
+      "beirut akbar jbeil men"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "icon": "🔢",
+   "group": "basics",
+   "title": "Numbers in real life",
+   "summary": "Counting things, big numbers, prices and \"first, second\".",
+   "sections": [
+    {
+     "h": "1 to 10",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "Number"
+       ],
+       "rows": [
+        [
+         "wa7ad",
+         "واحد",
+         "1"
+        ],
+        [
+         "tnein",
+         "تنين",
+         "2"
+        ],
+        [
+         "tlete",
+         "تلاتة",
+         "3"
+        ],
+        [
+         "arba3a",
+         "أربعة",
+         "4"
+        ],
+        [
+         "khamse",
+         "خمسة",
+         "5"
+        ],
+        [
+         "sette",
+         "ستّة",
+         "6"
+        ],
+        [
+         "sab3a",
+         "سبعة",
+         "7"
+        ],
+        [
+         "tmene",
+         "تمانة",
+         "8"
+        ],
+        [
+         "tes3a",
+         "تسعة",
+         "9"
+        ],
+        [
+         "3ashra",
+         "عشرة",
+         "10"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Counting things: the short forms",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Before a noun, 3 to 10 lose their ending: tlet (3), arba3 (4), khams (5), set (6), sab3 (7), tmen (8), tes3 (9), 3ashr (10). The noun is plural."
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-01",
+       "arabizi": "tlet byout",
+       "arabic": "تلت بيوت",
+       "english": "three houses"
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-02",
+       "arabizi": "khams da2aye2",
+       "arabic": "خمس دقايق",
+       "english": "five minutes"
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-03",
+       "arabizi": "3ashr dollar",
+       "arabic": "عشر دولار",
+       "english": "ten dollars",
+       "note": "money often stays singular"
+      }
+     ]
+    },
+    {
+     "h": "One and two",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"One\" goes after the noun or is just the noun: \"kteb\" (a book), \"kteb wa7ad\" (one book). \"Two\" is the -ein ending: \"ktebein\"."
+      }
+     ]
+    },
+    {
+     "h": "11 and up",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "11 7da3sh, 12 tna3sh, 13 tletta3sh, 14 arba3ta3sh, 15 khamsta3sh, 16 setta3sh, 17 saba3ta3sh, 18 tmenta3sh, 19 tes3ta3sh. From 11 up, the noun goes back to singular: \"tna3sh sene\" (12 years)."
+      },
+      {
+       "type": "p",
+       "text": "Tens: 20 3eshrin, 30 tletin, 40 arb3in, 50 khamsin, 60 settin, 70 sab3in, 80 tmenin, 90 tes3in. 25 is \"khamse w 3eshrin\" (five and twenty)."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Number"
+       ],
+       "rows": [
+        [
+         "miyye",
+         "100"
+        ],
+        [
+         "mitein",
+         "200"
+        ],
+        [
+         "tlet miyye",
+         "300"
+        ],
+        [
+         "alf",
+         "1,000"
+        ],
+        [
+         "alfein",
+         "2,000"
+        ],
+        [
+         "tlet alef",
+         "3,000"
+        ],
+        [
+         "malyoun",
+         "1,000,000"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-04",
+       "arabizi": "khamse w 3eshrin sene",
+       "arabic": "خمسة وعشرين سنة",
+       "english": "25 years"
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-05",
+       "arabizi": "miyye w khamsin alf",
+       "arabic": "مية وخمسين ألف",
+       "english": "150,000"
+      }
+     ]
+    },
+    {
+     "h": "Prices",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Prices are said with the number first: \"3ashr dollar\", \"khamsin alf\". In daily life people often just say the number: \"addeish? 3eshrin\" (How much? Twenty)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-06",
+       "arabizi": "addeish 7a2o?",
+       "arabic": "قدّيش حقّو؟",
+       "english": "How much is it?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-07",
+       "arabizi": "hayda b 3eshrin dollar",
+       "arabic": "هيدا بعشرين دولار",
+       "english": "This is twenty dollars"
+      }
+     ]
+    },
+    {
+     "h": "First, second",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "awwal (first), tene (second), telet (third), rabe3 (fourth), akher (last). \"awwal marra\" = the first time."
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-08",
+       "arabizi": "awwal marra b lebnen?",
+       "arabic": "أوّل مرّة بلبنان؟",
+       "english": "First time in Lebanon?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-numbers-09",
+       "arabizi": "el tabe2 el tene",
+       "arabic": "الطابق التاني",
+       "english": "the second floor"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "\"tlete byout\": before a noun use the short form \"tlet byout\".",
+    "\"tna3sh snin\": after 10, the noun is singular again, \"tna3sh sene\"."
+   ],
+   "quiz": [
+    {
+     "q": "\"three houses\":",
+     "options": [
+      "tlete beit",
+      "tlet byout",
+      "byout tlete"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"two days\":",
+     "options": [
+      "tnein yom",
+      "yomein",
+      "yom tnein"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"12 years\":",
+     "options": [
+      "tna3sh snin",
+      "tna3sh sene",
+      "sentein 3ashra"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "negation",
+   "icon": "🚫",
+   "group": "sentences",
+   "title": "Saying no: ma, mesh, wala",
+   "summary": "Which \"not\" goes where, with a cheat sheet.",
+   "sections": [
+    {
+     "h": "The cheat sheet",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Before",
+        "Use",
+        "Example"
+       ],
+       "rows": [
+        [
+         "a verb (past or every day)",
+         "ma",
+         "ma ba3ref (I don't know)"
+        ],
+        [
+         "an adjective, noun, place",
+         "mesh",
+         "mesh mni7 (not good)"
+        ],
+        [
+         "the future (ra7)",
+         "mesh",
+         "mesh ra7 rou7 (I won't go)"
+        ],
+        [
+         "right now (3am)",
+         "ma or mesh",
+         "ma 3am bekol / mesh 3am bekol"
+        ],
+        [
+         "\"there is\" (fi)",
+         "ma",
+         "ma fi (there isn't)"
+        ],
+        [
+         "\"I have\" (3ande)",
+         "ma",
+         "ma 3ande (I don't have)"
+        ],
+        [
+         "\"I want\" (badde)",
+         "ma",
+         "ma badde (I don't want)"
+        ],
+        [
+         "commands",
+         "ma + t- form",
+         "ma trou7! (don't go!)"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-01",
+       "arabizi": "ma ba3ref",
+       "arabic": "ما بعرف",
+       "english": "I don't know"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-02",
+       "arabizi": "ma fhemt",
+       "arabic": "ما فهمت",
+       "english": "I didn't understand"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-03",
+       "arabizi": "mesh mni7",
+       "arabic": "مش منيح",
+       "english": "not good"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-04",
+       "arabizi": "mesh ra7 rou7",
+       "arabic": "مش رح روح",
+       "english": "I won't go"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-05",
+       "arabizi": "ma fi kahraba",
+       "arabic": "ما في كهربا",
+       "english": "There's no electricity"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-06",
+       "arabizi": "ma 3ande wa2t",
+       "arabic": "ما عندي وقت",
+       "english": "I don't have time"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-07",
+       "arabizi": "ma badde shi",
+       "arabic": "ما بدّي شي",
+       "english": "I don't want anything"
+      }
+     ]
+    },
+    {
+     "h": "Nothing, nobody, never",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-negation-08",
+       "arabizi": "ma shefet 7ada",
+       "arabic": "ما شفت حدا",
+       "english": "I didn't see anybody"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-09",
+       "arabizi": "ma 3melt shi",
+       "arabic": "ما عملت شي",
+       "english": "I didn't do anything"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-10",
+       "arabizi": "ma ba7ke abadan",
+       "arabic": "ما بحكي أبداً",
+       "english": "I never speak / not at all"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-11",
+       "arabizi": "wala shi",
+       "arabic": "ولا شي",
+       "english": "nothing at all"
+      },
+      {
+       "type": "ex",
+       "id": "gr-negation-12",
+       "arabizi": "wala marra",
+       "arabic": "ولا مرّة",
+       "english": "not even once"
+      }
+     ]
+    },
+    {
+     "h": "\"No\" on its own",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "la2 = no. la2 la2 = no no (firm). \"mesh hayk\" = not like that. A quick lift of the chin with a click of the tongue (\"tsk\") also means no."
+      },
+      {
+       "type": "tip",
+       "text": "\"ma\" and \"mesh\" are the most common words in any language course; get these two right and half of your \"no\" sentences are done."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "\"mesh ba3ref\": it's \"ma ba3ref\" (ma before a verb).",
+    "\"ma mni7\": it's \"mesh mni7\" (mesh before an adjective)."
+   ],
+   "quiz": [
+    {
+     "q": "\"I don't know\":",
+     "options": [
+      "mesh ba3ref",
+      "ma ba3ref",
+      "la2 ba3ref"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"not expensive\":",
+     "options": [
+      "ma ghali",
+      "mesh ghali",
+      "wala ghali"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I won't come\":",
+     "options": [
+      "ma ra7 eje",
+      "mesh ra7 eje",
+      "ra7 ma eje"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "icon": "❓",
+   "group": "sentences",
+   "title": "Asking questions",
+   "summary": "The question words, and how a statement turns into a question.",
+   "sections": [
+    {
+     "h": "Yes/no questions: just raise your voice",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"enta lebnene.\" (You're Lebanese.) → \"enta lebnene?\" (Are you Lebanese?) Same words, rising voice."
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-01",
+       "arabizi": "3endak wa2t?",
+       "arabic": "عندك وقت؟",
+       "english": "Do you have time?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-02",
+       "arabizi": "bta7ke 3arabe?",
+       "arabic": "بتحكي عربي؟",
+       "english": "Do you speak Arabic?"
+      }
+     ]
+    },
+    {
+     "h": "Question words",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "shu",
+         "شو",
+         "what"
+        ],
+        [
+         "mein",
+         "مين",
+         "who"
+        ],
+        [
+         "wein",
+         "وين",
+         "where"
+        ],
+        [
+         "la wein",
+         "لوين",
+         "where to"
+        ],
+        [
+         "mnein",
+         "منين",
+         "where from"
+        ],
+        [
+         "emta",
+         "إيمتى",
+         "when"
+        ],
+        [
+         "leish",
+         "ليش",
+         "why"
+        ],
+        [
+         "kif",
+         "كيف",
+         "how"
+        ],
+        [
+         "addeish",
+         "قدّيش",
+         "how much, how many"
+        ],
+        [
+         "kam",
+         "كم",
+         "how many (+ singular noun)"
+        ],
+        [
+         "ayya",
+         "أيّا",
+         "which"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-03",
+       "arabizi": "shu hayda?",
+       "arabic": "شو هيدا؟",
+       "english": "What's this?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-04",
+       "arabizi": "mein hayda?",
+       "arabic": "مين هيدا؟",
+       "english": "Who's this?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-05",
+       "arabizi": "wein el 7ammam?",
+       "arabic": "وين الحمّام؟",
+       "english": "Where's the bathroom?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-06",
+       "arabizi": "la wein rayi7?",
+       "arabic": "لوين رايح؟",
+       "english": "Where are you going? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-07",
+       "arabizi": "mnein enta?",
+       "arabic": "منين إنت؟",
+       "english": "Where are you from?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-08",
+       "arabizi": "emta ra7 tousal?",
+       "arabic": "إيمتى رح توصل؟",
+       "english": "When will you arrive?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-09",
+       "arabizi": "leish ma jit?",
+       "arabic": "ليش ما جيت؟",
+       "english": "Why didn't you come?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-10",
+       "arabizi": "addeish 3omrak?",
+       "arabic": "قدّيش عمرك؟",
+       "english": "How old are you?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-11",
+       "arabizi": "kam se3a?",
+       "arabic": "كم ساعة؟",
+       "english": "How many hours?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-12",
+       "arabizi": "ayya wa7ad?",
+       "arabic": "أيّا واحد؟",
+       "english": "Which one?"
+      }
+     ]
+    },
+    {
+     "h": "The question word goes first or last",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Both work: \"shu baddak?\" and \"baddak shu?\" (What do you want?). Putting it last sounds more surprised."
+      }
+     ]
+    },
+    {
+     "h": "Useful extras",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"mazbout?\" (right?), \"aw la2?\" (or not?), \"sa77?\" (correct?) at the end of a sentence check that you understood."
+      },
+      {
+       "type": "ex",
+       "id": "gr-questions-13",
+       "arabizi": "bukra el 3otle, mazbout?",
+       "arabic": "بكرا العطلة، مزبوط؟",
+       "english": "Tomorrow's a holiday, right?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"Where are you from?\":",
+     "options": [
+      "wein enta?",
+      "mnein enta?",
+      "la wein enta?"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"When?\" is…",
+     "options": [
+      "leish",
+      "emta",
+      "addeish"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"How much is it?\":",
+     "options": [
+      "kam hayda?",
+      "addeish 7a2o?",
+      "shu 7a2o?"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "there-is",
+   "icon": "📍",
+   "group": "sentences",
+   "title": "There is, there isn't: fi",
+   "summary": "One tiny word does the work of \"there is\", \"there are\", \"is there?\"",
+   "sections": [
+    {
+     "h": "fi",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-there-is-01",
+       "arabizi": "fi farmashiyye hon?",
+       "arabic": "في فرمشيّة هون؟",
+       "english": "Is there a pharmacy here?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-02",
+       "arabizi": "fi nes ktir",
+       "arabic": "في ناس كتير",
+       "english": "There are a lot of people"
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-03",
+       "arabizi": "ma fi mashkal",
+       "arabic": "ما في مشكل",
+       "english": "No problem (there's no problem)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-04",
+       "arabizi": "ma fi kahraba",
+       "arabic": "ما في كهربا",
+       "english": "There's no electricity"
+      }
+     ]
+    },
+    {
+     "h": "Past and future",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-there-is-05",
+       "arabizi": "ken fi 3aj2a",
+       "arabic": "كان في عجقة",
+       "english": "There was traffic"
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-06",
+       "arabizi": "ma ken fi 7ada",
+       "arabic": "ما كان في حدا",
+       "english": "There was nobody"
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-07",
+       "arabizi": "ra7 ykoun fi 3azime",
+       "arabic": "رح يكون في عزيمة",
+       "english": "There'll be a party/dinner"
+      }
+     ]
+    },
+    {
+     "h": "fi also means \"can\"",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"fiye\" (with the endings) means \"I can\". \"fi\" with no ending in a question can mean \"is it possible?\". See \"Want, can, have to\"."
+      },
+      {
+       "type": "ex",
+       "id": "gr-there-is-08",
+       "arabizi": "fi a3mel shi?",
+       "arabic": "في اعمل شي؟",
+       "english": "Can I do something? / Is there anything I can do?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"There's no problem\":",
+     "options": [
+      "mesh fi mashkal",
+      "ma fi mashkal",
+      "fi mashkal la2"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Is there a pharmacy?\":",
+     "options": [
+      "fi farmashiyye?",
+      "ken farmashiyye?",
+      "3ande farmashiyye?"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "to-have",
+   "icon": "🤲",
+   "group": "sentences",
+   "title": "To have: 3ande",
+   "summary": "Lebanese has no verb \"to have\". You say \"at me there is\": 3ande.",
+   "sections": [
+    {
+     "h": "The forms",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "3ande",
+         "عندي",
+         "I have"
+        ],
+        [
+         "3endak",
+         "عندك",
+         "you have (man)"
+        ],
+        [
+         "3endik",
+         "عندِك",
+         "you have (woman)"
+        ],
+        [
+         "3endo",
+         "عندو",
+         "he has"
+        ],
+        [
+         "3enda",
+         "عندا",
+         "she has"
+        ],
+        [
+         "3enna",
+         "عنّا",
+         "we have"
+        ],
+        [
+         "3endkon",
+         "عندكن",
+         "you have (group)"
+        ],
+        [
+         "3endon",
+         "عندن",
+         "they have"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-01",
+       "arabizi": "3ande 2alam",
+       "arabic": "عندي قلم",
+       "english": "I have a pen"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-02",
+       "arabizi": "3endak wled?",
+       "arabic": "عندك ولاد؟",
+       "english": "Do you have children?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-03",
+       "arabizi": "ma 3ande wa2t",
+       "arabic": "ما عندي وقت",
+       "english": "I don't have time"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-04",
+       "arabizi": "ken 3ande sayyara",
+       "arabic": "كان عندي سيّارة",
+       "english": "I had a car"
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-05",
+       "arabizi": "ra7 ykoun 3ande wa2t bukra",
+       "arabic": "رح يكون عندي وقت بكرا",
+       "english": "I'll have time tomorrow"
+      }
+     ]
+    },
+    {
+     "h": "Also \"at someone's place\"",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"3and\" also means \"at the house of\": \"ana 3and teta\" (I'm at grandma's). \"3enna\" (at ours) is how you invite someone: \"ta3a la 3enna\" (come over to ours)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-06",
+       "arabizi": "ta3a la 3enna",
+       "arabic": "تعا لعنّا",
+       "english": "Come over to our place"
+      }
+     ]
+    },
+    {
+     "h": "\"ma3e\" for things you carry",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"I have money (on me)\" is \"ma3e masari\". Use ma3e (with me) for what's in your pocket right now."
+      },
+      {
+       "type": "ex",
+       "id": "gr-to-have-07",
+       "arabizi": "ma3ak masari?",
+       "arabic": "معك مصاري؟",
+       "english": "Do you have money on you?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"I have a car\":",
+     "options": [
+      "ana sayyara",
+      "3ande sayyara",
+      "ma3 sayyara"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Do you have time?\" (to a woman):",
+     "options": [
+      "3endik wa2t?",
+      "3endo wa2t?",
+      "3enda wa2t?"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"I had a car\":",
+     "options": [
+      "ra7 ykoun 3ande sayyara",
+      "ken 3ande sayyara",
+      "3ande ken sayyara"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "want-can-must",
+   "icon": "🎯",
+   "group": "sentences",
+   "title": "Want, can, have to",
+   "summary": "badde, fiye / 2ader, lezim, and the verb that follows them.",
+   "sections": [
+    {
+     "h": "badde: I want",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "badde takes the possessive endings, like 3ande."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "badde",
+         "بدّي",
+         "I want"
+        ],
+        [
+         "baddak",
+         "بدّك",
+         "you want (man)"
+        ],
+        [
+         "baddik",
+         "بدِّك",
+         "you want (woman)"
+        ],
+        [
+         "baddo",
+         "بدّو",
+         "he wants"
+        ],
+        [
+         "badda",
+         "بدّا",
+         "she wants"
+        ],
+        [
+         "badna",
+         "بدنا",
+         "we want"
+        ],
+        [
+         "badkon",
+         "بدكن",
+         "you want (group)"
+        ],
+        [
+         "badon",
+         "بدّن",
+         "they want"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "After badde, the verb drops its b-: \"bekol\" (I eat) → \"badde ekol\" (I want to eat)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-01",
+       "arabizi": "badde ahwe",
+       "arabic": "بدّي قهوة",
+       "english": "I want a coffee"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-02",
+       "arabizi": "badde rou7 3al beit",
+       "arabic": "بدّي روح عالبيت",
+       "english": "I want to go home"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-03",
+       "arabizi": "shu baddak tekol?",
+       "arabic": "شو بدّك تاكل؟",
+       "english": "What do you want to eat? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-04",
+       "arabizi": "ma badde",
+       "arabic": "ما بدّي",
+       "english": "I don't want to"
+      }
+     ]
+    },
+    {
+     "h": "Can: fiye or 2ader",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "**fiye** (fiye, fik, fike, fi, fia, fina, fikon, fion) and **2ader** (I'm able; 2adra for a woman) both mean \"can\". fiye is more common for permission, 2ader for ability."
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-05",
+       "arabizi": "fiye 2a3od hon?",
+       "arabic": "فيي اقعد هون؟",
+       "english": "Can I sit here?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-06",
+       "arabizi": "fik tsa3edne?",
+       "arabic": "فيك تساعدني؟",
+       "english": "Can you help me? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-07",
+       "arabizi": "ma fiye",
+       "arabic": "ما فيي",
+       "english": "I can't"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-08",
+       "arabizi": "mesh 2ader nem",
+       "arabic": "مش قادر نام",
+       "english": "I can't sleep"
+      }
+     ]
+    },
+    {
+     "h": "Have to: lezim",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "**lezim** doesn't change. Put the verb (without b-) after it."
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-09",
+       "arabizi": "lezim rou7 hala2",
+       "arabic": "لازم روح هلّق",
+       "english": "I have to go now"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-10",
+       "arabizi": "lezim tejarrib el knefe",
+       "arabic": "لازم تجرّب الكنافة",
+       "english": "You have to try the knafeh"
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-11",
+       "arabizi": "mesh lezim",
+       "arabic": "مش لازم",
+       "english": "You don't have to / no need"
+      }
+     ]
+    },
+    {
+     "h": "Other words that work the same way",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "ma3 enno (although), 3ashen (so that), 2abel ma (before), ba3d ma (after): all followed by the verb without b-."
+      },
+      {
+       "type": "ex",
+       "id": "gr-want-can-must-12",
+       "arabizi": "2abel ma tfell",
+       "arabic": "قبل ما تفلّ",
+       "english": "before you leave"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "\"badde berou7\": after badde, drop the b-: \"badde rou7\".",
+    "Changing lezim: it stays \"lezim\" for everyone."
+   ],
+   "quiz": [
+    {
+     "q": "\"I want to eat\":",
+     "options": [
+      "badde bekol",
+      "badde ekol",
+      "ana badde akel"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Can I sit here?\":",
+     "options": [
+      "fiye 2a3od hon?",
+      "lezim 2a3od hon?",
+      "badde 2a3od hon?"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"I have to go\":",
+     "options": [
+      "badde lezim rou7",
+      "lezim rou7",
+      "lezim berou7"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "prepositions",
+   "icon": "📦",
+   "group": "sentences",
+   "title": "Little words: with, to, in, on",
+   "summary": "The prepositions you'll use in every sentence, with and without endings.",
+   "sections": [
+    {
+     "h": "The main ones",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "b",
+         "ب",
+         "in, at, by",
+         "b beirut (in Beirut), bel beit (at home)"
+        ],
+        [
+         "3a",
+         "ع",
+         "to, on",
+         "3al beit (home), 3al tawle (on the table)"
+        ],
+        [
+         "la",
+         "ل",
+         "to, for",
+         "la 3enna (to ours), la ele (for me)"
+        ],
+        [
+         "men",
+         "من",
+         "from",
+         "men beirut"
+        ],
+        [
+         "ma3",
+         "مع",
+         "with",
+         "ma3 rfi2e (with my friend)"
+        ],
+        [
+         "3and",
+         "عند",
+         "at someone's",
+         "3and el 7akim (at the doctor's)"
+        ],
+        [
+         "2abel",
+         "قبل",
+         "before",
+         "2abel el 3ashe"
+        ],
+        [
+         "ba3d",
+         "بعد",
+         "after",
+         "ba3d el shoghol"
+        ],
+        [
+         "fo2",
+         "فوق",
+         "above, upstairs",
+         ""
+        ],
+        [
+         "ta7t",
+         "تحت",
+         "under, downstairs",
+         ""
+        ],
+        [
+         "2eddem",
+         "قدّام",
+         "in front of",
+         ""
+        ],
+        [
+         "wara",
+         "ورا",
+         "behind",
+         ""
+        ],
+        [
+         "7add",
+         "حدّ",
+         "next to",
+         ""
+        ],
+        [
+         "bein",
+         "بين",
+         "between",
+         ""
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "With endings",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "They all take the possessive endings. A few change a little."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "English"
+       ],
+       "rows": [
+        [
+         "ma3e, ma3ak, ma3ik, ma3o",
+         "with me, with you, with you, with him"
+        ],
+        [
+         "ele, elak, elik, elo",
+         "to/for me, you, you, him"
+        ],
+        [
+         "fiye, fik, fike, fi",
+         "in me… (also \"I can\")"
+        ],
+        [
+         "3leye, 3leik, 3leike, 3le",
+         "on me, on you… (also \"I owe\")"
+        ],
+        [
+         "menne, mennak, mennik, menno",
+         "from me, from you…"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-01",
+       "arabizi": "ta3a ma3e",
+       "arabic": "تعا معي",
+       "english": "Come with me (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-02",
+       "arabizi": "hayda elak",
+       "arabic": "هيدا إلك",
+       "english": "This is for you (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-03",
+       "arabizi": "3leye 3ashr dollar",
+       "arabic": "عليّ عشر دولار",
+       "english": "I owe ten dollars"
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-04",
+       "arabizi": "el ahwe 3leye",
+       "arabic": "القهوة عليّ",
+       "english": "The coffee's on me"
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-05",
+       "arabizi": "mennak la elak",
+       "arabic": "منّك لإلك",
+       "english": "between you and you (just between us)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-prepositions-06",
+       "arabizi": "el beit 7add el madrase",
+       "arabic": "البيت حدّ المدرسة",
+       "english": "The house is next to the school"
+      },
+      {
+       "type": "tip",
+       "text": "\"3leye\" is how you insist on paying. Expect a friendly argument: everyone says \"la2, 3leye!\""
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"with me\":",
+     "options": [
+      "ma3ak",
+      "ma3e",
+      "menne"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"The coffee's on me\":",
+     "options": [
+      "el ahwe 3leye",
+      "el ahwe ele",
+      "el ahwe fiye"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"next to the school\":",
+     "options": [
+      "wara el madrase",
+      "7add el madrase",
+      "ta7t el madrase"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "linking",
+   "icon": "🔗",
+   "group": "sentences",
+   "title": "Linking words: and, but, because, if",
+   "summary": "The little words that turn short sentences into real speech.",
+   "sections": [
+    {
+     "h": "The list",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "w",
+         "و",
+         "and"
+        ],
+        [
+         "aw",
+         "أو",
+         "or"
+        ],
+        [
+         "bas",
+         "بس",
+         "but; only; enough!"
+        ],
+        [
+         "la2anno",
+         "لأنّو",
+         "because"
+        ],
+        [
+         "iza",
+         "إذا",
+         "if"
+        ],
+        [
+         "lamma",
+         "لمّا",
+         "when (not a question)"
+        ],
+        [
+         "enno",
+         "إنّو",
+         "that (\"I think that…\")"
+        ],
+        [
+         "ba3dein",
+         "بعدين",
+         "then, later"
+        ],
+        [
+         "3ashen",
+         "عشان",
+         "so that, for"
+        ],
+        [
+         "ma3 enno",
+         "مع إنّو",
+         "although"
+        ],
+        [
+         "ya3ne",
+         "يعني",
+         "I mean, so, like"
+        ],
+        [
+         "kamen",
+         "كمان",
+         "also, too"
+        ],
+        [
+         "7atta",
+         "حتّى",
+         "even; until"
+        ],
+        [
+         "ya… ya…",
+         "يا… يا…",
+         "either… or…"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-01",
+       "arabizi": "badde ahwe w maye",
+       "arabic": "بدّي قهوة وماي",
+       "english": "I want coffee and water"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-02",
+       "arabizi": "kent badde eje bas ma 2deret",
+       "arabic": "كنت بدّي اجي بس ما قدرت",
+       "english": "I wanted to come but I couldn't"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-03",
+       "arabizi": "ma jit la2anno kent mared",
+       "arabic": "ما جيت لأنّو كنت مريض",
+       "english": "I didn't come because I was sick"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-04",
+       "arabizi": "iza fik, ta3a bukra",
+       "arabic": "إذا فيك، تعا بكرا",
+       "english": "If you can, come tomorrow"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-05",
+       "arabizi": "lamma wselt, kenet nayme",
+       "arabic": "لمّا وصلت، كانت نايمة",
+       "english": "When I arrived, she was asleep"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-06",
+       "arabizi": "baftekir enno ra7 tshatte",
+       "arabic": "بفتكر إنّو رح تشتّي",
+       "english": "I think (that) it's going to rain"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-07",
+       "arabizi": "ana kamen",
+       "arabic": "أنا كمان",
+       "english": "Me too"
+      }
+     ]
+    },
+    {
+     "h": "bas has three jobs",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"bas\" = but (\"7elo bas ghali\": nice but expensive), only (\"bas wa7ad\": only one) and enough/stop (\"bas!\")."
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-08",
+       "arabizi": "bas wa7ad",
+       "arabic": "بس واحد",
+       "english": "only one"
+      },
+      {
+       "type": "ex",
+       "id": "gr-linking-09",
+       "arabizi": "7elo bas ghali",
+       "arabic": "حلو بس غالي",
+       "english": "Nice but expensive"
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"because\":",
+     "options": [
+      "iza",
+      "la2anno",
+      "lamma"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Me too\":",
+     "options": [
+      "ana kamen",
+      "ana bas",
+      "kamen enta"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"bas wa7ad\" means…",
+     "options": [
+      "but one",
+      "only one",
+      "one more"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "icon": "⏰",
+   "group": "sentences",
+   "title": "Time: today, tomorrow, what time is it?",
+   "summary": "Days, parts of the day, telling the time and how often.",
+   "sections": [
+    {
+     "h": "Days",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "English"
+       ],
+       "rows": [
+        [
+         "lyom",
+         "اليوم",
+         "today"
+        ],
+        [
+         "bukra",
+         "بكرا",
+         "tomorrow"
+        ],
+        [
+         "ba3d bukra",
+         "بعد بكرا",
+         "the day after tomorrow"
+        ],
+        [
+         "mberi7",
+         "مبارح",
+         "yesterday"
+        ],
+        [
+         "awwal mberi7",
+         "أوّل مبارح",
+         "the day before yesterday"
+        ],
+        [
+         "hala2",
+         "هلّق",
+         "now"
+        ],
+        [
+         "ba3dein",
+         "بعدين",
+         "later"
+        ],
+        [
+         "ba3d shway",
+         "بعد شوي",
+         "in a little while"
+        ],
+        [
+         "zamen",
+         "زمان",
+         "a long time ago; in the old days"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Parts of the day",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "sob7 / el sob7 (morning), ba3d el dohr (afternoon), el masa (evening), el leil (night), el dohr (noon). \"el sob7\" + \"bukra\" = \"bukra el sob7\" (tomorrow morning)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-01",
+       "arabizi": "bukra el sob7",
+       "arabic": "بكرا الصبح",
+       "english": "tomorrow morning"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-02",
+       "arabizi": "mberi7 bel leil",
+       "arabic": "مبارح بالليل",
+       "english": "last night"
+      }
+     ]
+    },
+    {
+     "h": "What time is it?",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"addeish el se3a?\" Answer: el se3a + number. Add w (and) for minutes past, illa (minus) for minutes to. robe3 = quarter, nos = half, tilt = twenty minutes."
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-03",
+       "arabizi": "addeish el se3a?",
+       "arabic": "قدّيش الساعة؟",
+       "english": "What time is it?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-04",
+       "arabizi": "el se3a tlete",
+       "arabic": "الساعة تلاتة",
+       "english": "It's three o'clock"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-05",
+       "arabizi": "el se3a tlete w nos",
+       "arabic": "الساعة تلاتة ونصّ",
+       "english": "It's half past three"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-06",
+       "arabizi": "el se3a arba3a illa robe3",
+       "arabic": "الساعة أربعة إلّا ربع",
+       "english": "It's quarter to four"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-07",
+       "arabizi": "el se3a sab3a w tilt",
+       "arabic": "الساعة سبعة وتلت",
+       "english": "It's twenty past seven"
+      }
+     ]
+    },
+    {
+     "h": "How often",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "kel yom (every day), kel jem3a (every week), marra bel jem3a (once a week), dayman (always), ma3 el wa2t (with time), ba3d (still/yet), ba3d ma (not yet: \"ba3d ma akalt\" = I haven't eaten yet)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-08",
+       "arabizi": "ba3d ma akalt",
+       "arabic": "بعد ما أكلت",
+       "english": "I haven't eaten yet"
+      },
+      {
+       "type": "ex",
+       "id": "gr-time-09",
+       "arabizi": "marra bel jem3a",
+       "arabic": "مرّة بالجمعة",
+       "english": "once a week",
+       "note": "\"jem3a\" is both Friday and week"
+      }
+     ]
+    },
+    {
+     "h": "Lebanese time",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"hala2\" (now) can mean in five minutes or in an hour. \"nshalla\" on a plan means \"I hope so\", not \"yes\". Ask \"akid?\" (sure?) if you need a promise."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"tomorrow morning\":",
+     "options": [
+      "el sob7 mberi7",
+      "bukra el sob7",
+      "ba3d bukra"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"half past three\":",
+     "options": [
+      "tlete illa nos",
+      "tlete w nos",
+      "nos tlete"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I haven't eaten yet\":",
+     "options": [
+      "ma ra7 ekol",
+      "ba3d ma akalt",
+      "ma akalt ba3dein"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "verb-system",
+   "icon": "⚙️",
+   "group": "verbs",
+   "title": "How Lebanese verbs work",
+   "summary": "One table that explains every tense on the Verbs pages.",
+   "sections": [
+    {
+     "h": "Two stems, five uses",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Every verb has a **past** form and a **present** form. Everything else is built from the present."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Use",
+        "How",
+        "Example (to write)"
+       ],
+       "rows": [
+        [
+         "Past",
+         "past stem + ending",
+         "katabt (I wrote)"
+        ],
+        [
+         "Every day",
+         "b- + present",
+         "bekteb (I write)"
+        ],
+        [
+         "Right now",
+         "3am + every-day form",
+         "3am bekteb (I'm writing)"
+        ],
+        [
+         "Future",
+         "ra7 + present without b-",
+         "ra7 ekteb (I'll write)"
+        ],
+        [
+         "After badde, lezim, fiye",
+         "present without b-",
+         "badde ekteb (I want to write)"
+        ],
+        [
+         "Command",
+         "own form",
+         "ekteb! (write!)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "The prefixes of the \"every day\" form",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Person",
+        "Prefix",
+        "Example"
+       ],
+       "rows": [
+        [
+         "ana",
+         "b-",
+         "bekteb"
+        ],
+        [
+         "enta",
+         "bt-",
+         "btekteb"
+        ],
+        [
+         "ente",
+         "bt- … -e",
+         "btektebe"
+        ],
+        [
+         "huwwe",
+         "by-",
+         "byekteb"
+        ],
+        [
+         "hiyye",
+         "bt-",
+         "btekteb"
+        ],
+        [
+         "ne7na",
+         "mn-",
+         "mnekteb"
+        ],
+        [
+         "ento",
+         "bt- … -o",
+         "btektebo"
+        ],
+        [
+         "hinne",
+         "by- … -o",
+         "byektebo"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "Notice that \"you (man)\" and \"she\" are the same: btekteb. The context tells them apart."
+      }
+     ]
+    },
+    {
+     "h": "The endings of the past",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Person",
+        "Ending",
+        "Example"
+       ],
+       "rows": [
+        [
+         "ana / enta",
+         "-t",
+         "katabt"
+        ],
+        [
+         "ente",
+         "-te",
+         "katabte"
+        ],
+        [
+         "huwwe",
+         "(none)",
+         "katab"
+        ],
+        [
+         "hiyye",
+         "-et",
+         "katabet"
+        ],
+        [
+         "ne7na",
+         "-na",
+         "katabna"
+        ],
+        [
+         "ento",
+         "-to",
+         "katabto"
+        ],
+        [
+         "hinne",
+         "-o",
+         "katabo"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-01",
+       "arabizi": "katabt risele",
+       "arabic": "كتبت رسالة",
+       "english": "I wrote a letter"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-02",
+       "arabizi": "bekteb kel yom",
+       "arabic": "بكتب كل يوم",
+       "english": "I write every day"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-03",
+       "arabizi": "3am bekteb",
+       "arabic": "عم بكتب",
+       "english": "I'm writing"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-04",
+       "arabizi": "ra7 ekteb bukra",
+       "arabic": "رح اكتب بكرا",
+       "english": "I'll write tomorrow"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-05",
+       "arabizi": "kent ekteb",
+       "arabic": "كنت اكتب",
+       "english": "I used to write"
+      }
+     ]
+    },
+    {
+     "h": "Object endings",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"me, you, him\" go on the end of the verb with the same endings as \"my, your, his\" (with -ne for \"me\")."
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-06",
+       "arabizi": "shefto",
+       "arabic": "شفتو",
+       "english": "I saw him"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-07",
+       "arabizi": "shefta",
+       "arabic": "شفتا",
+       "english": "I saw her"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-08",
+       "arabizi": "b7ebbak",
+       "arabic": "بحبّك",
+       "english": "I love you (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-09",
+       "arabizi": "b7ebbik",
+       "arabic": "بحبِّك",
+       "english": "I love you (to a woman)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-verb-system-10",
+       "arabizi": "3ayyetle",
+       "arabic": "عيّطلي",
+       "english": "Call me (to a man)"
+      },
+      {
+       "type": "tip",
+       "text": "Learn verbs in pairs: past \"he\" form + present \"I\" form (katab / bekteb, akal / bekol). Those two give you everything."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"I'm writing\" is…",
+     "options": [
+      "bekteb",
+      "3am bekteb",
+      "ra7 ekteb"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"I'll write\":",
+     "options": [
+      "ra7 bekteb",
+      "ra7 ekteb",
+      "katabt"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "The \"we\" form starts with…",
+     "options": [
+      "b-",
+      "bt-",
+      "mn-"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "commands",
+   "icon": "📢",
+   "group": "verbs",
+   "title": "Commands and \"don't!\"",
+   "summary": "Telling someone to do something, or not to, politely.",
+   "sections": [
+    {
+     "h": "Commands",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "There are three forms: to a man, to a woman, to a group. The woman form ends in -e, the group in -o."
+      },
+      {
+       "type": "table",
+       "head": [
+        "To a man",
+        "To a woman",
+        "To a group",
+        "English"
+       ],
+       "rows": [
+        [
+         "ta3a",
+         "ta3e",
+         "ta3o",
+         "come"
+        ],
+        [
+         "rou7",
+         "rou7e",
+         "rou7o",
+         "go"
+        ],
+        [
+         "kol",
+         "kele",
+         "kelo",
+         "eat"
+        ],
+        [
+         "khod",
+         "khede",
+         "khedo",
+         "take"
+        ],
+        [
+         "2a3od",
+         "2o3de",
+         "2o3do",
+         "sit"
+        ],
+        [
+         "stanna",
+         "stanne",
+         "stanno",
+         "wait"
+        ],
+        [
+         "shouf",
+         "shoufe",
+         "shoufo",
+         "look"
+        ],
+        [
+         "es2al",
+         "es2ale",
+         "es2alo",
+         "ask"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Don't!",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Use **ma** + the \"you\" form of the present without b-: btrou7 → ma trou7 (don't go)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-01",
+       "arabizi": "ma trou7!",
+       "arabic": "ما تروح!",
+       "english": "Don't go! (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-02",
+       "arabizi": "ma trou7e!",
+       "arabic": "ما تروحي!",
+       "english": "Don't go! (to a woman)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-03",
+       "arabizi": "ma t3assib",
+       "arabic": "ما تعصّب",
+       "english": "Don't get angry (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-04",
+       "arabizi": "ma tkhaf",
+       "arabic": "ما تخاف",
+       "english": "Don't be afraid (to a man)"
+      }
+     ]
+    },
+    {
+     "h": "Making it polite",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Add **please** (yes, the English word), **iza bitred** (if you like, to a man; \"iza btride\" to a woman), **min fadlak** (more formal) or start with **fik…?** (can you…?)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-05",
+       "arabizi": "stanna shway iza bitred",
+       "arabic": "استنّى شوي إذا بتريد",
+       "english": "Wait a moment, please (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-06",
+       "arabizi": "fik tsakker el beb?",
+       "arabic": "فيك تسكّر الباب؟",
+       "english": "Could you close the door? (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-07",
+       "arabizi": "3mol ma3rouf",
+       "arabic": "اعمل معروف",
+       "english": "Do me a favour / please (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-commands-08",
+       "arabizi": "yalla, ta3o!",
+       "arabic": "يلّا، تعو!",
+       "english": "Come on, come (all of you)!"
+      }
+     ]
+    },
+    {
+     "h": "Commands you'll hear every day",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"tfaddal\" (here you go / come in / help yourself), \"khalas\" (stop, done), \"yalla\" (come on, let's go), \"shouf\" (look), \"2ol\" (say: \"2ol mar7aba\" = say hello), \"dakhlak\" (please, I beg you)."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"Come!\" to a woman:",
+     "options": [
+      "ta3a",
+      "ta3e",
+      "ta3o"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"Don't go!\" to a man:",
+     "options": [
+      "mesh rou7",
+      "ma trou7",
+      "la2 rou7"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Which is the most polite?",
+     "options": [
+      "rou7!",
+      "fik trou7 iza bitred?",
+      "rou7 hala2!"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "replies",
+   "icon": "🔁",
+   "group": "culture",
+   "title": "Call and response: what to say back",
+   "summary": "Lebanese conversations run on set phrases with set answers. Learn them in pairs.",
+   "sections": [
+    {
+     "h": "Why this matters",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "For many phrases there's one right answer, like \"bless you\" in English. Answer \"shukran\" to everything and people will understand, but give the right reply and you'll sound like you grew up there."
+      },
+      {
+       "type": "table",
+       "head": [
+        "They say",
+        "You answer",
+        "When"
+       ],
+       "rows": [
+        [
+         "marhaba",
+         "mar7abtein / ahlein",
+         "hello"
+        ],
+        [
+         "kifak?",
+         "mni7, nshalla enta mni7",
+         "how are you?"
+        ],
+        [
+         "sabe7 el kheir",
+         "sabe7 el nour",
+         "good morning"
+        ],
+        [
+         "masa el kheir",
+         "masa el nour",
+         "good evening"
+        ],
+        [
+         "ahla w sahla",
+         "ahla fik / ahlein fik",
+         "welcome"
+        ],
+        [
+         "tfaddal",
+         "shukran / yeslamo",
+         "here you go, come in"
+        ],
+        [
+         "sa7tein",
+         "3a albak / 3a albik",
+         "enjoy your meal (often after)"
+        ],
+        [
+         "na3iman",
+         "allah yen3am 3aleik",
+         "after a haircut or a shower"
+        ],
+        [
+         "mabrouk",
+         "allah ybarek fik",
+         "congratulations"
+        ],
+        [
+         "3a salemtak",
+         "allah ysalmak",
+         "welcome back, glad you're safe"
+        ],
+        [
+         "yeslamo ideik",
+         "w ideik",
+         "bless your hands (thanks for cooking)"
+        ],
+        [
+         "allah ma3ak",
+         "ma3 el salame",
+         "goodbye"
+        ],
+        [
+         "tisba7 3ala kheir",
+         "w enta men ahlo",
+         "good night"
+        ],
+        [
+         "ya3tik el 3afye",
+         "allah y3afik",
+         "well done, may God give you strength"
+        ],
+        [
+         "nshalla btet3afa",
+         "allah ysalmak",
+         "get well soon"
+        ],
+        [
+         "allah yer7amo",
+         "allah yer7am mwetkon",
+         "condolences: may God have mercy on him"
+        ],
+        [
+         "3a2bel el miyye",
+         "w enta bkhair / 3a2belak",
+         "happy birthday (to 100)"
+        ],
+        [
+         "ma3leish",
+         "ma fi shi",
+         "sorry, never mind"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Hear them",
+     "blocks": [
+      {
+       "type": "ex",
+       "id": "gr-replies-01",
+       "arabizi": "mar7abtein",
+       "arabic": "مرحبتين",
+       "english": "two hellos back (reply to marhaba)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-02",
+       "arabizi": "sabe7 el nour",
+       "arabic": "صباح النور",
+       "english": "morning of light (reply to good morning)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-03",
+       "arabizi": "3a albak",
+       "arabic": "عقلبك",
+       "english": "on your heart (reply to sa7tein, to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-04",
+       "arabizi": "allah ybarek fik",
+       "arabic": "الله يبارك فيك",
+       "english": "God bless you (reply to mabrouk)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-05",
+       "arabizi": "allah ysalmak",
+       "arabic": "الله يسلّمك",
+       "english": "God keep you safe (reply to 3a salemtak, to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-06",
+       "arabizi": "w ideik",
+       "arabic": "وإيديك",
+       "english": "and your hands (reply to yeslamo ideik)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-07",
+       "arabizi": "ma3 el salame",
+       "arabic": "مع السلامة",
+       "english": "go in peace (goodbye)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-08",
+       "arabizi": "allah y3afik",
+       "arabic": "الله يعافيك",
+       "english": "God give you health (reply to ya3tik el 3afye)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-replies-09",
+       "arabizi": "allah yer7am mwetkon",
+       "arabic": "الله يرحم موتاكن",
+       "english": "may God have mercy on your dead too"
+      }
+     ]
+    },
+    {
+     "h": "How to use them",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Endings change with who you talk to: \"3a albak\" (man), \"3a albik\" (woman), \"3a albkon\" (group). If in doubt, use the group form for elders; it's warm and polite."
+      },
+      {
+       "type": "tip",
+       "text": "Say \"ya3tik el 3afye\" to anyone working: the shopkeeper, the taxi driver, the man fixing your generator. It's thanks and respect in one."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "Someone says \"sabe7 el kheir\". You say…",
+     "options": [
+      "sabe7 el kheir",
+      "sabe7 el nour",
+      "ma3 el salame"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Someone says \"mabrouk!\". You say…",
+     "options": [
+      "3a albak",
+      "allah ybarek fik",
+      "mar7abtein"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "You thank someone for a meal they cooked:",
+     "options": [
+      "ya3tik el 3afye",
+      "yeslamo ideik",
+      "3a salemtak"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "expressions",
+   "icon": "💬",
+   "group": "culture",
+   "title": "Words you'll hear 100 times a day",
+   "summary": "yalla, khalas, ya3ne, walla, ma3leish, yi! and friends.",
+   "sections": [
+    {
+     "h": "The big ones",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "What it really means"
+       ],
+       "rows": [
+        [
+         "yalla",
+         "يلّا",
+         "come on, let's go, hurry; also \"ok, bye\""
+        ],
+        [
+         "khalas",
+         "خلص",
+         "done, enough, stop, it's settled"
+        ],
+        [
+         "ya3ne",
+         "يعني",
+         "I mean, so, kind of, \"um\" while thinking"
+        ],
+        [
+         "walla",
+         "والله",
+         "really? / I swear / honestly"
+        ],
+        [
+         "ma3leish",
+         "معليش",
+         "never mind, sorry, it's ok"
+        ],
+        [
+         "nshalla",
+         "إن شاء الله",
+         "hopefully, God willing; often \"maybe\""
+        ],
+        [
+         "mashalla",
+         "ما شاء الله",
+         "how lovely (protects from envy)"
+        ],
+        [
+         "yi!",
+         "يي!",
+         "oh! wow! (surprise, often women)"
+        ],
+        [
+         "ya 7aram",
+         "يا حرام",
+         "poor thing, what a shame"
+        ],
+        [
+         "3anjad?",
+         "عنجد؟",
+         "seriously?"
+        ],
+        [
+         "tayyeb",
+         "طيّب",
+         "ok, fine; also \"tasty\""
+        ],
+        [
+         "ma32oul?",
+         "معقول؟",
+         "is it possible?! no way!"
+        ],
+        [
+         "ya reit",
+         "يا ريت",
+         "I wish"
+        ],
+        [
+         "ahla",
+         "أهلا",
+         "hi (short)"
+        ],
+        [
+         "7abibi / 7abibte",
+         "حبيبي / حبيبتي",
+         "my dear (to almost anyone)"
+        ],
+        [
+         "ya 2albe",
+         "يا قلبي",
+         "my heart (affection)"
+        ],
+        [
+         "3ayb",
+         "عيب",
+         "shameful, that's not done"
+        ],
+        [
+         "shu ya3ne?",
+         "شو يعني؟",
+         "so what? / what does it mean?"
+        ],
+        [
+         "3al 2aleele",
+         "عالقليلة",
+         "at least"
+        ],
+        [
+         "akid",
+         "أكيد",
+         "of course, sure"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-01",
+       "arabizi": "yalla, mnefell",
+       "arabic": "يلّا، منفلّ",
+       "english": "Come on, let's go"
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-02",
+       "arabizi": "khalas, tamam",
+       "arabic": "خلص، تمام",
+       "english": "OK, done, settled"
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-03",
+       "arabizi": "walla? 3anjad?",
+       "arabic": "والله؟ عنجد؟",
+       "english": "Really? Seriously?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-04",
+       "arabizi": "ma3leish, ma fi shi",
+       "arabic": "معليش، ما في شي",
+       "english": "Never mind, it's nothing"
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-05",
+       "arabizi": "ya reit!",
+       "arabic": "يا ريت!",
+       "english": "I wish!"
+      },
+      {
+       "type": "ex",
+       "id": "gr-expressions-06",
+       "arabizi": "shu ya 7abibi, kifak?",
+       "arabic": "شو يا حبيبي، كيفك؟",
+       "english": "Hey dear, how are you?"
+      }
+     ]
+    },
+    {
+     "h": "nshalla: the most misunderstood word",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"bteje bukra?\" \"nshalla.\" This is \"I hope so\", not \"yes\". For a real yes you'll hear \"akid\" or \"akid nshalla\"."
+      }
+     ]
+    },
+    {
+     "h": "7abibi is not romantic",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Shopkeepers, taxi drivers and grandmothers all say 7abibi. It's warm, not flirting. Men say it to men all the time."
+      },
+      {
+       "type": "tip",
+       "text": "\"yalla bye\" is a full Lebanese goodbye. So is \"yalla, bye, ciao, bonne journée\"."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"nshalla\" in answer to \"Will you come tomorrow?\" usually means…",
+     "options": [
+      "yes, for sure",
+      "hopefully, maybe",
+      "no"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"khalas\" means…",
+     "options": [
+      "hello",
+      "done, enough",
+      "thanks"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "A shopkeeper calls you \"7abibi\". It's…",
+     "options": [
+      "normal and friendly",
+      "flirting",
+      "rude"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "code-switching",
+   "icon": "🇫🇷",
+   "group": "culture",
+   "title": "French and English in Lebanese",
+   "summary": "Why you'll hear \"hi, kifak, ça va?\" and how to join in.",
+   "sections": [
+    {
+     "h": "Three languages, one sentence",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Most Lebanese learn Arabic, French and English at school, and mix them freely. \"hi kifak ça va\" is a real greeting. You can use English words too: it's normal, not a failure."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Word",
+        "Language",
+        "Use"
+       ],
+       "rows": [
+        [
+         "merci",
+         "French",
+         "thanks (as common as shukran)"
+        ],
+        [
+         "bonjour / bonsoir",
+         "French",
+         "hello, good evening"
+        ],
+        [
+         "pardon",
+         "French",
+         "sorry, excuse me"
+        ],
+        [
+         "ça va?",
+         "French",
+         "how's it going?"
+        ],
+        [
+         "bonne journée",
+         "French",
+         "have a good day"
+        ],
+        [
+         "ok, sorry, please, bye",
+         "English",
+         "everywhere"
+        ],
+        [
+         "service",
+         "French",
+         "a shared taxi (servees)"
+        ],
+        [
+         "ascenseur",
+         "French",
+         "lift (also \"elevator\")"
+        ],
+        [
+         "frigidaire",
+         "French",
+         "fridge (\"frigidaire\" or \"barred\")"
+        ],
+        [
+         "chauffage",
+         "French",
+         "heating"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-01",
+       "arabizi": "hi, kifak, ça va?",
+       "arabic": "hi، كيفك، ça va؟",
+       "english": "Hi, how are you, all good?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-02",
+       "arabizi": "merci ktir",
+       "arabic": "merci كتير",
+       "english": "Thanks a lot"
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-03",
+       "arabizi": "pardon, fiye mor2?",
+       "arabic": "pardon، فيي مرق؟",
+       "english": "Excuse me, can I pass?"
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-04",
+       "arabizi": "ana ktir busy lyom",
+       "arabic": "أنا كتير busy اليوم",
+       "english": "I'm really busy today"
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-05",
+       "arabizi": "ba3atelak el location",
+       "arabic": "بعتتلك الـ location",
+       "english": "I sent you the location"
+      }
+     ]
+    },
+    {
+     "h": "Arabic grammar on foreign words",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Foreign words take Arabic endings: \"cancelna\" (we cancelled), \"btesharje?\" (do you charge it?), \"fiye a3mol park hon?\" (can I park here?)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-06",
+       "arabizi": "cancelna el meeting",
+       "arabic": "cancelنا الـ meeting",
+       "english": "We cancelled the meeting"
+      },
+      {
+       "type": "ex",
+       "id": "gr-code-switching-07",
+       "arabizi": "el phone khelset batterio",
+       "arabic": "الـ phone خلصت بطاريتو",
+       "english": "The phone's battery died"
+      }
+     ]
+    },
+    {
+     "h": "When to use Arabic anyway",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Use Arabic words when you know them: people notice and smile. But don't stop the conversation hunting for a word. Say it in English and carry on."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"merci\" in Lebanon is…",
+     "options": [
+      "rude",
+      "very common",
+      "only for tourists"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "A \"service\" is…",
+     "options": [
+      "a shared taxi",
+      "a waiter",
+      "a church"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Mixing English words into Lebanese is…",
+     "options": [
+      "wrong",
+      "normal",
+      "only for children"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "manners",
+   "icon": "🤝",
+   "group": "culture",
+   "title": "Manners: visits, food, coffee, respect",
+   "summary": "What people expect when you visit, eat, greet and talk to elders.",
+   "sections": [
+    {
+     "h": "Greetings",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Shake hands with everyone when you arrive and leave, and ask how they are. Friends of the same sex often kiss on the cheek, usually three times (right, left, right). Some religious people don't shake hands with the other sex: wait to see if a hand is offered."
+      },
+      {
+       "type": "p",
+       "text": "Ask about the family: \"kif el 3ayle?\" (How's the family?), \"kif el wled?\" (How are the kids?)."
+      }
+     ]
+    },
+    {
+     "h": "Visiting someone",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Bring something: sweets, fruit or flowers. Take your shoes off if the hosts do. You'll be offered coffee, juice, fruit and sweets. Saying no once is polite; they'll insist; it's fine to accept the second time."
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-01",
+       "arabizi": "ahla w sahla, tfaddalo",
+       "arabic": "أهلا وسهلا، تفضّلو",
+       "english": "Welcome, come in (to a group)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-02",
+       "arabizi": "ma badde ghalbkon",
+       "arabic": "ما بدّي غلّبكن",
+       "english": "I don't want to trouble you"
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-03",
+       "arabizi": "shu hal 7ake!",
+       "arabic": "شو هالحكي!",
+       "english": "What are you saying! (it's no trouble)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-04",
+       "arabizi": "beitkon 7elo ktir",
+       "arabic": "بيتكن حلو كتير",
+       "english": "Your home is really lovely"
+      }
+     ]
+    },
+    {
+     "h": "At the table",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Wait for the host to say \"tfaddalo\" or \"sa7tein\". You'll be served more than you can eat; leaving a little on the plate tells the host you're full. Praise the food, especially to the cook: \"yeslamo ideiki\" (bless your hands, to a woman)."
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-05",
+       "arabizi": "shbe3t, merci, ktir tayyeb",
+       "arabic": "شبعت، merci، كتير طيّب",
+       "english": "I'm full, thanks, it was delicious"
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-06",
+       "arabizi": "yeslamo ideiki",
+       "arabic": "يسلمو إيديكي",
+       "english": "Bless your hands (to the woman who cooked)"
+      }
+     ]
+    },
+    {
+     "h": "Coffee",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Turkish-style coffee (\"ahwe\") is served in small cups. \"sada\" (no sugar), \"wasat\" (medium), \"7elwe\" (sweet). At a funeral it's served bitter. Coffee at the end of a visit often means the visit is ending."
+      },
+      {
+       "type": "ex",
+       "id": "gr-manners-07",
+       "arabizi": "ahwe wasat iza bitred",
+       "arabic": "قهوة وسط إذا بتريد",
+       "english": "Medium-sweet coffee, please"
+      }
+     ]
+    },
+    {
+     "h": "Elders and names",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Call older men \"3ammo\" (uncle) and older women \"tante\" or \"khalto\" (auntie), even strangers. Grandparents are \"jeddo\" and \"teta\". People are often called by their eldest child's name: \"Abu Karim\" (Karim's father), \"Emm Karim\" (Karim's mother)."
+      }
+     ]
+    },
+    {
+     "h": "Topics to be careful with",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Religion, politics and the war are sensitive. Listen more than you talk. Money is often discussed openly (rent, salaries, prices), so don't be surprised if someone asks what you pay."
+      },
+      {
+       "type": "tip",
+       "text": "If you're invited \"ta3a la 3enna\", it's often real. Ask \"akid?\" and set a day."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "Your host insists you have a second plate. You…",
+     "options": [
+      "refuse firmly",
+      "can accept, it's polite",
+      "leave"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "You call an older woman you don't know…",
+     "options": [
+      "tante or khalto",
+      "7abibte",
+      "ya madame always"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"Abu Karim\" means…",
+     "options": [
+      "Karim's son",
+      "Karim's father",
+      "Karim's uncle"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "religion-phrases",
+   "icon": "🕊️",
+   "group": "culture",
+   "title": "Phrases with God in them",
+   "summary": "You'll hear \"allah\" many times a day from people of every faith. Here's what it means.",
+   "sections": [
+    {
+     "h": "Everyday, not religious",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanon has many religions, and \"allah\" phrases are used by Christians and Muslims alike. Using them doesn't say anything about your own beliefs; it's simply polite Lebanese."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Latin",
+        "Arabic",
+        "Meaning",
+        "When"
+       ],
+       "rows": [
+        [
+         "nshalla",
+         "إن شاء الله",
+         "God willing",
+         "plans, hopes"
+        ],
+        [
+         "mashalla",
+         "ما شاء الله",
+         "what God has willed",
+         "praising a child, a house, a success"
+        ],
+        [
+         "l 7amdella",
+         "الحمد لله",
+         "thank God",
+         "\"How are you?\" \"Fine, l 7amdella.\""
+        ],
+        [
+         "allah ma3ak",
+         "الله معك",
+         "God be with you",
+         "goodbye"
+        ],
+        [
+         "walla",
+         "والله",
+         "by God",
+         "really, I swear"
+        ],
+        [
+         "ya allah",
+         "يا الله",
+         "oh God",
+         "effort, impatience"
+        ],
+        [
+         "allah ykhallik",
+         "الله يخلّيك",
+         "God keep you",
+         "please (strong)"
+        ],
+        [
+         "allah y3inak",
+         "الله يعينك",
+         "God help you",
+         "sympathy for someone busy or struggling"
+        ],
+        [
+         "allah ysam7ak",
+         "الله يسامحك",
+         "God forgive you",
+         "mild \"shame on you\", often joking"
+        ],
+        [
+         "allah yer7amo",
+         "الله يرحمو",
+         "God have mercy on him",
+         "mentioning someone who died"
+        ]
+       ]
+      },
+      {
+       "type": "ex",
+       "id": "gr-religion-phrases-01",
+       "arabizi": "kifak? l 7amdella",
+       "arabic": "كيفك؟ الحمد لله",
+       "english": "How are you? Fine, thank God"
+      },
+      {
+       "type": "ex",
+       "id": "gr-religion-phrases-02",
+       "arabizi": "mashalla 3al wled",
+       "arabic": "ما شاء الله عالولاد",
+       "english": "What lovely children"
+      },
+      {
+       "type": "ex",
+       "id": "gr-religion-phrases-03",
+       "arabizi": "allah ykhallik, sa3edne",
+       "arabic": "الله يخلّيك، ساعدني",
+       "english": "Please, help me (to a man)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-religion-phrases-04",
+       "arabizi": "allah y3inak",
+       "arabic": "الله يعينك",
+       "english": "God help you (to a man)"
+      }
+     ]
+    },
+    {
+     "h": "mashalla protects",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "If you praise a baby, a car or a new house, add \"mashalla\". Praise without it can sound like envy to some people."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "Someone shows you their baby. You say…",
+     "options": [
+      "nshalla",
+      "mashalla",
+      "allah yer7amo"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "\"How are you?\" \"Fine, …\"",
+     "options": [
+      "l 7amdella",
+      "allah ma3ak",
+      "ya allah"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Are these phrases only for Muslims?",
+     "options": [
+      "yes",
+      "no, everyone uses them",
+      "only in church"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "lebanese-vs-msa",
+   "icon": "📰",
+   "group": "culture",
+   "title": "Lebanese vs. Standard Arabic",
+   "summary": "What changes between what people speak and what you hear on the news.",
+   "sections": [
+    {
+     "h": "Two kinds of Arabic",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Every Arab country has its own spoken Arabic. Next to it there's **Standard Arabic** (fus7a): the language of the news, books, the Quran and official signs. Nobody speaks fus7a at home. Kifak teaches spoken Lebanese, which is what you need for life in Lebanon."
+      }
+     ]
+    },
+    {
+     "h": "The main differences",
+     "blocks": [
+      {
+       "type": "table",
+       "head": [
+        "Standard",
+        "Lebanese",
+        "English"
+       ],
+       "rows": [
+        [
+         "al-aan",
+         "hala2",
+         "now"
+        ],
+        [
+         "madha?",
+         "shu?",
+         "what?"
+        ],
+        [
+         "ayna?",
+         "wein?",
+         "where?"
+        ],
+        [
+         "kayfa 7aluk?",
+         "kifak?",
+         "how are you?"
+        ],
+        [
+         "uriid",
+         "badde",
+         "I want"
+        ],
+        [
+         "laysa",
+         "mesh",
+         "not"
+        ],
+        [
+         "ladayya",
+         "3ande",
+         "I have"
+        ],
+        [
+         "sawfa aktub",
+         "ra7 ekteb",
+         "I'll write"
+        ],
+        [
+         "qalb",
+         "2alb",
+         "heart",
+         "q becomes 2"
+        ],
+        [
+         "thalatha",
+         "tlete",
+         "three",
+         "th becomes t"
+        ],
+        [
+         "dhahab",
+         "dahab",
+         "gold",
+         "dh becomes d"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Sounds that change",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "The letter ق (q) is usually said as 2 in the city: \"2alb\" (heart), \"2ahwe\" (coffee). Villagers in some areas keep the q. ث (th) becomes t or s, ذ (dh) becomes d or z."
+      }
+     ]
+    },
+    {
+     "h": "Will Lebanese help with other countries?",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Yes. Syrians, Palestinians and Jordanians speak something close to Lebanese (together called \"Levantine\"), and they'll understand you easily. Egyptians and Gulf Arabs will understand you too, because they watch Lebanese TV and hear Lebanese songs."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"What?\" in Lebanese is…",
+     "options": [
+      "madha",
+      "shu",
+      "ayna"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Which language do Lebanese speak at home?",
+     "options": [
+      "Standard Arabic",
+      "Lebanese",
+      "only French"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "The q in \"qalb\" (heart) is usually said as…",
+     "options": [
+      "k",
+      "2",
+      "gh"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "texting",
+   "icon": "📱",
+   "group": "culture",
+   "title": "Texting in Lebanese",
+   "summary": "How people write Lebanese on WhatsApp, with the abbreviations.",
+   "sections": [
+    {
+     "h": "Latin letters with numbers",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Most Lebanese text in Latin letters with numbers for the extra sounds, the same system used on this site. Some people write in Arabic script instead. You'll see both."
+      },
+      {
+       "type": "table",
+       "head": [
+        "Text",
+        "Means"
+       ],
+       "rows": [
+        [
+         "kifak?",
+         "how are you?"
+        ],
+        [
+         "shou? / shu?",
+         "what?"
+        ],
+        [
+         "3am bshoufak",
+         "see you (lit. I'm seeing you)"
+        ],
+        [
+         "ok tayyeb",
+         "ok fine"
+        ],
+        [
+         "ma3leish",
+         "sorry, never mind"
+        ],
+        [
+         "7abibi",
+         "dear"
+        ],
+        [
+         "yalla bye",
+         "bye"
+        ],
+        [
+         "lol / hhhh",
+         "laughing"
+        ],
+        [
+         "inshala / nshalla / nshallah",
+         "hopefully"
+        ],
+        [
+         "mrc / merci",
+         "thanks"
+        ],
+        [
+         "bas",
+         "but / only"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Spelling isn't fixed",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "\"kifak\", \"keefak\" and \"kefak\" are all the same word. \"8\" for gh, \"5\" for kh and \"9\" for heavy s appear in some people's messages. Don't worry about the \"right\" spelling; read it out loud and it'll make sense."
+      },
+      {
+       "type": "ex",
+       "id": "gr-texting-01",
+       "arabizi": "wselt?",
+       "arabic": "وصلت؟",
+       "english": "Did you arrive? (the classic WhatsApp check)"
+      },
+      {
+       "type": "ex",
+       "id": "gr-texting-02",
+       "arabizi": "ana bel tari2",
+       "arabic": "أنا بالطريق",
+       "english": "I'm on my way"
+      },
+      {
+       "type": "ex",
+       "id": "gr-texting-03",
+       "arabizi": "5 d2aye2 w bkoun 3endak",
+       "arabic": "٥ دقايق وبكون عندك",
+       "english": "Five minutes and I'll be at yours"
+      },
+      {
+       "type": "ex",
+       "id": "gr-texting-04",
+       "arabizi": "ba3atlak voice",
+       "arabic": "بعتلك voice",
+       "english": "I sent you a voice note"
+      }
+     ]
+    },
+    {
+     "h": "Voice notes",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Lebanese send a lot of voice notes. They're excellent practice: ask a friend to send you short ones and listen twice."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "quiz": [
+    {
+     "q": "\"wselt?\" means…",
+     "options": [
+      "Did you arrive?",
+      "Where are you?",
+      "Did you eat?"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "\"keefak\" and \"kifak\" are…",
+     "options": [
+      "different words",
+      "the same word",
+      "a mistake"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "In some messages \"5\" stands for…",
+     "options": [
+      "gh",
+      "kh",
+      "7"
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ]
+}

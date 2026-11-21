@@ -1,0 +1,913 @@
+# Source for content/grammar.json (the Grammar and Culture sections).
+# Rebuild with: python3 tools/build_grammar.py, then tools/bump.sh
+# Everything here is a DRAFT for the owner to check.
+#
+#   @@ id | icon | group | title         a new topic (groups: start, basics, sentences, verbs, culture)
+#   > text                               one-line summary shown in the list
+#   ## Heading                           a new section inside the topic
+#   any other line                       a paragraph (**bold** works)
+#   | a | b | c                          table row; the first row of a table is the header.
+#                                        A column headed "Latin" or "Arabic" follows the Abc / عربي buttons.
+#   ex: latin | arabic | english | note  an example with a play button (clip id gr-<topic>-<nn>)
+#   tip: text                            a green tip box
+#   !: text                              a common mistake (listed at the end of the topic)
+#   ?: question | option | *right | option   a practice question (* marks the right answer)
+#
+# Examples are numbered in order inside each topic. Add new ones at the END of a topic,
+# otherwise the numbers (and so the recordings) move.
+
+@@ how-to-study | 🧭 | start | How to learn Lebanese with Kifak
+> A plan for your first three months, and how to use each part of the site.
+## The short version
+Listen first, read second. Lebanese is a spoken language: people rarely write it except in text messages, so your ear matters more than your eyes.
+Do a little every day. Fifteen minutes daily beats two hours on Sunday.
+Say everything out loud. The **Repeat** step in each lesson records you so you can compare with the native voice.
+## A plan for the first three months
+| Weeks | What to do | Goal
+| 1 to 2 | Reading Latin-script Arabic, then Level 1 | Read 2, 3, 7, kh, gh, sh without thinking. 300 words.
+| 3 to 4 | Level 2, the Grammar basics, Review every day | Put two or three words together.
+| 5 to 8 | Levels 3 and 4, Verbs, Conversations of Level 1 to 4 | Ask and answer simple questions.
+| 9 to 12 | Levels 5 and 6, the Culture pages | Talk about your day and what you did yesterday.
+## How to use each part
+**Lessons:** the main path. Learn the cards, repeat them, then take the quiz. Each quiz picks 15 new examples, so take it more than once.
+**Review:** flashcards of words from lessons you finished. Cards you know come back less often; cards you miss come back soon. Do it every day.
+**Conversations:** real dialogues. Listen once without reading, then with the text, then answer the questions.
+**Verbs:** the tables. Learn the "every day" form first, because the others are built from it.
+**Grammar** and **Culture:** read a page when a lesson raises a question.
+**Dictionary:** search any word in English, Latin letters or Arabic.
+tip: Hide the English with the EN button once a lesson feels easy. Hide the Latin letters too if you're learning the Arabic script.
+## What to expect
+Lebanese people switch between Arabic, French and English, often in one sentence. You'll hear "merci", "bonjour" and "ok" all day. That's normal Lebanese, not a mistake.
+Most Lebanese will answer you in English or French the moment they hear an accent. Smile and keep going in Arabic: "baddi et3allam 3arabe" (I want to learn Arabic). Most people love it.
+ex: baddi et3allam lebnene | بدّي اتعلّم لبناني | I want to learn Lebanese
+ex: 7ke shway shway, iza bitred | احكي شوي شوي، إذا بتريد | Speak slowly, please | to a man; "iza btride" to a woman
+ex: shu ya3ne ...? | شو يعني ...؟ | What does ... mean?
+ex: kif bt2oul ... bil lebnene? | كيف بتقول ... باللبناني؟ | How do you say ... in Lebanese?
+ex: 3id marra please | عيد مرّة please | Say it again, please
+ex: ma fhemt | ما فهمت | I didn't understand
+
+@@ sounds | 👄 | start | The sounds of Lebanese
+> The letters English doesn't have, doubled letters, and which syllable to stress.
+## Sounds English doesn't have
+| Latin | Arabic | How to say it | Example
+| 2 | ء | A tiny stop in the throat, like the break in "uh-oh". | su2al (question)
+| 3 | ع | Squeeze the throat, as if starting to gag, then say "a". | 3afwan (you're welcome)
+| 7 | ح | A strong breathy "h", like fogging up glasses. | mni7 (good)
+| kh | خ | Like the "ch" in Scottish "loch". | kheir (good)
+| gh | غ | A gargled "r", like a French "r". | ghali (expensive)
+| sh | ش | "sh" as in "shop". | shukran (thanks)
+## Heavy letters
+Four letters have a "heavy" twin, said with the tongue pulled back: ص (s), ض (d), ط (t), ظ (z). Latin-script Arabic writes them like the light ones, so "sayf" and "seif" can look alike. The heavy ones make the vowel near them sound darker, more like "o" or "a" in "father".
+tip: You don't need the heavy sounds to be understood at first. Get 3, 7 and 2 right first; people will understand you.
+## Doubled letters matter
+A doubled letter is held longer, and it changes the meaning. Listen carefully to these pairs.
+ex: 7amam | حمام | pigeons | single m
+ex: 7ammam | حمّام | bathroom | double m: hold it
+ex: 3amal | عمل | work (noun)
+ex: 3ammal | عمّال | workers
+## The vowels
+Lebanese has short a, e, i, o, u and long ones. In Latin letters people write "e" for a sound between "e" in "bed" and "a" in "cat". Long vowels are often written double or with "ei" and "ou": "beit" (house), "rou7" (go).
+In Beirut many "a" sounds at the end of words become "e": "a7la" in a book is "a7le" in the street. That's the "imala", and it's one of the clearest marks of Lebanese.
+ex: shu 3amle? | شو عاملة؟ | How are you doing? (to a woman) | the -a ending sounds like -e
+ex: a7la beit | أحلى بيت | the nicest house
+## Stress
+Stress the long vowel if there is one: "sha-BEB" (young men), "ma-TAR" (airport). If there isn't, stress the second-to-last syllable: "MAD-rase" (school). Lebanese is spoken fast, and short vowels often disappear: "ktir", not "katir".
+!: Saying "h" for 7 or nothing for 3. "3am" (in the middle of) and "am" don't mean the same thing.
+!: Rushing doubled letters. "7ammam" (bathroom) said with one m is "7amam" (pigeons).
+?: Which number stands for the letter ع? | 2 | *3 | 7
+?: In "7ammam" (bathroom), what do you do with the m? | *hold it longer | skip it | say it as n
+?: Which sound is like the "ch" in Scottish "loch"? | gh | *kh | sh
+
+@@ pronouns | 👤 | basics | I, you, he, she: pronouns
+> The eight people every verb and every ending is built on.
+## The eight pronouns
+| Latin | Arabic | English
+| ana | أنا | I
+| enta | إنت | you (to a man)
+| ente | إنتِ | you (to a woman)
+| huwwe | هوّي | he, it
+| hiyye | هيّي | she, it
+| ne7na | نحنا | we
+| ento | إنتو | you (to more than one)
+| hinne | هنّي | they
+Lebanese has three ways to say "you": one for a man, one for a woman, one for a group. Every verb changes with them, so learn which one you are using.
+English "it" is huwwe or hiyye: every noun is masculine or feminine (see the next topic).
+## You often drop them
+The verb already shows who is talking, so the pronoun is extra. Use it for emphasis or contrast.
+ex: ana lebnene, w enta? | أنا لبناني، وإنت؟ | I'm Lebanese, and you?
+ex: hiyye bta3ref, ana la2 | هيّي بتعرف، أنا لأ | She knows, I don't
+ex: ne7na men beirut | نحنا من بيروت | We're from Beirut
+ex: hinne hon | هنّي هون | They're here
+ex: ento kifkon? | إنتو كيفكن؟ | How are you all?
+tip: Lebanese use "ento" (plural) to be polite to one older person, a bit like French "vous". "kifkon?" to your friend's grandmother sounds warm.
+?: How do you say "you" to a woman? | enta | *ente | ento
+?: Which one means "we"? | hinne | *ne7na | huwwe
+?: "it" for a feminine thing is… | huwwe | *hiyye | hinne
+
+@@ to-be | 🟰 | basics | "To be": I am, I was, I'll be
+> There's no "am / is / are" in the present. You just put the words side by side.
+## Present: no verb at all
+"I'm tired" is simply "I tired". "The house is big" is "the house big".
+ex: ana te3ban | أنا تعبان | I'm tired | a woman says "ana te3bene"
+ex: el beit kbir | البيت كبير | The house is big
+ex: huwwe doctor | هوّي دكتور | He's a doctor
+ex: wein enta? | وين إنت؟ | Where are you?
+## Negative: mesh
+Put **mesh** before the word: "mesh te3ban" (not tired). Some people say "mish" or "ma-ni" forms ("mani te3ban"); "mesh" works everywhere.
+ex: ana mesh te3ban | أنا مش تعبان | I'm not tired
+ex: el akel mesh ghali | الأكل مش غالي | The food isn't expensive
+## Past: ken
+For the past you need a verb: ken (was).
+| Latin | Arabic | English
+| ana kent | أنا كنت | I was
+| enta kent | إنت كنت | you were (to a man)
+| ente kente | إنتِ كنتي | you were (to a woman)
+| huwwe ken | هوّي كان | he was
+| hiyye kenet | هيّي كانت | she was
+| ne7na kenna | نحنا كنّا | we were
+| ento kento | إنتو كنتو | you were (group)
+| hinne keno | هنّي كانو | they were
+ex: kent bel beit | كنت بالبيت | I was at home
+ex: ken fi 3aj2a | كان في عجقة | There was traffic
+ex: ma kent hon | ما كنت هون | I wasn't here | past negative uses "ma"
+## Future: ra7 koun
+ex: ra7 koun hon bukra | رح كون هون بكرا | I'll be here tomorrow
+ex: ra7 ykoun mabsout | رح يكون مبسوط | He'll be happy
+## "ken" + verb: used to, was doing
+Put ken before an every-day verb (without b-) and you get "used to". Put it before 3am and you get "was doing".
+ex: kent rou7 3al ba7r kel yom | كنت روح عالبحر كل يوم | I used to go to the sea every day
+ex: kent 3am ekol lamma 2ejet | كنت عم اكل لمّا إجت | I was eating when she came
+!: Adding a word for "is": "el beit huwwe kbir" sounds odd. Just "el beit kbir".
+!: Using "ma" in the present: it's "mesh te3ban", not "ma te3ban".
+?: "The food is good" is… | el akel ken tayyeb | *el akel tayyeb | el akel 3am tayyeb
+?: "I'm not hungry": | ma ana jou3an | *ana mesh jou3an | ana jou3an la2
+?: "I was at work": | *kent bel shoghol | ra7 koun bel shoghol | ana bel shoghol
+
+@@ gender | ⚧ | basics | Masculine and feminine
+> Every noun is a he or a she, and the words around it follow.
+## How to spot a feminine word
+Most feminine words end in **-e** or **-a** (in Arabic, ة): sayyara (car), madrase (school), tawle (table), shante (bag).
+Some are feminine without the ending: words for women (emm: mother), most body parts that come in pairs (iid: hand, 3ein: eye), and some others like ard (ground) and shams (sun).
+## Things that follow the gender
+Adjectives, "this", verbs and endings all change.
+| | Masculine | Feminine
+| big | kbir | kbire
+| new | jdid | jdide
+| this | hayda | hayde
+| he/she went | ra7 | ra7et
+| my… | ktebe (my book) | sayyarte (my car)
+ex: beit kbir | بيت كبير | a big house
+ex: sayyara kbire | سيّارة كبيرة | a big car
+ex: hayda l kteb jdid | هيدا الكتاب جديد | This book is new
+ex: hayde l shante jdide | هيدي الشنتة جديدة | This bag is new
+## Talking to a man or a woman
+Lebanese also changes words depending on who you talk to. "How are you?" is "kifak?" to a man and "kifik?" to a woman. Use the "Talking to" switch in lessons to see both.
+ex: kifak? | كيفك؟ | How are you? (to a man)
+ex: kifik? | كيفِك؟ | How are you? (to a woman)
+ex: tfaddal | تفضّل | Go ahead / please (to a man)
+ex: tfaddale | تفضّلي | Go ahead / please (to a woman)
+## Talking about yourself
+A woman says "ana te3bene", "ana mabsouta", "ana lebnenye". A man says "ana te3ban", "ana mabsout", "ana lebnene". Get this right about yourself first.
+!: Using the man's form for yourself if you're a woman (or the other way). People will understand, but it's the mistake they notice most.
+?: Which word is feminine? | beit | *madrase | kteb
+?: "a new car": | sayyara jdid | *sayyara jdide | jdide sayyara
+?: A woman says "I'm happy": | ana mabsout | *ana mabsouta | ana mabsoutin
+
+@@ plurals | 👥 | basics | Plurals and "two of"
+> -in, -et, the "broken" plurals, and the -ein ending for pairs.
+## Regular plurals
+Most words for people and jobs add **-in**: m3allem → m3allmin (teachers), lebnene → lebnenyin (Lebanese people).
+Most feminine words swap -e/-a for **-et**: sayyara → sayyarat (cars), tawle → tawlet (tables), shante → shanatet (bags).
+## Broken plurals
+Many common words change their inside instead. There's a pattern, but learn them one by one.
+| Latin one | Latin many | English
+| beit | byout | house, houses
+| walad | wled | child, children
+| kteb | kotob | book, books
+| shaghle | shoghol | thing, things | also "ghrad"
+| shabb | shabeb | young man, young men
+| balad | blad | country, countries
+| sa7eb | s7ab | friend, friends
+| sh2a | sho2a2 | flat, flats
+ex: 3ande tlet wled | عندي تلت ولاد | I have three children
+ex: el byout ghalye | البيوت غالية | Houses are expensive
+## Two of something: -ein
+Add **-ein** for exactly two: yom → yomein (two days), sene → sentein (two years), kilo → kiloyein. You don't need the number 2.
+ex: yomein | يومين | two days
+ex: sentein | سنتين | two years
+ex: kiloyein banadoura | كيلوين بندورة | two kilos of tomatoes
+## Things in the plural are "she"
+For plural things (not people), adjectives often take the feminine: "el byout ghalye", "sayyarat jdide". People stay plural: "el shabeb mabsoutin".
+!: Saying "tnein yom" for two days. Lebanese say "yomein".
+?: "two years": | tnein sene | *sentein | seneyin
+?: Plural of "walad" (child): | waladin | *wled | waladet
+?: Plural of "sayyara" (car): | sayyarin | *sayyarat | sayayir
+
+@@ the | 🔠 | basics | "The": el- and the sun letters
+> One word for "the", and why it sometimes sounds like ech-, et- or es-.
+## el- means "the"
+Put **el** (or just **l** after a vowel) in front: beit (a house), el beit (the house). There's no word for "a": beit is "a house".
+ex: beit | بيت | a house
+ex: el beit | البيت | the house
+ex: fi kteb 3al tawle | في كتاب عالطاولة | There's a book on the table | "3al" = 3a + el
+## Sun letters
+Before t, d, s, sh, z, r, n, l and the heavy letters, the l of "el" melts into the next letter. You write "el shams" but say "esh-shams". The Latin spelling on this site follows what you hear in some places and what you write in others, so listen to the recording.
+| Written | Said | English
+| el shams | esh shams | the sun
+| el se3a | es se3a | the time, the hour
+| el ta2s | et ta2s | the weather
+| el nes | en nes | the people
+| el 2amar | el 2amar | the moon | not a sun letter: l is said
+ex: esh shams 2awiyye lyom | الشمس قويّة اليوم | The sun is strong today
+ex: en nes ktir latifin | الناس كتير لطيفين | People are very nice
+## When to use el-
+Lebanese uses "the" more than English: for things in general ("I love coffee" = "b7ebb el ahwe"), for languages, and for names of meals.
+ex: b7ebb el ahwe | بحبّ القهوة | I love coffee
+tip: "the" plus a preposition usually shrinks: "3a + el beit" → "3al beit" (to the house), "b + el beit" → "bel beit" (at home), "la + el beit" → "lal beit".
+?: "the house": | beit el | *el beit | hal beit
+?: "I love coffee": | b7ebb ahwe | *b7ebb el ahwe | ana ahwe
+?: "at home": | *bel beit | b beit | 3and beit
+
+@@ possessives | 🔑 | basics | My, your, his: the endings
+> Lebanese doesn't say "my book", it says "book-my". Learn the eight endings once and they work everywhere.
+## The endings
+| Ending | Example | English
+| -e | ktebe | my book
+| -ak | ktebak | your book (man)
+| -ik | ktebik | your book (woman)
+| -o | ktebo | his book
+| -a | kteba | her book
+| -na | ktebna | our book
+| -kon | ktebkon | your book (group)
+| -on | ktebon | their book
+## Feminine words get a t
+A word ending in -e/-a gets a **t** before the ending: sayyara → sayyarte (my car), sayyartak (your car), sayyarta (her car).
+ex: sayyarte bara | سيّارتي برّا | My car is outside
+ex: shu ismak? | شو اسمك؟ | What's your name? (to a man)
+ex: shu ismik? | شو اسمِك؟ | What's your name? (to a woman)
+ex: emmo men 3akkar | إمّو من عكّار | His mother is from Akkar
+ex: beitna 2rib | بيتنا قريب | Our house is near
+## The same endings everywhere
+These endings also go on prepositions ("ma3e": with me, "3ande": at me = I have) and on verbs as "me, you, him" ("shefto": I saw him, "b7ebbik": I love you, to a woman). Learn them here and you've learned them for the whole language.
+## The other way: taba3
+You can also say "el kteb taba3e" (the book of mine). It's useful for emphasis and for long or foreign words: "el laptop taba3e" sounds more natural than "laptope".
+ex: el laptop taba3e | اللابتوب تبعي | my laptop
+ex: hayda taba3ak? | هيدا تبعك؟ | Is this yours?
+?: "my car": | sayyarae | *sayyarte | sayyara-e
+?: "her name": | ismo | *isma | ismik
+?: "Is this yours?" (to a man): | hayda taba3o? | *hayda taba3ak? | hayda taba3e?
+
+@@ this-that | 👉 | basics | This and that
+> hayda, hayde, hawde, and the short "hal".
+## The words
+| Latin | Arabic | English
+| hayda | هيدا | this (masculine)
+| hayde | هيدي | this (feminine)
+| hawde | هودي | these
+| haydak | هيداك | that (masculine)
+| haydik | هيديك | that (feminine)
+| hawdik | هوديك | those
+ex: hayda khayye | هيدا خيّي | This is my brother
+ex: hayde ekhte | هيدي أختي | This is my sister
+ex: hawde s7abe | هودي صحابي | These are my friends
+ex: badde haydak | بدّي هيداك | I want that one
+## "this thing": hal
+Before a noun, Lebanese often use the short **hal**: "hal beit" (this house), "hal marra" (this time). It's the same for men and women.
+ex: hal beit 7elo | هالبيت حلو | This house is pretty
+ex: hal marra bas | هالمرّة بس | Just this time
+ex: hayda l kteb | هيدا الكتاب | this book | the long form: hayda + el
+?: "This is my sister": | hayda ekhte | *hayde ekhte | hawde ekhte
+?: "this time": | *hal marra | hayda marra | hayde el marra hon
+?: "these" is… | haydak | *hawde | hayde
+
+@@ adjectives | 🎨 | basics | Describing things, comparing
+> The adjective goes after the noun. "Bigger" and "the biggest" are one short word.
+## After the noun, matching it
+ex: beit kbir | بيت كبير | a big house
+ex: el beit el kbir | البيت الكبير | the big house | "the" on both words
+ex: el beit kbir | البيت كبير | the house is big | "the" on the noun only makes a sentence
+## Bigger, the biggest
+Most adjectives have a short form for comparing: kbir → akbar (bigger), zghir → azghar, 7elo → a7la, ghali → aghla, rkhis → arkhas, ktir → aktar, mni7 → a7san. Add **men** for "than".
+| Latin | Comparative | English
+| kbir | akbar | bigger
+| zghir | azghar | smaller
+| 7elo | a7la | nicer, prettier
+| ghali | aghla | more expensive
+| sa3b | as3ab | harder
+| 2rib | a2rab | nearer
+| mni7 | a7san | better
+ex: beirut akbar men jbeil | بيروت أكبر من جبيل | Beirut is bigger than Byblos
+ex: hayda a7san | هيدا أحسن | This one is better
+## The best, the biggest
+Put the comparative first: "akbar beit" (the biggest house), "a7la wa7ad" (the nicest one).
+ex: a7la akle bel 3alam | أحلى أكلة بالعالم | the best food in the world
+ex: aghla wa7de | أغلى وحدة | the most expensive one (feminine)
+## Long adjectives: aktar
+Adjectives that don't have a short form use **aktar** (more): "mertee7 aktar" (more comfortable).
+## ktir and shway
+ktir = very, a lot (after or before the adjective). shway = a bit. "ktir ktir" = really very.
+ex: ktir 7elo | كتير حلو | very nice
+ex: shway ghali | شوي غالي | a bit expensive
+!: Putting the adjective first: "kbir beit". It's "beit kbir".
+?: "the big house": | el kbir beit | *el beit el kbir | beit el kbir
+?: "better": | mni7 aktar | *a7san | amna7
+?: "Beirut is bigger than Byblos": | beirut kbir jbeil | *beirut akbar men jbeil | beirut akbar jbeil men
+
+@@ numbers | 🔢 | basics | Numbers in real life
+> Counting things, big numbers, prices and "first, second".
+## 1 to 10
+| Latin | Arabic | Number
+| wa7ad | واحد | 1
+| tnein | تنين | 2
+| tlete | تلاتة | 3
+| arba3a | أربعة | 4
+| khamse | خمسة | 5
+| sette | ستّة | 6
+| sab3a | سبعة | 7
+| tmene | تمانة | 8
+| tes3a | تسعة | 9
+| 3ashra | عشرة | 10
+## Counting things: the short forms
+Before a noun, 3 to 10 lose their ending: tlet (3), arba3 (4), khams (5), set (6), sab3 (7), tmen (8), tes3 (9), 3ashr (10). The noun is plural.
+ex: tlet byout | تلت بيوت | three houses
+ex: khams da2aye2 | خمس دقايق | five minutes
+ex: 3ashr dollar | عشر دولار | ten dollars | money often stays singular
+## One and two
+"One" goes after the noun or is just the noun: "kteb" (a book), "kteb wa7ad" (one book). "Two" is the -ein ending: "ktebein".
+## 11 and up
+11 7da3sh, 12 tna3sh, 13 tletta3sh, 14 arba3ta3sh, 15 khamsta3sh, 16 setta3sh, 17 saba3ta3sh, 18 tmenta3sh, 19 tes3ta3sh. From 11 up, the noun goes back to singular: "tna3sh sene" (12 years).
+Tens: 20 3eshrin, 30 tletin, 40 arb3in, 50 khamsin, 60 settin, 70 sab3in, 80 tmenin, 90 tes3in. 25 is "khamse w 3eshrin" (five and twenty).
+| Latin | Number
+| miyye | 100
+| mitein | 200
+| tlet miyye | 300
+| alf | 1,000
+| alfein | 2,000
+| tlet alef | 3,000
+| malyoun | 1,000,000
+ex: khamse w 3eshrin sene | خمسة وعشرين سنة | 25 years
+ex: miyye w khamsin alf | مية وخمسين ألف | 150,000
+## Prices
+Prices are said with the number first: "3ashr dollar", "khamsin alf". In daily life people often just say the number: "addeish? 3eshrin" (How much? Twenty).
+ex: addeish 7a2o? | قدّيش حقّو؟ | How much is it?
+ex: hayda b 3eshrin dollar | هيدا بعشرين دولار | This is twenty dollars
+## First, second
+awwal (first), tene (second), telet (third), rabe3 (fourth), akher (last). "awwal marra" = the first time.
+ex: awwal marra b lebnen? | أوّل مرّة بلبنان؟ | First time in Lebanon?
+ex: el tabe2 el tene | الطابق التاني | the second floor
+!: "tlete byout": before a noun use the short form "tlet byout".
+!: "tna3sh snin": after 10, the noun is singular again, "tna3sh sene".
+?: "three houses": | tlete beit | *tlet byout | byout tlete
+?: "two days": | tnein yom | *yomein | yom tnein
+?: "12 years": | tna3sh snin | *tna3sh sene | sentein 3ashra
+
+@@ negation | 🚫 | sentences | Saying no: ma, mesh, wala
+> Which "not" goes where, with a cheat sheet.
+## The cheat sheet
+| Before | Use | Example
+| a verb (past or every day) | ma | ma ba3ref (I don't know)
+| an adjective, noun, place | mesh | mesh mni7 (not good)
+| the future (ra7) | mesh | mesh ra7 rou7 (I won't go)
+| right now (3am) | ma or mesh | ma 3am bekol / mesh 3am bekol
+| "there is" (fi) | ma | ma fi (there isn't)
+| "I have" (3ande) | ma | ma 3ande (I don't have)
+| "I want" (badde) | ma | ma badde (I don't want)
+| commands | ma + t- form | ma trou7! (don't go!)
+ex: ma ba3ref | ما بعرف | I don't know
+ex: ma fhemt | ما فهمت | I didn't understand
+ex: mesh mni7 | مش منيح | not good
+ex: mesh ra7 rou7 | مش رح روح | I won't go
+ex: ma fi kahraba | ما في كهربا | There's no electricity
+ex: ma 3ande wa2t | ما عندي وقت | I don't have time
+ex: ma badde shi | ما بدّي شي | I don't want anything
+## Nothing, nobody, never
+ex: ma shefet 7ada | ما شفت حدا | I didn't see anybody
+ex: ma 3melt shi | ما عملت شي | I didn't do anything
+ex: ma ba7ke abadan | ما بحكي أبداً | I never speak / not at all
+ex: wala shi | ولا شي | nothing at all
+ex: wala marra | ولا مرّة | not even once
+## "No" on its own
+la2 = no. la2 la2 = no no (firm). "mesh hayk" = not like that. A quick lift of the chin with a click of the tongue ("tsk") also means no.
+tip: "ma" and "mesh" are the most common words in any language course; get these two right and half of your "no" sentences are done.
+!: "mesh ba3ref": it's "ma ba3ref" (ma before a verb).
+!: "ma mni7": it's "mesh mni7" (mesh before an adjective).
+?: "I don't know": | mesh ba3ref | *ma ba3ref | la2 ba3ref
+?: "not expensive": | ma ghali | *mesh ghali | wala ghali
+?: "I won't come": | ma ra7 eje | *mesh ra7 eje | ra7 ma eje
+
+@@ questions | ❓ | sentences | Asking questions
+> The question words, and how a statement turns into a question.
+## Yes/no questions: just raise your voice
+"enta lebnene." (You're Lebanese.) → "enta lebnene?" (Are you Lebanese?) Same words, rising voice.
+ex: 3endak wa2t? | عندك وقت؟ | Do you have time?
+ex: bta7ke 3arabe? | بتحكي عربي؟ | Do you speak Arabic?
+## Question words
+| Latin | Arabic | English
+| shu | شو | what
+| mein | مين | who
+| wein | وين | where
+| la wein | لوين | where to
+| mnein | منين | where from
+| emta | إيمتى | when
+| leish | ليش | why
+| kif | كيف | how
+| addeish | قدّيش | how much, how many
+| kam | كم | how many (+ singular noun)
+| ayya | أيّا | which
+ex: shu hayda? | شو هيدا؟ | What's this?
+ex: mein hayda? | مين هيدا؟ | Who's this?
+ex: wein el 7ammam? | وين الحمّام؟ | Where's the bathroom?
+ex: la wein rayi7? | لوين رايح؟ | Where are you going? (to a man)
+ex: mnein enta? | منين إنت؟ | Where are you from?
+ex: emta ra7 tousal? | إيمتى رح توصل؟ | When will you arrive?
+ex: leish ma jit? | ليش ما جيت؟ | Why didn't you come?
+ex: addeish 3omrak? | قدّيش عمرك؟ | How old are you?
+ex: kam se3a? | كم ساعة؟ | How many hours?
+ex: ayya wa7ad? | أيّا واحد؟ | Which one?
+## The question word goes first or last
+Both work: "shu baddak?" and "baddak shu?" (What do you want?). Putting it last sounds more surprised.
+## Useful extras
+"mazbout?" (right?), "aw la2?" (or not?), "sa77?" (correct?) at the end of a sentence check that you understood.
+ex: bukra el 3otle, mazbout? | بكرا العطلة، مزبوط؟ | Tomorrow's a holiday, right?
+?: "Where are you from?": | wein enta? | *mnein enta? | la wein enta?
+?: "When?" is… | leish | *emta | addeish
+?: "How much is it?": | kam hayda? | *addeish 7a2o? | shu 7a2o?
+
+@@ there-is | 📍 | sentences | There is, there isn't: fi
+> One tiny word does the work of "there is", "there are", "is there?"
+## fi
+ex: fi farmashiyye hon? | في فرمشيّة هون؟ | Is there a pharmacy here?
+ex: fi nes ktir | في ناس كتير | There are a lot of people
+ex: ma fi mashkal | ما في مشكل | No problem (there's no problem)
+ex: ma fi kahraba | ما في كهربا | There's no electricity
+## Past and future
+ex: ken fi 3aj2a | كان في عجقة | There was traffic
+ex: ma ken fi 7ada | ما كان في حدا | There was nobody
+ex: ra7 ykoun fi 3azime | رح يكون في عزيمة | There'll be a party/dinner
+## fi also means "can"
+"fiye" (with the endings) means "I can". "fi" with no ending in a question can mean "is it possible?". See "Want, can, have to".
+ex: fi a3mel shi? | في اعمل شي؟ | Can I do something? / Is there anything I can do?
+?: "There's no problem": | mesh fi mashkal | *ma fi mashkal | fi mashkal la2
+?: "Is there a pharmacy?": | *fi farmashiyye? | ken farmashiyye? | 3ande farmashiyye?
+
+@@ to-have | 🤲 | sentences | To have: 3ande
+> Lebanese has no verb "to have". You say "at me there is": 3ande.
+## The forms
+| Latin | Arabic | English
+| 3ande | عندي | I have
+| 3endak | عندك | you have (man)
+| 3endik | عندِك | you have (woman)
+| 3endo | عندو | he has
+| 3enda | عندا | she has
+| 3enna | عنّا | we have
+| 3endkon | عندكن | you have (group)
+| 3endon | عندن | they have
+ex: 3ande 2alam | عندي قلم | I have a pen
+ex: 3endak wled? | عندك ولاد؟ | Do you have children?
+ex: ma 3ande wa2t | ما عندي وقت | I don't have time
+ex: ken 3ande sayyara | كان عندي سيّارة | I had a car
+ex: ra7 ykoun 3ande wa2t bukra | رح يكون عندي وقت بكرا | I'll have time tomorrow
+## Also "at someone's place"
+"3and" also means "at the house of": "ana 3and teta" (I'm at grandma's). "3enna" (at ours) is how you invite someone: "ta3a la 3enna" (come over to ours).
+ex: ta3a la 3enna | تعا لعنّا | Come over to our place
+## "ma3e" for things you carry
+"I have money (on me)" is "ma3e masari". Use ma3e (with me) for what's in your pocket right now.
+ex: ma3ak masari? | معك مصاري؟ | Do you have money on you?
+?: "I have a car": | ana sayyara | *3ande sayyara | ma3 sayyara
+?: "Do you have time?" (to a woman): | *3endik wa2t? | 3endo wa2t? | 3enda wa2t?
+?: "I had a car": | ra7 ykoun 3ande sayyara | *ken 3ande sayyara | 3ande ken sayyara
+
+@@ want-can-must | 🎯 | sentences | Want, can, have to
+> badde, fiye / 2ader, lezim, and the verb that follows them.
+## badde: I want
+badde takes the possessive endings, like 3ande.
+| Latin | Arabic | English
+| badde | بدّي | I want
+| baddak | بدّك | you want (man)
+| baddik | بدِّك | you want (woman)
+| baddo | بدّو | he wants
+| badda | بدّا | she wants
+| badna | بدنا | we want
+| badkon | بدكن | you want (group)
+| badon | بدّن | they want
+After badde, the verb drops its b-: "bekol" (I eat) → "badde ekol" (I want to eat).
+ex: badde ahwe | بدّي قهوة | I want a coffee
+ex: badde rou7 3al beit | بدّي روح عالبيت | I want to go home
+ex: shu baddak tekol? | شو بدّك تاكل؟ | What do you want to eat? (to a man)
+ex: ma badde | ما بدّي | I don't want to
+## Can: fiye or 2ader
+**fiye** (fiye, fik, fike, fi, fia, fina, fikon, fion) and **2ader** (I'm able; 2adra for a woman) both mean "can". fiye is more common for permission, 2ader for ability.
+ex: fiye 2a3od hon? | فيي اقعد هون؟ | Can I sit here?
+ex: fik tsa3edne? | فيك تساعدني؟ | Can you help me? (to a man)
+ex: ma fiye | ما فيي | I can't
+ex: mesh 2ader nem | مش قادر نام | I can't sleep
+## Have to: lezim
+**lezim** doesn't change. Put the verb (without b-) after it.
+ex: lezim rou7 hala2 | لازم روح هلّق | I have to go now
+ex: lezim tejarrib el knefe | لازم تجرّب الكنافة | You have to try the knafeh
+ex: mesh lezim | مش لازم | You don't have to / no need
+## Other words that work the same way
+ma3 enno (although), 3ashen (so that), 2abel ma (before), ba3d ma (after): all followed by the verb without b-.
+ex: 2abel ma tfell | قبل ما تفلّ | before you leave
+!: "badde berou7": after badde, drop the b-: "badde rou7".
+!: Changing lezim: it stays "lezim" for everyone.
+?: "I want to eat": | badde bekol | *badde ekol | ana badde akel
+?: "Can I sit here?": | *fiye 2a3od hon? | lezim 2a3od hon? | badde 2a3od hon?
+?: "I have to go": | badde lezim rou7 | *lezim rou7 | lezim berou7
+
+@@ prepositions | 📦 | sentences | Little words: with, to, in, on
+> The prepositions you'll use in every sentence, with and without endings.
+## The main ones
+| Latin | Arabic | English
+| b | ب | in, at, by | b beirut (in Beirut), bel beit (at home)
+| 3a | ع | to, on | 3al beit (home), 3al tawle (on the table)
+| la | ل | to, for | la 3enna (to ours), la ele (for me)
+| men | من | from | men beirut
+| ma3 | مع | with | ma3 rfi2e (with my friend)
+| 3and | عند | at someone's | 3and el 7akim (at the doctor's)
+| 2abel | قبل | before | 2abel el 3ashe
+| ba3d | بعد | after | ba3d el shoghol
+| fo2 | فوق | above, upstairs |
+| ta7t | تحت | under, downstairs |
+| 2eddem | قدّام | in front of |
+| wara | ورا | behind |
+| 7add | حدّ | next to |
+| bein | بين | between |
+## With endings
+They all take the possessive endings. A few change a little.
+| Latin | English
+| ma3e, ma3ak, ma3ik, ma3o | with me, with you, with you, with him
+| ele, elak, elik, elo | to/for me, you, you, him
+| fiye, fik, fike, fi | in me… (also "I can")
+| 3leye, 3leik, 3leike, 3le | on me, on you… (also "I owe")
+| menne, mennak, mennik, menno | from me, from you…
+ex: ta3a ma3e | تعا معي | Come with me (to a man)
+ex: hayda elak | هيدا إلك | This is for you (to a man)
+ex: 3leye 3ashr dollar | عليّ عشر دولار | I owe ten dollars
+ex: el ahwe 3leye | القهوة عليّ | The coffee's on me
+ex: mennak la elak | منّك لإلك | between you and you (just between us)
+ex: el beit 7add el madrase | البيت حدّ المدرسة | The house is next to the school
+tip: "3leye" is how you insist on paying. Expect a friendly argument: everyone says "la2, 3leye!"
+?: "with me": | ma3ak | *ma3e | menne
+?: "The coffee's on me": | *el ahwe 3leye | el ahwe ele | el ahwe fiye
+?: "next to the school": | wara el madrase | *7add el madrase | ta7t el madrase
+
+@@ linking | 🔗 | sentences | Linking words: and, but, because, if
+> The little words that turn short sentences into real speech.
+## The list
+| Latin | Arabic | English
+| w | و | and
+| aw | أو | or
+| bas | بس | but; only; enough!
+| la2anno | لأنّو | because
+| iza | إذا | if
+| lamma | لمّا | when (not a question)
+| enno | إنّو | that ("I think that…")
+| ba3dein | بعدين | then, later
+| 3ashen | عشان | so that, for
+| ma3 enno | مع إنّو | although
+| ya3ne | يعني | I mean, so, like
+| kamen | كمان | also, too
+| 7atta | حتّى | even; until
+| ya… ya… | يا… يا… | either… or…
+ex: badde ahwe w maye | بدّي قهوة وماي | I want coffee and water
+ex: kent badde eje bas ma 2deret | كنت بدّي اجي بس ما قدرت | I wanted to come but I couldn't
+ex: ma jit la2anno kent mared | ما جيت لأنّو كنت مريض | I didn't come because I was sick
+ex: iza fik, ta3a bukra | إذا فيك، تعا بكرا | If you can, come tomorrow
+ex: lamma wselt, kenet nayme | لمّا وصلت، كانت نايمة | When I arrived, she was asleep
+ex: baftekir enno ra7 tshatte | بفتكر إنّو رح تشتّي | I think (that) it's going to rain
+ex: ana kamen | أنا كمان | Me too
+## bas has three jobs
+"bas" = but ("7elo bas ghali": nice but expensive), only ("bas wa7ad": only one) and enough/stop ("bas!").
+ex: bas wa7ad | بس واحد | only one
+ex: 7elo bas ghali | حلو بس غالي | Nice but expensive
+?: "because": | iza | *la2anno | lamma
+?: "Me too": | *ana kamen | ana bas | kamen enta
+?: "bas wa7ad" means… | but one | *only one | one more
+
+@@ time | ⏰ | sentences | Time: today, tomorrow, what time is it?
+> Days, parts of the day, telling the time and how often.
+## Days
+| Latin | Arabic | English
+| lyom | اليوم | today
+| bukra | بكرا | tomorrow
+| ba3d bukra | بعد بكرا | the day after tomorrow
+| mberi7 | مبارح | yesterday
+| awwal mberi7 | أوّل مبارح | the day before yesterday
+| hala2 | هلّق | now
+| ba3dein | بعدين | later
+| ba3d shway | بعد شوي | in a little while
+| zamen | زمان | a long time ago; in the old days
+## Parts of the day
+sob7 / el sob7 (morning), ba3d el dohr (afternoon), el masa (evening), el leil (night), el dohr (noon). "el sob7" + "bukra" = "bukra el sob7" (tomorrow morning).
+ex: bukra el sob7 | بكرا الصبح | tomorrow morning
+ex: mberi7 bel leil | مبارح بالليل | last night
+## What time is it?
+"addeish el se3a?" Answer: el se3a + number. Add w (and) for minutes past, illa (minus) for minutes to. robe3 = quarter, nos = half, tilt = twenty minutes.
+ex: addeish el se3a? | قدّيش الساعة؟ | What time is it?
+ex: el se3a tlete | الساعة تلاتة | It's three o'clock
+ex: el se3a tlete w nos | الساعة تلاتة ونصّ | It's half past three
+ex: el se3a arba3a illa robe3 | الساعة أربعة إلّا ربع | It's quarter to four
+ex: el se3a sab3a w tilt | الساعة سبعة وتلت | It's twenty past seven
+## How often
+kel yom (every day), kel jem3a (every week), marra bel jem3a (once a week), dayman (always), ma3 el wa2t (with time), ba3d (still/yet), ba3d ma (not yet: "ba3d ma akalt" = I haven't eaten yet).
+ex: ba3d ma akalt | بعد ما أكلت | I haven't eaten yet
+ex: marra bel jem3a | مرّة بالجمعة | once a week | "jem3a" is both Friday and week
+## Lebanese time
+"hala2" (now) can mean in five minutes or in an hour. "nshalla" on a plan means "I hope so", not "yes". Ask "akid?" (sure?) if you need a promise.
+?: "tomorrow morning": | el sob7 mberi7 | *bukra el sob7 | ba3d bukra
+?: "half past three": | tlete illa nos | *tlete w nos | nos tlete
+?: "I haven't eaten yet": | ma ra7 ekol | *ba3d ma akalt | ma akalt ba3dein
+
+@@ verb-system | ⚙️ | verbs | How Lebanese verbs work
+> One table that explains every tense on the Verbs pages.
+## Two stems, five uses
+Every verb has a **past** form and a **present** form. Everything else is built from the present.
+| Use | How | Example (to write)
+| Past | past stem + ending | katabt (I wrote)
+| Every day | b- + present | bekteb (I write)
+| Right now | 3am + every-day form | 3am bekteb (I'm writing)
+| Future | ra7 + present without b- | ra7 ekteb (I'll write)
+| After badde, lezim, fiye | present without b- | badde ekteb (I want to write)
+| Command | own form | ekteb! (write!)
+## The prefixes of the "every day" form
+| Person | Prefix | Example
+| ana | b- | bekteb
+| enta | bt- | btekteb
+| ente | bt- … -e | btektebe
+| huwwe | by- | byekteb
+| hiyye | bt- | btekteb
+| ne7na | mn- | mnekteb
+| ento | bt- … -o | btektebo
+| hinne | by- … -o | byektebo
+Notice that "you (man)" and "she" are the same: btekteb. The context tells them apart.
+## The endings of the past
+| Person | Ending | Example
+| ana / enta | -t | katabt
+| ente | -te | katabte
+| huwwe | (none) | katab
+| hiyye | -et | katabet
+| ne7na | -na | katabna
+| ento | -to | katabto
+| hinne | -o | katabo
+ex: katabt risele | كتبت رسالة | I wrote a letter
+ex: bekteb kel yom | بكتب كل يوم | I write every day
+ex: 3am bekteb | عم بكتب | I'm writing
+ex: ra7 ekteb bukra | رح اكتب بكرا | I'll write tomorrow
+ex: kent ekteb | كنت اكتب | I used to write
+## Object endings
+"me, you, him" go on the end of the verb with the same endings as "my, your, his" (with -ne for "me").
+ex: shefto | شفتو | I saw him
+ex: shefta | شفتا | I saw her
+ex: b7ebbak | بحبّك | I love you (to a man)
+ex: b7ebbik | بحبِّك | I love you (to a woman)
+ex: 3ayyetle | عيّطلي | Call me (to a man)
+tip: Learn verbs in pairs: past "he" form + present "I" form (katab / bekteb, akal / bekol). Those two give you everything.
+?: "I'm writing" is… | bekteb | *3am bekteb | ra7 ekteb
+?: "I'll write": | ra7 bekteb | *ra7 ekteb | katabt
+?: The "we" form starts with… | b- | bt- | *mn-
+
+@@ commands | 📢 | verbs | Commands and "don't!"
+> Telling someone to do something, or not to, politely.
+## Commands
+There are three forms: to a man, to a woman, to a group. The woman form ends in -e, the group in -o.
+| To a man | To a woman | To a group | English
+| ta3a | ta3e | ta3o | come
+| rou7 | rou7e | rou7o | go
+| kol | kele | kelo | eat
+| khod | khede | khedo | take
+| 2a3od | 2o3de | 2o3do | sit
+| stanna | stanne | stanno | wait
+| shouf | shoufe | shoufo | look
+| es2al | es2ale | es2alo | ask
+## Don't!
+Use **ma** + the "you" form of the present without b-: btrou7 → ma trou7 (don't go).
+ex: ma trou7! | ما تروح! | Don't go! (to a man)
+ex: ma trou7e! | ما تروحي! | Don't go! (to a woman)
+ex: ma t3assib | ما تعصّب | Don't get angry (to a man)
+ex: ma tkhaf | ما تخاف | Don't be afraid (to a man)
+## Making it polite
+Add **please** (yes, the English word), **iza bitred** (if you like, to a man; "iza btride" to a woman), **min fadlak** (more formal) or start with **fik…?** (can you…?).
+ex: stanna shway iza bitred | استنّى شوي إذا بتريد | Wait a moment, please (to a man)
+ex: fik tsakker el beb? | فيك تسكّر الباب؟ | Could you close the door? (to a man)
+ex: 3mol ma3rouf | اعمل معروف | Do me a favour / please (to a man)
+ex: yalla, ta3o! | يلّا، تعو! | Come on, come (all of you)!
+## Commands you'll hear every day
+"tfaddal" (here you go / come in / help yourself), "khalas" (stop, done), "yalla" (come on, let's go), "shouf" (look), "2ol" (say: "2ol mar7aba" = say hello), "dakhlak" (please, I beg you).
+?: "Come!" to a woman: | ta3a | *ta3e | ta3o
+?: "Don't go!" to a man: | mesh rou7 | *ma trou7 | la2 rou7
+?: Which is the most polite? | rou7! | *fik trou7 iza bitred? | rou7 hala2!
+
+@@ replies | 🔁 | culture | Call and response: what to say back
+> Lebanese conversations run on set phrases with set answers. Learn them in pairs.
+## Why this matters
+For many phrases there's one right answer, like "bless you" in English. Answer "shukran" to everything and people will understand, but give the right reply and you'll sound like you grew up there.
+| They say | You answer | When
+| marhaba | mar7abtein / ahlein | hello
+| kifak? | mni7, nshalla enta mni7 | how are you?
+| sabe7 el kheir | sabe7 el nour | good morning
+| masa el kheir | masa el nour | good evening
+| ahla w sahla | ahla fik / ahlein fik | welcome
+| tfaddal | shukran / yeslamo | here you go, come in
+| sa7tein | 3a albak / 3a albik | enjoy your meal (often after)
+| na3iman | allah yen3am 3aleik | after a haircut or a shower
+| mabrouk | allah ybarek fik | congratulations
+| 3a salemtak | allah ysalmak | welcome back, glad you're safe
+| yeslamo ideik | w ideik | bless your hands (thanks for cooking)
+| allah ma3ak | ma3 el salame | goodbye
+| tisba7 3ala kheir | w enta men ahlo | good night
+| ya3tik el 3afye | allah y3afik | well done, may God give you strength
+| nshalla btet3afa | allah ysalmak | get well soon
+| allah yer7amo | allah yer7am mwetkon | condolences: may God have mercy on him
+| 3a2bel el miyye | w enta bkhair / 3a2belak | happy birthday (to 100)
+| ma3leish | ma fi shi | sorry, never mind
+## Hear them
+ex: mar7abtein | مرحبتين | two hellos back (reply to marhaba)
+ex: sabe7 el nour | صباح النور | morning of light (reply to good morning)
+ex: 3a albak | عقلبك | on your heart (reply to sa7tein, to a man)
+ex: allah ybarek fik | الله يبارك فيك | God bless you (reply to mabrouk)
+ex: allah ysalmak | الله يسلّمك | God keep you safe (reply to 3a salemtak, to a man)
+ex: w ideik | وإيديك | and your hands (reply to yeslamo ideik)
+ex: ma3 el salame | مع السلامة | go in peace (goodbye)
+ex: allah y3afik | الله يعافيك | God give you health (reply to ya3tik el 3afye)
+ex: allah yer7am mwetkon | الله يرحم موتاكن | may God have mercy on your dead too
+## How to use them
+Endings change with who you talk to: "3a albak" (man), "3a albik" (woman), "3a albkon" (group). If in doubt, use the group form for elders; it's warm and polite.
+tip: Say "ya3tik el 3afye" to anyone working: the shopkeeper, the taxi driver, the man fixing your generator. It's thanks and respect in one.
+?: Someone says "sabe7 el kheir". You say… | sabe7 el kheir | *sabe7 el nour | ma3 el salame
+?: Someone says "mabrouk!". You say… | 3a albak | *allah ybarek fik | mar7abtein
+?: You thank someone for a meal they cooked: | ya3tik el 3afye | *yeslamo ideik | 3a salemtak
+
+@@ expressions | 💬 | culture | Words you'll hear 100 times a day
+> yalla, khalas, ya3ne, walla, ma3leish, yi! and friends.
+## The big ones
+| Latin | Arabic | What it really means
+| yalla | يلّا | come on, let's go, hurry; also "ok, bye"
+| khalas | خلص | done, enough, stop, it's settled
+| ya3ne | يعني | I mean, so, kind of, "um" while thinking
+| walla | والله | really? / I swear / honestly
+| ma3leish | معليش | never mind, sorry, it's ok
+| nshalla | إن شاء الله | hopefully, God willing; often "maybe"
+| mashalla | ما شاء الله | how lovely (protects from envy)
+| yi! | يي! | oh! wow! (surprise, often women)
+| ya 7aram | يا حرام | poor thing, what a shame
+| 3anjad? | عنجد؟ | seriously?
+| tayyeb | طيّب | ok, fine; also "tasty"
+| ma32oul? | معقول؟ | is it possible?! no way!
+| ya reit | يا ريت | I wish
+| ahla | أهلا | hi (short)
+| 7abibi / 7abibte | حبيبي / حبيبتي | my dear (to almost anyone)
+| ya 2albe | يا قلبي | my heart (affection)
+| 3ayb | عيب | shameful, that's not done
+| shu ya3ne? | شو يعني؟ | so what? / what does it mean?
+| 3al 2aleele | عالقليلة | at least
+| akid | أكيد | of course, sure
+ex: yalla, mnefell | يلّا، منفلّ | Come on, let's go
+ex: khalas, tamam | خلص، تمام | OK, done, settled
+ex: walla? 3anjad? | والله؟ عنجد؟ | Really? Seriously?
+ex: ma3leish, ma fi shi | معليش، ما في شي | Never mind, it's nothing
+ex: ya reit! | يا ريت! | I wish!
+ex: shu ya 7abibi, kifak? | شو يا حبيبي، كيفك؟ | Hey dear, how are you?
+## nshalla: the most misunderstood word
+"bteje bukra?" "nshalla." This is "I hope so", not "yes". For a real yes you'll hear "akid" or "akid nshalla".
+## 7abibi is not romantic
+Shopkeepers, taxi drivers and grandmothers all say 7abibi. It's warm, not flirting. Men say it to men all the time.
+tip: "yalla bye" is a full Lebanese goodbye. So is "yalla, bye, ciao, bonne journée".
+?: "nshalla" in answer to "Will you come tomorrow?" usually means… | yes, for sure | *hopefully, maybe | no
+?: "khalas" means… | hello | *done, enough | thanks
+?: A shopkeeper calls you "7abibi". It's… | *normal and friendly | flirting | rude
+
+@@ code-switching | 🇫🇷 | culture | French and English in Lebanese
+> Why you'll hear "hi, kifak, ça va?" and how to join in.
+## Three languages, one sentence
+Most Lebanese learn Arabic, French and English at school, and mix them freely. "hi kifak ça va" is a real greeting. You can use English words too: it's normal, not a failure.
+| Word | Language | Use
+| merci | French | thanks (as common as shukran)
+| bonjour / bonsoir | French | hello, good evening
+| pardon | French | sorry, excuse me
+| ça va? | French | how's it going?
+| bonne journée | French | have a good day
+| ok, sorry, please, bye | English | everywhere
+| service | French | a shared taxi (servees)
+| ascenseur | French | lift (also "elevator")
+| frigidaire | French | fridge ("frigidaire" or "barred")
+| chauffage | French | heating
+ex: hi, kifak, ça va? | hi، كيفك، ça va؟ | Hi, how are you, all good?
+ex: merci ktir | merci كتير | Thanks a lot
+ex: pardon, fiye mor2? | pardon، فيي مرق؟ | Excuse me, can I pass?
+ex: ana ktir busy lyom | أنا كتير busy اليوم | I'm really busy today
+ex: ba3atelak el location | بعتتلك الـ location | I sent you the location
+## Arabic grammar on foreign words
+Foreign words take Arabic endings: "cancelna" (we cancelled), "btesharje?" (do you charge it?), "fiye a3mol park hon?" (can I park here?).
+ex: cancelna el meeting | cancelنا الـ meeting | We cancelled the meeting
+ex: el phone khelset batterio | الـ phone خلصت بطاريتو | The phone's battery died
+## When to use Arabic anyway
+Use Arabic words when you know them: people notice and smile. But don't stop the conversation hunting for a word. Say it in English and carry on.
+?: "merci" in Lebanon is… | rude | *very common | only for tourists
+?: A "service" is… | *a shared taxi | a waiter | a church
+?: Mixing English words into Lebanese is… | wrong | *normal | only for children
+
+@@ manners | 🤝 | culture | Manners: visits, food, coffee, respect
+> What people expect when you visit, eat, greet and talk to elders.
+## Greetings
+Shake hands with everyone when you arrive and leave, and ask how they are. Friends of the same sex often kiss on the cheek, usually three times (right, left, right). Some religious people don't shake hands with the other sex: wait to see if a hand is offered.
+Ask about the family: "kif el 3ayle?" (How's the family?), "kif el wled?" (How are the kids?).
+## Visiting someone
+Bring something: sweets, fruit or flowers. Take your shoes off if the hosts do. You'll be offered coffee, juice, fruit and sweets. Saying no once is polite; they'll insist; it's fine to accept the second time.
+ex: ahla w sahla, tfaddalo | أهلا وسهلا، تفضّلو | Welcome, come in (to a group)
+ex: ma badde ghalbkon | ما بدّي غلّبكن | I don't want to trouble you
+ex: shu hal 7ake! | شو هالحكي! | What are you saying! (it's no trouble)
+ex: beitkon 7elo ktir | بيتكن حلو كتير | Your home is really lovely
+## At the table
+Wait for the host to say "tfaddalo" or "sa7tein". You'll be served more than you can eat; leaving a little on the plate tells the host you're full. Praise the food, especially to the cook: "yeslamo ideiki" (bless your hands, to a woman).
+ex: shbe3t, merci, ktir tayyeb | شبعت، merci، كتير طيّب | I'm full, thanks, it was delicious
+ex: yeslamo ideiki | يسلمو إيديكي | Bless your hands (to the woman who cooked)
+## Coffee
+Turkish-style coffee ("ahwe") is served in small cups. "sada" (no sugar), "wasat" (medium), "7elwe" (sweet). At a funeral it's served bitter. Coffee at the end of a visit often means the visit is ending.
+ex: ahwe wasat iza bitred | قهوة وسط إذا بتريد | Medium-sweet coffee, please
+## Elders and names
+Call older men "3ammo" (uncle) and older women "tante" or "khalto" (auntie), even strangers. Grandparents are "jeddo" and "teta". People are often called by their eldest child's name: "Abu Karim" (Karim's father), "Emm Karim" (Karim's mother).
+## Topics to be careful with
+Religion, politics and the war are sensitive. Listen more than you talk. Money is often discussed openly (rent, salaries, prices), so don't be surprised if someone asks what you pay.
+tip: If you're invited "ta3a la 3enna", it's often real. Ask "akid?" and set a day.
+?: Your host insists you have a second plate. You… | refuse firmly | *can accept, it's polite | leave
+?: You call an older woman you don't know… | *tante or khalto | 7abibte | ya madame always
+?: "Abu Karim" means… | Karim's son | *Karim's father | Karim's uncle
+
+@@ religion-phrases | 🕊️ | culture | Phrases with God in them
+> You'll hear "allah" many times a day from people of every faith. Here's what it means.
+## Everyday, not religious
+Lebanon has many religions, and "allah" phrases are used by Christians and Muslims alike. Using them doesn't say anything about your own beliefs; it's simply polite Lebanese.
+| Latin | Arabic | Meaning | When
+| nshalla | إن شاء الله | God willing | plans, hopes
+| mashalla | ما شاء الله | what God has willed | praising a child, a house, a success
+| l 7amdella | الحمد لله | thank God | "How are you?" "Fine, l 7amdella."
+| allah ma3ak | الله معك | God be with you | goodbye
+| walla | والله | by God | really, I swear
+| ya allah | يا الله | oh God | effort, impatience
+| allah ykhallik | الله يخلّيك | God keep you | please (strong)
+| allah y3inak | الله يعينك | God help you | sympathy for someone busy or struggling
+| allah ysam7ak | الله يسامحك | God forgive you | mild "shame on you", often joking
+| allah yer7amo | الله يرحمو | God have mercy on him | mentioning someone who died
+ex: kifak? l 7amdella | كيفك؟ الحمد لله | How are you? Fine, thank God
+ex: mashalla 3al wled | ما شاء الله عالولاد | What lovely children
+ex: allah ykhallik, sa3edne | الله يخلّيك، ساعدني | Please, help me (to a man)
+ex: allah y3inak | الله يعينك | God help you (to a man)
+## mashalla protects
+If you praise a baby, a car or a new house, add "mashalla". Praise without it can sound like envy to some people.
+?: Someone shows you their baby. You say… | nshalla | *mashalla | allah yer7amo
+?: "How are you?" "Fine, …" | *l 7amdella | allah ma3ak | ya allah
+?: Are these phrases only for Muslims? | yes | *no, everyone uses them | only in church
+
+@@ lebanese-vs-msa | 📰 | culture | Lebanese vs. Standard Arabic
+> What changes between what people speak and what you hear on the news.
+## Two kinds of Arabic
+Every Arab country has its own spoken Arabic. Next to it there's **Standard Arabic** (fus7a): the language of the news, books, the Quran and official signs. Nobody speaks fus7a at home. Kifak teaches spoken Lebanese, which is what you need for life in Lebanon.
+## The main differences
+| Standard | Lebanese | English
+| al-aan | hala2 | now
+| madha? | shu? | what?
+| ayna? | wein? | where?
+| kayfa 7aluk? | kifak? | how are you?
+| uriid | badde | I want
+| laysa | mesh | not
+| ladayya | 3ande | I have
+| sawfa aktub | ra7 ekteb | I'll write
+| qalb | 2alb | heart | q becomes 2
+| thalatha | tlete | three | th becomes t
+| dhahab | dahab | gold | dh becomes d
+## Sounds that change
+The letter ق (q) is usually said as 2 in the city: "2alb" (heart), "2ahwe" (coffee). Villagers in some areas keep the q. ث (th) becomes t or s, ذ (dh) becomes d or z.
+## Will Lebanese help with other countries?
+Yes. Syrians, Palestinians and Jordanians speak something close to Lebanese (together called "Levantine"), and they'll understand you easily. Egyptians and Gulf Arabs will understand you too, because they watch Lebanese TV and hear Lebanese songs.
+?: "What?" in Lebanese is… | madha | *shu | ayna
+?: Which language do Lebanese speak at home? | Standard Arabic | *Lebanese | only French
+?: The q in "qalb" (heart) is usually said as… | k | *2 | gh
+
+@@ texting | 📱 | culture | Texting in Lebanese
+> How people write Lebanese on WhatsApp, with the abbreviations.
+## Latin letters with numbers
+Most Lebanese text in Latin letters with numbers for the extra sounds, the same system used on this site. Some people write in Arabic script instead. You'll see both.
+| Text | Means
+| kifak? | how are you?
+| shou? / shu? | what?
+| 3am bshoufak | see you (lit. I'm seeing you)
+| ok tayyeb | ok fine
+| ma3leish | sorry, never mind
+| 7abibi | dear
+| yalla bye | bye
+| lol / hhhh | laughing
+| inshala / nshalla / nshallah | hopefully
+| mrc / merci | thanks
+| bas | but / only
+## Spelling isn't fixed
+"kifak", "keefak" and "kefak" are all the same word. "8" for gh, "5" for kh and "9" for heavy s appear in some people's messages. Don't worry about the "right" spelling; read it out loud and it'll make sense.
+ex: wselt? | وصلت؟ | Did you arrive? (the classic WhatsApp check)
+ex: ana bel tari2 | أنا بالطريق | I'm on my way
+ex: 5 d2aye2 w bkoun 3endak | ٥ دقايق وبكون عندك | Five minutes and I'll be at yours
+ex: ba3atlak voice | بعتلك voice | I sent you a voice note
+## Voice notes
+Lebanese send a lot of voice notes. They're excellent practice: ask a friend to send you short ones and listen twice.
+?: "wselt?" means… | *Did you arrive? | Where are you? | Did you eat?
+?: "keefak" and "kifak" are… | different words | *the same word | a mistake
+?: In some messages "5" stands for… | gh | *kh | 7

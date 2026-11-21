@@ -11,7 +11,7 @@ function save(state) {
 }
 
 const state = Object.assign(
-  { show: { arabizi: true, arabic: true, english: true }, progress: {} },
+  { show: { arabizi: true, arabic: true, english: true }, progress: {}, srs: {} },
   load()
 );
 
@@ -31,6 +31,24 @@ export const progress = {
     const prev = state.progress[lessonId];
     const best = prev ? Math.max(prev.best, score) : score;
     state.progress[lessonId] = { done: true, best, total, at: Date.now() };
+    save(state);
+  },
+};
+
+// ---- Review: spaced repetition (Leitner boxes) ----
+// Each card is { box, due }. Box 0 = new. A right answer moves it up a box and
+// pushes the next review further away; a miss sends it back to box 1.
+const DAY = 864e5;
+const GAPS = [0, 1, 3, 7, 16, 35, 90]; // days to wait after reaching each box
+export const srs = {
+  card(id) { return state.srs[id] || null; },
+  all() { return state.srs; },
+  grade(id, knew) {
+    const c = state.srs[id] || { box: 0, due: 0 };
+    c.box = knew ? Math.min(c.box + 1, GAPS.length - 1) : 1;
+    c.due = Date.now() + (knew ? GAPS[c.box] * DAY : 0);
+    c.seen = Date.now();
+    state.srs[id] = c;
     save(state);
   },
 };

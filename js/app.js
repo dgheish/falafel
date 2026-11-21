@@ -1,9 +1,10 @@
-import { settings, progress, clips } from './store.js?v=41';
-import * as audio from './audio.js?v=41';
+import { settings, progress, clips, srs } from './store.js?v=43';
+import * as audio from './audio.js?v=43';
 
 const app = document.getElementById('app');
 let DATA = null;
 let VERBS = null; // content/verbs.json: conjugation tables
+let GUIDE = null; // content/grammar.json: the Grammar and Culture pages
 
 // ---------- helpers ----------
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -78,11 +79,13 @@ const levelOf = lessonId => DATA.levels.find(lv => lv.lessons.some(l => l.id ===
 
 // ---------- views ----------
 function viewHome() {
+  const due = dueCount();
   const talks = DATA.levels.reduce((n, lv) => n + lv.lessons.filter(l => ready(l) && l.dialogue?.length).length, 0);
   app.innerHTML = `
     <section class="hero">
       <h1>Speak Lebanese Like a Local:<br><span>The Arabic People Really Talk</span></h1>
       <p>Ten free levels with a native speaker's voice, <br>from your first word to a whole paragraph.</p>
+      ${GUIDE ? '<p class="newhere"><a href="#/topic/how-to-study">New here? How to learn Lebanese with Kifak →</a></p>' : ''}
     </section>
     <section class="choices">
       <a class="choice" href="#/lessons">
@@ -98,8 +101,28 @@ function viewHome() {
       ${VERBS ? `<a class="choice" href="#/verbs">
         <span class="choice-icon">🔁</span>
         <strong>Verbs</strong>
-        <span>See how ${VERBS.verbs.length} everyday verbs change: past, every day, right now, future and commands.</span>
+        <span>${VERBS.verbs.length} everyday verbs in every form: past, every day, right now, future and commands.</span>
       </a>` : ''}
+      ${GUIDE ? `<a class="choice" href="#/grammar">
+        <span class="choice-icon">🧩</span>
+        <strong>Grammar</strong>
+        <span>${topicsIn('grammar').length} short guides: pronouns, "to have", negation, numbers, questions and more.</span>
+      </a>
+      <a class="choice" href="#/culture">
+        <span class="choice-icon">☕</span>
+        <strong>Culture</strong>
+        <span>What to say back to "sa7tein", words you'll hear all day, manners, French and English mixing.</span>
+      </a>` : ''}
+      <a class="choice" href="#/review">
+        <span class="choice-icon">🧠</span>
+        <strong>Review</strong>
+        <span>${due ? `${due} flashcards waiting for you.` : 'Flashcards of the words you learned, spaced out so they stick.'}</span>
+      </a>
+      <a class="choice" href="#/dictionary">
+        <span class="choice-icon">🔎</span>
+        <strong>Dictionary</strong>
+        <span>Search every word on the site in English, Latin letters or Arabic.</span>
+      </a>
     </section>`;
 }
 
@@ -612,6 +635,7 @@ function viewLesson(id) {
         <div class="row">
           <button class="btn ghost" data-act="again">Try the quiz again</button>
           ${lesson.dialogue?.length ? `<a class="btn ghost" href="#/talk/${lesson.id}">💬 Hear it in a conversation</a>` : ''}
+          <a class="btn ghost" href="#/review">🧠 Review flashcards</a>
           ${next && nextLevel === level
             ? `<a class="btn primary" href="#/lesson/${next.id}">Next: ${esc(next.title)} →</a>`
             : `<a class="btn primary" href="#/level/${level.n}">Back to Level ${level.n}</a>`}
@@ -631,16 +655,17 @@ function viewLesson(id) {
 // ----- recording studio (for the teacher) -----
 async function viewStudio(lessonId) {
   // One lesson at a time: the whole course has thousands of clips.
-  const list = [ABC_LESSON, ...allLessons(), ...verbLessons()];
-  const lesson = list.find(l => l.id === lessonId) || list[1];
+  const list = [ABC_LESSON, ...guideLessons(), ...allLessons(), ...verbLessons()];
+  const lesson = list.find(l => l.id === lessonId) || allLessons()[0];
   const ix = list.indexOf(lesson);
   const prev = list[ix - 1], next = list[ix + 1];
   const verbOptions = verbLessons().length ? `<optgroup label="Verbs">${verbLessons().map(l => `<option value="${l.id}" ${l.id === lesson.id ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')}</optgroup>` : '';
-  const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 Reading Latin-script Arabic</option>` + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
+  const guideOptions = guideLessons().length ? `<optgroup label="Grammar and culture">${guideLessons().map(l => `<option value="${l.id}" ${l.id === lesson.id ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')}</optgroup>` : '';
+  const options = `<option value="abc" ${lesson === ABC_LESSON ? 'selected' : ''}>🔤 Reading Latin-script Arabic</option>` + guideOptions + DATA.levels.map(lv => `<optgroup label="Level ${lv.n}: ${esc(lv.title)}">${
     lv.lessons.filter(ready).map(l => `<option value="${l.id}" ${l === lesson ? 'selected' : ''}>${l.icon} ${esc(l.title)}</option>`).join('')
   }</optgroup>`).join('') + verbOptions;
   const sections = `
-    <h2>${lesson === ABC_LESSON ? '' : lesson.verb ? 'Verb · ' : `Level ${levelOf(lesson.id).n} · `}${lesson.icon} ${esc(lesson.title)}</h2>
+    <h2>${lesson === ABC_LESSON ? '' : lesson.verb ? 'Verb · ' : lesson.topic ? 'Grammar and culture · ' : `Level ${levelOf(lesson.id).n} · `}${lesson.icon} ${esc(lesson.title)}</h2>
     <ul class="clips">${clipsFor(lesson).map(c => `
       <li data-id="${esc(c.id)}">
         <div class="clip-text">
@@ -753,6 +778,267 @@ async function viewStudio(lessonId) {
   };
 }
 
+// ---------- grammar and culture ----------
+// content/grammar.json is built from tools/grammar_src.txt. Each topic has sections made of
+// paragraphs, tips, tables and examples (examples have clip ids gr-<topic>-<nn>), then
+// common mistakes and a few practice questions.
+const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+const topicById = id => GUIDE?.topics.find(t => t.id === id);
+const sectionOf = t => GUIDE.groups.find(g => g.key === t.group).section;
+const topicsIn = section => GUIDE.topics.filter(t => sectionOf(t) === section);
+const exItem = b => `<li class="ex">${phrase(b)}${b.note ? `<small class="exnote">${esc(b.note)}</small>` : ''}
+  <button class="mini" data-clip="${esc(b.id)}" aria-label="Play">🔊</button></li>`;
+
+function viewGuide(section) {
+  const body = GUIDE.groups.filter(g => g.section === section).map(g => `
+    <h2>${esc(g.title)}</h2>
+    <section class="lessons">${GUIDE.topics.filter(t => t.group === g.key).map(t => {
+      const p = progress.get('topic-' + t.id);
+      return `<a class="lesson-card" href="#/topic/${t.id}"><span class="lesson-icon">${t.icon}</span>
+        <span class="lesson-text"><strong>${esc(t.title)}</strong><span>${esc(t.summary)}</span></span>
+        ${p ? `<span class="badge done">✓ ${p.best}/${p.total}</span>` : ''}</a>`;
+    }).join('')}</section>`).join('');
+  app.innerHTML = `
+    <a class="back" href="#/">← Home</a>
+    <h1>${section === 'culture' ? 'Culture' : 'Grammar'}</h1>
+    <p class="lead">${section === 'culture'
+      ? 'What to say back, the words you\'ll hear all day, and how things are done. The part most textbooks leave out.'
+      : 'How Lebanese works, explained in plain English, with tables and examples you can play.'}</p>
+    ${body}`;
+}
+
+function viewTopic(id) {
+  const t = topicById(id);
+  if (!t) return viewGuide('grammar');
+  const qs = t.quiz.map(c => ({ ...c, order: shuffle(c.options.map((x, k) => k)) }));
+  const picked = {};
+  let score = 0;
+  const cls = h => h === 'Latin' ? 't-arabizi' : h === 'Arabic' ? 't-arabic' : '';
+  const table = b => {
+    const c = b.head.map(cls);
+    const td = (x, i) => `<td class="${c[i]}" ${c[i] === 't-arabic' ? 'dir="rtl" lang="ar"' : ''}>${md(x)}</td>`;
+    return `<div class="tbl"><table>
+      <thead><tr>${b.head.map((h, i) => `<th class="${c[i]}">${esc(h)}</th>`).join('')}</tr></thead>
+      <tbody>${b.rows.map(r => `<tr>${r.map(td).join('')}</tr>`).join('')}</tbody></table></div>`;
+  };
+  const sectionHtml = s => {
+    let out = '', exs = [];
+    const flush = () => { if (exs.length) out += `<ul class="exs">${exs.map(exItem).join('')}</ul>`; exs = []; };
+    for (const b of s.blocks) {
+      if (b.type === 'ex') { exs.push(b); continue; }
+      flush();
+      if (b.type === 'p') out += `<p>${md(b.text)}</p>`;
+      else if (b.type === 'tip') out += `<p class="tip">💡 ${md(b.text)}</p>`;
+      else if (b.type === 'table') out += table(b);
+    }
+    flush();
+    return `<section class="gsec">${s.h ? `<h2>${esc(s.h)}</h2>` : ''}${out}</section>`;
+  };
+  const list = topicsIn(sectionOf(t));
+  const prev = list[list.indexOf(t) - 1], next = list[list.indexOf(t) + 1];
+  const section = sectionOf(t);
+
+  const render = () => {
+    const questions = qs.map((q, n) => {
+      const opts = q.order.map(k => {
+        let c = '';
+        if (picked[n] !== undefined) c = k === q.answer ? 'right' : (k === picked[n] ? 'wrong' : 'dim');
+        return `<button class="opt ${c}" data-q="${n}" data-k="${k}" ${picked[n] !== undefined ? 'disabled' : ''}><span class="t-english always">${esc(q.options[k])}</span></button>`;
+      }).join('');
+      return `<div class="card left qcard"><p class="ask">${n + 1}. ${esc(q.q)}</p><div class="opts">${opts}</div></div>`;
+    }).join('');
+    const finished = qs.length && Object.keys(picked).length === qs.length;
+    app.innerHTML = `
+      <a class="back" href="#/${section}">← ${section === 'culture' ? 'Culture' : 'Grammar'}</a>
+      <h1 class="lesson-title">${t.icon} ${esc(t.title)}</h1>
+      <p class="lead">${esc(t.summary)}</p>
+      <article class="guide">${t.sections.map(sectionHtml).join('')}</article>
+      ${t.mistakes.length ? `<div class="card left mistakes"><h2>⚠️ Common mistakes</h2><ul>${t.mistakes.map(m => `<li>${md(m)}</li>`).join('')}</ul></div>` : ''}
+      ${qs.length ? `<h2>✏️ Check yourself</h2>${questions}` : ''}
+      ${finished ? `<div class="card done"><h2>${score} / ${qs.length}</h2><p>${score === qs.length ? 'Ya3teek l 3afye! Perfect.' : 'Read the page again and try once more.'}</p>
+        <div class="row"><button class="btn ghost" data-act="again">Try again</button></div></div>` : ''}
+      <div class="nav">
+        ${prev ? `<a class="btn ghost" href="#/topic/${prev.id}">← ${esc(prev.title)}</a>` : '<span></span>'}
+        ${next ? `<a class="btn primary" href="#/topic/${next.id}">${esc(next.title)} →</a>` : '<span></span>'}
+      </div>`;
+    markMissing();
+    app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      const n = +b.dataset.q;
+      picked[n] = +b.dataset.k;
+      if (picked[n] === qs[n].answer) score++;
+      if (Object.keys(picked).length === qs.length) progress.complete('topic-' + t.id, score, qs.length);
+      const y = window.scrollY;
+      render();
+      window.scrollTo(0, y);
+    });
+    const again = app.querySelector('[data-act=again]');
+    if (again) again.onclick = () => {
+      for (const k of Object.keys(picked)) delete picked[k];
+      score = 0;
+      const y = window.scrollY;
+      render();
+      window.scrollTo(0, y);
+    };
+  };
+  render();
+}
+
+const guideLessons = () => (GUIDE?.topics || []).map(t => ({
+  id: 'topic-' + t.id, topic: true, icon: t.icon, title: t.title,
+  items: t.sections.flatMap(s => s.blocks.filter(b => b.type === 'ex')),
+}));
+
+// ---------- dictionary: one search over every lesson, verb and grammar example ----------
+let DICT = null;
+const norm = s => String(s || '').toLowerCase().normalize('NFD')
+  .replace(/[̀-ًͯ-ٰٟـ]/g, '') // accents, Arabic short vowels, shadda, tatweel
+  .replace(/[أإآٱ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي')
+  .replace(/[^\p{L}\p{N} ]/gu, ' ').replace(/\s+/g, ' ').trim();
+
+function buildDict() {
+  const out = [], seen = new Set();
+  const add = (e, where, href) => {
+    const k = (e.arabizi || '').toLowerCase();
+    if (!k || seen.has(k)) return;
+    seen.add(k);
+    out.push({ ...e, where, href, key: norm([e.arabizi, e.arabic, e.english, e.f?.arabizi, e.f?.arabic].join(' ')) });
+  };
+  for (const lv of DATA.levels) for (const l of lv.lessons.filter(ready))
+    for (const it of l.items) add(it, `Level ${lv.n} · ${l.title}`, '#/lesson/' + l.id);
+  for (const v of VERBS?.verbs || []) {
+    const he = v.forms.past[3], ana = v.forms.present[0];
+    add({ id: he.id, arabizi: he.latin, arabic: he.arabic, english: v.english }, 'Verbs', `#/verb/${v.id}/past`);
+    add({ id: ana.id, arabizi: ana.latin, arabic: ana.arabic, english: `I ${v.english.slice(3)} (every day)` }, 'Verbs', `#/verb/${v.id}/present`);
+  }
+  for (const t of GUIDE?.topics || [])
+    for (const s of t.sections) for (const b of s.blocks) if (b.type === 'ex') add(b, (sectionOf(t) === 'culture' ? 'Culture · ' : 'Grammar · ') + t.title, '#/topic/' + t.id);
+  return out;
+}
+
+function searchDict(q) {
+  const words = norm(q).split(' ').filter(Boolean);
+  if (!words.length) return [];
+  const full = norm(q);
+  const rank = e => {
+    const a = norm(e.arabizi), en = norm(e.english), ar = norm(e.arabic);
+    if (a === full || en === full || ar === full || en === 'to ' + full) return 0;
+    if (` ${e.key} `.includes(` ${full} `)) return 1; // a whole word: "go" finds "to go" before "good"
+    if (a.startsWith(full) || en.startsWith(full) || ar.startsWith(full)) return 2;
+    return 3;
+  };
+  return DICT.filter(e => words.every(w => e.key.includes(w)))
+    .map(e => [rank(e), e.arabizi.length, e]).sort((x, y) => x[0] - y[0] || x[1] - y[1]).map(x => x[2]);
+}
+
+function viewDictionary(q0 = '') {
+  DICT = DICT || buildDict();
+  const tries = ['coffee', '7elo', 'قهوة', 'tomorrow', 'go', 'expensive', 'kifak', 'mabrouk'];
+  app.innerHTML = `
+    <a class="back" href="#/">← Home</a>
+    <h1>Dictionary</h1>
+    <p class="lead">Search ${DICT.length.toLocaleString('en')} words and phrases from the whole site, in English, Latin letters or Arabic.</p>
+    <input id="q" class="search" type="search" placeholder="Search: coffee, 7elo, قهوة…" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div class="tries">${tries.map(w => `<button class="chip" data-try="${esc(w)}">${esc(w)}</button>`).join('')}</div>
+    <p class="muted" id="count"></p>
+    <ul class="exs" id="res"></ul>`;
+  const input = app.querySelector('#q'), res = app.querySelector('#res'), count = app.querySelector('#count');
+  let timer;
+  const run = () => {
+    const q = input.value.trim();
+    history.replaceState(null, '', '#/dictionary' + (q ? '/' + encodeURIComponent(q) : ''));
+    app.querySelector('.tries').hidden = !!q;
+    if (!q) { res.innerHTML = ''; count.textContent = ''; return; }
+    const hits = searchDict(q);
+    count.textContent = hits.length ? `${hits.length} found${hits.length > 60 ? ', showing the first 60' : ''}` : 'Nothing found. Try another spelling, or the English word.';
+    res.innerHTML = hits.slice(0, 60).map(e => `<li class="ex">${phrase(e)}
+      <small class="exnote"><a href="${e.href}">${esc(e.where)}</a></small>
+      <button class="mini" data-clip="${esc(e.id)}" aria-label="Play">🔊</button></li>`).join('');
+    markMissing(res);
+  };
+  input.oninput = () => { clearTimeout(timer); timer = setTimeout(run, 200); };
+  app.querySelectorAll('[data-try]').forEach(b => b.onclick = () => { input.value = b.dataset.try; run(); });
+  input.value = q0;
+  run();
+  if (!q0) input.focus({ preventScroll: true });
+}
+
+// ---------- review: flashcards with spaced repetition ----------
+// Cards are the examples of every lesson the learner has finished. Each session shows the
+// cards that are due plus up to 10 new ones. "Knew it" pushes a card days or weeks away.
+const REVIEW_NEW = 10, REVIEW_MAX = 25;
+const reviewPool = () => allLessons().filter(l => progress.get(l.id)).flatMap(l => l.items.map(it => ({ ...it, lesson: l })));
+const dueCount = () => {
+  const pool = reviewPool(), now = Date.now();
+  const due = pool.filter(c => { const s = srs.card(c.id); return s && s.due <= now; }).length;
+  return Math.min(due + Math.min(pool.filter(c => !srs.card(c.id)).length, REVIEW_NEW), REVIEW_MAX);
+};
+let reviewMode = (() => { try { return localStorage.getItem('ahla:reviewMode') || 'en'; } catch { return 'en'; } })();
+
+function viewReview() {
+  const pool = reviewPool();
+  if (!pool.length) {
+    app.innerHTML = `<a class="back" href="#/">← Home</a><h1>Review</h1>
+      <div class="card"><div class="pic">🧠</div>
+        <p>Your flashcards come from the lessons you finish. Do a lesson to the end of its quiz, and its words will wait for you here.</p>
+        <div class="row"><a class="btn primary" href="#/lessons">Go to the lessons</a></div></div>`;
+    return;
+  }
+  const now = Date.now();
+  const due = shuffle(pool.filter(c => { const s = srs.card(c.id); return s && s.due <= now; }));
+  const fresh = pool.filter(c => !srs.card(c.id)).slice(0, REVIEW_NEW);
+  const queue = due.concat(fresh).slice(0, REVIEW_MAX);
+  const boxes = pool.map(c => srs.card(c.id)?.box || 0);
+  const known = boxes.filter(b => b >= 4).length, learning = boxes.filter(b => b > 0 && b < 4).length;
+  const stats = `<div class="stats"><span><b>${pool.length}</b> cards</span><span><b>${known}</b> known well</span><span><b>${learning}</b> learning</span><span><b>${boxes.filter(b => !b).length}</b> new</span></div>`;
+  let shown = false, doneCount = 0;
+  const total = queue.length;
+
+  const render = () => {
+    const c = queue[0];
+    if (!c) {
+      const next = pool.map(x => srs.card(x.id)?.due).filter(Boolean).sort((a, b) => a - b)[0];
+      const days = next ? Math.max(1, Math.round((next - Date.now()) / 864e5)) : 0;
+      app.innerHTML = `<a class="back" href="#/">← Home</a><h1>Review</h1>${stats}
+        <div class="card done"><div class="pic">🎉</div><h2>All done for today</h2>
+          <p>${doneCount ? `You reviewed ${doneCount} cards. ` : ''}${next ? `The next cards are due in ${days} day${days > 1 ? 's' : ''}.` : ''} Finish more lessons to add new words.</p>
+          <div class="row"><a class="btn primary" href="#/lessons">Lessons</a></div></div>`;
+      return;
+    }
+    const front = reviewMode === 'en'
+      ? `<div class="pic">${c.pic || '🗨️'}</div><p class="ask big-ask">${esc(c.english)}</p><p class="muted">How do you say it in Lebanese?</p>`
+      : `<div class="pic">${c.pic || '🗨️'}</div><div class="no-en">${phrase({ arabizi: c.arabizi, arabic: c.arabic }, { big: true })}</div><p class="muted">What does it mean?</p>`;
+    app.innerHTML = `
+      <a class="back" href="#/">← Home</a>
+      <h1>Review</h1>
+      ${stats}
+      <div class="seg"><span>Show me:</span>
+        <button class="chip" data-mode="en" aria-pressed="${reviewMode === 'en'}">English first</button>
+        <button class="chip" data-mode="lb" aria-pressed="${reviewMode === 'lb'}">Lebanese first</button></div>
+      <p class="count">${doneCount + 1} of ${total}${queue.length > total - doneCount ? ' (and a few to repeat)' : ''}</p>
+      <div class="card flash">
+        ${front}
+        ${shown ? `<div class="answer">${phrase(c, { big: true })}${c.note ? `<p class="muted">${esc(c.note)}</p>` : ''}
+          <div class="row">${playBtn(c.id)}</div>
+          <p class="muted small">From <a href="#/lesson/${c.lesson.id}">${esc(c.lesson.title)}</a></p></div>` : ''}
+      </div>
+      <div class="row">${shown
+        ? `<button class="btn ghost bad" data-act="again">✗ Again</button><button class="btn primary" data-act="knew">✓ I knew it</button>`
+        : `<button class="btn primary big" data-act="show">Show the answer</button>`}</div>`;
+    markMissing();
+    if (shown) audio.play(c.id);
+    app.querySelectorAll('[data-mode]').forEach(b => b.onclick = () => {
+      reviewMode = b.dataset.mode;
+      try { localStorage.setItem('ahla:reviewMode', reviewMode); } catch { /* fine */ }
+      render();
+    });
+    const act = (name, fn) => { const b = app.querySelector(`[data-act=${name}]`); if (b) b.onclick = fn; };
+    act('show', () => { shown = true; render(); });
+    act('knew', () => { srs.grade(c.id, true); queue.shift(); doneCount++; shown = false; render(); });
+    act('again', () => { srs.grade(c.id, false); queue.push(queue.shift()); shown = false; render(); });
+  };
+  render();
+}
+
 // ---------- router ----------
 function showError(err) {
   console.error(err);
@@ -765,11 +1051,11 @@ function route() {
   const [, page, arg, arg2] = location.hash.split('/');
   window.scrollTo(0, 0);
   audio.stop();
-  const section = { lessons: 'lessons', level: 'lessons', lesson: 'lessons', talks: 'talks', talk: 'talks', verbs: 'verbs', verb: 'verbs', verbquiz: 'verbs', studio: 'studio', about: 'about' }[page] || '';
+  const section = { lessons: 'lessons', level: 'lessons', lesson: 'lessons', talks: 'talks', talk: 'talks', verbs: 'verbs', verb: 'verbs', verbquiz: 'verbs', grammar: 'grammar', culture: 'culture', topic: GUIDE && topicById(arg) ? sectionOf(topicById(arg)) : 'grammar', dictionary: 'dictionary', review: 'review', studio: 'studio', about: 'about' }[page] || '';
   document.querySelectorAll('.mainnav a').forEach(a => {
     a.classList.toggle('on', (a.getAttribute('href').split('/')[1] || '') === section);
   });
-  document.body.classList.toggle('no-toggles', !['lesson', 'talk', 'verb', 'verbquiz'].includes(page));
+  document.body.classList.toggle('no-toggles', !['lesson', 'talk', 'verb', 'verbquiz', 'topic', 'dictionary', 'review'].includes(page));
   try {
     if (page === 'lesson') viewLesson(arg);
     else if (page === 'level') viewLevel(arg);
@@ -781,12 +1067,16 @@ function route() {
     else if (page === 'verbs' && VERBS) viewVerbs();
     else if (page === 'verb' && VERBS) viewVerb(arg, arg2);
     else if (page === 'verbquiz' && VERBS) viewVerbQuiz(arg);
+    else if ((page === 'grammar' || page === 'culture') && GUIDE) viewGuide(page);
+    else if (page === 'topic' && GUIDE) viewTopic(arg);
+    else if (page === 'dictionary') viewDictionary(arg ? decodeURIComponent(arg) : '');
+    else if (page === 'review') viewReview();
     else viewHome();
   } catch (err) { showError(err); }
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 41;
+const VERSION = 43;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -808,9 +1098,10 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=41', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=43', { cache: 'no-cache' })).json();
     // Verbs are optional: if the file fails to load, the rest of the site still works.
-    VERBS = await fetch('content/verbs.json?v=41', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    VERBS = await fetch('content/verbs.json?v=43', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    GUIDE = await fetch('content/grammar.json?v=43', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;

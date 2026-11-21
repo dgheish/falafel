@@ -51,9 +51,31 @@ try:
 except FileNotFoundError:
     pass
 
+# Grammar and culture pages (built from tools/grammar_src.txt). French words like "ça va" are fine here.
+GRAMMAR_OK = re.compile(r"^[A-Za-z0-9 .,!?'\-éèçà…():/]*$")
+grammar_clips = 0
+try:
+    gd = json.load(open('content/grammar.json'))
+    for t in gd['topics']:
+        for sec in t['sections']:
+            for b in sec['blocks']:
+                if b['type'] != 'ex':
+                    continue
+                grammar_clips += 1
+                if b['id'] in seen:
+                    errors.append(f"duplicate clip id: {b['id']}")
+                seen.add(b['id'])
+                if not GRAMMAR_OK.match(b['arabizi']):
+                    errors.append(f"{b['id']}: odd character in arabizi: {b['arabizi']!r}")
+        for q in t['quiz']:
+            if not 0 <= q['answer'] < len(q['options']):
+                errors.append(f"{t['id']}: question answer out of range: {q['q']}")
+except FileNotFoundError:
+    pass
+
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
 lessons = [l for lv in d['levels'] for l in lv['lessons'] if not l.get('soon')]
 fem = sum(1 for l in lessons for i in l['items'] if 'f' in i)
-print(f'OK: {len(lessons)} lessons, {len(ids) + fem} lesson clips + {verb_clips} verb clips to record')
+print(f'OK: {len(lessons)} lessons, {len(ids) + fem} lesson clips + {verb_clips} verb clips + {grammar_clips} grammar clips to record')
