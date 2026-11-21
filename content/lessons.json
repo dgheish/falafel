@@ -28463,7 +28463,7 @@
     {
       "n": 10,
       "title": "Talk like a native",
-      "goal": "Full conversations with a native speaker at natural speed, slang and code-switching.",
+      "goal": "Paragraphs at native level: stories, slang, mixing French and English, and Lebanese life.",
       "lessons": [
         {
           "id": "lv10-01",
@@ -28473,75 +28473,45 @@
           "items": [
             {
               "id": "lv10-01-01",
-              "arabizi": "shu l wad3?",
-              "arabic": "شو الوضع؟",
-              "english": "What's up? / how are things?",
-              "pic": "😎"
+              "arabizi": "shu ya shabeb, kifkon? sarlna zamen ma 2a3adna sawa. ana ktir mashghoul ma3 el shoghol, ma fi wa2t la shi. yalla, khallina notlob ahwe w nballesh el 7ake.",
+              "arabic": "شو يا شباب، كيفكن؟ صرلنا زمان ما قعدنا سوا. أنا كتير مشغول مع الشغل، ما في وقت لشي. يلّا، خلّينا نطلب قهوة ونبلّش الحكي.",
+              "english": "Hey guys, how are you? It's been ages since we sat together. I'm really busy with work, no time for anything. Come on, let's order coffee and start chatting.",
+              "pic": "☕"
             },
             {
               "id": "lv10-01-02",
-              "arabizi": "3al 7awa",
-              "arabic": "عالحوا",
-              "english": "Hanging in there / so-so",
-              "pic": "🤷",
-              "note": "Very casual."
+              "arabizi": "walla Rami ma byetsadda2. 2al enno ra7 yfell 3a Canada, bas sarlo sene 3am y2oul hayk. kel jem3a 3ando plan jdid. ma ba2a 7ada 3am ysadd2o!",
+              "arabic": "والله رامي ما بيتصدّق. قال إنّو رح يفلّ عكندا، بس صرلو سنة عم يقول هيك. كل جمعة عندو plan جديد. ما بقى حدا عم يصدّقو!",
+              "english": "Honestly, Rami is unbelievable. He said he's leaving for Canada, but he's been saying that for a year. Every week he has a new plan. Nobody believes him anymore!",
+              "pic": "🙄"
             },
             {
               "id": "lv10-01-03",
-              "arabizi": "ya zalame!",
-              "arabic": "يا زلمة!",
-              "english": "Oh man! / mate!",
-              "pic": "🙌",
-              "note": "To a man. Shows surprise or friendliness."
+              "arabizi": "shefto el match mbere7? ana kent 3am shoufo bel ahwe ma3 el shabeb. lamma fet el goal, kel el ma7all tele3 3al tawlet. el garson ken ra7 yjenn!",
+              "arabic": "شفتو الماتش مبارح؟ أنا كنت عم شوفو بالقهوة مع الشباب. لمّا فات الـ goal، كل المحلّ طلع عالطاولات. الغرسون كان رح يجنّ!",
+              "english": "Did you see the match yesterday? I was watching it at the café with the guys. When the goal went in, the whole place climbed on the tables. The waiter was about to lose it!",
+              "pic": "⚽"
             },
             {
               "id": "lv10-01-04",
-              "arabizi": "shu fi ma fi?",
-              "arabic": "شو في ما في؟",
-              "english": "What's new?",
-              "pic": "🗞️"
+              "arabizi": "ya3ne shu baddak ta3mel? el wad3 hayk, ma fi shi bitghayyar. bas ne7na mnedal nedhak w nsahar. hayda sirrna, ne7na el lebnenyin.",
+              "arabic": "يعني شو بدّك تعمل؟ الوضع هيك، ما في شي بيتغيّر. بس نحنا منضلّ نضحك ونسهر. هيدا سرّنا، نحنا اللبنانيّين.",
+              "english": "I mean, what can you do? That's the situation, nothing changes. But we keep laughing and going out. That's our secret, us Lebanese.",
+              "pic": "😄"
             },
             {
               "id": "lv10-01-05",
-              "arabizi": "walla?",
-              "arabic": "والله؟",
-              "english": "Really? / seriously?",
-              "pic": "😮"
+              "arabizi": "Maya 3am te7kina 3an el date taba3a mbere7. 2alet enno el shabb ken ktir 7elo bas ma sakkar temmo kel el leile. 7ake 3an 7alo w bas! ma 3ad ra7 tshoufo.",
+              "arabic": "مايا عم تحكينا عن الـ date تبعا مبارح. قالت إنّو الشبّ كان كتير حلو بس ما سكّر تمّو كل الليلة. حكي عن حالو وبس! ما عاد رح تشوفو.",
+              "english": "Maya is telling us about her date yesterday. She said the guy was very handsome but didn't shut up all night. Talked about himself and that's it! She won't see him again.",
+              "pic": "🙊"
             },
             {
               "id": "lv10-01-06",
-              "arabizi": "tayyeb, kammel",
-              "arabic": "طيّب، كمّل",
-              "english": "OK, go on",
-              "pic": "▶️"
-            },
-            {
-              "id": "lv10-01-07",
-              "arabizi": "ma t2oul!",
-              "arabic": "ما تقول!",
-              "english": "You don't say!",
-              "pic": "😲"
-            },
-            {
-              "id": "lv10-01-08",
-              "arabizi": "khalas, 3ade",
-              "arabic": "خلص، عادي",
-              "english": "Fine, whatever / no big deal",
-              "pic": "🤷"
-            },
-            {
-              "id": "lv10-01-09",
-              "arabizi": "3a2le!",
-              "arabic": "عقلي!",
-              "english": "That's crazy! (in a good way)",
-              "pic": "🤯"
-            },
-            {
-              "id": "lv10-01-10",
-              "arabizi": "yalla, mnshoufkon",
-              "arabic": "يلّا، منشوفكن",
-              "english": "OK, see you all",
-              "pic": "👋"
+              "arabizi": "yalla, el 7seb 3leye. la2, la2, ma fik! akid fiye. walla ma bisir, el marra el madye enta dafa3t. khalas, w el marra el jeye 3leik. mettfe2in?",
+              "arabic": "يلّا، الحساب عليّ. لأ، لأ، ما فيك! أكيد فيي. والله ما بيصير، المرّة الماضية إنت دفعت. خلص، والمرّة الجايي عليك. متّفقين؟",
+              "english": "Come on, the bill's on me. No, no, you can't! Of course I can. No way, last time you paid. Fine, and next time it's on you. Deal?",
+              "pic": "💸"
             }
           ],
           "dialogue": [
@@ -28661,75 +28631,45 @@
           "items": [
             {
               "id": "lv10-02-01",
-              "arabizi": "yalla 3al sefra, l akl berd!",
-              "arabic": "يلّا عالسفرة، الأكل برد!",
-              "english": "Come to the table, the food is getting cold!",
-              "pic": "🍽️"
+              "arabizi": "kel a7ad, el 3ayle kella btejtime3 3and teta. el sob7 mnes7a 3a ri7et el akel. teta men el se3a sab3a bel matbakh, w ma bte2bal 7ada ysa3eda. \"rou7o 2e3do, ana ba3mel!\"",
+              "arabic": "كل أحد، العيلة كلّا بتجتمع عند تيتا. الصبح منصحى عريحة الأكل. تيتا من الساعة سبعة بالمطبخ، وما بتقبل حدا يساعدا. \"روحو اقعدو، أنا بعمل!\"",
+              "english": "Every Sunday, the whole family gathers at grandma's. In the morning we wake up to the smell of food. Grandma has been in the kitchen since seven, and won't let anyone help her. \"Go sit down, I'll do it!\"",
+              "pic": "👵"
             },
             {
               "id": "lv10-02-02",
-              "arabizi": "kol, ma akalt shi",
-              "arabic": "كول، ما أكلت شي",
-              "english": "Eat, you haven't eaten anything",
-              "pic": "😋"
+              "arabizi": "el tawle tawile ktir: tabbouleh, 7ommos, kebbe nayye, w ma2loube bel nos. el wled 3am yrkodo bel jneine, w el kbar 3am yet2atalo 3al siyase.",
+              "arabic": "الطاولة طويلة كتير: تبّولة، حمّص، كبّة نيّة، ومقلوبة بالنصّ. الولاد عم يركضو بالجنينة، والكبار عم يتقاتلو عالسياسة.",
+              "english": "The table is very long: tabbouleh, hummus, raw kibbeh, and maqluba in the middle. The kids are running in the garden, and the grown-ups are fighting about politics.",
+              "pic": "🍽️"
             },
             {
               "id": "lv10-02-03",
-              "arabizi": "ya 2albe, shu mnaz2a!",
-              "arabic": "يا قلبي، شو منزّقة!",
-              "english": "My dear, you're so thin!",
-              "pic": "🥺",
-              "note": "Teta's favourite worry."
+              "arabizi": "3ammo Joseph dayman bi2oul nafs el nekte. kel el nes bta3refa, bas mnedhak kel marra. w bel akhir byes2al: \"emta ra7 tetjawwaz?\" el sou2al el ma byekhlas.",
+              "arabic": "عمّو جوزيف دايماً بيقول نفس النكتة. كل الناس بتعرفا، بس منضحك كل مرّة. وبالآخر بيسأل: \"إيمتى رح تتجوّز؟\" السؤال يلّي ما بيخلص.",
+              "english": "Uncle Joseph always tells the same joke. Everyone knows it, but we laugh every time. And in the end he asks: \"When are you getting married?\" The question that never ends.",
+              "pic": "🤣"
             },
             {
               "id": "lv10-02-04",
-              "arabizi": "emta badkon tetjawwazo?",
-              "arabic": "إيمتى بدكن تتجوّزوا؟",
-              "english": "When are you getting married?",
-              "pic": "💍",
-              "note": "The question every single person dreads."
+              "arabizi": "ba3d el ghada, kel wa7ad bi2oul \"ana ra7 nem shway\". bas ma 7ada bynem. bisirro 3al ahwe w el argile, w bi2a3do la el masa.",
+              "arabic": "بعد الغدا، كل واحد بيقول \"أنا رح نام شوي\". بس ما حدا بينام. بيصرّو عالقهوة والأرگيلة، وبيقعدو للمسا.",
+              "english": "After lunch, everyone says \"I'm going to nap a bit\". But nobody sleeps. They insist on coffee and the argileh, and stay till the evening.",
+              "pic": "💨"
             },
             {
               "id": "lv10-02-05",
-              "arabizi": "w l wled? emta?",
-              "arabic": "والولاد؟ إيمتى؟",
-              "english": "And kids? When?",
-              "pic": "👶"
+              "arabizi": "w lamma badna nfell, teta bt3abbe el 3elab: \"khodo hayda la bukra, w hayda lal wled\". mnefell bel sayyara malyane akel la jem3a.",
+              "arabic": "ولمّا بدنا نفلّ، تيتا بتعبّي العلب: \"خودو هيدا لبكرا، وهيدا للولاد\". منفلّ بالسيّارة مليانة أكل لجمعة.",
+              "english": "And when we want to leave, grandma fills the containers: \"take this for tomorrow, and this for the kids\". We leave with the car full of food for a week.",
+              "pic": "🥡"
             },
             {
               "id": "lv10-02-06",
-              "arabizi": "ma 3am tzourouna!",
-              "arabic": "ما عم تزورونا!",
-              "english": "You never visit us!",
-              "pic": "😤"
-            },
-            {
-              "id": "lv10-02-07",
-              "arabizi": "3ammo, 3atine l khebez",
-              "arabic": "عمّو، عطيني الخبز",
-              "english": "Uncle, pass me the bread",
-              "pic": "🍞"
-            },
-            {
-              "id": "lv10-02-08",
-              "arabizi": "kelna 3am ne7ke sawa",
-              "arabic": "كلنا عم نحكي سوا",
-              "english": "We're all talking at once",
-              "pic": "🗣️"
-            },
-            {
-              "id": "lv10-02-09",
-              "arabizi": "ma ba2a fiye ekol wala lo2me",
-              "arabic": "ما بقى فيي إكل ولا لقمة",
-              "english": "I can't eat another bite",
-              "pic": "🤚"
-            },
-            {
-              "id": "lv10-02-10",
-              "arabizi": "l 2ahwe w l 7elo ba3d shway",
-              "arabic": "القهوة والحلو بعد شوي",
-              "english": "Coffee and dessert in a bit",
-              "pic": "☕"
+              "arabizi": "el ghada el a7ad mesh bas akel. hayda el wa2t el wa7id el kel el 3ayle betshouf ba3da. w ba3d ma safaro nos el wled, sar ahamm men 2abel.",
+              "arabic": "الغدا الأحد مش بس أكل. هيدا الوقت الوحيد يلّي كل العيلة بتشوف بعضا. وبعد ما سافرو نصّ الولاد، صار أهمّ من قبل.",
+              "english": "Sunday lunch isn't just food. It's the only time the whole family sees each other. And since half the kids emigrated, it's become more important than before.",
+              "pic": "❤️"
             }
           ],
           "dialogue": [
@@ -28849,74 +28789,45 @@
           "items": [
             {
               "id": "lv10-03-01",
-              "arabizi": "ken ya ma ken",
-              "arabic": "كان يا ما كان",
-              "english": "Once upon a time",
-              "pic": "📖"
+              "arabizi": "jeddo ken y7kina 3an Beirut bel sittinet. kenet \"Paris el shar2\". el nes kenet tenzal 3a Hamra bel leil, w el cinemat kenet malyane. kel el 3alam kenet tejje la hon.",
+              "arabic": "جدّو كان يحكينا عن بيروت بالستّينات. كانت \"باريس الشرق\". الناس كانت تنزل عالحمرا بالليل، والسينمات كانت مليانة. كل العالم كانت تجي لهون.",
+              "english": "Grandpa used to tell us about Beirut in the sixties. It was \"the Paris of the East\". People went down to Hamra at night, and the cinemas were full. The whole world came here.",
+              "pic": "🎞️"
             },
             {
               "id": "lv10-03-02",
-              "arabizi": "bi haydak l zaman",
-              "arabic": "بهيداك الزمان",
-              "english": "In those days",
-              "pic": "⏳"
-            },
-            {
-              "id": "lv10-03-03",
-              "arabizi": "Beirut kenet ma7all tene",
-              "arabic": "بيروت كانت محلّ تاني",
-              "english": "Beirut was another place",
-              "pic": "🏙️"
-            },
-            {
-              "id": "lv10-03-04",
-              "arabizi": "kenna neshrab ahwe bel Hamra la noss l leil",
-              "arabic": "كنّا نشرب قهوة بالحمرا لنص الليل",
-              "english": "We used to drink coffee in Hamra until midnight",
-              "pic": "☕"
-            },
-            {
-              "id": "lv10-03-05",
-              "arabizi": "l tram ken yemro2 bel balad",
-              "arabic": "الترام كان يمرق بالبلد",
-              "english": "The tram used to pass through downtown",
-              "pic": "🚋"
-            },
-            {
-              "id": "lv10-03-06",
-              "arabizi": "swisra l sharq",
-              "arabic": "سويسرا الشرق",
-              "english": "The Switzerland of the East",
-              "pic": "🏔️",
-              "note": "What Lebanon was called in the 1960s."
-            },
-            {
-              "id": "lv10-03-07",
-              "arabizi": "l nes kenet t3ish sawa",
-              "arabic": "الناس كانت تعيش سوا",
-              "english": "People lived together",
-              "pic": "🤝"
-            },
-            {
-              "id": "lv10-03-08",
-              "arabizi": "ba3dein ejet l 7arb",
-              "arabic": "بعدين إجت الحرب",
-              "english": "Then the war came",
+              "arabizi": "emme bt2oul enno bel 7arb kenu ynemo bel malja2. kenet zghire w ma tefham shi. bas btetzakkar el sham3 w el 2esas el kenet jarta t7kilon.",
+              "arabic": "إمّي بتقول إنّو بالحرب كانو يناموا بالملجأ. كانت زغيرة وما تفهم شي. بس بتتذكّر الشمع والقصص يلّي كانت جارتا تحكيلن.",
+              "english": "My mum says that during the war they slept in the shelter. She was small and didn't understand anything. But she remembers the candles and the stories her neighbour used to tell them.",
               "pic": "🕯️"
             },
             {
-              "id": "lv10-03-09",
-              "arabizi": "bas Beirut dayman btoum men jdid",
-              "arabic": "بس بيروت دايمًا بتقوم من جديد",
-              "english": "But Beirut always rises again",
-              "pic": "🌱"
+              "id": "lv10-03-03",
+              "arabizi": "mbere7 kent b Gemmayze. el darj el 2adim, el beyout el 7amra w el balakin el 2adime. bas fi kamen bars w nes men kel el 3alam. Beirut dayman bterja3, metl el fini2.",
+              "arabic": "مبارح كنت بالجمّيزة. الدرج القديم، البيوت الحمرا والبلاكين القديمة. بس في كمان bars وناس من كل العالم. بيروت دايماً بترجع، متل الفينيق.",
+              "english": "Yesterday I was in Gemmayze. The old stairs, the red houses and the old balconies. But there are also bars and people from all over the world. Beirut always comes back, like the phoenix.",
+              "pic": "🔥"
             },
             {
-              "id": "lv10-03-10",
-              "arabizi": "ya7ayf!",
-              "arabic": "يا حيف!",
-              "english": "What a shame! / those were the days!",
-              "pic": "🥹"
+              "id": "lv10-03-04",
+              "arabizi": "bel souk el 2adim b Burj Hammoud, fi ri7et baharat w ahwe. el armen 3am yeshteghlo bel dahab w el khayyata. w ahyanan btesma3 armane b nos el 3arabe.",
+              "arabic": "بالسوق القديم ببرج حمّود، في ريحة بهارات وقهوة. الأرمن عم يشتغلو بالدهب والخياطة. وأحياناً بتسمع أرمني بنصّ العربي.",
+              "english": "In the old market in Bourj Hammoud, there's a smell of spices and coffee. Armenians work in gold and tailoring. And sometimes you hear Armenian in the middle of Arabic.",
+              "pic": "🧵"
+            },
+            {
+              "id": "lv10-03-05",
+              "arabizi": "lamma kent zghir, kenna nel3ab football bel shere3. ma ken fi sayyarat ktir. hala2 ma fi ma7all la temshe, kel shi sayyarat w 3aj2a. el wled 3am yel3abo 3al telephone.",
+              "arabic": "لمّا كنت زغير، كنّا نلعب football بالشارع. ما كان في سيّارات كتير. هلّق ما في محلّ لتمشي، كل شي سيّارات وعجقة. الولاد عم يلعبو عالتلفون.",
+              "english": "When I was little, we played football in the street. There weren't many cars. Now there's no room to walk, it's all cars and traffic. Kids play on their phones.",
+              "pic": "📱"
+            },
+            {
+              "id": "lv10-03-06",
+              "arabizi": "Beirut madine btet3abak w bt7ebba bnafs el wa2t. bel nhar btkoun 3aj2a w sho2, w bel leil btsir a7la madine bel denye. ma fi metla.",
+              "arabic": "بيروت مدينة بتتعبك وبتحبّا بنفس الوقت. بالنهار بتكون عجقة وشوب، وبالليل بتصير أحلى مدينة بالدنيا. ما في متلا.",
+              "english": "Beirut is a city that exhausts you and that you love at the same time. By day it's crowded and hot, and at night it becomes the most beautiful city in the world. There's nothing like it.",
+              "pic": "🌃"
             }
           ],
           "dialogue": [
@@ -29022,73 +28933,45 @@
           "items": [
             {
               "id": "lv10-04-01",
-              "arabizi": "sme3te shu sar?",
-              "arabic": "سمعتي شو صار؟",
-              "english": "Did you hear what happened?",
-              "pic": "👂"
-            },
-            {
-              "id": "lv10-04-02",
-              "arabizi": "ma t2ouli la 7ada",
-              "arabic": "ما تقولي لحدا",
-              "english": "Don't tell anyone",
+              "arabizi": "sme3to el khabar? Nadine w Tony fere2o! ana sme3t men ekhta, w hiyye sem3et men emma. bas ma t2oulo enno ana 2elt, ok?",
+              "arabic": "سمعتو الخبر؟ نادين وطوني فرقو! أنا سمعت من أختا، وهيّي سمعت من إمّا. بس ما تقولو إنّو أنا قلت، ok؟",
+              "english": "Did you hear the news? Nadine and Tony broke up! I heard it from her sister, and she heard it from her mum. But don't say I told you, ok?",
               "pic": "🤫"
             },
             {
+              "id": "lv10-04-02",
+              "arabizi": "ya 7aram! leish? sarlon sette snin sawa. 2alo enno huwwe ken bi7ke ma3 wa7de tenye 3al Instagram. bas ana ma ba3ref, mumken ykoun kalem nes.",
+              "arabic": "يا حرام! ليش؟ صرلن ستّ سنين سوا. قالو إنّو هوّي كان بيحكي مع وحدة تانية عالـ Instagram. بس أنا ما بعرف، ممكن يكون كلام ناس.",
+              "english": "Oh no! Why? They've been together six years. They say he was talking to another woman on Instagram. But I don't know, it might just be gossip.",
+              "pic": "😮"
+            },
+            {
               "id": "lv10-04-03",
-              "arabizi": "bayne w baynik",
-              "arabic": "بيني وبينك",
-              "english": "Between you and me",
-              "pic": "🤐"
+              "arabizi": "el jare taba3na shtara sayyara jdide, mercedes. men wein jab el masari? kel el bineye 3am tes2al. Emm Georges bt2oul enno ebno bel khalij.",
+              "arabic": "الجار تبعنا اشترى سيّارة جديدة، مرسيدس. من وين جاب المصاري؟ كل البناية عم تسأل. أم جورج بتقول إنّو ابنو بالخليج.",
+              "english": "Our neighbour bought a new car, a Mercedes. Where did he get the money? The whole building is asking. Umm Georges says his son is in the Gulf.",
+              "pic": "🚘"
             },
             {
               "id": "lv10-04-04",
-              "arabizi": "2alouli enno...",
-              "arabic": "قالولي إنّو...",
-              "english": "They told me that...",
-              "pic": "🗣️"
+              "arabizi": "bel dei3a, el khabar byemshe asra3 men el internet. iza 3atast el sob7, el masa kel el dei3a bta3ref, w btes2alak \"nshalla ma ykoun Corona\".",
+              "arabic": "بالضيعة، الخبر بيمشي أسرع من الـ internet. إذا عطست الصبح، المسا كل الضيعة بتعرف، وبتسألك \"إن شاء الله ما يكون كورونا\".",
+              "english": "In the village, news travels faster than the internet. If you sneeze in the morning, by the evening the whole village knows, and asks you \"hopefully it's not Covid\".",
+              "pic": "🤧"
             },
             {
               "id": "lv10-04-05",
-              "arabizi": "ma ba3ref iza mazbout",
-              "arabic": "ما بعرف إذا مظبوط",
-              "english": "I don't know if it's true",
-              "pic": "🤷‍♀️"
+              "arabizi": "ma ba7ebb el 7ake 3al nes, bas... sme3te shu sar bel 3ers mbere7? el 3arous ejet met2akhkhra se3tein, w emm el 3aris kenet 3am tghle!",
+              "arabic": "ما بحبّ الحكي عالناس، بس... سمعتي شو صار بالعرس مبارح؟ العروس إجت متأخّرة ساعتين، وإمّ العريس كانت عم تغلي!",
+              "english": "I don't like talking about people, but... did you hear what happened at the wedding yesterday? The bride arrived two hours late, and the groom's mother was fuming!",
+              "pic": "💍"
             },
             {
               "id": "lv10-04-06",
-              "arabizi": "l 7ake 3am yedour",
-              "arabic": "الحكي عم يدور",
-              "english": "People are talking",
-              "pic": "🌀"
-            },
-            {
-              "id": "lv10-04-07",
-              "arabizi": "ya 3ayb l shoum!",
-              "arabic": "يا عيب الشوم!",
-              "english": "How shameful!",
-              "pic": "😳"
-            },
-            {
-              "id": "lv10-04-08",
-              "arabizi": "ana ma 2elt shi!",
-              "arabic": "أنا ما قلت شي!",
-              "english": "I didn't say anything!",
-              "pic": "🙊"
-            },
-            {
-              "id": "lv10-04-09",
-              "arabizi": "7atta ma ykoun 7ake",
-              "arabic": "حتّى ما يكون حكي",
-              "english": "So there's no gossip",
-              "pic": "🚫"
-            },
-            {
-              "id": "lv10-04-10",
-              "arabizi": "kel l 7ara 3erfet",
-              "arabic": "كل الحارة عرفت",
-              "english": "The whole neighbourhood knows",
-              "pic": "🏘️"
+              "arabizi": "khalas, bikaffe 7ake 3al nes. kel wa7ad 3ando mashakilo. 3ayb nedhak 3a 7ada, mumken bukra ne7na nkoun ma7allo.",
+              "arabic": "خلص، بيكفّي حكي عالناس. كل واحد عندو مشاكلو. عيب نضحك على حدا، ممكن بكرا نحنا نكون محلّو.",
+              "english": "Ok, enough talking about people. Everyone has their problems. It's wrong to laugh at someone, tomorrow we might be in their place.",
+              "pic": "✋"
             }
           ],
           "dialogue": [
@@ -29201,74 +29084,45 @@
           "items": [
             {
               "id": "lv10-05-01",
-              "arabizi": "sme3et l akhbar l yom?",
-              "arabic": "سمعت الأخبار اليوم؟",
-              "english": "Did you hear the news today?",
-              "pic": "📻"
-            },
-            {
-              "id": "lv10-05-02",
-              "arabizi": "l wad3 mish mni7",
-              "arabic": "الوضع مش منيح",
-              "english": "The situation isn't good",
-              "pic": "😟"
-            },
-            {
-              "id": "lv10-05-03",
-              "arabizi": "l dollar tele3",
-              "arabic": "الدولار طلع",
-              "english": "The dollar went up",
+              "arabizi": "sme3t el akhbar el yom? el dollar tele3 kamen. el as3ar 3am tetla3 kel yom, w el ma3ashet matra7on. ma ba3ref kif el nes 3am t3ish.",
+              "arabic": "سمعت الأخبار اليوم؟ الدولار طلع كمان. الأسعار عم تطلع كل يوم، والمعاشات مطرحن. ما بعرف كيف الناس عم تعيش.",
+              "english": "Did you hear the news today? The dollar went up again. Prices go up every day, and salaries stay where they are. I don't know how people are living.",
               "pic": "📈"
             },
             {
+              "id": "lv10-05-02",
+              "arabizi": "2alo bel news enno ra7 ykoun fi 3aseffe bukra. el talj ra7 yenzal 3al alf w khams miyye metr. iza tale3 3al jabal, khod jnezir lal dawaleb.",
+              "arabic": "قالو بالـ news إنّو رح يكون في عاصفة بكرا. التلج رح ينزل عالألف وخمس مية متر. إذا طالع عالجبل، خود جنازير للدواليب.",
+              "english": "They said on the news there'll be a storm tomorrow. Snow will fall down to fifteen hundred metres. If you're going up the mountain, take chains for the tyres.",
+              "pic": "🌨️"
+            },
+            {
+              "id": "lv10-05-03",
+              "arabizi": "ma ba2a esma3 el akhbar. kella akhbar we7she. ba3d el 3asha, b7ott Netflix w bensa el denye. bas emme btedall 3al TV la nos el leil.",
+              "arabic": "ما بقى اسمع الأخبار. كلّا أخبار وحشة. بعد العشا، بحطّ Netflix وبنسى الدنيا. بس إمّي بتضلّ عالتلفزيون لنصّ الليل.",
+              "english": "I don't listen to the news anymore. It's all bad news. After dinner, I put on Netflix and forget the world. But my mum stays in front of the TV till midnight.",
+              "pic": "📺"
+            },
+            {
               "id": "lv10-05-04",
-              "arabizi": "ma fi 7all",
-              "arabic": "ما في حلّ",
-              "english": "There's no solution",
-              "pic": "🤷"
+              "arabizi": "fi 2anoun jdid lal sayyarat. kel wa7ad lezim yerbot el 7zem w ma yi7ke 3al telephone. bas mnshouf iza 7ada ra7 ytabb2o. hon el 2awanin btetla3 w btenzal.",
+              "arabic": "في قانون جديد للسيّارات. كل واحد لازم يربط الحزام وما يحكي عالتلفون. بس منشوف إذا حدا رح يطبّقو. هون القوانين بتطلع وبتنزل.",
+              "english": "There's a new traffic law. Everyone has to wear a seatbelt and not use the phone. But we'll see if anyone follows it. Here, laws come and go.",
+              "pic": "🚦"
             },
             {
               "id": "lv10-05-05",
-              "arabizi": "2a3ed fakker bel safar",
-              "arabic": "قاعد فكّر بالسفر",
-              "english": "I'm thinking of emigrating",
-              "pic": "✈️"
+              "arabizi": "ahamm khabar el yom: el kahraba ra7 tsir 3ashr se3at bel nhar. hayda a7san men abel. bas nshalla ma ykoun \"3ashr se3at\" bel kalem bas!",
+              "arabic": "أهمّ خبر اليوم: الكهربا رح تصير عشر ساعات بالنهار. هيدا أحسن من قبل. بس إن شاء الله ما يكون \"عشر ساعات\" بالكلام بس!",
+              "english": "Biggest news today: electricity will be ten hours a day. That's better than before. But hopefully it's not \"ten hours\" in words only!",
+              "pic": "💡"
             },
             {
               "id": "lv10-05-06",
-              "arabizi": "khalline ma nfta7 hal mawdou3",
-              "arabic": "خلّينا ما نفتح هالموضوع",
-              "english": "Let's not open this subject",
-              "pic": "🚪"
-            },
-            {
-              "id": "lv10-05-07",
-              "arabizi": "l siyese ma bterba7",
-              "arabic": "السياسة ما بتربّح",
-              "english": "Politics gets you nowhere",
-              "pic": "🙅"
-            },
-            {
-              "id": "lv10-05-08",
-              "arabizi": "kel wa7ad byghanne 3a laylo",
-              "arabic": "كل واحد بيغنّي عليلو",
-              "english": "Everyone sings to their own tune",
-              "pic": "🎵",
-              "note": "A proverb: everyone has their own agenda."
-            },
-            {
-              "id": "lv10-05-09",
-              "arabizi": "yemken tet7assan",
-              "arabic": "يمكن تتحسّن",
-              "english": "Maybe it'll get better",
-              "pic": "🌤️"
-            },
-            {
-              "id": "lv10-05-10",
-              "arabizi": "mnetwakkal 3a alla",
-              "arabic": "منتوكّل عالله",
-              "english": "We put our trust in God",
-              "pic": "🙏"
+              "arabizi": "lamma 7ada byes2alak 3an el siyase, a7san shi t2oul \"allah ykoun bel 3awn\". hek btkoun 7kit w ma 2elt shi. el lebnene bya3ref hal fann mni7.",
+              "arabic": "لمّا حدا يسألك عن السياسة، أحسن شي تقول \"الله يكون بالعون\". هيك بتكون حكيت وما قلت شي. اللبناني بيعرف هالفنّ منيح.",
+              "english": "When someone asks you about politics, the best thing is to say \"God help us\". That way you've spoken without saying anything. The Lebanese know this art well.",
+              "pic": "🤐"
             }
           ],
           "dialogue": [
@@ -29374,79 +29228,45 @@
           "items": [
             {
               "id": "lv10-06-01",
-              "arabizi": "3am bmazze7 ma3ak!",
-              "arabic": "عم بمزح معك!",
-              "english": "I'm just joking with you!",
-              "pic": "😜",
-              "f": {
-                "arabizi": "3am bmazze7 ma3ik!",
-                "arabic": "عم بمزح معك!"
-              }
+              "arabizi": "Rami, shu hal 2assa? re7t 3al coiffeur aw 2assak el jar bel mekase? la2, walla 7elwe. bas btshbah el 2anfod shway!",
+              "arabic": "رامي، شو هالقصّة؟ رحت عالكوافير أو قصّك الجار بالمقصّ؟ لأ، والله حلوة. بس بتشبه القنفد شوي!",
+              "english": "Rami, what's with this haircut? Did you go to the barber or did the neighbour cut it with scissors? No, honestly it's nice. It just looks a bit like a hedgehog!",
+              "pic": "🦔"
             },
             {
               "id": "lv10-06-02",
-              "arabizi": "7ell 3anne!",
-              "arabic": "حلّ عنّي!",
-              "english": "Leave me alone! (playful)",
-              "pic": "🙄"
+              "arabizi": "khaye dayman byet2akhkhar. 2olnalo \"bukra el se3a tmene\", w 2allna \"akid\". eja el se3a 3ashra w 2al \"kent 3al tari2\". 3al tari2 men wein? men el shams?",
+              "arabic": "خيّي دايماً بيتأخّر. قلنالو \"بكرا الساعة تمانة\"، وقلّنا \"أكيد\". إجا الساعة عشرة وقال \"كنت عالطريق\". عالطريق من وين؟ من الشمس؟",
+              "english": "My brother is always late. We told him \"tomorrow at eight\", and he said \"sure\". He came at ten and said \"I was on the way\". On the way from where? From the sun?",
+              "pic": "⏰"
             },
             {
               "id": "lv10-06-03",
-              "arabizi": "ma 3am bsadd2ak",
-              "arabic": "ما عم صدّقك",
-              "english": "I don't believe you",
-              "pic": "🤨"
-            },
-            {
-              "id": "lv10-06-04",
-              "arabizi": "ya 7elo!",
-              "arabic": "يا حلو!",
-              "english": "Hey, gorgeous! (teasing a friend)",
-              "pic": "😏"
-            },
-            {
-              "id": "lv10-06-05",
-              "arabizi": "shu mfakker 7alak?",
-              "arabic": "شو مفكّر حالك؟",
-              "english": "Who do you think you are?",
+              "arabizi": "el lebnenyin bi7ebbo yetmasakharo 3a ba3don, bas b 7ob. iza 7ada ma 3am ymazze7 ma3ak, ya3ne ba3do ma 3am y7ebbak. iza sarlak nekte, ya3ne sert men el 3ayle!",
+              "arabic": "اللبنانيّين بيحبّو يتمسخرو على بعضن، بس بحبّ. إذا حدا ما عم يمزح معك، يعني بعدو ما عم يحبّك. إذا صارلك نكتة، يعني صرت من العيلة!",
+              "english": "Lebanese love to tease each other, but with love. If someone doesn't joke with you, it means they don't like you yet. If you've got your own joke, it means you're family!",
               "pic": "😂"
             },
             {
+              "id": "lv10-06-04",
+              "arabizi": "fi nekte 3an el lebnene: lebnene, souri w masri 3am yzourou el 2amar. el souri jab akel, el masri jab maye. w el lebnene? jab tlet telephonet w selfie stick!",
+              "arabic": "في نكتة عن اللبناني: لبناني، سوري ومصري عم يزورو القمر. السوري جاب أكل، المصري جاب مي. واللبناني؟ جاب تلت تلفونات وselfie stick!",
+              "english": "There's a joke about the Lebanese: a Lebanese, a Syrian and an Egyptian are visiting the moon. The Syrian brought food, the Egyptian brought water. And the Lebanese? He brought three phones and a selfie stick!",
+              "pic": "🤳"
+            },
+            {
+              "id": "lv10-06-05",
+              "arabizi": "\"shu ya 3arous, sar wa2ta?\" teta bt2oulha la kel bent 3ezbeye bel 3ayle. w el jawab el dayem: \"nshalla teta, lamma yeje el nasib.\"",
+              "arabic": "\"شو يا عروس، صار وقتا؟\" تيتا بتقولا لكل بنت عزبة بالعيلة. والجواب الدايم: \"إن شاء الله تيتا، لمّا يجي النصيب.\"",
+              "english": "\"So, bride, is it time?\" Grandma says this to every single girl in the family. And the answer is always: \"Hopefully, grandma, when fate comes.\"",
+              "pic": "💍"
+            },
+            {
               "id": "lv10-06-06",
-              "arabizi": "ballesh tet7ammas",
-              "arabic": "بلّش تتحمّس",
-              "english": "Don't get carried away",
-              "pic": "🐎"
-            },
-            {
-              "id": "lv10-06-07",
-              "arabizi": "3a2lak bi rasak?",
-              "arabic": "عقلك براسك؟",
-              "english": "Are you out of your mind?",
-              "pic": "🤪"
-            },
-            {
-              "id": "lv10-06-08",
-              "arabizi": "lek shu 3am t2oul?!",
-              "arabic": "لك شو عم تقول؟!",
-              "english": "What are you saying?!",
-              "pic": "😆",
-              "note": "'lek' adds emphasis, very casual."
-            },
-            {
-              "id": "lv10-06-09",
-              "arabizi": "3ofak!",
-              "arabic": "عفاك!",
-              "english": "Well done!",
-              "pic": "👏"
-            },
-            {
-              "id": "lv10-06-10",
-              "arabizi": "to2borne!",
-              "arabic": "تقبرني!",
-              "english": "I love you to death!",
-              "pic": "🥰",
-              "note": "Literally 'may you bury me': a loving phrase, not a dark one."
+              "arabizi": "ma tez3al, ana 3am emza7 ma3ak. enta 3aref addeish b7ebbak. bas el 2amis el asfar ma3 el bantalon el akhdar? 3anjad, ana khayef 3leik!",
+              "arabic": "ما تزعل، أنا عم امزح معك. إنت عارف قدّيش بحبّك. بس القميص الأصفر مع البنطلون الأخضر؟ عنجد، أنا خايف عليك!",
+              "english": "Don't be upset, I'm joking with you. You know how much I love you. But the yellow shirt with the green trousers? Seriously, I'm worried about you!",
+              "pic": "👕"
             }
           ],
           "dialogue": [
@@ -29559,75 +29379,45 @@
           "items": [
             {
               "id": "lv10-07-01",
-              "arabizi": "shu ya m3allem?",
-              "arabic": "شو يا معلّم؟",
-              "english": "What's up, boss?",
-              "pic": "👊",
-              "note": "Friendly greeting to a guy."
-            },
-            {
-              "id": "lv10-07-02",
-              "arabizi": "tamem ktir",
-              "arabic": "تمام كتير",
-              "english": "Totally fine / cool",
-              "pic": "👌"
-            },
-            {
-              "id": "lv10-07-03",
-              "arabizi": "akid ya man",
-              "arabic": "أكيد يا مان",
-              "english": "Sure, man",
+              "arabizi": "\"shu ya zalame, kifak?\" \"mashe l 7al, w enta?\" \"3al 7awa, walla.\" hayde a7la salem bel shere3, el kel byefham 3laya.",
+              "arabic": "\"شو يا زلمة، كيفك؟\" \"ماشي الحال، وإنت؟\" \"عالحوا، والله.\" هيدي أحلى سلام بالشارع، الكل بيفهم عليها.",
+              "english": "\"Hey man, how are you?\" \"Getting by, and you?\" \"So-so, honestly.\" That's the street greeting, everyone gets it.",
               "pic": "🤙"
             },
             {
+              "id": "lv10-07-02",
+              "arabizi": "\"ma t3asseb\" ya3ne \"ertee7, ma tez3al\". w \"2allet adab\" ya3ne 7ada ma 3ando ta2dib.",
+              "arabic": "\"ما تعصّب\" يعني \"ارتاح، ما تزعل\". و\"قلّة أدب\" يعني حدا ما عندو تأديب.",
+              "english": "\"Ma t3asseb\" means \"relax, don't get angry\". And \"2allet adab\" means someone has no manners.",
+              "pic": "😤"
+            },
+            {
+              "id": "lv10-07-03",
+              "arabizi": "\"tfeh!\" bt2oula lamma shi ma bya3jbak. \"yi!\" lamma tetfaja2. \"ya 7aram!\" lamma tet2assaf 3a 7ada. w \"khalas ba2a!\" lamma tez3al.",
+              "arabic": "\"تفه!\" بتقولا لمّا شي ما بيعجبك. \"يي!\" لمّا تتفاجأ. \"يا حرام!\" لمّا تتأسّف على حدا. و\"خلص بقى!\" لمّا تزعل.",
+              "english": "\"Tfeh!\" you say when you don't like something. \"Yi!\" when you're surprised. \"Ya 7aram!\" when you feel sorry for someone. And \"khalas ba2a!\" when you're annoyed.",
+              "pic": "😲"
+            },
+            {
               "id": "lv10-07-04",
-              "arabizi": "3am yezbot",
-              "arabic": "عم يزبط",
-              "english": "It's working out",
-              "pic": "✅"
+              "arabizi": "\"3am tsharre2 w tgharreb\" ya3ne 3am te7ke kalem bala ma3na. w \"3am ta3mel 7alak\" ya3ne 3am tet3ajra2. el lebnene 3ando kelme la kel shi!",
+              "arabic": "\"عم تشرّق وتغرّب\" يعني عم تحكي كلام بلا معنى. و\"عم تعمل حالك\" يعني عم تتعجرف. اللبناني عندو كلمة لكل شي!",
+              "english": "\"You're going east and west\" means you're talking nonsense. And \"you're making yourself\" means you're showing off. The Lebanese have a word for everything!",
+              "pic": "🗯️"
             },
             {
               "id": "lv10-07-05",
-              "arabizi": "ma bizbot",
-              "arabic": "ما بيزبط",
-              "english": "It doesn't work / no way",
-              "pic": "❌"
+              "arabizi": "\"tele3 khel2o\" ya3ne sar m3asseb. \"rayye7 rasak\" ya3ne ertee7, ma t2la2. w \"ma fi shi mashe\" ya3ne ma fi shi 3am yezbat.",
+              "arabic": "\"طلع خلقو\" يعني صار معصّب. \"ريّح راسك\" يعني ارتاح، ما تقلق. و\"ما في شي ماشي\" يعني ما في شي عم يزبط.",
+              "english": "\"His temper came out\" means he got angry. \"Rest your head\" means relax, don't worry. And \"nothing's walking\" means nothing is working out.",
+              "pic": "💥"
             },
             {
               "id": "lv10-07-06",
-              "arabizi": "khalas fella!",
-              "arabic": "خلص فلّ!",
-              "english": "Just go! / beat it!",
-              "pic": "🏃",
-              "note": "Rude if said seriously."
-            },
-            {
-              "id": "lv10-07-07",
-              "arabizi": "3a ras l 2alam",
-              "arabic": "عراس القلم",
-              "english": "Perfectly / exactly",
-              "pic": "🎯"
-            },
-            {
-              "id": "lv10-07-08",
-              "arabizi": "zabbetha",
-              "arabic": "زبّطها",
-              "english": "Sort it out",
-              "pic": "🔧"
-            },
-            {
-              "id": "lv10-07-09",
-              "arabizi": "ma 7ada bi ghannilak",
-              "arabic": "ما حدا بيغنّيلك",
-              "english": "Nobody cares (about your excuse)",
-              "pic": "🎤"
-            },
-            {
-              "id": "lv10-07-10",
-              "arabizi": "l 7ayat 7elwe",
-              "arabic": "الحياة حلوة",
-              "english": "Life is good",
-              "pic": "🌞"
+              "arabizi": "el shabeb el zghar bi7ko kalem men el internet: \"cringe\", \"vibe\", \"ma fi chill\". el kbar ma byefhamo shi w bi2oulo \"shu 3am t2oulo?\"",
+              "arabic": "الشباب الزغار بيحكو كلام من الـ internet: \"cringe\"، \"vibe\"، \"ما في chill\". الكبار ما بيفهمو شي وبيقولو \"شو عم تقولو؟\"",
+              "english": "Young people use words from the internet: \"cringe\", \"vibe\", \"no chill\". The older ones understand nothing and say \"what are you saying?\"",
+              "pic": "📲"
             }
           ],
           "dialogue": [
@@ -29733,74 +29523,45 @@
           "items": [
             {
               "id": "lv10-08-01",
-              "arabizi": "hi, kifak, sa va?",
-              "arabic": "هاي، كيفك، سا ڤا؟",
-              "english": "Hi, how are you, all good?",
-              "pic": "👋",
-              "note": "The famous Lebanese three-language greeting."
+              "arabizi": "\"hi, kifak, ça va?\" hayde a7la jumle lebnaniyye. tlet lghat bi tlet kelmet. w ma 7ada byestghreb, la2anno kel el nes hon bi7ko hayk.",
+              "arabic": "\"hi، كيفك، ça va؟\" هيدي أحلى جملة لبنانيّة. تلت لغات بتلت كلمات. وما حدا بيستغرب، لأنّو كل الناس هون بيحكو هيك.",
+              "english": "\"Hi, kifak, ça va?\" That's the most Lebanese sentence there is. Three languages in three words. And nobody finds it strange, because everyone here talks like that.",
+              "pic": "🇱🇧"
             },
             {
               "id": "lv10-08-02",
-              "arabizi": "merci ktir",
-              "arabic": "مرسي كتير",
-              "english": "Thanks a lot",
-              "pic": "🙏"
+              "arabizi": "\"yalla bye, merci ktir, à demain!\" bel shoghol, el emailet bel ingleeze, el meetings bel franse, w el 2ahwe bel 3arabe. w ma 7ada bi7ke lugha wa7de kemle.",
+              "arabic": "\"يلّا bye، merci كتير، à demain!\" بالشغل، الـ emails بالإنكليزي، الـ meetings بالفرنسي، والقهوة بالعربي. وما حدا بيحكي لغة وحدة كاملة.",
+              "english": "\"Yalla bye, thanks a lot, see you tomorrow!\" At work, emails are in English, meetings in French, and coffee in Arabic. And nobody speaks one whole language.",
+              "pic": "💼"
             },
             {
               "id": "lv10-08-03",
-              "arabizi": "bonjour, sabe7 l kheir",
-              "arabic": "بونجور، صباح الخير",
-              "english": "Good morning (twice)",
-              "pic": "🌅"
+              "arabizi": "emme bt2oulle: \"ma tensa tjib el pain w el lait men el supermarket, w ba3dein ta3a 3al beit deghre, ok?\" w ana befham kel kelme.",
+              "arabic": "إمّي بتقلّي: \"ما تنسى تجيب الـ pain والـ lait من السوبرماركت، وبعدين تعا عالبيت دغري، ok؟\" وأنا بفهم كل كلمة.",
+              "english": "My mum tells me: \"Don't forget to get the bread and the milk from the supermarket, and then come home straight away, ok?\" And I understand every word.",
+              "pic": "🥖"
             },
             {
               "id": "lv10-08-04",
-              "arabizi": "ana busy ktir l yom",
-              "arabic": "أنا بيزي كتير اليوم",
-              "english": "I'm really busy today",
-              "pic": "📅"
+              "arabizi": "el french mesh bas lugha hon. hiyye taba2a w tarikh. el 3aylet el 2adime bt7ke franse bel beit. w el jil el jdid ma3 el ingleeze aktar, men el films w el internet.",
+              "arabic": "الفرنسي مش بس لغة هون. هيّي طبقة وتاريخ. العيلات القديمة بتحكي فرنسي بالبيت. والجيل الجديد مع الإنكليزي أكتر، من الأفلام والـ internet.",
+              "english": "French isn't just a language here. It's class and history. Old families speak French at home. And the new generation leans more to English, from films and the internet.",
+              "pic": "📚"
             },
             {
               "id": "lv10-08-05",
-              "arabizi": "yalla, bye, a demain",
-              "arabic": "يلّا، باي، آ دومان",
-              "english": "OK, bye, see you tomorrow",
-              "pic": "👋"
+              "arabizi": "kel shi bel 3arabe bas el ar2am bel franse aw ingleeze. \"bel se3a tnein w demi\", \"addeish el prix?\", \"fi solde 50 bel miyye\". el bayya3 hon bya3ref kel el lghat!",
+              "arabic": "كل شي بالعربي بس الأرقام بالفرنسي أو الإنكليزي. \"بالساعة تنين و demi\"، \"قدّيش الـ prix؟\"، \"في solde ٥٠ بالمية\". البيّاع هون بيعرف كل اللغات!",
+              "english": "Everything is in Arabic but numbers are in French or English. \"At two and demi\", \"what's the prix?\", \"there's a 50% solde\". Sellers here know every language!",
+              "pic": "🏷️"
             },
             {
               "id": "lv10-08-06",
-              "arabizi": "c'est pas grave, ma fi shi",
-              "arabic": "سي با غراف، ما في شي",
-              "english": "It's not serious, it's nothing",
-              "pic": "👌"
-            },
-            {
-              "id": "lv10-08-07",
-              "arabizi": "3am e3mel 'cancel' lal meeting",
-              "arabic": "عم إعمل 'كانسل' للميتينغ",
-              "english": "I'm cancelling the meeting",
-              "pic": "❌"
-            },
-            {
-              "id": "lv10-08-08",
-              "arabizi": "ma ba2a 3ande 'patience'",
-              "arabic": "ما بقى عندي 'بيشنس'",
-              "english": "I've run out of patience",
-              "pic": "😤"
-            },
-            {
-              "id": "lv10-08-09",
-              "arabizi": "3ande 'rendez-vous' 3and l doktor",
-              "arabic": "عندي 'روندي ڤو' عند الدكتور",
-              "english": "I have an appointment at the doctor",
-              "pic": "🩺"
-            },
-            {
-              "id": "lv10-08-10",
-              "arabizi": "'wa2t' aw 'temps'? kello wa7ad!",
-              "arabic": "'وقت' أو 'تون'؟ كلّو واحد!",
-              "english": "'wa2t' or 'temps'? It's all the same!",
-              "pic": "🔀"
+              "arabizi": "iza ma bta3ref kelme bel 3arabe, ma tkhaf. 7ott el kelme bel ingleeze w kammel. \"ana ktir excited la el trip bukra\". el nes ra7 yefhamo 3leik deghre.",
+              "arabic": "إذا ما بتعرف كلمة بالعربي، ما تخاف. حطّ الكلمة بالإنكليزي وكمّل. \"أنا كتير excited للـ trip بكرا\". الناس رح يفهمو عليك دغري.",
+              "english": "If you don't know a word in Arabic, don't worry. Put the word in English and carry on. \"I'm really excited for the trip tomorrow\". People will understand you straight away.",
+              "pic": "😎"
             }
           ],
           "dialogue": [
@@ -29906,76 +29667,45 @@
           "items": [
             {
               "id": "lv10-09-01",
-              "arabizi": "l jar 2abl l dar",
-              "arabic": "الجار قبل الدار",
-              "english": "The neighbour before the house",
-              "pic": "🏡",
-              "note": "Choose a good neighbour before choosing the house."
+              "arabizi": "\"elli bya3ref, bya3ref. w elli ma bya3ref, bi2oul kaf 3adas.\" ya3ne el ma bya3ref, bya3ti ra2yo b kel shi. el amsal hon bt2oul ktir bi kelmet 2alile.",
+              "arabic": "\"يلّي بيعرف، بيعرف. ويلّي ما بيعرف، بيقول كفّ عدس.\" يعني يلّي ما بيعرف، بيعطي رأيو بكل شي. الأمثال هون بتقول كتير بكلمات قليلة.",
+              "english": "\"Who knows, knows. And who doesn't, says a handful of lentils.\" Meaning the one who doesn't know gives his opinion on everything. Proverbs here say a lot in few words.",
+              "pic": "📜"
             },
             {
               "id": "lv10-09-02",
-              "arabizi": "l 2ird b 3ein emmo ghazal",
-              "arabic": "القرد بعين إمّو غزال",
-              "english": "A monkey is a gazelle in its mother's eyes",
-              "pic": "🐒",
-              "note": "Every mum thinks her child is beautiful."
+              "arabizi": "\"el jar 2abel el dar.\" ya3ne 2abel ma teshtere beit, shouf min el jiran. hayda ahamm men el beit nafso. jar mni7 bisa3dak, w jar 3atel bykhalli 7ayetak jahannam.",
+              "arabic": "\"الجار قبل الدار.\" يعني قبل ما تشتري بيت، شوف مين الجيران. هيدا أهمّ من البيت نفسو. جار منيح بيساعدك، وجار عاطل بيخلّي حياتك جهنّم.",
+              "english": "\"The neighbour before the house.\" Meaning before you buy a house, see who the neighbours are. That's more important than the house itself. A good neighbour helps you, and a bad one makes your life hell.",
+              "pic": "🏘️"
             },
             {
               "id": "lv10-09-03",
-              "arabizi": "lli byeshteghel b ido ma bijou3",
-              "arabic": "اللّي بيشتغل بإيدو ما بيجوع",
-              "english": "Who works with his hands never goes hungry",
-              "pic": "👐"
+              "arabizi": "\"2irsh el abyad la nhar el aswad.\" emme kenet t2oula kel ma ken 3ande masari. ya3ne waffer shway, la2anno ma bta3ref shu ra7 ysir.",
+              "arabic": "\"القرش الأبيض لنهار الأسود.\" إمّي كانت تقولا كل ما كان عندي مصاري. يعني وفّر شوي، لأنّو ما بتعرف شو رح يصير.",
+              "english": "\"The white penny for the black day.\" My mum used to say it whenever I had money. Meaning save a little, because you don't know what will happen.",
+              "pic": "🪙"
             },
             {
               "id": "lv10-09-04",
-              "arabizi": "l sabr miftah l faraj",
-              "arabic": "الصبر مفتاح الفرج",
-              "english": "Patience is the key to relief",
-              "pic": "🔑"
+              "arabizi": "\"elli byekhod emme, b2ello 3amme.\" ya3ne iza 7ada tjawwaz emmak, bisir 3ammak. ma3naha: btemshe ma3 elli ma3o el sulta.",
+              "arabic": "\"يلّي بياخد إمّي، بقلّو عمّي.\" يعني إذا حدا تجوّز إمّك، بيصير عمّك. معناها: بتمشي مع يلّي معو السلطة.",
+              "english": "\"Whoever marries my mother, I call him uncle.\" Meaning if someone marries your mother, he becomes your uncle. Its sense: you go along with whoever holds power.",
+              "pic": "👨‍👩‍👦"
             },
             {
               "id": "lv10-09-05",
-              "arabizi": "ba3d l 3osr yosr",
-              "arabic": "بعد العسر يسر",
-              "english": "After hardship comes ease",
-              "pic": "🌈"
-            },
-            {
-              "id": "lv10-09-06",
-              "arabizi": "lli ma bya3rfak ma bi2adrak",
-              "arabic": "اللّي ما بيعرفك ما بيقدّرك",
-              "english": "Who doesn't know you doesn't value you",
-              "pic": "🤝"
-            },
-            {
-              "id": "lv10-09-07",
-              "arabizi": "kel ta2kheera fiya kheera",
-              "arabic": "كل تأخيرة فيها خيرة",
-              "english": "Every delay has a blessing in it",
+              "arabizi": "\"kel ta2kheere fiya khaira.\" bt2oula lamma shi ma bi zabet 3a wa2to. mumken el ta2khir ykoun a7san. el lebnene bya3ref el sabr, ma 3ando khiyar tene!",
+              "arabic": "\"كلّ تأخيرة فيها خيرة.\" بتقولا لمّا شي ما بيزبط عوقتو. ممكن التأخير يكون أحسن. اللبناني بيعرف الصبر، ما عندو خيار تاني!",
+              "english": "\"Every delay has some good in it.\" You say it when something doesn't work out on time. Maybe the delay is for the best. The Lebanese know patience, they have no other choice!",
               "pic": "⏳"
             },
             {
-              "id": "lv10-09-08",
-              "arabizi": "ya ma ta7t l sawahi dawahi",
-              "arabic": "يا ما تحت السواهي دواهي",
-              "english": "Still waters run deep",
-              "pic": "🌊"
-            },
-            {
-              "id": "lv10-09-09",
-              "arabizi": "l 3omr mish bel sneen",
-              "arabic": "العمر مش بالسنين",
-              "english": "Age isn't counted in years",
-              "pic": "🎂"
-            },
-            {
-              "id": "lv10-09-10",
-              "arabizi": "3ash meen shefak!",
-              "arabic": "عاش مين شافك!",
-              "english": "Long time no see!",
-              "pic": "🤗",
-              "note": "Literally 'whoever saw you has lived'."
+              "id": "lv10-09-06",
+              "arabizi": "\"3asher el 2om arb3in yom, ya btsir menon ya bter7al 3anon.\" ya3ne ba3d arb3in yom ma3 nes, ya btsir metlon ya btfell. hayda elli sar ma3e b Lebnen!",
+              "arabic": "\"عاشر القوم أربعين يوم، يا بتصير منن يا بترحل عنن.\" يعني بعد أربعين يوم مع ناس، يا بتصير متلن يا بتفلّ. هيدا يلّي صار معي بلبنان!",
+              "english": "\"Live with people forty days: either you become one of them or you leave them.\" Meaning after forty days with people, you either become like them or you go. That's what happened to me in Lebanon!",
+              "pic": "🧭"
             }
           ],
           "dialogue": [
@@ -30081,76 +29811,45 @@
           "items": [
             {
               "id": "lv10-10-01",
-              "arabizi": "7mar",
-              "arabic": "حمار",
-              "english": "Donkey (an insult: idiot)",
-              "pic": "🫏",
-              "note": "Common, but rude to someone's face."
+              "arabizi": "fi kelmet ktir 3adiyye bel ingleeze, bas bel 3arabe btesma3 metl shatime. lezim tentebeh. a7san shi tes2al rfi2ak 2abel ma testa3mel kelme mesh m2akkad menna.",
+              "arabic": "في كلمات كتير عاديّة بالإنكليزي، بس بالعربي بتسمع متل شتيمة. لازم تنتبه. أحسن شي تسأل رفيقك قبل ما تستعمل كلمة مش متأكّد منها.",
+              "english": "Some words are totally normal in English but sound like swearing in Arabic. You have to be careful. The best thing is to ask a friend before using a word you're not sure about.",
+              "pic": "⚠️"
             },
             {
               "id": "lv10-10-02",
-              "arabizi": "ghabe",
-              "arabic": "غبي",
-              "english": "Stupid",
-              "pic": "🤦"
+              "arabizi": "el shatime btesma3a bel shere3 w bel sayyarat kel yom. bas lamma enta ajnabe w btesta3mela, el nes bt2oul \"yi! min 3allamak hayda?\" btedhak bas mesh 7elwe.",
+              "arabic": "الشتيمة بتسمعا بالشارع وبالسيّارات كل يوم. بس لمّا إنت أجنبي وبتستعملا، الناس بتقول \"يي! مين علّمك هيدا؟\" بتضحك بس مش حلوة.",
+              "english": "You hear swearing in the street and in cars every day. But when you're a foreigner and use it, people say \"yi! who taught you that?\" It's funny but not nice.",
+              "pic": "🙈"
             },
             {
               "id": "lv10-10-03",
-              "arabizi": "sakket!",
-              "arabic": "سكّت!",
-              "english": "Shut up!",
-              "pic": "🤐",
-              "note": "Rude. Use 'shway hede' (a bit quiet) instead."
-            },
-            {
-              "id": "lv10-10-04",
-              "arabizi": "ballesh tseb",
-              "arabic": "بلّش تسبّ",
-              "english": "Stop swearing",
-              "pic": "🚫"
-            },
-            {
-              "id": "lv10-10-05",
-              "arabizi": "3ayb!",
-              "arabic": "عيب!",
-              "english": "Shameful! / That's rude!",
-              "pic": "😳",
-              "note": "What parents say to children."
-            },
-            {
-              "id": "lv10-10-06",
-              "arabizi": "ma bt2oul hek 2eddem l kbar",
-              "arabic": "ما بتقول هيك قدّام الكبار",
-              "english": "You don't say that in front of elders",
-              "pic": "👵"
-            },
-            {
-              "id": "lv10-10-07",
-              "arabizi": "hayda kalam soukiye",
-              "arabic": "هيدا كلام سوقيّة",
-              "english": "That's street language",
+              "arabizi": "ma t2oul 3an 7ada \"7mar\" aw \"kalb\", 7atta bel maza7. hayda ktir 2ase hon. w ma tzakker el emm aw el ekht bi 2alb el maza7. hayda khatt a7mar.",
+              "arabic": "ما تقول عن حدا \"حمار\" أو \"كلب\"، حتّى بالمزح. هيدا كتير قاسي هون. وما تذكر الإمّ أو الأخت بقلب المزح. هيدا خطّ أحمر.",
+              "english": "Don't call someone \"donkey\" or \"dog\", even as a joke. That's very harsh here. And don't mention someone's mother or sister when joking. That's a red line.",
               "pic": "🛑"
             },
             {
-              "id": "lv10-10-08",
-              "arabizi": "ma3leish, ma 2asadt",
-              "arabic": "معليش، ما قصدت",
-              "english": "Sorry, I didn't mean it",
+              "id": "lv10-10-04",
+              "arabizi": "fi kelmet 3ade bel siyase w el din, bas lezim tentebeh la min 3am te7ke. hon kel wa7ad men ta2ife w ra2y. a7san shi tesma3 aktar ma te7ke.",
+              "arabic": "في كلمات عاديّة بالسياسة والدين، بس لازم تنتبه لمين عم تحكي. هون كل واحد من طايفة ورأي. أحسن شي تسمع أكتر ما تحكي.",
+              "english": "Some words about politics and religion are ordinary, but you have to watch who you're talking to. Here everyone belongs to a community and has opinions. The best thing is to listen more than you talk.",
+              "pic": "👂"
+            },
+            {
+              "id": "lv10-10-05",
+              "arabizi": "\"3ayb\" kelme ktir mhemme. el wled byesma3ouha kel yom: \"3ayb tes2al hayk\", \"3ayb t2oul hayk\". ya3ne mesh mamnou3, bas el nes ma bt7ebbo.",
+              "arabic": "\"عيب\" كلمة كتير مهمّة. الولاد بيسمعوها كل يوم: \"عيب تسأل هيك\"، \"عيب تقول هيك\". يعني مش ممنوع، بس الناس ما بتحبّو.",
+              "english": "\"3ayb\" is a very important word. Children hear it every day: \"it's 3ayb to ask that\", \"it's 3ayb to say that\". It means not forbidden, but people don't like it.",
+              "pic": "🤭"
+            },
+            {
+              "id": "lv10-10-06",
+              "arabizi": "iza ghlelt w 2elt shi ma lezim, ma tkhaf. 2oul \"sorry, ma ken 2asde, ana 3am et3allam\". el nes hon bisam7o el ajnabe bi sur3a, w bi7ebbo enno 3am tjarreb.",
+              "arabic": "إذا غلطت وقلت شي ما لازم، ما تخاف. قول \"sorry، ما كان قصدي، أنا عم اتعلّم\". الناس هون بيسامحو الأجنبي بسرعة، وبيحبّو إنّو عم تجرّب.",
+              "english": "If you slip and say something you shouldn't, don't worry. Say \"sorry, I didn't mean it, I'm learning\". People here forgive foreigners quickly, and like that you're trying.",
               "pic": "🙏"
-            },
-            {
-              "id": "lv10-10-09",
-              "arabizi": "shway hede, dakhlak",
-              "arabic": "شوي هادي، دخلك",
-              "english": "A bit quieter, please",
-              "pic": "🔉"
-            },
-            {
-              "id": "lv10-10-10",
-              "arabizi": "l maz7 b 7add",
-              "arabic": "المزح بحدّ",
-              "english": "Joking has limits",
-              "pic": "⚖️"
             }
           ],
           "dialogue": [
@@ -30249,74 +29948,45 @@
           "items": [
             {
               "id": "lv10-11-01",
-              "arabizi": "ballesh ta3ti dorous!",
-              "arabic": "بلّش تعطي دروس!",
-              "english": "Stop lecturing!",
-              "pic": "🙄"
+              "arabizi": "la2, la2, la2! ma ba2bal! enta dayman bet2oul hayk w bel akhir ana bkoun ma3 7a2. es2al ay 7ada bel shere3, kel el nes ra7 t2ellak nafs el shi.",
+              "arabic": "لأ، لأ، لأ! ما بقبل! إنت دايماً بتقول هيك وبالآخر أنا بكون معي حقّ. اسأل أي حدا بالشارع، كل الناس رح تقلّك نفس الشي.",
+              "english": "No, no, no! I won't accept it! You always say that and in the end I'm the one who's right. Ask anyone in the street, everyone will tell you the same thing.",
+              "pic": "🙅"
             },
             {
               "id": "lv10-11-02",
-              "arabizi": "enta dayman bt2oul hek!",
-              "arabic": "إنت دايمًا بتقول هيك!",
-              "english": "You always say that!",
-              "pic": "🔁"
+              "arabizi": "el lebnenyin bit2atalo b sawt 3ale w b ideihon. bas ma tkhaf, hayda mesh za3al. ba3d khams d2aye2 byeshrabo ahwe sawa w byedhako.",
+              "arabic": "اللبنانيّين بيتقاتلو بصوت عالي وبإيديهن. بس ما تخاف، هيدا مش زعل. بعد خمس دقايق بيشربو قهوة سوا وبيضحكو.",
+              "english": "The Lebanese argue loudly and with their hands. But don't worry, that's not real anger. Five minutes later they drink coffee together and laugh.",
+              "pic": "🗣️"
             },
             {
               "id": "lv10-11-03",
-              "arabizi": "ma 3am tesma3ne!",
-              "arabic": "ما عم تسمعني!",
-              "english": "You're not listening to me!",
-              "pic": "👂"
+              "arabizi": "\"shu 3am t2oul enta? hayda kalem fadi!\" \"fadi? ana 3am 2ellak el 7a2i2a!\" \"tayyeb, w law ma ken ma3ak 7a2?\" \"ma fi law! ana ma3 7a2 w khalas!\"",
+              "arabic": "\"شو عم تقول إنت؟ هيدا كلام فاضي!\" \"فاضي؟ أنا عم قلّك الحقيقة!\" \"طيّب، ولو ما كان معك حقّ؟\" \"ما في لو! أنا معي حقّ وخلص!\"",
+              "english": "\"What are you saying? That's empty talk!\" \"Empty? I'm telling you the truth!\" \"Fine, and what if you weren't right?\" \"There's no if! I'm right, end of story!\"",
+              "pic": "😤"
             },
             {
               "id": "lv10-11-04",
-              "arabizi": "khalas, ma badde e7ke",
-              "arabic": "خلص، ما بدّي إحكي",
-              "english": "Fine, I don't want to talk",
-              "pic": "🤐"
+              "arabizi": "khayye w ana mnet2atal 3al park kel yom. huwwe bi7ott sayyarto bi ma7alle, w ana b7ott sayyarte bi ma7allo. el jiran saro ya3rfo el 2esse w byedhako.",
+              "arabic": "خيّي وأنا منتقاتل عالـ park كل يوم. هوّي بيحطّ سيّارتو بمحلّي، وأنا بحطّ سيّارتي بمحلّو. الجيران صارو يعرفو القصّة وبيضحكو.",
+              "english": "My brother and I fight over parking every day. He puts his car in my spot, and I put mine in his. The neighbours know the story by now and laugh.",
+              "pic": "🚗"
             },
             {
               "id": "lv10-11-05",
-              "arabizi": "shu 3am t2oul enta?!",
-              "arabic": "شو عم تقول إنت؟!",
-              "english": "What are you even saying?!",
-              "pic": "🤯"
+              "arabizi": "lamma tet2atal ma3 lebnene, ma tkhallih yeghlbak bel sawt. bas kamen ma tez3al 3an jad. 2oul \"tayyeb, ma3ak 7a2 shway\" w hiyye btekhlas.",
+              "arabic": "لمّا تتقاتل مع لبناني، ما تخلّيه يغلبك بالصوت. بس كمان ما تزعل عن جدّ. قول \"طيّب، معك حقّ شوي\" وهيّي بتخلص.",
+              "english": "When you argue with a Lebanese, don't let him beat you with volume. But don't get really upset either. Say \"ok, you're a bit right\" and it's over.",
+              "pic": "✌️"
             },
             {
               "id": "lv10-11-06",
-              "arabizi": "ma ba2a fiye!",
-              "arabic": "ما بقى فيي!",
-              "english": "I can't take it anymore!",
-              "pic": "😫"
-            },
-            {
-              "id": "lv10-11-07",
-              "arabizi": "3a mahlak, wlak",
-              "arabic": "على مهلك، ولك",
-              "english": "Calm down, man",
-              "pic": "🐢"
-            },
-            {
-              "id": "lv10-11-08",
-              "arabizi": "ma kan 2asde",
-              "arabic": "ما كان قصدي",
-              "english": "That wasn't my intention",
-              "pic": "🙏"
-            },
-            {
-              "id": "lv10-11-09",
-              "arabizi": "yalla, bous l ras w khalasna",
-              "arabic": "يلّا، بوس الراس وخلصنا",
-              "english": "Come on, kiss the forehead and let's be done",
-              "pic": "😘",
-              "note": "A classic way to make up."
-            },
-            {
-              "id": "lv10-11-10",
-              "arabizi": "ma fi shi bi 2albe",
-              "arabic": "ما في شي بقلبي",
-              "english": "I hold no grudge",
-              "pic": "❤️"
+              "arabizi": "bel akhir, khallasna el ne2ash bi \"khalas, ma fi da3e nkammel\". talla3na b ba3d, dhekna, w kel wa7ad dall 3a ra2yo. hayk ya3ne ne2ash lebnene.",
+              "arabic": "بالآخر، خلّصنا النقاش بـ \"خلص، ما في داعي نكمّل\". طلّعنا ببعض، ضحكنا، وكل واحد ضلّ على رأيو. هيك يعني نقاش لبناني.",
+              "english": "In the end, we finished the debate with \"ok, no need to go on\". We looked at each other, laughed, and everyone kept their own opinion. That's a Lebanese argument.",
+              "pic": "🤝"
             }
           ],
           "dialogue": [
@@ -30429,73 +30099,45 @@
           "items": [
             {
               "id": "lv10-12-01",
-              "arabizi": "noss l 3ayle barra",
-              "arabic": "نص العيلة برّا",
-              "english": "Half the family is abroad",
+              "arabizi": "kel 3ayle lebnaniyye 3enda 7ada barra. khaye b Canada, ekhte b Dubai w ebn 3amme b Australia. el WhatsApp group taba3 el 3ayle byesh3al men kel el denye.",
+              "arabic": "كل عيلة لبنانيّة عندا حدا برّا. خيّي بكندا، أختي بدبي وابن عمّي بأستراليا. الـ WhatsApp group تبع العيلة بيشعل من كل الدنيا.",
+              "english": "Every Lebanese family has someone abroad. My brother is in Canada, my sister in Dubai and my cousin in Australia. The family WhatsApp group lights up from all over the world.",
               "pic": "🌍"
             },
             {
               "id": "lv10-12-02",
-              "arabizi": "3amme bel Brazil men khamsin sene",
-              "arabic": "عمّي بالبرازيل من خمسين سنة",
-              "english": "My uncle has been in Brazil for fifty years",
+              "arabizi": "fi lebnenyin barra aktar men el lebnenyin bel balad. bel Brazil la7alo fi malayin. w kel wa7ad bi2oul \"ana lebnene\", 7atta law ma zar el balad abadan.",
+              "arabic": "في لبنانيّين برّا أكتر من اللبنانيّين بالبلد. بالبرازيل لحالو في ملايين. وكل واحد بيقول \"أنا لبناني\"، حتّى لو ما زار البلد أبداً.",
+              "english": "There are more Lebanese abroad than in the country. In Brazil alone there are millions. And every one of them says \"I'm Lebanese\", even if they've never visited.",
               "pic": "🇧🇷"
             },
             {
               "id": "lv10-12-03",
-              "arabizi": "l lebnaniye bi kel l 3alam",
-              "arabic": "اللبنانية بكل العالم",
-              "english": "Lebanese are everywhere in the world",
-              "pic": "🗺️"
-            },
-            {
-              "id": "lv10-12-04",
-              "arabizi": "fi lebnaniye barra aktar men jowwa",
-              "arabic": "في لبنانية برّا أكتر من جوّا",
-              "english": "There are more Lebanese abroad than inside",
-              "pic": "📊"
-            },
-            {
-              "id": "lv10-12-05",
-              "arabizi": "rje3 bel sayf yzour",
-              "arabic": "رجع بالصيف يزور",
-              "english": "He came back in summer to visit",
-              "pic": "☀️"
-            },
-            {
-              "id": "lv10-12-06",
-              "arabizi": "l shabab kellon 3am yfello",
-              "arabic": "الشباب كلّن عم يفلّوا",
-              "english": "All the young people are leaving",
+              "arabizi": "bel seif, el matar bysir 3aj2a. el moghtarbin byerja3o w el balad bteb2a malyane. el mata3em w el beaches btesh3al, w kel el nes btes2al \"emta wselt?\"",
+              "arabic": "بالصيف، المطار بيصير عجقة. المغتربين بيرجعو والبلد بتبقى مليانة. المطاعم والـ beaches بتشعل، وكل الناس بتسأل \"إيمتى وصلت؟\"",
+              "english": "In summer, the airport gets packed. Emigrants come back and the country fills up. Restaurants and beaches are buzzing, and everyone asks \"when did you arrive?\"",
               "pic": "✈️"
             },
             {
-              "id": "lv10-12-07",
-              "arabizi": "2albo bi Lebnen",
-              "arabic": "قلبو بلبنان",
-              "english": "His heart is in Lebanon",
-              "pic": "❤️"
+              "id": "lv10-12-04",
+              "arabizi": "el sa3b mesh el safar, el sa3b el rje3. lamma ykhlas el seif, el kel byebke bel matar. emm 3am tbous ebna w hiyye bt2oul \"ma tghib ktir hal marra\".",
+              "arabic": "الصعب مش السفر، الصعب الرجعة. لمّا يخلص الصيف، الكل بيبكي بالمطار. إمّ عم تبوس ابنا وهيّي بتقول \"ما تغيب كتير هالمرّة\".",
+              "english": "The hard part isn't leaving, it's going back. When summer ends, everyone cries at the airport. A mother kisses her son and says \"don't stay away so long this time\".",
+              "pic": "😢"
             },
             {
-              "id": "lv10-12-08",
-              "arabizi": "l ghorbe sa3be",
-              "arabic": "الغربة صعبة",
-              "english": "Living abroad is hard",
-              "pic": "🥺"
+              "id": "lv10-12-05",
+              "arabizi": "s7abe kellon safaro ba3d el jem3a. ana bel balad la7ale. kel jem3a mna3mel video call, bas mesh mitl ma n2a3od sawa 3al ahwe. el ghorbe sa3be.",
+              "arabic": "صحابي كلّن سافرو بعد الجامعة. أنا بالبلد لحالي. كل جمعة منعمل video call، بس مش متل ما نقعد سوا عالقهوة. الغربة صعبة.",
+              "english": "All my friends emigrated after university. I'm in the country alone. Every week we do a video call, but it's not like sitting together over coffee. Being apart is hard.",
+              "pic": "📞"
             },
             {
-              "id": "lv10-12-09",
-              "arabizi": "wled l 2arayeb ma byehko 3arabe",
-              "arabic": "ولاد القرايب ما بيحكوا عربي",
-              "english": "Relatives' kids don't speak Arabic",
-              "pic": "🗣️"
-            },
-            {
-              "id": "lv10-12-10",
-              "arabizi": "bas l 7ommos ma bitghayyar",
-              "arabic": "بس الحمّص ما بيتغيّر",
-              "english": "But the hummus never changes",
-              "pic": "🫘"
+              "id": "lv10-12-06",
+              "arabizi": "el moghtarbin byeb3ato masari la ahlon kel shahr. bala hal masari, ktir 3iyal ma ken fiya t3ish. el ghorbe 3atet w akhadet: 3atet masari w akhadet el wled.",
+              "arabic": "المغتربين بيبعتو مصاري لأهلن كل شهر. بلا هالمصاري، كتير عيل ما كان فيها تعيش. الغربة عطت وأخدت: عطت مصاري وأخدت الولاد.",
+              "english": "Emigrants send money to their families every month. Without that money, many families couldn't live. Emigration gave and took: it gave money and took the children.",
+              "pic": "💸"
             }
           ],
           "dialogue": [
@@ -30594,77 +30236,45 @@
           "items": [
             {
               "id": "lv10-13-01",
-              "arabizi": "l tabbouleh ma fiya burghul ktir!",
-              "arabic": "التبولة ما فيها برغل كتير!",
-              "english": "Tabbouleh shouldn't have much bulgur!",
-              "pic": "🌿",
-              "note": "It's a parsley salad, not a bulgur salad."
+              "arabizi": "min a7san 7ommos? Beirut aw Saida? kel wa7ad bi2oul el ma7all taba3o. ana ba3ref ma7all bel Tari2 el Jdide ma fi metlo. bas ma ra7 2ellak wein!",
+              "arabic": "مين أحسن حمّص؟ بيروت أو صيدا؟ كل واحد بيقول المحلّ تبعو. أنا بعرف محلّ بالطريق الجديدة ما في متلو. بس ما رح قلّك وين!",
+              "english": "Who has the best hummus? Beirut or Saida? Everyone names their own place. I know a place in Tariq el Jdideh that's second to none. But I won't tell you where!",
+              "pic": "🥣"
             },
             {
               "id": "lv10-13-02",
-              "arabizi": "l hommos l asle lebnene!",
-              "arabic": "الحمّص الأصلي لبناني!",
-              "english": "Real hummus is Lebanese!",
-              "pic": "🫘"
+              "arabizi": "el tabbouleh lezim tkoun khadra, ya3ne ba2dounes ktir w burghol shway. iza fiya burghol ktir, hayde mesh tabbouleh, hayde salata! teta bt2oul hayk w ma fi ne2ash.",
+              "arabic": "التبّولة لازم تكون خضرا، يعني بقدونس كتير وبرغل شوي. إذا فيها برغل كتير، هيدي مش تبّولة، هيدي سلطة! تيتا بتقول هيك وما في نقاش.",
+              "english": "Tabbouleh has to be green, meaning lots of parsley and a little bulgur. If it has lots of bulgur, it's not tabbouleh, it's a salad! Grandma says so and that's that.",
+              "pic": "🌿"
             },
             {
               "id": "lv10-13-03",
-              "arabizi": "l falafel a7san ma3 tahini aw ma3 toum?",
-              "arabic": "الفلافل أحسن مع طحينة أو مع توم؟",
-              "english": "Is falafel better with tahini or garlic?",
-              "pic": "🧆"
-            },
-            {
-              "id": "lv10-13-04",
-              "arabizi": "man2ouche za3tar aw jebne?",
-              "arabic": "منقوشة زعتر أو جبنة؟",
-              "english": "Za'atar or cheese man'oushe?",
+              "arabizi": "el man2oushe 3a za3tar aw 3a jebne? ana b2oul nos w nos. bas Rami bi2oul el za3tar bas, w el jebne la el wled. sarlna sene 3am net2atal 3leya.",
+              "arabic": "المنقوشة عزعتر أو عجبنة؟ أنا بقول نصّ ونصّ. بس رامي بيقول الزعتر بس، والجبنة للولاد. صرلنا سنة عم نتقاتل عليها.",
+              "english": "Man2oushe with za3tar or with cheese? I say half and half. But Rami says za3tar only, and cheese is for kids. We've been arguing about it for a year.",
               "pic": "🫓"
             },
             {
+              "id": "lv10-13-04",
+              "arabizi": "el falafel men Lebnen aw men Masr? hayda sou2al khatir. el masriyyin bi2oulo \"ta3miyye\" w bya3mlouha bel foul. ne7na bel 7ommos. w el tnein tayybin, bas ma t2oul hayk 2eddem lebnene!",
+              "arabic": "الفلافل من لبنان أو من مصر؟ هيدا سؤال خطير. المصريّين بيقولو \"طعميّة\" وبيعملوها بالفول. نحنا بالحمّص. والتنين طيّبين، بس ما تقول هيك قدّام لبناني!",
+              "english": "Is falafel from Lebanon or Egypt? That's a dangerous question. Egyptians call it \"ta3miyye\" and make it with fava beans. We make it with chickpeas. Both are tasty, but don't say that in front of a Lebanese!",
+              "pic": "🧆"
+            },
+            {
               "id": "lv10-13-05",
-              "arabizi": "l kebbe nayye la meen bya3refa",
-              "arabic": "الكبّة النيّة لمين بيعرفا",
-              "english": "Raw kibbeh is for those who know",
-              "pic": "🥩"
+              "arabizi": "el knefe el a7san b Tripoli. kel el nes bta3ref hayda. bas iza 2elt hayda b Saida, ra7 yez3alo mennak. kel madine 3enda 7elou w kel wa7ad bi2oul taba3o a7san.",
+              "arabic": "الكنافة الأحسن بطرابلس. كل الناس بتعرف هيدا. بس إذا قلت هيدا بصيدا، رح يزعلو منّك. كل مدينة عندا حلو وكل واحد بيقول تبعو أحسن.",
+              "english": "The best knafeh is in Tripoli. Everyone knows that. But if you say that in Saida, they'll be upset with you. Every city has its sweets and everyone says theirs is best.",
+              "pic": "🍰"
             },
             {
               "id": "lv10-13-06",
-              "arabizi": "emme btotbokh a7san men emmak",
-              "arabic": "إمّي بتطبخ أحسن من إمّك",
-              "english": "My mum cooks better than yours",
-              "pic": "👩‍🍳",
-              "note": "The debate nobody wins."
-            },
-            {
-              "id": "lv10-13-07",
-              "arabizi": "l kenafe b ka3ke",
-              "arabic": "الكنافة بكعكة",
-              "english": "Knafeh in a sesame bun",
-              "pic": "🍞",
-              "note": "The proper Lebanese breakfast knafeh."
-            },
-            {
-              "id": "lv10-13-08",
-              "arabizi": "3a fekra, ana b7ebb l ketchup ma3 l shawarma",
-              "arabic": "عفكرة، أنا بحبّ الكاتشب مع الشاورما",
-              "english": "By the way, I like ketchup with shawarma",
-              "pic": "🍅",
-              "note": "Expect gasps."
-            },
-            {
-              "id": "lv10-13-09",
-              "arabizi": "hayda jarime!",
-              "arabic": "هيدي جريمة!",
-              "english": "That's a crime!",
-              "pic": "🚨"
-            },
-            {
-              "id": "lv10-13-10",
-              "arabizi": "kel wa7ad w zaw2o",
-              "arabic": "كل واحد وذوقو",
-              "english": "Everyone has their own taste",
-              "pic": "🤷"
+              "arabizi": "bel akhir, el ma7all el a7san huwwe beit emmak. ma fi mat3am bi3allem 3a teta. hayda el shi el wa7id el kel el lebnenyin mettefe2in 3le.",
+              "arabic": "بالآخر، المحلّ الأحسن هوّي بيت إمّك. ما في مطعم بيعلّم على تيتا. هيدا الشي الوحيد يلّي كل اللبنانيّين متّفقين عليه.",
+              "english": "In the end, the best place is your mum's house. No restaurant beats grandma. That's the only thing all Lebanese agree on.",
+              "pic": "🏠"
             }
           ],
           "dialogue": [
@@ -30770,74 +30380,45 @@
           "items": [
             {
               "id": "lv10-14-01",
-              "arabizi": "tle3na 3al day3a la nshouf jeddo",
-              "arabic": "طلعنا عالضيعة لنشوف جدّو",
-              "english": "We went up to the village to see Grandpa",
-              "pic": "🌳"
-            },
-            {
-              "id": "lv10-14-02",
-              "arabizi": "l day3a kella 2araybin",
-              "arabic": "الضيعة كلّا قرايب",
-              "english": "The whole village is related",
-              "pic": "👨‍👩‍👧‍👦"
-            },
-            {
-              "id": "lv10-14-03",
-              "arabizi": "kel wa7ad by2ellak 'inta ibn meen?'",
-              "arabic": "كل واحد بيقلّك 'إنت إبن مين؟'",
-              "english": "Everyone asks 'whose son are you?'",
-              "pic": "❓"
-            },
-            {
-              "id": "lv10-14-04",
-              "arabizi": "l sobe7 l dik byfayye2na",
-              "arabic": "الصبح الديك بيفيّقنا",
-              "english": "In the morning the rooster wakes us",
+              "arabizi": "kel seif mnetla3 3al dei3a. el hawa ndif w el leil fresh. el sob7 mnes7a 3a sawt el dyouk w ri7et el khebez el sokhn men el tannour.",
+              "arabic": "كل صيف منطلع عالضيعة. الهوا نضيف والليل fresh. الصبح منصحى عصوت الديوك وريحة الخبز السخن من التنّور.",
+              "english": "Every summer we go up to the village. The air is clean and the nights are cool. In the morning we wake up to the sound of roosters and the smell of hot bread from the oven.",
               "pic": "🐓"
             },
             {
-              "id": "lv10-14-05",
-              "arabizi": "2tafna zeitoun",
-              "arabic": "قطفنا زيتون",
-              "english": "We picked olives",
+              "id": "lv10-14-02",
+              "arabizi": "jeddo 3ando jnaine kbire: banadoura, khyar, teen w 3enab. kel sob7 byetla3 bakkir w byes2e kel shi. w bi2oulle \"ta3a, 3allmak kif tezra3\".",
+              "arabic": "جدّو عندو جنينة كبيرة: بندورة، خيار، تين وعنب. كل صبح بيطلع بكّير وبيسقي كل شي. وبيقلّي \"تعا، علّمك كيف تزرع\".",
+              "english": "Grandpa has a big garden: tomatoes, cucumbers, figs and grapes. Every morning he gets up early and waters everything. And he tells me \"come, I'll teach you how to plant\".",
+              "pic": "🍅"
+            },
+            {
+              "id": "lv10-14-03",
+              "arabizi": "bel dei3a, kel el nes bta3ref ba3da. iza meshet bel shere3, kel wa7ad bisallem 3leik w byes2al: \"enta ebn min?\" w ba3d ma t2ollo, bi2oul \"ah! ana ba3ref jeddak!\"",
+              "arabic": "بالضيعة، كل الناس بتعرف بعضا. إذا مشيت بالشارع، كل واحد بيسلّم عليك وبيسأل: \"إنت ابن مين؟\" وبعد ما تقلّو، بيقول \"آه! أنا بعرف جدّك!\"",
+              "english": "In the village, everyone knows each other. If you walk down the street, everyone greets you and asks: \"whose son are you?\" And after you tell them, they say \"ah! I know your grandfather!\"",
+              "pic": "👋"
+            },
+            {
+              "id": "lv10-14-04",
+              "arabizi": "bel kharif fi mousam el zeitoun. kel el 3ayle btetla3 3al karm, w mnla22et el zeitoun 3al ard. ba3dein mnekhdo 3al me3sara, w mnerja3 b zeit la kel el sene.",
+              "arabic": "بالخريف في موسم الزيتون. كل العيلة بتطلع عالكرم، ومنلقّط الزيتون عالأرض. بعدين مناخدو عالمعصرة، ومنرجع بزيت لكل السنة.",
+              "english": "In autumn there's the olive season. The whole family goes up to the grove, and we pick olives off the ground. Then we take them to the press, and come back with oil for the whole year.",
               "pic": "🫒"
             },
             {
+              "id": "lv10-14-05",
+              "arabizi": "bel leil, mne23od 3al balcon w mnshouf el njoum. ma fi daje, ma fi 3aj2a, bas sawt el sarsour. teta bt7ki 2esas 3an zamen, lamma ma ken fi kahraba abadan.",
+              "arabic": "بالليل، منقعد عالبلكون ومنشوف النجوم. ما في ضجّة، ما في عجقة، بس صوت الصرصور. تيتا بتحكي قصص عن زمان، لمّا ما كان في كهربا أبداً.",
+              "english": "At night, we sit on the balcony and look at the stars. No noise, no traffic, just the sound of crickets. Grandma tells stories about the old days, when there was no electricity at all.",
+              "pic": "🌌"
+            },
+            {
               "id": "lv10-14-06",
-              "arabizi": "3melna m2ouné",
-              "arabic": "عملنا مونة",
-              "english": "We made the winter pantry",
-              "pic": "🫙",
-              "note": "'mouneh': jams, pickles, oil, za'atar for the year."
-            },
-            {
-              "id": "lv10-14-07",
-              "arabizi": "l hawa ghayr shi",
-              "arabic": "الهوا غير شي",
-              "english": "The air is something else",
-              "pic": "🌬️"
-            },
-            {
-              "id": "lv10-14-08",
-              "arabizi": "ma fi internet, bas fi nes",
-              "arabic": "ما في إنترنت، بس في ناس",
-              "english": "No internet, but there are people",
-              "pic": "📵"
-            },
-            {
-              "id": "lv10-14-09",
-              "arabizi": "jeddo bya3ref esm kel shajra",
-              "arabic": "جدّو بيعرف اسم كل شجرة",
-              "english": "Grandpa knows the name of every tree",
-              "pic": "🌲"
-            },
-            {
-              "id": "lv10-14-10",
-              "arabizi": "bel day3a, l wa2t mish metl Beirut",
-              "arabic": "بالضيعة، الوقت مش متل بيروت",
-              "english": "In the village, time isn't like in Beirut",
-              "pic": "⏳"
+              "arabizi": "lamma nenzal 3al madine, el sayyara bteb2a malyane: zeit, zeitoun, za3tar, mrabba w jebne. teta bt2oul \"khodo, khodo, hayda men el ard\". w ne7na ma mne2der nerfod.",
+              "arabic": "لمّا ننزل عالمدينة، السيّارة بتبقى مليانة: زيت، زيتون، زعتر، مربّى وجبنة. تيتا بتقول \"خودو، خودو، هيدا من الأرض\". ونحنا ما منقدر نرفض.",
+              "english": "When we go back down to the city, the car is full: oil, olives, za3tar, jam and cheese. Grandma says \"take it, take it, it's from the land\". And we can't refuse.",
+              "pic": "🧺"
             }
           ],
           "dialogue": [
@@ -30957,74 +30538,45 @@
           "items": [
             {
               "id": "lv10-15-01",
-              "arabizi": "yalla, kello 3al dabke!",
-              "arabic": "يلّا، كلّو عالدبكة!",
-              "english": "Come on, everyone to the dabke!",
-              "pic": "💃"
-            },
-            {
-              "id": "lv10-15-02",
-              "arabizi": "l 3arous metl l amar",
-              "arabic": "العروس متل القمر",
-              "english": "The bride is like the moon",
-              "pic": "🌕",
-              "note": "The highest compliment for a bride."
-            },
-            {
-              "id": "lv10-15-03",
-              "arabizi": "l zaffe bteshe3el l 3eres",
-              "arabic": "الزفّة بتشعل العرس",
-              "english": "The zaffe sets the wedding on fire",
+              "arabizi": "el 3ers bel lebnene byballesh bel zaffe. el tabbel w el zammar byeju 3al beit, w el 3aris w el 3arous byenzalo 3al darj w hinne 3am yer2so. kel el 7ay byesma3!",
+              "arabic": "العرس اللبناني بيبلّش بالزفّة. الطبّال والزمّار بيجو عالبيت، والعريس والعروس بينزلو عالدرج وهنّي عم يرقصو. كل الحيّ بيسمع!",
+              "english": "A Lebanese wedding starts with the zaffe. The drummer and the piper come to the house, and the bride and groom go down the stairs dancing. The whole neighbourhood hears it!",
               "pic": "🥁"
             },
             {
+              "id": "lv10-15-02",
+              "arabizi": "bel 7afle, fi 3asha kbir w musi2a la el sob7. el dabke ma btwa22ef. w lamma tballesh el ghenniye el 2adime, kel el kbar bi2umo yer2so.",
+              "arabic": "بالحفلة، في عشا كبير وموسيقى للصبح. الدبكة ما بتوقّف. ولمّا تبلّش الغنّية القديمة، كل الكبار بيقومو يرقصو.",
+              "english": "At the party, there's a big dinner and music till morning. The dabke never stops. And when the old song starts, all the older people get up to dance.",
+              "pic": "💃"
+            },
+            {
+              "id": "lv10-15-03",
+              "arabizi": "el 3ers b Lebnen ghali ktir. fi 3iyal bta3zom khams miyye wa7ad. w iza ma 3azamt ebn 3amm ebn khalto, ra7 yez3al la akher 3omro!",
+              "arabic": "العرس بلبنان غالي كتير. في عيل بتعزم خمس مية واحد. وإذا ما عزمت ابن عمّ ابن خالتك، رح يزعل لآخر عمرو!",
+              "english": "Weddings in Lebanon are very expensive. Some families invite five hundred people. And if you don't invite your mother's cousin's son, he'll be upset for the rest of his life!",
+              "pic": "💸"
+            },
+            {
               "id": "lv10-15-04",
-              "arabizi": "2a3adt 3a tawle ma3 nes ma ba3rfon",
-              "arabic": "قعدت عطاولة مع ناس ما بعرفن",
-              "english": "I sat at a table with people I don't know",
-              "pic": "🪑"
+              "arabizi": "el 3id bel dei3a mesh metl el madine. bel milad, kel el 3ayle btejtime3 3and teta. bel fitr, el jiran byjibo el ma3moul w el 7elou. w el kel bi2oul \"kel 3am w enta bkheir\".",
+              "arabic": "العيد بالضيعة مش متل المدينة. بالميلاد، كل العيلة بتجتمع عند تيتا. بالفطر، الجيران بيجيبو المعمول والحلو. والكل بيقول \"كل عام وإنت بخير\".",
+              "english": "Holidays in the village aren't like in the city. At Christmas, the whole family gathers at grandma's. At Eid al-Fitr, the neighbours bring ma3moul and sweets. And everyone says \"happy holidays\".",
+              "pic": "🎄"
             },
             {
               "id": "lv10-15-05",
-              "arabizi": "2alouli '3o2bel 3andak' 3eshrin marra",
-              "arabic": "قالولي 'عقبال عندك' عشرين مرّة",
-              "english": "They said 'you're next' twenty times",
-              "pic": "😅"
-            },
-            {
-              "id": "lv10-15-06",
-              "arabizi": "l musi2a 3al 3ale ktir",
-              "arabic": "الموسيقى عالعالي كتير",
-              "english": "The music is very loud",
-              "pic": "🔊"
-            },
-            {
-              "id": "lv10-15-07",
-              "arabizi": "l akl ma khlis",
-              "arabic": "الأكل ما خلص",
-              "english": "The food never ended",
-              "pic": "🍽️"
-            },
-            {
-              "id": "lv10-15-08",
-              "arabizi": "bel 3emede, l bebe 3am yebke",
-              "arabic": "بالعمادة، البيبي عم يبكي",
-              "english": "At the christening, the baby was crying",
+              "arabizi": "bel 3mede, el 3ayle kella bteje. ba3d el kenise, fi ghada kbir w 3ara2. el 3arrab 3am ye7mel el bebe w bi2oul \"nshalla bteb2a metl ahlak\".",
+              "arabic": "بالعمادة، العيلة كلّا بتجي. بعد الكنيسة، في غدا كبير وعرق. العرّاب عم يحمل البيبي وبيقول \"إن شاء الله بتطلع متل أهلك\".",
+              "english": "At a baptism, the whole family comes. After church, there's a big lunch and arak. The godfather holds the baby and says \"may you turn out like your parents\".",
               "pic": "👶"
             },
             {
-              "id": "lv10-15-09",
-              "arabizi": "7a nesahar la l sobe7",
-              "arabic": "رح نسهر للصبح",
-              "english": "We'll stay up till morning",
-              "pic": "🌅"
-            },
-            {
-              "id": "lv10-15-10",
-              "arabizi": "ya rab tdoum l far7a",
-              "arabic": "يا ربّ تدوم الفرحة",
-              "english": "May the joy last",
-              "pic": "🎊"
+              "id": "lv10-15-06",
+              "arabizi": "lamma 7ada byenja7 bel bac aw byetkharraj, el 3ayle bta3mel 7afle. kel el nes bteje b hdeyya w bt2oul \"mabrouk, 3a2bel el shahede el akbar!\"",
+              "arabic": "لمّا حدا بينجح بالبكالوريا أو بيتخرّج، العيلة بتعمل حفلة. كل الناس بتجي بهدايا وبتقول \"مبروك، عقبال الشهادة الأكبر!\"",
+              "english": "When someone passes the baccalaureate or graduates, the family throws a party. Everyone comes with presents and says \"congratulations, here's to the bigger degree!\"",
+              "pic": "🎓"
             }
           ],
           "dialogue": [
@@ -31137,75 +30689,45 @@
           "items": [
             {
               "id": "lv10-16-01",
-              "arabizi": "re7na 3al ta3ziye",
-              "arabic": "رحنا عالتعزية",
-              "english": "We went to pay condolences",
+              "arabizi": "lamma 7ada bimout, el 3ayle bta3mel ta3ziye tlet iyyem. el nes byeju yes2alo w yeshrabo el ahwe el mra. ma 7ada bi7ke ktir. bas 2a3de w 7odour.",
+              "arabic": "لمّا حدا بيموت، العيلة بتعمل تعزية تلت إيّام. الناس بيجو يسألو ويشربو القهوة المرّة. ما حدا بيحكي كتير. بس قعدة وحضور.",
+              "english": "When someone dies, the family holds condolences for three days. People come to pay respects and drink the bitter coffee. Nobody talks much. Just sitting and being there.",
               "pic": "🕯️"
             },
             {
               "id": "lv10-16-02",
-              "arabizi": "3azzayna l 3ayle",
-              "arabic": "عزّينا العيلة",
-              "english": "We comforted the family",
+              "arabizi": "lamma tfout, btsallem 3al 3ayle w bt2oul \"el baraka bi rasak\" aw \"allah yer7amo\". hinne bi2oulo \"allah yer7am mwetkon\" aw \"ma tshouf sharr\". ba3dein bto23od shway w btfell.",
+              "arabic": "لمّا تفوت، بتسلّم عالعيلة وبتقول \"البركة براسك\" أو \"الله يرحمو\". هنّي بيقولو \"الله يرحم موتاكن\" أو \"ما تشوف شرّ\". بعدين بتقعد شوي وبتفلّ.",
+              "english": "When you go in, you greet the family and say \"the blessing is on your head\" or \"God rest his soul\". They say \"God have mercy on your dead\" or \"may you see no evil\". Then you sit a little and leave.",
               "pic": "🤲"
             },
             {
               "id": "lv10-16-03",
-              "arabizi": "2a3adna shway w 2amna",
-              "arabic": "قعدنا شوي وقمنا",
-              "english": "We sat a little and left",
-              "pic": "🪑",
-              "note": "Short visits are normal."
+              "arabizi": "el lebs bel ta3ziye aswad aw ghame2. el nswen bya23do bi ghorfe w el rjel bi ghorfe tenye ahyanan. w ma fi akel abadan, bas ahwe mra w maye.",
+              "arabic": "اللبس بالتعزية أسود أو غامق. النسوان بيقعدو بغرفة والرجال بغرفة تانية أحياناً. وما في أكل أبداً، بس قهوة مرّة ومي.",
+              "english": "Clothes at a condolence visit are black or dark. Women sometimes sit in one room and men in another. And there's no food at all, just bitter coffee and water.",
+              "pic": "☕"
             },
             {
               "id": "lv10-16-04",
-              "arabizi": "shrebna ahwe mourra",
-              "arabic": "شربنا قهوة مرّة",
-              "english": "We drank bitter coffee",
-              "pic": "☕",
-              "note": "Bitter coffee without sugar is served at condolences."
-            },
-            {
-              "id": "lv10-16-05",
-              "arabizi": "l nes kenet labse aswad",
-              "arabic": "الناس كانت لابسة أسود",
-              "english": "People were wearing black",
-              "pic": "🖤"
-            },
-            {
-              "id": "lv10-16-06",
-              "arabizi": "2alna 'l ba2iye b 7ayetkon'",
-              "arabic": "قلنا 'البقيّة بحياتكن'",
-              "english": "We said 'may the rest be in your lives'",
-              "pic": "🙏"
-            },
-            {
-              "id": "lv10-16-07",
-              "arabizi": "ken insan khalo2",
-              "arabic": "كان إنسان خلوق",
-              "english": "He was a decent man",
+              "arabizi": "ba3d arb3in yom, fi \"el arb3in\": 3eshe aw 2eddes la ra7met el mayyet. el 3ayle btjib akel la el nes, w btetzakkar el shakhs.",
+              "arabic": "بعد أربعين يوم، في \"الأربعين\": عشا أو قدّاس لرحمة الميّت. العيلة بتجيب أكل للناس، وبتتذكّر الشخص.",
+              "english": "After forty days, there's \"the fortieth\": a dinner or a mass for the soul of the dead. The family brings food for people, and remembers the person.",
               "pic": "🌹"
             },
             {
-              "id": "lv10-16-08",
-              "arabizi": "allah yseberkon",
-              "arabic": "الله يصبّركن",
-              "english": "May God give you patience",
-              "pic": "🤍"
+              "id": "lv10-16-05",
+              "arabizi": "iza ma fik trou7, 3ayyet aw eb3at message: \"sme3t el khabar, allah yer7amo w yeb2a dekro ma3kon. iza bta7tejo shi, ana hon.\" hayda ktir mhemm la el 3ayle.",
+              "arabic": "إذا ما فيك تروح، عيّط أو ابعت message: \"سمعت الخبر، الله يرحمو ويبقى دكرو معكن. إذا بتحتاجو شي، أنا هون.\" هيدا كتير مهمّ للعيلة.",
+              "english": "If you can't go, call or send a message: \"I heard the news, God rest his soul and may his memory stay with you. If you need anything, I'm here.\" This matters a lot to the family.",
+              "pic": "📱"
             },
             {
-              "id": "lv10-16-09",
-              "arabizi": "ma t2oul nukat honik",
-              "arabic": "ما تقول نكت هونيك",
-              "english": "Don't tell jokes there",
-              "pic": "🤐"
-            },
-            {
-              "id": "lv10-16-10",
-              "arabizi": "l mawt 7a2",
-              "arabic": "الموت حقّ",
-              "english": "Death comes to all",
-              "pic": "🕊️"
+              "id": "lv10-16-06",
+              "arabizi": "el jiran byjibo akel la el 3ayle el 7azine, la2anno hinne ma 3endon nafs yetbokho. hayda men a7la el 3adet: el 7azn bikhiff lamma tkoun el 7ara kella ma3ak.",
+              "arabic": "الجيران بيجيبو أكل للعيلة الحزينة، لأنّو هنّي ما عندن نفس يطبخو. هيدا من أحلى العادات: الحزن بيخفّ لمّا تكون الحارة كلّا معك.",
+              "english": "Neighbours bring food to the grieving family, because they're in no state to cook. It's one of the most beautiful customs: grief gets lighter when the whole neighbourhood is with you.",
+              "pic": "🍲"
             }
           ],
           "dialogue": [
@@ -31318,74 +30840,45 @@
           "items": [
             {
               "id": "lv10-17-01",
-              "arabizi": "shu fi 3al television l leile?",
-              "arabic": "شو في عالتلفزيون الليلة؟",
-              "english": "What's on TV tonight?",
-              "pic": "📺"
-            },
-            {
-              "id": "lv10-17-02",
-              "arabizi": "l musalsal 3am yshedd",
-              "arabic": "المسلسل عم يشدّ",
-              "english": "The Syrian series is gripping",
-              "pic": "🎬"
-            },
-            {
-              "id": "lv10-17-03",
-              "arabizi": "shefet 7al2it l mbere7?",
-              "arabic": "شفت حلقة مبارح؟",
-              "english": "Did you see last night's episode?",
-              "pic": "🗓️"
-            },
-            {
-              "id": "lv10-17-04",
-              "arabizi": "ma t2ellé shu sar!",
-              "arabic": "ما تقلّي شو صار!",
-              "english": "Don't tell me what happened!",
-              "pic": "🤐"
-            },
-            {
-              "id": "lv10-17-05",
-              "arabizi": "l talk show l siyese",
-              "arabic": "التوك شو السياسي",
-              "english": "The political talk show",
-              "pic": "🎙️"
-            },
-            {
-              "id": "lv10-17-06",
-              "arabizi": "bel radio, Fairouz kel sobe7",
-              "arabic": "بالراديو، فيروز كل صبح",
-              "english": "On the radio, Fairuz every morning",
+              "arabizi": "sab7 el kheir ya Lebnen, ma3kon radio Sawt el Sha3b. el se3a sab3a w nos, w el ta2s lyom mshames ma3 shwayet ghaym 3al jabal. el 3aj2a 3al autostrade men el Dawra la Beirut.",
+              "arabic": "صباح الخير يا لبنان، معكن راديو صوت الشعب. الساعة سبعة ونصّ، والطقس اليوم مشمس مع شوية غيم عالجبل. العجقة عالأوتوستراد من الدورة لبيروت.",
+              "english": "Good morning Lebanon, you're listening to Radio Sawt el Sha3b. It's half past seven, and today's weather is sunny with some clouds on the mountains. Traffic on the highway from Dora to Beirut.",
               "pic": "📻"
             },
             {
-              "id": "lv10-17-07",
-              "arabizi": "l mozi3a 3ajbetne",
-              "arabic": "المذيعة عجبتني",
-              "english": "I liked the presenter",
-              "pic": "👩‍💼"
+              "id": "lv10-17-02",
+              "arabizi": "el talk shows hon kella sarikh. tlet dyouf w kel wa7ad bi7ke b sawt a3la men el tene. el mo2addim bi2oul \"khalas, khalas!\" w ma 7ada byesma3o. el nes btetfarraj w btedhak.",
+              "arabic": "الـ talk shows هون كلّا صريخ. تلت ضيوف وكل واحد بيحكي بصوت أعلى من التاني. المقدّم بيقول \"خلص، خلص!\" وما حدا بيسمعو. الناس بتتفرّج وبتضحك.",
+              "english": "The talk shows here are all shouting. Three guests and each one talks louder than the other. The host says \"enough, enough!\" and nobody listens to him. People watch and laugh.",
+              "pic": "📺"
             },
             {
-              "id": "lv10-17-08",
-              "arabizi": "bel ramadan, musalsalet ktir",
-              "arabic": "برمضان، مسلسلات كتير",
-              "english": "In Ramadan, there are lots of series",
-              "pic": "🌙",
-              "note": "Ramadan is the big season for Arabic TV series."
+              "id": "lv10-17-03",
+              "arabizi": "el msalsalet el lebnaniyye sarit mash-houra bel 3alam el 3arabe. kella 7ob w kheyene w 3ayle ghaniyye. emme btetfarraj kel leile w bt2oul \"ma ba2a fiye shouf, bas bukra bshouf el 7al2a el jeye.\"",
+              "arabic": "المسلسلات اللبنانيّة صارت مشهورة بالعالم العربي. كلّا حبّ وخيانة وعيلة غنيّة. إمّي بتتفرّج كل ليلة وبتقول \"ما بقى فيي شوف، بس بكرا بشوف الحلقة الجايي.\"",
+              "english": "Lebanese TV series have become famous across the Arab world. They're all love, betrayal and rich families. My mum watches every night and says \"I can't watch anymore, but tomorrow I'll watch the next episode.\"",
+              "pic": "🎭"
             },
             {
-              "id": "lv10-17-09",
-              "arabizi": "3am etfarraj 3a netflix",
-              "arabic": "عم إتفرّج عنتفليكس",
-              "english": "I'm watching Netflix",
-              "pic": "🍿"
+              "id": "lv10-17-04",
+              "arabizi": "el nashra bel 3arabe el fos7a, fa ahyanan sa3b tefham. bas el mo2addim lamma bi2oul \"w hala2, el ta2s\", bisir bi7ke lebnene. hayda el wa2t el wa7id el kel byesma3.",
+              "arabic": "النشرة بالعربي الفصحى، فا أحياناً صعب تفهم. بس المقدّم لمّا بيقول \"وهلّق، الطقس\"، بيصير بيحكي لبناني. هيدا الوقت الوحيد يلّي الكل بيسمع.",
+              "english": "The news bulletin is in Standard Arabic, so it's sometimes hard to understand. But when the presenter says \"and now, the weather\", he starts talking Lebanese. That's the only time everyone listens.",
+              "pic": "🗞️"
             },
             {
-              "id": "lv10-17-10",
-              "arabizi": "2allebli 3al akhbar",
-              "arabic": "قلّبلي عالأخبار",
-              "english": "Switch to the news for me",
-              "pic": "🔄"
+              "id": "lv10-17-05",
+              "arabizi": "bel sayyara, el kel bi7ott radio. ghenniye la Fairouz, ba3dein e3lenet, ba3dein akhbar, ba3dein ghenniye la Nancy Ajram. w el mo2addim byeje bi2oul \"w hala2 ma3na ettisal men 3and Maya b Jounieh!\"",
+              "arabic": "بالسيّارة، الكل بيحطّ راديو. غنّية لفيروز، بعدين إعلانات، بعدين أخبار، بعدين غنّية لنانسي عجرم. والمقدّم بيجي بيقول \"وهلّق معنا اتّصال من عند مايا بجونيه!\"",
+              "english": "In the car, everyone puts the radio on. A Fairouz song, then ads, then news, then a Nancy Ajram song. And the presenter comes on saying \"and now we have a call from Maya in Jounieh!\"",
+              "pic": "🎶"
+            },
+            {
+              "id": "lv10-17-06",
+              "arabizi": "el e3lenet hon mdhike ktir: \"ma tsahar bala el ahwe el fla-niyye!\" w el ghenniye taba3 el e3len btedall bi rasak kel el nhar. ma fik tkhallis menna!",
+              "arabic": "الإعلانات هون مضحكة كتير: \"ما تسهر بلا القهوة الفلانيّة!\" والغنّية تبع الإعلان بتضلّ براسك كل النهار. ما فيك تخلص منها!",
+              "english": "Ads here are really funny: \"don't stay up without so-and-so coffee!\" And the jingle stays in your head all day. You can't get rid of it!",
+              "pic": "📢"
             }
           ],
           "dialogue": [
@@ -31491,73 +30984,45 @@
           "items": [
             {
               "id": "lv10-18-01",
-              "arabizi": "min wein l akh?",
-              "arabic": "من وين الأخ؟",
-              "english": "Where are you from, brother?",
+              "arabizi": "\"ahlein ya m3allem, la wein?\" \"3al Hamra iza bitred.\" \"tfaddal. bas el tari2 3aj2a, ra7 n2asser men ta7t.\" el sawwe2 dayman 3ando tari2 sirriyye ma 7ada bya3refa.",
+              "arabic": "\"أهلين يا معلّم، لوين؟\" \"عالحمرا إذا بتريد.\" \"تفضّل. بس الطريق عجقة، رح نقصّر من تحت.\" السوّاق دايماً عندو طريق سرّية ما حدا بيعرفا.",
+              "english": "\"Hello boss, where to?\" \"To Hamra, please.\" \"Get in. But the road is jammed, we'll cut through below.\" The driver always has a secret route nobody knows.",
               "pic": "🚕"
             },
             {
               "id": "lv10-18-02",
-              "arabizi": "ahla w sahla bi baladak l tene",
-              "arabic": "أهلا وسهلا ببلدك التاني",
-              "english": "Welcome to your second country",
-              "pic": "🇱🇧"
+              "arabizi": "\"enta mesh lebnene, sa77? men wein? ah, men Almania! ana khaye b Berlin, sarlo 3eshrin sene. w kif 3arabiytak 7elwe hayk? min 3allamak?\" khams d2aye2 w sar ya3ref kel 7ayatak.",
+              "arabic": "\"إنت مش لبناني، صحّ؟ من وين؟ آه، من ألمانيا! أنا خيّي ببرلين، صرلو عشرين سنة. وكيف عربيّتك حلوة هيك؟ مين علّمك؟\" خمس دقايق وصار يعرف كل حياتك.",
+              "english": "\"You're not Lebanese, right? Where from? Ah, Germany! My brother is in Berlin, he's been there twenty years. And how is your Arabic so good? Who taught you?\" Five minutes and he knows your whole life.",
+              "pic": "🗣️"
             },
             {
               "id": "lv10-18-03",
-              "arabizi": "l 3aj2a ma ilha 7all",
-              "arabic": "العجقة ما إلها حلّ",
-              "english": "Traffic has no solution",
-              "pic": "🚦"
+              "arabizi": "el sawwe2 bi7ke 3an kel shi: el siyase, el as3ar, el benzine, w wlado bel jem3a. w bel akhir bi2oullak \"walla ya akhe, Lebnen a7la balad, bas ma fi dawle.\"",
+              "arabic": "السوّاق بيحكي عن كل شي: السياسة، الأسعار، البنزين، وولادو بالجامعة. وبالآخر بيقلّك \"والله يا أخي، لبنان أحلى بلد، بس ما في دولة.\"",
+              "english": "The driver talks about everything: politics, prices, petrol, and his kids at university. And in the end he tells you \"honestly, brother, Lebanon is the best country, but there's no state.\"",
+              "pic": "🇱🇧"
             },
             {
               "id": "lv10-18-04",
-              "arabizi": "ana kenet ma3allem 2abl l 7arb",
-              "arabic": "أنا كنت معلّم قبل الحرب",
-              "english": "I was a teacher before the war",
-              "pic": "👨‍🏫"
+              "arabizi": "2abel ma terkab, es2al \"addeish la Hamra?\" iza ma sa2alt, mumken yetla3lak se3r ajnabe. w et2akkad iza \"service\" aw \"taxi\". el service arkhas bas biwa22ef la nes tenyin 3al tari2.",
+              "arabic": "قبل ما تركب، اسأل \"قدّيش للحمرا؟\" إذا ما سألت، ممكن يطلعلك سعر أجنبي. وتأكّد إذا \"سرفيس\" أو \"تاكسي\". السرفيس أرخص بس بيوقّف لناس تانيين عالطريق.",
+              "english": "Before you get in, ask \"how much to Hamra?\" If you don't ask, you might get a foreigner's price. And check whether it's a \"service\" or a \"taxi\". The service is cheaper but stops for other people on the way.",
+              "pic": "💵"
             },
             {
               "id": "lv10-18-05",
-              "arabizi": "wledé kellon barra",
-              "arabic": "ولادي كلّن برّا",
-              "english": "My kids are all abroad",
-              "pic": "✈️"
+              "arabizi": "\"hon, hon, wa22ef hon iza bitred.\" \"akid, tfaddal. khamsin alf.\" \"tfaddal, w ya3tik el 3afye.\" \"allah y3afik, ma3 el salame, w ahla w sahla bi Lebnen!\"",
+              "arabic": "\"هون، هون، وقّف هون إذا بتريد.\" \"أكيد، تفضّل. خمسين ألف.\" \"تفضّل، ويعطيك العافية.\" \"الله يعافيك، مع السلامة، وأهلا وسهلا بلبنان!\"",
+              "english": "\"Here, here, stop here please.\" \"Sure, go ahead. Fifty thousand.\" \"Here you go, and thank you for your work.\" \"God give you health, goodbye, and welcome to Lebanon!\"",
+              "pic": "👋"
             },
             {
               "id": "lv10-18-06",
-              "arabizi": "l benzine ghali ktir",
-              "arabic": "البنزين غالي كتير",
-              "english": "Petrol is very expensive",
-              "pic": "⛽"
-            },
-            {
-              "id": "lv10-18-07",
-              "arabizi": "3andak mara?",
-              "arabic": "عندك مرا؟",
-              "english": "Do you have a wife?",
-              "pic": "💍"
-            },
-            {
-              "id": "lv10-18-08",
-              "arabizi": "lebnen 7elo bas l dawle...",
-              "arabic": "لبنان حلو بس الدولة...",
-              "english": "Lebanon is lovely but the state...",
-              "pic": "🤷"
-            },
-            {
-              "id": "lv10-18-09",
-              "arabizi": "ya3tik l 3afye, 3amme",
-              "arabic": "يعطيك العافية، عمّي",
-              "english": "Thank you, uncle",
-              "pic": "🙏"
-            },
-            {
-              "id": "lv10-18-10",
-              "arabizi": "ma tedfa3 aktar men l 3ade!",
-              "arabic": "ما تدفع أكتر من العادي!",
-              "english": "Don't pay more than normal!",
-              "pic": "💵"
+              "arabizi": "el taxi bel lebnene a7san dars 3arabe. el sawwe2 bi7ke ktir w ma byetla3 ingleeze. w iza ma fhemt, bi3id, w bi3id, la7atta tefham! a7san m3allem w ma bya3ref.",
+              "arabic": "التاكسي اللبناني أحسن درس عربي. السوّاق بيحكي كتير وما بيطلع إنكليزي. وإذا ما فهمت، بيعيد، وبيعيد، لحتّى تفهم! أحسن معلّم وما بيعرف.",
+              "english": "A Lebanese taxi is the best Arabic lesson. The driver talks a lot and doesn't switch to English. And if you don't understand, he repeats, and repeats, until you do! The best teacher, and he doesn't even know it.",
+              "pic": "🎓"
             }
           ],
           "dialogue": [
@@ -31677,73 +31142,45 @@
           "items": [
             {
               "id": "lv10-19-01",
-              "arabizi": "shu mna3mel l yom ya 2albe?",
-              "arabic": "شو منعمل اليوم يا قلبي؟",
-              "english": "What are we doing today, dear?",
+              "arabizi": "\"ahlein ya 2albe, tfaddale 2e3de. shu bta3mle lyom? 2ass aw sechoir bas?\" \"badde 2ass shway, bas mesh ktir. w badde ghayyer el lon, shi a7mar, bas mesh ktir 2awe.\"",
+              "arabic": "\"أهلين يا قلبي، تفضّلي اقعدي. شو بتعملي اليوم؟ قصّ أو سشوار بس؟\" \"بدّي قصّ شوي، بس مش كتير. وبدّي غيّر اللون، شي أحمر، بس مش كتير قوي.\"",
+              "english": "\"Hello darling, come sit down. What are you having today? A cut or just a blow-dry?\" \"I want a little cut, but not too much. And I want to change the colour, something red, but not too strong.\"",
               "pic": "💇‍♀️"
             },
             {
               "id": "lv10-19-02",
-              "arabizi": "brushing w ma tensé l volume",
-              "arabic": "برشينغ وما تنسي الفوليوم",
-              "english": "A blow-dry and don't forget the volume",
-              "pic": "💨"
+              "arabizi": "el coiffeur bel lebnene mesh bas sha3r. hayda ma7all el akhbar. kel el settet bteje w bt7ke 3an el 3ayle w el jiran w el 3rous. el coiffeuse bta3ref kel shi 3an kel el nes.",
+              "arabic": "الكوافير بلبنان مش بس شعر. هيدا محلّ الأخبار. كل الستّات بتجي وبتحكي عن العيلة والجيران والعرسان. الكوافيرة بتعرف كل شي عن كل الناس.",
+              "english": "The hairdresser in Lebanon isn't just about hair. It's the place for news. All the ladies come and talk about family, neighbours and weddings. The hairdresser knows everything about everyone.",
+              "pic": "💬"
             },
             {
               "id": "lv10-19-03",
-              "arabizi": "badde ghayyer l lawn",
-              "arabic": "بدّي غيّر اللون",
-              "english": "I want to change the colour",
-              "pic": "🎨"
-            },
-            {
-              "id": "lv10-19-04",
-              "arabizi": "sme3te 3an bent l jiran?",
-              "arabic": "سمعتي عن بنت الجيران؟",
-              "english": "Did you hear about the neighbours' daughter?",
-              "pic": "👂"
-            },
-            {
-              "id": "lv10-19-05",
-              "arabizi": "l coiffeuse bta3ref kel l akhbar",
-              "arabic": "الكوافيرة بتعرف كل الأخبار",
-              "english": "The hairdresser knows all the news",
-              "pic": "📰"
-            },
-            {
-              "id": "lv10-19-06",
-              "arabizi": "l manicure ma3 l brushing",
-              "arabic": "المانيكور مع البرشينغ",
-              "english": "Manicure with the blow-dry",
-              "pic": "💅"
-            },
-            {
-              "id": "lv10-19-07",
-              "arabizi": "sha3rik sa7te ktir",
-              "arabic": "شعرك صحّي كتير",
-              "english": "Your hair is very healthy",
+              "arabizi": "\"yi, mashalla 3a sha3rik, shu 7elo! bas bel atraf, lezim na3mel brushing kel jem3a. iza baddik, ba3mellik ma3 el protein, byeb2a ma3ik shahr.\"",
+              "arabic": "\"يي، ما شاء الله عشعرك، شو حلو! بس بالأطراف، لازم نعمل brushing كل جمعة. إذا بدّك، بعملّك مع الـ protein، بيبقى معك شهر.\"",
+              "english": "\"Oh, mashallah, your hair is so nice! But at the ends, we need to do a blow-dry every week. If you want, I'll do it with protein, it'll last you a month.\"",
               "pic": "✨"
             },
             {
-              "id": "lv10-19-08",
-              "arabizi": "7a tetla3e metl l amar",
-              "arabic": "رح تطلعي متل القمر",
-              "english": "You'll come out like the moon",
-              "pic": "🌕"
+              "id": "lv10-19-04",
+              "arabizi": "ana bel salon taba3 el rjel. el 7alla2 bi2oulle: \"zero 3al janbein w shway fo2?\" w ba3dein bi7ke 3al football nos se3a. bel akhir bi7ott ri7a w bi2oul \"na3iman!\"",
+              "arabic": "أنا بالصالون تبع الرجال. الحلّاق بيقلّي: \"zero عالجنبين وشوي فوق؟\" وبعدين بيحكي عالفوتبول نصّ ساعة. بالآخر بيحطّ ريحة وبيقول \"نعيماً!\"",
+              "english": "I'm at the men's barber. The barber asks me: \"zero on the sides and a bit on top?\" Then he talks about football for half an hour. At the end he puts on cologne and says \"na3iman!\"",
+              "pic": "💈"
             },
             {
-              "id": "lv10-19-09",
-              "arabizi": "na3iman!",
-              "arabic": "نعيمًا!",
-              "english": "Enjoy your new look!",
-              "pic": "💁‍♀️"
+              "id": "lv10-19-05",
+              "arabizi": "\"na3iman\" bt2oula ba3d 2ass el sha3r aw el doush. el jawab: \"allah yen3am 3aleik\". iza ma 2elta, el 7alla2 bi7es enno shi na2es. jarreb w shouf wejjo kif byedhak!",
+              "arabic": "\"نعيماً\" بتقولا بعد قصّ الشعر أو الدوش. الجواب: \"الله ينعم عليك\". إذا ما قلتا، الحلّاق بيحسّ إنّو في شي ناقص. جرّب وشوف وجّو كيف بيضحك!",
+              "english": "\"Na3iman\" is said after a haircut or a shower. The answer: \"allah yen3am 3aleik\". If you don't say it, the barber feels something is missing. Try it and see how his face lights up!",
+              "pic": "😊"
             },
             {
-              "id": "lv10-19-10",
-              "arabizi": "allah yen3em 3aleike",
-              "arabic": "الله ينعم عليكي",
-              "english": "Thank you (reply)",
-              "pic": "🙏"
+              "id": "lv10-19-06",
+              "arabizi": "bel 3id w 2abel el 3ers, el coiffeur bisir 3aj2a. lezim te7joz 2abel jem3a. w iza ma 7ajazt, ra7 tkoun bel saff ma3 3ashr settet. bas ma fi mashkal, el akhbar ra7 tkoun ktir!",
+              "arabic": "بالعيد وقبل العرس، الكوافير بيصير عجقة. لازم تحجز قبل جمعة. وإذا ما حجزت، رح تكون بالصفّ مع عشر ستّات. بس ما في مشكل، الأخبار رح تكون كتير!",
+              "english": "During holidays and before weddings, the hairdresser gets packed. You have to book a week ahead. And if you didn't book, you'll be in the queue with ten ladies. But no problem, there'll be plenty of news!",
+              "pic": "📅"
             }
           ],
           "dialogue": [
@@ -31856,82 +31293,45 @@
           "items": [
             {
               "id": "lv10-20-01",
-              "arabizi": "yalla, bye, bye, bye!",
-              "arabic": "يلّا، باي، باي، باي!",
-              "english": "OK, bye, bye, bye!",
-              "pic": "👋",
-              "note": "Never just one 'bye'."
+              "arabizi": "ba3d sene b Lebnen, lezim fell. ma ba3ref kif badde 2oul bye. kel el nes hon sarit 3ayle. el jiran, el baye3 bel dekkane, w 7atta sawwe2 el taxi elli bya3ref esme.",
+              "arabic": "بعد سنة بلبنان، لازم فلّ. ما بعرف كيف بدّي قول bye. كل الناس هون صارت عيلة. الجيران، البيّاع بالدكّانة، وحتّى سوّاق التاكسي يلّي بيعرف اسمي.",
+              "english": "After a year in Lebanon, I have to leave. I don't know how to say goodbye. Everyone here has become family. The neighbours, the shopkeeper, and even the taxi driver who knows my name.",
+              "pic": "💔"
             },
             {
               "id": "lv10-20-02",
-              "arabizi": "ma tghib 3anna!",
-              "arabic": "ما تغيب عنّا!",
-              "english": "Don't be a stranger!",
-              "pic": "🙏",
-              "f": {
-                "arabizi": "ma tghibe 3anna!",
-                "arabic": "ما تغيبي عنّا!"
-              }
+              "arabizi": "3melna sahra akhira. kel s7abe ejo. akalna, ghannayna w ra2asna. w bel akhir Rami 2al: \"ma tensana, w erja3 2ariban. el beit beitak, w Lebnen baldak.\"",
+              "arabic": "عملنا سهرة أخيرة. كل صحابي إجو. أكلنا، غنّينا ورقصنا. وبالآخر رامي قال: \"ما تنسانا، وارجع قريباً. البيت بيتك، ولبنان بلدك.\"",
+              "english": "We had a last evening together. All my friends came. We ate, sang and danced. And in the end Rami said: \"don't forget us, and come back soon. Our home is your home, and Lebanon is your country.\"",
+              "pic": "🥂"
             },
             {
               "id": "lv10-20-03",
-              "arabizi": "7a nesht2ellak",
-              "arabic": "رح نشتقلك",
-              "english": "We'll miss you",
-              "pic": "🥺"
+              "arabizi": "\"allah ma3ak, w nshalla menshoufak 2ariban.\" \"nshalla, w ma bensa shi. ra7 eshta2lkon ktir.\" \"w ana kamen. eb3atelna sowar w ma tghib.\" hayk bi2oulo bye hon: ma fi bye 7a2i2e.",
+              "arabic": "\"الله معك، وإن شاء الله منشوفك قريباً.\" \"إن شاء الله، وما بنسى شي. رح اشتقلكن كتير.\" \"وأنا كمان. ابعتلنا صور وما تغيب.\" هيك بيقولو bye هون: ما في bye حقيقي.",
+              "english": "\"God be with you, and hopefully we'll see you soon.\" \"Hopefully, and I won't forget anything. I'll miss you all so much.\" \"Me too. Send us photos and don't disappear.\" That's how people say bye here: there's no real goodbye.",
+              "pic": "👋"
             },
             {
               "id": "lv10-20-04",
-              "arabizi": "tammenna lamma tousal",
-              "arabic": "طمّنّا لمّا توصل",
-              "english": "Let us know when you arrive",
-              "pic": "📱"
+              "arabizi": "teta Emm Georges 3atatne 3elbet ma3moul w ma7rame mtarraze. 2alet \"khodha, ta tetzakkarna\". ma 2dert e7ke. bas bousta w 2elt \"yeslamo ideiki, ya teta\".",
+              "arabic": "تيتا أمّ جورج عطتني علبة معمول ومحرمة مطرّزة. قالت \"خودا، تا تتذكّرنا\". ما قدرت احكي. بس بستا وقلت \"يسلمو إيديكي، يا تيتا\".",
+              "english": "Grandma Umm Georges gave me a box of ma3moul and an embroidered handkerchief. She said \"take it, so you remember us\". I couldn't speak. I just kissed her and said \"bless your hands, teta\".",
+              "pic": "🎁"
             },
             {
               "id": "lv10-20-05",
-              "arabizi": "allah ma3ak",
-              "arabic": "الله معك",
-              "english": "God be with you",
-              "pic": "🤲",
-              "f": {
-                "arabizi": "allah ma3ik",
-                "arabic": "الله معك"
-              }
+              "arabizi": "bel tayyara, shefet Beirut men el shebbek: el ba7r, el jabal w el beyout el 2zar. tzakkart awwal yom, lamma ma kent ba3ref 2oul shi illa \"marhaba\". hala2 3am fakker b Lebnen bel 3arabe.",
+              "arabic": "بالطيّارة، شفت بيروت من الشبّاك: البحر، الجبل والبيوت الزغار. تذكّرت أوّل يوم، لمّا ما كنت بعرف قول شي إلّا \"مرحبا\". هلّق عم فكّر بلبنان بالعربي.",
+              "english": "On the plane, I saw Beirut from the window: the sea, the mountains and the little houses. I remembered the first day, when I couldn't say anything but \"marhaba\". Now I think about Lebanon in Arabic.",
+              "pic": "✈️"
             },
             {
               "id": "lv10-20-06",
-              "arabizi": "ma3 l salame",
-              "arabic": "مع السلامة",
-              "english": "Goodbye (go in peace)",
-              "pic": "🕊️"
-            },
-            {
-              "id": "lv10-20-07",
-              "arabizi": "allah ysallmak",
-              "arabic": "الله يسلّمك",
-              "english": "Reply: God keep you safe",
-              "pic": "💐"
-            },
-            {
-              "id": "lv10-20-08",
-              "arabizi": "mnshoufak 3a kheir",
-              "arabic": "منشوفك عخير",
-              "english": "See you in good times",
-              "pic": "🌟"
-            },
-            {
-              "id": "lv10-20-09",
-              "arabizi": "l bab maftou7 dayman",
-              "arabic": "الباب مفتوح دايمًا",
-              "english": "The door is always open",
-              "pic": "🚪"
-            },
-            {
-              "id": "lv10-20-10",
-              "arabizi": "ma b2oul 'bye', b2oul 'ila l li2a2'",
-              "arabic": "ما بقول 'باي'، بقول 'إلى اللقاء'",
-              "english": "I don't say goodbye, I say 'until we meet'",
-              "pic": "❤️"
+              "arabizi": "el lebnenyin 3andon kelme: \"el ghorbe\". ya3ne enno tkoun ba3id 3an baladak w 2albak hawnik. hala2 fhemta. w ba3ref enno ra7 erja3, la2anno Lebnen ma byetrokak, 7atta lamma enta btfell menno.",
+              "arabic": "اللبنانيّين عندن كلمة: \"الغربة\". يعني إنّو تكون بعيد عن بلدك وقلبك هونيك. هلّق فهمتا. وبعرف إنّو رح ارجع، لأنّو لبنان ما بيتركك، حتّى لمّا إنت بتفلّ منّو.",
+              "english": "The Lebanese have a word: \"el ghorbe\". It means being far from your country with your heart still there. Now I understand it. And I know I'll come back, because Lebanon never leaves you, even when you leave it.",
+              "pic": "🇱🇧"
             }
           ],
           "dialogue": [

@@ -9,6 +9,7 @@ and lessons too short for the quiz. Prints totals when everything passes.
 import json, re, sys
 
 ALLOWED = re.compile(r"^[A-Za-z0-9 .,!?'\-éè…():/\"]*$")
+FRENCH_OK = re.compile(r"^[A-Za-z0-9 .,!?'\-éèçàâ…():/\"]*$")
 
 d = json.load(open('content/lessons.json'))
 errors, ids = [], []
@@ -22,7 +23,9 @@ for lv in d['levels']:
             ids.append(x['id'])
             forms = [x['arabizi']] + ([x['f']['arabizi']] if 'f' in x else [])
             for a in forms:
-                if not ALLOWED.match(a):
+                # The lesson about mixing French into Lebanese may use real French letters.
+                ok = FRENCH_OK if l['id'] == 'lv10-08' else ALLOWED
+                if not ok.match(a):
                     errors.append(f"{x['id']}: odd character in arabizi: {a!r}")
             if x in l['dialogue'] and x['speaker'] not in d['speakers']:
                 errors.append(f"{x['id']}: speaker {x['speaker']!r} missing from 'speakers'")
