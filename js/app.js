@@ -1,5 +1,5 @@
-import { settings, progress, clips, srs } from './store.js?v=49';
-import * as audio from './audio.js?v=49';
+import { settings, progress, clips, srs } from './store.js?v=50';
+import * as audio from './audio.js?v=50';
 
 const app = document.getElementById('app');
 let DATA = null;
@@ -1088,7 +1088,7 @@ function route() {
 }
 
 // Bumped by tools/bump.sh together with version.json and every ?v= tag.
-const VERSION = 49;
+const VERSION = 50;
 
 // Phones can keep an old copy of the page for a while. If the server has a newer
 // version, reload once with ?v=<new> in the address, which forces a fresh copy.
@@ -1110,10 +1110,10 @@ async function boot() {
   if (await checkForUpdate()) return;
   applyToggles();
   try {
-    DATA = await (await fetch('content/lessons.json?v=49', { cache: 'no-cache' })).json();
+    DATA = await (await fetch('content/lessons.json?v=50', { cache: 'no-cache' })).json();
     // Verbs are optional: if the file fails to load, the rest of the site still works.
-    VERBS = await fetch('content/verbs.json?v=49', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
-    GUIDE = await fetch('content/grammar.json?v=49', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    VERBS = await fetch('content/verbs.json?v=50', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
+    GUIDE = await fetch('content/grammar.json?v=50', { cache: 'no-cache' }).then(r => r.json()).catch(() => null);
   } catch {
     app.innerHTML = '<p class="card">Could not load lessons. Open the site through a web server, not as a file.</p>';
     return;
